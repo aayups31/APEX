@@ -1,93 +1,134 @@
-# Research-Grounded Complete Simulation Edition
+# APEX Research Edition
 
-> **Authoritative first read:** [`00_MASTER_BUILD_GUIDE.md`](00_MASTER_BUILD_GUIDE.md). It governs implementation order, evidence requirements, AI planning behaviour and promotion into the production simulator.
+Run `apexsim research-catalog` and `apexsim research-demo --output artifacts/research_demo`. Read `../RESEARCH_SIMULATION_START_HERE.md` before promoting any paper-derived model into the production race kernel.
 
-**Begin with [`RESEARCH_SIMULATION_START_HERE.md`](RESEARCH_SIMULATION_START_HERE.md).** This edition preserves the complete no-game simulator and adds a 22-paper paper-to-code programme, runnable equation-level starters, replication protocols, a future F1-game evidence contract, and a gated path toward a research-grade public-data simulator.
-
-Verified in this edition: **24 tests pass**, the paper registry exports, and `apexsim research-demo` produces strategy, tyre-energy and latent-degradation artifacts.
+The research layer is under `src/apexsim/research/`; it includes strategy equations, tyre-energy forecasting protocols, latent degradation, a portable RL interface and the future game-evidence contract.
 
 ---
 
+# APEX Complete Simulation Extension
 
-# Project APEX Engineering Apprenticeship
+Run `apexsim simulate-race --laps 6 --output artifacts/complete_sim_demo` after installation. Read `../COMPLETE_SIMULATION_START_HERE.md` and `docs/complete_sim/00_MASTER_SPEC.md` before extending the original world-model pipeline.
 
-This is the instructor-style, hands-on replacement for the earlier topic-list curriculum.
+---
 
-The package teaches concepts by creating the engineering problem first, building the smallest working implementation, inspecting its values and tensors, breaking it deliberately, diagnosing the earliest failed contract, repairing it with a regression test, comparing alternatives and transferring the idea into the production APEX engine.
+# Project APEX
 
-## Main reading order
+## F1 Telemetry World-Simulation Engine
 
-1. `Project_APEX_Apprenticeship_START_HERE.pdf`
-2. `textbook/output/Project_APEX_Engineering_Apprenticeship_Teaching_Core.pdf`
-3. `textbook/output/Project_APEX_Executable_Lab_Manual.pdf`
-4. `textbook/output/Project_APEX_Tensor_Memory_and_Data_Flow_Visual_Atlas.pdf`
-5. `textbook/output/Project_APEX_Ten_Project_Instructor_Ladder.pdf`
-6. `textbook/output/Project_APEX_Production_Debugging_Casebook.pdf`
-7. `research_reading/Project_APEX_Research_Reading_and_Design_Guide.pdf`
-8. `field_workbook/Project_APEX_Field_Workbook.pdf`
-9. `source_code_companion/Project_APEX_Annotated_Source_Code_Companion.pdf`
-10. `apex_engine/Project_APEX_Ultimate_Textbook.pdf`
+Project APEX is an educational but production-structured implementation of a telemetry world model for Formula 1-style simulation. It starts with FastF1/OpenF1-compatible historical data and an offline synthetic generator, then creates a stable path toward F1 25 UDP telemetry.
 
-The same set is merged into `Project_APEX_Engineering_Apprenticeship_COMPLETE_524_Pages.pdf`.
+## What the system does
 
-## What is genuinely new
+```text
+source data
+   ↓
+source adapter
+   ↓
+canonical telemetry contract
+   ↓
+quality validation and session-level splits
+   ↓
+sequence windows and train-only normalization
+   ↓
+GRU / RSSM / SSM-style world model
+   ↓
+multi-step evaluation and feature ablations
+   ↓
+scenario interventions and imagined rollouts
+   ↓
+run registry, API and interactive UI
+```
 
-The 82-page Teaching Core contains 20 distinct instructor-led chapters. Each chapter includes:
+A user can select a telemetry window, alter throttle, braking, grip, rain and tyre-degradation assumptions, then compare the model’s imagined future with the recorded future.
 
-- a real failure or need that earns the concept;
-- a prediction prompt before explanation;
-- plain-language and technical intuition;
-- a hand-worked numerical example;
-- a runnable lab and captured output;
-- code explained as state transitions and contracts;
-- tensor/state traces;
-- a deliberate bug;
-- diagnosis from the earliest failed boundary;
-- repair and regression-test design;
-- implementation-choice comparisons;
-- exact APEX repository paths;
-- research-paper connection;
-- questions, reasoned solutions and an independent challenge.
+## Verified reference results
 
-## Runnable learning assets
+The package includes successful reference runs for all three neural architectures. Exact values depend on the packaged random seed and training budget; see each `summary.json` for the full report.
 
-- 20 executable labs.
-- 10-project ladder, culminating in APEX.
-- 15 production debugging cases.
-- 20 original system diagrams and a 47-page visual atlas.
-- Field Workbook for predictions, experiments and ADRs.
-- Annotated source companion with line-by-line production-code notes.
-- Working GRU, selective SSM-style and RSSM model implementations.
-- Synthetic causal telemetry, FastF1/OpenF1 adapters, evaluation, ablations, pipeline, registry, FastAPI and Gradio UI.
+| Model | Purpose | Reference speed MAE |
+|---|---|---:|
+| GRU | stable deterministic V1 | about 13.7 km/h over an 8-step autoregressive rollout |
+| selective SSM-style model | persistent structured sequence state | about 13.7 km/h |
+| RSSM | stochastic Dreamer-style latent imagination | about 28.9 km/h under the intentionally tiny fast-training budget |
 
-## Quick start
+The RSSM result is deliberately not hidden. Stochastic latent models can be harder to optimize and should be adopted because uncertainty or branching futures provide measured value, not because Dreamer is fashionable.
+
+## Install and run
 
 ```bash
-cd apex_engine
-python -m venv .venv
-source .venv/bin/activate
 pip install -e .
 pytest -q
-apexsim run --config configs/fast.yaml --run-id my_first_run
-apexsim ui --run-dir artifacts/runs/my_first_run --config configs/fast.yaml
+apexsim run --config configs/fast.yaml --run-id reference_gru
+apexsim ui --run-dir artifacts/runs/reference_gru --config configs/fast.yaml
 ```
 
-For the labs, place the repository root on `PYTHONPATH` when a lab imports `education.core`:
+For the REST inspection API:
 
 ```bash
-cd ..
-PYTHONPATH=. python labs/03_force_model/solution.py
+apexsim api --artifacts-dir artifacts/runs
 ```
 
-## Verified in the delivered build
+## Real historical data
 
-- 20/20 lab solutions executed.
-- Projects 1–9 executed.
-- APEX test suite: 6 passed.
-- Python source, tests and Airflow DAG compiled.
-- Fresh end-to-end GRU run succeeded.
-- UI `Blocks` application constructed from the fresh run.
-- Complete PDF: 524 pages.
-- No page in the combined PDF had empty/near-empty extractable content.
+FastF1 adapter:
 
-See `VERIFICATION_REPORT.md` for details and limitations.
+```bash
+pip install -e '.[real-data]'
+apexsim ingest-fastf1 \
+  --year 2025 \
+  --event Monza \
+  --session R \
+  --driver VER \
+  --output data/raw/monza_ver.csv
+```
+
+OpenF1 adapter:
+
+```bash
+apexsim ingest-openf1 \
+  --session-key 9159 \
+  --driver-number 55 \
+  --output data/raw/openf1_9159_55.csv
+```
+
+The adapters translate different names, units and sampling schedules into the same contract. Historical endpoint availability and fields can change, so inspect and validate every ingestion run.
+
+## Architecture choices
+
+### Why start with a GRU?
+
+The GRU is causal, compact, easy to debug and strong enough to reveal whether the data contract and evaluation design work. It is the best engineering baseline before a more complicated latent system.
+
+### Why include an RSSM?
+
+The recurrent state-space model separates deterministic memory from a stochastic latent variable. That enables probabilistic imagination and is the core modelling concept behind Dreamer. It also introduces KL balancing, posterior/prior mismatch and greater optimization sensitivity.
+
+### Why include an SSM-style model?
+
+State-space models provide a persistent hidden state and attractive scaling for long histories. The included selective cell teaches input-dependent retention and forgetting. It is not presented as a drop-in reproduction of the hardware-optimized Mamba implementation.
+
+### Why use Gradio for V1?
+
+The UI is deliberately a replaceable client. Gradio lets the entire simulator run with one Python command and no Node toolchain. The modelling and data layers do not import UI code, so a later React/Next.js client can consume the FastAPI service without changing the engine.
+
+## Honest limitations
+
+- Public historical telemetry does not expose all driver inputs and vehicle states available from the F1 25 game.
+- Steering is approximated from track-heading change until real game control packets are available.
+- The synthetic generator is a controlled educational dynamics system, not a high-fidelity tyre, aero or suspension solver.
+- Counterfactual rollouts can leave the behaviour distribution seen in training; they must be treated as hypotheses, not guaranteed physical truth.
+- A real race-engineering product would require much larger multi-track data, strict versioning, model calibration, uncertainty tests, human review and closed-loop validation.
+
+## Feed real canonical data into the complete pipeline
+
+The ingestion commands create the same source-independent CSV contract used by the offline generator. Run the complete training, evaluation, ablation and publication path with:
+
+```bash
+apexsim run-canonical \
+  --input-path data/raw/monza_ver.csv \
+  --config configs/fast.yaml \
+  --run-id monza_ver_gru
+```
+
+`run-canonical` copies the exact validated input into the run directory before any split or normalization step. This makes the source file part of immutable run lineage and ensures that FastF1, OpenF1 and synthetic evidence all execute through the same downstream code.
