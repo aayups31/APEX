@@ -1,0 +1,10 @@
+{
+  "run_dir": "artifacts/runs/reference_gru",
+  "model_kind": "gru",
+  "rollout_preview": "artifacts/runs/reference_gru/rollout_preview.csv",
+  "test_sessions": [
+    "SYN_005",
+    "SYN_000"
+  ],
+  "ui_command": "apexsim ui --run-dir artifacts/runs/reference_gru"
+}

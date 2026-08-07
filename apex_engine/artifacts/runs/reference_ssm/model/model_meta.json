@@ -1,0 +1,11 @@
+{
+  "kind": "ssm",
+  "input_dim": 16,
+  "state_dim": 5,
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "layers": 2,
+  "dropout": 0.0,
+  "best_val_loss": 0.01336344619630836,
+  "epochs_completed": 4
+}

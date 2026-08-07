@@ -1,0 +1,26 @@
+version: 1
+sources:
+  fastf1:
+    purpose: historical sessions, laps, telemetry, weather and timing
+    documentation: https://docs.fastf1.dev/
+    adapter: apexsim.data.fastf1_adapter
+    raw_committed_to_git: false
+    review_terms_before_use: true
+  openf1:
+    purpose: 2023+ historical full-field telemetry, location, laps, stints, pits, weather and race control
+    documentation: https://openf1.org/docs/
+    adapter: apexsim.data.openf1_adapter
+    historical_auth: none_at_time_of_kit_creation
+    realtime: subscription_at_time_of_kit_creation
+    raw_committed_to_git: false
+    review_terms_before_use: true
+  jolpica:
+    purpose: event catalog, results, standings, laps and pit metadata
+    documentation: https://github.com/jolpica/jolpica-f1/tree/main/docs
+    custom_user_agent_required: true
+    raw_committed_to_git: false
+    review_terms_before_use: true
+  synthetic:
+    purpose: known-causal tests, planner validation and fixtures
+    generator: apexsim.data.synthetic
+    raw_committed_to_git: small_fixtures_only

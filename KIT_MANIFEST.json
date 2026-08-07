@@ -1,0 +1,2719 @@
+{
+  "kit_name": "Project APEX Complete Simulation Research Kit",
+  "version": "0.3.0",
+  "generated_date": "2026-08-06",
+  "entrypoint": "RESEARCH_SIMULATION_START_HERE.md",
+  "verification_report": "RESEARCH_VERIFICATION_REPORT.md",
+  "paper_count": 22,
+  "research_backlog_tasks": 73,
+  "verified_tests": 24,
+  "file_count_excluding_manifest": 541,
+  "total_bytes_excluding_manifest": 53136131,
+  "files": [
+    {
+      "path": "BUILD_BACKLOG.csv",
+      "bytes": 7983,
+      "sha256": "eb382496d7be77505cb6a9bc873f81dcb665584ccbe7a9e28d918f4e059b687b"
+    },
+    {
+      "path": "CHANGELOG_COMPLETE_SIM.md",
+      "bytes": 962,
+      "sha256": "a0ef6baf21b2f218a0a1364cec527ed884d748dba78aaf8a1dd4fbed1d240e8c"
+    },
+    {
+      "path": "CHANGELOG_RESEARCH_EDITION.md",
+      "bytes": 660,
+      "sha256": "2e677d914e1f10c216a8c6eed4bb8fe714cde70ab38bb1b3f5749efd1ff233bd"
+    },
+    {
+      "path": "COMPLETE_SIMULATION_START_HERE.md",
+      "bytes": 5332,
+      "sha256": "32086dcda4b5d8241db960cc7eea4b6feec2bbc8a1486d7211f181576788c773"
+    },
+    {
+      "path": "COMPLETE_SIMULATION_VERIFICATION_REPORT.md",
+      "bytes": 3990,
+      "sha256": "776eb5db308887081cd43715ef8c60bbeeccf80fc3bbfdbf6c7a9f4ec5295375"
+    },
+    {
+      "path": "NO_F1_25_DEPENDENCY.md",
+      "bytes": 639,
+      "sha256": "f448a483a8e4efd30a8ae0edf85b53840740a24326cb3488bb89a93267b3963e"
+    },
+    {
+      "path": "PAPER_IMPLEMENTATION_MATRIX.csv",
+      "bytes": 6040,
+      "sha256": "020d50a6e8d862c16ccb4f9469b752b7cef49893a75cf18e0467b3b2d4438f4e"
+    },
+    {
+      "path": "Project_APEX_Apprenticeship_START_HERE.docx",
+      "bytes": 29231,
+      "sha256": "453a7cceef62dad99b6ac93bf18a82ff4341eeb75526e3a657ef28541b359cf2"
+    },
+    {
+      "path": "Project_APEX_Apprenticeship_START_HERE.pdf",
+      "bytes": 99527,
+      "sha256": "fbf37da5dff522d98dcdd6a7569eb05de1db871ec15e1f40f85aa583301b9265"
+    },
+    {
+      "path": "Project_APEX_Engineering_Apprenticeship_COMPLETE_524_Pages.pdf",
+      "bytes": 5496845,
+      "sha256": "438941f363ccc812fea186f6d1cef1c4b0c9995188c2fe77d5e5c55e6aa9682b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3830,
+      "sha256": "56b202d44cdcf5b651188d5f926f134b88bec04e1ec1731d4adf26ab32ad2f14"
+    },
+    {
+      "path": "RESEARCH_BACKLOG.csv",
+      "bytes": 8274,
+      "sha256": "442837a0621b14ad11ea1e5086b142dc1bbacb0cbafef572a20f49672e1bf0ee"
+    },
+    {
+      "path": "RESEARCH_SIMULATION_START_HERE.md",
+      "bytes": 6720,
+      "sha256": "e07c9584c9df1ef48a5307d5da9acb532834f3067d89d795ec08a9eac999537d"
+    },
+    {
+      "path": "RESEARCH_VERIFICATION_REPORT.md",
+      "bytes": 2537,
+      "sha256": "a2d80c13ee7e69042be5145e6ce8ef088eb9f940e160a0f53900e61cb80be302"
+    },
+    {
+      "path": "SIMULATOR_MATURITY_MODEL.md",
+      "bytes": 3879,
+      "sha256": "840a16e338990ee575067ea61d411f05bb5fae473dd9d684e93f29146490551e"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 10781,
+      "sha256": "072d0cadefd0f08f413f2f8484a359c575ec93533a6a779bdae2f8e4fe6dcb2c"
+    },
+    {
+      "path": "VERIFICATION_REPORT.md",
+      "bytes": 3937,
+      "sha256": "e994084448c05e42a90d9143e82ed71006e12422d5b0f05cd78a3c357ba9323b"
+    },
+    {
+      "path": "apex_engine/.github/workflows/ci.yml",
+      "bytes": 319,
+      "sha256": "a834e1ee7101e3110074f3917ba0857a31320e18d50b39e12a621eb015c3aa1e"
+    },
+    {
+      "path": "apex_engine/.gitignore",
+      "bytes": 148,
+      "sha256": "57efcf9492b2aac8001c1e5f3e6dfe0234eb415287f456ab9d17cde2d59ae2a2"
+    },
+    {
+      "path": "apex_engine/Dockerfile",
+      "bytes": 200,
+      "sha256": "6fb91bb969a97fe80f176c440b16401281a1f4ba17339bf196d817366a5ed693"
+    },
+    {
+      "path": "apex_engine/Makefile",
+      "bytes": 247,
+      "sha256": "077c41d5d39e394253389898dfa825fe7abff9a19b7a312d73f6cbda667363fb"
+    },
+    {
+      "path": "apex_engine/Project_APEX_Ultimate_Textbook.docx",
+      "bytes": 1625196,
+      "sha256": "2f89028499fcd9d7a43f60fd0390ae8d7d1405a48afb61e00b32b72029faa3f6"
+    },
+    {
+      "path": "apex_engine/Project_APEX_Ultimate_Textbook.pdf",
+      "bytes": 2465932,
+      "sha256": "086481561f9cd2bc63478237343ef6d9ba137a7307a1b55521fda6b309399d36"
+    },
+    {
+      "path": "apex_engine/README.md",
+      "bytes": 5769,
+      "sha256": "598072e87fdee32ab664ae3b07df17ffad3e1e54eac7c7b35e9b3501fc12f360"
+    },
+    {
+      "path": "apex_engine/START_HERE.md",
+      "bytes": 2563,
+      "sha256": "a48a3a378142f8592e04a156fd79c8037dbc1e2d9ffd444bc1449fe170c20349"
+    },
+    {
+      "path": "apex_engine/VERIFICATION_REPORT.md",
+      "bytes": 1995,
+      "sha256": "5a3696938a7513e48fdc1f60ab7946497bf900380978e6c57a2c1d864ee77eca"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/events.csv",
+      "bytes": 720,
+      "sha256": "0e26b5847148862cb7dd80c1b69f4935c42e0436fc80bee1b102d2b1a90057e1"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/laps.csv",
+      "bytes": 2956,
+      "sha256": "2225d1783ca69d042ec0f211817ff12e9f85b6c0f0073c74e8b2a0dd45d92c83"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/quality_report.json",
+      "bytes": 292,
+      "sha256": "2aa6e576ab8f8b92cf73936fcc577f987afb74e6458dc7ff9bd5e36f7b3e418a"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/run_manifest.json",
+      "bytes": 456,
+      "sha256": "70e09b7406ec2fff816a411d6e11d1713a16f33bd917a0b3d0f2828eb6157597"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/standings.csv",
+      "bytes": 708,
+      "sha256": "ac9994ec60380f5fd05bd3c0abc72f7d5ab5185e07284fb1d35526277d538683"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/stints.csv",
+      "bytes": 1008,
+      "sha256": "1a88b4b37e6459aec4f4b3234731683e499088827c720dd687651d4e0cd53a09"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/summary.json",
+      "bytes": 2535,
+      "sha256": "0a6e64a0224b23856f482026e25d7e833c21b2f4c6290535b8cdd396f6281528"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/telemetry.csv",
+      "bytes": 2605920,
+      "sha256": "129bcf2b693b3813a52e03d28bd8fa76c38ac012679b8978a3e494c53e565e48"
+    },
+    {
+      "path": "apex_engine/artifacts/complete_sim_demo/track.csv",
+      "bytes": 111118,
+      "sha256": "2d1de2acb5b62b98db8e4995a892168474b97048993f177947a4fd11c071538a"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/fieni_strategy_rollout.csv",
+      "bytes": 677,
+      "sha256": "ef8e0f2e9a8f599af0c1600bbfbe3ae9220b9ae23785e8c60577f08077cb9fb4"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/latent_tyre_degradation.csv",
+      "bytes": 2746,
+      "sha256": "c2438866bb27ba168f79981ce7aae46428aa7e5bb6809c5ff98559a9aba3ae61"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/paper_registry.csv",
+      "bytes": 6040,
+      "sha256": "020d50a6e8d862c16ccb4f9469b752b7cef49893a75cf18e0467b3b2d4438f4e"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/summary.json",
+      "bytes": 495,
+      "sha256": "2d72ac178c5afdb8e459e4df369e7d674dc125d5852125119cf93992728b4d5a"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/synthetic_tyre_energy.csv",
+      "bytes": 137128,
+      "sha256": "995b6fc190058f00a395780a2d0e264959d581d687657643adbcc7dd01b69186"
+    },
+    {
+      "path": "apex_engine/artifacts/research_demo/tyre_energy_predictions.csv",
+      "bytes": 12319,
+      "sha256": "1844cd7cc09d1b2b5be903056d0b694b8fd8651e794ec3ed5fad1568038497a7"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/ablations.json",
+      "bytes": 1875,
+      "sha256": "1c27c216e4f4d8437770694589e8cb3d05d50472912a3a240dbce3e4eae6895d"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/canonical_telemetry.csv",
+      "bytes": 3401307,
+      "sha256": "8603ff64ff4fb00e61f18291bd7cc7e23f646efe0bd955796dd1953fb2fda2fd"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/metrics.json",
+      "bytes": 1263,
+      "sha256": "ac3a6426dc646477bfde7fd3a81acb3e3b0fee5d096789d4d8747bb159050ab8"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/model/model_meta.json",
+      "bytes": 196,
+      "sha256": "1a42e0ecc03bf802fe3c5fa2ada652a1752825977f3244fd91271f5dc1b12641"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/model/training_history.json",
+      "bytes": 410,
+      "sha256": "1330e22950ccfaa6c68e633217b2eae11903d557a2ec42f3f62742516b7bb714"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/model/world_model.pt",
+      "bytes": 148679,
+      "sha256": "a4d09fc48650e04e3c4a74bba6363a937947d28019465d78b997c281df04da3d"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/publication.json",
+      "bytes": 297,
+      "sha256": "0341166c563f37d55981f71f6d6a1359c455481f19aa161d9a43612dc4de8a85"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/quality_report.json",
+      "bytes": 155,
+      "sha256": "00184bac00551009fa34fc1376cfec676c3b742704dc30114b83ee4fb405f729"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/rollout_preview.csv",
+      "bytes": 444,
+      "sha256": "35ed75bbdb26fad8086b622616dd70c6bf8bc52c4dd5460a81e9117c18e9c078"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/splits.json",
+      "bytes": 170,
+      "sha256": "1268ba2cd4c21073f6ce661d348f543912a0474a92f1200b53cab4d7b23a1771"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/standardizer.json",
+      "bytes": 1104,
+      "sha256": "259eed40640dee7a43febbff5e9a1aad25cf591e53da522d16e651e8f5fc8595"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/apprenticeship_verified/summary.json",
+      "bytes": 2965,
+      "sha256": "2506e158e4681977d4ecd11c87956f751845c9ca19710cdb94b449737ae97d1b"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/ablations.json",
+      "bytes": 1875,
+      "sha256": "1c27c216e4f4d8437770694589e8cb3d05d50472912a3a240dbce3e4eae6895d"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/canonical_telemetry.csv",
+      "bytes": 3401307,
+      "sha256": "8603ff64ff4fb00e61f18291bd7cc7e23f646efe0bd955796dd1953fb2fda2fd"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/metrics.json",
+      "bytes": 1262,
+      "sha256": "f55f496b31d57aec219d19c18b07226a7f46fba5957c80d99719750f358b9dc9"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/model/model_meta.json",
+      "bytes": 195,
+      "sha256": "27946d5ebf9b1e5cb85bf204cba4c60f40e33561cbbf6141ceda3a11e44ca561"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/model/training_history.json",
+      "bytes": 407,
+      "sha256": "2e47842881d4d1b97363e1d022545c7b738455d8c06f376a31de97dd5673724e"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/model/world_model.pt",
+      "bytes": 148679,
+      "sha256": "a63b1a8b15b01162055f2a9282810ffec6726f308b3bc2778827005dab727141"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/publication.json",
+      "bytes": 267,
+      "sha256": "026b92775463a816c04c31d665f88d936bbcfb1849db24ed95ec91643e81e7d8"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/quality_report.json",
+      "bytes": 155,
+      "sha256": "00184bac00551009fa34fc1376cfec676c3b742704dc30114b83ee4fb405f729"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/rollout_preview.csv",
+      "bytes": 435,
+      "sha256": "4ddf4521e36bb195fbc093fafda4616e521d2eb641c1281e9338ab2a1431e406"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/splits.json",
+      "bytes": 170,
+      "sha256": "1268ba2cd4c21073f6ce661d348f543912a0474a92f1200b53cab4d7b23a1771"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/standardizer.json",
+      "bytes": 1104,
+      "sha256": "259eed40640dee7a43febbff5e9a1aad25cf591e53da522d16e651e8f5fc8595"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_gru/summary.json",
+      "bytes": 2913,
+      "sha256": "1033dea32962fad97df0c19de316991bbe95c460e32962042fbd854bb0b78958"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/ablations.json",
+      "bytes": 1878,
+      "sha256": "2152fe7e40314e8d4a7ee2a0fc3e889ed4f4cd419a95134fd0cc522c4ae8a606"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/canonical_telemetry.csv",
+      "bytes": 921057,
+      "sha256": "cf73137e1fb9373cf94fe02a217fff20082c63d0ee2ff2a33655db38485d51f0"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/metrics.json",
+      "bytes": 1250,
+      "sha256": "65bfb1cefd04852a95d80e3712f12267c501a0dcadcea44db91ca73612e57b5e"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/model/model_meta.json",
+      "bytes": 195,
+      "sha256": "7fab67f0ad8eb8fb6b66fec5b75875b78c5750b4494b5230c104ee308122841f"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/model/training_history.json",
+      "bytes": 200,
+      "sha256": "c26dd67c6d988feb0ec62d245d188f611ca2e51b8a2b510037552b26197cb7a4"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/model/world_model.pt",
+      "bytes": 106951,
+      "sha256": "836b9f7990c615150b258bc1245d1b8432533c5e6452a06298160fd8b389ca24"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/publication.json",
+      "bytes": 256,
+      "sha256": "ce69bcb64064043bd5e96d2c563938f60718e5ebe83b7a732e250f3240a449a7"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/quality_report.json",
+      "bytes": 155,
+      "sha256": "7e593a0f5a24c54337961b457220515d9c62bd99618bb9ac4821a3e9629d013f"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/rollout_preview.csv",
+      "bytes": 428,
+      "sha256": "19f07ef645203135e20366ab03a0fdcec556b5b2f2ff674a8e7640f94e14dba4"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/splits.json",
+      "bytes": 125,
+      "sha256": "2141058c7352deeaff433953197e85d29c7047cc30277b8a0ef3f42e1d7b89a3"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/standardizer.json",
+      "bytes": 1114,
+      "sha256": "0f5ed546f30270d78e9ba7edfb187b1d659c0ec772c9b47ed3c5d4ec57768a69"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_rssm/summary.json",
+      "bytes": 2894,
+      "sha256": "e3b7e3951846b3cc4c987e49038d8070c4d0e98c3eddd51f635b41c9da718566"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/ablations.json",
+      "bytes": 1875,
+      "sha256": "1c27c216e4f4d8437770694589e8cb3d05d50472912a3a240dbce3e4eae6895d"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/canonical_telemetry.csv",
+      "bytes": 3401307,
+      "sha256": "8603ff64ff4fb00e61f18291bd7cc7e23f646efe0bd955796dd1953fb2fda2fd"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/metrics.json",
+      "bytes": 1261,
+      "sha256": "434c16f7dd4b76867a3d19aa70a3ab630c3fd64041e11995d25a792074d6ae99"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/model/model_meta.json",
+      "bytes": 194,
+      "sha256": "cb2ffb4ad0eb3b6d3aa17429d9f13ca20c054209c0f95e1103520c65d949a5d3"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/model/training_history.json",
+      "bytes": 407,
+      "sha256": "02b417085dc33145fb9237adc109c1b691224a7573d384eda9f648a54cd87e29"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/model/world_model.pt",
+      "bytes": 49865,
+      "sha256": "df689621121971204fffc7bdea2214c19c655199c98a03007f226653e7bd3d3a"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/publication.json",
+      "bytes": 267,
+      "sha256": "c0444365500a17dac1987f09965f7897a0d642c62564c67c880a36bd8c29f284"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/quality_report.json",
+      "bytes": 155,
+      "sha256": "00184bac00551009fa34fc1376cfec676c3b742704dc30114b83ee4fb405f729"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/rollout_preview.csv",
+      "bytes": 423,
+      "sha256": "d5760bca3b22c254d0a338d97806b39b68384fce24af1aab70343e65cd603595"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/splits.json",
+      "bytes": 170,
+      "sha256": "1268ba2cd4c21073f6ce661d348f543912a0474a92f1200b53cab4d7b23a1771"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/standardizer.json",
+      "bytes": 1104,
+      "sha256": "259eed40640dee7a43febbff5e9a1aad25cf591e53da522d16e651e8f5fc8595"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/reference_ssm/summary.json",
+      "bytes": 2911,
+      "sha256": "da39cb6bbcd7b37bd96c47a910a9a363934ffb38ed828cd81a88daad76214339"
+    },
+    {
+      "path": "apex_engine/artifacts/runs/runs.sqlite",
+      "bytes": 20480,
+      "sha256": "7e39919d1d21b925d146166edeff9572f4b58c863d9d9ad5c304f1d79449bf6c"
+    },
+    {
+      "path": "apex_engine/configs/complete_sim_demo.yaml",
+      "bytes": 401,
+      "sha256": "315987f4ea8dc69b9d12e55e5dd85e109f410ac33aed069e0a1077b582d8a565"
+    },
+    {
+      "path": "apex_engine/configs/demo.yaml",
+      "bytes": 741,
+      "sha256": "6743bc7d982964fb4fb618d4a10836a230307044a837e9db5cd34ec84a0b9303"
+    },
+    {
+      "path": "apex_engine/configs/fast.yaml",
+      "bytes": 740,
+      "sha256": "5440421dbe893c125a5e77028240533cd0e38142e9c559dbf72bed0b4260f4ae"
+    },
+    {
+      "path": "apex_engine/configs/rssm_fast.yaml",
+      "bytes": 744,
+      "sha256": "8696a335eafc268658b3fc447e30ea9185d5d70d6da97394df38e19f7fd48d62"
+    },
+    {
+      "path": "apex_engine/configs/ssm_fast.yaml",
+      "bytes": 744,
+      "sha256": "0d61ac2f51636a2ca883ce19bdf0e6eb1b21cd4aa5c23d94c3359f811d399e3b"
+    },
+    {
+      "path": "apex_engine/dags/apexsim_dag.py",
+      "bytes": 1198,
+      "sha256": "f747fb81622c710edca96f3feeb6fa82a480d2ce36f0f614208b825061cf4ae8"
+    },
+    {
+      "path": "apex_engine/data/catalog/README.md",
+      "bytes": 350,
+      "sha256": "42c40ed6986a3d5d58b20ede34d8659895cdc3dff1a73548de273267032a6794"
+    },
+    {
+      "path": "apex_engine/data/catalog/sources.yaml",
+      "bytes": 1038,
+      "sha256": "567c525fd67e0053d13e1d9f4743fc5b8c10576fc59ff6b12f1539ef1bdee58f"
+    },
+    {
+      "path": "apex_engine/data/raw/notebook_synthetic.csv",
+      "bytes": 3401307,
+      "sha256": "8603ff64ff4fb00e61f18291bd7cc7e23f646efe0bd955796dd1953fb2fda2fd"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/CODE_ATLAS.md",
+      "bytes": 691,
+      "sha256": "4b5782043d679cd7c88786d95646199a5fea9f85be846134ceeed65b62dca44a"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/config.md",
+      "bytes": 520,
+      "sha256": "38d164a6c1ad352c8a41ccf43b21e965f665d03eddbadb6cddb8a2e2b65ffe10"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/contracts.md",
+      "bytes": 530,
+      "sha256": "5f569197de6cec1f486fdd084087862645784eab84652623d161758a539f8728"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_fastf1.md",
+      "bytes": 498,
+      "sha256": "6ac7ed640db8114e4123f3a9bfdc9f427018ded487f11adce851c74846ce6250"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_features.md",
+      "bytes": 491,
+      "sha256": "78cce0836eeed25deb61909ada89367a0c78a114d91150fc020cd81698300116"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_openf1.md",
+      "bytes": 472,
+      "sha256": "d0abf708ff48daccb9544aec9f34c2a5c010cf8c0d1ac40f7fdba5b13b8b3707"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_synthetic.md",
+      "bytes": 512,
+      "sha256": "dd9cbf3cfc0622695a055c06850bd61b7f7580246f73c7be20a88473259c40e6"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_validate.md",
+      "bytes": 458,
+      "sha256": "c01c23be37073862abe429a3a2cb1c6b56b9bb6d82772b3b342eb74d80f0bb0e"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/data_windows.md",
+      "bytes": 478,
+      "sha256": "47522dd2738e23365e3764e13e137834a0d591853558b4fabb72b30b8b33fd1a"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/evaluation.md",
+      "bytes": 461,
+      "sha256": "3211c8e5d15e3e0dc3f92b3b644e9bf07011d9c1b666120afa98eb4e39a67144"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/model_gru.md",
+      "bytes": 488,
+      "sha256": "759a7cdc239709b5c4bd5eb6a22ae0445a5746795e98dac44cb756c11f95837a"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/model_rssm.md",
+      "bytes": 503,
+      "sha256": "79654c2f8687b4aa316646a214f7d2908453ca30c8ab7a4fa88f2244f6abc34b"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/model_ssm.md",
+      "bytes": 487,
+      "sha256": "1164b40f28746a068bb8acd8d5e52921bd6c2adce9cc2a225bfa8f07ae8d62e2"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/pipeline_runner.md",
+      "bytes": 457,
+      "sha256": "b8cd981ef88c420e49f69646388035aff429d34580be433076a3d0dfc19002e2"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/pipeline_stages.md",
+      "bytes": 916,
+      "sha256": "875eef64d37bddc62dc36950058568b8008649e2759b4530f09b1bf87dd21d45"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/registry.md",
+      "bytes": 454,
+      "sha256": "1eeb8e90e1d339319b67d8278ac4a61d93b0b3ada125e8001a0e9e5fb55b5268"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/serving.md",
+      "bytes": 462,
+      "sha256": "c41ce7f8a51fc4dc72db2d50e541a7359c656251080a68d23842cc5bdbc9312a"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/simulation.md",
+      "bytes": 467,
+      "sha256": "db8c684407eece5771346259b22968943b9372ff420b52d2f68e81e1a3314bf0"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/training.md",
+      "bytes": 517,
+      "sha256": "73f315672ee40982dcfeb144219b06f117023c74de4fc9fcc8231f42b4fe3de2"
+    },
+    {
+      "path": "apex_engine/docs/code_walkthrough/ui.md",
+      "bytes": 490,
+      "sha256": "a3c3cdb9e1fa20b8b56b41506c2f40f21855e9444db2ed0bb3a6623af2615146"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/00_MASTER_SPEC.md",
+      "bytes": 7524,
+      "sha256": "395f3f18f5e3e10464c0fe85e5c1f3c02348f6b6839aee0027393ecaf5302fc2"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/01_ARCHITECTURE.md",
+      "bytes": 3771,
+      "sha256": "56e685b594e92d94645a4c53611de3551774240102bcddc30e484687bb93ccfd"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/02_DATA_PLAN_WITHOUT_F1_25.md",
+      "bytes": 6076,
+      "sha256": "be201e9def569c3374b5ed4c86d4278824eec66edbf5afc52afec98fac64e1cd"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/03_PHYSICS_AND_HYBRID_MODEL.md",
+      "bytes": 3833,
+      "sha256": "db5260b5c83ae40bc0b61552e41c3be53dce5a20e210a00ac9a05543ecac0534"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/04_RACE_SYSTEMS.md",
+      "bytes": 3012,
+      "sha256": "17e8bdf81803deb15996ed463f381338f9d8dd0fce1e7a9d5ac0427fccf8247f"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/05_WORLD_MODEL_AND_PLANNING.md",
+      "bytes": 2895,
+      "sha256": "fc18eb79c48e967abcfb22d57e6655d97df981ed8608dce5bf59b0035edee9db"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/06_EVALUATION_AND_ACCEPTANCE_GATES.md",
+      "bytes": 3553,
+      "sha256": "ca174c277557486563be616f8ad974f766cf7b963ea972ecaee6390403e70f54"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/07_BUILD_PLAN.md",
+      "bytes": 3474,
+      "sha256": "68025da09a0e1fe3860c527e12cbe1227034c6872260222afe43f9aefdfe0aa6"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/08_EXPERIMENT_PLAYBOOK.md",
+      "bytes": 1911,
+      "sha256": "e81c6a26bc5fa7d7f3fa9fe46848df65363d041ef9d95af202e66b37f59cf553"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/09_API_AND_ARTIFACT_CONTRACTS.md",
+      "bytes": 1417,
+      "sha256": "828fb27ffb35b6f6d2d92dc51ec6bc606b87b55f516f00493c89ab0d87a9cc45"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/10_LEGAL_DATA_AND_BRANDING.md",
+      "bytes": 2226,
+      "sha256": "56bc24e5d245470ccc6248ca2471a495c4a72efb3c9110d730ffdf16cfb4aa44"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/11_ASSUMPTION_REGISTER.md",
+      "bytes": 1742,
+      "sha256": "cd158ddb409154657ed458811074645169d76a025ff8382c7abc4299239787d3"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/templates/DATASET_CARD_TEMPLATE.md",
+      "bytes": 293,
+      "sha256": "25493710b6cc3aee2a08269820146155f84951763a56567f48c14dee7ff14e0f"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/templates/EXPERIMENT_TEMPLATE.md",
+      "bytes": 258,
+      "sha256": "a9face3fc272a6c901b1d9ac9de949a191f649db257ef5ca0d21d1fdae3a4ee3"
+    },
+    {
+      "path": "apex_engine/docs/complete_sim/templates/MODEL_CARD_TEMPLATE.md",
+      "bytes": 304,
+      "sha256": "e27db1ea950642b49780631b66e75af56772bf0e5164dadf035dca939125c2af"
+    },
+    {
+      "path": "apex_engine/docs/course/00_mission.md",
+      "bytes": 877,
+      "sha256": "76b2070618b4c155db1024f01c79cb98062a205a0bca724d382558c17e18794d"
+    },
+    {
+      "path": "apex_engine/docs/course/01_foundations.md",
+      "bytes": 928,
+      "sha256": "f63e3eee2b9bbe19e6858e169ce23e4240f97460ba55fa7cbae1efdbf6a6ddf6"
+    },
+    {
+      "path": "apex_engine/docs/course/02_world_models.md",
+      "bytes": 868,
+      "sha256": "4a7b827bec5244b703a4dd911dbce9d353dd20d95b0083eae4b13ea9706507f0"
+    },
+    {
+      "path": "apex_engine/docs/course/03_ssms.md",
+      "bytes": 885,
+      "sha256": "96addacceb3d0d4dd71e3be1ab4fe65c1c30dcd2cca230b2f7c9346bfb7c413c"
+    },
+    {
+      "path": "apex_engine/docs/course/04_ingestion.md",
+      "bytes": 1861,
+      "sha256": "55313d45ddf9b6d3ca4cfeecbe8dcca06c41517cdac35e058af2751b0775b9b4"
+    },
+    {
+      "path": "apex_engine/docs/course/05_contract.md",
+      "bytes": 856,
+      "sha256": "2d98ac9560759e5b268ed874ff2960815d319941fbd5f964b315b6fa66a6df14"
+    },
+    {
+      "path": "apex_engine/docs/course/06_quality_alignment.md",
+      "bytes": 875,
+      "sha256": "f53c6f5b8cf6c1037a90325d1edf6491e594d0c32bd1a2e61d402a0616073dd6"
+    },
+    {
+      "path": "apex_engine/docs/course/07_windows_splits.md",
+      "bytes": 896,
+      "sha256": "6f819c2358af5d6dcaabd56fd4e6bb729aa3b3f179f5dfb9e753413e13a89839"
+    },
+    {
+      "path": "apex_engine/docs/course/08_baselines.md",
+      "bytes": 856,
+      "sha256": "fb4ef6c9922ddebf3cd4d2c3b8cf1fe048759f95aaa96069d07ee6548cf1f8f0"
+    },
+    {
+      "path": "apex_engine/docs/course/09_gru.md",
+      "bytes": 864,
+      "sha256": "eb572973034abde7a7b7587f89f1bce6df9060d64cf690f73726f422407e9065"
+    },
+    {
+      "path": "apex_engine/docs/course/10_rssm.md",
+      "bytes": 858,
+      "sha256": "d0df80f6fd4dd39065638d7a88b516ebfb52d6ef1719488926855fbd7b6e4619"
+    },
+    {
+      "path": "apex_engine/docs/course/11_ssm.md",
+      "bytes": 867,
+      "sha256": "f07bbe7584e84c0a3c45b30f18fa0a74f56104109a7b1d823d920fcd12adf4f6"
+    },
+    {
+      "path": "apex_engine/docs/course/12_training.md",
+      "bytes": 878,
+      "sha256": "add37efcf99c1b8bab09ce1a720decfe971f086d8999030a8fa834022337cfd8"
+    },
+    {
+      "path": "apex_engine/docs/course/13_evaluation.md",
+      "bytes": 880,
+      "sha256": "4998b0841a7afe1526b5e7dd3bc62cca313fc80dbe3c64b28940cf548ca5c706"
+    },
+    {
+      "path": "apex_engine/docs/course/14_simulation.md",
+      "bytes": 849,
+      "sha256": "6c66fa0829eed438c1620f96baccdbc97ed923ac3abb5bf76bb312f2ec20e6da"
+    },
+    {
+      "path": "apex_engine/docs/course/15_pipeline.md",
+      "bytes": 865,
+      "sha256": "2fc71acce6d049d42a915f70a74e1152040679a8a55097319c97da9c1fe6cb6d"
+    },
+    {
+      "path": "apex_engine/docs/course/16_ui_api.md",
+      "bytes": 836,
+      "sha256": "de85d903c7222649c0ffd4a8ec21b6e0008702972cef3c08f47eeed5db5168fd"
+    },
+    {
+      "path": "apex_engine/docs/course/17_f1_25.md",
+      "bytes": 863,
+      "sha256": "16667113ae9cb1e513557b76943fb21f244f7d89a972f34b935b378757624266"
+    },
+    {
+      "path": "apex_engine/docs/course/18_independent_build.md",
+      "bytes": 858,
+      "sha256": "51958f01b9fe16f0c040877b46b7ec396cc1770c34d0ce3f6634e2ac7e9be7cb"
+    },
+    {
+      "path": "apex_engine/docs/figures/01_child_world_model.png",
+      "bytes": 71780,
+      "sha256": "a02849530448374690fa3e265c7378a735a95a413a47e2996d3840f54f9af199"
+    },
+    {
+      "path": "apex_engine/docs/figures/02_state_action_context.png",
+      "bytes": 98464,
+      "sha256": "e6b7d94c65d9f2fab21bf7e6e2fc0d740bbd5d23f2725156ade2a62976b09313"
+    },
+    {
+      "path": "apex_engine/docs/figures/03_full_architecture.png",
+      "bytes": 108374,
+      "sha256": "de61e5d73e599b456e5d1ab43b0e301e1064596fb0630f4806df16ef28985707"
+    },
+    {
+      "path": "apex_engine/docs/figures/04_time_alignment.png",
+      "bytes": 51152,
+      "sha256": "fc121402f9c58e0705b35b73997121ed142045039a88378e326bb6a25fbb6f05"
+    },
+    {
+      "path": "apex_engine/docs/figures/05_sequence_window.png",
+      "bytes": 60509,
+      "sha256": "1cd3890a1e2bdfbbada11ba38f04769a1bf7ab158a45ac195b2d3fd04e3c2c9b"
+    },
+    {
+      "path": "apex_engine/docs/figures/06_leakage.png",
+      "bytes": 71747,
+      "sha256": "3de7aed5817732a59b198d23ff02e07b56fa27ff93c9153903dcf38bad47f60d"
+    },
+    {
+      "path": "apex_engine/docs/figures/07_gru_rollout.png",
+      "bytes": 82527,
+      "sha256": "ae253c99df548601b9239518ae5ccb55e6f56a27877bc085bd7dceadf2db278e"
+    },
+    {
+      "path": "apex_engine/docs/figures/08_rssm.png",
+      "bytes": 120199,
+      "sha256": "2e8273159d6e1c8c9b33b67c0616acba35db76f2c24036d5d251bd2a1d7c6e74"
+    },
+    {
+      "path": "apex_engine/docs/figures/09_ssm_memory.png",
+      "bytes": 75295,
+      "sha256": "359f86798068ea4f41fded1bf0acb0f6bb1899e7d41d4cbe268abaa2815751e6"
+    },
+    {
+      "path": "apex_engine/docs/figures/10_model_choice.png",
+      "bytes": 107990,
+      "sha256": "a01a38310df3569543e1ff660f180e30de0b1e238d0caa030a8e4b56e7536cae"
+    },
+    {
+      "path": "apex_engine/docs/figures/11_training_loop.png",
+      "bytes": 76298,
+      "sha256": "b5e81f976cca08f0fc4def81ab2cd0f74cf7680cd1b9f003c78c766d0564b4aa"
+    },
+    {
+      "path": "apex_engine/docs/figures/12_horizon_error.png",
+      "bytes": 60685,
+      "sha256": "e2bbea050512b39a52bf5d36f825a2095e43acb15b7ff55c9c728433ad828c48"
+    },
+    {
+      "path": "apex_engine/docs/figures/13_ablations.png",
+      "bytes": 47754,
+      "sha256": "c1a03eeaf4b5d4ccebdc9cba156a899c2a0ef477fe272de50961a56745bf4de9"
+    },
+    {
+      "path": "apex_engine/docs/figures/14_pipeline.png",
+      "bytes": 86396,
+      "sha256": "f51ca66073250007dc069aa87a9993ca0eea70bbcb2c7773180957023f6df963"
+    },
+    {
+      "path": "apex_engine/docs/figures/15_finetuning.png",
+      "bytes": 98509,
+      "sha256": "a9bafa0a5b21f7bdc1b2f232ffaa4c565934dfacf179c3d0d8cd89e07530e5c4"
+    },
+    {
+      "path": "apex_engine/docs/figures/16_scenario.png",
+      "bytes": 89634,
+      "sha256": "12ba5fac3252050b44b6fdf97c6c2b52745aa7175df09814f4aecb70cc136395"
+    },
+    {
+      "path": "apex_engine/docs/figures/17_ui_mock.png",
+      "bytes": 95351,
+      "sha256": "944d85c32e63a4f100504ef220fd7b04fc7510b63d3eebc05a34135b79195151"
+    },
+    {
+      "path": "apex_engine/docs/figures/18_f1_25_migration.png",
+      "bytes": 106446,
+      "sha256": "368d122ac3beac7643565026d97c0259706f9e3bbdb77d28351cad762472236d"
+    },
+    {
+      "path": "apex_engine/docs/figures/19_evaluation_pyramid.png",
+      "bytes": 67939,
+      "sha256": "54f74e70bbac9f057db60fbd3d7e2a0288aee0628d87918a8438fff72168f183"
+    },
+    {
+      "path": "apex_engine/docs/figures/20_roadmap.png",
+      "bytes": 88156,
+      "sha256": "6b2d9a764543895219911570721e651d2dada19d1107562772e76c42fc80de35"
+    },
+    {
+      "path": "apex_engine/docs/figures/21_track_speed.png",
+      "bytes": 94500,
+      "sha256": "67e0375e08685b089023378a0b9edd667209493f3d91cfe4875ea89cb1f576b8"
+    },
+    {
+      "path": "apex_engine/notebooks/00_explain_like_five_and_scope.ipynb",
+      "bytes": 3736,
+      "sha256": "5259b69ac837250976f75297f57e0131707152ec7874e725808ff60eed77fbca"
+    },
+    {
+      "path": "apex_engine/notebooks/00_explain_like_five_and_scope_executed.ipynb",
+      "bytes": 5652,
+      "sha256": "9c01d2b4a6df7a89b9a35fc51fe2a88cc57b47f2d045f60ed504087207f1b666"
+    },
+    {
+      "path": "apex_engine/notebooks/01_ingestion_contracts_and_alignment.ipynb",
+      "bytes": 3963,
+      "sha256": "90d6feb0da71bdb1b8433ca4b35bb50b422ef7093822c79ab82fb69f430e67d4"
+    },
+    {
+      "path": "apex_engine/notebooks/01_ingestion_contracts_and_alignment_executed.ipynb",
+      "bytes": 15584,
+      "sha256": "aee9d61ee36602dfd356de01ed06f2cc7c0f67b36902555dd6602fb3b7734f3d"
+    },
+    {
+      "path": "apex_engine/notebooks/02_sequence_windows_and_baselines.ipynb",
+      "bytes": 3794,
+      "sha256": "c25096e18c0a5363842f13d523772f15575a4304ae97c18168974f8fa74592aa"
+    },
+    {
+      "path": "apex_engine/notebooks/02_sequence_windows_and_baselines_executed.ipynb",
+      "bytes": 36745,
+      "sha256": "727641cc758bd87af174b6b381a8f0b551ac72f25daf938262cd2ab57ec19fee"
+    },
+    {
+      "path": "apex_engine/notebooks/03_gru_world_model.ipynb",
+      "bytes": 4562,
+      "sha256": "7d1f94787b9fa3851c75e7ea0928c9533925d623af7d8aef93a3db23cc07f7e5"
+    },
+    {
+      "path": "apex_engine/notebooks/03_gru_world_model_executed.ipynb",
+      "bytes": 6803,
+      "sha256": "b09ff68936f5e8984b4cf99d0e54cda7ecc86c8aa85493ef1cf60f58bf84b94f"
+    },
+    {
+      "path": "apex_engine/notebooks/04_rssm_and_ssm.ipynb",
+      "bytes": 3949,
+      "sha256": "b153bbe211da561ea3acafef2ee932be85bcdc9ba4b8c5f13e8b0e33bc6c9d27"
+    },
+    {
+      "path": "apex_engine/notebooks/04_rssm_and_ssm_executed.ipynb",
+      "bytes": 5743,
+      "sha256": "1f16aa335577e9129430d7ab39cb5e4c836b9dfa17a6f911e7490d5d4b2fbf92"
+    },
+    {
+      "path": "apex_engine/notebooks/05_evaluation_ablations_and_simulation.ipynb",
+      "bytes": 4161,
+      "sha256": "8038114ee3f15298cf3b4014ef6b52be1c74c2f380ce11217ab5a28fb753f0c1"
+    },
+    {
+      "path": "apex_engine/notebooks/05_evaluation_ablations_and_simulation_executed.ipynb",
+      "bytes": 39980,
+      "sha256": "da0e56075ec6a3f931cbbc88dcea900af6b102bb69b4ecc2042695bcecad2bbb"
+    },
+    {
+      "path": "apex_engine/notebooks/06_pipeline_ui_and_f1_25_migration.ipynb",
+      "bytes": 3926,
+      "sha256": "4037439fa8ada2be548a5f865cbe1ed0aca7c3989ef9e30139245e48740f2dc8"
+    },
+    {
+      "path": "apex_engine/notebooks/06_pipeline_ui_and_f1_25_migration_executed.ipynb",
+      "bytes": 8910,
+      "sha256": "a25d3d96f51daebaa85625ee4e2dabaae3b81e971725307777b31776bd82cf66"
+    },
+    {
+      "path": "apex_engine/pyproject.toml",
+      "bytes": 993,
+      "sha256": "1332216ff33f3445ef5b9ea28e683ed64f69c2a749c473515c58a69f45bccedb"
+    },
+    {
+      "path": "apex_engine/requirements.txt",
+      "bytes": 258,
+      "sha256": "007fdcb53d5d2d5383d6a51f4aceef41f3957a43da7555ca30b8fed552df93f6"
+    },
+    {
+      "path": "apex_engine/schemas/race_scenario.schema.json",
+      "bytes": 1562,
+      "sha256": "63d79bf4ece6f9b40372f566841f4d43f32b66f9ae4bb3c1a605e54b867442c4"
+    },
+    {
+      "path": "apex_engine/scripts/bootstrap_complete_sim.sh",
+      "bytes": 403,
+      "sha256": "b4dcf005647c0d6a4a7efc3a5fc38c4a978320f9b9eea2f76aa2c61283363930"
+    },
+    {
+      "path": "apex_engine/scripts/build_track_map.py",
+      "bytes": 814,
+      "sha256": "a2bdea6ac7189af6f1c9f056ebce72b879ca4051399427b955e3d39159c9d863"
+    },
+    {
+      "path": "apex_engine/scripts/download_fastf1_session.py",
+      "bytes": 1588,
+      "sha256": "832f25b097b56b6e826a40413db325047f9c1d7304252e8039c52b94694faeb1"
+    },
+    {
+      "path": "apex_engine/scripts/download_openf1_session.py",
+      "bytes": 1395,
+      "sha256": "8be5ad82b71b9b1ea7a74936a27f289a9f99051239d4408994816d993c4aa0b3"
+    },
+    {
+      "path": "apex_engine/scripts/replay_canonical.py",
+      "bytes": 1098,
+      "sha256": "80350708526d4e6267491407df957e4a541d616190b7d2b2ac48d214d1787971"
+    },
+    {
+      "path": "apex_engine/scripts/run_complete_sim_demo.py",
+      "bytes": 91,
+      "sha256": "1da70efe42d4388c6aa749749553690e7a50b2b3868db09b751ad900404a1e86"
+    },
+    {
+      "path": "apex_engine/src/apexsim/__init__.py",
+      "bytes": 102,
+      "sha256": "41ad8595e235fb8a93b55fb43b11b3e2561f641eda23031be23312f4acce1829"
+    },
+    {
+      "path": "apex_engine/src/apexsim/cli.py",
+      "bytes": 4546,
+      "sha256": "b207b0556bfabce110aa7a39b3652b3fd5654d7d5b3fac73bf44ed29402c62bc"
+    },
+    {
+      "path": "apex_engine/src/apexsim/config.py",
+      "bytes": 2745,
+      "sha256": "ab34a5cdd1068cbdaa6ae4486cea23efec9f684ee81a30d444c31f6785a2126b"
+    },
+    {
+      "path": "apex_engine/src/apexsim/contracts.py",
+      "bytes": 1755,
+      "sha256": "119f81b7890eff84a4dda1474061dab60937c46792573f263f20b40172a1bbc7"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/__init__.py",
+      "bytes": 79,
+      "sha256": "54af99d4f5b97e8dcb28d77f255f1ec2827e0f810b6e39de53f25e4de5653adf"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/fastf1_adapter.py",
+      "bytes": 4259,
+      "sha256": "cb5f6f7cbdfdc5ef5883f88b515dac95c402127e0f5136ba5448a22ab94a492f"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/features.py",
+      "bytes": 1651,
+      "sha256": "193e59b7a78fe06e2fab3aedeb7db1e88bdef4855d60a22fbf0ddaffbc5a3e36"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/manifest.py",
+      "bytes": 1360,
+      "sha256": "a3f6cba8aa79e1ff83f02457bfbe95c7066b6120b760566289e5f234a1031951"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/openf1_adapter.py",
+      "bytes": 4971,
+      "sha256": "0ed29cc07a7e950a0af70800c8c37086b9aa346acbece4a1369e7248d591ea92"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/synthetic.py",
+      "bytes": 7424,
+      "sha256": "80b7ec9dabda0d297edc4922deb5387936efab588bae1327c2ca4e6db11098d9"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/validate.py",
+      "bytes": 1623,
+      "sha256": "19835713546cfb06119d58d77d7f30358cc163a0a81155d42913446988a6b171"
+    },
+    {
+      "path": "apex_engine/src/apexsim/data/windows.py",
+      "bytes": 3448,
+      "sha256": "58dbe6576cf3eb5197c968b35914a940bb1063256f73a4b3526f6555afdf154f"
+    },
+    {
+      "path": "apex_engine/src/apexsim/evaluation.py",
+      "bytes": 2634,
+      "sha256": "e57a56f70ac2c0f68882cf20adf5bc44ee981772ce5378d86eea3d3719e4ca7d"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/__init__.py",
+      "bytes": 30,
+      "sha256": "ae2af75a447e8aed1000697487693f80e56d251e8eeeeef3ec9528b45de662cb"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/complete_sim_demo.py",
+      "bytes": 3823,
+      "sha256": "99183969dc810a8009bb3d78b702d8ba65be4943dbcaadbd4bb79eecf33e951f"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/research_demo.py",
+      "bytes": 5828,
+      "sha256": "142b8d94eb4ad66b3ab6e26fa386cd2bbea40bdb2889e8a9ac10df952a9cd449"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/__init__.py",
+      "bytes": 46,
+      "sha256": "98cd42ef2a5d44cada762cd38db4b632326625aeced6f6e5207cc44d3777f0d2"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/baselines.py",
+      "bytes": 861,
+      "sha256": "4cbea874bdcd7d3f783d90c3854e2cc403aeb58dd21c8d55b548bd5996fa2cc6"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/factory.py",
+      "bytes": 787,
+      "sha256": "4b5b23136db34c17bb1fa0029157857b277d97c4915ee0549a9bc2693d9bfcba"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/gru_world_model.py",
+      "bytes": 1730,
+      "sha256": "177501d6e6937cba2645f597ac800f85ba988f5a311513cb05c620290d5b24f3"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/rssm.py",
+      "bytes": 3136,
+      "sha256": "4ad952c56e4ad4e2918ffa0ac0da856d4ab9b1f5e876f7513bc4379be14f3a25"
+    },
+    {
+      "path": "apex_engine/src/apexsim/models/ssm_world_model.py",
+      "bytes": 2493,
+      "sha256": "3406d5bdc5e24926f266c00c90ddd854ae83e2483123edf176afb3ba2c42d591"
+    },
+    {
+      "path": "apex_engine/src/apexsim/pipeline/__init__.py",
+      "bytes": 67,
+      "sha256": "39f3f027f85d5aeee59650717e6e172a3baa336b96555722110105dac08f4b26"
+    },
+    {
+      "path": "apex_engine/src/apexsim/pipeline/runner.py",
+      "bytes": 1825,
+      "sha256": "5cf049d9a5b8507fe841594f20e35e9b1b486624566cdcf3ef38a307bf0201f7"
+    },
+    {
+      "path": "apex_engine/src/apexsim/pipeline/stages.py",
+      "bytes": 10812,
+      "sha256": "2a9849bcf8d61c0bd27270f5219cc13b5a463eb559b5a598866789688fbd40f7"
+    },
+    {
+      "path": "apex_engine/src/apexsim/plotting.py",
+      "bytes": 1339,
+      "sha256": "040c8e2a6f133a8a3785e28d3d72422c4c28af0b79cdfee34936b2fac8f4fc2d"
+    },
+    {
+      "path": "apex_engine/src/apexsim/registry.py",
+      "bytes": 2123,
+      "sha256": "31281c76909e41984f66a032157c8abe0702e8c34fcf79942972b6e0d2c51600"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/__init__.py",
+      "bytes": 1230,
+      "sha256": "5c7f654a84e238a6a593b56b289e309d9ab9fc03bce9d113e8d8ca9af279a3b1"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/fienia_strategy.py",
+      "bytes": 16667,
+      "sha256": "bd966f7cb9be261feb67b98acc021a9319883751f59b7ef9f331047c7943f9d1"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/game_validation.py",
+      "bytes": 7098,
+      "sha256": "67dd33611eabb057626f0ee81a5959b2ad15e28a5eb64cb684caefdbf20f8c0f"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/registry.py",
+      "bytes": 7935,
+      "sha256": "6d06c14cc4e1471c7c767f744e19edfd243269859e799caee1ed17a354b974f6"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/state_space_tyre.py",
+      "bytes": 4136,
+      "sha256": "9aaa66d51f8738c7ac2a2c64007950627ab03ff0b240cefedb50a6723566ef75"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_env.py",
+      "bytes": 2885,
+      "sha256": "0a3ca5154a5b3143da1ddc5b44a562ad3ab18875769e955a2554b501044b94d9"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/tyre_energy.py",
+      "bytes": 7256,
+      "sha256": "a39573e9e01e156c85a05221faa5eb477a079a114c0361414adf0f76c69c2b41"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/tyre_forecasting.py",
+      "bytes": 10945,
+      "sha256": "2cac6dc60a0fb977b6e9c70257287f9bc3cfebc7e10a9220acbef24e2b7906e7"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/unified_race.py",
+      "bytes": 2890,
+      "sha256": "8a916021706209d6c202d442f78cf7d233e935883b876b51be86350a133ab903"
+    },
+    {
+      "path": "apex_engine/src/apexsim/serving.py",
+      "bytes": 1188,
+      "sha256": "db3a26ea314cd71d31d49466e3a440981e0e78518d27b6c9d3b9d20e8cb8c603"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/__init__.py",
+      "bytes": 1234,
+      "sha256": "8e9dc54354b6dcf9fa6f67d20d8a696e0850019c1e1750ca9d636b2ce2c7772b"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/calibration.py",
+      "bytes": 4294,
+      "sha256": "f78e0d5ca07d04daf7c68bcdeb5523b135c858f1d9a6191ff8076c36d573e3e7"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/driver.py",
+      "bytes": 3808,
+      "sha256": "16a6608d3f303a977a2f8e58bb13fc9404fa5e8d5ea5108241976d368ca2fd6c"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/hybrid.py",
+      "bytes": 998,
+      "sha256": "175c13cf90c3b272a4f5131b707ee8828aa8f7f99d036ce2e84948def2f6a8ae"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/race.py",
+      "bytes": 17415,
+      "sha256": "13147e87287bb555b24b2098d93537ba5d4c5e53e916475209c706a3e6f5310d"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/replay.py",
+      "bytes": 4700,
+      "sha256": "7b83ef649e1d2c74eb62cfdfacba60a3268907602dd5eeca7adc76dba874e18c"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/strategy.py",
+      "bytes": 4245,
+      "sha256": "8c41de592280deadeac917d6d96157ecc14ec6362f39f1d3f8a10003fd6fe5be"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/track.py",
+      "bytes": 7878,
+      "sha256": "0260f0a193a8a404dd0287db234440a9dda69b0eeb036761d0f8a42d24b52735"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/types.py",
+      "bytes": 5744,
+      "sha256": "31bd4491278a6bfb8977be23eedb8c0bafdb62a77fb4ab78f07ece7ddf8140aa"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/tyres.py",
+      "bytes": 3642,
+      "sha256": "5116e4d6d26a88d2369102de3545c9d84ee1853985078caff0d4b08fdd9e2e08"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/validation.py",
+      "bytes": 5505,
+      "sha256": "516a4fa1fa4aef012ca72d86c7d964810d8d9fa62e2e9be9a1d690129dc80b25"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/vehicle.py",
+      "bytes": 8526,
+      "sha256": "e6234cef80e6f4c2f9892ae0fe28f045785960277f0f77f6ba83ede1631c6a59"
+    },
+    {
+      "path": "apex_engine/src/apexsim/sim_core/weather.py",
+      "bytes": 2691,
+      "sha256": "6cc9102ec77b6df7815e7c931f6c8f40d43756492fc8fb1125eb38bd85838984"
+    },
+    {
+      "path": "apex_engine/src/apexsim/simulation.py",
+      "bytes": 2288,
+      "sha256": "41a337c21495e8f38a59c46af4258c4af96eb88c40a9e0fcee37f99f7f3d145d"
+    },
+    {
+      "path": "apex_engine/src/apexsim/training.py",
+      "bytes": 3407,
+      "sha256": "273a2a206f0a4894cfd51eafaa5b79b9a50e62358fde45772e52c72b120f9bdd"
+    },
+    {
+      "path": "apex_engine/src/apexsim/ui.py",
+      "bytes": 10885,
+      "sha256": "242d1acad0450e27d5c58f5cb1f6b481d344a2cd9f348114d93e89734aa781ad"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_calibration.py",
+      "bytes": 566,
+      "sha256": "87b9da70d762e91b3e7feba52a6291933d070d1630752f6c92591b7c4487e932"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_race.py",
+      "bytes": 394,
+      "sha256": "44543c9753868cac62d2e34150d9f3699a0127d8b33728ac1fd69310419e9025"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_strategy.py",
+      "bytes": 850,
+      "sha256": "cf56c3d4f622e5900b1504cbdd79d7e577bf6c9d949019fb925a8435634d3bce"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_track.py",
+      "bytes": 398,
+      "sha256": "b174359d116fb5a3e240059c8812038822cd67b22dbf68d65b783d6764c2f664"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_validation.py",
+      "bytes": 392,
+      "sha256": "023143dc8f049f509d67f8a405897001fc412bab4457570f6f1b48c814092ccd"
+    },
+    {
+      "path": "apex_engine/tests/test_complete_sim_vehicle.py",
+      "bytes": 972,
+      "sha256": "d7ceae048bc536c48548c51fe3729144ba0588f473514c50485f5caa251d91ea"
+    },
+    {
+      "path": "apex_engine/tests/test_contract.py",
+      "bytes": 531,
+      "sha256": "18dfe87e4aead9d63234ed0d03d3f53965b588bea23da55d3c2d298d7887eca2"
+    },
+    {
+      "path": "apex_engine/tests/test_models.py",
+      "bytes": 625,
+      "sha256": "2583af9724f28282213c08d3e078aa5115997c4a39136f499865b86035589ff6"
+    },
+    {
+      "path": "apex_engine/tests/test_pipeline.py",
+      "bytes": 1672,
+      "sha256": "7c774f6bcb8aec03152f8051d0b1ad3fb0369c2b645f614c56bd09f6a5191410"
+    },
+    {
+      "path": "apex_engine/tests/test_research_fienia_strategy.py",
+      "bytes": 1974,
+      "sha256": "5a924eb1a7a8ae302b2623fa74014aad8ab34da42b95d72223d0bb92e7f998ec"
+    },
+    {
+      "path": "apex_engine/tests/test_research_game_validation.py",
+      "bytes": 1374,
+      "sha256": "7c1d1f8db5890e098a6bdf0daa8c8390e9f998780f732d07c07db4e0b658dca1"
+    },
+    {
+      "path": "apex_engine/tests/test_research_state_space_tyre.py",
+      "bytes": 774,
+      "sha256": "acf6556cba3928fbc2e20494977a2257c5bf072ae5a7db632f07cfaff6355787"
+    },
+    {
+      "path": "apex_engine/tests/test_research_tyre_energy.py",
+      "bytes": 1632,
+      "sha256": "b5e71e01a1ef2b365864bf01728fdb6dd859ce8b774c9fdeb846871931b44201"
+    },
+    {
+      "path": "apex_engine/tests/test_research_tyre_forecasting.py",
+      "bytes": 2089,
+      "sha256": "c86f5851de5afc0d72b3b43db19ea7352554d195e905c9ee46916fcd93f8519d"
+    },
+    {
+      "path": "apex_engine/tests/test_research_unified_race.py",
+      "bytes": 1343,
+      "sha256": "137319d1a96e68a2e26a4c014eb975532007059c962db8d2e233697fa8af38e8"
+    },
+    {
+      "path": "apex_engine/tests/test_scenario.py",
+      "bytes": 600,
+      "sha256": "083d11854df227f27041afe6bff791c3867470615402ef555cc290bfc7ce14a8"
+    },
+    {
+      "path": "apex_engine/tests/test_windows.py",
+      "bytes": 983,
+      "sha256": "c0ad3e169cd55c85b2384d27e428551d3bc2d64cfe0f1fdad5ef3cb1caf257d0"
+    },
+    {
+      "path": "build_debug_casebook.py",
+      "bytes": 13315,
+      "sha256": "49af47e3d3fffa431abc549977ed41baf49e31e051c7d870c5a0cecf3bd6f328"
+    },
+    {
+      "path": "build_lab_manual.py",
+      "bytes": 10911,
+      "sha256": "874408c1b9b315e40d277260817def1c2270b13de1faedee891fb5c5125cc873"
+    },
+    {
+      "path": "build_project_ladder.py",
+      "bytes": 6225,
+      "sha256": "854940a04ecb13fe882f8583d3fe1d02bdc4cad3d9de1143d3188bbda57cdbdb"
+    },
+    {
+      "path": "debugging_cases/01_unit_mismatch/README.md",
+      "bytes": 372,
+      "sha256": "07f83044d847948430ea948e55525d33919ed88af96c9ba7ebc866b16ab7e00e"
+    },
+    {
+      "path": "debugging_cases/02_axis_swap/README.md",
+      "bytes": 373,
+      "sha256": "aaec4ea0cc8458a76db362472380dfe73e9a4558fd7610817ef24885def1ac18"
+    },
+    {
+      "path": "debugging_cases/03_target_leakage/README.md",
+      "bytes": 364,
+      "sha256": "03548199c336f7f183cf6ac867dd074a77f6b87df58db04922b8115550694de0"
+    },
+    {
+      "path": "debugging_cases/04_random_window_split/README.md",
+      "bytes": 374,
+      "sha256": "790df9775d12a8f6d7f745984f805da88d236217ab6ed82cd72bd58632ee7463"
+    },
+    {
+      "path": "debugging_cases/05_stale_asof_join/README.md",
+      "bytes": 362,
+      "sha256": "489bb4faddef52ed91e3e9cb9238020ecd305c863dfa63920b8c91a69e342d13"
+    },
+    {
+      "path": "debugging_cases/06_normalizer_leak/README.md",
+      "bytes": 353,
+      "sha256": "46cdf98b858827256e69439ec0d31ba7c9489dd44880bb5c23e44800bf4b4b08"
+    },
+    {
+      "path": "debugging_cases/07_hidden_state_reuse/README.md",
+      "bytes": 364,
+      "sha256": "234d6f1b15a2e173a3bcd07a5206f8cc386e3ff4584aa4e1deffdd01e1702746"
+    },
+    {
+      "path": "debugging_cases/08_missing_eval_mode/README.md",
+      "bytes": 358,
+      "sha256": "a04fa8a29dc1e5255cce321d6e1d8e2847ad867bcfa91f8fb94c26874c698e92"
+    },
+    {
+      "path": "debugging_cases/09_gradient_accumulation/README.md",
+      "bytes": 349,
+      "sha256": "a0f41e06cba068464617d4dfa1eef5c8ef8f218d7788997f2fcde4151589cfa9"
+    },
+    {
+      "path": "debugging_cases/10_exploding_ssm/README.md",
+      "bytes": 356,
+      "sha256": "25c21cda484b4cf0c7389fae0c574098ba74171d175d0cb3094d1670e75c5add"
+    },
+    {
+      "path": "debugging_cases/11_kl_collapse/README.md",
+      "bytes": 352,
+      "sha256": "139579426ac05db788136ee19dde598fd3ad604ba5960e007a1992214ec46ac2"
+    },
+    {
+      "path": "debugging_cases/12_planner_exploitation/README.md",
+      "bytes": 364,
+      "sha256": "b0a3bb0a0e8304cf3da99a8cdb4c823357a55f45ad245db701041fcc652aa3cb"
+    },
+    {
+      "path": "debugging_cases/13_artifact_overwrite/README.md",
+      "bytes": 354,
+      "sha256": "f34e9baddd0a47dc9cea74faa9063843dc2901e8192f5cf882de4e8fe79fa416"
+    },
+    {
+      "path": "debugging_cases/14_airflow_payload/README.md",
+      "bytes": 353,
+      "sha256": "2f6b4c9fba0881c5841fc9efa157e0c47f63427070b1fe23affad549c2ec393a"
+    },
+    {
+      "path": "debugging_cases/15_ui_false_precision/README.md",
+      "bytes": 373,
+      "sha256": "4196638a5ee5c304b163a29fa9bd51b73a1b94c0234b166ddfd178e6a066d50d"
+    },
+    {
+      "path": "education/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "education/core.py",
+      "bytes": 1529,
+      "sha256": "ac07685ae1ed88bc8b50e0712478c5dbdd739c5abf28ebcbcb041cce145e64e9"
+    },
+    {
+      "path": "field_workbook/Project_APEX_Field_Workbook.docx",
+      "bytes": 43667,
+      "sha256": "d0a32b92d67e238b04105132eb857a606eb93eb61fc512b2edfc4db9cf682e29"
+    },
+    {
+      "path": "field_workbook/Project_APEX_Field_Workbook.pdf",
+      "bytes": 799846,
+      "sha256": "b7ed4ba47c4d0d55d46b61713f799ab6d98c73959166f8cf16323d05733f8488"
+    },
+    {
+      "path": "labs/01_units_and_shapes/BREAK_IT.md",
+      "bytes": 245,
+      "sha256": "a8f68cf98e2bc8fc23a4d799bda4e3b64a5b4c019d88fc7a04597bedd3df24d2"
+    },
+    {
+      "path": "labs/01_units_and_shapes/README.md",
+      "bytes": 254,
+      "sha256": "3905ff0123876acb2da368c310393f29965449a0b318ea5771eb637fd12e4443"
+    },
+    {
+      "path": "labs/01_units_and_shapes/solution.py",
+      "bytes": 282,
+      "sha256": "403417a2ee906fee5ece529977f88f6c40c093bb64f313531668bf10a80dc4c1"
+    },
+    {
+      "path": "labs/02_vectorized_kinematics/BREAK_IT.md",
+      "bytes": 239,
+      "sha256": "b6dc15c3a588382f68bc756f760dcc6dd57f94914eea403dc1c65b6cf7d35a88"
+    },
+    {
+      "path": "labs/02_vectorized_kinematics/README.md",
+      "bytes": 248,
+      "sha256": "478a5c3c8e2ba826d17b2e2195925999845a1caa884e11191cbc72c6d47f7bd6"
+    },
+    {
+      "path": "labs/02_vectorized_kinematics/solution.py",
+      "bytes": 291,
+      "sha256": "5dc74faec1213c5794cf0bb68847e60d07756eae86d3d48727348c8ad12bcd90"
+    },
+    {
+      "path": "labs/03_force_model/BREAK_IT.md",
+      "bytes": 242,
+      "sha256": "2b6949471664b27dcc310bad5b8d909f7268c2948c31ea4d9f9fd15208302400"
+    },
+    {
+      "path": "labs/03_force_model/README.md",
+      "bytes": 247,
+      "sha256": "e211e5135b07a1f1086eb1f29f99c32ad7f2c8ff831d9172c2a0ca40b316792f"
+    },
+    {
+      "path": "labs/03_force_model/solution.py",
+      "bytes": 180,
+      "sha256": "daa35a482f60a6a8971bc5931c1e4a7522d0335db03050a82cfe338c2e3dd3a3"
+    },
+    {
+      "path": "labs/04_sampling_aliasing/BREAK_IT.md",
+      "bytes": 239,
+      "sha256": "cf7c6f46a88209408f2d19d0b856e084d03da0afa5da74c5c702e8ea641fdb69"
+    },
+    {
+      "path": "labs/04_sampling_aliasing/README.md",
+      "bytes": 238,
+      "sha256": "24609050b23f2c16c386a712ea1b1f37f58e9894651c0d06fc56bd7db187def9"
+    },
+    {
+      "path": "labs/04_sampling_aliasing/solution.py",
+      "bytes": 153,
+      "sha256": "a540e9044bd4420f6e72b6e878631e67f787c36d8b49916a121916627f29c665"
+    },
+    {
+      "path": "labs/05_regression_baseline/BREAK_IT.md",
+      "bytes": 237,
+      "sha256": "058bbb6398e8bb9fab22268a592b4c0de8066a8c4576a26e84b8b112af918cab"
+    },
+    {
+      "path": "labs/05_regression_baseline/README.md",
+      "bytes": 227,
+      "sha256": "4fffeb0fd5cb5ee5000f4efc3b3611936026387b1de31eb76d1a0d62de144b9d"
+    },
+    {
+      "path": "labs/05_regression_baseline/solution.py",
+      "bytes": 446,
+      "sha256": "4c5ccd21fe0aff8bdb7684c2a24dd0924255badfcfd8b38526feece64c9049fd"
+    },
+    {
+      "path": "labs/06_autograd_drag/BREAK_IT.md",
+      "bytes": 239,
+      "sha256": "358a22eb3c18d57e0ab658e5c827993681650c506e53e20aa3bb856a49538a1a"
+    },
+    {
+      "path": "labs/06_autograd_drag/README.md",
+      "bytes": 252,
+      "sha256": "aff6f6e5d92111a7f2e375f6c5050f799de7cfe00b2edddeedb60e8be9aa64e7"
+    },
+    {
+      "path": "labs/06_autograd_drag/solution.py",
+      "bytes": 360,
+      "sha256": "177dbde528d72ea2940c3c011e6653337a6671de32e715e4f6e10824dfbe5a5b"
+    },
+    {
+      "path": "labs/07_pytorch_module/BREAK_IT.md",
+      "bytes": 232,
+      "sha256": "d384b1bcd0103471c0a03c4a08e461f44df3f021d6f0c491bbeac77b80ad3a43"
+    },
+    {
+      "path": "labs/07_pytorch_module/README.md",
+      "bytes": 235,
+      "sha256": "ac2794cf81946807508ed1ad9c18f2f175723615916e1c9d6477e23ac5003527"
+    },
+    {
+      "path": "labs/07_pytorch_module/solution.py",
+      "bytes": 339,
+      "sha256": "f59ac5600b4e1a9d5cc5c4e801e820af125fcd2a2851a91efdfe0490ac571f2b"
+    },
+    {
+      "path": "labs/08_dataset_windows/BREAK_IT.md",
+      "bytes": 233,
+      "sha256": "f3375c3cd25ceb10b9e3cf16954a63192c2119620846d88bd885e2e995fd94b4"
+    },
+    {
+      "path": "labs/08_dataset_windows/README.md",
+      "bytes": 231,
+      "sha256": "551ebb5f3544f8a4ed7a33188a056dc416dfb7efc7cecd504b983cb01d1fb727"
+    },
+    {
+      "path": "labs/08_dataset_windows/solution.py",
+      "bytes": 249,
+      "sha256": "80ebe3b47ebd17eda0ae1f2e0762fd0cfc08ab94aaac83397a4f1ac8cfc8917e"
+    },
+    {
+      "path": "labs/09_loss_comparison/BREAK_IT.md",
+      "bytes": 233,
+      "sha256": "e07f063b524bd7537cffb5000aa8557c2bae3bbb2a11af893b83d15bdb31451c"
+    },
+    {
+      "path": "labs/09_loss_comparison/README.md",
+      "bytes": 236,
+      "sha256": "fbbf684c0f50334941c195554d3c1eef0b0a2e7cdb277c450763306f72ba1e4e"
+    },
+    {
+      "path": "labs/09_loss_comparison/solution.py",
+      "bytes": 256,
+      "sha256": "ea7022dad30229fc231e7aab0b7640c4b3bc0b0104a200d6bd5a305136969210"
+    },
+    {
+      "path": "labs/10_training_loop/BREAK_IT.md",
+      "bytes": 231,
+      "sha256": "0d507cb140e082ade42bd9a8ca782765bf3ec4ba1856baeff878137386322621"
+    },
+    {
+      "path": "labs/10_training_loop/README.md",
+      "bytes": 238,
+      "sha256": "de7455b9da5f1eb9db8692c198df3fb55d9b61b86cb44984d143b2c9b3adf3f0"
+    },
+    {
+      "path": "labs/10_training_loop/solution.py",
+      "bytes": 462,
+      "sha256": "12bc44fe3211966823d37a3a51aa7fa2f2daa9fc811b765733ac089d1a219d9b"
+    },
+    {
+      "path": "labs/11_rnn_from_scratch/BREAK_IT.md",
+      "bytes": 234,
+      "sha256": "334f0b941eeab879a60d25f1b9d21e4091fce10d51c8b99e10a6d1b2f2f707dc"
+    },
+    {
+      "path": "labs/11_rnn_from_scratch/README.md",
+      "bytes": 227,
+      "sha256": "2696772fd1ea03e15571d07ba37baf7d1e4d95e434cdb379018155b32b3772c9"
+    },
+    {
+      "path": "labs/11_rnn_from_scratch/solution.py",
+      "bytes": 249,
+      "sha256": "06dca5c4c011594be5ee8f98b901d0fef64d178860d09e0dc5c4eaee4cf9be1e"
+    },
+    {
+      "path": "labs/12_gru_gates/BREAK_IT.md",
+      "bytes": 227,
+      "sha256": "b53556e7a2f42bd92736eee621152b7625bc17c515febd524ef528632593041d"
+    },
+    {
+      "path": "labs/12_gru_gates/README.md",
+      "bytes": 237,
+      "sha256": "e3c6026a760f54ab32f8957b25e631c9abb79405a1dbce93f1ead47c87feeec8"
+    },
+    {
+      "path": "labs/12_gru_gates/solution.py",
+      "bytes": 219,
+      "sha256": "01ebb7cb889e8ca4de0b4d35e93dff4ae7ec22908efeb8a4cc3544d2bb262362"
+    },
+    {
+      "path": "labs/13_linear_ssm/BREAK_IT.md",
+      "bytes": 242,
+      "sha256": "16c24e767dba79b8c104452568e353176e014588b45536525433481b082d42f5"
+    },
+    {
+      "path": "labs/13_linear_ssm/README.md",
+      "bytes": 238,
+      "sha256": "6bfb2fa8478875e718e46fb8c74b81cd200011ef8780510b3d4832b22628473d"
+    },
+    {
+      "path": "labs/13_linear_ssm/solution.py",
+      "bytes": 158,
+      "sha256": "ea83a4084a6c3cff2faef98843629a813921df90edfb7469d7937a2b48c4c76a"
+    },
+    {
+      "path": "labs/14_selective_ssm/BREAK_IT.md",
+      "bytes": 231,
+      "sha256": "219971ba44baff6c75797e8a85a9adcb3ee297d33639b3e5e2bc6b6a23023b70"
+    },
+    {
+      "path": "labs/14_selective_ssm/README.md",
+      "bytes": 228,
+      "sha256": "cbea9e426d29f9c293e254a93b6fac3ad9506147cc93ecd662efc03bc94ce7e5"
+    },
+    {
+      "path": "labs/14_selective_ssm/solution.py",
+      "bytes": 427,
+      "sha256": "6990eddd888eae824e7ba3db243fff6acacb1e9c8c2c4a5bb494be6416bd4a5a"
+    },
+    {
+      "path": "labs/15_autoencoder/BREAK_IT.md",
+      "bytes": 229,
+      "sha256": "701ddc4d9294e4957a796544d65abbd9141fd94cd17632924a3e66202da4775e"
+    },
+    {
+      "path": "labs/15_autoencoder/README.md",
+      "bytes": 233,
+      "sha256": "b9c3793caf3301efe37ee0466e62b2b671c5603038addfd9e019ffb9fe6f0008"
+    },
+    {
+      "path": "labs/15_autoencoder/solution.py",
+      "bytes": 373,
+      "sha256": "bddb2a69e11482a629fa838700167a3875223bdd010f0edba741692258a17d72"
+    },
+    {
+      "path": "labs/16_vae_reparameterization/BREAK_IT.md",
+      "bytes": 240,
+      "sha256": "8a1f4f37c33f0bcedc99e04b0970514d6e8df88c598abb384e6b4b69bf4744ff"
+    },
+    {
+      "path": "labs/16_vae_reparameterization/README.md",
+      "bytes": 240,
+      "sha256": "7ae819954e1c029ccf471be6b07ea108ed30b386dc35138c7e8da7c0a56f3d03"
+    },
+    {
+      "path": "labs/16_vae_reparameterization/solution.py",
+      "bytes": 247,
+      "sha256": "54b4341cbb09ebeeb6ddc1c1ca0bf9fd281d5111320d44114eaca456aab2166b"
+    },
+    {
+      "path": "labs/17_rssm_step/BREAK_IT.md",
+      "bytes": 227,
+      "sha256": "0cf31b8eeba552f32d10bfe7d547d66b136bf42b47d2b08c6ed9b4349c1593b9"
+    },
+    {
+      "path": "labs/17_rssm_step/README.md",
+      "bytes": 231,
+      "sha256": "c55a91e2416ae38239afd6a5a6a9a23b51cd1fd4bd6fc8c7a4cf9ed0db2b19ff"
+    },
+    {
+      "path": "labs/17_rssm_step/solution.py",
+      "bytes": 389,
+      "sha256": "cb135f7207fdbf71d1e4a320a8b3b3276cfdd49ab1eb6abea1b58b249f6942b5"
+    },
+    {
+      "path": "labs/18_cem_planning/BREAK_IT.md",
+      "bytes": 230,
+      "sha256": "777547cfd7086c14a32ceb0c871cc23162cce4c3bf751abcd91b86f0841045fa"
+    },
+    {
+      "path": "labs/18_cem_planning/README.md",
+      "bytes": 228,
+      "sha256": "9f5081a22fab4e5d9217b90d280832a9fe4f1975f5e96ffb74ea6a0ad601d983"
+    },
+    {
+      "path": "labs/18_cem_planning/solution.py",
+      "bytes": 452,
+      "sha256": "1308712fdcf26cfcdb10f7726f44a83324af688173eb8bf185d8163b7ea2e56b"
+    },
+    {
+      "path": "labs/19_time_alignment/BREAK_IT.md",
+      "bytes": 232,
+      "sha256": "92b5b58e3d3d73e47406017b9d2553ebd145ee15a5ed4573321531e779cbc528"
+    },
+    {
+      "path": "labs/19_time_alignment/README.md",
+      "bytes": 234,
+      "sha256": "b680d58daabadd00d293cac0ee9461bcd9ee48adc5ed328ff30f8b21e2e3a223"
+    },
+    {
+      "path": "labs/19_time_alignment/solution.py",
+      "bytes": 268,
+      "sha256": "faca5ff9e13c4f58708d3c61c7851af58c20cb6d86db6c0bdf7fe1efe180c22e"
+    },
+    {
+      "path": "labs/20_pipeline_contract/BREAK_IT.md",
+      "bytes": 235,
+      "sha256": "bacc55d7b6b1e2eaf765f280bc2804833109cd9b96778d0ae3aab4e3e0f3365a"
+    },
+    {
+      "path": "labs/20_pipeline_contract/README.md",
+      "bytes": 237,
+      "sha256": "7cdeccd620edfcc9b5e265f2c8c51c9ad56cb608abd0f4e3d85e9e4a615ef021"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/00_ingest.json",
+      "bytes": 42,
+      "sha256": "c53339a1026091d0108274fe07fae5a807c442182a668696a5a9f300e13e5c71"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/01_validate.json",
+      "bytes": 44,
+      "sha256": "5859616377ce3a123278fac9ff8ef1b851b6e2a12f3a2a7b2e64d771c451c418"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/02_window.json",
+      "bytes": 42,
+      "sha256": "a90994687d8432b2cda78d398af53e0937543f705e0ec86b8208157842dc78a4"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/03_train.json",
+      "bytes": 41,
+      "sha256": "c874b31f7d520f897dbf0a68ee5aa856a83f6bdec92b5b2879ca9051ad97b593"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/04_evaluate.json",
+      "bytes": 44,
+      "sha256": "eb322e42ffa87d8948292b0d6d0e4d2fffc40a1d575498d5c61d0cecce507edf"
+    },
+    {
+      "path": "labs/20_pipeline_contract/artifacts/education_pipeline/05_publish.json",
+      "bytes": 43,
+      "sha256": "42025163e6fb267f9359b65b3d21d0d4943b4c0a0e08e86544362b8416ac042f"
+    },
+    {
+      "path": "labs/20_pipeline_contract/solution.py",
+      "bytes": 336,
+      "sha256": "ca2d91575ebdd9c90fe7c0d2b8dcf770e16af495ac70b4ead11a1c6dd62036a6"
+    },
+    {
+      "path": "projects/01_car_integrator/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/01_car_integrator/README.md",
+      "bytes": 421,
+      "sha256": "cc0962b891b7ed22af59087bacd5b7e2568d5c578de6fc42ad9401d6399b4310"
+    },
+    {
+      "path": "projects/01_car_integrator/main.py",
+      "bytes": 314,
+      "sha256": "9e81be5d21e61b80492ddd30324a412ec0e5618bb280fb813cebfe0638dc9cd3"
+    },
+    {
+      "path": "projects/02_telemetry_quality/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/02_telemetry_quality/README.md",
+      "bytes": 400,
+      "sha256": "2131be0f21096b403133865c07c457fcb3f8687ff67f0b91ee5302dcf044a1db"
+    },
+    {
+      "path": "projects/02_telemetry_quality/main.py",
+      "bytes": 605,
+      "sha256": "1f4fbc104cddede430e83179a3981401c62098d717475118960a0bcc7ed6024a"
+    },
+    {
+      "path": "projects/03_lap_physics/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/03_lap_physics/README.md",
+      "bytes": 404,
+      "sha256": "aaf1044621137a5b3512cedf7d3d2ced7c5f3c83ffe95a5e8652d6ebcda4cc65"
+    },
+    {
+      "path": "projects/03_lap_physics/main.py",
+      "bytes": 427,
+      "sha256": "033302c58b9d254816d077500d8e4443b858d8fab24e8b29d05a4ab9f1245baf"
+    },
+    {
+      "path": "projects/04_mlp_transition/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/04_mlp_transition/README.md",
+      "bytes": 402,
+      "sha256": "958f42decb9975695f4d1a876b911d487a188f10c048ac78fe84f5f784c21a4a"
+    },
+    {
+      "path": "projects/04_mlp_transition/main.py",
+      "bytes": 401,
+      "sha256": "d896a8d550042bab0f697965cb21129481c91c898c36d7a992845e7a04029bec"
+    },
+    {
+      "path": "projects/05_track_encoder/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/05_track_encoder/README.md",
+      "bytes": 402,
+      "sha256": "de836dbd7eebc7912f06f8c2b07d856e9f55023340b8374eb581921e72d6bc1c"
+    },
+    {
+      "path": "projects/05_track_encoder/main.py",
+      "bytes": 342,
+      "sha256": "866ac055ca0f6beab3e8032630a0a60ae6e1e1c2ccf56a853dab4e391fec6e09"
+    },
+    {
+      "path": "projects/06_gru_forecaster/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/06_gru_forecaster/README.md",
+      "bytes": 400,
+      "sha256": "f26223f78f6c90a1e1b6ea0ce5a5d6aff88efcb50d18cd89de3810e3e85826b8"
+    },
+    {
+      "path": "projects/06_gru_forecaster/main.py",
+      "bytes": 335,
+      "sha256": "eb5fc23fbc0852752c6a6d2af6612aeb714c4f320d5c55d3e7855bc8e8c40212"
+    },
+    {
+      "path": "projects/07_selective_ssm/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/07_selective_ssm/README.md",
+      "bytes": 407,
+      "sha256": "d42cff08af3a391983df82ff892b2c1ab1db53f19d7d81ef147e6c248c83825c"
+    },
+    {
+      "path": "projects/07_selective_ssm/main.py",
+      "bytes": 427,
+      "sha256": "6990eddd888eae824e7ba3db243fff6acacb1e9c8c2c4a5bb494be6416bd4a5a"
+    },
+    {
+      "path": "projects/08_rssm_imagination/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/08_rssm_imagination/README.md",
+      "bytes": 399,
+      "sha256": "3dcb2033cfe6cdb97f9f944dffbb4e80fab7c6d5aa69a24c10f20d4413fd23bf"
+    },
+    {
+      "path": "projects/08_rssm_imagination/main.py",
+      "bytes": 389,
+      "sha256": "cb135f7207fdbf71d1e4a320a8b3b3276cfdd49ab1eb6abea1b58b249f6942b5"
+    },
+    {
+      "path": "projects/09_latent_mpc/DECISION_RECORD.md",
+      "bytes": 81,
+      "sha256": "74285d397c70bfb43807c281994e0c9477ef1abab6ff1c5729043de0eca0a8d9"
+    },
+    {
+      "path": "projects/09_latent_mpc/README.md",
+      "bytes": 404,
+      "sha256": "115cf866078e93fec2e3097db78161c025fa68141bac4097d369b9272f3c12fe"
+    },
+    {
+      "path": "projects/09_latent_mpc/main.py",
+      "bytes": 452,
+      "sha256": "1308712fdcf26cfcdb10f7726f44a83324af688173eb8bf185d8163b7ea2e56b"
+    },
+    {
+      "path": "projects/10_project_apex/README.md",
+      "bytes": 156,
+      "sha256": "597b9475014c9f81513a337c67c9689983d305a8dfd8ae4c49736df9912ced0f"
+    },
+    {
+      "path": "research/GAME_VALIDATION_LATER.md",
+      "bytes": 3460,
+      "sha256": "77374b73745d380fdde2ab96875a8551653ca3ea8d0fc4cc7c435303c9ae6081"
+    },
+    {
+      "path": "research/OPEN_ACCESS_AND_COPYRIGHT.md",
+      "bytes": 704,
+      "sha256": "759c3a70e0958cc4f1f36f08d279d3f4ff518dc993245e731bbcc3c5e648ae29"
+    },
+    {
+      "path": "research/PAPER_TO_CODE.md",
+      "bytes": 5517,
+      "sha256": "3d6fd3161332b214c52256dcefdaa90f2e79fe965405c030ee04a2dfee021413"
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 1421,
+      "sha256": "75ff1c09ec88e3123148ad15c35685d3a52e0c536c9758a8f804ccd4969fce76"
+    },
+    {
+      "path": "research/REPLICATION_STANDARD.md",
+      "bytes": 3384,
+      "sha256": "a381864d8e4156280751a1dd5ab97811ed4a98bc5c82eb5ad09b76ac31ec3c36"
+    },
+    {
+      "path": "research/experiments/EXPERIMENT_CARD_TEMPLATE.md",
+      "bytes": 403,
+      "sha256": "088bd3f3751bb286b6a5f12df756aa354c3880471f4c876ee485ca16d7077e7e"
+    },
+    {
+      "path": "research/paper_catalog.json",
+      "bytes": 10977,
+      "sha256": "f64a85467203f2bc2cc47651ccae905fdc0feadb3ba9f4a82305963a6edc4765"
+    },
+    {
+      "path": "research/protocols/FIENI_2025.md",
+      "bytes": 1104,
+      "sha256": "8d3897f9fc8a9815b5a74a809cd0ead79f47a2aa425d9f503cc1caaad7d1d427"
+    },
+    {
+      "path": "research/protocols/GAME_VALIDATION.md",
+      "bytes": 340,
+      "sha256": "8e86186cea7d6606337c33058067075f0f391ec5a60c06e9c09a587bdb91465f"
+    },
+    {
+      "path": "research/protocols/HEILMEIER_MONTE_CARLO.md",
+      "bytes": 818,
+      "sha256": "ab1a0b9497413e7f89b23d3b79b385b00e1f80345b37f478129ebd000c5b9cda"
+    },
+    {
+      "path": "research/protocols/MULTI_AGENT_AND_RL_MPC.md",
+      "bytes": 880,
+      "sha256": "6663b2f8dfb688f8ef6f72d55b23117cf6a25dd538ab5d8e11991515c7289ca2"
+    },
+    {
+      "path": "research/protocols/TODD_2025.md",
+      "bytes": 1000,
+      "sha256": "248d54414e9b2a74b0f8d3699c064265b461b368263669666de3a88a284c8319"
+    },
+    {
+      "path": "research/protocols/VEHICLE_AND_TYRE_OPTIMAL_CONTROL.md",
+      "bytes": 875,
+      "sha256": "53ec6d1a8c0ad1ed0e760a370a2997de1e5e8694c7c146e82f5a54ac7818d2ba"
+    },
+    {
+      "path": "research/protocols/WORLD_MODELS.md",
+      "bytes": 882,
+      "sha256": "f456db2cabf4a96d540b7ef0771229f9026cd40241bc5d00c18b35850e92150c"
+    },
+    {
+      "path": "research/references.bib",
+      "bytes": 3653,
+      "sha256": "7137fefdcc923ecff871a2f1c682b5d51a7182edce3028863dc045d8249a4fe8"
+    },
+    {
+      "path": "research/scripts/fetch_open_access_papers.py",
+      "bytes": 1340,
+      "sha256": "52da851cdcd2552a57033d3b0d998e4178077a2fd5c95238be85434a016fe0ea"
+    },
+    {
+      "path": "research/user_provided_papers/learning-based-f1-strategies.pdf",
+      "bytes": 616333,
+      "sha256": "fc609aa9dcff9179d5e6cba8ce96eb7785f8db45daeef2fc6c4aad32ad133270"
+    },
+    {
+      "path": "research/user_provided_papers/manifest.json",
+      "bytes": 372,
+      "sha256": "ca90b768b5d3dfbf2079fe698f72bdca6b569c94b11663f78ee882ded45c0eb3"
+    },
+    {
+      "path": "research/user_provided_papers/tyre-energy-in-F1.pdf",
+      "bytes": 4566838,
+      "sha256": "432eb66b8d35478821cb58d2a1cb01419153eec00369b6960c2df1ef343788b0"
+    },
+    {
+      "path": "research_reading/Project_APEX_Research_Reading_and_Design_Guide.docx",
+      "bytes": 32935,
+      "sha256": "de66eee5285e9c3fedc65360c5da2660eff47c76f7112977b99874431df0ab4d"
+    },
+    {
+      "path": "research_reading/Project_APEX_Research_Reading_and_Design_Guide.pdf",
+      "bytes": 146633,
+      "sha256": "7b0e81df2f6e67962192e65d76cec1e7f068bf076cd122428a1081f7b7fa6599"
+    },
+    {
+      "path": "research_reading/Research_Reading_Guide.md",
+      "bytes": 15927,
+      "sha256": "31260e39d26ad8175967aeca7e0c25643826f957986488d3c502c1a4bdc2a1eb"
+    },
+    {
+      "path": "research_reading/render/Project_APEX_Research_Reading_and_Design_Guide.pdf",
+      "bytes": 146633,
+      "sha256": "7b0e81df2f6e67962192e65d76cec1e7f068bf076cd122428a1081f7b7fa6599"
+    },
+    {
+      "path": "research_reading/render/page-1.png",
+      "bytes": 309762,
+      "sha256": "fbd5ec9a2f94cfa6c0f4e40ac8baadc8caf1258d5e9ae49cf3b0fe85885aba28"
+    },
+    {
+      "path": "research_reading/render/page-10.png",
+      "bytes": 166804,
+      "sha256": "1a657da8f6057df1d3832c26776aeb907140366bcac401eaedacf343c31d8923"
+    },
+    {
+      "path": "research_reading/render/page-2.png",
+      "bytes": 331595,
+      "sha256": "5fe89ef54550898c1f32e2a73479f02892b20988c9c5a784f161d2e2d7c41955"
+    },
+    {
+      "path": "research_reading/render/page-3.png",
+      "bytes": 375294,
+      "sha256": "7604b37e27b36ce51b0f57dd3fca35d6939c1742a59359759305d3218f367b3f"
+    },
+    {
+      "path": "research_reading/render/page-4.png",
+      "bytes": 348732,
+      "sha256": "9b60f8220df7d5359739daff465ac691b17e10c027ef2e45b263706bad79aa13"
+    },
+    {
+      "path": "research_reading/render/page-5.png",
+      "bytes": 361846,
+      "sha256": "a085bfad2f58999d58023c0c52190b9c56bb5ce5e2385ffb5d0563f0f8e6da6d"
+    },
+    {
+      "path": "research_reading/render/page-6.png",
+      "bytes": 302246,
+      "sha256": "5c87b67a1185eaf0bd0410291468ff14b171ba635a75d3c1154860005a82f013"
+    },
+    {
+      "path": "research_reading/render/page-7.png",
+      "bytes": 244858,
+      "sha256": "bfd360b7dc2780a9472cabb969b86b24b4e97550343b5e2154ef6e35ab4c4bed"
+    },
+    {
+      "path": "research_reading/render/page-8.png",
+      "bytes": 216328,
+      "sha256": "683bb756eb0cbbf838fea0744446ff5514d6c5a7218631e191c380cce76a443f"
+    },
+    {
+      "path": "research_reading/render/page-9.png",
+      "bytes": 340400,
+      "sha256": "8bcd8b5a3f37526938920a1739b88c9cab8f14014b74defd47343d59b4ba09ce"
+    },
+    {
+      "path": "source_code_companion/Project_APEX_Annotated_Source_Code_Companion.docx",
+      "bytes": 116998,
+      "sha256": "76199474073408f1ecb520972ada71784c003bd63264974ce8b7d062c45e1f67"
+    },
+    {
+      "path": "source_code_companion/Project_APEX_Annotated_Source_Code_Companion.pdf",
+      "bytes": 3166548,
+      "sha256": "2ba7419f0aaf58516f4d8f8728898147c734d5487e4d5fb74ba9c7c668c33993"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim____init__.py.md",
+      "bytes": 710,
+      "sha256": "823de951486d34d89e3c547073f5b4d971fc6cdcda6e4e5f907ce5907cac9917"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__cli.py.md",
+      "bytes": 18283,
+      "sha256": "1e91374565ae41d3a20703c4073598bbde2978f520ebc7de94938ce5ff3c217b"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__config.py.md",
+      "bytes": 14511,
+      "sha256": "caf2d327b2b23b1c45e4a548803570ca7f03b3d60e1ff3d42ceaac6858e4ceda"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__contracts.py.md",
+      "bytes": 13921,
+      "sha256": "3c0824c072ec525c15e8dd98b5ced12429fd8a14777fa48b73a24d4e0723b064"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data____init__.py.md",
+      "bytes": 426,
+      "sha256": "c15a21a16ed5776b2dedea3d000a81bb6efb3a26267334cfa125a62526c481f7"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__fastf1_adapter.py.md",
+      "bytes": 20257,
+      "sha256": "458bdb7d8fbc2c3577c46ff08186517a77c6b09660ac22e838fee16defe676c0"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__features.py.md",
+      "bytes": 8744,
+      "sha256": "90184bc2c7c9cd9579b421b160e3a14a6a5cdd8d065d9795bedeabeb76d68210"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__openf1_adapter.py.md",
+      "bytes": 20524,
+      "sha256": "19e3387388d2a00fd178e3b1fa34e9930c3cc134b147277bd84f55cca3d81c19"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__synthetic.py.md",
+      "bytes": 32332,
+      "sha256": "8f8ece5f3dcfd550c2569e7ab055c0723ca522f36376374093661dee23281e0a"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__validate.py.md",
+      "bytes": 8384,
+      "sha256": "47a6e026e6087065c4ae79b43cdd8cf47b82538a51654f572b357f96d1481c35"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__data__windows.py.md",
+      "bytes": 17103,
+      "sha256": "05fd3cb4a6e4a32d04dd2b4cf3d36c36c77c65dd9b98dd7e132550fb7e5d8f2b"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__evaluation.py.md",
+      "bytes": 13572,
+      "sha256": "96961713dca554664be3466f4f81c75068622dc7ec034876aff268996d96c6ab"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models____init__.py.md",
+      "bytes": 395,
+      "sha256": "b9a30af68af47ff83a9e1cda085ad183781e30b205fe1fd0602a1323e3441091"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models__baselines.py.md",
+      "bytes": 4314,
+      "sha256": "60e414aefd9299331b64b0dd0969e50532db9870d37a0a1a8debd17dd5140929"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models__factory.py.md",
+      "bytes": 3246,
+      "sha256": "e9d9922da1943bd83fe8c670e30f7d478680d21d129aa7e2c3cf0b5ead0b53b3"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models__gru_world_model.py.md",
+      "bytes": 9558,
+      "sha256": "7d2d566e90ee2ce6b1d95827929dcc0bc3f043630de96c574179bc6e4051cae6"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models__rssm.py.md",
+      "bytes": 13937,
+      "sha256": "952bb74461e3326f2c563e5c6b315f34f7684aaffade56db68302b3258e3dad7"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__models__ssm_world_model.py.md",
+      "bytes": 10946,
+      "sha256": "d97e2ecde01fc37d0a496f36edf0ac4b9996868a99ac8aac9eb56ae6635e8d3b"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__pipeline____init__.py.md",
+      "bytes": 418,
+      "sha256": "d5494ed308752b3ddb923fcc8224d8b5519842419202cf152798385cf42bac2d"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__pipeline__runner.py.md",
+      "bytes": 9696,
+      "sha256": "5477571560b053760f0172926671e2cd267d190dfe6de3b47922eaaa7e7c100b"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__pipeline__stages.py.md",
+      "bytes": 45655,
+      "sha256": "cbaa82f82385d805c26b922489fe0bfec74bc106cee22a0255dd02719e4d454e"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__plotting.py.md",
+      "bytes": 7522,
+      "sha256": "a4303358ace7bbc9557a1c4fb8b5f8a3cf82604012e7396e37a6447a309faad3"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__registry.py.md",
+      "bytes": 10235,
+      "sha256": "858fc5acc2afcd356708b42e4569e7a8bf734dcf8030c39b4991c7140a09d9d3"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__serving.py.md",
+      "bytes": 6591,
+      "sha256": "ff020183b4dd92fd0a23254fcab371b56131fd9f7a7b752b7e3ad7f0a9e7cade"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__simulation.py.md",
+      "bytes": 12133,
+      "sha256": "b87d9596d598655fccb675dbe0eb3c37d78bb45062477ed92472e85a6d7e7c6e"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__training.py.md",
+      "bytes": 17754,
+      "sha256": "4dec42b0a4058d081c73c2184b8092d0ad8074045f98403094564fad2df5e097"
+    },
+    {
+      "path": "source_code_companion/line_by_line/apex_engine__src__apexsim__ui.py.md",
+      "bytes": 45804,
+      "sha256": "c3d3019236729df59cb2d0ccdfb5e773fb1439081029165dbb17c9dc7b7db271"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__01_units_and_shapes__solution.py.md",
+      "bytes": 1557,
+      "sha256": "697dae80503f4faeee4cf31a8578d1f558098fc0e6c02a00f2920b82373acc86"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__02_vectorized_kinematics__solution.py.md",
+      "bytes": 1828,
+      "sha256": "8e774c03d97beb8d63f7fffd3d43633019ad1e9f0abede499dac565597203708"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__03_force_model__solution.py.md",
+      "bytes": 1249,
+      "sha256": "57e0abb9fc62ed3a6fa229e84f08cc2e4c1af748f7022eb9852329d4d809d8ef"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__04_sampling_aliasing__solution.py.md",
+      "bytes": 1225,
+      "sha256": "cabb7cbaafaca0fce5661205a64209468d5e560ff860264e351330bb1dd4f987"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__05_regression_baseline__solution.py.md",
+      "bytes": 2329,
+      "sha256": "f8f48339b017b48a07048189eb4d1582214b0118682088d2aebef8b52035ed0a"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__06_autograd_drag__solution.py.md",
+      "bytes": 2477,
+      "sha256": "2455989c760251b1493c4e5737e13734768e787f2c1c95b1beca82dfa14dc38a"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__07_pytorch_module__solution.py.md",
+      "bytes": 2052,
+      "sha256": "3ca01a24035fd0394d1cd5bffcaac28a898d27b37095f10495b82776ae274b35"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__08_dataset_windows__solution.py.md",
+      "bytes": 1420,
+      "sha256": "05c39b73cda60a94db038dd18695242c1c203834efc6f989382a7f8d1ef242ba"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__09_loss_comparison__solution.py.md",
+      "bytes": 1413,
+      "sha256": "eae9172e5552977211e717ab81b12a3b81572ad432058ae1b85c67084e0fddf9"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__10_training_loop__solution.py.md",
+      "bytes": 2081,
+      "sha256": "0ed71fbad1ddf37e7f93314bfb0726c11cc9b1b58a3a2eda4f64d137aa332230"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__11_rnn_from_scratch__solution.py.md",
+      "bytes": 1296,
+      "sha256": "3c598957fd310f8e0efe4ed3894fd40d31804e8f19e45def1e04bd731309c043"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__12_gru_gates__solution.py.md",
+      "bytes": 1097,
+      "sha256": "a7f9ee30554aff817701f3f8f3e616e6321919602415e7c387fb75e8f768f815"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__13_linear_ssm__solution.py.md",
+      "bytes": 989,
+      "sha256": "52f6f1ace0fd97b46ed65920a2e0e96402ff51558dd24bbba64461b0896a011b"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__14_selective_ssm__solution.py.md",
+      "bytes": 2368,
+      "sha256": "f16b3c80bdb3233acd773145e5f3e56a2c38cad03ccd82e969cb2f17f6c9578a"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__15_autoencoder__solution.py.md",
+      "bytes": 1651,
+      "sha256": "68b3b9d66491568f4c53b9c8d83bc853fb8ee5156eefbe415cf34125a06dd1bc"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__16_vae_reparameterization__solution.py.md",
+      "bytes": 1327,
+      "sha256": "f25aa70556c202f7abff735f0a98af1fc868f25ea788d69d3c4ecc4c70da918c"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__17_rssm_step__solution.py.md",
+      "bytes": 1699,
+      "sha256": "d82c51c4f2252613818fc839c6aeb2c78b884cfaf580ac0ddc9ab7a7655e1061"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__18_cem_planning__solution.py.md",
+      "bytes": 2138,
+      "sha256": "d99943ed3c11463fcf7dcf3c7463dfa0db529ff8a1479927754c300952e8c36e"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__19_time_alignment__solution.py.md",
+      "bytes": 1343,
+      "sha256": "2a7a976e14bfec04a35443ba9d9d70f5eb6ca5658ddec842186ede5006b366cb"
+    },
+    {
+      "path": "source_code_companion/line_by_line/labs__20_pipeline_contract__solution.py.md",
+      "bytes": 1681,
+      "sha256": "8f2fd5b6492034d91d6999681b2209b534f3995b0d69be7bbe52eec5f45603d6"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__01_car_integrator__main.py.md",
+      "bytes": 2052,
+      "sha256": "acbcd6a09f17b418463c9a730466fb5928b29eeff4bf62c32da9c21f2c6f2adc"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__02_telemetry_quality__main.py.md",
+      "bytes": 2687,
+      "sha256": "1fbbfed44dc7f071f46bf22362d06c749ec332d41d53c581aef1adb163bc5ba2"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__03_lap_physics__main.py.md",
+      "bytes": 1873,
+      "sha256": "c5e9eb43b2d00d47c2c06e958575ba393d43b66c0ca66036c03e51bce7237346"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__04_mlp_transition__main.py.md",
+      "bytes": 2345,
+      "sha256": "6fc529e696cbd876d617ba344646cbf41cf45be9112beb0c96cb040c54984999"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__05_track_encoder__main.py.md",
+      "bytes": 1827,
+      "sha256": "e6185fbb98060665610ee51d5382ddea0b7c1a8d5e8abdddb5c7a90e1913d4a2"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__06_gru_forecaster__main.py.md",
+      "bytes": 1666,
+      "sha256": "18bd98e0905c52e039f385192558846184dcfc73ce8e7d3d182b4439073817ed"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__07_selective_ssm__main.py.md",
+      "bytes": 2368,
+      "sha256": "338eddab314303e90e7b876d6fdad656acfb8f71077dc9ce52fa1fbdcd1158b0"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__08_rssm_imagination__main.py.md",
+      "bytes": 1706,
+      "sha256": "2e886f9bc083f152e09ab07a5f4791e9f3b13e7ba4e2d344bfd10b9b4e06aeac"
+    },
+    {
+      "path": "source_code_companion/line_by_line/projects__09_latent_mpc__main.py.md",
+      "bytes": 2136,
+      "sha256": "0dda76a62ca823cbbef75c5e238213b45e1dfc5c02608b9697c3f86da5efe6b4"
+    },
+    {
+      "path": "start_render/Project_APEX_Apprenticeship_START_HERE.pdf",
+      "bytes": 99527,
+      "sha256": "fbf37da5dff522d98dcdd6a7569eb05de1db871ec15e1f40f85aa583301b9265"
+    },
+    {
+      "path": "start_render/page-1.png",
+      "bytes": 319539,
+      "sha256": "929177f5adb0cc73351f56b8e113ddb418fa025e5e79855ea7cdc752768e9946"
+    },
+    {
+      "path": "start_render/page-2.png",
+      "bytes": 332181,
+      "sha256": "829303c4b90f61203612fd6c3293ce30f073a9efbbfec7271dabbe0a7e2fbaac"
+    },
+    {
+      "path": "start_render/page-3.png",
+      "bytes": 349637,
+      "sha256": "76029be4b6bf70fab52791680e54b873c198dc68071412afcca5e334f0ac0c4b"
+    },
+    {
+      "path": "start_render/page-4.png",
+      "bytes": 291077,
+      "sha256": "aba8d439a09b0043dd0a3083d8da38d3eee3d824c776427b36d60ecfad7e7a64"
+    },
+    {
+      "path": "start_render/page-5.png",
+      "bytes": 265836,
+      "sha256": "bb2825b687c8c9893ebfbe1a5453e53cde01232c5d1a07c4c99cbdc11a1f2a69"
+    },
+    {
+      "path": "start_render/page-6.png",
+      "bytes": 225301,
+      "sha256": "04dc250103ec6756ea6a47a951e58e871864153a8efa2706b466bddf3f432caa"
+    },
+    {
+      "path": "textbook/build_core.py",
+      "bytes": 7164,
+      "sha256": "b90cb1205c840b6e7fdfdf3006ca85ef4d7c33a6688c36015e2a25164b2a01b8"
+    },
+    {
+      "path": "textbook/build_visual_atlas.py",
+      "bytes": 3196,
+      "sha256": "255becff08fcebc2042bee82ebf536a87a3816377b4614559d03deed9f6b6cab"
+    },
+    {
+      "path": "textbook/chapter_data.py",
+      "bytes": 141716,
+      "sha256": "f36fbf33a471a7893b4429fd5d71814ed183ecc9f0cd66d9a40353a4aa41056f"
+    },
+    {
+      "path": "textbook/chapters/01_1_build_a_simulator_before_you_build_a_neural_network.md",
+      "bytes": 9300,
+      "sha256": "fc466e66b2bd80d28a82a3ee17aadf644f4d283896fbd5fc90051a877bb24b78"
+    },
+    {
+      "path": "textbook/chapters/02_2_state_action_context_and_the_markov_question.md",
+      "bytes": 9155,
+      "sha256": "c45bdcd889784729e4ebaaab69c92b3103ad0891e2596c6349ed2e10e6bace31"
+    },
+    {
+      "path": "textbook/chapters/03_3_units_forces_and_numerical_integration.md",
+      "bytes": 9102,
+      "sha256": "023780478be58f7e165d19e5d2a1ad1851b8c17096f03c11b051639101ef0493"
+    },
+    {
+      "path": "textbook/chapters/04_4_sampling_aliasing_and_time_alignment.md",
+      "bytes": 8690,
+      "sha256": "405d1dcd414bf73aa611fd5939976fab9a4f2a21d1e26bb512cce2ea1967f569"
+    },
+    {
+      "path": "textbook/chapters/05_5_canonical_contracts_and_quality_gates.md",
+      "bytes": 9082,
+      "sha256": "61e474b3340f5ed6f068cc2b7651ec818eb86968dc7b7aae4fe3d6b9867c3d5f"
+    },
+    {
+      "path": "textbook/chapters/06_6_fastf1_and_openf1_ingest_real_evidence_without_polluting_the_core.md",
+      "bytes": 9249,
+      "sha256": "4541abd01bafcfee8081e0d468cf6168a7ed01d4a5c7ab43f9de65111b9a6292"
+    },
+    {
+      "path": "textbook/chapters/07_7_windows_session_splits_and_normalization_without_leakage.md",
+      "bytes": 8871,
+      "sha256": "b931b03203874e1f6844e4db4c0209c0cba31ac4e97a86d837e0fbc3c4233453"
+    },
+    {
+      "path": "textbook/chapters/08_8_statistics_baselines_and_uncertainty_as_engineering_controls.md",
+      "bytes": 9103,
+      "sha256": "260f607829fca3ea79b79a3c427a02f24237bdd55f93c084276731f28c166639"
+    },
+    {
+      "path": "textbook/chapters/09_9_tensors_autograd_and_the_training_loop_you_can_explain.md",
+      "bytes": 9829,
+      "sha256": "9446503b43476449e508f3df5a867a350c8938134fcf4af97d4ff633c142553b"
+    },
+    {
+      "path": "textbook/chapters/10_10_transition_models_and_why_rollouts_fail.md",
+      "bytes": 8844,
+      "sha256": "ffeba24cad7522491f3ef98aee349e248a4459d5604710c86c71d436ec406895"
+    },
+    {
+      "path": "textbook/chapters/11_11_recurrent_memory_and_the_gru_from_the_inside.md",
+      "bytes": 8880,
+      "sha256": "686808a9d89413f990f99d2076b80f34048ff1acd22ae85b8808e33e0c19c4ba"
+    },
+    {
+      "path": "textbook/chapters/12_12_classical_state_space_models_dynamics_as_memory.md",
+      "bytes": 8196,
+      "sha256": "86b5e698ec4c806a7070759589c9f5ed77f156b70a1414047dc92a9bda784949"
+    },
+    {
+      "path": "textbook/chapters/13_13_selective_state_space_models_and_what_mamba_changes.md",
+      "bytes": 8857,
+      "sha256": "20b3e341022b97c46c5bd7bad9c9be725fce4eba0d8fc05adbe067cea72fc739"
+    },
+    {
+      "path": "textbook/chapters/14_14_autoencoders_and_variational_latent_state.md",
+      "bytes": 9000,
+      "sha256": "4c4d5e54dd89fb75b0a9472a6d1573b74b3ad92c0598f9269a3d4d5be9d0bff0"
+    },
+    {
+      "path": "textbook/chapters/15_15_rssms_and_dreamer_learning_to_imagine_without_observations.md",
+      "bytes": 9277,
+      "sha256": "e1c092ecb81150b8b93d006a70a392ba3489a98fcae70fd584aa8cea0239ca05"
+    },
+    {
+      "path": "textbook/chapters/16_16_jepa_leworldmodel_and_fine_tuning_existing_representations.md",
+      "bytes": 10239,
+      "sha256": "101e13e01eda26020040ea1b71c628c69d014e5a9797d1dfb0a5e1e484c327d6"
+    },
+    {
+      "path": "textbook/chapters/17_17_evaluation_ablation_and_out_of_distribution_testing.md",
+      "bytes": 8309,
+      "sha256": "d3c526fff050a717de96fafd024bbdd27562771ab5bc0a6ef6090cd48e8a8474"
+    },
+    {
+      "path": "textbook/chapters/18_18_planning_with_mpc_and_the_cross_entropy_method.md",
+      "bytes": 9330,
+      "sha256": "aa645cbe5b6ed1de309da56a41d2f49509c0463287fd1b19ddd830a41fcb3978"
+    },
+    {
+      "path": "textbook/chapters/19_19_production_pipelines_airflow_registry_and_monitoring.md",
+      "bytes": 9062,
+      "sha256": "83399795af80b0333161b9f4e0d51dd22688eb16cc2bbe3329f4fe540d6415da"
+    },
+    {
+      "path": "textbook/chapters/20_20_build_project_apex_v1_end_to_end_and_then_outgrow_it.md",
+      "bytes": 10054,
+      "sha256": "2887f2d94a0c6e536d67ec4ae023ff41940940f4045b51f89e7d99e97b4610c0"
+    },
+    {
+      "path": "textbook/figures/01_simulation_loop.png",
+      "bytes": 55795,
+      "sha256": "4fac2887c9763d03e95e9f08d1b3ecfc111b740cb6acd42e3e98b8a74f7dd854"
+    },
+    {
+      "path": "textbook/figures/02_state_action_context.png",
+      "bytes": 55467,
+      "sha256": "8cf463ef4d80c7a229e336032d40bdbac724297bc77b682befd7fcd49c35e798"
+    },
+    {
+      "path": "textbook/figures/03_physics_integrator.png",
+      "bytes": 49962,
+      "sha256": "9140347c63eb69a32974d628ff2766c837daa0571c8cd720aaf530aad7c03a82"
+    },
+    {
+      "path": "textbook/figures/04_sampling.png",
+      "bytes": 56377,
+      "sha256": "80e5feea69fe220f406b0cfc5c5342962ed2835101d4b331ec3dc26ceb33b6d6"
+    },
+    {
+      "path": "textbook/figures/05_contract.png",
+      "bytes": 56733,
+      "sha256": "bb1a254ca2a149ec587290c0075b878a9b6e00f9dbcdfd7cbb25de98305ccae0"
+    },
+    {
+      "path": "textbook/figures/06_windows.png",
+      "bytes": 58111,
+      "sha256": "57564bf5baf21569f5a39f320b7e6a2955c37ad9b11a64bd56405d34bf5d82ed"
+    },
+    {
+      "path": "textbook/figures/07_baseline.png",
+      "bytes": 49309,
+      "sha256": "c3a604f2c3cc9587f2a972db3e5e5aa12fead33d64a4766106c57bd4d46f4a0c"
+    },
+    {
+      "path": "textbook/figures/08_autograd.png",
+      "bytes": 60032,
+      "sha256": "d2ae24d1dd4a558361635d9621b47edbc04dc30bc11a169bd8441f8269c52645"
+    },
+    {
+      "path": "textbook/figures/09_rollout.png",
+      "bytes": 52296,
+      "sha256": "56c736845f8f4d233a1631dffc193d9c7e03f4c212b97910400e89ef4bea6222"
+    },
+    {
+      "path": "textbook/figures/10_gru.png",
+      "bytes": 57449,
+      "sha256": "22bad4537081f00ac99dde0c8febeceaa93449c83a94437457bb6a2f774419e9"
+    },
+    {
+      "path": "textbook/figures/11_ssm.png",
+      "bytes": 59577,
+      "sha256": "fcb646fd1956ded075ac2be01208bc6719c0268c7cf9b98def50f9bd82ee0118"
+    },
+    {
+      "path": "textbook/figures/12_selective_ssm.png",
+      "bytes": 56795,
+      "sha256": "89b62de3291ab7afaf3a1f659e1d9d89cbafa53cf895c2713657c34cf8c5e355"
+    },
+    {
+      "path": "textbook/figures/13_latent.png",
+      "bytes": 64815,
+      "sha256": "3be213ede7444ef36fb4d7bde7486c6518ad31e3454081e480a19560684b8414"
+    },
+    {
+      "path": "textbook/figures/14_rssm.png",
+      "bytes": 66734,
+      "sha256": "96c9b4fc98a41eee21c438068d78757e2e86af3a171945ec56ddca9ba2f7e6b0"
+    },
+    {
+      "path": "textbook/figures/15_dreamer.png",
+      "bytes": 63689,
+      "sha256": "d4af138377be6a206b6ddf63922538df2dd50b7f5b88dfd0428eab1126a02c48"
+    },
+    {
+      "path": "textbook/figures/16_jepa.png",
+      "bytes": 58402,
+      "sha256": "fa6e0093a346cbec70aa5fbc00991d92525ba123bcab7e973b2a79c7c7e91975"
+    },
+    {
+      "path": "textbook/figures/17_evaluation.png",
+      "bytes": 51076,
+      "sha256": "9ee7506f93a8612dcc9ee3c392c8b5b3d0fc13b208a44d328935ed8bd0b3c0d9"
+    },
+    {
+      "path": "textbook/figures/18_cem.png",
+      "bytes": 61439,
+      "sha256": "b218a61b0112a5fbd7921d7496555ce7cd42a8c5949afe3aa0c5260173eff9bd"
+    },
+    {
+      "path": "textbook/figures/19_pipeline.png",
+      "bytes": 59574,
+      "sha256": "f4cfe29ee079660fb8228ea3754530fa168169b27921a59865a255baf6cf6984"
+    },
+    {
+      "path": "textbook/figures/20_apex.png",
+      "bytes": 66105,
+      "sha256": "13ef2ba39cd15da30c636d2478d1c17c5eb7ec3dab487fe8acd2cacbb84dc1c2"
+    },
+    {
+      "path": "textbook/figures/numeric_trace.png",
+      "bytes": 56470,
+      "sha256": "177bae76a98c6189ccc7c6317963c017b56f67b126f7e6d67a2f24cd68bc80a2"
+    },
+    {
+      "path": "textbook/make_figures.py",
+      "bytes": 6213,
+      "sha256": "8d3a1e1dec34eeaf1b629b13a082052004fb74d0ddd5da765aaa5f0b70d5ab92"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Engineering_Apprenticeship_Teaching_Core.docx",
+      "bytes": 1107496,
+      "sha256": "50585910ed2edddcedbdde42ad03c15378aeac1c99739636fbe65f8a96af50fe"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Engineering_Apprenticeship_Teaching_Core.md",
+      "bytes": 185164,
+      "sha256": "4180c2ae05a2c6e965d53f15d69546fbcd772a32d67fa36c68c603cf4ae76c0f"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Engineering_Apprenticeship_Teaching_Core.pdf",
+      "bytes": 1830200,
+      "sha256": "799a73fc7ab3a4d0f31fdef671e19ee676ba0dace2b686c9388a6eb72ae0d93f"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Executable_Lab_Manual.docx",
+      "bytes": 41508,
+      "sha256": "2051f98d8e73b08d316b496639cb12adb3fd7cc02db7248f5c053bfafd6f2716"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Executable_Lab_Manual.md",
+      "bytes": 64730,
+      "sha256": "0f0aa9629ee0ae78840e545071e6928c5b220fe9dcecf628be7313c9ce9fe6f3"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Executable_Lab_Manual.pdf",
+      "bytes": 373137,
+      "sha256": "43f63f90e0b2e7fc379af88214947002129ba8a102bccf4493d90319b6ad4856"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Production_Debugging_Casebook.docx",
+      "bytes": 35320,
+      "sha256": "e9e5e17bc64939f0d6837393ce33cdae0e8005a6d06e0ad1d97fe7d583ba5ad2"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Production_Debugging_Casebook.md",
+      "bytes": 45985,
+      "sha256": "5d108c16ac0b70568616003cde6014f06c03511668da89a05f7bf19aaca81588"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Production_Debugging_Casebook.pdf",
+      "bytes": 286715,
+      "sha256": "58bfce23333db8c6be3c87ade53b9f0f8ae43f9b7208d29b9d70be09cdd3fc8d"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Ten_Project_Instructor_Ladder.docx",
+      "bytes": 29885,
+      "sha256": "2347c665a908681fba8c9140d9ac7ece5f35c90780eee4e86eef03d8673ff922"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Ten_Project_Instructor_Ladder.md",
+      "bytes": 22682,
+      "sha256": "f6ba1e8a749ba957460eefe7b88872704d3178bf63c89a5831b127deda85dc9c"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Ten_Project_Instructor_Ladder.pdf",
+      "bytes": 166455,
+      "sha256": "8eee5471b02b704d7fa3c9e4fee3958ab104de4c8fe28e327ed7c8c2805aa541"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Tensor_Memory_and_Data_Flow_Visual_Atlas.docx",
+      "bytes": 1032893,
+      "sha256": "8b70d17755696d37be661273822fcdb6311081e46c7e6229bc69598931110b5e"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Tensor_Memory_and_Data_Flow_Visual_Atlas.md",
+      "bytes": 90459,
+      "sha256": "dd07543b99f5dc5e001be4270caec3896e08c25ae6293570e9727e6e03654621"
+    },
+    {
+      "path": "textbook/output/Project_APEX_Tensor_Memory_and_Data_Flow_Visual_Atlas.pdf",
+      "bytes": 1271625,
+      "sha256": "4f7846ed5b152cdfe570ece036fd74b9ec14a016b36370c1fd3f60ed7f5205a9"
+    }
+  ]
+}

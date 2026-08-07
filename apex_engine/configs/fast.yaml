@@ -1,0 +1,39 @@
+project_name: Project APEX
+seed: 42
+artifacts_dir: artifacts/runs
+data:
+  source: synthetic
+  raw_dir: data/raw
+  processed_dir: data/processed
+  sample_hz: 5
+  sessions: 8
+  laps_per_session: 3
+  track_length_m: 5200
+  session_seconds: 210
+  train_fraction: 0.625
+  val_fraction: 0.125
+  test_fraction: 0.25
+  sequence_length: 32
+  prediction_horizon: 8
+model:
+  kind: gru
+  hidden_dim: 64
+  latent_dim: 16
+  layers: 1
+  dropout: 0.0
+training:
+  epochs: 4
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  patience: 3
+  device: cpu
+  max_train_windows: 3500
+simulation:
+  rollout_steps: 80
+  throttle_scale: 1.0
+  brake_scale: 1.0
+  grip_multiplier: 1.0
+  rain_delta: 0.0
+  tyre_degradation_multiplier: 1.0

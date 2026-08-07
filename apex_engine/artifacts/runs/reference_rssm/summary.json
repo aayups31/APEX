@@ -1,0 +1,123 @@
+{
+  "run_id": "reference_rssm",
+  "status": "succeeded",
+  "started_at": "2026-08-01T20:14:48.371245+00:00",
+  "finished_at": "2026-08-01T20:14:51.716957+00:00",
+  "canonical_data": "artifacts/runs/reference_rssm/canonical_telemetry.csv",
+  "quality": {
+    "rows": 2250,
+    "sessions": 5,
+    "drivers": 5,
+    "tracks": 3,
+    "null_cells": 0,
+    "duplicate_frames": 0,
+    "out_of_range_cells": 0,
+    "passed": true
+  },
+  "splits": {
+    "train": [
+      "SYN_004",
+      "SYN_002",
+      "SYN_003"
+    ],
+    "val": [
+      "SYN_001"
+    ],
+    "test": [
+      "SYN_000"
+    ]
+  },
+  "model": {
+    "kind": "rssm",
+    "input_dim": 16,
+    "state_dim": 5,
+    "hidden_dim": 64,
+    "latent_dim": 12,
+    "layers": 1,
+    "dropout": 0.0,
+    "best_val_loss": 0.31118967703410555,
+    "epochs_completed": 2
+  },
+  "metrics": {
+    "overall_mae": 2.741731882095337,
+    "overall_rmse": 5.132884979248047,
+    "speed_mae_mps": 8.024961471557617,
+    "speed_rmse_mps": 9.712557792663574,
+    "per_feature": {
+      "speed_mps": {
+        "mae": 8.024961471557617,
+        "rmse": 9.712557792663574
+      },
+      "acceleration_mps2": {
+        "mae": 4.447118759155273,
+        "rmse": 6.052732944488525
+      },
+      "track_progress_sin": {
+        "mae": 0.46316760778427124,
+        "rmse": 0.5169259309768677
+      },
+      "track_progress_cos": {
+        "mae": 0.6229919791221619,
+        "rmse": 0.682411789894104
+      },
+      "tyre_age_laps": {
+        "mae": 0.1504184901714325,
+        "rmse": 0.17401887476444244
+      }
+    },
+    "horizon_mae": [
+      2.7239434719085693,
+      2.7355387210845947,
+      2.7409074306488037,
+      2.7277932167053223,
+      2.7397847175598145,
+      2.756612777709961,
+      2.7496044635772705,
+      2.7596678733825684
+    ],
+    "horizon_rmse": [
+      5.126088619232178,
+      5.144942283630371,
+      5.134089469909668,
+      5.104147911071777,
+      5.131618022918701,
+      5.138162136077881,
+      5.1296772956848145,
+      5.154211044311523
+    ],
+    "physical_violations": {
+      "negative_speed_rate": 0.0,
+      "extreme_speed_rate": 0.0,
+      "progress_unit_circle_error": 0.873603343963623
+    },
+    "samples": 411
+  },
+  "best_ablation": {
+    "ablation": "no_weather",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs",
+      "steering_proxy",
+      "curvature",
+      "grip_level"
+    ],
+    "speed_mae_mps": 0.19172045588493347,
+    "overall_mae": 0.22458280622959137
+  },
+  "publication": {
+    "run_dir": "artifacts/runs/reference_rssm",
+    "model_kind": "rssm",
+    "rollout_preview": "artifacts/runs/reference_rssm/rollout_preview.csv",
+    "test_sessions": [
+      "SYN_000"
+    ],
+    "ui_command": "apexsim ui --run-dir artifacts/runs/reference_rssm"
+  }
+}

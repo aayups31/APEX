@@ -1,0 +1,8 @@
+
+# APEX local data and generated complete-simulation artifacts
+.cache/
+data/raw_downloads/
+data/processed/
+artifacts/complete_sim_*/
+*.parquet
+.env

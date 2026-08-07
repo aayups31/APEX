@@ -1,0 +1,91 @@
+[
+  {
+    "ablation": "no_weather",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs",
+      "steering_proxy",
+      "curvature",
+      "grip_level"
+    ],
+    "speed_mae_mps": 0.19172045588493347,
+    "overall_mae": 0.22458280622959137
+  },
+  {
+    "ablation": "state_plus_actions",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs"
+    ],
+    "speed_mae_mps": 0.228533536195755,
+    "overall_mae": 0.2601317763328552
+  },
+  {
+    "ablation": "full_context",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs",
+      "steering_proxy",
+      "curvature",
+      "air_temp_c",
+      "track_temp_c",
+      "rainfall",
+      "wind_speed_mps",
+      "grip_level"
+    ],
+    "speed_mae_mps": 0.23219391703605652,
+    "overall_mae": 0.26452624797821045
+  },
+  {
+    "ablation": "state_only",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps"
+    ],
+    "speed_mae_mps": 0.24363359808921814,
+    "overall_mae": 0.28941163420677185
+  },
+  {
+    "ablation": "no_track_geometry",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs",
+      "air_temp_c",
+      "track_temp_c",
+      "rainfall",
+      "wind_speed_mps",
+      "grip_level"
+    ],
+    "speed_mae_mps": 0.2823992669582367,
+    "overall_mae": 0.40458253026008606
+  }
+]

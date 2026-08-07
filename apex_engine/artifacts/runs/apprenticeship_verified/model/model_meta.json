@@ -1,0 +1,11 @@
+{
+  "kind": "gru",
+  "input_dim": 16,
+  "state_dim": 5,
+  "hidden_dim": 64,
+  "latent_dim": 16,
+  "layers": 1,
+  "dropout": 0.0,
+  "best_val_loss": 0.0030510774085996673,
+  "epochs_completed": 4
+}

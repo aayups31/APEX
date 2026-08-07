@@ -1,0 +1,17 @@
+project_name: Project APEX Complete Simulation
+seed: 42
+simulation:
+  dt_s: 0.25
+  total_laps: 6
+  drs_enabled_from_lap: 3
+  drs_detection_gap_s: 1.0
+  pit_lane_time_loss_s: 18.0
+  max_simulation_time_s: 2400.0
+track:
+  kind: synthetic
+  track_id: apex_test_track
+  length_m: 3600.0
+  points: 900
+entries:
+  count: 6
+  note: The runnable demo constructs entries in apexsim.examples.complete_sim_demo.

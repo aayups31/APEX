@@ -1,0 +1,74 @@
+id,phase,priority,workstream,task,depends_on,acceptance_gate,status
+R001,R1,P0,foundation,Create machine-readable paper registry,,automated test,DONE
+R002,R1,P0,foundation,Vendor user-provided papers into research folder,,automated test,DONE
+R003,R1,P0,foundation,Implement Fienia-style lap strategy state/action model,,automated test,DONE
+R004,R1,P0,foundation,Implement strategy feasibility projection,,automated test,DONE
+R005,R1,P0,foundation,Implement dependency-free strategy environment,,automated test,DONE
+R006,R1,P0,foundation,Implement four-wheel tyre-energy proxy,,automated test,DONE
+R007,R1,P0,foundation,Implement event-safe tyre forecasting windows,,automated test,DONE
+R008,R1,P0,foundation,Implement ridge/GRU forecasting protocol and metrics,,automated test,DONE
+R009,R1,P0,foundation,Implement latent tyre degradation starter,,automated test,DONE
+R010,R1,P0,foundation,Implement unified strategy interface,,automated test,DONE
+R011,R1,P0,foundation,Define future game evidence contract,,automated test,DONE
+R012,R1,P0,replication,Create symbol-to-code equation table for FIENI_2025,,reviewed equation map,TODO
+R013,R1,P0,replication,Add hand-calculated FIENI transition fixture,equation table,numeric match within 1e-9,TODO
+R014,R1,P0,replication,Implement exact enumeration oracle for tiny races,strategy model,identical to beam search on tiny cases,TODO
+R015,R1,P0,optimization,Implement CasADi continuous lap-map surrogate,equation table,gradient and bound tests,TODO
+R016,R1,P1,optimization,Implement open-source MINLP path or documented solver adapter,CasADi maps,small-case optimum recovered,TODO
+R017,R1,P0,RL,Train SAC on identical FIENI environment,exact oracle,regret/runtime reported,TODO
+R018,R1,P0,replication,Reconstruct nominal and disturbance paper scenarios,SAC + oracle,directional/published tolerance report,TODO
+R019,R2,P0,data,Build immutable FastF1/OpenF1 event manifests,,"hashes, versions and schemas stored",TODO
+R020,R2,P0,data,Create permanent untouched benchmark event set,event manifests,no benchmark used in calibration,TODO
+R021,R2,P0,tyres,Fit fuel-corrected latent tyre degradation model,public lap/stint data,rolling-origin held-out metrics,TODO
+R022,R2,P1,tyres,Add Bayesian hierarchical compound/track/driver model,latent starter,posterior predictive calibration,TODO
+R023,R2,P1,tyres,Add robust skewed-t observation model,Bayesian model,CRPS/RMSPE improvement or reject,TODO
+R024,R2,P0,forecasting,Build tyre-energy proxy dataset with provenance,canonical telemetry,measured/proxy flags complete,TODO
+R025,R2,P0,forecasting,"Benchmark linear, ridge, XGBoost, GRU, LSTM and TFT",proxy dataset,matched train/test protocol,TODO
+R026,R2,P0,forecasting,Evaluate seen versus unseen tracks,forecast benchmark,separate confidence intervals,TODO
+R027,R2,P1,XAI,Implement temporal perturbation/TIME-like explanations,forecast models,faithfulness tests,TODO
+R028,R2,P1,XAI,Implement feasible counterfactual explanations,forecast models,counterfactual validity tests,TODO
+R029,R3,P0,track,Reconstruct curvilinear track from public position data,event manifests,closure and curvature error gates,TODO
+R030,R3,P0,vehicle,Calibrate longitudinal acceleration/drag model,track + telemetry,held-out section error beats baseline,TODO
+R031,R3,P0,vehicle,Add bicycle lateral dynamics and friction ellipse,longitudinal model,force and stability tests,TODO
+R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/identifiability report,TODO
+R033,R3,P0,replay,Align recorded controls and engine state,canonical replay,coverage > declared threshold,TODO
+R034,R3,P0,replay,Report section/lap/stint open-loop errors,alignment,matched horizons and regimes,TODO
+R035,R4,P0,driver,Calibrate transparent driver policy,single-car replay,complete held-out laps,TODO
+R036,R4,P1,driver,Train imitation policy with event-level splits,transparent policy,beats transparent policy without instability,TODO
+R037,R4,P0,closed-loop,Add compounding-error and recovery benchmark,driver policy,bounded multi-lap drift,TODO
+R038,R4,P0,safety,Add OOD detector and fallback controller,closed-loop benchmark,abstention/fallback tests,TODO
+R039,R5,P0,tyres,Implement two-node tyre thermal model,vehicle replay,heat balance and temperature response,TODO
+R040,R5,P0,tyres,Connect sliding energy to wear state,thermal model,monotonic/sensitivity tests,TODO
+R041,R5,P0,tyres,Calibrate compound-specific pace/wear priors,public stints,held-out crossover prediction,TODO
+R042,R5,P1,optimization,Implement multi-lap tyre optimal-control test,thermal/wear model,mesh convergence and pit crossover,TODO
+R043,R5,P0,energy,Implement sector-level ERS deploy/harvest model,vehicle model,state and terminal bounds,TODO
+R044,R5,P0,energy,Implement shrinking-horizon energy MPC,ERS model,disturbance response and runtime,TODO
+R045,R5,P0,strategy,"Integrate pit loss, inlap and outlap calibration",public data,held-out pit delta error,TODO
+R046,R6,P0,stochastic,Fit driver lap-time residual distributions,calibrated kernel,held-out distribution tests,TODO
+R047,R6,P0,stochastic,Fit pit-duration distributions,pit data,coverage and goodness-of-fit,TODO
+R048,R6,P1,stochastic,Fit incident/failure hazard models,historical race events,held-out event calibration,TODO
+R049,R6,P0,race-control,Calibrate VSC/SC gap compression and restart,event data,replay error and invariants,TODO
+R050,R6,P0,traffic,"Calibrate dirty air, DRS and overtaking",multi-car public data,held-out pass/gap statistics,TODO
+R051,R6,P0,Monte Carlo,Add convergence and strategy-rank stability analysis,all stochastic models,stable ranking/CI at budget,TODO
+R052,R7,P0,oracle,Implement dynamic-programming pit oracle,race model,exact small-instance optimum,TODO
+R053,R7,P1,game-theory,Implement two-car Stackelberg benchmark,DP oracle,equilibrium and exploitability report,TODO
+R054,R7,P0,RL,Train explainable race-strategy RL baseline,calibrated race model,beats fixed/rule baselines,TODO
+R055,R7,P0,XAI,Evaluate policy surrogate and counterfactual fidelity,RL baseline,fidelity/stability metrics,TODO
+R056,R7,P0,hybrid,Implement RL discrete decisions plus MPC energy refinement,RL + energy MPC,constraint satisfaction and lower regret,TODO
+R057,R8,P0,multi-agent,Implement opponent interaction state,full-field simulator,ablation improves prediction/decision,TODO
+R058,R8,P0,multi-agent,Create fixed-opponent policy curriculum,interaction state,unseen opponent report,TODO
+R059,R8,P0,multi-agent,Implement self-play population,curriculum,no collapse/cycling without detection,TODO
+R060,R8,P0,multi-agent,Measure exploitability and robustness,self-play,population evaluation matrix,TODO
+R061,R8,P1,world-model,Factor controllable and noncontrollable latent dynamics,RSSM + multi-agent data,latent/intervention probes,TODO
+R062,R8,P1,world-model,Implement TD-MPC2-style latent planner,residual world model,beats CEM/GRU on matched budget,TODO
+R063,R9,P0,game,Implement UDP adapter to frozen evidence contract,game purchase,contract validation passes,TODO
+R064,R9,P0,game,Run scripted vehicle step/braking/corner tests,UDP adapter,pre-registered directional/magnitude gates,TODO
+R065,R9,P0,game,Run tyre energy/temperature/wear campaign,UDP adapter + tyre model,cross-domain relationship report,TODO
+R066,R9,P0,game,Run fuel/ERS resource campaign,UDP adapter + energy model,state transition and terminal tests,TODO
+R067,R9,P0,game,Run deterministic strategy scenarios,UDP adapter + planners,regret and causal response report,TODO
+R068,R9,P0,domain-shift,Quantify public-data versus game-domain shift,all game campaigns,no silent retuning,TODO
+R069,R10,P0,benchmark,Freeze multi-season multi-track public benchmark,R2-R9,public benchmark manifest,TODO
+R070,R10,P0,benchmark,Publish reproducible baseline leaderboard,benchmark,all methods same splits/horizons,TODO
+R071,R10,P0,uncertainty,Calibrate end-to-end race outcome intervals,benchmark,coverage/sharpness gates,TODO
+R072,R10,P0,red-team,Run planner exploitation and adversarial scenario suite,end-to-end system,failures documented and mitigated,TODO
+R073,R10,P0,release,"Create model cards, dataset cards and legal review",all gates,release checklist complete,TODO

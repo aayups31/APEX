@@ -1,0 +1,11 @@
+{
+  "kind": "rssm",
+  "input_dim": 16,
+  "state_dim": 5,
+  "hidden_dim": 64,
+  "latent_dim": 12,
+  "layers": 1,
+  "dropout": 0.0,
+  "best_val_loss": 0.31118967703410555,
+  "epochs_completed": 2
+}

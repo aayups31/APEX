@@ -1,0 +1,124 @@
+{
+  "run_id": "reference_gru",
+  "status": "succeeded",
+  "started_at": "2026-08-01T20:13:18.086436+00:00",
+  "finished_at": "2026-08-01T20:13:34.686763+00:00",
+  "canonical_data": "artifacts/runs/reference_gru/canonical_telemetry.csv",
+  "quality": {
+    "rows": 8400,
+    "sessions": 8,
+    "drivers": 5,
+    "tracks": 3,
+    "null_cells": 0,
+    "duplicate_frames": 0,
+    "out_of_range_cells": 0,
+    "passed": true
+  },
+  "splits": {
+    "train": [
+      "SYN_003",
+      "SYN_004",
+      "SYN_002",
+      "SYN_007",
+      "SYN_006"
+    ],
+    "val": [
+      "SYN_001"
+    ],
+    "test": [
+      "SYN_005",
+      "SYN_000"
+    ]
+  },
+  "model": {
+    "kind": "gru",
+    "input_dim": 16,
+    "state_dim": 5,
+    "hidden_dim": 64,
+    "latent_dim": 16,
+    "layers": 1,
+    "dropout": 0.0,
+    "best_val_loss": 0.003264768580265809,
+    "epochs_completed": 4
+  },
+  "metrics": {
+    "overall_mae": 1.4742075204849243,
+    "overall_rmse": 3.090803861618042,
+    "speed_mae_mps": 3.8091752529144287,
+    "speed_rmse_mps": 5.6728339195251465,
+    "per_feature": {
+      "speed_mps": {
+        "mae": 3.8091752529144287,
+        "rmse": 5.6728339195251465
+      },
+      "acceleration_mps2": {
+        "mae": 2.695481777191162,
+        "rmse": 3.8724234104156494
+      },
+      "track_progress_sin": {
+        "mae": 0.31619495153427124,
+        "rmse": 0.4993877708911896
+      },
+      "track_progress_cos": {
+        "mae": 0.32490968704223633,
+        "rmse": 0.47381794452667236
+      },
+      "tyre_age_laps": {
+        "mae": 0.22527605295181274,
+        "rmse": 0.3387351930141449
+      }
+    },
+    "horizon_mae": [
+      1.3749080896377563,
+      1.436307430267334,
+      1.4389492273330688,
+      1.4557132720947266,
+      1.4783209562301636,
+      1.5100963115692139,
+      1.535711646080017,
+      1.5636482238769531
+    ],
+    "horizon_rmse": [
+      2.883643865585327,
+      2.959049940109253,
+      2.9524033069610596,
+      2.995666742324829,
+      3.0738062858581543,
+      3.1773457527160645,
+      3.276010751724243,
+      3.374368906021118
+    ],
+    "physical_violations": {
+      "negative_speed_rate": 0.0,
+      "extreme_speed_rate": 0.0,
+      "progress_unit_circle_error": 0.4372806251049042
+    },
+    "samples": 1200
+  },
+  "best_ablation": {
+    "ablation": "state_plus_actions",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs"
+    ],
+    "speed_mae_mps": 0.19578233361244202,
+    "overall_mae": 0.23439976572990417
+  },
+  "publication": {
+    "run_dir": "artifacts/runs/reference_gru",
+    "model_kind": "gru",
+    "rollout_preview": "artifacts/runs/reference_gru/rollout_preview.csv",
+    "test_sessions": [
+      "SYN_005",
+      "SYN_000"
+    ],
+    "ui_command": "apexsim ui --run-dir artifacts/runs/reference_gru"
+  }
+}

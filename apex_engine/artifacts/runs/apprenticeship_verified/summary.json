@@ -1,0 +1,124 @@
+{
+  "run_id": "apprenticeship_verified",
+  "status": "succeeded",
+  "started_at": "2026-08-01T21:57:24.969781+00:00",
+  "finished_at": "2026-08-01T21:57:40.830664+00:00",
+  "canonical_data": "artifacts/runs/apprenticeship_verified/canonical_telemetry.csv",
+  "quality": {
+    "rows": 8400,
+    "sessions": 8,
+    "drivers": 5,
+    "tracks": 3,
+    "null_cells": 0,
+    "duplicate_frames": 0,
+    "out_of_range_cells": 0,
+    "passed": true
+  },
+  "splits": {
+    "train": [
+      "SYN_003",
+      "SYN_004",
+      "SYN_002",
+      "SYN_007",
+      "SYN_006"
+    ],
+    "val": [
+      "SYN_001"
+    ],
+    "test": [
+      "SYN_005",
+      "SYN_000"
+    ]
+  },
+  "model": {
+    "kind": "gru",
+    "input_dim": 16,
+    "state_dim": 5,
+    "hidden_dim": 64,
+    "latent_dim": 16,
+    "layers": 1,
+    "dropout": 0.0,
+    "best_val_loss": 0.0030510774085996673,
+    "epochs_completed": 4
+  },
+  "metrics": {
+    "overall_mae": 0.9785013198852539,
+    "overall_rmse": 2.0674896240234375,
+    "speed_mae_mps": 2.9289891719818115,
+    "speed_rmse_mps": 4.212084770202637,
+    "per_feature": {
+      "speed_mps": {
+        "mae": 2.9289891719818115,
+        "rmse": 4.212084770202637
+      },
+      "acceleration_mps2": {
+        "mae": 1.0207277536392212,
+        "rmse": 1.695682168006897
+      },
+      "track_progress_sin": {
+        "mae": 0.3790876567363739,
+        "rmse": 0.619173526763916
+      },
+      "track_progress_cos": {
+        "mae": 0.32321396470069885,
+        "rmse": 0.4956877529621124
+      },
+      "tyre_age_laps": {
+        "mae": 0.24048782885074615,
+        "rmse": 0.35565245151519775
+      }
+    },
+    "horizon_mae": [
+      0.9039809703826904,
+      0.9481138586997986,
+      0.9675042033195496,
+      0.9812995791435242,
+      0.9831751585006714,
+      1.0001401901245117,
+      1.010424256324768,
+      1.033370852470398
+    ],
+    "horizon_rmse": [
+      1.8987176418304443,
+      2.013657331466675,
+      2.0459017753601074,
+      2.0637426376342773,
+      2.0762076377868652,
+      2.107457160949707,
+      2.1412765979766846,
+      2.1804416179656982
+    ],
+    "physical_violations": {
+      "negative_speed_rate": 0.0,
+      "extreme_speed_rate": 0.0,
+      "progress_unit_circle_error": 0.29810675978660583
+    },
+    "samples": 1200
+  },
+  "best_ablation": {
+    "ablation": "state_plus_actions",
+    "features": [
+      "speed_mps",
+      "acceleration_mps2",
+      "track_progress_sin",
+      "track_progress_cos",
+      "tyre_age_laps",
+      "throttle",
+      "brake",
+      "gear_norm",
+      "drs"
+    ],
+    "speed_mae_mps": 0.19578233361244202,
+    "overall_mae": 0.23439976572990417
+  },
+  "publication": {
+    "run_dir": "artifacts/runs/apprenticeship_verified",
+    "model_kind": "gru",
+    "rollout_preview": "artifacts/runs/apprenticeship_verified/rollout_preview.csv",
+    "test_sessions": [
+      "SYN_005",
+      "SYN_000"
+    ],
+    "ui_command": "apexsim ui --run-dir artifacts/runs/apprenticeship_verified"
+  }
+}

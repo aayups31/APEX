@@ -1,0 +1,10 @@
+{
+  "run_dir": "artifacts/runs/apprenticeship_verified",
+  "model_kind": "gru",
+  "rollout_preview": "artifacts/runs/apprenticeship_verified/rollout_preview.csv",
+  "test_sessions": [
+    "SYN_005",
+    "SYN_000"
+  ],
+  "ui_command": "apexsim ui --run-dir artifacts/runs/apprenticeship_verified"
+}

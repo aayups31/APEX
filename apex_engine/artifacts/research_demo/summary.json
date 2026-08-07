@@ -1,0 +1,20 @@
+{
+  "paper_count": 22,
+  "strategy": {
+    "race_time_s": 772.6651075170051,
+    "compound_changed": true,
+    "residual_fuel_energy_mj": 0.0,
+    "residual_battery_mj": 0.0
+  },
+  "tyre_energy": {
+    "train_windows": 420,
+    "test_windows": 140,
+    "ridge_test_rmse": 0.05547165451706025,
+    "target_quality": "synthetic proxy, not proprietary measured tyre energy"
+  },
+  "state_space": {
+    "rows": 20,
+    "pit_reset_lap": 11,
+    "final_latent_degradation_s": 0.28142252793994854
+  }
+}
