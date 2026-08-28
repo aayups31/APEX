@@ -15,6 +15,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, ConfigDict, Field
 
+from apexsim import __version__
 from apexsim.examples.complete_sim_demo import build_demo
 from apexsim.registry import RunRegistry
 
@@ -199,7 +200,7 @@ def create_api(artifacts_dir: str | Path = "artifacts") -> FastAPI:
     web_root = Path(__file__).with_name("web")
     app = FastAPI(
         title="APEX Simulation Platform",
-        version="0.4.0",
+        version=__version__,
         description="Evidence-linked motorsport simulation, replay and strategy research API.",
     )
     app.mount("/assets", StaticFiles(directory=web_root), name="assets")

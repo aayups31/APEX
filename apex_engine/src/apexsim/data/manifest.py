@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from apexsim import __version__
 from apexsim.provenance import file_sha256, payload_sha256
 
 SOURCE_MANIFEST_SCHEMA = "apex-source-manifest-v1"
@@ -37,7 +38,7 @@ class SourceManifest:
     query: dict[str, Any]
     terms_url: str
     license_id: str | None = None
-    adapter_version: str = "0.3.0"
+    adapter_version: str = __version__
     canonical_schema_version: str = "apex-canonical-v1"
     schema_version: str = SOURCE_MANIFEST_SCHEMA
     accessed_at_utc: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
