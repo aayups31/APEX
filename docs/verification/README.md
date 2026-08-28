@@ -7,6 +7,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [Original engine report](original-engine-report.md)
 - [Complete simulation report](simulation-report.md)
 - [Research report](research-report.md)
+- [Foundation and local platform report](foundation-platform-report.md)
 
 ## Purpose
 

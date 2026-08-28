@@ -1,9 +1,9 @@
 task_id,phase,phase_name,priority,status,title,dependencies,acceptance_criteria,evidence_path,notes
-P0-01,P0,Foundation,P0,NOT_STARTED,Run all original and complete-sim tests,P0,11 tests pass from clean environment,,
-P0-02,P0,Foundation,P0,NOT_STARTED,Reproduce six-car demo,P0-01,Artifacts and standings are deterministic for fixed seed,,
-P0-03,P0,Foundation,P0,NOT_STARTED,Write state/action/context diagram,P0-02,"Every field has units, observed/latent label and owner",,
-P0-04,P0,Foundation,P0,NOT_STARTED,Add run manifest hash capture,P0-01,Run records source/config/environment hashes,,
-P0-05,P0,Foundation,P0,NOT_STARTED,Add physical invariant checker,P0-02,Invalid states fail tests with useful diagnostics,,
+P0-01,P0,Foundation,P0,DONE,Run all original and complete-sim tests,P0,Full suite passes on clean Python 3.11 and 3.12 environments,docs/verification/foundation-platform-report.md,GitHub Actions run 33192144711 passed both matrix jobs
+P0-02,P0,Foundation,P0,DONE,Reproduce six-car demo,P0-01,Artifacts and standings are deterministic for fixed seed,apex_engine/tests/test_provenance.py,Seed 123 produces byte-identical telemetry standings events and quality artifacts
+P0-03,P0,Foundation,P0,DONE,Write state/action/context diagram,P0-02,"Every field has units, observed/latent label and owner",docs/architecture/simulation-state-action-contract.md,Contract apex-sim-state-action-v1 records flow ownership truth class units and invariants
+P0-04,P0,Foundation,P0,DONE,Add run manifest hash capture,P0-01,Run records source/config/environment hashes,apex_engine/tests/test_provenance.py,Manifest v1 captures clean or dirty source environment config input and artifact hashes
+P0-05,P0,Foundation,P0,DONE,Add physical invariant checker,P0-02,Invalid states fail tests with useful diagnostics,apex_engine/tests/test_complete_sim_validation.py,Simulation aborts with named diagnostics for temporal resource control position and terminal violations
 P1-01,P1,Data contracts,P0,NOT_STARTED,Define session/lap/stint/weather/race-control Parquet schemas,P0-03,Schemas versioned and validated,,
 P1-02,P1,Data contracts,P0,NOT_STARTED,Implement immutable source manifest,P0-04,"Every download records query, time, hashes and terms URL",,
 P1-03,P1,Data contracts,P0,NOT_STARTED,Implement FastF1 session downloader,P1-02,One session rebuilds from cache,,
