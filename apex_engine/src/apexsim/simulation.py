@@ -6,7 +6,7 @@ import numpy as np
 import torch
 from torch import nn
 
-from apexsim.contracts import ACTION_COLUMNS, CONTEXT_COLUMNS, MODEL_INPUT_COLUMNS, STATE_COLUMNS
+from apexsim.contracts import MODEL_INPUT_COLUMNS
 from apexsim.data.features import Standardizer
 from apexsim.models.rssm import RSSMWorldModel
 

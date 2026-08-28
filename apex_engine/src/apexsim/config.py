@@ -24,7 +24,7 @@ class DataConfig(BaseModel):
     prediction_horizon: int = Field(8, ge=1)
 
     @model_validator(mode="after")
-    def fractions_sum_to_one(self) -> "DataConfig":
+    def fractions_sum_to_one(self) -> DataConfig:
         total = self.train_fraction + self.val_fraction + self.test_fraction
         if abs(total - 1.0) > 1e-6:
             raise ValueError("train/val/test fractions must sum to 1.0")

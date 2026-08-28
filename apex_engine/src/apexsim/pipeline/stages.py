@@ -4,7 +4,6 @@ import json
 import shutil
 from pathlib import Path
 
-import joblib
 import numpy as np
 import pandas as pd
 import torch
@@ -111,7 +110,7 @@ def train_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -> d
     meta_path = model_dir / "model_meta.json"
     if checkpoint.exists() and meta_path.exists():
         return json.loads(meta_path.read_text(encoding="utf-8"))
-    _, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
+    _, _standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
     if len(datasets["train"]) == 0 or len(datasets["val"]) == 0:
         raise RuntimeError("Not enough windows after session split; increase session duration or count.")
     train_loader = DataLoader(datasets["train"], batch_size=config.training.batch_size, shuffle=True)
@@ -166,7 +165,7 @@ def ablation_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -
     test = frame[frame.session_id.isin(splits["test"])].copy()
     feature_sets = {
         "state_only": STATE_COLUMNS,
-        "state_plus_actions": STATE_COLUMNS + ["throttle", "brake", "gear_norm", "drs"],
+        "state_plus_actions": [*STATE_COLUMNS, "throttle", "brake", "gear_norm", "drs"],
         "full_context": MODEL_INPUT_COLUMNS,
         "no_weather": [c for c in MODEL_INPUT_COLUMNS if c not in {"rainfall", "air_temp_c", "track_temp_c", "wind_speed_mps"}],
         "no_track_geometry": [c for c in MODEL_INPUT_COLUMNS if c not in {"curvature", "steering_proxy", "track_progress_sin", "track_progress_cos"}],
@@ -183,9 +182,9 @@ def ablation_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -
         same_test = test.session_id.iloc[:-1].to_numpy() == test.session_id.iloc[1:].to_numpy()
         x_test, y_test = x_test[same_test], y_test[same_test]
         from sklearn.linear_model import Ridge
-        from sklearn.preprocessing import StandardScaler
-        from sklearn.pipeline import make_pipeline
         from sklearn.multioutput import MultiOutputRegressor
+        from sklearn.pipeline import make_pipeline
+        from sklearn.preprocessing import StandardScaler
 
         model = make_pipeline(StandardScaler(), MultiOutputRegressor(Ridge(alpha=1.0)))
         model.fit(x_train, y_train)
@@ -207,7 +206,7 @@ def publish_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) ->
     output = run_dir / "publication.json"
     if output.exists():
         return json.loads(output.read_text(encoding="utf-8"))
-    frame, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
+    _frame, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
     model = load_trained_model(config, run_dir)
     sample = datasets["test"][0]
     history = sample["history"].unsqueeze(0)

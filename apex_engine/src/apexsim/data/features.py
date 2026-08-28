@@ -16,7 +16,7 @@ class Standardizer:
     target_std: np.ndarray
 
     @classmethod
-    def fit(cls, frame: pd.DataFrame) -> "Standardizer":
+    def fit(cls, frame: pd.DataFrame) -> Standardizer:
         x = frame[MODEL_INPUT_COLUMNS].to_numpy(np.float32)
         y = frame[TARGET_COLUMNS].to_numpy(np.float32)
         x_std = x.std(axis=0)
@@ -46,5 +46,5 @@ class Standardizer:
         }
 
     @classmethod
-    def from_dict(cls, payload: dict[str, list[float]]) -> "Standardizer":
+    def from_dict(cls, payload: dict[str, list[float]]) -> Standardizer:
         return cls(**{key: np.asarray(value, dtype=np.float32) for key, value in payload.items()})

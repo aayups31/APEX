@@ -1,12 +1,12 @@
 from __future__ import annotations
 
+from collections.abc import Callable, Iterable
 from dataclasses import dataclass
-from typing import Callable, Iterable
 
 import numpy as np
 import pandas as pd
 
-from apexsim.sim_core.race import RaceResult, RaceSimulator
+from apexsim.sim_core.race import RaceSimulator
 from apexsim.sim_core.types import PitStopPlan, TyreCompound
 
 

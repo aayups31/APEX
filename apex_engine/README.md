@@ -27,3 +27,25 @@ source .venv/bin/activate
 
 python -m pip install --upgrade pip
 python -m pip install -e '.[dev,real-data]'
+```
+
+## Local API and platform
+
+Launch the evidence-linked platform with:
+
+```bash
+apexsim api --artifacts-dir artifacts
+```
+
+Then visit `http://127.0.0.1:8000` for the minimal web interface or
+`http://127.0.0.1:8000/docs` for the OpenAPI interface. Race previews run as local
+background jobs and create immutable directories below `artifacts/platform/race_runs/`.
+The background executor is intentionally in-process at R0; a durable queue and worker
+deployment belong to a later production hardening gate.
+
+## Verify
+
+```bash
+ruff check src tests
+pytest -q
+```

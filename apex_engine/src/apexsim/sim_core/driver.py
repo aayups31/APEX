@@ -5,7 +5,6 @@ import math
 import numpy as np
 
 from apexsim.sim_core.track import TrackMap
-from apexsim.sim_core.tyres import effective_tyre_grip
 from apexsim.sim_core.types import (
     CarParameters,
     CarState,
@@ -15,7 +14,7 @@ from apexsim.sim_core.types import (
     FlagState,
     PaceMode,
 )
-
+from apexsim.sim_core.tyres import effective_tyre_grip
 
 PACE_FACTORS = {
     PaceMode.CONSERVE: 0.91,

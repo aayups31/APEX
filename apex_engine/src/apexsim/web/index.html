@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0d">
+  <title>APEX — Simulation Intelligence</title>
+  <link rel="stylesheet" href="/assets/platform.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="APEX home">
+      <span class="brand-mark">A</span><span>APEX</span><small>SIMULATION INTELLIGENCE</small>
+    </a>
+    <div class="system-state"><i></i><span id="system-status">SYSTEM ONLINE</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">PUBLIC-DATA · PHYSICS-INFORMED · UNCERTAINTY-AWARE</div>
+      <h1>Model the race.<br><span>Not the narrative.</span></h1>
+      <p>Deterministic simulation foundations for replay, bounded counterfactuals, and strategy research.</p>
+      <div class="hero-meta">
+        <div><b id="maturity">R0</b><span>MATURITY</span></div>
+        <div><b id="race-count">0</b><span>RACE PREVIEWS</span></div>
+        <div><b>6</b><span>SIMULATED CARS</span></div>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Simulation workspace">
+      <aside class="control-panel">
+        <div class="panel-label">NEW INVESTIGATION</div>
+        <h2>Race preview</h2>
+        <p>Run the transparent V0 kernel with a fixed seed. Every output is hashed and provenance-linked.</p>
+        <label for="laps">Race distance <output id="laps-output">3 laps</output></label>
+        <input id="laps" type="range" min="1" max="8" value="3">
+        <label for="seed">Deterministic seed</label>
+        <input id="seed" type="number" min="0" max="2147483647" value="42" inputmode="numeric">
+        <button id="run-button" class="primary-button" type="button"><span>RUN SIMULATION</span><i aria-hidden="true">↗</i></button>
+        <div id="job-message" class="job-message" role="status">READY FOR INPUT</div>
+        <div class="boundary-note"><span>MODEL BOUNDARY</span><p>V0 outputs are simulated evidence—not real-race forecasts.</p></div>
+      </aside>
+
+      <div class="evidence-grid">
+        <article class="track-card card">
+          <div class="card-head"><div><span>LIVE ARTIFACT</span><h3 id="track-name">APEX TEST TRACK</h3></div><b id="run-status">NO RUN</b></div>
+          <svg id="track-map" viewBox="0 0 760 430" role="img" aria-label="Simulated track map">
+            <path class="track-shadow" d="M110 250 C140 80 330 45 465 108 C620 180 680 300 535 355 C420 400 310 300 205 340 C95 380 60 315 110 250Z"></path>
+            <path class="track-line placeholder" d="M110 250 C140 80 330 45 465 108 C620 180 680 300 535 355 C420 400 310 300 205 340 C95 380 60 315 110 250Z"></path>
+          </svg>
+          <div class="track-stats">
+            <div><span>WINNER</span><b id="winner">—</b></div>
+            <div><span>RACE TIME</span><b id="race-time">—</b></div>
+            <div><span>RUNTIME</span><b id="runtime">—</b></div>
+          </div>
+        </article>
+
+        <article class="standings-card card">
+          <div class="card-head"><div><span>CLASSIFICATION</span><h3>Final order</h3></div></div>
+          <div class="table-wrap"><table><thead><tr><th>POS</th><th>DRIVER</th><th>TYRE</th><th>GAP</th></tr></thead>
+            <tbody id="standings"><tr><td colspan="4" class="empty">Run a preview to generate evidence.</td></tr></tbody>
+          </table></div>
+        </article>
+
+        <article class="telemetry-card card">
+          <div class="card-head"><div><span>ROLLING SIGNAL</span><h3>Speed trace</h3></div><b id="telemetry-label">NO DATA</b></div>
+          <canvas id="telemetry-chart" width="1200" height="310" aria-label="Speed telemetry chart"></canvas>
+          <div class="legend"><i></i><span>LEADING CAR · SPEED M/S</span></div>
+        </article>
+
+        <article class="evidence-card card">
+          <div class="card-head"><div><span>LINEAGE</span><h3>Evidence chain</h3></div></div>
+          <ol id="evidence-chain">
+            <li class="active"><i></i><div><b>Deterministic kernel</b><span>Fixed seed and configuration</span></div></li>
+            <li><i></i><div><b>Physical validation</b><span>Awaiting simulation</span></div></li>
+            <li><i></i><div><b>Artifact manifest</b><span>Awaiting hash capture</span></div></li>
+          </ol>
+          <button id="manifest-button" class="text-button" disabled>VIEW MANIFEST <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="runs-section">
+      <div class="section-title"><span>RECENT EVIDENCE</span><h2>Investigations</h2></div>
+      <div id="recent-runs" class="run-list"><div class="empty-run">No platform runs yet.</div></div>
+    </section>
+  </main>
+
+  <dialog id="manifest-dialog">
+    <div class="dialog-head"><div><span>RUN PROVENANCE</span><h2>Artifact manifest</h2></div><button id="close-dialog" aria-label="Close manifest">×</button></div>
+    <pre id="manifest-content"></pre>
+  </dialog>
+  <footer><span>APEX / RESEARCH PLATFORM</span><span>EVIDENCE BEFORE CLAIMS</span><span>V0.4</span></footer>
+  <script src="/assets/platform.js" defer></script>
+</body>
+</html>

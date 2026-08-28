@@ -36,7 +36,7 @@ class SSMWorldModel(nn.Module):
     def _step(self, x: torch.Tensor, states: list[torch.Tensor]) -> tuple[torch.Tensor, list[torch.Tensor]]:
         updated: list[torch.Tensor] = []
         value = x
-        for cell, state in zip(self.cells, states):
+        for cell, state in zip(self.cells, states, strict=True):
             state = cell(value, state)
             updated.append(state)
             value = state

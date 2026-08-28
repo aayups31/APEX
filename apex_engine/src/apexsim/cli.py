@@ -92,7 +92,6 @@ def simulate_race(
     simulator = build_demo(seed=seed, total_laps=laps)
     result = simulator.run()
     result.save(output)
-    simulator.track.save_csv(output / "track.csv")
     typer.echo(result.standings.to_string(index=False))
     typer.echo(f"Saved race artifacts to {output}")
 
@@ -134,11 +133,12 @@ def ui(
 
 @app.command()
 def api(
-    artifacts_dir: Path = Path("artifacts/runs"),
+    artifacts_dir: Path = Path("artifacts"),
     host: str = "127.0.0.1",
     port: int = 8000,
 ) -> None:
     import uvicorn
+
     from apexsim.serving import create_api
 
     uvicorn.run(create_api(artifacts_dir), host=host, port=port)

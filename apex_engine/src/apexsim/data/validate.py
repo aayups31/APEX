@@ -3,7 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from apexsim.contracts import ContractReport, REQUIRED_COLUMNS, assert_canonical_frame
+from apexsim.contracts import REQUIRED_COLUMNS, ContractReport, assert_canonical_frame
 
 
 def validate_canonical_frame(frame: pd.DataFrame, strict: bool = True) -> ContractReport:

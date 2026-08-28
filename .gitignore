@@ -1,1 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local configuration and editor files
 .DS_Store
+.env
+.env.*
+.idea/
+.vscode/
+
+# Downloaded or generated evidence
+.cache/
+data/raw_downloads/
+data/processed/
+artifacts/complete_sim_*/
+artifacts/platform/
+apex_engine/artifacts/platform/
+apex_engine/data/processed/
+*.parquet

@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd
 import requests
 
-
 BASE_URL = "https://api.openf1.org/v1"
 
 
@@ -32,7 +31,6 @@ def ingest_openf1_session(
     """
     car = pd.DataFrame(_get("car_data", {"session_key": session_key, "driver_number": driver_number}))
     location = pd.DataFrame(_get("location", {"session_key": session_key, "driver_number": driver_number}))
-    laps = pd.DataFrame(_get("laps", {"session_key": session_key, "driver_number": driver_number}))
     weather = pd.DataFrame(_get("weather", {"session_key": session_key}))
     if car.empty or location.empty:
         raise RuntimeError("OpenF1 returned no car or location data for the request.")

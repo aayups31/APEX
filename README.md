@@ -355,9 +355,24 @@ artifacts/demo_race/
 ├── events.csv
 ├── standings.csv
 ├── track.csv
+├── manifest.json
 ├── summary.json
 └── quality_report.json
 ```
+
+### 6. Launch the local platform
+
+```bash
+apexsim api --artifacts-dir artifacts
+```
+
+Open `http://127.0.0.1:8000`. The platform can queue deterministic V0 race previews,
+inspect their telemetry and standings, and expose the immutable evidence manifest behind
+every result. Interactive API documentation is available at `http://127.0.0.1:8000/docs`.
+
+This is an R0 evidence and replay surface. Its simulated outputs are not calibrated
+real-world forecasts, and it does not promote APEX past the maturity gates in the Master
+Build Guide.
 
 ---
 

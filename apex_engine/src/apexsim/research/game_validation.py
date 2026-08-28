@@ -7,12 +7,11 @@ aligned to this contract.
 """
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import Iterable
 
 import numpy as np
 import pandas as pd
-
 
 GAME_REQUIRED_COLUMNS = (
     "session_id",
@@ -135,8 +134,8 @@ def align_engine_and_game(
     """Nearest-time alignment without interpolating across lap boundaries."""
     keys = ["session_id", "lap"]
     values = list(value_columns)
-    required_game = set(keys + ["time_s"] + values)
-    required_engine = set(keys + ["time_s"] + values)
+    required_game = set([*keys, "time_s", *values])
+    required_engine = set([*keys, "time_s", *values])
     if missing := sorted(required_game - set(game.columns)):
         raise ValueError(f"game table missing {missing}")
     if missing := sorted(required_engine - set(engine.columns)):

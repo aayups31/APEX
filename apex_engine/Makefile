@@ -11,4 +11,4 @@ ui:
 	apexsim ui --run-dir artifacts/runs/reference_gru --config configs/fast.yaml
 
 api:
-	apexsim api --artifacts-dir artifacts/runs
+	apexsim api --artifacts-dir artifacts

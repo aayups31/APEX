@@ -7,15 +7,12 @@ import gradio as gr
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
-import torch
 
 from apexsim.config import load_config
-from apexsim.contracts import MODEL_INPUT_COLUMNS
 from apexsim.data.features import Standardizer
 from apexsim.data.windows import TelemetryWindowDataset
 from apexsim.pipeline.stages import load_trained_model
 from apexsim.simulation import Scenario, rollout
-
 
 CUSTOM_CSS = """
 .gradio-container {max-width: 1500px !important; background: radial-gradient(circle at 15% 5%, #191b22 0%, #090a0e 48%, #050506 100%);}
@@ -89,7 +86,7 @@ def _telemetry_figure(frame: pd.DataFrame, session_id: str) -> go.Figure:
 
 def create_app(run_dir: str | Path, config_path: str | Path = "configs/fast.yaml") -> gr.Blocks:
     run_path = Path(run_dir)
-    config, frame, splits, standardizer, model, dataset = _load_bundle(run_path, Path(config_path))
+    config, frame, _splits, standardizer, model, dataset = _load_bundle(run_path, Path(config_path))
     metrics = json.loads((run_path / "metrics.json").read_text())
     ablations = pd.DataFrame(json.loads((run_path / "ablations.json").read_text()))
     sessions = sorted(frame.session_id.unique().tolist())

@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from dataclasses import replace
-
 import numpy as np
 
 from apexsim.sim_core.types import EnvironmentState, FlagState, RaceControlEvent, WeatherKeyframe

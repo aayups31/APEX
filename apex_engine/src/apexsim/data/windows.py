@@ -28,8 +28,8 @@ def split_sessions(
     rng = np.random.default_rng(seed)
     rng.shuffle(sessions)
     n = len(sessions)
-    n_train = max(1, int(round(n * train_fraction)))
-    n_val = max(1, int(round(n * val_fraction)))
+    n_train = max(1, round(n * train_fraction))
+    n_val = max(1, round(n * val_fraction))
     if n_train + n_val >= n:
         n_val = 1
         n_train = max(1, n - 2)

@@ -6,8 +6,8 @@ from a latent tyre-pace state and resets the latent state at pit stops.
 """
 from __future__ import annotations
 
+from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import Sequence
 
 import numpy as np
 import pandas as pd
@@ -23,7 +23,7 @@ class StateSpaceTyreParameters:
     innovation_clip_sigma: float = 4.0
 
     @classmethod
-    def defaults(cls) -> "StateSpaceTyreParameters":
+    def defaults(cls) -> StateSpaceTyreParameters:
         return cls({"SOFT": 0.080, "MEDIUM": 0.055, "HARD": 0.038, "INTERMEDIATE": 0.070, "WET": 0.060})
 
 

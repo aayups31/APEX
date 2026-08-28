@@ -6,6 +6,7 @@ This directory contains project-planning and package-tracking material.
 
 - [Build backlog](build-backlog.csv)
 - [Kit manifest](kit-manifest.json)
+- [Local platform and API](../platform/README.md)
 
 ## Build backlog
 

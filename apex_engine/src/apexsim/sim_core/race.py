@@ -1,27 +1,32 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable
 
 import numpy as np
 import pandas as pd
 
+from apexsim.provenance import build_run_manifest, write_manifest
 from apexsim.sim_core.driver import ReferenceDriverPolicy
 from apexsim.sim_core.track import TrackMap
 from apexsim.sim_core.types import (
     CarState,
     FlagState,
     PaceMode,
+    RaceControlEvent,
     RaceEntry,
     SimulationConfig,
-    TyreCompound,
     WeatherKeyframe,
-    RaceControlEvent,
+)
+from apexsim.sim_core.validation import (
+    assert_simulation_quality,
+    derive_lap_table,
+    derive_stint_table,
+    validate_simulation_telemetry,
 )
 from apexsim.sim_core.vehicle import VehicleDynamics
 from apexsim.sim_core.weather import RaceControlSchedule, WeatherSchedule
-from apexsim.sim_core.validation import derive_lap_table, derive_stint_table, validate_simulation_telemetry
 
 
 @dataclass
@@ -34,21 +39,54 @@ class RaceResult:
     quality_report: dict
     config: SimulationConfig
     track_id: str
+    track: pd.DataFrame
 
     def save(self, output_dir: str | Path) -> None:
         root = Path(output_dir)
+        if root.exists() and any(root.iterdir()):
+            raise FileExistsError(f"Race artifact directory is not empty: {root}")
         root.mkdir(parents=True, exist_ok=True)
         self.telemetry.to_csv(root / "telemetry.csv", index=False)
         self.standings.to_csv(root / "standings.csv", index=False)
         self.events.to_csv(root / "events.csv", index=False)
         self.laps.to_csv(root / "laps.csv", index=False)
         self.stints.to_csv(root / "stints.csv", index=False)
+        self.track.to_csv(root / "track.csv", index=False)
         import json
 
         (root / "quality_report.json").write_text(json.dumps(self.quality_report, indent=2), encoding="utf-8")
         (root / "summary.json").write_text(
             json.dumps({"track_id": self.track_id, "standings": self.standings.to_dict(orient="records"), "quality": self.quality_report}, indent=2),
             encoding="utf-8",
+        )
+        artifact_paths = [
+            root / "telemetry.csv",
+            root / "standings.csv",
+            root / "events.csv",
+            root / "laps.csv",
+            root / "stints.csv",
+            root / "track.csv",
+            root / "quality_report.json",
+            root / "summary.json",
+        ]
+        repository_root = Path(__file__).resolve().parents[4]
+        write_manifest(
+            root / "manifest.json",
+            build_run_manifest(
+                run_id=root.name,
+                run_type="race_simulation",
+                config=self.config,
+                seed=self.config.random_seed,
+                repository_root=repository_root,
+                artifacts=artifact_paths,
+                truth_labels={
+                    "telemetry": "SIMULATED",
+                    "tyre_temperature": "SIMULATED_PROXY",
+                    "tyre_health": "SIMULATED_PROXY",
+                    "battery": "SIMULATED_PROXY",
+                },
+                notes=["V0 deterministic race-simulation vertical slice"],
+            ),
         )
 
 
@@ -366,7 +404,13 @@ class RaceSimulator:
             ).astype(int)
         laps = derive_lap_table(telemetry, self.config.total_laps)
         stints = derive_stint_table(telemetry)
-        quality = validate_simulation_telemetry(telemetry, expected_cars=len(self.entries)).to_dict()
+        quality_report = validate_simulation_telemetry(
+            telemetry,
+            expected_cars=len(self.entries),
+            battery_capacity_mj=max(entry.car.ers_capacity_mj for entry in self.entries),
+        )
+        assert_simulation_quality(quality_report)
+        quality = quality_report.to_dict()
         return RaceResult(
             telemetry=telemetry,
             standings=pd.DataFrame(standings_rows),
@@ -376,4 +420,5 @@ class RaceSimulator:
             quality_report=quality,
             config=self.config,
             track_id=self.track.track_id,
+            track=self.track.to_frame(),
         )
