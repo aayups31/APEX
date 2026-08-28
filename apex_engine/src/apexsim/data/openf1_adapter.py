@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import requests
 
+from apexsim.data.manifest import SourceManifest
+
 BASE_URL = "https://api.openf1.org/v1"
 
 
@@ -23,15 +25,26 @@ def ingest_openf1_session(
     driver_number: int,
     output_path: str | Path,
     sample_hz: int = 4,
+    manifest_path: str | Path | None = None,
 ) -> pd.DataFrame:
     """Translate OpenF1 car/location/weather streams into the canonical frame.
 
     Historical OpenF1 data is rich but the endpoints are sampled independently. We therefore align
     streams on time instead of assuming row N in one endpoint matches row N in another.
     """
-    car = pd.DataFrame(_get("car_data", {"session_key": session_key, "driver_number": driver_number}))
-    location = pd.DataFrame(_get("location", {"session_key": session_key, "driver_number": driver_number}))
-    weather = pd.DataFrame(_get("weather", {"session_key": session_key}))
+    output = Path(output_path)
+    source_manifest_path = Path(manifest_path) if manifest_path else output.with_suffix(f"{output.suffix}.source.json")
+    if output.exists() or source_manifest_path.exists():
+        raise FileExistsError(f"OpenF1 output or source manifest already exists: {output}")
+
+    car_query = {"session_key": session_key, "driver_number": driver_number}
+    weather_query = {"session_key": session_key}
+    car_payload = _get("car_data", car_query)
+    location_payload = _get("location", car_query)
+    weather_payload = _get("weather", weather_query)
+    car = pd.DataFrame(car_payload)
+    location = pd.DataFrame(location_payload)
+    weather = pd.DataFrame(weather_payload)
     if car.empty or location.empty:
         raise RuntimeError("OpenF1 returned no car or location data for the request.")
 
@@ -46,7 +59,7 @@ def ingest_openf1_session(
     start = merged.date.min()
     merged["timestamp_s"] = (merged.date - start).dt.total_seconds()
     regular_time = np.arange(0, merged.timestamp_s.max(), 1.0 / sample_hz)
-    numeric = merged.select_dtypes(include=[np.number]).copy()
+    numeric = merged.select_dtypes(include=[np.number]).drop(columns=["timestamp_s"], errors="ignore").copy()
     numeric.index = merged.timestamp_s
     numeric = numeric[~numeric.index.duplicated()].reindex(regular_time).interpolate().ffill().bfill()
     numeric.index.name = "timestamp_s"
@@ -96,7 +109,17 @@ def ingest_openf1_session(
             "safety_car": 0,
         }
     )
-    output = Path(output_path)
     output.parent.mkdir(parents=True, exist_ok=True)
     canonical.to_csv(output, index=False)
+    manifest = SourceManifest(
+        source="openf1",
+        query={"session_key": session_key, "driver_number": driver_number, "sample_hz": sample_hz},
+        terms_url="https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        license_id="CC-BY-NC-SA-4.0",
+    )
+    manifest.add_request(f"{BASE_URL}/car_data", car_query, car_payload, len(car_payload))
+    manifest.add_request(f"{BASE_URL}/location", car_query, location_payload, len(location_payload))
+    manifest.add_request(f"{BASE_URL}/weather", weather_query, weather_payload, len(weather_payload))
+    manifest.add_file(output, rows=len(canonical), role="derived_canonical")
+    manifest.save(source_manifest_path)
     return canonical
