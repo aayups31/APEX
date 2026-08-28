@@ -408,6 +408,7 @@ class RaceSimulator:
             telemetry,
             expected_cars=len(self.entries),
             battery_capacity_mj=max(entry.car.ers_capacity_mj for entry in self.entries),
+            fuel_capacity_kg=max(entry.car.fuel_capacity_kg for entry in self.entries),
         )
         assert_simulation_quality(quality_report)
         quality = quality_report.to_dict()

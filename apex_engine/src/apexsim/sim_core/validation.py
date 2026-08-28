@@ -13,12 +13,14 @@ class SimulationQualityReport:
     duplicate_car_times: int
     negative_speed_rows: int
     negative_fuel_rows: int
+    excess_fuel_rows: int
     invalid_battery_rows: int
     invalid_tyre_health_rows: int
     backward_distance_steps: int
     backward_time_steps: int
     backward_lap_steps: int
     invalid_position_rows: int
+    duplicate_position_rows: int
     invalid_control_rows: int
     conflicting_terminal_rows: int
     finite_numeric: bool
@@ -32,6 +34,7 @@ def validate_simulation_telemetry(
     frame: pd.DataFrame,
     expected_cars: int | None = None,
     battery_capacity_mj: float | None = None,
+    fuel_capacity_kg: float | None = None,
 ) -> SimulationQualityReport:
     required = {
         "time_s",
@@ -50,6 +53,9 @@ def validate_simulation_telemetry(
     duplicate = int(frame.duplicated(["car_id", "time_s"]).sum())
     negative_speed = int((frame.speed_mps < -1e-9).sum())
     negative_fuel = int((frame.fuel_kg < -1e-9).sum())
+    excess_fuel = 0
+    if fuel_capacity_kg is not None:
+        excess_fuel = int((frame.fuel_kg > fuel_capacity_kg + 1e-9).sum())
     invalid_battery_mask = frame.battery_mj < -1e-9
     if battery_capacity_mj is not None:
         invalid_battery_mask |= frame.battery_mj > battery_capacity_mj + 1e-9
@@ -65,9 +71,18 @@ def validate_simulation_telemetry(
         lap_deltas = sorted_frame.groupby("car_id").lap.diff()
         backward_lap = int((lap_deltas < 0).sum())
     invalid_position = int(((frame.position < 1) | (frame.position > max(cars, 1))).sum())
+    duplicate_positions = int(frame.duplicated(["time_s", "position"]).sum())
     invalid_controls = 0
-    if {"throttle", "brake"}.issubset(frame.columns):
-        invalid_controls = int(((frame.throttle > 0.2) & (frame.brake > 0.2)).sum())
+    control_columns = {"throttle", "brake", "ers_deploy"}
+    if control_columns.issubset(frame.columns):
+        outside_range = (
+            (frame[list(control_columns)] < -1e-9)
+            | (frame[list(control_columns)] > 1.0 + 1e-9)
+        ).any(axis=1)
+        conflicting_pedals = (frame.throttle > 0.2) & (frame.brake > 0.2)
+        invalid_controls = int((outside_range | conflicting_pedals).sum())
+    if "drs" in frame.columns:
+        invalid_controls += int((~frame.drs.isin([0, 1, False, True])).sum())
     terminal_conflicts = 0
     if {"finished", "retired"}.issubset(frame.columns):
         terminal_conflicts = int(((frame.finished > 0) & (frame.retired > 0)).sum())
@@ -81,12 +96,14 @@ def validate_simulation_telemetry(
             duplicate == 0,
             negative_speed == 0,
             negative_fuel == 0,
+            excess_fuel == 0,
             invalid_battery == 0,
             invalid_health == 0,
             backward == 0,
             backward_time == 0,
             backward_lap == 0,
             invalid_position == 0,
+            duplicate_positions == 0,
             invalid_controls == 0,
             terminal_conflicts == 0,
             finite,
@@ -99,12 +116,14 @@ def validate_simulation_telemetry(
         duplicate_car_times=duplicate,
         negative_speed_rows=negative_speed,
         negative_fuel_rows=negative_fuel,
+        excess_fuel_rows=excess_fuel,
         invalid_battery_rows=invalid_battery,
         invalid_tyre_health_rows=invalid_health,
         backward_distance_steps=backward,
         backward_time_steps=backward_time,
         backward_lap_steps=backward_lap,
         invalid_position_rows=invalid_position,
+        duplicate_position_rows=duplicate_positions,
         invalid_control_rows=invalid_controls,
         conflicting_terminal_rows=terminal_conflicts,
         finite_numeric=finite,
