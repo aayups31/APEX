@@ -12,6 +12,7 @@ class DataConfig(BaseModel):
     raw_dir: Path = Path("data/raw")
     processed_dir: Path = Path("data/processed")
     canonical_input_path: Path | None = None
+    source_manifest_path: Path | None = None
     sample_hz: int = Field(5, ge=1, le=50)
     sessions: int = Field(8, ge=3)
     laps_per_session: int = Field(3, ge=1)

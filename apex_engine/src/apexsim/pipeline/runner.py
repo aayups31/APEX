@@ -26,6 +26,10 @@ def run_pipeline(config: ProjectConfig, run_id: str) -> dict:
     try:
         canonical = ingest_stage(config, run_dir)
         repository_root = Path(__file__).resolve().parents[4]
+        source_manifest = run_dir / "source_manifest.json"
+        manifest_inputs = [canonical]
+        if source_manifest.is_file():
+            manifest_inputs.append(source_manifest)
         write_manifest(
             run_dir / "manifest.json",
             build_run_manifest(
@@ -34,7 +38,7 @@ def run_pipeline(config: ProjectConfig, run_id: str) -> dict:
                 config=config,
                 seed=config.seed,
                 repository_root=repository_root,
-                inputs=[canonical],
+                inputs=manifest_inputs,
                 truth_labels={
                     "telemetry": "SIMULATED" if config.data.source == "synthetic" else "MEASURED_OR_RECONSTRUCTED",
                     "tyre_age_laps": "SIMULATED" if config.data.source == "synthetic" else "RECONSTRUCTED",

@@ -12,6 +12,7 @@ from torch.utils.data import DataLoader
 from apexsim.config import ProjectConfig
 from apexsim.contracts import MODEL_INPUT_COLUMNS, STATE_COLUMNS, TARGET_COLUMNS
 from apexsim.data.features import Standardizer
+from apexsim.data.manifest import load_source_manifest
 from apexsim.data.synthetic import generate_synthetic_sessions
 from apexsim.data.validate import validate_canonical_frame
 from apexsim.data.windows import TelemetryWindowDataset, split_sessions
@@ -37,6 +38,16 @@ def ingest_stage(config: ProjectConfig, run_dir: Path) -> Path:
         source = Path(config.data.canonical_input_path)
         if not source.exists():
             raise FileNotFoundError(f"Canonical input does not exist: {source}")
+        if config.data.source != "synthetic":
+            if config.data.source_manifest_path is None:
+                raise ValueError("Public canonical input requires data.source_manifest_path")
+            source_manifest = Path(config.data.source_manifest_path)
+            manifest = load_source_manifest(source_manifest)
+            if manifest["source"] != config.data.source:
+                raise ValueError(
+                    f"Source manifest identifies {manifest['source']!r}, expected {config.data.source!r}"
+                )
+            shutil.copy2(source_manifest, run_dir / "source_manifest.json")
         if source.resolve() != output.resolve():
             shutil.copy2(source, output)
         return output
