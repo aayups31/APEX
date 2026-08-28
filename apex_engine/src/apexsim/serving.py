@@ -6,22 +6,54 @@ import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Union
 
 import numpy as np
 import pandas as pd
 from fastapi import BackgroundTasks, FastAPI, HTTPException, Query, status
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from apexsim.examples.complete_sim_demo import build_demo
 from apexsim.registry import RunRegistry
 
 
 class SimulationRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     laps: int = Field(default=3, ge=1, le=12)
     seed: int = Field(default=42, ge=0, le=2_147_483_647)
+
+
+class SimulationJob(BaseModel):
+    job_id: str
+    status: str
+    created_at: str
+    started_at: Union[str, None]  # noqa: UP007 - Pydantic must evaluate this on local Python 3.9.
+    finished_at: Union[str, None]  # noqa: UP007
+    laps: int
+    seed: int
+    artifact_dir: Union[str, None]  # noqa: UP007
+    runtime_s: Union[float, None]  # noqa: UP007
+    error: Union[str, None]  # noqa: UP007
+
+
+class HealthResponse(BaseModel):
+    status: str
+    service: str
+    version: str
+    maturity: str
+    capabilities: list[str]
+
+
+class OverviewResponse(BaseModel):
+    maturity: str
+    evidence_status: str
+    race_previews: int
+    world_model_runs: int
+    latest_job: Union[SimulationJob, None]  # noqa: UP007
+    principle: str
 
 
 class PlatformJobStore:
@@ -91,6 +123,21 @@ class PlatformJobStore:
             ).fetchall()
         return [dict(row) for row in rows]
 
+    def recover_incomplete(self) -> int:
+        """Close jobs that cannot survive a local API process restart."""
+        finished_at = datetime.now(timezone.utc).isoformat()
+        with self._connect() as connection:
+            cursor = connection.execute(
+                """
+                UPDATE simulation_jobs
+                SET status = 'FAILED', finished_at = ?,
+                    error = 'Local executor restarted before completion'
+                WHERE status IN ('QUEUED', 'RUNNING')
+                """,
+                (finished_at,),
+            )
+        return cursor.rowcount
+
 
 def _read_json(path: Path) -> dict[str, Any]:
     if not path.is_file():
@@ -146,6 +193,7 @@ def create_api(artifacts_dir: str | Path = "artifacts") -> FastAPI:
     store_path = platform_root / "jobs.sqlite"
     race_root.mkdir(parents=True, exist_ok=True)
     store = PlatformJobStore(store_path)
+    store.recover_incomplete()
     registry = RunRegistry(model_runs_root / "runs.sqlite")
 
     web_root = Path(__file__).with_name("web")
@@ -161,28 +209,28 @@ def create_api(artifacts_dir: str | Path = "artifacts") -> FastAPI:
         return HTMLResponse((web_root / "index.html").read_text(encoding="utf-8"))
 
     @app.get("/api/v1/health")
-    def health() -> dict[str, Any]:
-        return {
-            "status": "ok",
-            "service": "apex-platform",
-            "version": app.version,
-            "maturity": "R0_FOUNDATION",
-            "capabilities": ["deterministic_race_preview", "artifact_replay", "provenance"],
-        }
+    def health() -> HealthResponse:
+        return HealthResponse(
+            status="ok",
+            service="apex-platform",
+            version=app.version,
+            maturity="R0_FOUNDATION",
+            capabilities=["deterministic_race_preview", "artifact_replay", "provenance"],
+        )
 
     @app.get("/api/v1/overview")
-    def overview() -> dict[str, Any]:
+    def overview() -> OverviewResponse:
         jobs = store.list(limit=100)
         completed = [job for job in jobs if job["status"] == "COMPLETED"]
         model_runs = registry.list_runs()
-        return {
-            "maturity": "R0",
-            "evidence_status": "FOUNDATION ACTIVE",
-            "race_previews": len(completed),
-            "world_model_runs": len(model_runs),
-            "latest_job": jobs[0] if jobs else None,
-            "principle": "Evidence before claims",
-        }
+        return OverviewResponse(
+            maturity="R0",
+            evidence_status="FOUNDATION ACTIVE",
+            race_previews=len(completed),
+            world_model_runs=len(model_runs),
+            latest_job=SimulationJob.model_validate(jobs[0]) if jobs else None,
+            principle="Evidence before claims",
+        )
 
     @app.get("/api/v1/runs")
     def runs(limit: int = Query(default=30, ge=1, le=100)) -> list[dict[str, Any]]:
@@ -201,17 +249,17 @@ def create_api(artifacts_dir: str | Path = "artifacts") -> FastAPI:
     def create_simulation(
         request: SimulationRequest,
         background_tasks: BackgroundTasks,
-    ) -> dict[str, Any]:
+    ) -> SimulationJob:
         timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         job_id = f"race-{timestamp}-{uuid.uuid4().hex[:8]}"
         job = store.create(job_id, request)
         background_tasks.add_task(_execute_preview, job_id, request, store_path, race_root)
-        return job
+        return SimulationJob.model_validate(job)
 
     @app.get("/api/v1/jobs/{job_id}")
-    def job(job_id: str) -> dict[str, Any]:
+    def job(job_id: str) -> SimulationJob:
         try:
-            return store.get(job_id)
+            return SimulationJob.model_validate(store.get(job_id))
         except KeyError as exc:
             raise HTTPException(status_code=404, detail="Simulation job not found") from exc
 
