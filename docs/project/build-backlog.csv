@@ -5,7 +5,7 @@ P0-03,P0,Foundation,P0,DONE,Write state/action/context diagram,P0-02,"Every fiel
 P0-04,P0,Foundation,P0,DONE,Add run manifest hash capture,P0-01,Run records source/config/environment hashes,apex_engine/tests/test_provenance.py,Manifest v1 captures clean or dirty source environment config input and artifact hashes
 P0-05,P0,Foundation,P0,DONE,Add physical invariant checker,P0-02,Invalid states fail tests with useful diagnostics,apex_engine/tests/test_complete_sim_validation.py,Simulation aborts with named diagnostics for temporal resource control position and terminal violations
 P1-01,P1,Data contracts,P0,NOT_STARTED,Define session/lap/stint/weather/race-control Parquet schemas,P0-03,Schemas versioned and validated,,
-P1-02,P1,Data contracts,P0,NOT_STARTED,Implement immutable source manifest,P0-04,"Every download records query, time, hashes and terms URL",,
+P1-02,P1,Data contracts,P0,DONE,Implement immutable source manifest,P0-04,"Every download records query, time, hashes and terms URL",docs/verification/data-provenance-report.md,Manifest v1 is exclusive and tamper-evident; adapters record request payload/file hashes and pipeline rejects unprovenanced public input
 P1-03,P1,Data contracts,P0,NOT_STARTED,Implement FastF1 session downloader,P1-02,One session rebuilds from cache,,
 P1-04,P1,Data contracts,P0,NOT_STARTED,Implement OpenF1 multi-endpoint downloader,P1-02,All endpoint files and row counts recorded,,
 P1-05,P1,Data contracts,P0,NOT_STARTED,Implement Jolpica event metadata client,P1-02,Custom user agent and pagination tested,,

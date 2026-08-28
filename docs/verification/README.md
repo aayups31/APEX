@@ -8,6 +8,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [Complete simulation report](simulation-report.md)
 - [Research report](research-report.md)
 - [Foundation and local platform report](foundation-platform-report.md)
+- [Data provenance report](data-provenance-report.md)
 
 ## Purpose
 
