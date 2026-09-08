@@ -15,8 +15,8 @@ surrogates that must be calibrated before any real-race conclusion is made.
 """
 from __future__ import annotations
 
-from dataclasses import dataclass, replace
-from typing import Iterable, Sequence
+from collections.abc import Iterable, Sequence
+from dataclasses import dataclass
 
 import numpy as np
 
@@ -366,10 +366,7 @@ class DiscreteStrategyOracle:
     def _actions_for_lap(self, lap: int) -> list[PaperStrategyAction]:
         nominal = self.model.p.nominal_fuel_energy_mj()
         pit_options: tuple[TyreCompound | None, ...]
-        if self.pit_window[0] <= lap <= self.pit_window[1]:
-            pit_options = (None, *_DRY_COMPOUNDS)
-        else:
-            pit_options = (None,)
+        pit_options = (None, *_DRY_COMPOUNDS) if self.pit_window[0] <= lap <= self.pit_window[1] else (None,)
         return [
             PaperStrategyAction(nominal * f, b, pit)
             for f in self.fuel_fractions
@@ -384,14 +381,14 @@ class DiscreteStrategyOracle:
             for node in beam:
                 for action in self._actions_for_lap(lap):
                     next_state, info = self.model.transition(node.state, action)
-                    candidates.append(BeamNode(next_state, node.actions + (info.applied_action,)))
+                    candidates.append(BeamNode(next_state, (*node.actions, info.applied_action)))
             # Keep diverse state buckets so the beam does not collapse only by
             # immediate race time and discard useful energy/tyre configurations.
             buckets: dict[tuple[int, int, str, bool], BeamNode] = {}
             for node in sorted(candidates, key=lambda n: n.state.race_time_s):
                 key = (
-                    int(round(node.state.battery_mj * 2)),
-                    int(round(node.state.tyre_wear * 10)),
+                    round(node.state.battery_mj * 2),
+                    round(node.state.tyre_wear * 10),
                     node.state.compound.value,
                     node.state.compound_changed,
                 )

@@ -80,7 +80,7 @@ class Control:
     ers_deploy: float = 0.0
     drs: bool = False
 
-    def clipped(self) -> "Control":
+    def clipped(self) -> Control:
         return Control(
             throttle=min(max(float(self.throttle), 0.0), 1.0),
             brake=min(max(float(self.brake), 0.0), 1.0),
@@ -130,7 +130,7 @@ class CarState:
     gap_to_leader_s: float | None = None
     metadata: dict[str, Any] = field(default_factory=dict)
 
-    def clone(self, **changes: Any) -> "CarState":
+    def clone(self, **changes: Any) -> CarState:
         metadata = changes.pop("metadata", dict(self.metadata))
         return replace(self, metadata=dict(metadata), **changes)
 

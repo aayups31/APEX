@@ -5,6 +5,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from apexsim.data.manifest import SourceManifest
+
 
 def ingest_fastf1_session(
     year: int,
@@ -13,11 +15,17 @@ def ingest_fastf1_session(
     driver: str,
     output_path: str | Path,
     sample_hz: int = 5,
+    manifest_path: str | Path | None = None,
 ) -> pd.DataFrame:
     """Fetch a historical FastF1 session and translate it into APEX's canonical contract.
 
     FastF1 is an optional dependency because the complete project must remain runnable offline.
     """
+    output = Path(output_path)
+    source_manifest_path = Path(manifest_path) if manifest_path else output.with_suffix(f"{output.suffix}.source.json")
+    if output.exists() or source_manifest_path.exists():
+        raise FileExistsError(f"FastF1 output or source manifest already exists: {output}")
+
     try:
         import fastf1
     except ImportError as exc:
@@ -101,7 +109,25 @@ def ingest_fastf1_session(
             "safety_car": 0,
         }
     )
-    output = Path(output_path)
     output.parent.mkdir(parents=True, exist_ok=True)
     canonical.to_csv(output, index=False)
+    query = {
+        "year": year,
+        "event": event,
+        "session_code": session_code,
+        "driver": driver,
+        "sample_hz": sample_hz,
+    }
+    manifest = SourceManifest(
+        source="fastf1",
+        query=query,
+        terms_url="https://docs.fastf1.dev/",
+        notes=[
+            "FastF1 manages its own raw cache; P1-03 must freeze and enumerate those source files.",
+            "Formula 1 marks and source-data restrictions remain with their respective owners.",
+        ],
+    )
+    manifest.add_request("fastf1.get_session", query, None, records=len(canonical))
+    manifest.add_file(output, rows=len(canonical), role="derived_canonical")
+    manifest.save(source_manifest_path)
     return canonical

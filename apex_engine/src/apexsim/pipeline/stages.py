@@ -4,7 +4,6 @@ import json
 import shutil
 from pathlib import Path
 
-import joblib
 import numpy as np
 import pandas as pd
 import torch
@@ -13,6 +12,7 @@ from torch.utils.data import DataLoader
 from apexsim.config import ProjectConfig
 from apexsim.contracts import MODEL_INPUT_COLUMNS, STATE_COLUMNS, TARGET_COLUMNS
 from apexsim.data.features import Standardizer
+from apexsim.data.manifest import load_source_manifest
 from apexsim.data.synthetic import generate_synthetic_sessions
 from apexsim.data.validate import validate_canonical_frame
 from apexsim.data.windows import TelemetryWindowDataset, split_sessions
@@ -38,6 +38,16 @@ def ingest_stage(config: ProjectConfig, run_dir: Path) -> Path:
         source = Path(config.data.canonical_input_path)
         if not source.exists():
             raise FileNotFoundError(f"Canonical input does not exist: {source}")
+        if config.data.source != "synthetic":
+            if config.data.source_manifest_path is None:
+                raise ValueError("Public canonical input requires data.source_manifest_path")
+            source_manifest = Path(config.data.source_manifest_path)
+            manifest = load_source_manifest(source_manifest)
+            if manifest["source"] != config.data.source:
+                raise ValueError(
+                    f"Source manifest identifies {manifest['source']!r}, expected {config.data.source!r}"
+                )
+            shutil.copy2(source_manifest, run_dir / "source_manifest.json")
         if source.resolve() != output.resolve():
             shutil.copy2(source, output)
         return output
@@ -71,12 +81,25 @@ def dataset_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) ->
             "standardizer": json.loads(scaler_path.read_text(encoding="utf-8")),
         }
     frame = pd.read_csv(canonical_path)
-    splits = split_sessions(
-        frame,
-        config.data.train_fraction,
-        config.data.val_fraction,
-        config.seed,
-    )
+    if config.data.split_manifest_path is not None:
+        from apexsim.data.splits import load_splits
+
+        if config.data.public_dataset_path is None:
+            raise ValueError("Frozen splits require public_dataset_path")
+        frozen = load_splits(config.data.split_manifest_path, config.data.public_dataset_path,
+                             session_ids=frame.session_id.unique().tolist())
+        splits = frozen["partitions"]
+        with (run_dir / "split_manifest.json").open("x", encoding="utf-8") as handle:
+            json.dump(frozen, handle, indent=2, sort_keys=True)
+    else:
+        if config.data.public_dataset_path is not None:
+            raise ValueError("Public dataset requires split_manifest_path")
+        splits = split_sessions(
+            frame,
+            config.data.train_fraction,
+            config.data.val_fraction,
+            config.seed,
+        )
     train_frame = frame[frame.session_id.isin(splits["train"])]
     standardizer = Standardizer.fit(train_frame)
     split_path.write_text(json.dumps(splits, indent=2), encoding="utf-8")
@@ -111,7 +134,7 @@ def train_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -> d
     meta_path = model_dir / "model_meta.json"
     if checkpoint.exists() and meta_path.exists():
         return json.loads(meta_path.read_text(encoding="utf-8"))
-    _, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
+    _, _standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
     if len(datasets["train"]) == 0 or len(datasets["val"]) == 0:
         raise RuntimeError("Not enough windows after session split; increase session duration or count.")
     train_loader = DataLoader(datasets["train"], batch_size=config.training.batch_size, shuffle=True)
@@ -166,7 +189,7 @@ def ablation_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -
     test = frame[frame.session_id.isin(splits["test"])].copy()
     feature_sets = {
         "state_only": STATE_COLUMNS,
-        "state_plus_actions": STATE_COLUMNS + ["throttle", "brake", "gear_norm", "drs"],
+        "state_plus_actions": [*STATE_COLUMNS, "throttle", "brake", "gear_norm", "drs"],
         "full_context": MODEL_INPUT_COLUMNS,
         "no_weather": [c for c in MODEL_INPUT_COLUMNS if c not in {"rainfall", "air_temp_c", "track_temp_c", "wind_speed_mps"}],
         "no_track_geometry": [c for c in MODEL_INPUT_COLUMNS if c not in {"curvature", "steering_proxy", "track_progress_sin", "track_progress_cos"}],
@@ -183,9 +206,9 @@ def ablation_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -
         same_test = test.session_id.iloc[:-1].to_numpy() == test.session_id.iloc[1:].to_numpy()
         x_test, y_test = x_test[same_test], y_test[same_test]
         from sklearn.linear_model import Ridge
-        from sklearn.preprocessing import StandardScaler
-        from sklearn.pipeline import make_pipeline
         from sklearn.multioutput import MultiOutputRegressor
+        from sklearn.pipeline import make_pipeline
+        from sklearn.preprocessing import StandardScaler
 
         model = make_pipeline(StandardScaler(), MultiOutputRegressor(Ridge(alpha=1.0)))
         model.fit(x_train, y_train)
@@ -207,7 +230,7 @@ def publish_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) ->
     output = run_dir / "publication.json"
     if output.exists():
         return json.loads(output.read_text(encoding="utf-8"))
-    frame, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
+    _frame, standardizer, datasets = _load_datasets(config, canonical_path, run_dir)
     model = load_trained_model(config, run_dir)
     sample = datasets["test"][0]
     history = sample["history"].unsqueeze(0)

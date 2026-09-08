@@ -8,6 +8,7 @@ This directory contains the main entry points for understanding and running APEX
 2. [Simulation guide](simulation.md)
 3. [Research guide](research.md)
 4. [Master Build Guide](../../00_MASTER_BUILD_GUIDE.md)
+5. [Data contracts and provenance](../data/README.md)
 
 ## For users
 

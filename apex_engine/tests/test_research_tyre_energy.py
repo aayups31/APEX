@@ -1,7 +1,11 @@
 import numpy as np
 import pandas as pd
 
-from apexsim.research.tyre_energy import TyreEnergyInputs, augment_with_proxy_tyre_energy, estimate_wheel_tyre_energy
+from apexsim.research.tyre_energy import (
+    TyreEnergyInputs,
+    augment_with_proxy_tyre_energy,
+    estimate_wheel_tyre_energy,
+)
 
 
 def test_tyre_energy_nonnegative_and_left_right_symmetric_on_straight():

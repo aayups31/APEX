@@ -18,7 +18,7 @@ class LinearTransitionBaseline:
     def __init__(self, alpha: float = 1.0) -> None:
         self.model = MultiOutputRegressor(Ridge(alpha=alpha))
 
-    def fit(self, inputs: np.ndarray, next_states: np.ndarray) -> "LinearTransitionBaseline":
+    def fit(self, inputs: np.ndarray, next_states: np.ndarray) -> LinearTransitionBaseline:
         self.model.fit(inputs, next_states)
         return self
 

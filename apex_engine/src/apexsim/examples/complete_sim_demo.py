@@ -9,6 +9,7 @@ from apexsim.sim_core.track import TrackMap
 from apexsim.sim_core.types import (
     CarParameters,
     DriverParameters,
+    FlagState,
     PaceMode,
     PitStopPlan,
     RaceControlEvent,
@@ -16,7 +17,6 @@ from apexsim.sim_core.types import (
     SimulationConfig,
     TyreCompound,
     WeatherKeyframe,
-    FlagState,
 )
 
 
@@ -87,7 +87,6 @@ def main() -> None:
     simulator = build_demo(args.seed, args.laps)
     result = simulator.run()
     result.save(args.output)
-    simulator.track.save_csv(args.output / "track.csv")
     payload = {
         "output": str(args.output),
         "track": result.track_id,
@@ -95,7 +94,6 @@ def main() -> None:
         "events": len(result.events),
         "winner": result.standings.iloc[0].to_dict() if not result.standings.empty else None,
     }
-    (args.output / "run_manifest.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print(json.dumps(payload, indent=2))
 
 

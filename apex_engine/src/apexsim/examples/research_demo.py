@@ -7,7 +7,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from apexsim.research.fienia_strategy import DiscreteStrategyOracle, PaperStrategyModel, PaperStrategyParameters
+from apexsim.research.fienia_strategy import (
+    DiscreteStrategyOracle,
+    PaperStrategyModel,
+    PaperStrategyParameters,
+)
 from apexsim.research.registry import registry_frame
 from apexsim.research.state_space_tyre import LatentTyreDegradationFilter
 from apexsim.research.tyre_energy import TyreEnergyInputs, estimate_wheel_tyre_energy
@@ -109,7 +113,7 @@ def run_research_demo(output: Path) -> dict:
     tyre_state.to_csv(output / "latent_tyre_degradation.csv", index=False)
 
     summary = {
-        "paper_count": int(len(registry)),
+        "paper_count": len(registry),
         "strategy": {
             "race_time_s": float(solution.state.race_time_s),
             "compound_changed": bool(solution.state.compound_changed),
@@ -117,13 +121,13 @@ def run_research_demo(output: Path) -> dict:
             "residual_battery_mj": float(solution.state.battery_mj),
         },
         "tyre_energy": {
-            "train_windows": int(len(train.x)),
-            "test_windows": int(len(test.x)),
+            "train_windows": len(train.x),
+            "test_windows": len(test.x),
             "ridge_test_rmse": rmse(test.y, test_prediction),
             "target_quality": "synthetic proxy, not proprietary measured tyre energy",
         },
         "state_space": {
-            "rows": int(len(tyre_state)),
+            "rows": len(tyre_state),
             "pit_reset_lap": 11,
             "final_latent_degradation_s": float(tyre_state.iloc[-1].latent_tyre_pace_s),
         },

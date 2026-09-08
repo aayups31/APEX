@@ -32,7 +32,7 @@ class RunRegistry:
         now = datetime.now(timezone.utc).isoformat()
         with self._connect() as connection:
             connection.execute(
-                "INSERT OR REPLACE INTO runs VALUES (?, ?, ?, ?, ?, ?, ?)",
+                "INSERT INTO runs VALUES (?, ?, ?, ?, ?, ?, ?)",
                 (run_id, "running", model_kind, now, None, run_dir, None),
             )
 

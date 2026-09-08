@@ -103,7 +103,7 @@ class TrackMap:
         self.to_frame().to_csv(output, index=False)
 
     @classmethod
-    def from_csv(cls, path: str | Path, track_id: str | None = None) -> "TrackMap":
+    def from_csv(cls, path: str | Path, track_id: str | None = None) -> TrackMap:
         frame = pd.read_csv(path).sort_values("s_m")
         required = {"s_m", "x_m", "y_m", "curvature_1pm"}
         missing = required - set(frame.columns)
@@ -129,7 +129,7 @@ class TrackMap:
         length_m: float = 5200.0,
         points: int = 1500,
         seed: int = 42,
-    ) -> "TrackMap":
+    ) -> TrackMap:
         rng = np.random.default_rng(seed)
         s = np.linspace(0.0, length_m, points, endpoint=False)
         theta = 2.0 * np.pi * s / length_m
@@ -168,7 +168,7 @@ class TrackMap:
         frame: pd.DataFrame,
         track_id: str | None = None,
         bins: int = 1200,
-    ) -> "TrackMap":
+    ) -> TrackMap:
         """Reconstruct a stable track reference from public telemetry.
 
         Multiple laps are projected into distance bins and median-aggregated to

@@ -1,9 +1,9 @@
 """Reproducible tyre-energy forecasting protocol from Todd et al. (2025)."""
 from __future__ import annotations
 
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass
 from enum import Enum
-from typing import Callable, Iterable, Sequence
 
 import numpy as np
 import pandas as pd
@@ -128,8 +128,8 @@ def make_event_split(event_ids: Iterable[str], train_fraction: float = 0.60, val
         raise ValueError("At least three events are required for train/validation/test splitting")
     rng = np.random.default_rng(seed)
     rng.shuffle(events)
-    n_train = max(1, int(round(len(events) * train_fraction)))
-    n_val = max(1, int(round(len(events) * validation_fraction)))
+    n_train = max(1, round(len(events) * train_fraction))
+    n_val = max(1, round(len(events) * validation_fraction))
     if n_train + n_val >= len(events):
         n_train = len(events) - 2
         n_val = 1
@@ -160,7 +160,7 @@ class RidgeTyreEnergyForecaster:
         self.model = Ridge(alpha=alpha)
         self.input_shape: tuple[int, int] | None = None
 
-    def fit(self, x: np.ndarray, y: np.ndarray) -> "RidgeTyreEnergyForecaster":
+    def fit(self, x: np.ndarray, y: np.ndarray) -> RidgeTyreEnergyForecaster:
         self.input_shape = (x.shape[1], x.shape[2])
         self.model.fit(x.reshape(len(x), -1), y)
         return self

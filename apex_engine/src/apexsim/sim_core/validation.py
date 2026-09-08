@@ -13,10 +13,16 @@ class SimulationQualityReport:
     duplicate_car_times: int
     negative_speed_rows: int
     negative_fuel_rows: int
+    excess_fuel_rows: int
     invalid_battery_rows: int
     invalid_tyre_health_rows: int
     backward_distance_steps: int
+    backward_time_steps: int
+    backward_lap_steps: int
     invalid_position_rows: int
+    duplicate_position_rows: int
+    invalid_control_rows: int
+    conflicting_terminal_rows: int
     finite_numeric: bool
     passed: bool
 
@@ -24,7 +30,12 @@ class SimulationQualityReport:
         return asdict(self)
 
 
-def validate_simulation_telemetry(frame: pd.DataFrame, expected_cars: int | None = None) -> SimulationQualityReport:
+def validate_simulation_telemetry(
+    frame: pd.DataFrame,
+    expected_cars: int | None = None,
+    battery_capacity_mj: float | None = None,
+    fuel_capacity_kg: float | None = None,
+) -> SimulationQualityReport:
     required = {
         "time_s",
         "car_id",
@@ -42,12 +53,39 @@ def validate_simulation_telemetry(frame: pd.DataFrame, expected_cars: int | None
     duplicate = int(frame.duplicated(["car_id", "time_s"]).sum())
     negative_speed = int((frame.speed_mps < -1e-9).sum())
     negative_fuel = int((frame.fuel_kg < -1e-9).sum())
-    invalid_battery = int((frame.battery_mj < -1e-9).sum())
+    excess_fuel = 0
+    if fuel_capacity_kg is not None:
+        excess_fuel = int((frame.fuel_kg > fuel_capacity_kg + 1e-9).sum())
+    invalid_battery_mask = frame.battery_mj < -1e-9
+    if battery_capacity_mj is not None:
+        invalid_battery_mask |= frame.battery_mj > battery_capacity_mj + 1e-9
+    invalid_battery = int(invalid_battery_mask.sum())
     invalid_health = int(((frame.tyre_health < 0.0) | (frame.tyre_health > 1.0)).sum())
     sorted_frame = frame.sort_values(["car_id", "time_s"])
     deltas = sorted_frame.groupby("car_id").total_distance_m.diff()
     backward = int((deltas < -1e-6).sum())
+    time_deltas = frame.groupby("car_id", sort=False).time_s.diff()
+    backward_time = int((time_deltas <= 0.0).sum())
+    backward_lap = 0
+    if "lap" in sorted_frame:
+        lap_deltas = sorted_frame.groupby("car_id").lap.diff()
+        backward_lap = int((lap_deltas < 0).sum())
     invalid_position = int(((frame.position < 1) | (frame.position > max(cars, 1))).sum())
+    duplicate_positions = int(frame.duplicated(["time_s", "position"]).sum())
+    invalid_controls = 0
+    control_columns = {"throttle", "brake", "ers_deploy"}
+    if control_columns.issubset(frame.columns):
+        outside_range = (
+            (frame[list(control_columns)] < -1e-9)
+            | (frame[list(control_columns)] > 1.0 + 1e-9)
+        ).any(axis=1)
+        conflicting_pedals = (frame.throttle > 0.2) & (frame.brake > 0.2)
+        invalid_controls = int((outside_range | conflicting_pedals).sum())
+    if "drs" in frame.columns:
+        invalid_controls += int((~frame.drs.isin([0, 1, False, True])).sum())
+    terminal_conflicts = 0
+    if {"finished", "retired"}.issubset(frame.columns):
+        terminal_conflicts = int(((frame.finished > 0) & (frame.retired > 0)).sum())
     core_numeric_columns = [
         "time_s", "position", "total_distance_m", "speed_mps",
         "fuel_kg", "battery_mj", "tyre_health"
@@ -58,10 +96,16 @@ def validate_simulation_telemetry(frame: pd.DataFrame, expected_cars: int | None
             duplicate == 0,
             negative_speed == 0,
             negative_fuel == 0,
+            excess_fuel == 0,
             invalid_battery == 0,
             invalid_health == 0,
             backward == 0,
+            backward_time == 0,
+            backward_lap == 0,
             invalid_position == 0,
+            duplicate_positions == 0,
+            invalid_controls == 0,
+            terminal_conflicts == 0,
             finite,
             expected_cars is None or cars == expected_cars,
         ]
@@ -72,13 +116,33 @@ def validate_simulation_telemetry(frame: pd.DataFrame, expected_cars: int | None
         duplicate_car_times=duplicate,
         negative_speed_rows=negative_speed,
         negative_fuel_rows=negative_fuel,
+        excess_fuel_rows=excess_fuel,
         invalid_battery_rows=invalid_battery,
         invalid_tyre_health_rows=invalid_health,
         backward_distance_steps=backward,
+        backward_time_steps=backward_time,
+        backward_lap_steps=backward_lap,
         invalid_position_rows=invalid_position,
+        duplicate_position_rows=duplicate_positions,
+        invalid_control_rows=invalid_controls,
+        conflicting_terminal_rows=terminal_conflicts,
         finite_numeric=finite,
         passed=passed,
     )
+
+
+def assert_simulation_quality(report: SimulationQualityReport) -> None:
+    """Fail at the simulation boundary with the complete invariant report."""
+    if report.passed:
+        return
+    failures = {
+        key: value
+        for key, value in report.to_dict().items()
+        if key not in {"telemetry_rows", "cars", "finite_numeric", "passed"} and value
+    }
+    if not report.finite_numeric:
+        failures["finite_numeric"] = False
+    raise RuntimeError(f"Simulation invariants failed: {failures}")
 
 
 def derive_lap_table(frame: pd.DataFrame, total_laps: int) -> pd.DataFrame:
