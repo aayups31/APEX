@@ -1,5 +1,8 @@
 # Data contracts and provenance
 
+The [public table and frozen split guide](public-tables.md) covers the versioned
+Parquet evidence boundary, portable bundles, CLI verification and event-safe splits.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

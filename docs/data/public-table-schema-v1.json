@@ -1,0 +1,451 @@
+{
+  "schema_version": "apex-public-tables-v1",
+  "tables": {
+    "sessions": {
+      "metadata": {
+        "apex.schema_version": "apex-public-tables-v1",
+        "apex.table": "sessions",
+        "apex.primary_key": "[\"session_id\"]",
+        "apex.time_origin": "start_time_s and pit times are relative to session start"
+      },
+      "fields": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_manifest_sha256",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "event_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "season",
+          "type": "int64",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "round",
+          "type": "int64",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "event",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "session_type",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "start_utc",
+          "type": "timestamp[us, tz=UTC]",
+          "nullable": true,
+          "unit": "UTC"
+        },
+        {
+          "name": "track_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "ruleset_version",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "truth_labels",
+          "type": "struct<session_id: string not null, event_id: string not null, season: string not null, round: string not null, event: string not null, session_type: string not null, start_utc: string not null, track_id: string not null, source_session_id: string not null, ruleset_version: string not null>",
+          "nullable": false,
+          "unit": "1"
+        }
+      ]
+    },
+    "laps": {
+      "metadata": {
+        "apex.schema_version": "apex-public-tables-v1",
+        "apex.table": "laps",
+        "apex.primary_key": "[\"session_id\", \"driver_id\", \"lap_number\"]",
+        "apex.time_origin": "start_time_s and pit times are relative to session start"
+      },
+      "fields": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_manifest_sha256",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "driver_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "lap_number",
+          "type": "int64",
+          "nullable": false,
+          "unit": "lap"
+        },
+        {
+          "name": "lap_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "start_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "sector1_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "sector2_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "sector3_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "is_accurate",
+          "type": "bool",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "track_status",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "stint_id",
+          "type": "int64",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "compound",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "tyre_age_laps",
+          "type": "double",
+          "nullable": true,
+          "unit": "lap"
+        },
+        {
+          "name": "pit_in_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "pit_out_time_s",
+          "type": "double",
+          "nullable": true,
+          "unit": "s"
+        },
+        {
+          "name": "truth_labels",
+          "type": "struct<session_id: string not null, driver_id: string not null, lap_number: string not null, lap_time_s: string not null, start_time_s: string not null, sector1_time_s: string not null, sector2_time_s: string not null, sector3_time_s: string not null, is_accurate: string not null, track_status: string not null, stint_id: string not null, compound: string not null, tyre_age_laps: string not null, pit_in_time_s: string not null, pit_out_time_s: string not null>",
+          "nullable": false,
+          "unit": "1"
+        }
+      ]
+    },
+    "stints": {
+      "metadata": {
+        "apex.schema_version": "apex-public-tables-v1",
+        "apex.table": "stints",
+        "apex.primary_key": "[\"session_id\", \"driver_id\", \"stint_id\"]",
+        "apex.time_origin": "start_time_s and pit times are relative to session start"
+      },
+      "fields": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_manifest_sha256",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "driver_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "stint_id",
+          "type": "int64",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "start_lap",
+          "type": "int64",
+          "nullable": false,
+          "unit": "lap"
+        },
+        {
+          "name": "end_lap",
+          "type": "int64",
+          "nullable": true,
+          "unit": "lap"
+        },
+        {
+          "name": "compound",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "tyre_age_at_start_laps",
+          "type": "double",
+          "nullable": true,
+          "unit": "lap"
+        },
+        {
+          "name": "truth_labels",
+          "type": "struct<session_id: string not null, driver_id: string not null, stint_id: string not null, start_lap: string not null, end_lap: string not null, compound: string not null, tyre_age_at_start_laps: string not null>",
+          "nullable": false,
+          "unit": "1"
+        }
+      ]
+    },
+    "weather": {
+      "metadata": {
+        "apex.schema_version": "apex-public-tables-v1",
+        "apex.table": "weather",
+        "apex.primary_key": "[\"session_id\", \"timestamp_utc\"]",
+        "apex.time_origin": "start_time_s and pit times are relative to session start"
+      },
+      "fields": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_manifest_sha256",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "timestamp_utc",
+          "type": "timestamp[us, tz=UTC]",
+          "nullable": false,
+          "unit": "UTC"
+        },
+        {
+          "name": "air_temp_c",
+          "type": "double",
+          "nullable": true,
+          "unit": "degC"
+        },
+        {
+          "name": "track_temp_c",
+          "type": "double",
+          "nullable": true,
+          "unit": "degC"
+        },
+        {
+          "name": "rainfall",
+          "type": "bool",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "humidity_pct",
+          "type": "double",
+          "nullable": true,
+          "unit": "%"
+        },
+        {
+          "name": "pressure_pa",
+          "type": "double",
+          "nullable": true,
+          "unit": "Pa"
+        },
+        {
+          "name": "wind_speed_mps",
+          "type": "double",
+          "nullable": true,
+          "unit": "m/s"
+        },
+        {
+          "name": "wind_direction_deg",
+          "type": "double",
+          "nullable": true,
+          "unit": "deg"
+        },
+        {
+          "name": "truth_labels",
+          "type": "struct<session_id: string not null, timestamp_utc: string not null, air_temp_c: string not null, track_temp_c: string not null, rainfall: string not null, humidity_pct: string not null, pressure_pa: string not null, wind_speed_mps: string not null, wind_direction_deg: string not null>",
+          "nullable": false,
+          "unit": "1"
+        }
+      ]
+    },
+    "race_control": {
+      "metadata": {
+        "apex.schema_version": "apex-public-tables-v1",
+        "apex.table": "race_control",
+        "apex.primary_key": "[\"session_id\", \"message_id\"]",
+        "apex.time_origin": "start_time_s and pit times are relative to session start"
+      },
+      "fields": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "source_manifest_sha256",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "message_id",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "timestamp_utc",
+          "type": "timestamp[us, tz=UTC]",
+          "nullable": false,
+          "unit": "UTC"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "flag",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "nullable": false,
+          "unit": "1"
+        },
+        {
+          "name": "driver_id",
+          "type": "string",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "lap_number",
+          "type": "int64",
+          "nullable": true,
+          "unit": "lap"
+        },
+        {
+          "name": "sector",
+          "type": "int64",
+          "nullable": true,
+          "unit": "1"
+        },
+        {
+          "name": "truth_labels",
+          "type": "struct<session_id: string not null, message_id: string not null, timestamp_utc: string not null, category: string not null, flag: string not null, scope: string not null, message: string not null, driver_id: string not null, lap_number: string not null, sector: string not null>",
+          "nullable": false,
+          "unit": "1"
+        }
+      ]
+    }
+  }
+}

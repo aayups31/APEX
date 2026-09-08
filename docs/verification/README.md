@@ -9,6 +9,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [Research report](research-report.md)
 - [Foundation and local platform report](foundation-platform-report.md)
 - [Data provenance report](data-provenance-report.md)
+- [Public tables and frozen splits](public-data-foundation-report.md)
 
 ## Purpose
 

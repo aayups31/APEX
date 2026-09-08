@@ -26,6 +26,7 @@ dependencies = [
 
 [project.optional-dependencies]
 real-data = ["fastf1>=3.6", "pyarrow>=15"]
+data-contracts = ["pyarrow>=15"]
 airflow = ["apache-airflow>=3.0"]
 pretrained = ["transformers>=4.45", "chronos-forecasting>=1.4"]
 research = ["xgboost>=2.0", "optuna>=3.6", "gymnasium>=0.29"]

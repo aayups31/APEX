@@ -30,6 +30,9 @@ def run_pipeline(config: ProjectConfig, run_id: str) -> dict:
         manifest_inputs = [canonical]
         if source_manifest.is_file():
             manifest_inputs.append(source_manifest)
+        for path in (config.data.split_manifest_path, config.data.public_dataset_path):
+            if path is not None:
+                manifest_inputs.append(path / "manifest.json" if path.is_dir() else path)
         write_manifest(
             run_dir / "manifest.json",
             build_run_manifest(

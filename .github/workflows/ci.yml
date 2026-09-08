@@ -24,7 +24,7 @@ jobs:
           cache: pip
           cache-dependency-path: apex_engine/pyproject.toml
       - name: Install APEX
-        run: python -m pip install -e './apex_engine[dev]'
+        run: python -m pip install -e './apex_engine[dev,data-contracts]'
       - name: Lint
         run: ruff check apex_engine/src apex_engine/tests
       - name: Test
@@ -33,4 +33,6 @@ jobs:
       - name: Compile Airflow wrapper
         working-directory: apex_engine
         run: python -m py_compile dags/apexsim_dag.py
+      - name: Verify public-data artifacts
+        run: python -m apexsim.cli public-data-demo --output .cache/ci-public-data
 

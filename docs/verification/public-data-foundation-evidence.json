@@ -1,0 +1,216 @@
+{
+  "baseline_commit": "963388c",
+  "baseline_tests_passed": 40,
+  "race_quality": {
+    "telemetry_rows": 1872,
+    "cars": 6,
+    "duplicate_car_times": 0,
+    "negative_speed_rows": 0,
+    "negative_fuel_rows": 0,
+    "excess_fuel_rows": 0,
+    "invalid_battery_rows": 0,
+    "invalid_tyre_health_rows": 0,
+    "backward_distance_steps": 0,
+    "backward_time_steps": 0,
+    "backward_lap_steps": 0,
+    "invalid_position_rows": 0,
+    "duplicate_position_rows": 0,
+    "invalid_control_rows": 0,
+    "conflicting_terminal_rows": 0,
+    "finite_numeric": true,
+    "passed": true
+  },
+  "research_summary": {
+    "paper_count": 22,
+    "strategy": {
+      "race_time_s": 772.6651075170051,
+      "compound_changed": true,
+      "residual_fuel_energy_mj": 0.0,
+      "residual_battery_mj": 0.0
+    },
+    "tyre_energy": {
+      "train_windows": 420,
+      "test_windows": 140,
+      "ridge_test_rmse": 0.055471744758730714,
+      "target_quality": "synthetic proxy, not proprietary measured tyre energy"
+    },
+    "state_space": {
+      "rows": 20,
+      "pit_reset_lap": 11,
+      "final_latent_degradation_s": 0.28142252793994854
+    }
+  },
+  "public_data_summary": {
+    "dataset_sha256": "c47eff1fd9f64321568085f375796f023ba437df7fa9ca618592f20a4aa4932d",
+    "maturity": "R0",
+    "partitions": {
+      "test": [
+        "SYNTH_2_Q",
+        "SYNTH_2_R"
+      ],
+      "train": [
+        "SYNTH_0_Q",
+        "SYNTH_0_R"
+      ],
+      "val": [
+        "SYNTH_1_Q",
+        "SYNTH_1_R"
+      ]
+    },
+    "passed": true,
+    "split_sha256": "2ebc4f45aa936cada2ab1cadf9a66b8d57740599a2be9847c6858068b98ef7fc",
+    "table_rows": {
+      "laps": 12,
+      "race_control": 6,
+      "sessions": 6,
+      "stints": 6,
+      "weather": 6
+    },
+    "truth": "SIMULATED",
+    "weather_missingness": {
+      "air_temp_c": 0,
+      "humidity_pct": 0,
+      "pressure_pa": 0,
+      "rainfall": 0,
+      "session_id": 0,
+      "source": 0,
+      "source_manifest_sha256": 0,
+      "timestamp_utc": 0,
+      "track_temp_c": 0,
+      "truth_labels": 0,
+      "wind_direction_deg": 6,
+      "wind_speed_mps": 6
+    }
+  },
+  "dataset_manifest": {
+    "quality": {
+      "passed": true,
+      "schema_version": "apex-public-tables-v1",
+      "tables": {
+        "laps": {
+          "null_counts": {
+            "compound": 0,
+            "driver_id": 0,
+            "is_accurate": 0,
+            "lap_number": 0,
+            "lap_time_s": 0,
+            "pit_in_time_s": 12,
+            "pit_out_time_s": 12,
+            "sector1_time_s": 0,
+            "sector2_time_s": 0,
+            "sector3_time_s": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_time_s": 0,
+            "stint_id": 0,
+            "track_status": 0,
+            "truth_labels": 0,
+            "tyre_age_laps": 0
+          },
+          "passed": true,
+          "rows": 12
+        },
+        "race_control": {
+          "null_counts": {
+            "category": 0,
+            "driver_id": 6,
+            "flag": 0,
+            "lap_number": 6,
+            "message": 0,
+            "message_id": 0,
+            "scope": 0,
+            "sector": 6,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "truth_labels": 0
+          },
+          "passed": true,
+          "rows": 6
+        },
+        "sessions": {
+          "null_counts": {
+            "event": 0,
+            "event_id": 0,
+            "round": 0,
+            "ruleset_version": 0,
+            "season": 0,
+            "session_id": 0,
+            "session_type": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "source_session_id": 0,
+            "start_utc": 0,
+            "track_id": 0,
+            "truth_labels": 0
+          },
+          "passed": true,
+          "rows": 6
+        },
+        "stints": {
+          "null_counts": {
+            "compound": 0,
+            "driver_id": 0,
+            "end_lap": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_lap": 0,
+            "stint_id": 0,
+            "truth_labels": 0,
+            "tyre_age_at_start_laps": 0
+          },
+          "passed": true,
+          "rows": 6
+        },
+        "weather": {
+          "null_counts": {
+            "air_temp_c": 0,
+            "humidity_pct": 0,
+            "pressure_pa": 0,
+            "rainfall": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "track_temp_c": 0,
+            "truth_labels": 0,
+            "wind_direction_deg": 6,
+            "wind_speed_mps": 6
+          },
+          "passed": true,
+          "rows": 6
+        }
+      }
+    },
+    "schema_version": "apex-public-dataset-v1",
+    "sources": {
+      "6a56eb94c9b9ef93a3ccefdddc5edb945359f3e089d72c89fb6392e20ab7f39b": "53fc0182cbad0f618aef365a1e5591a7f8ec8bf0544aa781c9ef2d5670933714"
+    },
+    "tables": {
+      "laps": {
+        "rows": 12,
+        "sha256": "c5cdc396289d24f2cca1df656dc5ae5b63fe0a92a9b6cf80450c518bfdaa9bc2"
+      },
+      "race_control": {
+        "rows": 6,
+        "sha256": "60866f43e924f99e0fd4af3953c6fd26096c2b1cd4f0ce3ce4e8fee129bc8780"
+      },
+      "sessions": {
+        "rows": 6,
+        "sha256": "d8a1db973f1e36c02fbd366cdcbf9a26f9f2b96f848f8acaa98d61bbb3b5d375"
+      },
+      "stints": {
+        "rows": 6,
+        "sha256": "19470402cf16476d2f2284374748ef8560dfed4dfc3b33c860b9ac04f76684a4"
+      },
+      "weather": {
+        "rows": 6,
+        "sha256": "dc77c5d78cdbadccc45a0a751d8a2138e8fadd53f0739bc0ae78820b9ddbd2d5"
+      }
+    },
+    "content_sha256": "c47eff1fd9f64321568085f375796f023ba437df7fa9ca618592f20a4aa4932d"
+  }
+}

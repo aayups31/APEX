@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Annotated
 
 import typer
 
@@ -108,6 +109,32 @@ def research_catalog(output: Path | None = None) -> None:
         typer.echo(f"Saved {len(frame)} paper records to {output}")
     else:
         typer.echo(frame[["paper_id", "year", "priority", "implementation_stage", "title"]].to_string(index=False))
+
+
+@app.command("public-data-demo")
+def public_data_demo(output: Annotated[Path, typer.Option()]) -> None:
+    """Verify versioned Parquet tables and event-safe splits using synthetic fixtures."""
+    from apexsim.examples.public_data_demo import run_public_data_demo
+
+    typer.echo(json.dumps(run_public_data_demo(output), indent=2))
+
+
+@app.command("validate-public-data")
+def validate_public_data(dataset: Path) -> None:
+    """Verify a frozen five-table dataset, its source snapshots and artifact hashes."""
+    from apexsim.data.tables import read_dataset
+
+    _, manifest = read_dataset(dataset)
+    typer.echo(json.dumps(manifest["quality"], indent=2))
+
+
+@app.command("freeze-splits")
+def freeze_public_splits(dataset: Path, assignments: Path, output: Path, purpose: str) -> None:
+    """Freeze explicit JSON train/val/test session lists against a verified dataset."""
+    from apexsim.data.splits import freeze_splits
+
+    payload = json.loads(assignments.read_text(encoding="utf-8"))
+    typer.echo(json.dumps(freeze_splits(dataset, payload, output, purpose=purpose), indent=2))
 
 
 @app.command("research-demo")

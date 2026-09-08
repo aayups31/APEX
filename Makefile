@@ -1,7 +1,7 @@
 .PHONY: install test lint verify api
 
 install:
-	python -m pip install -e './apex_engine[dev]'
+	python -m pip install -e './apex_engine[dev,data-contracts]'
 
 test:
 	cd apex_engine && python -m pytest -q

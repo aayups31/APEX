@@ -81,12 +81,25 @@ def dataset_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) ->
             "standardizer": json.loads(scaler_path.read_text(encoding="utf-8")),
         }
     frame = pd.read_csv(canonical_path)
-    splits = split_sessions(
-        frame,
-        config.data.train_fraction,
-        config.data.val_fraction,
-        config.seed,
-    )
+    if config.data.split_manifest_path is not None:
+        from apexsim.data.splits import load_splits
+
+        if config.data.public_dataset_path is None:
+            raise ValueError("Frozen splits require public_dataset_path")
+        frozen = load_splits(config.data.split_manifest_path, config.data.public_dataset_path,
+                             session_ids=frame.session_id.unique().tolist())
+        splits = frozen["partitions"]
+        with (run_dir / "split_manifest.json").open("x", encoding="utf-8") as handle:
+            json.dump(frozen, handle, indent=2, sort_keys=True)
+    else:
+        if config.data.public_dataset_path is not None:
+            raise ValueError("Public dataset requires split_manifest_path")
+        splits = split_sessions(
+            frame,
+            config.data.train_fraction,
+            config.data.val_fraction,
+            config.seed,
+        )
     train_frame = frame[frame.session_id.isin(splits["train"])]
     standardizer = Standardizer.fit(train_frame)
     split_path.write_text(json.dumps(splits, indent=2), encoding="utf-8")

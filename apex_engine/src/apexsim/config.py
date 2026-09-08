@@ -13,6 +13,8 @@ class DataConfig(BaseModel):
     processed_dir: Path = Path("data/processed")
     canonical_input_path: Path | None = None
     source_manifest_path: Path | None = None
+    public_dataset_path: Path | None = None
+    split_manifest_path: Path | None = None
     sample_hz: int = Field(5, ge=1, le=50)
     sessions: int = Field(8, ge=3)
     laps_per_session: int = Field(3, ge=1)
@@ -26,6 +28,8 @@ class DataConfig(BaseModel):
 
     @model_validator(mode="after")
     def fractions_sum_to_one(self) -> DataConfig:
+        if (self.public_dataset_path is None) != (self.split_manifest_path is None):
+            raise ValueError("public_dataset_path and split_manifest_path must be supplied together")
         total = self.train_fraction + self.val_fraction + self.test_fraction
         if abs(total - 1.0) > 1e-6:
             raise ValueError("train/val/test fractions must sum to 1.0")
