@@ -119,6 +119,39 @@ def public_data_demo(output: Annotated[Path, typer.Option()]) -> None:
     typer.echo(json.dumps(run_public_data_demo(output), indent=2))
 
 
+@app.command("download-fastf1")
+def download_fastf1(
+    year: Annotated[int, typer.Option()],
+    round_number: Annotated[int, typer.Option()],
+    session: Annotated[str, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+) -> None:
+    """Freeze a full native FastF1 session and its isolated HTTP/parser cache."""
+    from apexsim.data.fastf1_archive import FastF1Query, download_fastf1_session
+
+    result = download_fastf1_session(FastF1Query(year, round_number, session), output)
+    typer.echo(json.dumps({"identity": result["identity"], "archive_sha256": result["content_sha256"],
+                           "files": len(result["files"]), "path": str(output)}, indent=2))
+
+
+@app.command("verify-fastf1")
+def verify_fastf1(archive: Path) -> None:
+    """Check a FastF1 archive without network access or loading cached pickles."""
+    from apexsim.data.fastf1_archive import verify_fastf1_archive
+
+    result = verify_fastf1_archive(archive)
+    typer.echo(json.dumps({"passed": True, "identity": result["identity"],
+                           "archive_sha256": result["content_sha256"]}, indent=2))
+
+
+@app.command("replay-fastf1")
+def replay_fastf1(archive: Path, output: Annotated[Path, typer.Option()]) -> None:
+    """Rebuild a trusted archive offline and compare every native table hash."""
+    from apexsim.data.fastf1_archive import replay_fastf1_archive
+
+    typer.echo(json.dumps(replay_fastf1_archive(archive, output), indent=2))
+
+
 @app.command("validate-public-data")
 def validate_public_data(dataset: Path) -> None:
     """Verify a frozen five-table dataset, its source snapshots and artifact hashes."""

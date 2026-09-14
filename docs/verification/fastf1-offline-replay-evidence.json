@@ -1,0 +1,237 @@
+{
+  "baseline_commit": "3d58be0",
+  "baseline_tests_passed": 84,
+  "archive_sha256": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+  "environment": {
+    "fastf1": "3.8.3",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "python": "3.12.12"
+  },
+  "source_manifest": {
+    "accessed_at_utc": "2026-09-14T20:44:59.240076+00:00",
+    "adapter_version": "0.4.0",
+    "canonical_schema_version": "apex-fastf1-snapshot-v1",
+    "content_sha256": "4db0a50080848d80f3878c9a94b73ab66a8b249079cd912c46dbc7ddf11e8e82",
+    "files": [],
+    "license_id": null,
+    "notes": [
+      "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+      "HTTP and parser cache files are enumerated in the enclosing archive.",
+      "Source-data rights remain with the respective providers."
+    ],
+    "query": {
+      "round_number": 12,
+      "session": "Q",
+      "year": 2024
+    },
+    "requests": [
+      {
+        "endpoint": "fastf1.get_session",
+        "payload_sha256": null,
+        "query": {
+          "backend": "fastf1",
+          "round_number": 12,
+          "session": "Q",
+          "year": 2024
+        },
+        "records": null,
+        "retrieved_at_utc": "2026-09-14T20:44:59.240076+00:00"
+      },
+      {
+        "endpoint": "fastf1.Session.load",
+        "payload_sha256": null,
+        "query": {
+          "laps": true,
+          "messages": true,
+          "telemetry": true,
+          "weather": true
+        },
+        "records": 368,
+        "retrieved_at_utc": "2026-09-14T20:44:59.240076+00:00"
+      }
+    ],
+    "schema_version": "apex-source-manifest-v1",
+    "source": "fastf1",
+    "terms_url": "https://docs.fastf1.dev/"
+  },
+  "identity": {
+    "api_path": "/static/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/",
+    "drivers": [
+      "1",
+      "10",
+      "11",
+      "14",
+      "16",
+      "18",
+      "2",
+      "20",
+      "22",
+      "23",
+      "24",
+      "27",
+      "3",
+      "31",
+      "4",
+      "44",
+      "55",
+      "63",
+      "77",
+      "81"
+    ],
+    "event_name": "British Grand Prix",
+    "round_number": 12,
+    "session_name": "Qualifying",
+    "session_start_time_s": 767.078,
+    "t0_date": "2024-07-06T13:47:13.009000",
+    "year": 2024
+  },
+  "archive_file_count": 58,
+  "archive_bytes": 74163966,
+  "cache_files": {
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/_extended_timing_data.ff1pkl": {
+      "bytes": 111488,
+      "sha256": "c5bd375bdfad77f7dc5deb9d7bf46b5dc6e30505d7f3a905111687cce60160b1"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/car_data.ff1pkl": {
+      "bytes": 22769292,
+      "sha256": "b09f7d009ad438a57c5bbf476b0268c193bf56a0176af1616f30575b87578a62"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/driver_info.ff1pkl": {
+      "bytes": 5801,
+      "sha256": "b119382cc42516544eafaa081a51bbe65aecc6465f48a13d441afec90aa003f4"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/position_data.ff1pkl": {
+      "bytes": 21648013,
+      "sha256": "0e5f93ccc8bdb77560b574afe0c3525de214a5a81e88519b3a54e80b457fbe82"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/race_control_messages.ff1pkl": {
+      "bytes": 4389,
+      "sha256": "e9b7cf8fc4787777173757d0336a0d3c572315c53a21ecede69444171c460fd2"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/session_info.ff1pkl": {
+      "bytes": 542,
+      "sha256": "48dbe8c86325edc16216ca6890498df4791534d7d65f115c6c40371ee6bea36d"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/session_status_data.ff1pkl": {
+      "bytes": 451,
+      "sha256": "f5cc095b81dd83ba3b0972dab7ce04f92aebb1f29783f4a022b03e6347a9e59b"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/timing_app_data.ff1pkl": {
+      "bytes": 46394,
+      "sha256": "d83b843e340e5cb1ae5c5a9670c407ac7a7043354fe4f0a276edbc9b825a8daf"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/track_status_data.ff1pkl": {
+      "bytes": 211,
+      "sha256": "2f8fd873254d7513b548c6a1387947821a90276aee1b7074b7ad751d451df600"
+    },
+    "cache/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/weather_data.ff1pkl": {
+      "bytes": 5635,
+      "sha256": "8d89435720a06768553758073c1e516fdcf0b413dc769861b332856fa13179b9"
+    },
+    "cache/fastf1_http_cache.sqlite": {
+      "bytes": 9162752,
+      "sha256": "87e2f3cf465a7ef443ca0bdae15f86846eea54e8f869c3e81bf90b8511da48a4"
+    }
+  },
+  "replay": {
+    "archive_sha256": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+    "content_sha256": "ab5da1556764d7888e788114ea8150783d4389ffb40f341f1d0c5ae4e3cb33bb",
+    "environment": {
+      "fastf1": "3.8.3",
+      "numpy": "2.5.3",
+      "pandas": "2.3.3",
+      "pyarrow": "25.0.1",
+      "python": "3.12.12"
+    },
+    "identity": {
+      "api_path": "/static/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/",
+      "drivers": [
+        "1",
+        "10",
+        "11",
+        "14",
+        "16",
+        "18",
+        "2",
+        "20",
+        "22",
+        "23",
+        "24",
+        "27",
+        "3",
+        "31",
+        "4",
+        "44",
+        "55",
+        "63",
+        "77",
+        "81"
+      ],
+      "event_name": "British Grand Prix",
+      "round_number": 12,
+      "session_name": "Qualifying",
+      "session_start_time_s": 767.078,
+      "t0_date": "2024-07-06T13:47:13.009000",
+      "year": 2024
+    },
+    "mismatched_tables": [],
+    "network_attempts": 0,
+    "passed": true,
+    "rows": {
+      "car_data/1": 19279,
+      "car_data/10": 19279,
+      "car_data/11": 19279,
+      "car_data/14": 19279,
+      "car_data/16": 19279,
+      "car_data/18": 19279,
+      "car_data/2": 19279,
+      "car_data/20": 19279,
+      "car_data/22": 19279,
+      "car_data/23": 19279,
+      "car_data/24": 19279,
+      "car_data/27": 19279,
+      "car_data/3": 19279,
+      "car_data/31": 19279,
+      "car_data/4": 19279,
+      "car_data/44": 19279,
+      "car_data/55": 19279,
+      "car_data/63": 19279,
+      "car_data/77": 19279,
+      "car_data/81": 19279,
+      "laps": 368,
+      "pos_data/1": 19665,
+      "pos_data/10": 19665,
+      "pos_data/11": 19665,
+      "pos_data/14": 19665,
+      "pos_data/16": 19665,
+      "pos_data/18": 19665,
+      "pos_data/2": 19665,
+      "pos_data/20": 19665,
+      "pos_data/22": 19665,
+      "pos_data/23": 19665,
+      "pos_data/24": 19665,
+      "pos_data/27": 19665,
+      "pos_data/3": 19665,
+      "pos_data/31": 19665,
+      "pos_data/4": 19665,
+      "pos_data/44": 19665,
+      "pos_data/55": 19665,
+      "pos_data/63": 19665,
+      "pos_data/77": 19665,
+      "pos_data/81": 19665,
+      "race_control_messages": 46,
+      "results": 20,
+      "session_status": 14,
+      "track_status": 4,
+      "weather_data": 85
+    },
+    "schema_version": "apex-fastf1-replay-v1",
+    "table_count": 46
+  },
+  "upstream_warnings": [
+    "Fixed incorrect tyre stint information for driver '18'"
+  ],
+  "source_domain": "Historical FastF1 parsed source with upstream reconstructions; not simulator calibration"
+}
