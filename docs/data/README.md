@@ -6,6 +6,9 @@ Parquet evidence boundary, portable bundles, CLI verification and event-safe spl
 The [FastF1 archive guide](fastf1-archives.md) covers complete-session acquisition,
 cache preservation, native source tables and network-disabled reconstruction.
 
+The [OpenF1 archive guide](openf1-archives.md) covers all 18 endpoint families,
+original response preservation, explicit empty results and offline reconstruction.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.
@@ -30,9 +33,13 @@ An adapter also refuses to overwrite its existing output or sidecar.
 
 ## Adapter behavior
 
-OpenF1 records separate request evidence for `car_data`, `location`, and `weather`, then
+The legacy `ingest-openf1` command records separate request evidence for `car_data`, `location`, and `weather`, then
 hashes its derived canonical CSV. Its published site links the data licence as
 CC BY-NC-SA 4.0; the manifest stores the official licence URL.
+
+The separate `download-openf1` command freezes the full versioned endpoint profile
+and native values without the legacy feature CSV's interpolation or placeholders.
+`verify-openf1` and `replay-openf1` check response lineage and exact reconstruction.
 
 The legacy `ingest-fastf1` command records its logical query and canonical CSV output.
 The separate `download-fastf1` command now freezes and enumerates an isolated full-session

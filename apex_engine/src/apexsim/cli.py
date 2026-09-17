@@ -152,6 +152,34 @@ def replay_fastf1(archive: Path, output: Annotated[Path, typer.Option()]) -> Non
     typer.echo(json.dumps(replay_fastf1_archive(archive, output), indent=2))
 
 
+@app.command("download-openf1")
+def download_openf1(session_key: Annotated[int, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Freeze all OpenF1 endpoint families for one historical session, without filling fields."""
+    from apexsim.data.openf1_archive import download_openf1_session
+
+    result = download_openf1_session(session_key, output)
+    typer.echo(json.dumps({"identity": result["identity"], "archive_sha256": result["content_sha256"],
+                           "requests": len(result["requests"]), "files": len(result["files"]), "path": str(output)}, indent=2))
+
+
+@app.command("verify-openf1")
+def verify_openf1(archive: Path) -> None:
+    """Verify OpenF1 response hashes, endpoint coverage and native table reconstruction."""
+    from apexsim.data.openf1_archive import verify_openf1_archive
+
+    result = verify_openf1_archive(archive)
+    typer.echo(json.dumps({"passed": True, "identity": result["identity"],
+                           "archive_sha256": result["content_sha256"]}, indent=2))
+
+
+@app.command("replay-openf1")
+def replay_openf1(archive: Path, output: Annotated[Path, typer.Option()]) -> None:
+    """Rebuild native OpenF1 tables from saved responses with networking disabled."""
+    from apexsim.data.openf1_archive import replay_openf1_archive
+
+    typer.echo(json.dumps(replay_openf1_archive(archive, output), indent=2))
+
+
 @app.command("validate-public-data")
 def validate_public_data(dataset: Path) -> None:
     """Verify a frozen five-table dataset, its source snapshots and artifact hashes."""

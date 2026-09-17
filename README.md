@@ -28,6 +28,10 @@ The present system is designed to establish:
 
 The immediate objective is not to visually imitate a racing game. It is to build a simulator whose behaviour can be measured, challenged, calibrated, and improved.
 
+Reproducible public-data acquisition now includes [FastF1 session archives](docs/data/fastf1-archives.md)
+and [OpenF1 multi-endpoint archives](docs/data/openf1-archives.md), with offline replay
+and explicit source provenance. See the [OpenF1 verification report](docs/verification/openf1-offline-replay-report.md).
+
 ---
 
 ## What APEX Currently Includes
