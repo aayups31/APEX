@@ -1,0 +1,76 @@
+{
+  "schema_version": "apex-openf1-acceptance-evidence-v1",
+  "local_date": "2026-09-16",
+  "task": "P1-04",
+  "status": "DONE",
+  "maturity": "R0",
+  "base_commit": "c0d810346b27935ef0b5814fb80dcb5b83a06341",
+  "branch": "codex/openf1-offline-replay",
+  "session": {
+    "session_key": 9554,
+    "meeting_key": 1240,
+    "year": 2024,
+    "circuit": "Silverstone",
+    "session_name": "Qualifying",
+    "driver_count": 20
+  },
+  "archive": {
+    "path": ".cache/openf1-9554-20260916",
+    "content_sha256": "f792e17fc1270aeac688b12ed715e397559f76d1c379319831fc36e7f43016f5",
+    "endpoint_count": 18,
+    "request_count": 56,
+    "http_attempt_count": 56,
+    "manifest_file_count": 131,
+    "manifest_file_bytes": 227862794,
+    "total_rows": 781473,
+    "rows": {
+      "car_data": 385580,
+      "championship_drivers": 0,
+      "championship_teams": 0,
+      "drivers": 20,
+      "intervals": 0,
+      "laps": 368,
+      "location": 393300,
+      "meetings": 1,
+      "overtakes": 0,
+      "pit": 101,
+      "position": 1799,
+      "race_control": 54,
+      "session_result": 20,
+      "sessions": 1,
+      "starting_grid": 20,
+      "stints": 102,
+      "team_radio": 22,
+      "weather": 85
+    },
+    "empty_endpoints": ["championship_drivers", "championship_teams", "intervals", "overtakes"],
+    "inspection": {"null_lap_duration": 46, "null_lap_date_start": 2}
+  },
+  "replay": {
+    "path": ".cache/openf1-9554-20260916-replay",
+    "content_sha256": "7f537c0619757648ba1b620bbf3b398839a2eee91be3b481543ac27065bc4439",
+    "passed": true,
+    "network_attempts": 0,
+    "mismatched_tables": [],
+    "archive_unchanged": true
+  },
+  "environment": {"python": "3.12.12", "apexsim": "0.4.0", "requests": "2.34.2"},
+  "validation": {
+    "baseline_tests_passed": 109,
+    "baseline_test_seconds": 182.10,
+    "new_tests_passed": 48,
+    "full_tests_passed": 157,
+    "full_test_seconds": 141.19,
+    "existing_warnings": 4,
+    "ruff_passed": true,
+    "airflow_wrapper_compilation_passed": true,
+    "public_data_reference_demo_passed": true
+  },
+  "limitations": [
+    "Source-native evidence only; no APEX temporal alignment, canonical conversion or calibration.",
+    "Empty responses are availability evidence, not proof that no real event occurred.",
+    "Python socket guard is not an OS-wide network sandbox.",
+    "One-session replay is not a multi-event benchmark or evidence of simulator accuracy.",
+    "Research gates R012-R014 remain open."
+  ]
+}
