@@ -37,6 +37,9 @@ class DownloadPolicy:
 class OpenF1Client:
     """Record successful response bodies and the attempt history; never follow redirects."""
 
+    base_url = BASE_URL
+    source_name = "OpenF1"
+
     def __init__(self, policy: DownloadPolicy) -> None:
         self.policy = policy
         self.session = requests.Session()
@@ -56,9 +59,9 @@ class OpenF1Client:
                 try:
                     delay = (parsedate_to_datetime(value) - datetime.now(timezone.utc)).total_seconds()
                 except (TypeError, ValueError) as exc:
-                    raise ValueError("Invalid OpenF1 Retry-After header") from exc
+                    raise ValueError(f"Invalid {self.source_name} Retry-After header") from exc
             if not math.isfinite(delay) or delay > self.policy.max_retry_wait_s:
-                raise RuntimeError("OpenF1 Retry-After exceeds the bounded wait; retry acquisition later")
+                raise RuntimeError(f"{self.source_name} Retry-After exceeds the bounded wait; retry acquisition later")
         return max(0.0, delay)
 
     def get(self, endpoint: str, query: dict[str, int]) -> tuple[bytes, dict]:
@@ -75,7 +78,7 @@ class OpenF1Client:
             started = datetime.now(timezone.utc).isoformat()
             retry_after = None
             try:
-                with self.session.get(f"{BASE_URL}/{endpoint}", params=query, stream=True,
+                with self.session.get(f"{self.base_url}/{endpoint}", params=query, stream=True,
                                       timeout=(10, self.policy.timeout_s), allow_redirects=False) as response:
                     entry = {"started_at_utc": started, "status_code": response.status_code}
                     attempts.append(entry)
@@ -86,7 +89,7 @@ class OpenF1Client:
                         for chunk in response.iter_content(chunk_size=65536):
                             body.extend(chunk)
                             if len(body) > self.policy.max_response_bytes:
-                                raise ValueError(f"OpenF1 {endpoint} response exceeds byte limit")
+                                raise ValueError(f"{self.source_name} {endpoint} response exceeds byte limit")
                         return bytes(body), {"status_code": response.status_code,
                                              "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
                                              "headers": {key.lower(): value for key, value in response.headers.items()
@@ -98,4 +101,4 @@ class OpenF1Client:
                 delay = self._retry_delay(retry_after, attempt)
                 attempts[-1]["retry_wait_s"] = delay
                 time.sleep(delay)
-        raise RuntimeError(f"OpenF1 {endpoint} failed after {self.policy.max_attempts} attempts: {attempts}")
+        raise RuntimeError(f"{self.source_name} {endpoint} failed after {self.policy.max_attempts} attempts: {attempts}")

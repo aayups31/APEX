@@ -1,0 +1,59 @@
+{
+  "schema_version": "apex-jolpica-acceptance-evidence-v1",
+  "acquisition_local_date": "2026-09-16",
+  "handoff_local_date": "2026-09-18",
+  "task": "P1-05",
+  "status": "DONE",
+  "maturity": "R0",
+  "branch": "codex/jolpica-event-catalog",
+  "base_commit": "4ba6f90477f5f2d48d7cee7538f92ecdeddf5563",
+  "total_events": 46,
+  "unique_circuits": 24,
+  "network_attempts_during_verification": 0,
+  "archive_files_unchanged_after_verification": true,
+  "user_agent": "APEX/0.4.0 (historical research archive)",
+  "seasons": [
+    {
+      "season": 2023,
+      "events": 22,
+      "circuits": 22,
+      "pages": 5,
+      "offsets": [0, 5, 10, 15, 20],
+      "archive_path": ".cache/jolpica-2023-20260916",
+      "archive_sha256": "62f7dad20cf71d1a5b00a5c9476d95f7ca0972d4b16bdbae369f03cc034162c8",
+      "manifest_files": 11,
+      "manifest_bytes": 29408,
+      "british_event_id": "F1_2023_R10"
+    },
+    {
+      "season": 2024,
+      "events": 24,
+      "circuits": 24,
+      "pages": 5,
+      "offsets": [0, 5, 10, 15, 20],
+      "archive_path": ".cache/jolpica-2024-20260916",
+      "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+      "manifest_files": 11,
+      "manifest_bytes": 31773,
+      "british_event_id": "F1_2024_R12"
+    }
+  ],
+  "environment": {"python": "3.12.12", "apexsim": "0.4.0", "requests": "2.34.2"},
+  "validation": {
+    "baseline_tests_passed_at_base_commit": 157,
+    "new_tests_passed": 30,
+    "targeted_tests_passed_including_openf1": 78,
+    "full_tests_passed": 187,
+    "full_test_seconds": 107.27,
+    "existing_warnings": 4,
+    "ruff_passed": true,
+    "airflow_wrapper_compilation_passed": true,
+    "public_data_reference_demo_passed": true
+  },
+  "limitations": [
+    "Calendar metadata only; these 46 events are not a collected telemetry corpus.",
+    "Source-query completeness does not establish calendar accuracy or actual session-start timing.",
+    "Cross-provider session linkage and temporal alignment remain P1-06.",
+    "Research equation-fidelity gates R012-R014 remain open."
+  ]
+}

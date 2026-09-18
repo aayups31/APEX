@@ -32,6 +32,9 @@ Reproducible public-data acquisition now includes [FastF1 session archives](docs
 and [OpenF1 multi-endpoint archives](docs/data/openf1-archives.md), with offline replay
 and explicit source provenance. See the [OpenF1 verification report](docs/verification/openf1-offline-replay-report.md).
 
+The [Jolpica event catalog](docs/data/jolpica-events.md) adds verified season/round/circuit
+metadata for selecting multiple events, with immutable paginated source responses.
+
 ---
 
 ## What APEX Currently Includes

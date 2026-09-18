@@ -180,6 +180,38 @@ def replay_openf1(archive: Path, output: Annotated[Path, typer.Option()]) -> Non
     typer.echo(json.dumps(replay_openf1_archive(archive, output), indent=2))
 
 
+@app.command("download-jolpica")
+def download_jolpica(
+    season: Annotated[int, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+    page_size: int = 100,
+) -> None:
+    """Freeze a complete Jolpica season calendar with raw paginated responses."""
+    from apexsim.data.jolpica import download_jolpica_events
+
+    result = download_jolpica_events(season, output, page_size=page_size)
+    typer.echo(json.dumps({"season": season, "events": result["event_count"], "pages": len(result["pages"]),
+                           "archive_sha256": result["content_sha256"], "path": str(output)}, indent=2))
+
+
+@app.command("verify-jolpica")
+def verify_jolpica(archive: Path) -> None:
+    """Reconstruct and verify a Jolpica event catalog offline from its frozen pages."""
+    from apexsim.data.jolpica import verify_jolpica_archive
+
+    result = verify_jolpica_archive(archive)
+    typer.echo(json.dumps({"passed": True, "season": result["query"]["season"], "events": result["event_count"],
+                           "archive_sha256": result["content_sha256"]}, indent=2))
+
+
+@app.command("list-events")
+def list_events(archive: Path) -> None:
+    """List verified season/round/circuit metadata from a local Jolpica archive."""
+    from apexsim.data.jolpica import read_jolpica_events
+
+    typer.echo(json.dumps(read_jolpica_events(archive), indent=2))
+
+
 @app.command("validate-public-data")
 def validate_public_data(dataset: Path) -> None:
     """Verify a frozen five-table dataset, its source snapshots and artifact hashes."""
