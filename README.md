@@ -35,6 +35,10 @@ and explicit source provenance. See the [OpenF1 verification report](docs/verifi
 The [Jolpica event catalog](docs/data/jolpica-events.md) adds verified season/round/circuit
 metadata for selecting multiple events, with immutable paginated source responses.
 
+The [temporal alignment report](docs/data/temporal-alignment.md) checks explicitly
+linked sessions across these archives and records timing gaps, join coverage and
+source disagreements without filling missing values or claiming training readiness.
+
 ---
 
 ## What APEX Currently Includes

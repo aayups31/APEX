@@ -212,6 +212,26 @@ def list_events(archive: Path) -> None:
     typer.echo(json.dumps(read_jolpica_events(archive), indent=2))
 
 
+@app.command("align-public-data")
+def align_public_data(
+    fastf1: Annotated[Path, typer.Option()],
+    openf1: Annotated[Path, typer.Option()],
+    jolpica: Annotated[Path, typer.Option()],
+    link: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+    policy: Annotated[Path | None, typer.Option()] = None,
+) -> None:
+    """Audit explicit source links, causal temporal joins, gaps and cross-provider differences."""
+    from apexsim.data.alignment import AlignmentPolicy
+    from apexsim.data.alignment_report import build_alignment_report
+
+    settings = AlignmentPolicy(**json.loads(policy.read_text(encoding="utf-8"))) if policy else AlignmentPolicy()
+    result = build_alignment_report(fastf1, openf1, jolpica, link, output, policy=settings)
+    typer.echo(json.dumps({"report_complete": result["report_complete"], "training_ready": result["training_ready"],
+                           "event_id": result["identity"]["event_id"], "joins": len(result["joins"]),
+                           "report_sha256": result["content_sha256"], "path": str(output)}, indent=2))
+
+
 @app.command("validate-public-data")
 def validate_public_data(dataset: Path) -> None:
     """Verify a frozen five-table dataset, its source snapshots and artifact hashes."""
