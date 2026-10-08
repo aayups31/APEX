@@ -1,0 +1,697 @@
+{
+  "schema_version": "apex-fieni-equation-map-v1",
+  "classification": "ADAPTATION",
+  "paper_id": "FIENI_2025",
+  "paper_path": "research/user_provided_papers/learning-based-f1-strategies.pdf",
+  "paper_sha256": "fc609aa9dcff9179d5e6cba8ce96eb7785f8db45daeef2fc6c4aad32ad133270",
+  "review_date": "2026-10-08",
+  "review_method": "Text extraction plus visual review of PDF pages 3-10 and direct code cross-check",
+  "code_modules": [
+    "apexsim.research.fienia_strategy",
+    "apexsim.research.strategy_env",
+    "apexsim.research.exact_strategy"
+  ],
+  "parameter_truth_label": "PRIOR",
+  "parameter_source": "All configured defaults and fixture tyre coefficients are explicit synthetic assumptions, not identified paper/FIA/current-season values",
+  "parameter_units": {
+    "total_laps": "laps",
+    "empty_mass_kg": "kg",
+    "initial_fuel_kg": "kg",
+    "fuel_lhv_mj_per_kg": "MJ/kg",
+    "battery_capacity_mj": "MJ",
+    "battery_delta_min_mj": "MJ/lap",
+    "battery_delta_max_mj": "MJ/lap",
+    "nominal_lap_time_s": "s",
+    "pit_inlap_penalty_s": "s",
+    "pit_outlap_penalty_s": "s",
+    "consecutive_pit_penalty_s": "s",
+    "mass_time_s_per_kg": "s/kg",
+    "fuel_energy_time_s_per_fraction": "s/fraction",
+    "battery_deploy_time_s_per_mj": "s/MJ",
+    "battery_recharge_time_s_per_mj": "s/MJ",
+    "reward_offset_s": "s-equivalent reward",
+    "require_compound_change": "boolean"
+  },
+  "tyre_coefficient_units": {
+    "a": "dimensionless",
+    "b": "dimensionless",
+    "c": "dimensionless",
+    "fresh_loss_s": "s",
+    "linear_s": "s per dimensionless wear",
+    "quadratic_s": "s per wear squared",
+    "cubic_s": "s per wear cubed"
+  },
+  "symbols": {
+    "E_b": "PaperStrategyState.battery_mj",
+    "E_f": "PaperStrategyState.fuel_energy_mj",
+    "m_car": "PaperStrategyState.car_mass_kg",
+    "T_race": "PaperStrategyState.race_time_s",
+    "b_comp": "PaperStrategyState.compound_changed",
+    "TC": "PaperStrategyState.compound",
+    "TW": "PaperStrategyState.tyre_wear",
+    "b_outlap": "PaperStrategyState.outlap",
+    "T_lap": "PaperStrategyState.last_lap_time_s / TransitionInfo.lap_time_s",
+    "k": "PaperStrategyState.lap",
+    "N": "PaperStrategyParameters.total_laps",
+    "delta_b": "PaperStrategyAction.battery_delta_mj",
+    "delta_f": "PaperStrategyAction.fuel_energy_mj",
+    "PS": "PaperStrategyAction.pit_compound; action_from_normalized pit_code",
+    "H_lhv": "PaperStrategyParameters.fuel_lhv_mj_per_kg",
+    "m_car0": "empty_mass_kg + initial_fuel_kg",
+    "f_j": "TireWearCoefficients",
+    "N_j": "TireTimeLossCoefficients.evaluate",
+    "F,B": "action_from_normalized fuel,battery"
+  },
+  "equations": [
+    {
+      "equation": 1,
+      "page": 3,
+      "symbols": "delta_b",
+      "units": "MJ/lap",
+      "code": "_project_action",
+      "status": "MATCH",
+      "notes": "Applied battery delta respects signed per-lap bounds."
+    },
+    {
+      "equation": 2,
+      "page": 3,
+      "symbols": "delta_f,f_nom",
+      "units": "MJ/lap",
+      "code": "_project_action",
+      "status": "MATCH",
+      "notes": "Fuel allocation is 90 to 110 percent of nominal; nominal is a synthetic equal-allocation prior."
+    },
+    {
+      "equation": 3,
+      "page": 3,
+      "symbols": "PS",
+      "units": "integer",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "No pit or soft/medium/hard; reject nonintegral pit codes."
+    },
+    {
+      "equation": 4,
+      "page": 3,
+      "symbols": "E_b,delta_b",
+      "units": "MJ",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Battery next state is current energy plus applied signed delta."
+    },
+    {
+      "equation": 5,
+      "page": 3,
+      "symbols": "E_f,delta_f",
+      "units": "MJ",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Fuel next state subtracts applied positive consumption; numerical zero guard only."
+    },
+    {
+      "equation": 6,
+      "page": 3,
+      "symbols": "m_car,H_lhv",
+      "units": "kg; MJ/kg",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Mass decreases by applied fuel energy divided by heating value."
+    },
+    {
+      "equation": 7,
+      "page": 3,
+      "symbols": "T_race,T_lap",
+      "units": "s",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Race time accumulates lap time."
+    },
+    {
+      "equation": 8,
+      "page": 4,
+      "symbols": "E_b0,E_bmax",
+      "units": "MJ",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Battery initially at configured capacity."
+    },
+    {
+      "equation": 9,
+      "page": 4,
+      "symbols": "E_b,E_bmax",
+      "units": "MJ",
+      "code": "validate_state",
+      "status": "MATCH",
+      "notes": "Capacity bounds checked before and after transition."
+    },
+    {
+      "equation": 10,
+      "page": 4,
+      "symbols": "E_f0,m_f,H_lhv",
+      "units": "MJ; kg; MJ/kg",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial fuel energy is configured fuel mass times heating value."
+    },
+    {
+      "equation": 11,
+      "page": 4,
+      "symbols": "empty printed equation",
+      "units": "none",
+      "code": "none",
+      "status": "SOURCE_ANOMALY",
+      "notes": "The supplied PDF displays number 11 without a separate expression; do not invent one."
+    },
+    {
+      "equation": 12,
+      "page": 4,
+      "symbols": "E_f",
+      "units": "MJ",
+      "code": "validate_state",
+      "status": "MATCH",
+      "notes": "Fuel nonnegativity and backward reachability checked."
+    },
+    {
+      "equation": 13,
+      "page": 4,
+      "symbols": "m_car0,m_empty,m_f",
+      "units": "kg",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial mass equals empty mass plus initial fuel."
+    },
+    {
+      "equation": 14,
+      "page": 4,
+      "symbols": "T_race0",
+      "units": "s",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial race time is zero."
+    },
+    {
+      "equation": 15,
+      "page": 4,
+      "symbols": "TC,PS",
+      "units": "compound enum",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Pit changes next compound; no pit keeps current compound."
+    },
+    {
+      "equation": 16,
+      "page": 4,
+      "symbols": "TC_init",
+      "units": "compound enum",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Configured initial dry compound."
+    },
+    {
+      "equation": 17,
+      "page": 4,
+      "symbols": "L,TC",
+      "units": "code to enum",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "1 soft; 2 medium; 3 hard."
+    },
+    {
+      "equation": 18,
+      "page": 4,
+      "symbols": "I,PS,k",
+      "units": "lap index",
+      "code": "rollout",
+      "status": "ADAPTED",
+      "notes": "Actions preserve ordered pit indices; no dedicated paper I variable."
+    },
+    {
+      "equation": 19,
+      "page": 4,
+      "symbols": "S,L,TC,I",
+      "units": "strategy sequence",
+      "code": "rollout",
+      "status": "ADAPTED",
+      "notes": "APEX stores requested/applied actions and states; no paper strategy notation formatter."
+    },
+    {
+      "equation": 20,
+      "page": 5,
+      "symbols": "b_comp,PS,TC",
+      "units": "boolean rather than counter",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Saturating boolean records at least one change; does not preserve the integer count."
+    },
+    {
+      "equation": 21,
+      "page": 5,
+      "symbols": "b_comp0",
+      "units": "boolean",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial compound-change flag is false."
+    },
+    {
+      "equation": 22,
+      "page": 5,
+      "symbols": "b_compN",
+      "units": "boolean",
+      "code": "final_state_is_legal",
+      "status": "ADAPTED",
+      "notes": "True is equivalent to at least one change; no forced policy pit."
+    },
+    {
+      "equation": 23,
+      "page": 5,
+      "symbols": "TA0",
+      "units": "laps",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "Paper tyre-age explanatory variable is not a dynamic state in this scaffold."
+    },
+    {
+      "equation": 24,
+      "page": 5,
+      "symbols": "TA,PS",
+      "units": "laps",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "Tyre-age update omitted; wear state is separate and must not be relabelled age."
+    },
+    {
+      "equation": 25,
+      "page": 5,
+      "symbols": "TW0",
+      "units": "dimensionless",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial wear is zero."
+    },
+    {
+      "equation": 26,
+      "page": 5,
+      "symbols": "TW,PS",
+      "units": "dimensionless",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Pit reset matches; surrogate wear is clipped to 0..1.25 with an explicit flag."
+    },
+    {
+      "equation": 27,
+      "page": 5,
+      "symbols": "a_j,b_j,c_j,TW,m_car",
+      "units": "dimensionless",
+      "code": "transition",
+      "status": "SURROGATE",
+      "notes": "Affine mass-dependent wear form matches inside domain; all coefficients are synthetic priors."
+    },
+    {
+      "equation": 28,
+      "page": 6,
+      "symbols": "T_nom,N_j,TW",
+      "units": "s",
+      "code": "transition",
+      "status": "SURROGATE",
+      "notes": "Additive nominal plus wear form retained; unavailable fitted maps are replaced with declared surrogates."
+    },
+    {
+      "equation": 29,
+      "page": 6,
+      "symbols": "PS,b_outlap,T_nom",
+      "units": "s; boolean",
+      "code": "_nominal_lap_time",
+      "status": "SURROGATE",
+      "notes": "Four mode truth table retained; map values are fixed synthetic penalties with linear energy/mass effects."
+    },
+    {
+      "equation": 30,
+      "page": 6,
+      "symbols": "N_j,TW",
+      "units": "s; dimensionless",
+      "code": "TireTimeLossCoefficients.evaluate",
+      "status": "SURROGATE",
+      "notes": "Clipped cubic polynomial replaces fitted twice-differentiable paper functions; not globally smooth."
+    },
+    {
+      "equation": 31,
+      "page": 7,
+      "symbols": "b_PS,PS",
+      "units": "boolean",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Pit predicate is equivalent on discrete valid pit codes."
+    },
+    {
+      "equation": 32,
+      "page": 7,
+      "symbols": "b_PS,PS",
+      "units": "dimensionless polynomial",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "MINLP polynomial reformulation omitted; direct pit predicate used."
+    },
+    {
+      "equation": 33,
+      "page": 7,
+      "symbols": "b_inlap,b_PS",
+      "units": "boolean",
+      "code": "_nominal_lap_time",
+      "status": "MATCH",
+      "notes": "Current pit selects inlap mode."
+    },
+    {
+      "equation": 34,
+      "page": 7,
+      "symbols": "b_outlap,b_PS",
+      "units": "boolean",
+      "code": "PaperStrategyState.outlap",
+      "status": "MATCH",
+      "notes": "Previous pit is carried as outlap state."
+    },
+    {
+      "equation": 35,
+      "page": 7,
+      "symbols": "b_outlap0",
+      "units": "boolean",
+      "code": "initial_state",
+      "status": "MATCH",
+      "notes": "Initial outlap false."
+    },
+    {
+      "equation": 36,
+      "page": 7,
+      "symbols": "z_1,TC",
+      "units": "dimensionless",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "MINLP auxiliary omitted; enum selects compound directly."
+    },
+    {
+      "equation": 37,
+      "page": 7,
+      "symbols": "z_2,TC",
+      "units": "dimensionless",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "MINLP auxiliary omitted; enum selects compound directly."
+    },
+    {
+      "equation": 38,
+      "page": 7,
+      "symbols": "z_3,TC",
+      "units": "dimensionless",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "MINLP auxiliary omitted; enum selects compound directly."
+    },
+    {
+      "equation": 39,
+      "page": 7,
+      "symbols": "TC,b_PS,PS",
+      "units": "compound code",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Direct conditional is equivalent on valid codes; polynomial not implemented."
+    },
+    {
+      "equation": 40,
+      "page": 7,
+      "symbols": "b_comp,PS,TC",
+      "units": "counter",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Boolean meets change legality but does not preserve squared increment values."
+    },
+    {
+      "equation": 41,
+      "page": 8,
+      "symbols": "TW,z_j,f_j,b_PS",
+      "units": "dimensionless",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Direct compound selection/reset replaces algebraic superposition; saturation remains a deviation."
+    },
+    {
+      "equation": 42,
+      "page": 8,
+      "symbols": "b_inlap,b_outlap,T_modes",
+      "units": "s; boolean",
+      "code": "_nominal_lap_time",
+      "status": "SURROGATE",
+      "notes": "Truth-table selection is equivalent; paper nonlinear map values are not reproduced."
+    },
+    {
+      "equation": 43,
+      "page": 8,
+      "symbols": "z_j,N_j,TW",
+      "units": "s",
+      "code": "transition",
+      "status": "SURROGATE",
+      "notes": "Direct enum polynomial selection replaces algebraic superposition; fitted values unavailable."
+    },
+    {
+      "equation": 44,
+      "page": 8,
+      "symbols": "m_car,m_empty,m_f",
+      "units": "kg",
+      "code": "validate_state",
+      "status": "MATCH",
+      "notes": "Fuel reachable bounds plus energy-mass equality enforce the mass interval."
+    },
+    {
+      "equation": 45,
+      "page": 8,
+      "symbols": "M,S,O,A,T,R,P,gamma",
+      "units": "MDP tuple",
+      "code": "strategy_env",
+      "status": "ADAPTED",
+      "notes": "Deterministic scaffold only; no learner/discounted training implementation."
+    },
+    {
+      "equation": 46,
+      "page": 8,
+      "symbols": "b_outlap,PS",
+      "units": "boolean",
+      "code": "transition",
+      "status": "MATCH",
+      "notes": "Next outlap records current pit."
+    },
+    {
+      "equation": 47,
+      "page": 8,
+      "symbols": "b_outlap,PS,T_nom",
+      "units": "s; boolean",
+      "code": "_nominal_lap_time",
+      "status": "SURROGATE",
+      "notes": "Markov mode selection retained; lap functions are synthetic and omit current-battery dependence."
+    },
+    {
+      "equation": 48,
+      "page": 9,
+      "symbols": "s_k",
+      "units": "MJ; kg; s; bool; enum; dimensionless",
+      "code": "PaperStrategyState",
+      "status": "ADAPTED",
+      "notes": "Eight paper state fields plus lap index and previous lap time; compound-change is boolean."
+    },
+    {
+      "equation": 49,
+      "page": 9,
+      "symbols": "S",
+      "units": "feasible state set",
+      "code": "validate_state",
+      "status": "ADAPTED",
+      "notes": "Explicit surrogate-domain and resource checks; paper fitted-map domain unavailable."
+    },
+    {
+      "equation": 50,
+      "page": 9,
+      "symbols": "o_k,s_k,T_lap,N-k",
+      "units": "mixed state units",
+      "code": "PaperStrategyEnv.observe",
+      "status": "ADAPTED",
+      "notes": "Ten values in paper order; last completed lap time is observed at decision boundary; float32 encoding."
+    },
+    {
+      "equation": 51,
+      "page": 9,
+      "symbols": "O",
+      "units": "feasible observation set",
+      "code": "PaperStrategyEnv.observe",
+      "status": "ADAPTED",
+      "notes": "Shape/order match; generic space object is not supplied."
+    },
+    {
+      "equation": 52,
+      "page": 9,
+      "symbols": "a_k,F,B,PS",
+      "units": "normalized; code",
+      "code": "PaperStrategyEnv.step",
+      "status": "MATCH",
+      "notes": "Tuple normalized actions or explicit physical action supported."
+    },
+    {
+      "equation": 53,
+      "page": 9,
+      "symbols": "A,F,B,PS",
+      "units": "normalized; code",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Clipped F 0..1 and B -1..1; discrete pit checked."
+    },
+    {
+      "equation": 54,
+      "page": 9,
+      "symbols": "g,slope,offset",
+      "units": "MJ/lap",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Affine clipped normalization; asymmetric battery limits imply nonzero midpoint."
+    },
+    {
+      "equation": 55,
+      "page": 9,
+      "symbols": "g_F,delta_f_min/max",
+      "units": "MJ/lap",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Fuel endpoints .9 and 1.1 nominal."
+    },
+    {
+      "equation": 56,
+      "page": 9,
+      "symbols": "g_B,delta_b_min/max",
+      "units": "MJ/lap",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Battery endpoints reversed; B=-1 recharge max and B=1 deployment min."
+    },
+    {
+      "equation": 57,
+      "page": 9,
+      "symbols": "delta_f_requested,g_F",
+      "units": "MJ/lap",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Physical requested fuel allocation before state projection."
+    },
+    {
+      "equation": 58,
+      "page": 9,
+      "symbols": "delta_b_requested,g_B",
+      "units": "MJ/lap",
+      "code": "action_from_normalized",
+      "status": "MATCH",
+      "notes": "Physical requested battery delta before state projection."
+    },
+    {
+      "equation": 59,
+      "page": 9,
+      "symbols": "E_b_remaining,delta_b_max",
+      "units": "MJ",
+      "code": "_project_action",
+      "status": "ADAPTED",
+      "notes": "Printed positive recharge max cannot be deployment capacity; use abs(negative deployment min) times laps AFTER action."
+    },
+    {
+      "equation": 60,
+      "page": 9,
+      "symbols": "E_f_remaining_max,delta_f_max",
+      "units": "MJ",
+      "code": "_project_action",
+      "status": "ADAPTED",
+      "notes": "Maximum fuel consumable over laps AFTER action; document boundary indexing."
+    },
+    {
+      "equation": 61,
+      "page": 9,
+      "symbols": "E_f_remaining_min,delta_f_min",
+      "units": "MJ",
+      "code": "_project_action",
+      "status": "ADAPTED",
+      "notes": "Minimum fuel needed for laps AFTER action."
+    },
+    {
+      "equation": 62,
+      "page": 9,
+      "symbols": "E_b,delta_b,remaining",
+      "units": "MJ/lap",
+      "code": "_project_action",
+      "status": "ADAPTED",
+      "notes": "Intersect input/capacity/next-state reachable bounds; reject empty intersection rather than violating input limits."
+    },
+    {
+      "equation": 63,
+      "page": 9,
+      "symbols": "E_f,delta_f,remaining",
+      "units": "MJ/lap",
+      "code": "_project_action",
+      "status": "ADAPTED",
+      "notes": "Intersect input/next-state fuel bounds; reject unreachable states, with named correction reasons."
+    },
+    {
+      "equation": 64,
+      "page": 10,
+      "symbols": "T,S,A",
+      "units": "transition function",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Deterministic checked surrogate transition; not the original fitted environment."
+    },
+    {
+      "equation": 65,
+      "page": 10,
+      "symbols": "s_next,T",
+      "units": "mixed state units",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Eight-state topology preserved with disclosed approximations."
+    },
+    {
+      "equation": 66,
+      "page": 10,
+      "symbols": "Done,k,N",
+      "units": "boolean",
+      "code": "is_done",
+      "status": "ADAPTED",
+      "notes": "Model owns horizon; transitions reject completed races; legality requires lap exactly N."
+    },
+    {
+      "equation": 67,
+      "page": 10,
+      "symbols": "r,T_const,T_lap",
+      "units": "s-equivalent reward",
+      "code": "PaperStrategyEnv.step",
+      "status": "ADAPTED",
+      "notes": "Offset-minus-lap reward plus synthetic -1000 terminal penalty; paper late compulsory pit not implemented."
+    },
+    {
+      "equation": 68,
+      "page": 10,
+      "symbols": "J,gamma,r",
+      "units": "return",
+      "code": "none",
+      "status": "OMITTED",
+      "notes": "No SAC training; N transitions sum k=0..N-1; no replication of printed inclusive sum."
+    },
+    {
+      "equation": 69,
+      "page": 10,
+      "symbols": "P,s,a",
+      "units": "conditional probability",
+      "code": "transition",
+      "status": "ADAPTED",
+      "notes": "Current resource/compound/wear/outlap suffice for deterministic surrogate; no stochastic likelihood implementation."
+    },
+    {
+      "equation": 70,
+      "page": 10,
+      "symbols": "regret,T_race,T_MINLP",
+      "units": "s",
+      "code": "exact_strategy",
+      "status": "ADAPTED",
+      "notes": "Report finite-grid regret against exhaustive synthetic enumeration; no paper MINLP or 4.96-second result claim."
+    }
+  ]
+}

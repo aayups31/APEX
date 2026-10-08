@@ -26,7 +26,7 @@ def test_paper_strategy_state_conservation_and_pit_reset():
 
 
 def test_normalized_action_and_environment_shape():
-    model = PaperStrategyModel(PaperStrategyParameters(total_laps=3, initial_fuel_kg=6.0))
+    model = PaperStrategyModel(PaperStrategyParameters(total_laps=3, initial_fuel_kg=6.0, battery_capacity_mj=3.0))
     action = model.action_from_normalized(0.5, 1.0, 1)
     assert action.pit_compound == TyreCompound.SOFT
     assert action.battery_delta_mj < 0

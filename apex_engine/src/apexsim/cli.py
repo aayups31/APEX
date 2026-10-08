@@ -294,6 +294,14 @@ def research_demo(output: Path = Path("artifacts/research_demo")) -> None:
     typer.echo(f"Saved research artifacts to {output}")
 
 
+@app.command("strategy-foundation-demo")
+def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
+    """Verify frozen hand calculations and exhaustive tiny strategy optima."""
+    from apexsim.examples.strategy_foundation_demo import run_strategy_foundation_demo
+
+    typer.echo(json.dumps(run_strategy_foundation_demo(output), indent=2))
+
+
 @app.command()
 def ui(
     run_dir: Path = Path("artifacts/runs/reference_gru"),

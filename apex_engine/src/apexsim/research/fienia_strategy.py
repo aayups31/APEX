@@ -17,6 +17,8 @@ from __future__ import annotations
 
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass
+from math import isfinite
+from typing import Literal
 
 import numpy as np
 
@@ -127,6 +129,8 @@ class TransitionInfo:
     tyre_time_loss_s: float
     nominal_time_s: float
     action_projected: bool
+    projection_reasons: tuple[str, ...] = ()
+    wear_clipped: bool = False
 
 
 class PaperStrategyModel:
@@ -139,13 +143,26 @@ class PaperStrategyModel:
         time_loss_coefficients: dict[TyreCompound, TireTimeLossCoefficients] | None = None,
     ) -> None:
         self.p = parameters or PaperStrategyParameters()
-        if self.p.total_laps <= 0:
-            raise ValueError("total_laps must be positive")
+        if type(self.p.total_laps) is not int or self.p.total_laps <= 0:
+            raise ValueError("total_laps must be a positive integer")
+        numeric = [v for v in vars(self.p).values() if type(v) in (int, float)]
+        if not all(isfinite(v) for v in numeric):
+            raise ValueError("Strategy parameters must be finite")
+        if min(self.p.empty_mass_kg, self.p.initial_fuel_kg, self.p.fuel_lhv_mj_per_kg) <= 0:
+            raise ValueError("Mass and fuel heating value must be positive")
+        if self.p.battery_capacity_mj < 0 or self.p.battery_delta_min_mj >= 0 or self.p.battery_delta_max_mj < 0:
+            raise ValueError("Battery bounds require nonnegative capacity/recharge and negative deployment")
+        if self.p.battery_capacity_mj > self.p.total_laps * abs(self.p.battery_delta_min_mj):
+            raise ValueError("Initial battery cannot be depleted within the declared per-lap bounds")
         self.wear = dict(wear_coefficients or DEFAULT_WEAR)
         self.time_loss = dict(time_loss_coefficients or DEFAULT_TIME_LOSS)
-        missing = set(_DRY_COMPOUNDS) - self.wear.keys()
+        missing = (set(_DRY_COMPOUNDS) - self.wear.keys()) | (set(_DRY_COMPOUNDS) - self.time_loss.keys())
         if missing:
-            raise ValueError(f"Missing wear coefficients for {sorted(x.value for x in missing)}")
+            raise ValueError(f"Missing tyre coefficients for {sorted(x.value for x in missing)}")
+        for compound in _DRY_COMPOUNDS:
+            coefficients = (*vars(self.wear[compound]).values(), *vars(self.time_loss[compound]).values())
+            if not all(isfinite(v) for v in coefficients) or min(vars(self.wear[compound]).values()) < 0:
+                raise ValueError("Tyre coefficients must be finite; wear coefficients must be nonnegative")
 
     def initial_state(self, compound: TyreCompound = TyreCompound.MEDIUM) -> PaperStrategyState:
         self._validate_compound(compound)
@@ -175,18 +192,21 @@ class PaperStrategyModel:
 
         ``fuel`` is clipped to [0, 1] and mapped to [90%, 110%] of nominal
         fuel allocation. ``battery`` is clipped to [-1, 1]; positive normalized
-        values mean deployment, matching the paper, and are mapped to a negative
-        stored-energy delta in this implementation.
+        values mean deployment. The map is affine between reversed bounds;
+        asymmetric limits imply that normalized zero is not neutral energy.
         """
+        if not isfinite(fuel) or not isfinite(battery):
+            raise ValueError("Normalized energy actions must be finite")
         f = float(np.clip(fuel, 0.0, 1.0))
         b = float(np.clip(battery, -1.0, 1.0))
         fuel_fraction = 0.90 + 0.20 * f
-        if b >= 0.0:
-            battery_delta = -b * abs(self.p.battery_delta_min_mj)
-        else:
-            battery_delta = -b * self.p.battery_delta_max_mj
+        # Eq. 54/56 is affine even when deployment and recharge limits differ.
+        battery_delta = (
+            (self.p.battery_delta_max_mj + self.p.battery_delta_min_mj) / 2.0
+            + (self.p.battery_delta_min_mj - self.p.battery_delta_max_mj) * b / 2.0
+        )
         pit_map = {0: None, 1: TyreCompound.SOFT, 2: TyreCompound.MEDIUM, 3: TyreCompound.HARD}
-        if pit_code not in pit_map:
+        if type(pit_code) is not int or pit_code not in pit_map:
             raise ValueError("pit_code must be 0, 1, 2, or 3")
         return PaperStrategyAction(
             fuel_energy_mj=fuel_fraction * self.p.nominal_fuel_energy_mj(),
@@ -196,15 +216,41 @@ class PaperStrategyModel:
 
     def _validate_compound(self, compound: TyreCompound) -> None:
         if compound not in _DRY_COMPOUNDS:
-            raise ValueError("The paper replication model supports dry compounds only")
+            raise ValueError("The paper adaptation model supports dry compounds only")
+
+    def validate_state(self, state: PaperStrategyState, tolerance: float = 1e-9) -> None:
+        """Reject invalid or terminally unreachable states instead of hiding violations."""
+        self._validate_compound(state.compound)
+        if type(state.lap) is not int or not 0 <= state.lap <= self.p.total_laps:
+            raise ValueError("Strategy state lap is outside the race horizon")
+        if not all(isfinite(v) for v in (state.battery_mj, state.fuel_energy_mj, state.car_mass_kg,
+                                        state.race_time_s, state.tyre_wear, state.last_lap_time_s)):
+            raise ValueError("Strategy state must be finite")
+        if not -tolerance <= state.battery_mj <= self.p.battery_capacity_mj + tolerance:
+            raise ValueError("Strategy battery state is outside capacity bounds")
+        if state.fuel_energy_mj < -tolerance or state.race_time_s < 0 or state.last_lap_time_s < 0:
+            raise ValueError("Strategy resources/time must be nonnegative")
+        expected_mass = self.p.empty_mass_kg + state.fuel_energy_mj / self.p.fuel_lhv_mj_per_kg
+        if abs(state.car_mass_kg - expected_mass) > tolerance:
+            raise ValueError("Strategy fuel energy and car mass are inconsistent")
+        if not 0 <= state.tyre_wear <= 1.25:
+            raise ValueError("Strategy tyre wear is outside the declared surrogate domain")
+        remaining = self.p.total_laps - state.lap
+        nominal = self.p.nominal_fuel_energy_mj()
+        if not remaining * .9 * nominal - tolerance <= state.fuel_energy_mj <= remaining * 1.1 * nominal + tolerance:
+            raise ValueError("Strategy fuel state is outside the backward-reachable interval")
+        if state.battery_mj > remaining * abs(self.p.battery_delta_min_mj) + tolerance:
+            raise ValueError("Strategy battery state is outside the backward-reachable interval")
 
     def _project_action(self, state: PaperStrategyState, action: PaperStrategyAction) -> PaperStrategyAction:
+        self.validate_state(state)
+        if not isfinite(action.fuel_energy_mj) or not isfinite(action.battery_delta_mj):
+            raise ValueError("Physical energy actions must be finite")
         laps_after = max(self.p.total_laps - state.lap - 1, 0)
         nominal = self.p.nominal_fuel_energy_mj()
         min_fuel = 0.90 * nominal
         max_fuel = 1.10 * nominal
 
-        requested_fuel = float(np.clip(action.fuel_energy_mj, min_fuel, max_fuel))
         # Backward-reachable interval: leave enough fuel for minimum allocation,
         # but not so much that maximum allocation cannot consume it by the finish.
         remaining_min = laps_after * min_fuel
@@ -212,26 +258,20 @@ class PaperStrategyModel:
         lower_consume = max(min_fuel, state.fuel_energy_mj - remaining_max)
         upper_consume = min(max_fuel, state.fuel_energy_mj - remaining_min)
         if upper_consume < lower_consume:
-            upper_consume = lower_consume
-        fuel = float(np.clip(requested_fuel, lower_consume, upper_consume))
-        fuel = min(fuel, state.fuel_energy_mj)
-
-        requested_delta = float(np.clip(
-            action.battery_delta_mj,
-            self.p.battery_delta_min_mj,
-            self.p.battery_delta_max_mj,
-        ))
-        delta = requested_delta
-        delta = min(delta, self.p.battery_capacity_mj - state.battery_mj)
-        delta = max(delta, -state.battery_mj)
-        # Ensure remaining deployment capacity can empty the battery by race end.
-        max_energy_that_can_remain = laps_after * abs(self.p.battery_delta_min_mj)
-        next_battery = state.battery_mj + delta
-        if next_battery > max_energy_that_can_remain and laps_after > 0:
-            delta -= next_battery - max_energy_that_can_remain
-        if laps_after == 0:
-            delta = -state.battery_mj
-        delta = float(np.clip(delta, -state.battery_mj, self.p.battery_capacity_mj - state.battery_mj))
+            if lower_consume - upper_consume > 1e-9:
+                raise ValueError("No feasible fuel action satisfies current and terminal bounds")
+            lower_consume = upper_consume  # Roundoff only; not a physical relaxation.
+        fuel = float(np.clip(action.fuel_energy_mj, lower_consume, upper_consume))
+        # The next-state reachable set uses laps AFTER this action. Eq. 59's
+        # positive recharge bound is not deployment capacity: use abs(delta_min).
+        lower_delta = max(self.p.battery_delta_min_mj, -state.battery_mj)
+        upper_delta = min(self.p.battery_delta_max_mj, self.p.battery_capacity_mj - state.battery_mj,
+                          laps_after * abs(self.p.battery_delta_min_mj) - state.battery_mj)
+        if upper_delta < lower_delta:
+            if lower_delta - upper_delta > 1e-9:
+                raise ValueError("No feasible battery action satisfies current and terminal bounds")
+            lower_delta = upper_delta
+        delta = float(np.clip(action.battery_delta_mj, lower_delta, upper_delta))
 
         pit = action.pit_compound
         if pit is not None:
@@ -259,12 +299,15 @@ class PaperStrategyModel:
         return float(self.p.nominal_lap_time_s + mass_penalty - fuel_benefit + battery_term + pit_penalty)
 
     def transition(self, state: PaperStrategyState, action: PaperStrategyAction) -> tuple[PaperStrategyState, TransitionInfo]:
+        self.validate_state(state)
         if self.is_done(state):
             raise RuntimeError("Cannot transition a completed race")
         applied = self._project_action(state, action)
         nominal_time = self._nominal_lap_time(state, applied)
         tyre_loss = self.time_loss[state.compound].evaluate(state.tyre_wear)
         lap_time = nominal_time + tyre_loss
+        if not isfinite(lap_time) or lap_time <= 0:
+            raise ValueError("Strategy lap-time surrogate produced a nonpositive/nonfinite duration")
 
         next_fuel_energy = max(state.fuel_energy_mj - applied.fuel_energy_mj, 0.0)
         fuel_mass_burned = applied.fuel_energy_mj / self.p.fuel_lhv_mj_per_kg
@@ -275,6 +318,7 @@ class PaperStrategyModel:
             self.p.battery_capacity_mj,
         ))
 
+        wear_clipped = False
         if applied.pit_compound is not None:
             next_compound = applied.pit_compound
             next_wear = 0.0
@@ -284,7 +328,9 @@ class PaperStrategyModel:
             coeff = self.wear[state.compound]
             mass_ratio = state.car_mass_kg / (self.p.empty_mass_kg + self.p.initial_fuel_kg)
             next_wear = coeff.a * state.tyre_wear + coeff.b * mass_ratio + coeff.c
-            next_wear = float(np.clip(next_wear, 0.0, 1.25))
+            bounded = float(np.clip(next_wear, 0.0, 1.25))
+            wear_clipped = bounded != next_wear
+            next_wear = bounded
             changed = state.compound_changed
 
         next_state = PaperStrategyState(
@@ -306,7 +352,13 @@ class PaperStrategyModel:
             tyre_time_loss_s=tyre_loss,
             nominal_time_s=nominal_time,
             action_projected=applied != action,
+            projection_reasons=tuple(name for name, changed in (
+                ("fuel_input_or_reachability", applied.fuel_energy_mj != action.fuel_energy_mj),
+                ("battery_input_capacity_or_reachability", applied.battery_delta_mj != action.battery_delta_mj),
+            ) if changed),
+            wear_clipped=wear_clipped,
         )
+        self.validate_state(next_state)
         return next_state, info
 
     def rollout(
@@ -326,11 +378,15 @@ class PaperStrategyModel:
         return states, infos
 
     def final_state_is_legal(self, state: PaperStrategyState, tolerance_mj: float = 1e-6) -> bool:
-        if not self.is_done(state):
+        try:
+            self.validate_state(state, tolerance=tolerance_mj)
+        except ValueError:
+            return False
+        if state.lap != self.p.total_laps:
             return False
         if self.p.require_compound_change and not state.compound_changed:
             return False
-        return state.fuel_energy_mj <= tolerance_mj and state.battery_mj <= tolerance_mj
+        return 0 <= state.fuel_energy_mj <= tolerance_mj and 0 <= state.battery_mj <= tolerance_mj
 
 
 @dataclass(frozen=True)
@@ -340,11 +396,10 @@ class BeamNode:
 
 
 class DiscreteStrategyOracle:
-    """A reproducible beam-search oracle for starter experiments.
+    """Approximate beam-search benchmark; finite width supplies no optimality guarantee.
 
-    This is deliberately labelled *oracle*, not MINLP replication. It discretizes
-    the paper action space and supplies a strong target for unit tests, imitation
-    learning, and RL-regret measurements before CasADi/BONMIN is introduced.
+    Lossless state bucketing is available for tiny exact comparisons. Coarse
+    bucketing or finite-width pruning can discard the optimal strategy.
     """
 
     def __init__(
@@ -354,14 +409,23 @@ class DiscreteStrategyOracle:
         battery_deltas_mj: Iterable[float] = (-1.0, 0.0, 0.5),
         beam_width: int = 256,
         pit_window: tuple[int, int] | None = None,
+        state_bucketing: Literal["coarse", "exact"] = "coarse",
     ) -> None:
         self.model = model
         self.fuel_fractions = tuple(float(x) for x in fuel_fractions)
         self.battery_deltas = tuple(float(x) for x in battery_deltas_mj)
         self.beam_width = int(beam_width)
         self.pit_window = pit_window or (1, model.p.total_laps - 1)
+        self.state_bucketing = state_bucketing
+        self.last_search: dict = {}
         if self.beam_width <= 0:
             raise ValueError("beam_width must be positive")
+        if state_bucketing not in ("coarse", "exact"):
+            raise ValueError("state_bucketing must be coarse or exact")
+        if not self.fuel_fractions or not self.battery_deltas or not all(
+            isfinite(x) for x in (*self.fuel_fractions, *self.battery_deltas)
+        ):
+            raise ValueError("Action grids must be nonempty and finite")
 
     def _actions_for_lap(self, lap: int) -> list[PaperStrategyAction]:
         nominal = self.model.p.nominal_fuel_energy_mj()
@@ -375,6 +439,7 @@ class DiscreteStrategyOracle:
         ]
 
     def solve(self, initial_compound: TyreCompound = TyreCompound.MEDIUM) -> BeamNode:
+        pruned = 0
         beam = [BeamNode(self.model.initial_state(initial_compound), ())]
         for lap in range(self.model.p.total_laps):
             candidates: list[BeamNode] = []
@@ -384,21 +449,24 @@ class DiscreteStrategyOracle:
                     candidates.append(BeamNode(next_state, (*node.actions, info.applied_action)))
             # Keep diverse state buckets so the beam does not collapse only by
             # immediate race time and discard useful energy/tyre configurations.
-            buckets: dict[tuple[int, int, str, bool], BeamNode] = {}
+            buckets: dict[tuple, BeamNode] = {}
             for node in sorted(candidates, key=lambda n: n.state.race_time_s):
-                key = (
-                    round(node.state.battery_mj * 2),
-                    round(node.state.tyre_wear * 10),
-                    node.state.compound.value,
-                    node.state.compound_changed,
-                )
+                s = node.state
+                if self.state_bucketing == "exact":
+                    # Every state that affects the future: fuel/mass and outlap
+                    # cannot be omitted. Time is the dominance objective.
+                    key = (s.lap, s.battery_mj, s.fuel_energy_mj, s.car_mass_kg,
+                           s.tyre_wear, s.compound, s.compound_changed, s.outlap)
+                else:
+                    key = (round(s.battery_mj * 2), round(s.tyre_wear * 10),
+                           round(s.fuel_energy_mj, 6), s.compound, s.compound_changed, s.outlap)
                 buckets.setdefault(key, node)
-            beam = sorted(buckets.values(), key=lambda n: n.state.race_time_s)[: self.beam_width]
+            ranked = sorted(buckets.values(), key=lambda n: n.state.race_time_s)
+            pruned += max(0, len(ranked) - self.beam_width)
+            beam = ranked[: self.beam_width]
+        self.last_search = {"state_bucketing": self.state_bucketing, "width_pruned_states": pruned,
+                            "exact_for_grid": self.state_bucketing == "exact" and pruned == 0}
         legal = [node for node in beam if self.model.final_state_is_legal(node.state)]
         if not legal:
-            # The discretized grid can miss exact zero-energy endpoints. Return
-            # the best rule-compliant state while exposing residual energy.
-            legal = [node for node in beam if (node.state.compound_changed or not self.model.p.require_compound_change)]
-        if not legal:
-            raise RuntimeError("No feasible strategy found by the discrete oracle")
+            raise RuntimeError("Beam retained no legal terminal strategy; increase width or use exact enumeration")
         return min(legal, key=lambda n: (n.state.race_time_s, n.state.fuel_energy_mj + n.state.battery_mj))

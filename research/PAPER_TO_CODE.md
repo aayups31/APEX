@@ -8,7 +8,10 @@
 
 **Code now:** `apexsim.research.fienia_strategy`, `apexsim.research.strategy_env`.
 
-**Boundary:** the code reproduces the mathematical topology with transparent surrogate coefficients. It does not claim to reproduce the paper’s confidential nonlinear lap maps or exact MINLP result.
+**Boundary:** this is an adaptation with transparent surrogate coefficients.
+The [equation review](equations/FIENI_2025.md) and frozen hand fixtures record
+matches, corrections and omissions. Tiny finite-grid enumeration benchmarks the
+approximate beam; neither supplies the paper's nonlinear lap maps or MINLP result.
 
 ### TODD_2025 — tyre-energy forecasting and explainability
 

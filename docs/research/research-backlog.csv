@@ -10,9 +10,9 @@ R008,R1,P0,foundation,Implement ridge/GRU forecasting protocol and metrics,,auto
 R009,R1,P0,foundation,Implement latent tyre degradation starter,,automated test,DONE
 R010,R1,P0,foundation,Implement unified strategy interface,,automated test,DONE
 R011,R1,P0,foundation,Define future game evidence contract,,automated test,DONE
-R012,R1,P0,replication,Create symbol-to-code equation table for FIENI_2025,,reviewed equation map,TODO
-R013,R1,P0,replication,Add hand-calculated FIENI transition fixture,equation table,numeric match within 1e-9,TODO
-R014,R1,P0,replication,Implement exact enumeration oracle for tiny races,strategy model,identical to beam search on tiny cases,TODO
+R012,R1,P0,replication,Create symbol-to-code equation table for FIENI_2025,,reviewed equation map,IN_PROGRESS
+R013,R1,P0,replication,Add hand-calculated FIENI transition fixture,equation table,numeric match within 1e-9,IN_PROGRESS
+R014,R1,P0,replication,Implement exact enumeration oracle for tiny races,strategy model,identical to beam search on tiny cases,IN_PROGRESS
 R015,R1,P0,optimization,Implement CasADi continuous lap-map surrogate,equation table,gradient and bound tests,TODO
 R016,R1,P1,optimization,Implement open-source MINLP path or documented solver adapter,CasADi maps,small-case optimum recovered,TODO
 R017,R1,P0,RL,Train SAC on identical FIENI environment,exact oracle,regret/runtime reported,TODO
