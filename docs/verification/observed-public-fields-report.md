@@ -4,6 +4,7 @@
 - Branch: `main` (direct commits authorized by the user)
 - Parent: `6e48ab6353d1c4b12a37bf9b03b62ed4706e6198`
 - Scope: P1-07, replacing fabricated public observations
+- Status: DONE; build backlog 13/66 DONE and 53 remaining
 - Maturity before/after: R0; model promotion gates remain open
 - [Usage and field mapping](../data/observed-tables.md)
 - [ADR 0003](../architecture/adr-0003-observed-public-fields.md)
@@ -86,5 +87,50 @@ compilation passed. Both real provider bundles have been read and inspected:
 368 laps and 85 weather records per provider; FastF1 has 101 stints and 46 messages,
 OpenF1 has 1 accepted stint and 54 messages. No field is labelled IMPUTED.
 
-The enclosing conversion completion check, full regression suite and GitHub checks
-are still pending. P1-07 remains IN_PROGRESS until that evidence is recorded.
+The real conversion completed with report SHA-256
+`0a0e9d7c6988066eee90df7ecd226af11a8b4250deb5f1dd3be2fd45593db893`.
+The fresh-process Python socket audit guard recorded **zero network attempts**.
+All three archive hashes remained unchanged. Complete-run and dataset CLI readback
+passed, also with zero attempts. All 1,190 checked native weather values agreed after
+declared unit conversion, and original race-control messages remained unchanged.
+
+| Table | FastF1 rows | OpenF1 rows |
+|---|---:|---:|
+| Sessions | 1 | 1 |
+| Laps | 368 | 368 |
+| Stints | 101 | 1 |
+| Weather | 85 | 85 |
+| Race control | 46 | 54 |
+
+FastF1 retains 101 known pit-entry and 102 known pit-exit timestamps; the remaining
+267/266 are UNKNOWN. Its 113 unavailable lap durations remain UNKNOWN. All 368
+compound and per-lap tyre-age observations are preserved. OpenF1 has 101 quarantined
+stint rows, 81 ambiguous lap compound assignments and 101 unmapped native pit records;
+all 368 canonical pit-entry/exit times and per-lap tyre ages remain UNKNOWN.
+Four native sector values per provider are kept outside the timing-sector namespace.
+Truth-label counts are FastF1: 3,323 MEASURED / 3,058 RECONSTRUCTED / 1,081 UNKNOWN;
+OpenF1: 2,600 / 1,536 / 2,706. Neither bundle contains IMPUTED fields.
+
+The full local suite passed **244 tests** (2 dependency deprecation warnings,
+174.31 seconds), including tampered/resealed lineage rejection, portable complete-run
+readback, missingness fixtures, retired-command no-write checks and the synthetic
+training pipeline. Ruff, Airflow compilation and whitespace checks passed.
+See [machine-readable evidence](observed-public-fields-evidence.json) for hashes,
+missingness, issue counts, test commands and environment details.
+
+The implementation was committed and pushed directly to `main` as
+`fe6832aa046010453d7d05110de0422e1116b530`. GitHub Actions
+[run 37839941327](https://github.com/aayups31/APEX/actions/runs/37839941327)
+passed both Python 3.11 and 3.12 matrix jobs, including lint, tests, Airflow compilation
+and the public-data reference demo. P1-07 is DONE. All eight P1 data-contract
+tasks are now complete; the 66-task build backlog has 13 DONE and 53 remaining.
+The separate research backlog has 11 of 73 DONE.
+
+The next research-foundation slice is R012-R014: symbol-to-code equation mapping
+for FIENI_2025, a hand-calculated transition and a tiny exact enumeration oracle.
+R012 is the earliest incomplete P0 research row under the master guide. The data
+track then continues with P2-01 lap-quality filters and common-distance track
+reconstruction. Source availability, provider stint-boundary semantics, an untouched
+multi-event corpus and missingness-aware features remain required before public
+world-model training. This acceptance case is one qualifying session, not a
+generalization or calibration result.

@@ -1,0 +1,339 @@
+{
+  "base_commit": "350e2f649b30897e07a1029bc7a485881f74691e",
+  "branch": "main",
+  "build_backlog": {
+    "done": 13,
+    "remaining": 53,
+    "total": 66
+  },
+  "complete_run_and_dataset_cli_verification_passed": true,
+  "complete_run_verification_passed": true,
+  "environment": {
+    "apexsim": "0.4.0",
+    "pandas": "2.3.3",
+    "python": "3.12.12"
+  },
+  "identity": {
+    "drivers_fastf1": [
+      "1",
+      "10",
+      "11",
+      "14",
+      "16",
+      "18",
+      "2",
+      "20",
+      "22",
+      "23",
+      "24",
+      "27",
+      "3",
+      "31",
+      "4",
+      "44",
+      "55",
+      "63",
+      "77",
+      "81"
+    ],
+    "event_id": "F1_2024_R12",
+    "fastf1_start_utc": "2024-07-06T14:00:00.087000+00:00",
+    "fastf1_t0_utc": "2024-07-06T13:47:13.009000+00:00",
+    "jolpica_scheduled_session": {
+      "date": "2024-07-06",
+      "time": "14:00:00Z"
+    },
+    "mapping_kind": "explicit_assertion_checked_against_provider_metadata",
+    "openf1_scheduled_start_utc": "2024-07-06T14:00:00+00:00",
+    "start_difference_ms": 87.0
+  },
+  "implementation_commit": "fe6832aa046010453d7d05110de0422e1116b530",
+  "implementation_sha256": "086c25664eb81b9ea245ae96fc5b4d9ea359098136ad0b96020df3d286b22269",
+  "limitations": [
+    "Provider lap-start definitions differ; no cross-provider substitution or clock correction.",
+    "OpenF1 pit dates/durations do not establish separate canonical entry/exit timestamps here.",
+    "FastF1 stint-start tyre age and OpenF1 per-lap tyre age remain unknown.",
+    "Overlapping OpenF1 stint rows are quarantined; ambiguous lap compounds remain unknown.",
+    "No telemetry pit-occupancy flag, weather resampling, grip or safety-car proxy is invented.",
+    "Native race-control sector indices are not mapped to canonical timing sectors 1-3.",
+    "Retrospective evidence only; source availability times and calibrated feature semantics remain unverified."
+  ],
+  "manifest_sha256": "9ebb0e8f371da316ec2febb3e29cb3285801cb7168829568a2e1d61c84ce87e0",
+  "maturity": "R0",
+  "output_path": ".cache/observed-british-2024-q-20261008",
+  "providers": {
+    "fastf1": {
+      "dataset_sha256": "7e07981e4d9c117cd85eae7487e20ee4b59a099f61f937c318cf6dd0ba6fa78b",
+      "issue_reason_counts": {
+        "source_sector_namespace_not_canonical_timing_sector; native value preserved": 4
+      },
+      "native_table_rows": {
+        "laps": 368,
+        "race_control_messages": 46,
+        "weather_data": 85
+      },
+      "null_counts": {
+        "laps": {
+          "compound": 0,
+          "driver_id": 0,
+          "is_accurate": 0,
+          "lap_number": 0,
+          "lap_time_s": 113,
+          "pit_in_time_s": 267,
+          "pit_out_time_s": 266,
+          "sector1_time_s": 90,
+          "sector2_time_s": 13,
+          "sector3_time_s": 26,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "start_time_s": 0,
+          "stint_id": 0,
+          "track_status": 0,
+          "truth_labels": 0,
+          "tyre_age_laps": 0
+        },
+        "race_control": {
+          "category": 0,
+          "driver_id": 46,
+          "flag": 33,
+          "lap_number": 46,
+          "message": 0,
+          "message_id": 0,
+          "scope": 33,
+          "sector": 46,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "timestamp_utc": 0,
+          "truth_labels": 0
+        },
+        "sessions": {
+          "event": 0,
+          "event_id": 0,
+          "round": 0,
+          "ruleset_version": 1,
+          "season": 0,
+          "session_id": 0,
+          "session_type": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "source_session_id": 0,
+          "start_utc": 0,
+          "track_id": 0,
+          "truth_labels": 0
+        },
+        "stints": {
+          "compound": 0,
+          "driver_id": 0,
+          "end_lap": 0,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "start_lap": 0,
+          "stint_id": 0,
+          "truth_labels": 0,
+          "tyre_age_at_start_laps": 101
+        },
+        "weather": {
+          "air_temp_c": 0,
+          "humidity_pct": 0,
+          "pressure_pa": 0,
+          "rainfall": 0,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "timestamp_utc": 0,
+          "track_temp_c": 0,
+          "truth_labels": 0,
+          "wind_direction_deg": 0,
+          "wind_speed_mps": 0
+        }
+      },
+      "original_messages_unchanged": true,
+      "source_manifest_sha256": "b5f597c72d8dc2a195b63b693d5713af8d3f0896d62a5eb6b9b27960585858a5",
+      "table_rows": {
+        "laps": 368,
+        "race_control": 46,
+        "sessions": 1,
+        "stints": 101,
+        "weather": 85
+      },
+      "truth_label_counts": {
+        "MEASURED": 3323,
+        "RECONSTRUCTED": 3058,
+        "UNKNOWN": 1081
+      },
+      "unmapped_pit_records": 0,
+      "weather_value_comparisons": 595
+    },
+    "openf1": {
+      "dataset_sha256": "2c26091813680a06c7196de822e0ab94dc6496c55da81de4076347e5e5271701",
+      "issue_reason_counts": {
+        "ambiguous_stint_range": 81,
+        "incompatible_inclusive_range; quarantined with native row preserved": 101,
+        "source_sector_namespace_not_canonical_timing_sector; native value preserved": 4
+      },
+      "native_table_rows": {
+        "drivers": 20,
+        "laps": 368,
+        "pit": 101,
+        "race_control": 54,
+        "stints": 102,
+        "weather": 85
+      },
+      "null_counts": {
+        "laps": {
+          "compound": 81,
+          "driver_id": 0,
+          "is_accurate": 368,
+          "lap_number": 0,
+          "lap_time_s": 46,
+          "pit_in_time_s": 368,
+          "pit_out_time_s": 368,
+          "sector1_time_s": 90,
+          "sector2_time_s": 13,
+          "sector3_time_s": 26,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "start_time_s": 2,
+          "stint_id": 363,
+          "track_status": 368,
+          "truth_labels": 0,
+          "tyre_age_laps": 368
+        },
+        "race_control": {
+          "category": 0,
+          "driver_id": 54,
+          "flag": 41,
+          "lap_number": 54,
+          "message": 0,
+          "message_id": 0,
+          "scope": 41,
+          "sector": 54,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "timestamp_utc": 0,
+          "truth_labels": 0
+        },
+        "sessions": {
+          "event": 0,
+          "event_id": 0,
+          "round": 0,
+          "ruleset_version": 1,
+          "season": 0,
+          "session_id": 0,
+          "session_type": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "source_session_id": 0,
+          "start_utc": 0,
+          "track_id": 0,
+          "truth_labels": 0
+        },
+        "stints": {
+          "compound": 0,
+          "driver_id": 0,
+          "end_lap": 0,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "start_lap": 0,
+          "stint_id": 0,
+          "truth_labels": 0,
+          "tyre_age_at_start_laps": 0
+        },
+        "weather": {
+          "air_temp_c": 0,
+          "humidity_pct": 0,
+          "pressure_pa": 0,
+          "rainfall": 0,
+          "session_id": 0,
+          "source": 0,
+          "source_manifest_sha256": 0,
+          "timestamp_utc": 0,
+          "track_temp_c": 0,
+          "truth_labels": 0,
+          "wind_direction_deg": 0,
+          "wind_speed_mps": 0
+        }
+      },
+      "original_messages_unchanged": true,
+      "source_manifest_sha256": "0620e8a9cbcd219b2c98d32fc5d1858516068ce59e76a87f83b688cf5c8e822b",
+      "table_rows": {
+        "laps": 368,
+        "race_control": 54,
+        "sessions": 1,
+        "stints": 1,
+        "weather": 85
+      },
+      "truth_label_counts": {
+        "MEASURED": 2600,
+        "RECONSTRUCTED": 1536,
+        "UNKNOWN": 2706
+      },
+      "unmapped_pit_records": 101,
+      "weather_value_comparisons": 595
+    }
+  },
+  "python_socket_audit_guard_network_attempts": 0,
+  "readback_python_socket_audit_guard_network_attempts": 0,
+  "report_complete": true,
+  "report_sha256": "0a0e9d7c6988066eee90df7ecd226af11a8b4250deb5f1dd3be2fd45593db893",
+  "research_backlog": {
+    "done": 11,
+    "next": "R012",
+    "total": 73
+  },
+  "schema_version": "apex-observed-public-fields-acceptance-v1",
+  "source_archives_sha256": {
+    "fastf1": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+    "jolpica": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+    "openf1": "f792e17fc1270aeac688b12ed715e397559f76d1c379319831fc36e7f43016f5"
+  },
+  "source_archives_unchanged": true,
+  "status": "DONE",
+  "task": "P1-07",
+  "training_ready": false,
+  "validation_local_date": "2026-10-08",
+  "verification": {
+    "airflow_compile": "passed",
+    "baseline_pytest": {
+      "duration_seconds": 77.57,
+      "passed": 212,
+      "warnings": 4
+    },
+    "baseline_reference_dataset_sha256": "2a69a7b1e095df0af05dbe7f7ccb0991db9f8e095f79c9760e5524f05db694ab",
+    "baseline_reference_split_sha256": "166fb5ba4eadf079bce178e9320dc1c30881578acf05eba6e3c77696c7dddd15",
+    "diff_check": "passed",
+    "full_pytest": {
+      "basetemp": ".cache/pytest-observed-final-20261008",
+      "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q --basetemp ../.cache/pytest-observed-final-20261008 (from apex_engine; local loopback access enabled)",
+      "duration_seconds": 174.31,
+      "environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1"
+      },
+      "local_loopback_permission_required": true,
+      "passed": 244,
+      "python": "3.12.12",
+      "warnings": 2
+    },
+    "github_actions": {
+      "implementation_commit": "fe6832aa046010453d7d05110de0422e1116b530",
+      "jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "run_id": 37839941327,
+      "url": "https://github.com/aayups31/APEX/actions/runs/37839941327"
+    },
+    "integrated_checkpoint_pytest": {
+      "duration_seconds": 75.06,
+      "passed": 37
+    },
+    "ruff": "passed"
+  }
+}

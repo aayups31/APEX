@@ -11,6 +11,10 @@ This directory contains recorded verification results for major stages of APEX.
 - [Data provenance report](data-provenance-report.md)
 - [Public tables and frozen splits](public-data-foundation-report.md)
 - [FastF1 acquisition and offline replay](fastf1-offline-replay-report.md)
+- [OpenF1 acquisition and offline replay](openf1-offline-replay-report.md)
+- [Jolpica event catalog](jolpica-event-catalog-report.md)
+- [Temporal alignment](temporal-alignment-report.md)
+- [Observed public fields and CSV migration](observed-public-fields-report.md)
 
 ## Purpose
 
