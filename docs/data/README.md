@@ -9,6 +9,12 @@ cache preservation, native source tables and network-disabled reconstruction.
 The [OpenF1 archive guide](openf1-archives.md) covers all 18 endpoint families,
 original response preservation, explicit empty results and offline reconstruction.
 
+The [Jolpica event catalog](jolpica-events.md) covers paginated season metadata,
+stable season/round identifiers and offline verification of the saved calendar.
+
+The [temporal alignment guide](temporal-alignment.md) covers explicit session links,
+timestamp associations, coverage gaps and source disagreements over those archives.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

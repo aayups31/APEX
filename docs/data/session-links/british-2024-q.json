@@ -1,0 +1,13 @@
+{
+  "schema_version": "apex-session-link-v1",
+  "season": 2024,
+  "round_number": 12,
+  "session_code": "Q",
+  "session_date": "2024-07-06",
+  "fastf1_event_name": "British Grand Prix",
+  "openf1_session_key": 9554,
+  "openf1_meeting_key": 1240,
+  "openf1_circuit_key": 2,
+  "jolpica_circuit_id": "silverstone",
+  "rationale": "Explicitly linked from the three frozen provider archives: FastF1 2024 round 12 qualifying; OpenF1 Silverstone qualifying on July 6; Jolpica round 12 British GP with qualifying scheduled July 6. Numeric keys are provider-specific; no fuzzy name matching is used."
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": "apex-temporal-alignment-acceptance-v1",
+  "validation_local_date": "2026-09-19",
+  "task": "P1-06",
+  "status": "DONE",
+  "maturity": "R0",
+  "branch": "codex/temporal-alignment-report",
+  "base_commit": "2e1d76e0de4856e1f33a8693ab103d74aabd67ec",
+  "output_path": ".cache/alignment-british-2024-q-20260919-v2",
+  "report_sha256": "44efb514a1a452be5e1bf64887673f7bb7a4f9b87bf4c2d558f044e3e22b2bf6",
+  "manifest_sha256": "85762a04a5a447f04ce45d98e5ab7abecc7e76fa76ccc496ca89eee037308c90",
+  "source_archives_sha256": {
+    "fastf1": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+    "jolpica": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+    "openf1": "f792e17fc1270aeac688b12ed715e397559f76d1c379319831fc36e7f43016f5"
+  },
+  "implementation_sha256": {
+    "alignment.py": "475ad14791116255c198d80316b32d01143c17f292b47eb4916a435df8c683f8",
+    "alignment_report.py": "ac43b15be1236986dcc7b7984c65eb0b4ce0e93d7a55794e4f95453a605044c7"
+  },
+  "report_complete": true,
+  "training_ready": false,
+  "source_archives_unchanged": true,
+  "python_socket_audit_guard_network_attempts": 0,
+  "identity": {
+    "drivers_fastf1": [
+      "1",
+      "10",
+      "11",
+      "14",
+      "16",
+      "18",
+      "2",
+      "20",
+      "22",
+      "23",
+      "24",
+      "27",
+      "3",
+      "31",
+      "4",
+      "44",
+      "55",
+      "63",
+      "77",
+      "81"
+    ],
+    "drivers_only_fastf1": [],
+    "drivers_only_openf1": [],
+    "event_id": "F1_2024_R12",
+    "fastf1_start_utc": "2024-07-06T14:00:00.087000+00:00",
+    "fastf1_t0_utc": "2024-07-06T13:47:13.009000+00:00",
+    "jolpica_scheduled_session": {
+      "date": "2024-07-06",
+      "time": "14:00:00Z"
+    },
+    "mapping_kind": "explicit_assertion_checked_against_provider_metadata",
+    "openf1_scheduled_start_utc": "2024-07-06T14:00:00+00:00",
+    "start_difference_ms": 87.0
+  },
+  "policy": {
+    "car_location_ms": 1000,
+    "car_weather_ms": 90000,
+    "cross_telemetry_ms": 10,
+    "cross_weather_ms": 1000,
+    "telemetry_gap_ms": 1000,
+    "weather_gap_ms": 90000
+  },
+  "environment": {
+    "apexsim": "0.4.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "python": "3.12.12"
+  },
+  "stream_summary": {
+    "drivers": 20,
+    "streams": 82,
+    "timestamp_rows": 1557930,
+    "gap_occurrences": 1620,
+    "missing_timestamps": 0,
+    "duplicate_timestamp_rows": 0,
+    "source_order_reversals": 0
+  },
+  "temporal_joins": 121,
+  "join_groups": {
+    "cross_car": {
+      "joins": 20,
+      "left_rows": 385580,
+      "matched_rows": 385580,
+      "join_rate_all_rows": 1.0,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 1.0,
+      "unmatched_reasons": {}
+    },
+    "cross_location": {
+      "joins": 20,
+      "left_rows": 393300,
+      "matched_rows": 393300,
+      "join_rate_all_rows": 1.0,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 1.0,
+      "unmatched_reasons": {}
+    },
+    "cross_weather": {
+      "joins": 1,
+      "left_rows": 85,
+      "matched_rows": 85,
+      "join_rate_all_rows": 1.0,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 1.0,
+      "unmatched_reasons": {}
+    },
+    "fastf1_car_location": {
+      "joins": 20,
+      "left_rows": 385580,
+      "matched_rows": 384800,
+      "join_rate_all_rows": 0.9979770734996628,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 996.0,
+      "unmatched_reasons": {
+        "no_target_in_direction": 640,
+        "outside_tolerance": 140
+      }
+    },
+    "fastf1_car_weather": {
+      "joins": 20,
+      "left_rows": 385580,
+      "matched_rows": 382580,
+      "join_rate_all_rows": 0.9922195134602417,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 60073.0,
+      "unmatched_reasons": {
+        "no_target_in_direction": 3000
+      }
+    },
+    "openf1_car_location": {
+      "joins": 20,
+      "left_rows": 385580,
+      "matched_rows": 384800,
+      "join_rate_all_rows": 0.9979770734996628,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 995.0,
+      "unmatched_reasons": {
+        "no_target_in_direction": 640,
+        "outside_tolerance": 140
+      }
+    },
+    "openf1_car_weather": {
+      "joins": 20,
+      "left_rows": 385580,
+      "matched_rows": 382580,
+      "join_rate_all_rows": 0.9922195134602417,
+      "future_matches": 0,
+      "absolute_delta_ms_max": 60074.0,
+      "unmatched_reasons": {
+        "no_target_in_direction": 3000
+      }
+    }
+  },
+  "laps": {
+    "duration_openf1_minus_fastf1_ms": {
+      "absolute_max": 0.0,
+      "comparable_rows": 255,
+      "median": 0.0,
+      "missing_pairs": 113
+    },
+    "fastf1_only_keys": 0,
+    "fastf1_rows": 368,
+    "matched_keys": 368,
+    "openf1_only_keys": 0,
+    "openf1_rows": 368,
+    "start_openf1_minus_fastf1_ms": {
+      "absolute_max": 606216.0,
+      "comparable_rows": 366,
+      "median": 73.0,
+      "missing_pairs": 2
+    }
+  },
+  "race_control": {
+    "fastf1_rows": 46,
+    "openf1_rows": 54,
+    "matched_records": 46,
+    "fastf1_only_records": 0,
+    "openf1_only_records": 8,
+    "openf1_only_categories": {
+      "SessionStatus": 8
+    }
+  },
+  "output": {
+    "pair_files": 122,
+    "manifest_files": 125,
+    "manifest_bytes": 46654217,
+    "all_hashes_verified": true,
+    "pair_hashes_identical_before_after_timedelta_unit_fix": true,
+    "representative_pair_files_read_back": true
+  },
+  "validation": {
+    "baseline_tests_passed": 187,
+    "baseline_seconds": 117.55,
+    "new_tests_passed": 25,
+    "full_tests_passed": 212,
+    "full_test_seconds": 148.82,
+    "existing_warnings": 4,
+    "new_warnings": 0,
+    "ruff_passed": true,
+    "airflow_wrapper_compilation_passed": true,
+    "baseline_public_data_reference_demo_passed": true
+  },
+  "limitations": [
+    "Time proximity does not establish semantic agreement or provider independence.",
+    "Causal refers to recorded timestamps; publication/availability latency is unknown.",
+    "Nearest joins are retrospective diagnostics, never causal model inputs.",
+    "No clock offset fitting, interpolation, filling or canonical feature conversion.",
+    "Single qualifying session; not a multi-circuit telemetry benchmark.",
+    "Matching lap keys do not resolve large start-time discrepancies or missing duration comparisons.",
+    "Research equation-fidelity and oracle gates R012-R014 remain open."
+  ]
+}
