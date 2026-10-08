@@ -302,6 +302,14 @@ def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     typer.echo(json.dumps(run_strategy_foundation_demo(output), indent=2))
 
 
+@app.command("smooth-lap-demo")
+def smooth_lap_demo(output: Annotated[Path, typer.Option()]) -> None:
+    """Verify synthetic smooth lap-map gradients, Hessians and declared bounds."""
+    from apexsim.examples.smooth_lap_demo import run_smooth_lap_demo
+
+    typer.echo(json.dumps(run_smooth_lap_demo(output), indent=2))
+
+
 @app.command()
 def ui(
     run_dir: Path = Path("artifacts/runs/reference_gru"),

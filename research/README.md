@@ -33,3 +33,8 @@ The [FIENI foundation review](equations/FIENI_2025.md) documents corrected resou
 feasibility, hand fixtures and exact tiny-grid benchmarks. Run
 `apexsim strategy-foundation-demo --output <new-directory>` from the checkout
 to generate immutable acceptance artifacts. These are synthetic adaptation evidence.
+
+The [R015 smooth lap maps](equations/SMOOTH_LAP_MAP_V1.md) expose CasADi values,
+gradients, Hessians and box constraints for twelve fixed compound/mode variants.
+With the optimization extra, run `apexsim smooth-lap-demo --output <new-directory>`
+to verify synthetic reference values, derivatives and approximation bounds.

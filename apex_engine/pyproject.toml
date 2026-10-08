@@ -30,7 +30,7 @@ data-contracts = ["pyarrow>=15"]
 airflow = ["apache-airflow>=3.0"]
 pretrained = ["transformers>=4.45", "chronos-forecasting>=1.4"]
 research = ["xgboost>=2.0", "optuna>=3.6", "gymnasium>=0.29"]
-optimization = ["casadi>=3.6"]
+optimization = ["casadi==3.7.2"]
 dev = ["pytest>=8", "ruff>=0.5", "httpx>=0.27"]
 
 [project.scripts]
