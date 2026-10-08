@@ -12,6 +12,7 @@ from math import isfinite
 from typing import Any
 
 import numpy as np
+from numpy.typing import ArrayLike
 
 from apexsim.research.fienia_strategy import (
     PaperStrategyModel,
@@ -53,7 +54,7 @@ class SmoothLapMap:
 
     def __init__(self, parameters: PaperStrategyParameters | None = None,
                  time_loss_coefficients: dict[TyreCompound, TireTimeLossCoefficients] | None = None,
-                 battery_smoothing_mj: float = .01):
+                 battery_smoothing_mj: float = .01) -> None:
         model = PaperStrategyModel(parameters, time_loss_coefficients=time_loss_coefficients)
         self.p, self.time_loss = model.p, dict(model.time_loss)
         if not isfinite(battery_smoothing_mj) or battery_smoothing_mj <= 0:
@@ -130,7 +131,7 @@ class SmoothLapMap:
                 ca.Function(name + "_hessian", [x], [hessian]), ca.Function(name + "_box", [x], [slacks]))
         return self._functions[key]
 
-    def evaluate(self, coordinates, compound: TyreCompound,
+    def evaluate(self, coordinates: ArrayLike, compound: TyreCompound,
                  mode: LapMode | str = LapMode.NORMAL) -> LapMapEvaluation:
         x = np.asarray(coordinates, dtype=float)
         if x.shape != (4,) or not np.isfinite(x).all():
