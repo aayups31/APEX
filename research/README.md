@@ -38,3 +38,8 @@ The [R015 smooth lap maps](equations/SMOOTH_LAP_MAP_V1.md) expose CasADi values,
 gradients, Hessians and box constraints for twelve fixed compound/mode variants.
 With the optimization extra, run `apexsim smooth-lap-demo --output <new-directory>`
 to verify synthetic reference values, derivatives and approximation bounds.
+
+The [R016 strategy solver](protocols/STRATEGY_SOLVER.md) adds bounded pit-plan
+enumeration and local continuous energy optimization. Run
+`apexsim strategy-solver-demo --output <new-directory>` with the optimization
+extra for matched tiny optima, independent replay, residuals and solver diagnostics.

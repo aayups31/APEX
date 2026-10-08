@@ -416,11 +416,14 @@ Generate immutable synthetic strategy and smooth-map acceptance evidence:
 apexsim strategy-foundation-demo --output .cache/fieni-foundation-new
 python -m pip install -e './apex_engine[optimization]'
 apexsim smooth-lap-demo --output .cache/smooth-lap-new
+apexsim strategy-solver-demo --output .cache/strategy-solver-new
 ```
 
 The [smooth map review](research/equations/SMOOTH_LAP_MAP_V1.md) describes the
 continuous domain, derivative checks and approximation bound. These commands
 validate research components; they do not train or promote a world model.
+The [bounded strategy solver](research/protocols/STRATEGY_SOLVER.md) records
+local optimization results, independent tiny-case optimum checks and replay diagnostics.
 
 ---
 

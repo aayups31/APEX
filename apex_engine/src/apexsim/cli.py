@@ -310,6 +310,14 @@ def smooth_lap_demo(output: Annotated[Path, typer.Option()]) -> None:
     typer.echo(json.dumps(run_smooth_lap_demo(output), indent=2))
 
 
+@app.command("strategy-solver-demo")
+def strategy_solver_demo(output: Annotated[Path, typer.Option()]) -> None:
+    """Verify a bounded local strategy solver against matched tiny continuous optima."""
+    from apexsim.examples.strategy_solver_demo import run_strategy_solver_demo
+
+    typer.echo(json.dumps(run_strategy_solver_demo(output), indent=2))
+
+
 @app.command()
 def ui(
     run_dir: Path = Path("artifacts/runs/reference_gru"),

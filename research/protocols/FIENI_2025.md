@@ -17,9 +17,12 @@ CasADi values/gradients/Hessians for fixed compounds and modes. Numeric calls
 reject extrapolation; symbolic callers must impose explicit box and resource
 constraints. The smooth battery term has a declared approximation-error bound.
 
+The [R016 documented solver adapter](STRATEGY_SOLVER.md) enumerates bounded pit
+plans and runs local IPOPT allocation with independent replay and candidate
+provenance. Its tiny global reference applies only to an explicit concave family.
+
 ## Next experiments
-Next: establish matched solver benchmarks (R016), then train a policy against
-the same validated dynamics (R017) and reconstruct nominal/disturbed scenarios
+Next: train a policy against the same validated dynamics (R017) and reconstruct nominal/disturbed scenarios
 (R018). R016 must distinguish locally solved continuous NLPs from a certified
 global mixed-integer optimum; solver success alone does not certify either
 terminal legality or optimality. Recover independently known small-case optima,
@@ -36,6 +39,7 @@ From the repository checkout:
 ```bash
 apexsim strategy-foundation-demo --output .cache/fieni-foundation-new
 apexsim smooth-lap-demo --output .cache/smooth-lap-new  # optimization extra
+apexsim strategy-solver-demo --output .cache/strategy-solver-new  # optimization extra
 cd apex_engine
 pytest -q tests/test_fieni_foundation.py tests/test_research_fienia_strategy.py
 ```

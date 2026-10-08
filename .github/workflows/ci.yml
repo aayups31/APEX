@@ -11,6 +11,10 @@ jobs:
   test:
     name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
+    env:
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
     strategy:
       fail-fast: false
       matrix:
@@ -37,4 +41,6 @@ jobs:
         run: python -m apexsim.cli public-data-demo --output .cache/ci-public-data
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
+      - name: Verify matched strategy-solver artifacts
+        run: python -m apexsim.cli strategy-solver-demo --output .cache/ci-strategy-solver
 
