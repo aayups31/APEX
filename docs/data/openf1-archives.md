@@ -118,7 +118,8 @@ than their compressed HTTP payloads.
 ## Scope and references
 
 These native tables are separate from the five canonical public Parquet tables and
-the legacy `ingest-openf1` feature CSV, which still has unresolved placeholders.
+the retired `ingest-openf1` feature CSV. Use [observed tables](observed-tables.md)
+for supported nullable canonical fields; public dense training remains gated.
 One-session replay is not a multi-event benchmark or calibration result. The endpoint
 profile is versioned; future endpoints require an explicit contract update.
 

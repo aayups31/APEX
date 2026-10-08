@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pytest
 
+from apexsim.data.fastf1_adapter import ingest_fastf1_session
 from apexsim.data.manifest import SOURCE_MANIFEST_SCHEMA, SourceManifest, load_source_manifest
 from apexsim.data.openf1_adapter import ingest_openf1_session
 
@@ -55,58 +56,36 @@ def test_source_manifest_detects_content_and_file_tampering(tmp_path: Path):
         load_source_manifest(manifest_path, verify_files=False)
 
 
-def test_openf1_adapter_records_each_request_and_refuses_overwrite(tmp_path: Path, monkeypatch):
-    dates = [
-        "2026-01-01T00:00:00.000Z",
-        "2026-01-01T00:00:00.250Z",
-        "2026-01-01T00:00:00.500Z",
-        "2026-01-01T00:00:00.750Z",
-    ]
-    payloads = {
-        "car_data": [
-            {
-                "date": date,
-                "speed": 180 + index,
-                "throttle": 80,
-                "brake": 0,
-                "n_gear": 6,
-                "drs": 1,
-                "rpm": 10_500,
-            }
-            for index, date in enumerate(dates)
-        ],
-        "location": [
-            {"date": date, "x": index * 10.0, "y": index * 2.0}
-            for index, date in enumerate(dates)
-        ],
-        "weather": [
-            {
-                "date": date,
-                "air_temperature": 24.0,
-                "track_temperature": 31.0,
-                "rainfall": 0.0,
-                "wind_speed": 2.5,
-            }
-            for date in dates
-        ],
-    }
-    requests = []
+@pytest.mark.parametrize("provider", ["fastf1", "openf1"])
+@pytest.mark.parametrize("existing", [False, True])
+def test_retired_public_adapter_never_downloads_or_writes(tmp_path, monkeypatch, provider, existing):
+    def unexpected(*args, **kwargs):
+        raise AssertionError("Retired converter attempted a request")
 
-    def fake_get(endpoint, params, timeout=60):
-        requests.append((endpoint, params, timeout))
-        return payloads[endpoint]
-
-    monkeypatch.setattr("apexsim.data.openf1_adapter._get", fake_get)
+    monkeypatch.setattr("requests.get", unexpected)
     output = tmp_path / "canonical.csv"
-    canonical = ingest_openf1_session(99, 4, output, sample_hz=4)
-    manifest_path = tmp_path / "canonical.csv.source.json"
-    manifest = load_source_manifest(manifest_path)
+    if existing:
+        output.write_bytes(b"preserved legacy evidence")
+    with pytest.raises(ValueError, match="build-observed-tables"):
+        if provider == "fastf1":
+            ingest_fastf1_session(2024, "British", "Q", "4", output)
+        else:
+            ingest_openf1_session(9554, 4, output)
+    assert sorted(p.name for p in tmp_path.iterdir()) == (["canonical.csv"] if existing else [])
+    if existing:
+        assert output.read_bytes() == b"preserved legacy evidence"
 
-    assert len(canonical) == 3
-    assert [request[0] for request in requests] == ["car_data", "location", "weather"]
-    assert len(manifest["requests"]) == 3
-    assert all(request["payload_sha256"] for request in manifest["requests"])
-    assert manifest["files"][0]["role"] == "derived_canonical"
 
-    with pytest.raises(FileExistsError):
-        ingest_openf1_session(99, 4, output, sample_hz=4)
+@pytest.mark.parametrize("command,args", [
+    ("ingest-fastf1", ["2024", "British", "Q", "4"]),
+    ("ingest-openf1", ["9554", "4"]),
+])
+def test_retired_cli_gives_migration_instructions(tmp_path, command, args):
+    from typer.testing import CliRunner
+
+    from apexsim.cli import app
+
+    result = CliRunner().invoke(app, [command, *args, "--output", str(tmp_path / "out.csv")])
+    assert result.exit_code != 0
+    assert "build-observed-tables" in result.output
+    assert not list(tmp_path.iterdir())

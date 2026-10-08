@@ -131,11 +131,12 @@ Repeated manual tuning against test data cannot be detected by this manifest.
 
 ## Remaining work
 
-The new tables do not replace the legacy feature CSV and do not perform source
-acquisition, alignment or interpolation. P1-03/P1-04 must preserve and replay raw
-FastF1/OpenF1 data; P1-05 resolves metadata; P1-06 reports temporal joins; P1-07 removes
-the legacy adapter placeholders. Freeze a real multi-event evaluation corpus only
-after those gates. Research equation-fidelity tasks R012-R014 also remain open.
+P1-03/P1-04 now preserve and replay native source archives, P1-05 resolves event
+metadata and P1-06 reports temporal associations. The [P1-07 converter](observed-tables.md)
+maps supported observations into these tables and retires the legacy public feature
+CSV path. Public-data training still requires a validated missingness-aware feature
+builder and a frozen multi-event evaluation corpus. Research equation-fidelity
+tasks R012-R014 also remain open.
 
 Implementation references: [Arrow Parquet I/O](https://arrow.apache.org/docs/python/parquet.html),
 [Arrow schemas](https://arrow.apache.org/docs/python/generated/pyarrow.Schema.html).

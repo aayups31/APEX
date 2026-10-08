@@ -32,8 +32,11 @@ def ingest_fastf1(
     output: Path = Path("data/raw/fastf1.csv"),
     sample_hz: int = 5,
 ) -> None:
-    frame = ingest_fastf1_session(year, event, session, driver, output, sample_hz)
-    typer.echo(f"Ingested {len(frame):,} FastF1 rows at {output}")
+    """Retired dense conversion; use frozen archives and build-observed-tables."""
+    try:
+        ingest_fastf1_session(year, event, session, driver, output, sample_hz)
+    except ValueError as exc:
+        raise typer.BadParameter(str(exc)) from exc
 
 
 @app.command("ingest-openf1")
@@ -43,8 +46,11 @@ def ingest_openf1(
     output: Path = Path("data/raw/openf1.csv"),
     sample_hz: int = 4,
 ) -> None:
-    frame = ingest_openf1_session(session_key, driver_number, output, sample_hz)
-    typer.echo(f"Ingested {len(frame):,} OpenF1 rows at {output}")
+    """Retired dense conversion; use frozen archives and build-observed-tables."""
+    try:
+        ingest_openf1_session(session_key, driver_number, output, sample_hz)
+    except ValueError as exc:
+        raise typer.BadParameter(str(exc)) from exc
 
 
 @app.command()
@@ -72,7 +78,7 @@ def run_canonical(
     config: Path = Path("configs/fast.yaml"),
     run_id: str = "historical_world_model",
 ) -> None:
-    """Run the full pipeline from a validated canonical FastF1/OpenF1 CSV."""
+    """Run the pipeline from synthetic canonical CSV; public dense input is retired."""
     cfg = load_config(config)
     if not input_path.exists():
         raise typer.BadParameter(f"Canonical input does not exist: {input_path}")
@@ -210,6 +216,34 @@ def list_events(archive: Path) -> None:
     from apexsim.data.jolpica import read_jolpica_events
 
     typer.echo(json.dumps(read_jolpica_events(archive), indent=2))
+
+
+@app.command("build-observed-tables")
+def build_observed_tables(
+    fastf1: Annotated[Path, typer.Option()],
+    openf1: Annotated[Path, typer.Option()],
+    jolpica: Annotated[Path, typer.Option()],
+    link: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+) -> None:
+    """Map frozen native fields into nullable, source-linked provider tables."""
+    from apexsim.data.observed import build_observed_tables as build
+
+    result = build(fastf1, openf1, jolpica, link, output)
+    typer.echo(json.dumps({"report_complete": result["report_complete"], "training_ready": result["training_ready"],
+                           "event_id": result["identity"]["event_id"],
+                           "table_rows": {p: r["table_rows"] for p, r in result["providers"].items()},
+                           "report_sha256": result["content_sha256"], "path": str(output)}, indent=2))
+
+
+@app.command("verify-observed-tables")
+def verify_observed_tables(output: Path) -> None:
+    """Verify a complete observed run, including lineage and provider bundles."""
+    from apexsim.data.observed import verify_observed_tables as verify
+
+    result = verify(output)
+    typer.echo(json.dumps({"passed": True, "report_sha256": result["content_sha256"],
+                           "training_ready": result["training_ready"]}, indent=2))
 
 
 @app.command("align-public-data")

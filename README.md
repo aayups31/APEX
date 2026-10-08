@@ -39,6 +39,11 @@ The [temporal alignment report](docs/data/temporal-alignment.md) checks explicit
 linked sessions across these archives and records timing gaps, join coverage and
 source disagreements without filling missing values or claiming training readiness.
 
+The [observed-field converter](docs/data/observed-tables.md) maps verified archives
+into separate nullable provider bundles with native-row lineage. The legacy public
+dense CSV converters are retired; public-data training requires a validated feature
+builder. Synthetic training and simulation remain available.
+
 ---
 
 ## What APEX Currently Includes
@@ -71,8 +76,8 @@ source disagreements without filling missing values or claiming training readine
 ### Data and telemetry
 
 - Synthetic telemetry generation
-- FastF1 data adapter
-- OpenF1 data adapter
+- Verified FastF1 and OpenF1 archives with offline reconstruction
+- Source-backed nullable lap, stint, weather and race-control evidence
 - Canonical telemetry contracts
 - Session-aware dataset splitting
 - Train-only normalization

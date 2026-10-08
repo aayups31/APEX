@@ -5,6 +5,12 @@ from typing import Final
 
 import pandas as pd
 
+PUBLIC_CSV_MIGRATION_MESSAGE: Final[str] = (
+    "Legacy public dense CSV ingestion is retired: it fabricated missing observations. "
+    "Use download-fastf1/download-openf1 and build-observed-tables with verified archives. "
+    "Public evidence requires a validated feature builder before dense model training."
+)
+
 # Canonical columns are deliberately independent of FastF1, OpenF1, and F1 25.
 # Every source adapter must translate into this stable contract.
 IDENTITY_COLUMNS: Final[list[str]] = [

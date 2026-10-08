@@ -23,7 +23,7 @@ def test_end_to_end_pipeline(tmp_path: Path):
     assert (tmp_path / "runs" / "test_run" / "summary.json").exists()
 
 
-def test_pipeline_accepts_canonical_adapter_output(tmp_path: Path):
+def test_pipeline_accepts_synthetic_canonical_input(tmp_path: Path):
     config = load_config("configs/fast.yaml")
     config.artifacts_dir = tmp_path / "runs"
     config.data.sessions = 5
@@ -34,31 +34,17 @@ def test_pipeline_accepts_canonical_adapter_output(tmp_path: Path):
     config.training.max_train_windows = 100
     config.training.batch_size = 32
 
-    # First materialize the canonical contract exactly as a source adapter would.
     from apexsim.data.synthetic import generate_synthetic_sessions
 
     canonical = tmp_path / "adapter_output.csv"
     generate_synthetic_sessions(config, canonical)
-    source_manifest_path = tmp_path / "adapter_output.csv.source.json"
-    source_manifest = SourceManifest(
-        source="fastf1",
-        query={"fixture": "pipeline"},
-        terms_url="https://docs.fastf1.dev/",
-        notes=["Synthetic bytes used only to test the public-data lineage boundary."],
-    )
-    source_manifest.add_request("fixture://fastf1", {"fixture": "pipeline"}, None)
-    source_manifest.add_file(canonical, role="derived_canonical")
-    source_manifest.save(source_manifest_path)
     config.data.canonical_input_path = canonical
-    config.data.source_manifest_path = source_manifest_path
-    config.data.source = "fastf1"
 
     summary = run_pipeline(config, "canonical_run")
     copied = tmp_path / "runs" / "canonical_run" / "canonical_telemetry.csv"
     assert summary["status"] == "succeeded"
     assert copied.exists()
     assert copied.read_bytes() == canonical.read_bytes()
-    assert (tmp_path / "runs" / "canonical_run" / "source_manifest.json").exists()
 
 
 def test_pipeline_rejects_unprovenanced_public_input(tmp_path: Path):
@@ -70,3 +56,36 @@ def test_pipeline_rejects_unprovenanced_public_input(tmp_path: Path):
 
     with pytest.raises(ValueError, match="source_manifest_path"):
         ingest_stage(config, tmp_path / "run")
+
+
+def test_public_dense_input_is_rejected_even_with_valid_legacy_manifest(tmp_path: Path):
+    canonical = tmp_path / "legacy.csv"
+    canonical.write_text("source,speed_mps\nfastf1,50\n", encoding="utf-8")
+    manifest = SourceManifest("fastf1", {"fixture": True}, "https://docs.fastf1.dev/")
+    manifest.add_file(canonical, role="derived_canonical")
+    manifest_path = tmp_path / "source.json"
+    manifest.save(manifest_path)
+    config = load_config("configs/fast.yaml")
+    config.data.source = "fastf1"
+    config.data.canonical_input_path = canonical
+    config.data.source_manifest_path = manifest_path
+    original = canonical.read_bytes()
+    with pytest.raises(ValueError, match="validated feature builder"):
+        ingest_stage(config, tmp_path / "run")
+    assert canonical.read_bytes() == original
+    assert not (tmp_path / "run").exists()
+
+
+@pytest.mark.parametrize("sources", ["fastf1", "synthetic\nopenf1", '""'])
+@pytest.mark.parametrize("cached", [False, True])
+def test_default_synthetic_config_cannot_admit_public_or_unknown_rows(tmp_path: Path, sources: str, cached: bool):
+    run_dir = tmp_path / "run"
+    run_dir.mkdir()
+    canonical = run_dir / "canonical_telemetry.csv" if cached else tmp_path / "input.csv"
+    canonical.write_text("source\n" + sources + "\n", encoding="utf-8")
+    config = load_config("configs/fast.yaml")
+    config.data.canonical_input_path = canonical
+    with pytest.raises(ValueError, match="validated feature builder"):
+        ingest_stage(config, run_dir)
+    if not cached:
+        assert not (run_dir / "canonical_telemetry.csv").exists()

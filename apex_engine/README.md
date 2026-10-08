@@ -11,7 +11,7 @@ The engine contains:
 - the deterministic race-simulation kernel;
 - vehicle, tyre, fuel, ERS, weather, traffic, and race-control models;
 - telemetry ingestion and canonical data contracts;
-- FastF1 and OpenF1 adapters;
+- FastF1 and OpenF1 archives and nullable observed-field conversion;
 - statistical and machine-learning baselines;
 - strategy and counterfactual evaluation tools;
 - command-line interfaces;
@@ -44,6 +44,10 @@ The background executor is intentionally in-process at R0; a durable queue and w
 deployment belong to a later production hardening gate.
 
 ## Verify
+
+Public-data commands and the retired CSV migration path are documented in the
+[observed fields guide](../docs/data/observed-tables.md). Public bundles are evidence
+for inspection; they are not approved dense model inputs.
 
 ```bash
 ruff check src tests

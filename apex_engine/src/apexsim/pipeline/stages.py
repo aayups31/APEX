@@ -10,7 +10,12 @@ import torch
 from torch.utils.data import DataLoader
 
 from apexsim.config import ProjectConfig
-from apexsim.contracts import MODEL_INPUT_COLUMNS, STATE_COLUMNS, TARGET_COLUMNS
+from apexsim.contracts import (
+    MODEL_INPUT_COLUMNS,
+    PUBLIC_CSV_MIGRATION_MESSAGE,
+    STATE_COLUMNS,
+    TARGET_COLUMNS,
+)
 from apexsim.data.features import Standardizer
 from apexsim.data.manifest import load_source_manifest
 from apexsim.data.synthetic import generate_synthetic_sessions
@@ -24,42 +29,41 @@ from apexsim.training import train_world_model
 def ingest_stage(config: ProjectConfig, run_dir: Path) -> Path:
     """Materialize one canonical telemetry file inside the immutable run directory.
 
-    Synthetic runs generate the file directly. Real-data runs first use a source
-    adapter (FastF1 or OpenF1) to create the canonical contract, then provide that
-    file through ``canonical_input_path``. Copying it into the run directory makes
-    the exact training input part of run lineage and keeps downstream stages
-    source-independent.
+    Synthetic runs generate or copy the file. Public dense inputs remain blocked
+    until a validated, missing-aware feature builder exists.
     """
     output = run_dir / "canonical_telemetry.csv"
+    if config.data.source != "synthetic":
+        if config.data.canonical_input_path is not None:
+            if config.data.source_manifest_path is None:
+                raise ValueError("Public canonical input requires data.source_manifest_path; " + PUBLIC_CSV_MIGRATION_MESSAGE)
+            manifest = load_source_manifest(Path(config.data.source_manifest_path))
+            if manifest["source"] != config.data.source:
+                raise ValueError(
+                    f"Source manifest identifies {manifest['source']!r}, expected {config.data.source!r}"
+                )
+        raise ValueError(PUBLIC_CSV_MIGRATION_MESSAGE)
+
+    def check_synthetic_input(path: Path) -> None:
+        sources = pd.read_csv(path, usecols=["source"])["source"]
+        if sources.isna().any() or not sources.eq("synthetic").all():
+            raise ValueError(PUBLIC_CSV_MIGRATION_MESSAGE)
+
     if output.exists():
+        check_synthetic_input(output)
         return output
 
     if config.data.canonical_input_path is not None:
         source = Path(config.data.canonical_input_path)
         if not source.exists():
             raise FileNotFoundError(f"Canonical input does not exist: {source}")
-        if config.data.source != "synthetic":
-            if config.data.source_manifest_path is None:
-                raise ValueError("Public canonical input requires data.source_manifest_path")
-            source_manifest = Path(config.data.source_manifest_path)
-            manifest = load_source_manifest(source_manifest)
-            if manifest["source"] != config.data.source:
-                raise ValueError(
-                    f"Source manifest identifies {manifest['source']!r}, expected {config.data.source!r}"
-                )
-            shutil.copy2(source_manifest, run_dir / "source_manifest.json")
+        check_synthetic_input(source)
         if source.resolve() != output.resolve():
             shutil.copy2(source, output)
         return output
 
-    if config.data.source == "synthetic":
-        generate_synthetic_sessions(config, output)
-        return output
-
-    raise ValueError(
-        "FastF1/OpenF1 sources require a canonical input file. Run the matching "
-        "ingestion command, then use `apexsim run-canonical --input-path ...`."
-    )
+    generate_synthetic_sessions(config, output)
+    return output
 
 
 def quality_stage(canonical_path: Path, run_dir: Path) -> dict:

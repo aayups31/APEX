@@ -15,6 +15,9 @@ stable season/round identifiers and offline verification of the saved calendar.
 The [temporal alignment guide](temporal-alignment.md) covers explicit session links,
 timestamp associations, coverage gaps and source disagreements over those archives.
 
+The [observed fields guide](observed-tables.md) covers source-backed nullable mapping,
+provider-separated evidence, quarantine reasons and complete-run verification.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.
@@ -39,21 +42,19 @@ An adapter also refuses to overwrite its existing output or sidecar.
 
 ## Adapter behavior
 
-The legacy `ingest-openf1` command records separate request evidence for `car_data`, `location`, and `weather`, then
-hashes its derived canonical CSV. Its published site links the data licence as
-CC BY-NC-SA 4.0; the manifest stores the official licence URL.
-
-The separate `download-openf1` command freezes the full versioned endpoint profile
-and native values without the legacy feature CSV's interpolation or placeholders.
+The `download-openf1` command freezes the full versioned endpoint profile
+and native values without interpolation or placeholders.
 `verify-openf1` and `replay-openf1` check response lineage and exact reconstruction.
 
-The legacy `ingest-fastf1` command records its logical query and canonical CSV output.
-The separate `download-fastf1` command now freezes and enumerates an isolated full-session
+The `download-fastf1` command freezes and enumerates an isolated full-session
 cache and native source tables, with `replay-fastf1` verifying offline reconstruction.
-Canonical mapping and a real untouched multi-event benchmark remain separate gates.
-
-Default sidecars use `{output-name}.source.json`. Callers can supply an explicit manifest
-path, but both the output and manifest paths must be new.
+The `build-observed-tables` command converts verified archives to the five canonical
+tables, preserving units, truth labels, missingness and native row references.
+`verify-observed-tables` validates the enclosing run and both provider bundles.
+The former `ingest-fastf1` and `ingest-openf1` functions and commands fail before
+network/filesystem changes with migration instructions. Public dense CSV ingestion
+for training is blocked until a validated feature builder exists. Synthetic inputs
+remain supported. A real untouched multi-event benchmark is still required.
 
 ## Verification
 
@@ -62,6 +63,6 @@ cd apex_engine
 pytest -q tests/test_source_manifest.py
 ```
 
-The fixture covers manifest and file tampering, exclusive writes, a mocked three-endpoint
-OpenF1 retrieval, payload hashes, request counts, and overwrite refusal without contacting
-the live service.
+Fixtures cover manifest/file tampering, exclusive writes and retirement of both
+legacy converters without requests or writes. Mapping and portable-run integrity
+checks are in `tests/test_observed_tables.py`.
