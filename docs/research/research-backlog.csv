@@ -14,7 +14,7 @@ R012,R1,P0,replication,Create symbol-to-code equation table for FIENI_2025,,revi
 R013,R1,P0,replication,Add hand-calculated FIENI transition fixture,equation table,numeric match within 1e-9,DONE
 R014,R1,P0,replication,Implement exact enumeration oracle for tiny races,strategy model,identical to beam search on tiny cases,DONE
 R015,R1,P0,optimization,Implement CasADi continuous lap-map surrogate,equation table,gradient and bound tests,DONE
-R016,R1,P1,optimization,Implement open-source MINLP path or documented solver adapter,CasADi maps,small-case optimum recovered,IN_PROGRESS
+R016,R1,P1,optimization,Implement open-source MINLP path or documented solver adapter,CasADi maps,small-case optimum recovered,DONE
 R017,R1,P0,RL,Train SAC on identical FIENI environment,exact oracle,regret/runtime reported,TODO
 R018,R1,P0,replication,Reconstruct nominal and disturbance paper scenarios,SAC + oracle,directional/published tolerance report,TODO
 R019,R2,P0,data,Build immutable FastF1/OpenF1 event manifests,,"hashes, versions and schemas stored",TODO

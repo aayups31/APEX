@@ -2,7 +2,7 @@
 
 - Date: 2026-10-08; branch main; baseline 349f51a
 - Scope: R016 documented open-source solver adapter
-- Status: IN_PROGRESS; global maturity before/after R0
+- Status: DONE (component gate); global maturity before/after R0
 
 ## A. Current state
 
@@ -116,4 +116,28 @@ Implementation checkpoint evidence:
   Code hashes/inventory inspected; zero network attempts; base CLI/solver imports
   do not load CasADi. Immutable-output and failed-acceptance tests passed.
 
-Full regression and optimization-enabled CI remain the closure gate.
+Closure evidence:
+
+- Implementation checkpoint 407680cb70f719e101a1da4d1afd70c0a6947037 is pushed to main.
+- Full local regression: **348 passed**, two existing dependency deprecation
+  warnings, 139.71 seconds. Native DLL and loopback access enabled; OMP, MKL and
+  OpenBLAS thread limits were one. No tests skipped for the solver.
+- [GitHub Actions run 37850148292](https://github.com/aayups31/APEX/actions/runs/37850148292)
+  passed on Python 3.11 and 3.12, including full tests, lint, Airflow compilation,
+  public-data artifacts, smooth-map artifacts and matched strategy-solver artifacts.
+- R016 is DONE. Research inventory: 16/73 done, 57 remaining. Build inventory:
+  13/66 done, 53 remaining. Global maturity remains R0; these inventories do not
+  measure real-race accuracy.
+- [Machine-readable evidence](strategy-solver-evidence.json) preserves acceptance
+  metrics, manifest/source hashes, runtime metadata, candidate provenance,
+  reference family/counts and trajectory errors. Maximum legacy mass error was
+  1.1368683772161603e-13 kg, fuel error 8.526512829121202e-14 MJ; wear/discrete
+  state parity passed. The original strategy core and R015 map remain unchanged.
+
+Next: R017 SAC training/evaluation with matching horizons, state information,
+pit windows, control bounds and objective. Keep unclipped wear within the same
+domain and account explicitly for smooth versus piecewise costs; evaluate
+terminal legality, independent regret and runtime with frozen seeds/configuration.
+R018 nominal/disturbed scenarios then precede the planned R1 review. There is
+still no published-policy replication, full-race global MINLP guarantee or new
+real-race calibration evidence.

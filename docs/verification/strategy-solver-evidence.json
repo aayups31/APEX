@@ -1,0 +1,213 @@
+{
+  "acceptance_manifest": {
+    "content_sha256": "29f3c448e4e37b8a1222d142e9799d31869e4dce59f118dac8b7a6b4b5df2a62",
+    "files": {
+      "cases.json": {
+        "bytes": 48377,
+        "sha256": "ac645c1a04b3f82d7941f9b088578b64192328b91e7d3859d984e07fd9e80c60"
+      },
+      "summary.json": {
+        "bytes": 3092,
+        "sha256": "5483bea115d8ed2a4944ab014fbec06d114fc968be873d718f8d24a691853372"
+      }
+    },
+    "schema_version": "apex-strategy-solver-manifest-v1",
+    "summary_sha256": "9dc0d6eb7bacc2086ebe2629f8f99d09a51197b47407ad28784d7a0e1db3986c"
+  },
+  "acceptance_summary": {
+    "acceptance_tolerances": {
+      "graph_scalar_objective_s": 1e-08,
+      "legacy_action_adjustment_mj": 1e-07,
+      "primal": 1e-07,
+      "regret_s": 1e-06,
+      "terminal_resource_mj": 1e-07
+    },
+    "case_metrics": [
+      {
+        "accepted_attempts": 6,
+        "baseline_improvement_s": 0.011199999999973898,
+        "baseline_s": 305.63802499999997,
+        "case": "linear_hand_case",
+        "objective_s": 305.626825,
+        "regret_s": 5.684341886080802e-14,
+        "solver_runtime_s": 0.1663659000005282
+      },
+      {
+        "accepted_attempts": 6,
+        "baseline_improvement_s": 0.06119000399792185,
+        "baseline_s": 305.6195025050602,
+        "case": "concave_battery_vertex_case",
+        "objective_s": 305.5583125010623,
+        "regret_s": 0.0,
+        "solver_runtime_s": 0.15788700000121025
+      },
+      {
+        "accepted_attempts": 6,
+        "baseline_improvement_s": 0.15087640153501525,
+        "baseline_s": 584.410363285607,
+        "case": "mass_coupled_six_lap_case",
+        "objective_s": 584.259486884072,
+        "regret_s": null,
+        "solver_runtime_s": 0.4770970000026864
+      }
+    ],
+    "cases": 3,
+    "classification": "ADAPTATION",
+    "content_sha256": "9dc0d6eb7bacc2086ebe2629f8f99d09a51197b47407ad28784d7a0e1db3986c",
+    "global_solver_optimality_certified": false,
+    "implementation_sha256": {
+      "continuous_reference.py": "6968d26e7e2a6c13c7e9fcf9d84c20b3c2db2e83afd84b9a537e6394cf7eca80",
+      "fienia_strategy.py": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532",
+      "smooth_lap.py": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6",
+      "strategy_solver.py": "3087c4355972ba0ba967c823716a08084a5d82999a5d50f6675df2c2ad8ee7d1",
+      "strategy_solver_demo.py": "1babd51ac4204365f443d27aa588bc8c239e3620e7e3166f9151a194c2daff98"
+    },
+    "limitations": [
+      "Synthetic priors only; no production promotion or paper result replication.",
+      "IPOPT is local; enumerating discrete schedules does not certify continuous global optima.",
+      "Tiny global reference requires <=3 laps, mass-independent wear and concave battery cost.",
+      "Adapter supports <=8 laps and explicit discrete budgets; no clipping in its graph.",
+      "Legacy replay may make only recorded numerical energy adjustments within tolerance.",
+      "Successful NLP calls retain better checked feasible starts; candidate provenance is recorded.",
+      "Runtime varies with machine/load; no policy-speed claim is made."
+    ],
+    "maturity": "R0",
+    "max_absolute_regret_s": 5.684341886080802e-14,
+    "max_legacy_action_adjustment_mj": 7.105427357601002e-14,
+    "max_primal_violation": 9.992007221626409e-16,
+    "max_terminal_resource_mj": 8.526512829121202e-14,
+    "passed": true,
+    "reference_cases": 2,
+    "runtime": {
+      "numpy": "2.5.3",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.12",
+      "thread_limits": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      }
+    },
+    "schema_version": "apex-strategy-solver-run-v1",
+    "training_ready": false
+  },
+  "artifacts": {
+    "files": {
+      "cases.json": {
+        "bytes": 48377,
+        "sha256": "ac645c1a04b3f82d7941f9b088578b64192328b91e7d3859d984e07fd9e80c60"
+      },
+      "manifest.json": {
+        "bytes": 532,
+        "sha256": "09f1fa7d3116d33f25e0d45c5b30f821cf3d11041b2aff459fe21a968691058a"
+      },
+      "summary.json": {
+        "bytes": 3092,
+        "sha256": "5483bea115d8ed2a4944ab014fbec06d114fc968be873d718f8d24a691853372"
+      }
+    },
+    "path": ".cache/strategy-solver-verified-20261008"
+  },
+  "base_commit": "349f51a63c1d65f9eca98d8252c0c22799bdfd4d",
+  "branch": "main",
+  "build_backlog": {
+    "done": 13,
+    "remaining": 53,
+    "total": 66
+  },
+  "classification": "ADAPTATION",
+  "implementation_commit": "407680cb70f719e101a1da4d1afd70c0a6947037",
+  "limitations": [
+    "Synthetic priors only; no production promotion or paper result replication.",
+    "IPOPT is local; enumerating discrete schedules does not certify continuous global optima.",
+    "Tiny global reference requires <=3 laps, mass-independent wear and concave battery cost.",
+    "Adapter supports <=8 laps and explicit discrete budgets; no clipping in its graph.",
+    "Legacy replay may make only recorded numerical energy adjustments within tolerance.",
+    "Successful NLP calls retain better checked feasible starts; candidate provenance is recorded.",
+    "Runtime varies with machine/load; no policy-speed claim is made."
+  ],
+  "maturity_after": "R0",
+  "maturity_before": "R0",
+  "next": "R017 SAC with matched dynamics/domain/objective and explicit regret/runtime; R018 nominal/disturbed scenarios before the planned R1 review",
+  "research_backlog": {
+    "done": 16,
+    "remaining": 57,
+    "total": 73
+  },
+  "schema_version": "apex-r016-verification-v1",
+  "status": "DONE",
+  "trajectory_checks": {
+    "concave_battery_vertex_case": {
+      "global_solver_optimality_certified": false,
+      "legacy_state_errors": {
+        "battery_mj": 0,
+        "fuel_mj": 1.4210854715202004e-14,
+        "mass_kg": 0.0,
+        "wear": 0.0
+      },
+      "reference_candidates": 60,
+      "reference_family": "AFFINE_FUEL_CONCAVE_BATTERY_MASS_INDEPENDENT_WEAR",
+      "selected_candidate": "feasible_start"
+    },
+    "linear_hand_case": {
+      "global_solver_optimality_certified": false,
+      "legacy_state_errors": {
+        "battery_mj": 0,
+        "fuel_mj": 1.4210854715202004e-14,
+        "mass_kg": 0.0,
+        "wear": 0.0
+      },
+      "reference_candidates": 60,
+      "reference_family": "AFFINE_FUEL_CONCAVE_BATTERY_MASS_INDEPENDENT_WEAR",
+      "selected_candidate": "feasible_start"
+    },
+    "mass_coupled_six_lap_case": {
+      "global_solver_optimality_certified": false,
+      "legacy_state_errors": {
+        "battery_mj": 0,
+        "fuel_mj": 8.526512829121202e-14,
+        "mass_kg": 1.1368683772161603e-13,
+        "wear": 0.0
+      },
+      "reference_candidates": null,
+      "reference_family": null,
+      "selected_candidate": "feasible_start"
+    }
+  },
+  "validation_local_date": "2026-10-08",
+  "verification": {
+    "base_cli_and_solver_import": "passed; casadi not loaded",
+    "baseline_pytest": {
+      "duration_seconds": 167.24,
+      "passed": 316,
+      "warnings": 2
+    },
+    "byte_compile": "passed",
+    "frozen_r015_map_unchanged": true,
+    "full_pytest": {
+      "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q --basetemp ../.cache/pytest-solver-final-20261008 (from apex_engine; native DLL and loopback access enabled)",
+      "duration_seconds": 139.71,
+      "passed": 348,
+      "python": "3.12.12",
+      "warnings": 2
+    },
+    "github_actions": {
+      "all_steps": "success; full suite, lint, Airflow compilation, public-data/smooth-map/strategy-solver artifacts",
+      "implementation_commit": "407680cb70f719e101a1da4d1afd70c0a6947037",
+      "jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "run_id": 37850148292,
+      "url": "https://github.com/aayups31/APEX/actions/runs/37850148292"
+    },
+    "incumbent_regression": "initial local stationary point regret 8.334308745361341e-7 s; better independently feasible starts are retained after successful NLP acceptance, without reference access",
+    "offline_acceptance_network_attempts": 0,
+    "restricted_windows_native_test": "DLL initialization failed with WIN32 1114/invalid handle; native-access smoke/tests passed without skips or numerical workarounds",
+    "ruff": "passed",
+    "targeted_pytest": {
+      "duration_seconds": 20.88,
+      "passed": 76
+    }
+  }
+}
