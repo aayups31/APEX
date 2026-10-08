@@ -5,7 +5,7 @@
 - Baseline: a2f47d1
 - Scope: R015, research continuous lap-map surrogate
 - Maturity before/after: R0
-- Status: IN_PROGRESS
+- Status: DONE (component gate; no maturity promotion)
 
 ## A. Current state
 
@@ -79,7 +79,7 @@ must fail construction. A component gate alone does not promote global maturity.
 Baseline tests/reference inspection; smooth map with explicit constraints;
 independent derivative/bound tests; artifact-producing acceptance command;
 targeted checks and main checkpoint; full regression/CI; evidence/backlog closure
-and final main push. Completion evidence is pending.
+and final main push. Completion evidence is recorded below.
 
 Implementation checkpoint:
 
@@ -98,4 +98,34 @@ Implementation checkpoint:
 - Artifacts: .cache/smooth-lap-20261008, summary content hash
   a6735538f92c29fd223d3a6467fc78b15fa05243ab4d119eddd93a6bb5cbad18.
 
-Full regression and optimization-enabled CI remain the closure gate.
+Final verification:
+
+- Implementation checkpoint: 50828f5; public coordinate type annotations: 8a06a5f;
+  final dry-only guard/regression: a8d8f10. Custom dictionaries containing a wet
+  coefficient cannot expand the supported dry-compound domain.
+- Full local regression at 50828f5: **316 passed**, two existing dependency
+  deprecation warnings, 165.41 seconds. The final guard revision passed all 44
+  targeted tests in 19.32 seconds; lint and compilation passed.
+- Both Python 3.11/3.12 CI jobs passed on 50828f5 and 8a06a5f. CI includes the full
+  test suite, lint, Airflow compilation, public-data artifacts and smooth-map artifacts.
+- Final immutable run: .cache/smooth-lap-final-20261008, summary content hash
+  42c9cd1f5db1e44b768fab38184780d281cacb007b26a962c7fcac45c3555e24.
+  Numerical metrics match the first checkpoint; zero network attempts. Final code
+  hashes, manifest inventory and artifact file hashes were inspected.
+- Original foundation code, frozen equation map, hand fixtures and paper remain
+  byte-for-byte unchanged from the baseline reference.
+
+The final guard revision passed both Python 3.11 and 3.12 jobs in
+[GitHub Actions run 37846245568](https://github.com/aayups31/APEX/actions/runs/37846245568).
+All steps passed, including full regression and both artifact commands. R015 is
+DONE. Research backlog: 15/73 done, 58 remaining; build backlog: 13/66 done, 53
+remaining. These are separate inventories, not a measure of model accuracy.
+The [machine-readable evidence](smooth-lap-map-evidence.json) preserves the final
+map metadata, acceptance/manifest hashes, baseline reference and verification.
+
+Next: R016, a documented solver adapter and matched small-case optimum recovery.
+Require resource/terminal residuals, action replay, status, regret and runtime;
+distinguish local nonlinear convergence from global mixed-integer certification.
+Account for the smooth/piecewise objective discrepancy. R017 policy training and
+R018 nominal/disturbed scenarios still precede the planned R1 review. Global
+maturity remains R0; this work provides no new real-race accuracy evidence.

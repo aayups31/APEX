@@ -8,6 +8,8 @@ This directory tracks the published research used to guide APEX.
 - [Research backlog](research-backlog.csv)
 - [FIENI equation, unit and parameter review](../../research/equations/FIENI_2025.md)
 - [FIENI foundation verification](../verification/fieni-foundation-report.md)
+- [Smooth lap-map equations and domain](../../research/equations/SMOOTH_LAP_MAP_V1.md)
+- [R015 smooth lap-map verification](../verification/smooth-lap-map-report.md)
 
 ## Purpose
 

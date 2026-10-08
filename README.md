@@ -410,6 +410,18 @@ apexsim research-demo \
 
 Individual research modules should be treated as experiments until their corresponding validation gates are satisfied.
 
+Generate immutable synthetic strategy and smooth-map acceptance evidence:
+
+```bash
+apexsim strategy-foundation-demo --output .cache/fieni-foundation-new
+python -m pip install -e './apex_engine[optimization]'
+apexsim smooth-lap-demo --output .cache/smooth-lap-new
+```
+
+The [smooth map review](research/equations/SMOOTH_LAP_MAP_V1.md) describes the
+continuous domain, derivative checks and approximation bound. These commands
+validate research components; they do not train or promote a world model.
+
 ---
 
 ## Development Roadmap

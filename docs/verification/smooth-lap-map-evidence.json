@@ -1,0 +1,260 @@
+{
+  "acceptance_manifest": {
+    "content_sha256": "c96fca413270704caadda670afc5e4f039401dc6e28cfd444ccac2be91ecceba",
+    "files": {
+      "checks.json": {
+        "bytes": 109209,
+        "sha256": "1ae07476fb83407a216e21fa913c2c71e2f2ebded30ff117daa606ad8a67c8e5"
+      },
+      "summary.json": {
+        "bytes": 3509,
+        "sha256": "e81bfd85db454305678d2c2225038418527f1d5406af33612c6c3c952dda5cd5"
+      }
+    },
+    "schema_version": "apex-smooth-lap-manifest-v1",
+    "summary_sha256": "42c9cd1f5db1e44b768fab38184780d281cacb007b26a962c7fcac45c3555e24"
+  },
+  "acceptance_summary": {
+    "classification": "ADAPTATION",
+    "content_sha256": "42c9cd1f5db1e44b768fab38184780d281cacb007b26a962c7fcac45c3555e24",
+    "finite_difference_checks": 60,
+    "finite_difference_steps": [
+      0.001,
+      1e-06,
+      0.001,
+      1e-06
+    ],
+    "fixed_maps": 12,
+    "implementation_sha256": {
+      "smooth_lap.py": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6",
+      "smooth_lap_demo.py": "cc91692a2b64a90e5fdc98e3583200d6856c447e3c3b2cb504f08334412d7d51"
+    },
+    "map": {
+      "battery_approximation_bound_s": 0.0004999999999999999,
+      "battery_smoothing_mj": 0.01,
+      "calibrated": false,
+      "casadi_version": "3.7.2",
+      "certified_lap_time_lower_bound_s": 91.9045,
+      "classification": "ADAPTATION",
+      "coordinate_units": [
+        "MJ/lap",
+        "MJ/lap",
+        "kg",
+        "dimensionless"
+      ],
+      "coordinates": [
+        "fuel_energy_mj",
+        "battery_delta_mj",
+        "car_mass_kg",
+        "tyre_wear"
+      ],
+      "limitations": [
+        "Synthetic pace maps only; no fitted FIENI data or current-battery pace dependence.",
+        "Fixed discrete mode/compound; resource feasibility is a separate constraint.",
+        "Symbolic graphs do not enforce their boxes; numeric wrapper rejects extrapolation.",
+        "No clipping or state/action projection inside the smooth graph."
+      ],
+      "lower": [
+        71.28947368421053,
+        -1.25,
+        800.0,
+        0.0
+      ],
+      "parameter_truth_label": "PRIOR",
+      "parameters": {
+        "battery_capacity_mj": 4.0,
+        "battery_delta_max_mj": 0.75,
+        "battery_delta_min_mj": -1.25,
+        "battery_deploy_time_s_per_mj": 0.42,
+        "battery_recharge_time_s_per_mj": 0.32,
+        "consecutive_pit_penalty_s": 26.5,
+        "empty_mass_kg": 800.0,
+        "fuel_energy_time_s_per_fraction": 0.7,
+        "fuel_lhv_mj_per_kg": 43.0,
+        "initial_fuel_kg": 105.0,
+        "mass_time_s_per_kg": 0.028,
+        "nominal_lap_time_s": 92.5,
+        "pit_inlap_penalty_s": 11.5,
+        "pit_outlap_penalty_s": 15.0,
+        "require_compound_change": true,
+        "reward_offset_s": 130.0,
+        "total_laps": 57
+      },
+      "schema_version": "apex-smooth-lap-map-v1",
+      "tyre_coefficients": {
+        "HARD": {
+          "cubic_s": 3.2,
+          "fresh_loss_s": 1.75,
+          "linear_s": 0.12,
+          "quadratic_s": 1.5
+        },
+        "MEDIUM": {
+          "cubic_s": 5.0,
+          "fresh_loss_s": 0.85,
+          "linear_s": 0.18,
+          "quadratic_s": 2.2
+        },
+        "SOFT": {
+          "cubic_s": 7.0,
+          "fresh_loss_s": 0.0,
+          "linear_s": 0.25,
+          "quadratic_s": 3.0
+        }
+      },
+      "upper": [
+        87.13157894736844,
+        0.75,
+        905.0,
+        1.25
+      ]
+    },
+    "maturity": "R0",
+    "maximum_errors": {
+      "analytic_gradient_error": 8.881784197001252e-16,
+      "analytic_hessian_error": 3.552713678800501e-15,
+      "fd_gradient_error": 4.913199513900679e-09,
+      "fd_hessian_error": 2.500277229700032e-08,
+      "piecewise_discrepancy_s": 0.0004980000320244926,
+      "value_error_s": 2.842170943040401e-14
+    },
+    "passed": true,
+    "reference_checks": 228,
+    "rejected_box_violations": 8,
+    "runtime": {
+      "numpy": "2.5.3",
+      "python": "3.12.12"
+    },
+    "schema_version": "apex-smooth-lap-run-v1",
+    "tolerances": {
+      "fd_gradient_absolute": 1e-06,
+      "fd_gradient_relative": 1e-05,
+      "fd_hessian_absolute": 1e-05,
+      "fd_hessian_relative": 0.0001,
+      "reference_absolute": 1e-10
+    },
+    "training_ready": false
+  },
+  "artifacts": {
+    "files": {
+      "checks.json": {
+        "bytes": 109209,
+        "sha256": "1ae07476fb83407a216e21fa913c2c71e2f2ebded30ff117daa606ad8a67c8e5"
+      },
+      "manifest.json": {
+        "bytes": 529,
+        "sha256": "fcd2c0d1c91fdfb9413c966038c7a1c03a21bfc496cbd73171cd5816f43781fc"
+      },
+      "summary.json": {
+        "bytes": 3509,
+        "sha256": "e81bfd85db454305678d2c2225038418527f1d5406af33612c6c3c952dda5cd5"
+      }
+    },
+    "path": ".cache/smooth-lap-final-20261008"
+  },
+  "base_commit": "a2f47d1ff0e548a5e466296138cb093b03841f3a",
+  "baseline_foundation": {
+    "classification": "ADAPTATION",
+    "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812",
+    "exact_comparisons": 2,
+    "hand_fixtures": 5,
+    "implementation_sha256": {
+      "apexsim.research.exact_strategy": "c76e611ba61d79418a96ea95d6510a5f314b0e57b4cc3f02681a73fbad04196e",
+      "apexsim.research.fienia_strategy": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532",
+      "apexsim.research.strategy_env": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476"
+    },
+    "input_sha256": {
+      "research/equations/fieni-2025-v1.json": "dcd2fd813da529a584cc55d97ad5453c51237eb06e240ea66b203b3286b680a5",
+      "research/fixtures/fieni-hand-transition-v1.json": "32c516345f5bb3d6f5e674e8aeff1e4ea1ca4c133a9055e1b900b4f3fadab36c",
+      "research/user_provided_papers/learning-based-f1-strategies.pdf": "fc609aa9dcff9179d5e6cba8ce96eb7785f8db45daeef2fc6c4aad32ad133270"
+    },
+    "limitations": [
+      "Synthetic coefficients and projected finite action grids only.",
+      "No continuous optimum, paper MINLP/SAC result or production maturity promotion.",
+      "Finite-width/coarse beam may lose optimum or all legal candidates."
+    ],
+    "maturity": "R0",
+    "max_beam_regret_s": 0.0,
+    "max_fixture_error": 1.4210854715202004e-14,
+    "passed": true,
+    "reviewed_equation_numbers": 70,
+    "schema_version": "apex-fieni-foundation-run-v1",
+    "training_ready": false
+  },
+  "branch": "main",
+  "build_backlog": {
+    "done": 13,
+    "remaining": 53,
+    "total": 66
+  },
+  "calibrated": false,
+  "classification": "ADAPTATION",
+  "final_implementation_commit": "a8d8f1039ee70b58c6b92b3961f01f42a0af105b",
+  "implementation_commit": "50828f523f2b0f06b4317707cb59bfacca5bb5ac",
+  "interface_commit": "8a06a5fb08971925f4503c5b4178a2df76890542",
+  "limitations": [
+    "Synthetic pace maps only; no fitted FIENI data or current-battery pace dependence.",
+    "Fixed discrete mode/compound; resource feasibility is a separate constraint.",
+    "Symbolic graphs do not enforce their boxes; numeric wrapper rejects extrapolation.",
+    "No clipping or state/action projection inside the smooth graph.",
+    "Smoothing is a numerical adaptation, not learned car physics.",
+    "Local NLP convergence will not certify a global mixed-integer optimum.",
+    "No policy training, solver implementation or global maturity promotion in R015."
+  ],
+  "maturity_after": "R0",
+  "maturity_before": "R0",
+  "next": "R016: matched solver adapter and independently known tiny-case optima; R017 policy and R018 scenario checks precede the planned R1 review",
+  "research_backlog": {
+    "done": 15,
+    "remaining": 58,
+    "total": 73
+  },
+  "schema_version": "apex-r015-verification-v1",
+  "status": "DONE",
+  "validation_local_date": "2026-10-08",
+  "verification": {
+    "base_cli_import": "passed; casadi not loaded",
+    "baseline_pytest": {
+      "duration_seconds": 117.92,
+      "passed": 272,
+      "warnings": 2
+    },
+    "byte_compile": "passed",
+    "frozen_foundation_inputs_and_core_code_unchanged": true,
+    "full_pytest": {
+      "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q --basetemp ../.cache/pytest-smooth-final-20261008 (from apex_engine; local loopback permission enabled)",
+      "commit": "50828f5",
+      "duration_seconds": 165.41,
+      "passed": 316,
+      "warnings": 2
+    },
+    "github_actions": {
+      "all_steps": "success; full suite, lint, Airflow compilation, public-data artifacts, smooth lap-map artifacts",
+      "final_implementation_commit": "a8d8f1039ee70b58c6b92b3961f01f42a0af105b",
+      "final_jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "initial_jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "initial_run_id": 37845304952,
+      "interface_jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "interface_run_id": 37845821163,
+      "run_id": 37846245568,
+      "url": "https://github.com/aayups31/APEX/actions/runs/37846245568"
+    },
+    "immutable_artifact_checks": "content seals and exact inventory hashes; overwrite refused; numeric rejection creates no root",
+    "offline_acceptance_network_attempts": 0,
+    "pace_parity_with_starter": "all twelve fixed maps at sixteen corners and three join points",
+    "ruff": "passed",
+    "targeted_pytest": {
+      "commit": "a8d8f10",
+      "duration_seconds": 19.32,
+      "passed": 44
+    }
+  }
+}
