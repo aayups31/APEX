@@ -15,6 +15,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [Jolpica event catalog](jolpica-event-catalog-report.md)
 - [Temporal alignment](temporal-alignment-report.md)
 - [Observed public fields and CSV migration](observed-public-fields-report.md)
+- [FIENI equations, hand calculations and exact tiny-grid oracle](fieni-foundation-report.md)
 
 ## Purpose
 

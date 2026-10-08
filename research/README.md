@@ -11,6 +11,8 @@ This folder is the evidence and replication layer for the simulator.
 - `REPLICATION_STANDARD.md`: what counts as a replication, adaptation or inspiration.
 - `GAME_VALIDATION_LATER.md`: pre-registered plan for future game telemetry.
 - `protocols/`: experiment plans by research family.
+- `equations/`: reviewed symbol/code/unit maps and declared deviations.
+- `fixtures/`: frozen hand-calculated synthetic transition expectations.
 - `experiments/`: templates for individual runs.
 - `scripts/`: optional source-fetch helpers; third-party papers are not silently redistributed.
 
@@ -26,3 +28,8 @@ This folder is the evidence and replication layer for the simulator.
 - `REPLICATED`: reserved for matched data/protocol/results within declared tolerance.
 
 Do not promote a status because the output looks plausible.
+
+The [FIENI foundation review](equations/FIENI_2025.md) documents corrected resource
+feasibility, hand fixtures and exact tiny-grid benchmarks. Run
+`apexsim strategy-foundation-demo --output <new-directory>` from the checkout
+to generate immutable acceptance artifacts. These are synthetic adaptation evidence.

@@ -5,7 +5,7 @@
 - Baseline: 5676efc84af9a1111b1b6254e30fc480707bbc4d
 - Scope: R012-R014; research adaptation, not production promotion
 - Maturity before/after: R0
-- Status: IN_PROGRESS
+- Status: DONE; R012-R014 acceptance gates passed
 
 ## A. Current state
 
@@ -89,5 +89,33 @@ an optimum. Saved exact actions replay to the same legal final states.
 The updated research demo also completes: 770.9385021735404 seconds with zero
 residual energy and a compound change. The changed synthetic result reflects the
 corrected search state grouping and resource feasibility, not better real-race
-accuracy. Synthetic tyre forecasting metrics are unchanged. Full regression and
-GitHub checks are pending; R012-R014 remain IN_PROGRESS.
+accuracy. Synthetic tyre forecasting metrics are unchanged. Every inspected reference
+allocation satisfies the declared fuel range 77.4..94.6 MJ/lap and battery delta
+range -1.25..0.75 MJ/lap; race time increases monotonically.
+
+The full local suite passed **272 tests**, with two existing dependency warnings,
+in 162.76 seconds. This is 28 added tests over the verified baseline. Ruff,
+Airflow compilation and whitespace checks passed. The implementation checkpoint
+d2ba1a43d7f4a12127457d84bc1a677da33980b7 was pushed directly to main.
+GitHub Actions [run 37842648078](https://github.com/aayups31/APEX/actions/runs/37842648078)
+passed both Python 3.11 and 3.12 jobs, including tests, lint, Airflow compilation and
+public-data demo verification.
+
+[Machine-readable evidence](fieni-foundation-evidence.json) records input/code/output
+hashes, baseline/new metrics, fixture errors, enumerated/feasible sequence counts,
+pruning/abstention evidence, tests and CI. The acceptance summary is
+f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812.
+
+R012 is complete with 70 reviewed equation entries and parameter/symbol units.
+R013 is complete with five frozen hand transitions passing the 1e-9 gate.
+R014 is complete with two exhaustive tiny projected grids, exact wide-beam agreement
+and explicit narrow-beam abstention. These are research adaptation gates, not
+published-result replication or production promotion. Research backlog: 14/73 DONE.
+The separate 66-task build backlog remains 13/66 DONE, 53 remaining.
+
+Next earliest research dependency: **R015**, a smooth CasADi lap-map surrogate with
+gradient and bound checks. The clipped tyre map must not be assumed smooth.
+R016 then establishes a matched solver adapter before policy training is compared
+against a stronger benchmark. Public lap filtering, track reconstruction and an
+untouched multi-event corpus remain separate data/physics prerequisites. Global
+maturity remains R0.

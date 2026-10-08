@@ -6,6 +6,8 @@ This directory tracks the published research used to guide APEX.
 
 - [Paper implementation matrix](paper-implementation-matrix.csv)
 - [Research backlog](research-backlog.csv)
+- [FIENI equation, unit and parameter review](../../research/equations/FIENI_2025.md)
+- [FIENI foundation verification](../verification/fieni-foundation-report.md)
 
 ## Purpose
 

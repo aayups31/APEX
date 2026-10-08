@@ -97,6 +97,7 @@ builder. Synthetic training and simulation remain available.
 - Counterfactual scenario interfaces
 - Monte Carlo strategy evaluation
 - Research-paper-to-code mappings
+- Reviewed strategy equations, hand-calculated fixtures and bounded exact tiny-grid search
 - Explainability and feature-ablation scaffolding
 
 ---

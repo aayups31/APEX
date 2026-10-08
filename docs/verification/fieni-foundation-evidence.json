@@ -1,0 +1,210 @@
+{
+  "base_commit": "5676efc84af9a1111b1b6254e30fc480707bbc4d",
+  "baseline_research_summary": {
+    "paper_count": 22,
+    "state_space": {
+      "final_latent_degradation_s": 0.28142252793994854,
+      "pit_reset_lap": 11,
+      "rows": 20
+    },
+    "strategy": {
+      "compound_changed": true,
+      "race_time_s": 772.6651075170051,
+      "residual_battery_mj": 0.0,
+      "residual_fuel_energy_mj": 0.0
+    },
+    "tyre_energy": {
+      "ridge_test_rmse": 0.055471744758730714,
+      "target_quality": "synthetic proxy, not proprietary measured tyre energy",
+      "test_windows": 140,
+      "train_windows": 420
+    }
+  },
+  "branch": "main",
+  "build_backlog": {
+    "done": 13,
+    "remaining": 53,
+    "total": 66
+  },
+  "classification": "ADAPTATION",
+  "exact_comparisons": [
+    {
+      "beam_regret_s": 0.0,
+      "beam_search": {
+        "exact_for_grid": true,
+        "state_bucketing": "exact",
+        "width_pruned_states": 0
+      },
+      "case": "single_energy_grid",
+      "exact_race_time_s": 304.778138338125,
+      "legal_terminal_sequences": 2,
+      "narrow_beam": {
+        "abstained": true,
+        "exact_for_grid": false,
+        "legal_solution": false,
+        "state_bucketing": "exact",
+        "width_pruned_states": 3
+      },
+      "terminal_sequences": 4,
+      "transitions": 9
+    },
+    {
+      "beam_regret_s": 0.0,
+      "beam_search": {
+        "exact_for_grid": true,
+        "state_bucketing": "exact",
+        "width_pruned_states": 0
+      },
+      "case": "asymmetric_projected_grid",
+      "exact_race_time_s": 304.766938338125,
+      "legal_terminal_sequences": 128,
+      "narrow_beam": {
+        "abstained": true,
+        "exact_for_grid": false,
+        "legal_solution": false,
+        "state_bucketing": "exact",
+        "width_pruned_states": 8
+      },
+      "terminal_sequences": 256,
+      "transitions": 324
+    }
+  ],
+  "hand_fixtures": [
+    {
+      "case": "normal",
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "case": "inlap",
+      "max_absolute_error": 1.4210854715202004e-14
+    },
+    {
+      "case": "outlap",
+      "max_absolute_error": 0
+    },
+    {
+      "case": "out_inlap",
+      "max_absolute_error": 0
+    },
+    {
+      "case": "terminal_projection",
+      "max_absolute_error": 2.7755575615628914e-17
+    }
+  ],
+  "implementation_commit": "d2ba1a43d7f4a12127457d84bc1a677da33980b7",
+  "inspected_artifacts_integrity_passed": true,
+  "manifest_sha256": "867a3229dbaa6b954f4a08d1ec9d3fcb2da712b19c871d14c4b7d43270011752",
+  "maturity": "R0",
+  "output_file_sha256": {
+    "comparisons.json": "2cad0ec733773b7a4427d3d8d222f756c9edc1fd279857918293ac331dc2565b",
+    "fixtures.json": "8be001cd968ba54d2a60bb86d3062f68f822fecf67a6ede4f0dca56c9e739489",
+    "manifest.json": "867a3229dbaa6b954f4a08d1ec9d3fcb2da712b19c871d14c4b7d43270011752",
+    "summary.json": "0eb2023d018a5f2bfb617b4d15f868557a046a71f106aa27e0cc6aeb322f2a33"
+  },
+  "output_path": ".cache/fieni-foundation-20261008",
+  "python": "3.12.12",
+  "python_socket_audit_guard_network_attempts": 0,
+  "research_backlog": {
+    "done": 14,
+    "next": "R015",
+    "total": 73
+  },
+  "schema_version": "apex-fieni-foundation-acceptance-v1",
+  "status": "DONE",
+  "summary": {
+    "classification": "ADAPTATION",
+    "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812",
+    "exact_comparisons": 2,
+    "hand_fixtures": 5,
+    "implementation_sha256": {
+      "apexsim.research.exact_strategy": "c76e611ba61d79418a96ea95d6510a5f314b0e57b4cc3f02681a73fbad04196e",
+      "apexsim.research.fienia_strategy": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532",
+      "apexsim.research.strategy_env": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476"
+    },
+    "input_sha256": {
+      "research/equations/fieni-2025-v1.json": "dcd2fd813da529a584cc55d97ad5453c51237eb06e240ea66b203b3286b680a5",
+      "research/fixtures/fieni-hand-transition-v1.json": "32c516345f5bb3d6f5e674e8aeff1e4ea1ca4c133a9055e1b900b4f3fadab36c",
+      "research/user_provided_papers/learning-based-f1-strategies.pdf": "fc609aa9dcff9179d5e6cba8ce96eb7785f8db45daeef2fc6c4aad32ad133270"
+    },
+    "limitations": [
+      "Synthetic coefficients and projected finite action grids only.",
+      "No continuous optimum, paper MINLP/SAC result or production maturity promotion.",
+      "Finite-width/coarse beam may lose optimum or all legal candidates."
+    ],
+    "maturity": "R0",
+    "max_beam_regret_s": 0.0,
+    "max_fixture_error": 1.4210854715202004e-14,
+    "passed": true,
+    "reviewed_equation_numbers": 70,
+    "schema_version": "apex-fieni-foundation-run-v1",
+    "training_ready": false
+  },
+  "tasks": [
+    "R012",
+    "R013",
+    "R014"
+  ],
+  "updated_research_summary": {
+    "paper_count": 22,
+    "state_space": {
+      "final_latent_degradation_s": 0.28142252793994854,
+      "pit_reset_lap": 11,
+      "rows": 20
+    },
+    "strategy": {
+      "compound_changed": true,
+      "race_time_s": 770.9385021735404,
+      "residual_battery_mj": 0.0,
+      "residual_fuel_energy_mj": 0.0
+    },
+    "tyre_energy": {
+      "ridge_test_rmse": 0.055471744758730714,
+      "target_quality": "synthetic proxy, not proprietary measured tyre energy",
+      "test_windows": 140,
+      "train_windows": 420
+    }
+  },
+  "validation_local_date": "2026-10-08",
+  "verification": {
+    "airflow_compile": "passed",
+    "baseline_pytest": {
+      "duration_seconds": 159.13,
+      "passed": 244,
+      "warnings": 2
+    },
+    "checkpoint_targeted_pytest": {
+      "duration_seconds": 22.55,
+      "passed": 31
+    },
+    "diff_check": "passed",
+    "full_pytest": {
+      "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q --basetemp ../.cache/pytest-fieni-final-20261008 (from apex_engine; local loopback permission enabled)",
+      "duration_seconds": 162.76,
+      "passed": 272,
+      "python": "3.12.12",
+      "warnings": 2
+    },
+    "github_actions": {
+      "implementation_commit": "d2ba1a43d7f4a12127457d84bc1a677da33980b7",
+      "jobs": {
+        "Python 3.11": "success",
+        "Python 3.12": "success"
+      },
+      "run_id": 37842648078,
+      "url": "https://github.com/aayups31/APEX/actions/runs/37842648078"
+    },
+    "ruff": "passed",
+    "updated_reference_allocation_bounds": {
+      "battery_delta_mj_range": [
+        -1,
+        0.5
+      ],
+      "fuel_energy_mj_range": [
+        77.39999999999998,
+        94.60000000000008
+      ],
+      "passed": true,
+      "race_time_monotonic": true
+    }
+  }
+}
