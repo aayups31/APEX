@@ -138,6 +138,10 @@ def test_bad_modes_coefficients_smoothing_and_positive_bound_fail():
     for compound, mode in ((TyreCompound.WET, LapMode.NORMAL), (TyreCompound.SOFT, "unknown")):
         with pytest.raises(ValueError):
             model.evaluate(x, compound, mode)
+    extended = SmoothLapMap(time_loss_coefficients={**model.time_loss,
+                                                  TyreCompound.WET: model.time_loss[TyreCompound.SOFT]})
+    with pytest.raises(ValueError, match="supported dry"):
+        extended.evaluate(x, TyreCompound.WET)
     for eps in (0, -1, float("nan")):
         with pytest.raises(ValueError, match="smoothing"):
             SmoothLapMap(battery_smoothing_mj=eps)

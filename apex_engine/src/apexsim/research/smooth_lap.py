@@ -101,7 +101,8 @@ class SmoothLapMap:
                                 "No clipping or state/action projection inside the smooth graph."]}
 
     def functions(self, compound: TyreCompound, mode: LapMode | str = LapMode.NORMAL) -> SymbolicLapFunctions:
-        if not isinstance(compound, TyreCompound) or compound not in self.time_loss:
+        if (not isinstance(compound, TyreCompound)
+                or compound not in (TyreCompound.SOFT, TyreCompound.MEDIUM, TyreCompound.HARD)):
             raise ValueError("Smooth lap maps require a supported dry TyreCompound")
         try:
             mode = LapMode(mode)
