@@ -12,6 +12,8 @@ This directory tracks the published research used to guide APEX.
 - [R015 smooth lap-map verification](../verification/smooth-lap-map-report.md)
 - [Bounded strategy solver protocol](../../research/protocols/STRATEGY_SOLVER.md)
 - [R016 solver verification](../verification/strategy-solver-report.md)
+- [R017 SAC training protocol](../../research/protocols/SAC_STRATEGY.md)
+- [R017 SAC verification](../verification/sac-strategy-report.md)
 
 ## Purpose
 

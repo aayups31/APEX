@@ -318,6 +318,17 @@ def strategy_solver_demo(output: Annotated[Path, typer.Option()]) -> None:
     typer.echo(json.dumps(run_strategy_solver_demo(output), indent=2))
 
 
+@app.command("sac-strategy-demo")
+def sac_strategy_demo(output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Train frozen synthetic hybrid SAC seeds and report matched in-task regret."""
+    from apexsim.examples.sac_strategy_demo import run_sac_strategy_demo
+
+    def progress(row: dict) -> None:
+        typer.echo(f"seed={row['seed']} step={row['step']} updates={row['updates']} episodes={row['episodes']}", err=True)
+
+    typer.echo(json.dumps(run_sac_strategy_demo(output, profile, progress), indent=2))
+
+
 @app.command()
 def ui(
     run_dir: Path = Path("artifacts/runs/reference_gru"),

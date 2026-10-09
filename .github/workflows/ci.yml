@@ -43,4 +43,6 @@ jobs:
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
         run: python -m apexsim.cli strategy-solver-demo --output .cache/ci-strategy-solver
+      - name: Verify SAC training and checkpoint artifacts
+        run: python -m apexsim.cli sac-strategy-demo --profile smoke --output .cache/ci-sac-strategy
 
