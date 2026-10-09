@@ -456,6 +456,11 @@ comparisons. No training occurs; published magnitudes remain unreplicated.
 
 APEX follows an evidence-gated maturity model.
 
+Current status: **R1 for the reviewed equation-level research foundation;
+R0 for the production simulator kernel**. The [R1 gate review](docs/verification/r1-gate-review.md)
+records the accepted scope and limitations. Real-data calibration, production
+policy promotion and validated world-model planning remain later gates.
+
 ### R0 — Deterministic foundation
 
 - Reproducible synthetic fixtures

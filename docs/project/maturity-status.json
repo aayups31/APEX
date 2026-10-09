@@ -1,0 +1,23 @@
+{
+  "schema_version": "apex-project-maturity-status-v1",
+  "review_date": "2026-10-09",
+  "research_foundation_maturity": "R1",
+  "research_scope": "Reviewed FIENI equation-level adaptations, independent numerical tests and reconstructed synthetic nominal/disturbance studies",
+  "production_kernel_maturity": "R0",
+  "production_component_promotion": false,
+  "review_decision": "PASS_SCOPED_R1_EQUATION_FOUNDATION",
+  "reviewed_commit": "a4d93bb092999a3e618320fc8512ab7a2999d40e",
+  "review_report": "docs/verification/r1-gate-review.md",
+  "review_evidence": "docs/verification/r1-gate-evidence.json",
+  "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
+  "published_magnitude_replication": "INCONCLUSIVE",
+  "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
+  "research_inventory": {"done": 18, "total": 73},
+  "build_inventory": {"done": 13, "total": 66},
+  "next_research_tasks": ["R019", "R020"],
+  "limitations": [
+    "Other paper families retain their existing starter, proxy and protocol classifications.",
+    "Runtime API and fixed component artifact schemas retain their R0 kernel or historical evidence labels.",
+    "No calibrated real-race simulator, validated world model or production adaptive policy follows from this review."
+  ]
+}

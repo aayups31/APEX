@@ -16,6 +16,7 @@ This directory tracks the published research used to guide APEX.
 - [R017 SAC verification](../verification/sac-strategy-report.md)
 - [R018 disturbance protocol](../../research/protocols/STRATEGY_SCENARIOS.md)
 - [R018 scenario verification](../verification/strategy-scenarios-report.md)
+- [R1 gate review and decision](../verification/r1-gate-review.md)
 
 ## Purpose
 

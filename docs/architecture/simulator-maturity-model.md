@@ -2,6 +2,10 @@
 
 Progress is measured by evidence, not by feature count. A later level may not be claimed while an earlier gate remains open.
 
+Current reviewed status is recorded in [project maturity status](../project/maturity-status.json).
+Research-foundation evidence and production-kernel promotion are tracked separately;
+passing an equation-level adaptation gate does not enable that component in production.
+
 | Level | Name | Capability | Required evidence | Forbidden claim |
 |---|---|---|---|---|
 | R0 | Deterministic fixture | Reproducible synthetic laps/races | invariant tests, seed stability, artifact lineage | “realistic” |

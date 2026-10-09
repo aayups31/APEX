@@ -1,0 +1,631 @@
+{
+  "schema_version": "apex-r1-gate-review-v1",
+  "date": "2026-10-09",
+  "reviewed_commit": "a4d93bb092999a3e618320fc8512ab7a2999d40e",
+  "decision": "PASS_SCOPED_R1_EQUATION_FOUNDATION",
+  "research_foundation_maturity": "R1",
+  "production_kernel_maturity": "R0",
+  "production_component_promotion": false,
+  "classification": "ADAPTATION",
+  "published_magnitude_replication": "INCONCLUSIVE",
+  "full_regression": {
+    "passed": 418,
+    "warnings": 2,
+    "duration_s": 149.23
+  },
+  "evidence_files": {
+    "fieni-foundation-evidence.json": "b478ee4e7ea1b7dde2b4667f28b3b25136f08d6412ea0cdbc45b0122c9d07c7e",
+    "smooth-lap-map-evidence.json": "94cf64e0b0cc9c42507c4ade13c01e3e9bb5e3c3581792ddab23ca3379de888e",
+    "strategy-solver-evidence.json": "c1945ec45814be2ec3cd0cd63c7cca8342d6730a71ccb24d8c901ccb37c75650",
+    "sac-strategy-evidence.json": "a2b228dff043161024830122a6bcb17f80f416b7bd422a9410ebdda75e849fe9",
+    "strategy-scenarios-evidence.json": "170d83c7fee1a55c6d438f9ec155a54b6ffa3f670ef4bfafcb4f645c0b69c2b9"
+  },
+  "embedded_digest_checks": [
+    {
+      "location": "fieni-foundation-evidence.json/summary",
+      "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812"
+    },
+    {
+      "location": "smooth-lap-map-evidence.json/acceptance_manifest",
+      "content_sha256": "c96fca413270704caadda670afc5e4f039401dc6e28cfd444ccac2be91ecceba"
+    },
+    {
+      "location": "smooth-lap-map-evidence.json/acceptance_summary",
+      "content_sha256": "42c9cd1f5db1e44b768fab38184780d281cacb007b26a962c7fcac45c3555e24"
+    },
+    {
+      "location": "smooth-lap-map-evidence.json/baseline_foundation",
+      "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812"
+    },
+    {
+      "location": "strategy-solver-evidence.json/acceptance_manifest",
+      "content_sha256": "29f3c448e4e37b8a1222d142e9799d31869e4dce59f118dac8b7a6b4b5df2a62"
+    },
+    {
+      "location": "strategy-solver-evidence.json/acceptance_summary",
+      "content_sha256": "9dc0d6eb7bacc2086ebe2629f8f99d09a51197b47407ad28784d7a0e1db3986c"
+    },
+    {
+      "location": "sac-strategy-evidence.json",
+      "content_sha256": "c99669f9ef63cb9d27d360c5920eafb5875c5d6c438c5bf64975f203151d8540"
+    },
+    {
+      "location": "sac-strategy-evidence.json/acceptance_manifest",
+      "content_sha256": "7197368783a3b0dfb8e3c6967ee9d2da8692a66f221e4a5ca764683551550042"
+    },
+    {
+      "location": "sac-strategy-evidence.json/acceptance_summary",
+      "content_sha256": "6077dac5a027c88985ec3961ae44539937ae3442141f08fede12ff32e8fc5414"
+    },
+    {
+      "location": "strategy-scenarios-evidence.json",
+      "content_sha256": "987752e197d68d610f77898fd182ed066404001a05f0a3d965677577055fa560"
+    },
+    {
+      "location": "strategy-scenarios-evidence.json/policy_training_reference/summary",
+      "content_sha256": "6077dac5a027c88985ec3961ae44539937ae3442141f08fede12ff32e8fc5414"
+    },
+    {
+      "location": "strategy-scenarios-evidence.json/policy_training_reference/manifest",
+      "content_sha256": "7197368783a3b0dfb8e3c6967ee9d2da8692a66f221e4a5ca764683551550042"
+    },
+    {
+      "location": "strategy-scenarios-evidence.json/frozen_research_run/summary",
+      "content_sha256": "55ba3ab9e123cf5696ca153fa8ca905cb519e20cf78dc0dc1140a458a9e684eb"
+    },
+    {
+      "location": "strategy-scenarios-evidence.json/frozen_research_run/manifest",
+      "content_sha256": "c5ea738f28a85bc961df9676ba9075dc79885a868943e911745dfcc5782a947a"
+    },
+    {
+      "location": "r1-review-foundation-20261009/manifest",
+      "content_sha256": "4d73e857742430b9efb466c6884638733f579481b2e1903fc9dddc9f44f9bf4f"
+    },
+    {
+      "location": "r1-review-foundation-20261009/summary",
+      "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812"
+    },
+    {
+      "location": "r1-review-scenarios-20261009/manifest",
+      "content_sha256": "7167774a70ca8075c4d4765387288c8ee846e0023c78ce2b571c1b26263e1a79"
+    },
+    {
+      "location": "r1-review-scenarios-20261009/summary",
+      "content_sha256": "d20422a24a56404bb90aaf3f94be25c46806087125ae440f262b85e7ec2c4a29"
+    }
+  ],
+  "source_checks": [
+    {
+      "path": "apex_engine/src/apexsim/research/exact_strategy.py",
+      "sha256": "c76e611ba61d79418a96ea95d6510a5f314b0e57b4cc3f02681a73fbad04196e"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/fienia_strategy.py",
+      "sha256": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_env.py",
+      "sha256": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/smooth_lap.py",
+      "sha256": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/smooth_lap_demo.py",
+      "sha256": "cc91692a2b64a90e5fdc98e3583200d6856c447e3c3b2cb504f08334412d7d51"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/continuous_reference.py",
+      "sha256": "6968d26e7e2a6c13c7e9fcf9d84c20b3c2db2e83afd84b9a537e6394cf7eca80"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/fienia_strategy.py",
+      "sha256": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/smooth_lap.py",
+      "sha256": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_solver.py",
+      "sha256": "3087c4355972ba0ba967c823716a08084a5d82999a5d50f6675df2c2ad8ee7d1"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/strategy_solver_demo.py",
+      "sha256": "1babd51ac4204365f443d27aa588bc8c239e3620e7e3166f9151a194c2daff98"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/continuous_reference.py",
+      "sha256": "6968d26e7e2a6c13c7e9fcf9d84c20b3c2db2e83afd84b9a537e6394cf7eca80"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/fienia_strategy.py",
+      "sha256": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/hybrid_sac.py",
+      "sha256": "b054cbeae987abd8842427a6a53c142f2a984eed7ecaac1afa115578d0dbd405"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/sac_env.py",
+      "sha256": "3a0ca77c96f8e339c2fa47f9033d7052e64419057dc6134ddcfb34de6dbd8c7b"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/sac_strategy_demo.py",
+      "sha256": "da3bb0d0e2d7ffe08fdbfe98d0746d64ca8c356f86c022fe7559da9ffd847ed1"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/sac_training.py",
+      "sha256": "b40ff1c53ca4b4a98a3d9e37b816b3fdbb464935252660e545ebe621f69f6734"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/smooth_lap.py",
+      "sha256": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_env.py",
+      "sha256": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_solver.py",
+      "sha256": "3087c4355972ba0ba967c823716a08084a5d82999a5d50f6675df2c2ad8ee7d1"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/continuation_reference.py",
+      "sha256": "6882ec2d858cad36b5bbf6941ecd4baf72888486f2b571b41e40b750ec7cb261"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_disturbances.py",
+      "sha256": "b29e5582ec4fa613ab48021e6a86be41fec8fcfc948a99c66aab38280cd3a76c"
+    },
+    {
+      "path": "apex_engine/src/apexsim/research/strategy_scenarios.py",
+      "sha256": "9697814d6eb41cc3a7ede6ba3c573c6e017c602c18dba21983ef37b94df5e180"
+    },
+    {
+      "path": "apex_engine/src/apexsim/examples/strategy_scenarios_demo.py",
+      "sha256": "eeebe08216987720320424e1082f16b5f50f197149e3d9630496d2b931e794e1"
+    }
+  ],
+  "fresh_acceptance": {
+    "r1-review-foundation-20261009": {
+      "summary": {
+        "classification": "ADAPTATION",
+        "content_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812",
+        "exact_comparisons": 2,
+        "hand_fixtures": 5,
+        "implementation_sha256": {
+          "apexsim.research.exact_strategy": "c76e611ba61d79418a96ea95d6510a5f314b0e57b4cc3f02681a73fbad04196e",
+          "apexsim.research.fienia_strategy": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532",
+          "apexsim.research.strategy_env": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476"
+        },
+        "input_sha256": {
+          "research/equations/fieni-2025-v1.json": "dcd2fd813da529a584cc55d97ad5453c51237eb06e240ea66b203b3286b680a5",
+          "research/fixtures/fieni-hand-transition-v1.json": "32c516345f5bb3d6f5e674e8aeff1e4ea1ca4c133a9055e1b900b4f3fadab36c",
+          "research/user_provided_papers/learning-based-f1-strategies.pdf": "fc609aa9dcff9179d5e6cba8ce96eb7785f8db45daeef2fc6c4aad32ad133270"
+        },
+        "limitations": [
+          "Synthetic coefficients and projected finite action grids only.",
+          "No continuous optimum, paper MINLP/SAC result or production maturity promotion.",
+          "Finite-width/coarse beam may lose optimum or all legal candidates."
+        ],
+        "maturity": "R0",
+        "max_beam_regret_s": 0.0,
+        "max_fixture_error": 1.4210854715202004e-14,
+        "passed": true,
+        "reviewed_equation_numbers": 70,
+        "schema_version": "apex-fieni-foundation-run-v1",
+        "training_ready": false
+      },
+      "manifest": {
+        "content_sha256": "4d73e857742430b9efb466c6884638733f579481b2e1903fc9dddc9f44f9bf4f",
+        "files": {
+          "comparisons.json": {
+            "bytes": 8031,
+            "sha256": "2cad0ec733773b7a4427d3d8d222f756c9edc1fd279857918293ac331dc2565b"
+          },
+          "fixtures.json": {
+            "bytes": 4531,
+            "sha256": "8be001cd968ba54d2a60bb86d3062f68f822fecf67a6ede4f0dca56c9e739489"
+          },
+          "summary.json": {
+            "bytes": 1433,
+            "sha256": "0eb2023d018a5f2bfb617b4d15f868557a046a71f106aa27e0cc6aeb322f2a33"
+          }
+        },
+        "schema_version": "apex-fieni-foundation-manifest-v1",
+        "summary_sha256": "f10cc276b1b2b0ed88172c7a44ba624d0002eb6302c40501a6fcbde0d233e812"
+      }
+    },
+    "r1-review-scenarios-20261009": {
+      "summary": {
+        "case_rankings": [
+          {
+            "initial_compound": "SOFT",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "conservative_hard",
+              "frozen_SAC_23",
+              "frozen_SAC_37",
+              "frozen_SAC_11",
+              "greedy_energy_early_pit"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "nominal"
+          },
+          {
+            "initial_compound": "SOFT",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "conservative_hard",
+              "frozen_SAC_23",
+              "frozen_SAC_37",
+              "frozen_SAC_11",
+              "greedy_energy_early_pit"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "zero_at_1"
+          },
+          {
+            "initial_compound": "SOFT",
+            "methods_in_cost_order": [
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "committed_nominal",
+              "frozen_SAC_23",
+              "frozen_SAC_37",
+              "frozen_SAC_11"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_0"
+          },
+          {
+            "initial_compound": "SOFT",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11",
+              "conservative_hard",
+              "greedy_energy_early_pit"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_1"
+          },
+          {
+            "initial_compound": "SOFT",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11",
+              "conservative_hard",
+              "greedy_energy_early_pit"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_10_at_1"
+          },
+          {
+            "initial_compound": "MEDIUM",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "nominal"
+          },
+          {
+            "initial_compound": "MEDIUM",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "zero_at_1"
+          },
+          {
+            "initial_compound": "MEDIUM",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "frozen_SAC_23",
+              "frozen_SAC_37",
+              "frozen_SAC_11",
+              "conservative_hard"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_0"
+          },
+          {
+            "initial_compound": "MEDIUM",
+            "methods_in_cost_order": [
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11",
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_1"
+          },
+          {
+            "initial_compound": "MEDIUM",
+            "methods_in_cost_order": [
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "frozen_SAC_11",
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_10_at_1"
+          },
+          {
+            "initial_compound": "HARD",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "frozen_SAC_11",
+              "frozen_SAC_37",
+              "frozen_SAC_23"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "nominal"
+          },
+          {
+            "initial_compound": "HARD",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "frozen_SAC_11",
+              "frozen_SAC_37",
+              "frozen_SAC_23"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "zero_at_1"
+          },
+          {
+            "initial_compound": "HARD",
+            "methods_in_cost_order": [
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "conservative_hard",
+              "frozen_SAC_11",
+              "frozen_SAC_37",
+              "frozen_SAC_23"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_0"
+          },
+          {
+            "initial_compound": "HARD",
+            "methods_in_cost_order": [
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "frozen_SAC_11",
+              "conservative_hard"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_06_at_1"
+          },
+          {
+            "initial_compound": "HARD",
+            "methods_in_cost_order": [
+              "frozen_SAC_37",
+              "frozen_SAC_23",
+              "committed_nominal",
+              "causal_replan",
+              "greedy_energy_early_pit",
+              "frozen_SAC_11",
+              "conservative_hard"
+            ],
+            "ranking_scope": "descriptive legal full-race costs; different prefix states",
+            "scenario": "wear_10_at_1"
+          }
+        ],
+        "catalog_sha256": "a3bed31ec8997437f8d74dde79093e3993bb1761220a7045a34b780f7bd3ae52",
+        "classification": "ADAPTATION",
+        "content_sha256": "d20422a24a56404bb90aaf3f94be25c46806087125ae440f262b85e7ec2c4a29",
+        "directional_status": "DIRECTIONAL_MATCH",
+        "evaluation_attempts": 105,
+        "failed_episodes": 0,
+        "frozen_policy_state_unchanged": true,
+        "gates": {
+          "all_episodes_legal": true,
+          "causal_no_worse": true,
+          "committed_cost_monotonic": true,
+          "independent_replay": true,
+          "initial_soft_stop_advanced": true,
+          "nominal_R017_action_parity": true,
+          "nonanticipation": true,
+          "zero_dose_equivalence": true
+        },
+        "implementation_sha256": {
+          "continuation_reference.py": "6882ec2d858cad36b5bbf6941ecd4baf72888486f2b571b41e40b750ec7cb261",
+          "strategy_disturbances.py": "b29e5582ec4fa613ab48021e6a86be41fec8fcfc948a99c66aab38280cd3a76c",
+          "strategy_scenarios.py": "9697814d6eb41cc3a7ede6ba3c573c6e017c602c18dba21983ef37b94df5e180",
+          "strategy_scenarios_demo.py": "eeebe08216987720320424e1082f16b5f50f197149e3d9630496d2b931e794e1"
+        },
+        "input_hashes": {
+          "baselines.json": "32135f15a408db43bceaa348a2a4831f622c0ac9cd20a0c6092930ed3eb82288",
+          "config.json": "ed5e6dda188520927c7f8bfb6026d9a181c66f2f1d5e2ee65d20066bea3d1903",
+          "evaluations.json": "2b826e67ee103d2a7ea800eb4d882d29166b925131e5e116937dfa10d4b22d99",
+          "manifest.json": "afb83d8824c1693f42ce5b9170717ff4c51d36180df7ef1bffde895989981be4",
+          "seed-11.pt": "af423e10d6d6c36fdbcdb1e7ed3470346a9c7f9145c708815ce4bd4dd7e7c89e",
+          "seed-23.pt": "4eb046bca3a578ffaa4079587d49790c06e5ef61a0dd79e14b7e80981e7d64bf",
+          "seed-37.pt": "5176dd185317667726678d943f858ad29288e78d9a64719e4d5cbb20028e5667",
+          "summary.json": "66298046dc60725b85687a88686bb0048c30d6f2cea5150d5133d3a962bea800",
+          "traces.json": "16d40d946769342c493d48ba5faa38ad756283887f478898f1fa689c1c038add",
+          "training.json": "16c4b86856e0f0216572f3b23e5995eb7818d572f3dce2078493e7c68a4f17dd"
+        },
+        "limitations": [
+          "Three-lap synthetic priors; no published magnitude replication or real-race claim.",
+          "Higher-wear states were not part of R017 training; no retraining or winner selection.",
+          "Masks and energy projection enforce legality; policy does not learn those guarantees.",
+          "Matched-state regret and signed full-race gaps have different reference states.",
+          "Small fixed case set; seed differences are descriptive, not calibrated uncertainty.",
+          "Smoke verifies execution only. No maturity promotion follows."
+        ],
+        "maturity": "R0",
+        "max_objective_replay_error_s": 2.842170943040401e-14,
+        "method_metrics": [
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 0.0011962777779748043,
+            "mean_matched_state_regret_s": -1.3263464400855204e-14,
+            "mean_signed_full_race_gap_to_causal_s": 0.0,
+            "method": "causal_replan"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 6.903111045378156e-05,
+            "mean_matched_state_regret_s": 0.13370946666665115,
+            "mean_signed_full_race_gap_to_causal_s": 0.13370946666666442,
+            "method": "committed_nominal"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 9.7506666659481e-05,
+            "mean_matched_state_regret_s": 6.22218175999998,
+            "mean_signed_full_race_gap_to_causal_s": 6.222181759999994,
+            "method": "conservative_hard"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 0.0012998600000476775,
+            "mean_matched_state_regret_s": 0.4280957538868923,
+            "mean_signed_full_race_gap_to_causal_s": -0.5089621472738864,
+            "method": "frozen_SAC_11"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 0.0010525444443272945,
+            "mean_matched_state_regret_s": 0.7372067693494747,
+            "mean_signed_full_race_gap_to_causal_s": -1.1962470686143396,
+            "method": "frozen_SAC_23"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 0.0010708644452582423,
+            "mean_matched_state_regret_s": 0.7191772702942084,
+            "mean_signed_full_race_gap_to_causal_s": -1.2143756144457862,
+            "method": "frozen_SAC_37"
+          },
+          {
+            "aggregate_scope": "legal episodes only; failures counted separately",
+            "attempts": 15,
+            "failed_episodes": 0,
+            "mean_decision_runtime_s_per_lap": 0.00014946666633477434,
+            "mean_matched_state_regret_s": 0.05661453333331489,
+            "mean_signed_full_race_gap_to_causal_s": 0.6011141333333285,
+            "method": "greedy_energy_early_pit"
+          }
+        ],
+        "passed": true,
+        "profile": "research",
+        "promotion_recommended": false,
+        "published_magnitude_comparison": "INCONCLUSIVE",
+        "runtime": {
+          "casadi": "3.7.2",
+          "numpy": "2.5.3",
+          "platform": "Windows-11-10.0.26300-SP0",
+          "python": "3.12.12",
+          "thread_limits": {
+            "MKL_NUM_THREADS": "1",
+            "OMP_NUM_THREADS": "1",
+            "OPENBLAS_NUM_THREADS": "1"
+          },
+          "torch": "2.14.0+cpu",
+          "torch_threads": 1
+        },
+        "schema_version": "apex-strategy-scenarios-run-v1",
+        "seeds": [
+          11,
+          23,
+          37
+        ],
+        "training_steps": 0
+      },
+      "manifest": {
+        "content_sha256": "7167774a70ca8075c4d4765387288c8ee846e0023c78ce2b571c1b26263e1a79",
+        "files": {
+          "catalog.json": {
+            "bytes": 3130,
+            "sha256": "22656c0b152b138c7013c85c24d6df03b92167079199fd5f013464a086b6f4b5"
+          },
+          "config.json": {
+            "bytes": 3294,
+            "sha256": "572ea171174de7fd6fcd1c3db2cc6f0e5ae689a9e9d88455bba6dbb7cda07c56"
+          },
+          "nominal_plans.json": {
+            "bytes": 88171,
+            "sha256": "cadcb6d9df53503629f9429a4ff0b235c3a58efc14a27cfa91754c40939fafdb"
+          },
+          "rollouts.json": {
+            "bytes": 1005172,
+            "sha256": "96d98b86f6ff86adf2b29a60a7da709776a5bf486a42befcd6db3f9b67c17533"
+          },
+          "summary.json": {
+            "bytes": 12061,
+            "sha256": "320786f922c9d77fa69aae03cac92fa83e26b5345c6d5d14ad95a19b977965c9"
+          }
+        },
+        "schema_version": "apex-strategy-scenarios-manifest-v1",
+        "summary_sha256": "d20422a24a56404bb90aaf3f94be25c46806087125ae440f262b85e7ec2c4a29"
+      }
+    }
+  },
+  "deterministic_trajectory_parity": {
+    "episodes": 105,
+    "all_equal": true
+  },
+  "research_R1_rows_done": 18,
+  "limitations": [
+    "Reviewed FIENI equation adaptation scope only; omissions and priors remain explicit.",
+    "Other paper families do not inherit the reviewed equation fidelity.",
+    "No historical predictive accuracy, production policy promotion or world-model validation.",
+    "Legacy component artifact maturity labels and runtime API kernel status remain unchanged."
+  ],
+  "content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6"
+}
