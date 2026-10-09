@@ -22,10 +22,17 @@ and previous pit. No pit occupancy is inferred from these research controls.
 
 The paper uses an integer compound-change count. APEX retains a boolean: it has the
 same at-least-one-change feasibility predicate, but different numerical state.
-Tyre age equations 23/24, polynomial MINLP auxiliaries, fitted nonlinear lap maps,
-SAC training, forced final-20-lap compound changes and published benchmarks are
-not implemented. Current battery energy affects feasible controls but does not
+At the R012-R014 review, tyre age equations 23/24, polynomial MINLP auxiliaries,
+fitted nonlinear lap maps, SAC training, forced final-20-lap compound changes and
+published benchmarks were not implemented. Current battery energy affects feasible controls but does not
 independently affect the synthetic nominal lap-time map, unlike the paper's maps.
+
+Later R015-R017 additions have separate protocols: smooth synthetic maps,
+bounded local IPOPT and [hybrid SAC training](../protocols/SAC_STRATEGY.md).
+The frozen v1 machine-readable map remains the original core/environment review.
+R017 uses a separate normalized wrapper, smooth objective and explicit pit masks;
+its factorized policy and reward are declared adaptations. It does not reproduce
+the paper's confidential maps, long-horizon benchmarks or published policy.
 
 ## Corrected mappings and feasibility
 

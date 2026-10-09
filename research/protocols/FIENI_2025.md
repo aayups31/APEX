@@ -21,9 +21,15 @@ The [R016 documented solver adapter](STRATEGY_SOLVER.md) enumerates bounded pit
 plans and runs local IPOPT allocation with independent replay and candidate
 provenance. Its tiny global reference applies only to an explicit concave family.
 
+The [R017 hybrid SAC protocol](SAC_STRATEGY.md) adds a separately normalized
+learning wrapper, seeded training and inference checkpoints. Its matched study
+reports in-task regret and resource projections on a fixed synthetic three-lap
+task. Masks enforce pit legality; this is not evidence of learned race rules or
+held-out real-race strategy skill.
+
 ## Next experiments
-Next: train a policy against the same validated dynamics (R017) and reconstruct nominal/disturbed scenarios
-(R018). R016 must distinguish locally solved continuous NLPs from a certified
+R017 training and in-task comparison are recorded in the [SAC verification report](../../docs/verification/sac-strategy-report.md).
+Next: reconstruct nominal/disturbed scenarios (R018). R016 must distinguish locally solved continuous NLPs from a certified
 global mixed-integer optimum; solver success alone does not certify either
 terminal legality or optimality. Recover independently known small-case optima,
 replay saved actions and report primal/resource residuals, solver status,

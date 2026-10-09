@@ -1,7 +1,7 @@
 # R017 SAC strategy training and evaluation
 
 - Date: 2026-10-08; branch main; baseline 87c9876
-- Scope: R017; status IN_PROGRESS; global maturity before/after R0
+- Scope: R017; status DONE; global maturity before/after R0
 
 ## A. Current state at session start
 
@@ -26,6 +26,10 @@ R015 objective and R016 domain/protocol. SAC papers 1801.01290/1812.05905 and th
 authors' OpenAI Spinning Up PyTorch SAC source were inspected. The exact categorical
 expectation and action masks are declared adaptations, not copied paper results.
 Training data are generated synthetic episodes; no public benchmark session is used.
+
+Primary algorithm sources: [original SAC](https://arxiv.org/abs/1801.01290),
+[SAC algorithms/applications](https://arxiv.org/abs/1812.05905) and the authors'
+[Spinning Up implementation](https://github.com/openai/spinningup/blob/master/spinup/algos/pytorch/sac/sac.py).
 
 ## D. Implementation
 
@@ -89,7 +93,7 @@ Baseline; learning wrapper and equation/invariant tests; SAC and checkpoint test
 immutable smoke artifact run; tested direct-main checkpoint; frozen three-seed
 research run; full regression/CI; evidence and backlog closure; final main push.
 
-Implementation checkpoint evidence:
+Evidence at the implementation checkpoint, before full training/CI:
 
 - Targeted SAC equation/environment/training/artifact tests: 31 passed in 37.75 s.
 - Repository lint, Airflow wrapper compilation and diff whitespace checks passed.
@@ -102,5 +106,81 @@ Implementation checkpoint evidence:
 - A full suite was initially invoked from the repository root; existing tests
   referencing configs/fast.yaml require apex_engine as the working directory.
   The final regression will use the documented engine working directory.
-- Full three-seed research training and Python 3.11/3.12 CI remain pending.
-  R017 stays IN_PROGRESS until the predeclared completion gate passes.
+- Full three-seed research training and Python 3.11/3.12 CI were pending.
+  R017 remained IN_PROGRESS at that checkpoint.
+
+Closure evidence:
+
+- Implementation checkpoint f9fa9d4346ea080b404a1441b1bce66581040725 is pushed
+  directly to main. Full local regression: **379 passed**, two existing dependency
+  deprecation warnings, 229.89 seconds, from apex_engine with native DLL/loopback
+  access and OMP/MKL/OpenBLAS limits of one. The initial root invocation had
+  366 passing tests and 13 missing-config failures; no source fix or test skip
+  was used to obtain the final passing run.
+- [GitHub Actions 37877082528](https://github.com/aayups31/APEX/actions/runs/37877082528)
+  passed both Python 3.11/3.12 jobs, including lint, full tests, Airflow compilation,
+  public-data, smooth-map, solver and SAC smoke artifact gates.
+- Full fixed research study: **36,000 transitions**, **12,000 completed synthetic
+  episodes**, **34,464 gradient updates**, seeds 11/23/37. Each seed used 12000
+  steps and 4000 episodes. All nine deterministic evaluation attempts were legal;
+  zero evaluation transitions entered replay. All saved/reloaded policy actions
+  matched, including later-lap states and masks. Final weights were used for every
+  seed, without evaluation selection or subsequent tuning.
+- Actor/online-critic trainable count: 16,010 per seed; 10,626 additional target
+  parameters. CPU training took 291.14/240.08/231.64 seconds, totaling 762.87 s.
+  The first seed overlapped regression work; runtimes are observations on this
+  machine/load. Neural calls averaged 0.534 ms per lap across 27 calls. The full
+  adapter plans took 1.18-2.01 s; these time different operations and establish
+  no deployment-speed claim.
+
+Matched mean race-time regret in seconds (three fixed initial compounds):
+
+| Strategy | Mean regret | Maximum regret |
+|---|---:|---:|
+| Uniform-energy early-pit rule | 0.344263 | 0.910408 |
+| Greedy feasible-energy early-pit rule | 0.283073 | 0.849218 |
+| R016 local adapter | approximately 0 | approximately 0 |
+| SAC seed 11 | 0.335726 | 0.899468 |
+| SAC seed 23 | 0.893098 | 1.799218 |
+| SAC seed 37 | 0.872422 | 1.753235 |
+| All SAC seeds/cases | 0.700415 | 1.799218 |
+
+The policy improved substantially over the short smoke run, but every seed's
+mean regret exceeded the greedy rule. Across the nine fixed cases, descriptive
+regret standard deviation was 0.683125 s; this is not a confidence interval or
+held-out estimate. Compound breakdowns and all rollouts are retained in
+[machine-readable evidence](sac-strategy-evidence.json).
+
+Observed failure pattern: every MEDIUM-start policy delayed the pit to index 1;
+seeds 23/37 also delayed HARD-start stops. Those extra laps on slower compounds
+account for most regret against the matched reference. SOFT starts instead benefit
+from delaying the required switch: their regrets were 0.05005/0.00891/0.00953 s.
+The legality mask forces a change at the last opportunity, so legal completion
+does not demonstrate that the policy learned that rule or selected a good stop.
+Training projections affected 67.13/70.71/70.51% of transitions; requested/applied
+actions and magnitudes remain visible. These observations justify retaining the
+policies in research, not changing the frozen task to make them look better.
+
+- Maximum scalar/symbolic objective discrepancy: 5.684341886080802e-14 s;
+  maximum primal residual: 1.652424966883954e-16. Maximum original-versus-smooth
+  discrepancy: 0.0014875209552656088 s, below the declared 0.0015 s allowance.
+- Immutable research output: .cache/sac-research-20261008; three inference `.pt`
+  files plus configuration, reports, traces, comparisons and final manifest.
+  Summary content hash: 6077dac5a027c88985ec3961ae44539937ae3442141f08fede12ff32e8fc5414.
+  Manifest content hash: 7197368783a3b0dfb8e3c6967ee9d2da8692a66f221e4a5ca764683551550042.
+  Every file's byte count/hash and summary/manifest payload hashes were verified;
+  source hashes match the tested checkpoint. Weights stay in the local ignored
+  output; their hashes, metrics and full evaluation rollouts are versioned here.
+- R017 is DONE because the predeclared training/regret/runtime gate passed.
+  Added policy value on held-out tasks remains INCONCLUSIVE; promotion is false.
+  No confidential-paper replication, held-out event result, calibrated world model
+  or production strategy capability is claimed. The original strategy core,
+  starter environment and R015 maps remain unchanged. Reverting the implementation
+  checkpoint rolls back this isolated extension without changing those modules.
+- Research inventory: **17/73 done**, 56 remaining. Build inventory: **13/66 done**,
+  53 remaining. Global maturity remains **R0**.
+
+Next: R018 nominal/disturbed scenario reconstruction and directional comparisons,
+using frozen policies plus matched rules/optimizer. Preserve the distinction
+between synthetic directional evidence and published magnitude replication.
+Then perform the planned R1 review; promotion requires its own evidence.

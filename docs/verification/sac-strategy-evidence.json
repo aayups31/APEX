@@ -1,0 +1,3186 @@
+{
+  "acceptance_artifact_path": ".cache/sac-research-20261008",
+  "acceptance_errors": {
+    "max_objective_replay_error_s": 5.684341886080802e-14,
+    "max_original_smooth_discrepancy_s": 0.0014875209552656088,
+    "max_primal_violation": 1.652424966883954e-16,
+    "smoothing_allowance_s": 0.0014999999999999996
+  },
+  "acceptance_manifest": {
+    "content_sha256": "7197368783a3b0dfb8e3c6967ee9d2da8692a66f221e4a5ca764683551550042",
+    "files": {
+      "baselines.json": {
+        "bytes": 156382,
+        "sha256": "32135f15a408db43bceaa348a2a4831f622c0ac9cd20a0c6092930ed3eb82288"
+      },
+      "config.json": {
+        "bytes": 2763,
+        "sha256": "ed5e6dda188520927c7f8bfb6026d9a181c66f2f1d5e2ee65d20066bea3d1903"
+      },
+      "evaluations.json": {
+        "bytes": 71908,
+        "sha256": "2b826e67ee103d2a7ea800eb4d882d29166b925131e5e116937dfa10d4b22d99"
+      },
+      "seed-11.pt": {
+        "bytes": 118089,
+        "sha256": "af423e10d6d6c36fdbcdb1e7ed3470346a9c7f9145c708815ce4bd4dd7e7c89e"
+      },
+      "seed-23.pt": {
+        "bytes": 118089,
+        "sha256": "4eb046bca3a578ffaa4079587d49790c06e5ef61a0dd79e14b7e80981e7d64bf"
+      },
+      "seed-37.pt": {
+        "bytes": 118089,
+        "sha256": "5176dd185317667726678d943f858ad29288e78d9a64719e4d5cbb20028e5667"
+      },
+      "summary.json": {
+        "bytes": 7622,
+        "sha256": "66298046dc60725b85687a88686bb0048c30d6f2cea5150d5133d3a962bea800"
+      },
+      "traces.json": {
+        "bytes": 16948,
+        "sha256": "16d40d946769342c493d48ba5faa38ad756283887f478898f1fa689c1c038add"
+      },
+      "training.json": {
+        "bytes": 9557,
+        "sha256": "16c4b86856e0f0216572f3b23e5995eb7818d572f3dce2078493e7c68a4f17dd"
+      }
+    },
+    "schema_version": "apex-sac-strategy-manifest-v1",
+    "summary_sha256": "6077dac5a027c88985ec3961ae44539937ae3442141f08fede12ff32e8fc5414"
+  },
+  "acceptance_summary": {
+    "baseline_metrics": [
+      {
+        "decision_runtime_s": 0.0007460999913746491,
+        "initial_compound": "SOFT",
+        "planning_runtime_s": null,
+        "regret_s": 0.9104080039979294,
+        "smooth_race_time_s": 305.6195025050602,
+        "strategy": "uniform_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.00034159999631810933,
+        "initial_compound": "SOFT",
+        "planning_runtime_s": null,
+        "regret_s": 0.8492180000000076,
+        "smooth_race_time_s": 305.5583125010623,
+        "strategy": "greedy_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.00022429999080486596,
+        "initial_compound": "SOFT",
+        "planning_runtime_s": 1.54928170000494,
+        "regret_s": 0.0,
+        "smooth_race_time_s": 304.7090945010623,
+        "strategy": "local_adapter"
+      },
+      {
+        "decision_runtime_s": 0.0003516999931889586,
+        "initial_compound": "MEDIUM",
+        "planning_runtime_s": null,
+        "regret_s": 0.06119000399792185,
+        "smooth_race_time_s": 304.7702845050602,
+        "strategy": "uniform_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.0003192000003764406,
+        "initial_compound": "MEDIUM",
+        "planning_runtime_s": null,
+        "regret_s": 0.0,
+        "smooth_race_time_s": 304.7090945010623,
+        "strategy": "greedy_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.00016599999798927456,
+        "initial_compound": "MEDIUM",
+        "planning_runtime_s": 2.009158299995761,
+        "regret_s": 0.0,
+        "smooth_race_time_s": 304.7090945010623,
+        "strategy": "local_adapter"
+      },
+      {
+        "decision_runtime_s": 0.0002534000013838522,
+        "initial_compound": "HARD",
+        "planning_runtime_s": null,
+        "regret_s": 0.061190003997865006,
+        "smooth_race_time_s": 305.6702845050602,
+        "strategy": "uniform_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.0002668999950401485,
+        "initial_compound": "HARD",
+        "planning_runtime_s": null,
+        "regret_s": -5.684341886080802e-14,
+        "smooth_race_time_s": 305.60909450106226,
+        "strategy": "greedy_energy_early_pit"
+      },
+      {
+        "decision_runtime_s": 0.00010009999823523685,
+        "initial_compound": "HARD",
+        "planning_runtime_s": 1.1800307000012253,
+        "regret_s": -5.684341886080802e-14,
+        "smooth_race_time_s": 305.60909450106226,
+        "strategy": "local_adapter"
+      }
+    ],
+    "checkpoint_reload_action_parity": true,
+    "classification": "ADAPTATION",
+    "content_sha256": "6077dac5a027c88985ec3961ae44539937ae3442141f08fede12ff32e8fc5414",
+    "evaluation_attempts": 9,
+    "evaluation_legality_fraction": 1.0,
+    "evaluation_scope": "in-task deterministic evaluation; no held-out event generalization",
+    "failed_evaluation_episodes": 0,
+    "implementation_sha256": {
+      "continuous_reference.py": "6968d26e7e2a6c13c7e9fcf9d84c20b3c2db2e83afd84b9a537e6394cf7eca80",
+      "fienia_strategy.py": "ec3036d2df528dd616349e132b76680bcc4c3bff108d59daffc03efb6a208532",
+      "hybrid_sac.py": "b054cbeae987abd8842427a6a53c142f2a984eed7ecaac1afa115578d0dbd405",
+      "sac_env.py": "3a0ca77c96f8e339c2fa47f9033d7052e64419057dc6134ddcfb34de6dbd8c7b",
+      "sac_strategy_demo.py": "da3bb0d0e2d7ffe08fdbfe98d0746d64ca8c356f86c022fe7559da9ffd847ed1",
+      "sac_training.py": "b40ff1c53ca4b4a98a3d9e37b816b3fdbb464935252660e545ebe621f69f6734",
+      "smooth_lap.py": "9fab9b68c2e504c00fd91629ff49a26f4ad5c5b9e1d2a1e5ad169504d0e52fb6",
+      "strategy_env.py": "2bd9b8b82a96d664efd684d3de59777e1340ae40e711cb6dd2c352f436ee0476",
+      "strategy_solver.py": "3087c4355972ba0ba967c823716a08084a5d82999a5d50f6675df2c2ad8ee7d1"
+    },
+    "legal_evaluation_episodes": 9,
+    "limitations": [
+      "Synthetic three-lap task only; no calibrated world model or deployed agent.",
+      "Legality is imposed by masks and reachability projection, not learned.",
+      "Factorized hybrid SAC, fixed alpha and gamma=1 are declared adaptations.",
+      "All seeds use final weights; no oracle supervision or evaluation selection.",
+      "Legal-only regret aggregates exclude failures, which are counted separately.",
+      "Smoke validates execution only; research evaluates three predeclared seeds.",
+      "Neural decision times exclude training and environment replay; planner time covers the full plan.",
+      "Checkpoints support inference only, not exact training resumption.",
+      "No promotion follows from in-task scores, even if a rule is outperformed."
+    ],
+    "maturity": "R0",
+    "max_regret_s": 1.799217749845468,
+    "mean_decision_runtime_s_per_lap": 0.0005336999990201244,
+    "mean_regret_s": 0.7004153561001911,
+    "passed": true,
+    "policy_metrics": [
+      {
+        "decision_runtime_s": 0.001483400003053248,
+        "initial_compound": "SOFT",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.050053380062365704,
+        "seed": 11,
+        "smooth_race_time_s": 304.75914788112465
+      },
+      {
+        "decision_runtime_s": 0.001921099996252451,
+        "initial_compound": "MEDIUM",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.8994683539273183,
+        "seed": 11,
+        "smooth_race_time_s": 305.6085628549896
+      },
+      {
+        "decision_runtime_s": 0.001909099992190022,
+        "initial_compound": "HARD",
+        "legal": true,
+        "projection_laps": 1,
+        "regret_s": 0.0576551421264071,
+        "seed": 11,
+        "smooth_race_time_s": 305.6667496431887
+      },
+      {
+        "decision_runtime_s": 0.0030655999944428913,
+        "initial_compound": "SOFT",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.008905834133031476,
+        "seed": 23,
+        "smooth_race_time_s": 304.7180003351953
+      },
+      {
+        "decision_runtime_s": 0.0013804999980493449,
+        "initial_compound": "MEDIUM",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.871170323118065,
+        "seed": 23,
+        "smooth_race_time_s": 305.58026482418035
+      },
+      {
+        "decision_runtime_s": 0.0024370999890379608,
+        "initial_compound": "HARD",
+        "legal": true,
+        "projection_laps": 1,
+        "regret_s": 1.799217749845468,
+        "seed": 23,
+        "smooth_race_time_s": 307.4083122509078
+      },
+      {
+        "decision_runtime_s": 0.0007600999961141497,
+        "initial_compound": "SOFT",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.009532986674457788,
+        "seed": 37,
+        "smooth_race_time_s": 304.71862748773674
+      },
+      {
+        "decision_runtime_s": 0.0007524000029661693,
+        "initial_compound": "MEDIUM",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 0.8544992267511589,
+        "seed": 37,
+        "smooth_race_time_s": 305.56359372781344
+      },
+      {
+        "decision_runtime_s": 0.0007006000014371239,
+        "initial_compound": "HARD",
+        "legal": true,
+        "projection_laps": 2,
+        "regret_s": 1.7532352082634475,
+        "seed": 37,
+        "smooth_race_time_s": 307.36232970932576
+      }
+    ],
+    "profile": "research",
+    "promotion_recommended": false,
+    "runtime": {
+      "casadi": "3.7.2",
+      "numpy": "2.5.3",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.12",
+      "thread_limits": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "torch": "2.14.0+cpu",
+      "torch_threads": 1
+    },
+    "schema_version": "apex-sac-strategy-run-v1",
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "std_regret_s": 0.6831245856282124,
+    "training_episodes": 12000,
+    "training_steps": 36000
+  },
+  "backlog_id": "R017",
+  "baseline_mean_regret_s": {
+    "greedy_energy_early_pit": 0.28307266666665026,
+    "local_adapter": -1.8947806286936004e-14,
+    "uniform_energy_early_pit": 0.3442626706645721
+  },
+  "build_inventory": {
+    "done": 13,
+    "remaining": 53,
+    "total": 66
+  },
+  "classification": "ADAPTATION",
+  "compute": {
+    "actor_parameters": 5384,
+    "device": "CPU",
+    "gradient_updates_total": 34464,
+    "learned_parameters_per_seed": 16010,
+    "online_twin_critic_parameters": 10626,
+    "target_twin_critic_parameters": 10626,
+    "training_runtime_s_total": 762.867608499997
+  },
+  "content_sha256": "c99669f9ef63cb9d27d360c5920eafb5875c5d6c438c5bf64975f203151d8540",
+  "date": "2026-10-08",
+  "evaluation_rollouts": [
+    {
+      "episodes": [
+        {
+          "decision_runtime_s": 0.001483400003053248,
+          "episode_runtime_s": 0.013790199998766184,
+          "failure": null,
+          "initial_compound": "SOFT",
+          "legal": true,
+          "max_battery_projection_mj": 0.3273070678114891,
+          "max_fuel_projection_mj": 10.936941611766812,
+          "max_objective_replay_error_s": 5.684341886080802e-14,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 304.75772240584564,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.050053380062365704,
+          "smooth_race_time_s": 304.75914788112465,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_observation": [
+                0.13989561796188354,
+                0.6340202689170837,
+                0.6340202689170837,
+                0.3323917090892792,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.9971750974655151,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.3333333432674408,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.9793918132781982,
+                0.8134725093841553
+              ],
+              "reward": 0.2613041739112134,
+              "smooth_lap_time_s": 92.23869582608879,
+              "state": {
+                "battery_mj": 0.13989561796188354,
+                "car_mass_kg": 803.8041216373443,
+                "compound": "SOFT",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.57723040580748,
+                "lap": 1,
+                "last_lap_time_s": 92.23819873261452,
+                "outlap": false,
+                "race_time_s": 92.23819873261452,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.8601043820381165,
+                  "fuel_energy_mj": 94.4227695941925,
+                  "pit_compound": null
+                },
+                "lap_time_s": 92.23819873261452,
+                "nominal_time_s": 92.23819873261452,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.8601043820381165,
+                  "fuel_energy_mj": 94.4227695941925,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.06404105573892593,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7074421048164368,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.12515127658844,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.13989561796188354,
+                0.6340202689170837,
+                0.6340202689170837,
+                0.3323917090892792,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.9971750974655151,
+                0.6666666865348816
+              ],
+              "pit_code": 2,
+              "requested_energy": [
+                0.5655264854431152,
+                -0.23219391703605652
+              ],
+              "reward": -11.5764881008011,
+              "smooth_lap_time_s": 104.0764881008011,
+              "state": {
+                "battery_mj": 0.06404105573892593,
+                "car_mass_kg": 801.8,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 104.07602091664148,
+                "outlap": true,
+                "race_time_s": 196.31421964925602,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.07585456222295761,
+                  "fuel_energy_mj": 86.17723040580748,
+                  "pit_compound": "MEDIUM"
+                },
+                "lap_time_s": 104.07602091664148,
+                "nominal_time_s": 104.07321391664148,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.07585456222295761,
+                  "fuel_energy_mj": 90.86352777481079,
+                  "pit_compound": "MEDIUM"
+                },
+                "tyre_time_loss_s": 0.002807,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0982311964035034,
+                1.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.1723672151565552,
+                0.0
+              ],
+              "observation": [
+                0.06404105573892593,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7074421048164368,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.12515127658844,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.27173739671707153,
+                0.18846416473388672
+              ],
+              "reward": -15.943963954234746,
+              "smooth_lap_time_s": 108.44396395423475,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 108.44350275658964,
+                "outlap": false,
+                "race_time_s": 304.75772240584564,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.06404105573892593,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 108.44350275658964,
+                "nominal_time_s": 107.59350275658964,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.39134812355041504,
+                  "fuel_energy_mj": 88.33694161176682,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.001921099996252451,
+          "episode_runtime_s": 0.007784099994751159,
+          "failure": null,
+          "initial_compound": "MEDIUM",
+          "legal": true,
+          "max_battery_projection_mj": 0.2534247166477144,
+          "max_fuel_projection_mj": 12.85038263201713,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 305.6072926548958,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.8994683539273183,
+          "smooth_race_time_s": 305.6085628549896,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_observation": [
+                0.3513565957546234,
+                0.6361169815063477,
+                0.6361169815063477,
+                0.3357906639575958,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0073720216751099,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6666666865348816,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.9164901971817017,
+                0.5315245389938354
+              ],
+              "reward": -0.681911602445382,
+              "smooth_lap_time_s": 93.18191160244538,
+              "state": {
+                "battery_mj": 0.3513565957546234,
+                "car_mass_kg": 803.8167019605637,
+                "compound": "MEDIUM",
+                "compound_changed": false,
+                "fuel_energy_mj": 164.1181843042374,
+                "lap": 1,
+                "last_lap_time_s": 93.18141545641423,
+                "outlap": false,
+                "race_time_s": 93.18141545641423,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.6486434042453766,
+                  "fuel_energy_mj": 93.88181569576263,
+                  "pit_compound": null
+                },
+                "lap_time_s": 93.18141545641423,
+                "nominal_time_s": 92.33141545641423,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.6486434042453766,
+                  "fuel_energy_mj": 93.88181569576263,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.009247928857803345,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7134838104248047,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1330795288085938,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.3513565957546234,
+                0.6361169815063477,
+                0.6361169815063477,
+                0.3357906639575958,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0073720216751099,
+                0.6666666865348816
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                0.39913132786750793,
+                0.12281155586242676
+              ],
+              "reward": -12.30985402254251,
+              "smooth_lap_time_s": 104.80985402254251,
+              "state": {
+                "battery_mj": 0.009247928857803345,
+                "car_mass_kg": 801.8000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 104.80936132860184,
+                "outlap": true,
+                "race_time_s": 197.99077678501607,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.34210866689682007,
+                  "fuel_energy_mj": 86.71818430423738,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 104.80936132860184,
+                "nominal_time_s": 103.95733632860184,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.34210866689682007,
+                  "fuel_energy_mj": 89.43252941966057,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 0.852025,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                1.8947806851624636e-14,
+                1.1012921333312988,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1634248495101929,
+                0.0
+              ],
+              "observation": [
+                0.009247928857803345,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7134838104248047,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1330795288085938,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.4942305386066437,
+                0.016896860674023628
+              ],
+              "reward": -15.11679723000168,
+              "smooth_lap_time_s": 107.61679723000168,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 107.6165158698797,
+                "outlap": false,
+                "race_time_s": 305.6072926548958,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.009247928857803345,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.6165158698797,
+                "nominal_time_s": 107.6165158698797,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.2626726455055177,
+                  "fuel_energy_mj": 90.25038263201714,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.001909099992190022,
+          "episode_runtime_s": 0.00822360000165645,
+          "failure": null,
+          "initial_compound": "HARD",
+          "legal": true,
+          "max_battery_projection_mj": 0.05456089973449707,
+          "max_fuel_projection_mj": 0.8711462423205631,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 305.6653304897733,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 1,
+          "reference_time_s": 305.6090945010623,
+          "regret_s": 0.0576551421264071,
+          "smooth_race_time_s": 305.6667496431887,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_observation": [
+                0.8903541564941406,
+                0.6529452204704285,
+                0.6529452204704285,
+                0.3814184069633484,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.14425528049469,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                0.4116431176662445,
+                -0.1871388554573059
+              ],
+              "reward": -13.343610967771085,
+              "smooth_lap_time_s": 105.84361096777108,
+              "state": {
+                "battery_mj": 0.8903541415929794,
+                "car_mass_kg": 803.9176713764667,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 168.4598691880703,
+                "lap": 1,
+                "last_lap_time_s": 105.84313372123242,
+                "outlap": true,
+                "race_time_s": 105.84313372123242,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.10964585840702057,
+                  "fuel_energy_mj": 89.5401308119297,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 105.84313372123242,
+                "nominal_time_s": 104.09313372123242,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.10964585840702057,
+                  "fuel_energy_mj": 89.5401308119297,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 1.75,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.04479055106639862,
+                0.3263612687587738,
+                0.3263612687587738,
+                0.7679741978645325,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1596673727035522,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.8903541564941406,
+                0.6529452204704285,
+                0.6529452204704285,
+                0.3814184069633484,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.14425528049469,
+                0.6666666865348816
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.20248083770275116,
+                0.7940847873687744
+              ],
+              "reward": -14.769228792654559,
+              "smooth_lap_time_s": 107.26922879265456,
+              "state": {
+                "battery_mj": 0.04479055106639862,
+                "car_mass_kg": 801.9581675440073,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 84.20120439231394,
+                "lap": 2,
+                "last_lap_time_s": 107.2687317491591,
+                "outlap": false,
+                "race_time_s": 213.11186547039154,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.8455635905265808,
+                  "fuel_energy_mj": 84.25866479575635,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.2687317491591,
+                "nominal_time_s": 107.2687317491591,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.8455635905265808,
+                  "fuel_energy_mj": 84.25866479575635,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                0.0,
+                1.1015018224716187,
+                1.0,
+                0.3333333432674408,
+                0.01600000075995922,
+                0.0,
+                1.0005828142166138,
+                0.0
+              ],
+              "observation": [
+                0.04479055106639862,
+                0.3263612687587738,
+                0.3263612687587738,
+                0.7679741978645325,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1596673727035522,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.10786620527505875,
+                -0.2008647322654724
+              ],
+              "reward": -0.05390988276312214,
+              "smooth_lap_time_s": 92.55390988276312,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 92.55346501938176,
+                "outlap": false,
+                "race_time_s": 305.6653304897733,
+                "tyre_wear": 0.02
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.04479055106639862,
+                  "fuel_energy_mj": 84.20120439231394,
+                  "pit_compound": null
+                },
+                "lap_time_s": 92.55346501938176,
+                "nominal_time_s": 92.55065801938176,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.09935145080089569,
+                  "fuel_energy_mj": 85.0723506346345,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.002807,
+                "wear_clipped": false
+              }
+            }
+          ]
+        }
+      ],
+      "seed": 11
+    },
+    {
+      "episodes": [
+        {
+          "decision_runtime_s": 0.0030655999944428913,
+          "episode_runtime_s": 0.011135599997942336,
+          "failure": null,
+          "initial_compound": "SOFT",
+          "legal": true,
+          "max_battery_projection_mj": 0.785687230527401,
+          "max_fuel_projection_mj": 7.448480746150011,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 304.71651356455754,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.008905834133031476,
+          "smooth_race_time_s": 304.7180003351953,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_observation": [
+                0.3956717550754547,
+                0.6362139582633972,
+                0.6362139582633972,
+                0.3327954113483429,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.9983862638473511,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.3333333432674408,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.9135819673538208,
+                0.47243764996528625
+              ],
+              "reward": 0.14927273399540297,
+              "smooth_lap_time_s": 92.3507272660046,
+              "state": {
+                "battery_mj": 0.3956717625260353,
+                "car_mass_kg": 803.8172836065293,
+                "compound": "SOFT",
+                "compound_changed": false,
+                "fuel_energy_mj": 164.14319508075715,
+                "lap": 1,
+                "last_lap_time_s": 92.35023140254619,
+                "outlap": false,
+                "race_time_s": 92.35023140254619,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.6043282374739647,
+                  "fuel_energy_mj": 93.85680491924286,
+                  "pit_compound": null
+                },
+                "lap_time_s": 92.35023140254619,
+                "nominal_time_s": 92.35023140254619,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.6043282374739647,
+                  "fuel_energy_mj": 93.85680491924286,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.8114455342292786,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7084249258041382,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.1268885135650635,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.3956717550754547,
+                0.6362139582633972,
+                0.6362139582633972,
+                0.3327954113483429,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.9983862638473511,
+                0.6666666865348816
+              ],
+              "pit_code": 2,
+              "requested_energy": [
+                0.4449966549873352,
+                -0.8876983523368835
+              ],
+              "reward": -11.737183271242372,
+              "smooth_lap_time_s": 104.23718327124237,
+              "state": {
+                "battery_mj": 0.811445526778698,
+                "car_mass_kg": 801.8000000000001,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 104.23668928325846,
+                "outlap": true,
+                "race_time_s": 196.58692068580464,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": 0.41577376425266266,
+                  "fuel_energy_mj": 86.74319508075715,
+                  "pit_compound": "MEDIUM"
+                },
+                "lap_time_s": 104.23668928325846,
+                "nominal_time_s": 104.23388228325845,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.41577376425266266,
+                  "fuel_energy_mj": 89.82697123289108,
+                  "pit_compound": "MEDIUM"
+                },
+                "tyre_time_loss_s": 0.002807,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                1.8947806851624636e-14,
+                1.0980829000473022,
+                1.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.1689739227294922,
+                0.0
+              ],
+              "observation": [
+                0.8114455342292786,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7084249258041382,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.1268885135650635,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.1338975876569748,
+                -0.298988938331604
+              ],
+              "reward": -15.630089797948358,
+              "smooth_lap_time_s": 108.13008979794836,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0000000000001,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 108.12959287875293,
+                "outlap": false,
+                "race_time_s": 304.71651356455754,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.811445526778698,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 108.12959287875293,
+                "nominal_time_s": 107.27959287875294,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.025758296251296997,
+                  "fuel_energy_mj": 84.84848074615002,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.0013804999980493449,
+          "episode_runtime_s": 0.008414799995080102,
+          "failure": null,
+          "initial_compound": "MEDIUM",
+          "legal": true,
+          "max_battery_projection_mj": 0.5885204151272774,
+          "max_fuel_projection_mj": 7.305606070160863,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 305.5787819275021,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.871170323118065,
+          "smooth_race_time_s": 305.58026482418035,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_observation": [
+                0.2048538476228714,
+                0.6348019242286682,
+                0.6348019242286682,
+                0.3355589807033539,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0066769123077393,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6666666865348816,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.955942690372467,
+                0.7268615365028381
+              ],
+              "reward": -0.6176194837237574,
+              "smooth_lap_time_s": 93.11761948372376,
+              "state": {
+                "battery_mj": 0.2048538476228714,
+                "car_mass_kg": 803.8088114619255,
+                "compound": "MEDIUM",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.7788928627968,
+                "lap": 1,
+                "last_lap_time_s": 93.11712262767553,
+                "outlap": false,
+                "race_time_s": 93.11712262767553,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.7951461523771286,
+                  "fuel_energy_mj": 94.22110713720322,
+                  "pit_compound": null
+                },
+                "lap_time_s": 93.11712262767553,
+                "nominal_time_s": 92.26712262767553,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.7951461523771286,
+                  "fuel_energy_mj": 94.22110713720322,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.4877517819404602,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7141053080558777,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.135638952255249,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.2048538476228714,
+                0.6348019242286682,
+                0.6348019242286682,
+                0.3355589807033539,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0066769123077393,
+                0.6666666865348816
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                0.2574915587902069,
+                -0.7105305790901184
+              ],
+              "reward": -12.546606213890982,
+              "smooth_lap_time_s": 105.04660621389098,
+              "state": {
+                "battery_mj": 0.4877517819404602,
+                "car_mass_kg": 801.8000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 105.0461150482416,
+                "outlap": true,
+                "race_time_s": 198.16323767591712,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": 0.2828979343175888,
+                  "fuel_energy_mj": 86.37889286279679,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 105.0461150482416,
+                "nominal_time_s": 104.1940900482416,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.2828979343175888,
+                  "fuel_energy_mj": 88.21442740559577,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 0.852025,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                1.8947806851624636e-14,
+                1.1011900901794434,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1612545251846313,
+                0.0
+              ],
+              "observation": [
+                0.4877517819404602,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7141053080558777,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.135638952255249,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.15051092207431793,
+                -0.4676915109157562
+              ],
+              "reward": -14.916039126565593,
+              "smooth_lap_time_s": 107.4160391265656,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 107.41554425158499,
+                "outlap": false,
+                "race_time_s": 305.5787819275021,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.4877517819404602,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.41554425158499,
+                "nominal_time_s": 107.41554425158499,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.10076863318681717,
+                  "fuel_energy_mj": 84.70560607016087,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.0024370999890379608,
+          "episode_runtime_s": 0.011943500001507346,
+          "failure": null,
+          "initial_compound": "HARD",
+          "legal": true,
+          "max_battery_projection_mj": 0.28768039122223854,
+          "max_fuel_projection_mj": 7.901786525547479,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 307.40698648717944,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 1,
+          "reference_time_s": 305.6090945010623,
+          "regret_s": 1.799217749845468,
+          "smooth_race_time_s": 307.4083122509078,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                true,
+                true,
+                false
+              ],
+              "next_observation": [
+                0.15011975169181824,
+                0.6343761086463928,
+                0.6343761086463928,
+                0.33871617913246155,
+                0.0,
+                1.0,
+                0.00800000037997961,
+                0.0,
+                1.016148567199707,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.9687163829803467,
+                0.7998403310775757
+              ],
+              "reward": -1.4937372074128632,
+              "smooth_lap_time_s": 93.99373720741286,
+              "state": {
+                "battery_mj": 0.15011975169181824,
+                "car_mass_kg": 803.806256723404,
+                "compound": "HARD",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.66903910636904,
+                "lap": 1,
+                "last_lap_time_s": 93.99324014890195,
+                "outlap": false,
+                "race_time_s": 93.99324014890195,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.8498802483081818,
+                  "fuel_energy_mj": 94.33096089363097,
+                  "pit_compound": null
+                },
+                "lap_time_s": 93.99324014890195,
+                "nominal_time_s": 92.24324014890195,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.8498802483081818,
+                  "fuel_energy_mj": 94.33096089363097,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 1.75,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                true,
+                true,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.014828421175479889,
+                0.30391725897789,
+                0.30391725897789,
+                0.7200049161911011,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1438661813735962,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.15011975169181824,
+                0.6343761086463928,
+                0.6343761086463928,
+                0.33871617913246155,
+                0.0,
+                1.0,
+                0.00800000037997961,
+                0.0,
+                1.016148567199707,
+                0.6666666865348816
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                -0.08623404800891876,
+                -0.1529448926448822
+              ],
+              "reward": -13.3076239593277,
+              "smooth_lap_time_s": 105.8076239593277,
+              "state": {
+                "battery_mj": 0.014828421175479889,
+                "car_mass_kg": 801.8235035330058,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 78.41065191924574,
+                "lap": 2,
+                "last_lap_time_s": 105.80714241279907,
+                "outlap": true,
+                "race_time_s": 199.800382561701,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.13529133051633835,
+                  "fuel_energy_mj": 85.2583871871233,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 105.80714241279907,
+                "nominal_time_s": 104.05578921279907,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.13529133051633835,
+                  "fuel_energy_mj": 85.2583871871233,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 1.7513532000000003,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                1.8947806851624636e-14,
+                1.107777714729309,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.163318395614624,
+                0.0
+              ],
+              "observation": [
+                0.014828421175479889,
+                0.30391725897789,
+                0.30391725897789,
+                0.7200049161911011,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1438661813735962,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.036330051720142365,
+                0.07001174986362457
+              ],
+              "reward": -15.106951084167235,
+              "smooth_lap_time_s": 107.60695108416724,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 107.60660392547845,
+                "outlap": false,
+                "race_time_s": 307.40698648717944,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.014828421175479889,
+                  "fuel_energy_mj": 78.41065191924574,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.60660392547845,
+                "nominal_time_s": 107.60660392547845,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.30250881239771843,
+                  "fuel_energy_mj": 86.31243844479322,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            }
+          ]
+        }
+      ],
+      "seed": 23
+    },
+    {
+      "episodes": [
+        {
+          "decision_runtime_s": 0.0007600999961141497,
+          "episode_runtime_s": 0.004323499997553881,
+          "failure": null,
+          "initial_compound": "SOFT",
+          "legal": true,
+          "max_battery_projection_mj": 0.41278592497110367,
+          "max_fuel_projection_mj": 5.405631178617469,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 1.652424966883954e-16,
+          "original_race_time_s": 304.7171408180065,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.009532986674457788,
+          "smooth_race_time_s": 304.71862748773674,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_observation": [
+                0.36430203914642334,
+                0.6342595219612122,
+                0.6342595219612122,
+                0.332733154296875,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.998199462890625,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.3333333432674408,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.97221440076828,
+                0.514263927936554
+              ],
+              "reward": 0.16655207779588466,
+              "smooth_lap_time_s": 92.33344792220412,
+              "state": {
+                "battery_mj": 0.36430205404758453,
+                "car_mass_kg": 803.8055571198463,
+                "compound": "SOFT",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.63895615339277,
+                "lap": 1,
+                "last_lap_time_s": 92.33295185464621,
+                "outlap": false,
+                "race_time_s": 92.33295185464621,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.6356979459524155,
+                  "fuel_energy_mj": 94.36104384660722,
+                  "pit_compound": null
+                },
+                "lap_time_s": 92.33295185464621,
+                "nominal_time_s": 92.33295185464621,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.6356979459524155,
+                  "fuel_energy_mj": 94.36104384660722,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                false,
+                true,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.7705198526382446,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7083652019500732,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.1268962621688843,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.36430203914642334,
+                0.6342595219612122,
+                0.6342595219612122,
+                0.332733154296875,
+                0.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                0.998199462890625,
+                0.6666666865348816
+              ],
+              "pit_code": 2,
+              "requested_energy": [
+                0.44663363695144653,
+                -0.8749570846557617
+              ],
+              "reward": -11.737901154325243,
+              "smooth_lap_time_s": 104.23790115432524,
+              "state": {
+                "battery_mj": 0.7705198675394058,
+                "car_mass_kg": 801.8,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 104.23740730772687,
+                "outlap": true,
+                "race_time_s": 196.57035916237308,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": 0.4062178134918213,
+                  "fuel_energy_mj": 86.23895615339276,
+                  "pit_compound": "MEDIUM"
+                },
+                "lap_time_s": 104.23740730772687,
+                "nominal_time_s": 104.23460030772686,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.4062178134918213,
+                  "fuel_energy_mj": 89.84104927778243,
+                  "pit_compound": "MEDIUM"
+                },
+                "tyre_time_loss_s": 0.002807,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0980851650238037,
+                1.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.1691597700119019,
+                0.0
+              ],
+              "observation": [
+                0.7705198526382446,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7083652019500732,
+                1.0,
+                0.6666666865348816,
+                0.0,
+                1.0,
+                1.1268962621688843,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.37143823504447937,
+                0.1436452567577362
+              ],
+              "reward": -15.647278411207381,
+              "smooth_lap_time_s": 108.14727841120738,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0,
+                "compound": "MEDIUM",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 108.14678165563343,
+                "outlap": false,
+                "race_time_s": 304.7171408180065,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.7705198675394058,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 108.14678165563343,
+                "nominal_time_s": 107.29678165563344,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.35773394256830215,
+                  "fuel_energy_mj": 82.80563117861747,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.0007524000029661693,
+          "episode_runtime_s": 0.0034728999962680973,
+          "failure": null,
+          "initial_compound": "MEDIUM",
+          "legal": true,
+          "max_battery_projection_mj": 0.6213323138654232,
+          "max_fuel_projection_mj": 7.480085992813102,
+          "max_objective_replay_error_s": 0.0,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 305.5621062068582,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 304.7090945010623,
+          "regret_s": 0.8544992267511589,
+          "smooth_race_time_s": 305.56359372781344,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_observation": [
+                0.25523650646209717,
+                0.6342269778251648,
+                0.6342269778251648,
+                0.3356308937072754,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0068926811218262,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6666666865348816,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.973191499710083,
+                0.6596846580505371
+              ],
+              "reward": -0.6375725711153422,
+              "smooth_lap_time_s": 93.13757257111534,
+              "state": {
+                "battery_mj": 0.25523650646209717,
+                "car_mass_kg": 803.805361700058,
+                "compound": "MEDIUM",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.6305531024933,
+                "lap": 1,
+                "last_lap_time_s": 93.13707592773439,
+                "outlap": false,
+                "race_time_s": 93.13707592773439,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.7447634935379028,
+                  "fuel_energy_mj": 94.3694468975067,
+                  "pit_compound": null
+                },
+                "lap_time_s": 93.13707592773439,
+                "nominal_time_s": 92.28707592773439,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.7447634935379028,
+                  "fuel_energy_mj": 94.3694468975067,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.85,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                true,
+                false,
+                true
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.7039257287979126,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7143723964691162,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.136224627494812,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.25523650646209717,
+                0.6342269778251648,
+                0.6342269778251648,
+                0.3356308937072754,
+                0.0,
+                0.6666666865348816,
+                0.00800000037997961,
+                0.0,
+                1.0068926811218262,
+                0.6666666865348816
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                0.6657553315162659,
+                -0.9315856099128723
+              ],
+              "reward": -12.600773507866691,
+              "smooth_lap_time_s": 105.10077350786669,
+              "state": {
+                "battery_mj": 0.7039257138967514,
+                "car_mass_kg": 801.8000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 105.10027907896041,
+                "outlap": true,
+                "race_time_s": 198.2373550066948,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": 0.44868920743465424,
+                  "fuel_energy_mj": 86.2305531024933,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 105.10027907896041,
+                "nominal_time_s": 104.24825407896041,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.44868920743465424,
+                  "fuel_energy_mj": 91.7254958510399,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 0.852025,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                1.8947806851624636e-14,
+                1.1011300086975098,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1602729558944702,
+                0.0
+              ],
+              "observation": [
+                0.7039257287979126,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7143723964691162,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.136224627494812,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.13022255897521973,
+                -0.22320879995822906
+              ],
+              "reward": -14.825247648831393,
+              "smooth_lap_time_s": 107.3252476488314,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0000000000001,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 107.32475120016335,
+                "outlap": false,
+                "race_time_s": 305.5621062068582,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.7039257138967514,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.32475120016335,
+                "nominal_time_s": 107.32475120016335,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.0825934000313282,
+                  "fuel_energy_mj": 84.88008599281311,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            }
+          ]
+        },
+        {
+          "decision_runtime_s": 0.0007006000014371239,
+          "episode_runtime_s": 0.003924299999198411,
+          "failure": null,
+          "initial_compound": "HARD",
+          "legal": true,
+          "max_battery_projection_mj": 0.845934271812439,
+          "max_fuel_projection_mj": 8.220511528104538,
+          "max_objective_replay_error_s": 5.684341886080802e-14,
+          "max_primal_violation": 0.0,
+          "original_race_time_s": 307.3608423140819,
+          "piecewise_error_allowance_s": 0.0014999999999999996,
+          "projection_laps": 2,
+          "reference_time_s": 305.6090945010623,
+          "regret_s": 1.7532352082634475,
+          "smooth_race_time_s": 307.36232970932576,
+          "trajectory": [
+            {
+              "mask": [
+                true,
+                true,
+                true,
+                true
+              ],
+              "next_mask": [
+                false,
+                true,
+                true,
+                false
+              ],
+              "next_observation": [
+                0.40213996171951294,
+                0.6339579224586487,
+                0.6339579224586487,
+                0.3390944302082062,
+                0.0,
+                1.0,
+                0.00800000037997961,
+                0.0,
+                1.017283320426941,
+                0.6666666865348816
+              ],
+              "observation": [
+                1.0,
+                1.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                0.9812628030776978,
+                0.4638133943080902
+              ],
+              "reward": -1.5987062032893107,
+              "smooth_lap_time_s": 94.09870620328931,
+              "state": {
+                "battery_mj": 0.40213995426893234,
+                "car_mass_kg": 803.8037474393844,
+                "compound": "HARD",
+                "compound_changed": false,
+                "fuel_energy_mj": 163.5611398935318,
+                "lap": 1,
+                "last_lap_time_s": 94.09821038457753,
+                "outlap": false,
+                "race_time_s": 94.09821038457753,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": false,
+                "applied_action": {
+                  "battery_delta_mj": -0.5978600457310677,
+                  "fuel_energy_mj": 94.4388601064682,
+                  "pit_compound": null
+                },
+                "lap_time_s": 94.09821038457753,
+                "nominal_time_s": 92.34821038457753,
+                "projection_reasons": [],
+                "requested_action": {
+                  "battery_delta_mj": -0.5978600457310677,
+                  "fuel_energy_mj": 94.4388601064682,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 1.75,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                false,
+                true,
+                true,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.8562980890274048,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7210849523544312,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1459715366363525,
+                0.3333333432674408
+              ],
+              "observation": [
+                0.40213996171951294,
+                0.6339579224586487,
+                0.6339579224586487,
+                0.3390944302082062,
+                0.0,
+                1.0,
+                0.00800000037997961,
+                0.0,
+                1.017283320426941,
+                0.6666666865348816
+              ],
+              "pit_code": 1,
+              "requested_energy": [
+                0.8038371205329895,
+                -0.938877522945404
+              ],
+              "reward": -13.502371626001676,
+              "smooth_lap_time_s": 106.00237162600168,
+              "state": {
+                "battery_mj": 0.8562980964779854,
+                "car_mass_kg": 801.8,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 77.4,
+                "lap": 2,
+                "last_lap_time_s": 106.00187713002511,
+                "outlap": true,
+                "race_time_s": 200.10008751460265,
+                "tyre_wear": 0.0
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": 0.45415814220905304,
+                  "fuel_energy_mj": 86.16113989353178,
+                  "pit_compound": "SOFT"
+                },
+                "lap_time_s": 106.00187713002511,
+                "nominal_time_s": 104.25052393002511,
+                "projection_reasons": [
+                  "fuel_input_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": 0.45415814220905304,
+                  "fuel_energy_mj": 92.9129992365837,
+                  "pit_compound": "SOFT"
+                },
+                "tyre_time_loss_s": 1.7513532000000003,
+                "wear_clipped": false
+              }
+            },
+            {
+              "mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_mask": [
+                true,
+                false,
+                false,
+                false
+              ],
+              "next_observation": [
+                0.0,
+                0.0,
+                0.0,
+                1.1076120138168335,
+                1.0,
+                0.3333333432674408,
+                0.00800000037997961,
+                0.0,
+                1.1595810651779175,
+                0.0
+              ],
+              "observation": [
+                0.8562980890274048,
+                0.30000001192092896,
+                0.30000001192092896,
+                0.7210849523544312,
+                1.0,
+                0.3333333432674408,
+                0.0,
+                1.0,
+                1.1459715366363525,
+                0.3333333432674408
+              ],
+              "pit_code": 0,
+              "requested_energy": [
+                -0.044126566499471664,
+                -0.3195149004459381
+              ],
+              "reward": -14.761251880034735,
+              "smooth_lap_time_s": 107.26125188003473,
+              "state": {
+                "battery_mj": 0.0,
+                "car_mass_kg": 800.0,
+                "compound": "SOFT",
+                "compound_changed": true,
+                "fuel_energy_mj": 0.0,
+                "lap": 3,
+                "last_lap_time_s": 107.26075479947923,
+                "outlap": false,
+                "race_time_s": 307.3608423140819,
+                "tyre_wear": 0.01
+              },
+              "transition": {
+                "action_projected": true,
+                "applied_action": {
+                  "battery_delta_mj": -0.8562980964779854,
+                  "fuel_energy_mj": 77.4,
+                  "pit_compound": null
+                },
+                "lap_time_s": 107.26075479947923,
+                "nominal_time_s": 107.26075479947923,
+                "projection_reasons": [
+                  "fuel_input_or_reachability",
+                  "battery_input_capacity_or_reachability"
+                ],
+                "requested_action": {
+                  "battery_delta_mj": -0.010363824665546417,
+                  "fuel_energy_mj": 85.62051152810454,
+                  "pit_compound": null
+                },
+                "tyre_time_loss_s": 0.0,
+                "wear_clipped": false
+              }
+            }
+          ]
+        }
+      ],
+      "seed": 37
+    }
+  ],
+  "full_regression": {
+    "command": "../.venv/Scripts/python.exe -m pytest -q --basetemp ../.cache/pytest-sac-verified-20261008",
+    "passed": 379,
+    "runtime_s": 229.89,
+    "warnings": 2,
+    "working_directory": "apex_engine"
+  },
+  "github_ci": {
+    "implementation_commit": "f9fa9d4346ea080b404a1441b1bce66581040725",
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 113648031392,
+        "logs_url": null,
+        "name": "Python 3.12",
+        "run_id": 37877082528,
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Install APEX",
+            "number": 4,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Lint",
+            "number": 5,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Test",
+            "number": 6,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Compile Airflow wrapper",
+            "number": 7,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify public-data artifacts",
+            "number": 8,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify smooth lap-map artifacts",
+            "number": 9,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify matched strategy-solver artifacts",
+            "number": 10,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify SAC training and checkpoint artifacts",
+            "number": 11,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 21,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 113648031769,
+        "logs_url": null,
+        "name": "Python 3.11",
+        "run_id": 37877082528,
+        "status": "completed",
+        "steps": [
+          {
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Install APEX",
+            "number": 4,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Lint",
+            "number": 5,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Test",
+            "number": 6,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Compile Airflow wrapper",
+            "number": 7,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify public-data artifacts",
+            "number": 8,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify smooth lap-map artifacts",
+            "number": 9,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify matched strategy-solver artifacts",
+            "number": 10,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Verify SAC training and checkpoint artifacts",
+            "number": 11,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 21,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 22,
+            "status": "completed"
+          },
+          {
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 23,
+            "status": "completed"
+          }
+        ]
+      }
+    ],
+    "run_id": 37877082528
+  },
+  "initial_root_invocation": {
+    "failed": 13,
+    "passed": 366,
+    "reason": "Existing config-relative tests require the documented apex_engine working directory",
+    "runtime_s": 195.33,
+    "warnings": 2
+  },
+  "maturity_after": "R0",
+  "maturity_before": "R0",
+  "next": "R018 nominal/disturbed synthetic paper scenarios, then explicit R1 review",
+  "per_seed_mean_regret_s": {
+    "11": 0.3357256253720304,
+    "23": 0.8930979690321882,
+    "37": 0.8724224738963547
+  },
+  "performance_decision": "INCONCLUSIVE for held-out policy value; retain research status",
+  "promotion_recommended": false,
+  "reference_details": [
+    {
+      "global_optimality_certified": false,
+      "initial_compound": "SOFT",
+      "reference": {
+        "battery_deltas_mj": [
+          -1.0,
+          0.5,
+          -0.5
+        ],
+        "battery_vertices": 5,
+        "certificate_family": "AFFINE_FUEL_CONCAVE_BATTERY_MASS_INDEPENDENT_WEAR",
+        "evaluated_candidates": 360,
+        "fuel_fractions": [
+          1.1,
+          0.9999999999999999,
+          0.9
+        ],
+        "fuel_vertices": 6,
+        "pit_plan": [
+          null,
+          "MEDIUM",
+          null
+        ],
+        "race_time_s": 304.7090945010623
+      },
+      "reference_runtime_s": 0.01154139999562176,
+      "solver_runtime_s": 1.54928170000494
+    },
+    {
+      "global_optimality_certified": false,
+      "initial_compound": "MEDIUM",
+      "reference": {
+        "battery_deltas_mj": [
+          -1.0,
+          0.5,
+          -0.5
+        ],
+        "battery_vertices": 5,
+        "certificate_family": "AFFINE_FUEL_CONCAVE_BATTERY_MASS_INDEPENDENT_WEAR",
+        "evaluated_candidates": 360,
+        "fuel_fractions": [
+          1.1,
+          0.9999999999999999,
+          0.9
+        ],
+        "fuel_vertices": 6,
+        "pit_plan": [
+          "SOFT",
+          null,
+          null
+        ],
+        "race_time_s": 304.7090945010623
+      },
+      "reference_runtime_s": 0.013720200004172511,
+      "solver_runtime_s": 2.009158299995761
+    },
+    {
+      "global_optimality_certified": false,
+      "initial_compound": "HARD",
+      "reference": {
+        "battery_deltas_mj": [
+          -1.0,
+          0.5,
+          -0.5
+        ],
+        "battery_vertices": 5,
+        "certificate_family": "AFFINE_FUEL_CONCAVE_BATTERY_MASS_INDEPENDENT_WEAR",
+        "evaluated_candidates": 360,
+        "fuel_fractions": [
+          1.1,
+          0.9999999999999999,
+          0.9
+        ],
+        "fuel_vertices": 6,
+        "pit_plan": [
+          "SOFT",
+          null,
+          null
+        ],
+        "race_time_s": 305.6090945010623
+      },
+      "reference_runtime_s": 0.018992099998285994,
+      "solver_runtime_s": 1.1800307000012253
+    }
+  ],
+  "research_inventory": {
+    "done": 17,
+    "remaining": 56,
+    "total": 73
+  },
+  "rollback": "Revert the R017 implementation commit; original strategy core and smooth maps were not changed",
+  "schema_version": "apex-sac-strategy-evidence-v1",
+  "status": "DONE",
+  "targeted_tests": {
+    "passed": 31,
+    "runtime_s": 37.75
+  },
+  "tested_implementation_commit": "f9fa9d4346ea080b404a1441b1bce66581040725",
+  "training_reports": [
+    {
+      "actor_parameter_change_l2": 9.914559364318848,
+      "checkpoint_selection": "final step, no evaluation or best-checkpoint selection",
+      "completed_episodes": 4000,
+      "critic_parameter_change_l2": 19.30575942993164,
+      "environment": {
+        "battery_smoothing_mj": 0.01,
+        "classification": "ADAPTATION",
+        "legality": "energy reachability projection plus explicit pit/required-change masks; not learned",
+        "observation": "ten normalized paper state fields; smooth elapsed/last-lap times",
+        "parameters": {
+          "battery_capacity_mj": 1,
+          "battery_delta_max_mj": 0.5,
+          "battery_delta_min_mj": -1,
+          "battery_deploy_time_s_per_mj": 0.42,
+          "battery_recharge_time_s_per_mj": 0.32,
+          "consecutive_pit_penalty_s": 26.5,
+          "empty_mass_kg": 800.0,
+          "fuel_energy_time_s_per_fraction": 0.7,
+          "fuel_lhv_mj_per_kg": 43.0,
+          "initial_fuel_kg": 6,
+          "mass_time_s_per_kg": 0.028,
+          "nominal_lap_time_s": 92.5,
+          "pit_inlap_penalty_s": 11.5,
+          "pit_outlap_penalty_s": 15.0,
+          "require_compound_change": true,
+          "reward_offset_s": 130.0,
+          "total_laps": 3
+        },
+        "pit_window": [
+          0,
+          1
+        ],
+        "reward": "nominal_lap_time_s - smooth_lap_time_s; gamma=1, finite horizon",
+        "schema_version": "apex-sac-env-v1",
+        "time_loss": {
+          "HARD": {
+            "cubic_s": 3.2,
+            "fresh_loss_s": 1.75,
+            "linear_s": 0.12,
+            "quadratic_s": 1.5
+          },
+          "MEDIUM": {
+            "cubic_s": 5.0,
+            "fresh_loss_s": 0.85,
+            "linear_s": 0.18,
+            "quadratic_s": 2.2
+          },
+          "SOFT": {
+            "cubic_s": 7.0,
+            "fresh_loss_s": 0.0,
+            "linear_s": 0.25,
+            "quadratic_s": 3.0
+          }
+        },
+        "wear": {
+          "HARD": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "MEDIUM": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "SOFT": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          }
+        }
+      },
+      "evaluation_transitions_in_replay": 0,
+      "first_100_mean_return": -46.32482058102839,
+      "initial_compound_episodes": {
+        "HARD": 1333,
+        "MEDIUM": 1333,
+        "SOFT": 1334
+      },
+      "initial_compound_selection": "cycle SOFT/MEDIUM/HARD by episode",
+      "last_100_mean_return": -27.836804647734944,
+      "legal_completed_episodes": 4000,
+      "max_battery_projection_mj": 1.4758034348487854,
+      "max_fuel_projection_mj": 17.156959974739777,
+      "projection_fraction": 0.6713333333333333,
+      "projection_steps": 8056,
+      "replay_transitions": 12000,
+      "runtime_s": 291.14096119999886,
+      "settings": {
+        "alpha": 0.01,
+        "batch_size": 128,
+        "gamma": 1.0,
+        "hidden": 64,
+        "learning_rate": 0.0003,
+        "max_gradient_norm": 10.0,
+        "replay_capacity": 8192,
+        "seed": 11,
+        "steps": 12000,
+        "target_mix": 0.005,
+        "warmup": 512
+      },
+      "unfinished_episode_steps": 0,
+      "updates": 11488
+    },
+    {
+      "actor_parameter_change_l2": 7.968496799468994,
+      "checkpoint_selection": "final step, no evaluation or best-checkpoint selection",
+      "completed_episodes": 4000,
+      "critic_parameter_change_l2": 21.191864013671875,
+      "environment": {
+        "battery_smoothing_mj": 0.01,
+        "classification": "ADAPTATION",
+        "legality": "energy reachability projection plus explicit pit/required-change masks; not learned",
+        "observation": "ten normalized paper state fields; smooth elapsed/last-lap times",
+        "parameters": {
+          "battery_capacity_mj": 1,
+          "battery_delta_max_mj": 0.5,
+          "battery_delta_min_mj": -1,
+          "battery_deploy_time_s_per_mj": 0.42,
+          "battery_recharge_time_s_per_mj": 0.32,
+          "consecutive_pit_penalty_s": 26.5,
+          "empty_mass_kg": 800.0,
+          "fuel_energy_time_s_per_fraction": 0.7,
+          "fuel_lhv_mj_per_kg": 43.0,
+          "initial_fuel_kg": 6,
+          "mass_time_s_per_kg": 0.028,
+          "nominal_lap_time_s": 92.5,
+          "pit_inlap_penalty_s": 11.5,
+          "pit_outlap_penalty_s": 15.0,
+          "require_compound_change": true,
+          "reward_offset_s": 130.0,
+          "total_laps": 3
+        },
+        "pit_window": [
+          0,
+          1
+        ],
+        "reward": "nominal_lap_time_s - smooth_lap_time_s; gamma=1, finite horizon",
+        "schema_version": "apex-sac-env-v1",
+        "time_loss": {
+          "HARD": {
+            "cubic_s": 3.2,
+            "fresh_loss_s": 1.75,
+            "linear_s": 0.12,
+            "quadratic_s": 1.5
+          },
+          "MEDIUM": {
+            "cubic_s": 5.0,
+            "fresh_loss_s": 0.85,
+            "linear_s": 0.18,
+            "quadratic_s": 2.2
+          },
+          "SOFT": {
+            "cubic_s": 7.0,
+            "fresh_loss_s": 0.0,
+            "linear_s": 0.25,
+            "quadratic_s": 3.0
+          }
+        },
+        "wear": {
+          "HARD": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "MEDIUM": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "SOFT": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          }
+        }
+      },
+      "evaluation_transitions_in_replay": 0,
+      "first_100_mean_return": -44.33544216787472,
+      "initial_compound_episodes": {
+        "HARD": 1333,
+        "MEDIUM": 1333,
+        "SOFT": 1334
+      },
+      "initial_compound_selection": "cycle SOFT/MEDIUM/HARD by episode",
+      "last_100_mean_return": -28.388860843850992,
+      "legal_completed_episodes": 4000,
+      "max_battery_projection_mj": 1.4997963309288025,
+      "max_fuel_projection_mj": 17.19147341251373,
+      "projection_fraction": 0.7070833333333333,
+      "projection_steps": 8485,
+      "replay_transitions": 12000,
+      "runtime_s": 240.08406999999715,
+      "settings": {
+        "alpha": 0.01,
+        "batch_size": 128,
+        "gamma": 1.0,
+        "hidden": 64,
+        "learning_rate": 0.0003,
+        "max_gradient_norm": 10.0,
+        "replay_capacity": 8192,
+        "seed": 23,
+        "steps": 12000,
+        "target_mix": 0.005,
+        "warmup": 512
+      },
+      "unfinished_episode_steps": 0,
+      "updates": 11488
+    },
+    {
+      "actor_parameter_change_l2": 8.253713607788086,
+      "checkpoint_selection": "final step, no evaluation or best-checkpoint selection",
+      "completed_episodes": 4000,
+      "critic_parameter_change_l2": 21.45362091064453,
+      "environment": {
+        "battery_smoothing_mj": 0.01,
+        "classification": "ADAPTATION",
+        "legality": "energy reachability projection plus explicit pit/required-change masks; not learned",
+        "observation": "ten normalized paper state fields; smooth elapsed/last-lap times",
+        "parameters": {
+          "battery_capacity_mj": 1,
+          "battery_delta_max_mj": 0.5,
+          "battery_delta_min_mj": -1,
+          "battery_deploy_time_s_per_mj": 0.42,
+          "battery_recharge_time_s_per_mj": 0.32,
+          "consecutive_pit_penalty_s": 26.5,
+          "empty_mass_kg": 800.0,
+          "fuel_energy_time_s_per_fraction": 0.7,
+          "fuel_lhv_mj_per_kg": 43.0,
+          "initial_fuel_kg": 6,
+          "mass_time_s_per_kg": 0.028,
+          "nominal_lap_time_s": 92.5,
+          "pit_inlap_penalty_s": 11.5,
+          "pit_outlap_penalty_s": 15.0,
+          "require_compound_change": true,
+          "reward_offset_s": 130.0,
+          "total_laps": 3
+        },
+        "pit_window": [
+          0,
+          1
+        ],
+        "reward": "nominal_lap_time_s - smooth_lap_time_s; gamma=1, finite horizon",
+        "schema_version": "apex-sac-env-v1",
+        "time_loss": {
+          "HARD": {
+            "cubic_s": 3.2,
+            "fresh_loss_s": 1.75,
+            "linear_s": 0.12,
+            "quadratic_s": 1.5
+          },
+          "MEDIUM": {
+            "cubic_s": 5.0,
+            "fresh_loss_s": 0.85,
+            "linear_s": 0.18,
+            "quadratic_s": 2.2
+          },
+          "SOFT": {
+            "cubic_s": 7.0,
+            "fresh_loss_s": 0.0,
+            "linear_s": 0.25,
+            "quadratic_s": 3.0
+          }
+        },
+        "wear": {
+          "HARD": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "MEDIUM": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          },
+          "SOFT": {
+            "a": 1.0,
+            "b": 0.0,
+            "c": 0.01
+          }
+        }
+      },
+      "evaluation_transitions_in_replay": 0,
+      "first_100_mean_return": -43.35582778299893,
+      "initial_compound_episodes": {
+        "HARD": 1333,
+        "MEDIUM": 1333,
+        "SOFT": 1334
+      },
+      "initial_compound_selection": "cycle SOFT/MEDIUM/HARD by episode",
+      "last_100_mean_return": -28.37464405749846,
+      "legal_completed_episodes": 4000,
+      "max_battery_projection_mj": 1.4976667016744614,
+      "max_fuel_projection_mj": 17.193428468704226,
+      "projection_fraction": 0.7050833333333333,
+      "projection_steps": 8461,
+      "replay_transitions": 12000,
+      "runtime_s": 231.642577300001,
+      "settings": {
+        "alpha": 0.01,
+        "batch_size": 128,
+        "gamma": 1.0,
+        "hidden": 64,
+        "learning_rate": 0.0003,
+        "max_gradient_norm": 10.0,
+        "replay_capacity": 8192,
+        "seed": 37,
+        "steps": 12000,
+        "target_mix": 0.005,
+        "warmup": 512
+      },
+      "unfinished_episode_steps": 0,
+      "updates": 11488
+    }
+  ],
+  "truth_labels": {
+    "dynamics_parameters": "PRIOR",
+    "public_data_used": false,
+    "training_and_evaluation_trajectories": "SIMULATED"
+  }
+}

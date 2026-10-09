@@ -94,6 +94,7 @@ builder. Synthetic training and simulation remain available.
 - Recurrent state-space model experiments
 - Tyre-energy forecasting protocols
 - Reinforcement-learning strategy environment
+- Hybrid SAC training with frozen synthetic tasks, matched optimizer comparisons and inference checkpoints
 - Counterfactual scenario interfaces
 - Monte Carlo strategy evaluation
 - Research-paper-to-code mappings
@@ -424,6 +425,19 @@ continuous domain, derivative checks and approximation bound. These commands
 validate research components; they do not train or promote a world model.
 The [bounded strategy solver](research/protocols/STRATEGY_SOLVER.md) records
 local optimization results, independent tiny-case optimum checks and replay diagnostics.
+
+Train and evaluate the separate synthetic SAC policy:
+
+```bash
+apexsim sac-strategy-demo --profile smoke --output .cache/sac-smoke-new
+apexsim sac-strategy-demo --profile research --output .cache/sac-research-new
+```
+
+The [SAC protocol](research/protocols/SAC_STRATEGY.md) freezes three training
+seeds, the three-lap task and comparison rules. Outputs include training traces,
+requested/applied actions, regret and reload-checked inference weights. Smoke
+checks execution; research reports in-task learning. This policy remains in
+research and has no held-out real-race or world-model promotion claim.
 
 ---
 
