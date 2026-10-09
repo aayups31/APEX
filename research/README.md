@@ -43,3 +43,9 @@ The [R016 strategy solver](protocols/STRATEGY_SOLVER.md) adds bounded pit-plan
 enumeration and local continuous energy optimization. Run
 `apexsim strategy-solver-demo --output <new-directory>` with the optimization
 extra for matched tiny optima, independent replay, residuals and solver diagnostics.
+
+The [R018 scenario protocol](protocols/STRATEGY_SCENARIOS.md) freezes the published
+scenario catalog and a synthetic disturbance study. Its independent continuation
+reference and atomic wear intervention are implemented and tested. The frozen
+policy scenario runner and artifact CLI remain in progress; no disturbance-policy
+performance or maturity promotion is claimed by this checkpoint.

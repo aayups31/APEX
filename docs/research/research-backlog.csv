@@ -16,7 +16,7 @@ R014,R1,P0,replication,Implement exact enumeration oracle for tiny races,strateg
 R015,R1,P0,optimization,Implement CasADi continuous lap-map surrogate,equation table,gradient and bound tests,DONE
 R016,R1,P1,optimization,Implement open-source MINLP path or documented solver adapter,CasADi maps,small-case optimum recovered,DONE
 R017,R1,P0,RL,Train SAC on identical FIENI environment,exact oracle,regret/runtime reported,DONE
-R018,R1,P0,replication,Reconstruct nominal and disturbance paper scenarios,SAC + oracle,directional/published tolerance report,TODO
+R018,R1,P0,replication,Reconstruct nominal and disturbance paper scenarios,SAC + oracle,directional/published tolerance report,IN_PROGRESS
 R019,R2,P0,data,Build immutable FastF1/OpenF1 event manifests,,"hashes, versions and schemas stored",TODO
 R020,R2,P0,data,Create permanent untouched benchmark event set,event manifests,no benchmark used in calibration,TODO
 R021,R2,P0,tyres,Fit fuel-corrected latent tyre degradation model,public lap/stint data,rolling-origin held-out metrics,TODO
