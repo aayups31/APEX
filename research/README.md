@@ -46,6 +46,8 @@ extra for matched tiny optima, independent replay, residuals and solver diagnost
 
 The [R018 scenario protocol](protocols/STRATEGY_SCENARIOS.md) freezes the published
 scenario catalog and a synthetic disturbance study. Its independent continuation
-reference and atomic wear intervention are implemented and tested. The frozen
-policy scenario runner and artifact CLI remain in progress; no disturbance-policy
-performance or maturity promotion is claimed by this checkpoint.
+reference, atomic wear intervention and frozen-policy scenario runner are
+implemented. Run `apexsim strategy-scenarios-demo --policy-run <R017-run> --output
+<new-directory>` to save matched-state scores, full rollouts and immutable
+artifacts without retraining. Synthetic directional evidence does not establish
+published-magnitude replication or a maturity promotion.

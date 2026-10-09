@@ -61,7 +61,7 @@ No training occurs. Input checkpoint/source hashes are checked before and after
 evaluation. CI uses the existing R017 smoke run; full local evidence uses its
 three-seed research run. Smoke is execution evidence only.
 
-Planned CLI contract (not implemented in the continuation-foundation checkpoint):
+Implemented CLI (requires a complete R017 run; performs no training):
 
 ```powershell
 $env:OMP_NUM_THREADS='1'

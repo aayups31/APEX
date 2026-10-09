@@ -329,6 +329,14 @@ def sac_strategy_demo(output: Annotated[Path, typer.Option()], profile: str = "r
     typer.echo(json.dumps(run_sac_strategy_demo(output, profile, progress), indent=2))
 
 
+@app.command("strategy-scenarios-demo")
+def strategy_scenarios_demo(policy_run: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Evaluate frozen SAC checkpoints under causal synthetic wear disturbances."""
+    from apexsim.examples.strategy_scenarios_demo import run_strategy_scenarios_demo
+
+    typer.echo(json.dumps(run_strategy_scenarios_demo(policy_run, output), indent=2))
+
+
 @app.command()
 def ui(
     run_dir: Path = Path("artifacts/runs/reference_gru"),

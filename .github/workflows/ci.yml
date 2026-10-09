@@ -45,4 +45,6 @@ jobs:
         run: python -m apexsim.cli strategy-solver-demo --output .cache/ci-strategy-solver
       - name: Verify SAC training and checkpoint artifacts
         run: python -m apexsim.cli sac-strategy-demo --profile smoke --output .cache/ci-sac-strategy
+      - name: Verify frozen-policy disturbance artifacts
+        run: python -m apexsim.cli strategy-scenarios-demo --policy-run .cache/ci-sac-strategy --output .cache/ci-strategy-scenarios
 

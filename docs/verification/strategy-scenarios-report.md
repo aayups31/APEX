@@ -140,3 +140,30 @@ smoke step, then all three frozen research seeds with full saved rollouts and
 matched-state scores. The CLI in the protocol is a planned contract until that
 runner is implemented. Research/build completion counts and R0 maturity remain
 unchanged.
+
+## I. Scenario-runner checkpoint (2026-10-09)
+
+Implemented causal controller comparisons, frozen-input validation, scenario
+rollouts and the `strategy-scenarios-demo` CLI. Controllers see current state and
+an event only at its boundary. Zero dose does not trigger a replan/reaction.
+The nominal R016 plan is committed until an event; causal replanning replaces
+only its remaining actions. Conservative reaction follows nominal physical
+actions before the event and greedy requested energy afterward. Every recorded
+lap is checked against independent model history and the symbolic smooth map.
+Matched-state continuation regret is separate from signed full-race causal gaps.
+
+Exact R017 artifact inventory, hashes, source compatibility, configs, environment,
+inference checkpoint kind, finite parameters and final update counts are checked.
+Evaluation preserves weights, updates and local policy RNG and rechecks input
+and implementation hashes. No new training, retuning or checkpoint selection.
+Output saves all cases and failures, requested/applied controls, reaction metrics,
+descriptive case rankings, projection magnitudes, provenance and manifest last.
+
+Initial smoke: 75/75 legal episodes, all directional gates pass, maximum smooth
+replay error 2.842170943040401e-14 s. This is execution evidence only and preceded
+the addition of reaction/ranking metadata. Final targeted run: 39 passed in
+11.54 s (28 continuation/intervention plus 11 scenario/input/artifact tests).
+Tests reject altered bytes, config, update count, checkpoint kind, nonfinite
+weights, extra files and traversal names before creating output. CI now runs the
+scenario CLI against its freshly generated R017 smoke artifact. Full frozen
+research study, regression and CI results are still required before R018 closure.
