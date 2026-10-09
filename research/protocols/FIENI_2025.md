@@ -29,7 +29,9 @@ held-out real-race strategy skill.
 
 ## Next experiments
 R017 training and in-task comparison are recorded in the [SAC verification report](../../docs/verification/sac-strategy-report.md).
-Next: reconstruct nominal/disturbed scenarios (R018). R016 must distinguish locally solved continuous NLPs from a certified
+R018's frozen nominal/disturbance study is recorded in the [scenario verification report](../../docs/verification/strategy-scenarios-report.md).
+Next: separate R1 gate review, followed by immutable historical-event manifests
+and untouched benchmark selection (R019/R020). R016 must distinguish locally solved continuous NLPs from a certified
 global mixed-integer optimum; solver success alone does not certify either
 terminal legality or optimality. Recover independently known small-case optima,
 replay saved actions and report primal/resource residuals, solver status,

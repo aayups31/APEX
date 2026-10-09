@@ -14,6 +14,8 @@ This directory tracks the published research used to guide APEX.
 - [R016 solver verification](../verification/strategy-solver-report.md)
 - [R017 SAC training protocol](../../research/protocols/SAC_STRATEGY.md)
 - [R017 SAC verification](../verification/sac-strategy-report.md)
+- [R018 disturbance protocol](../../research/protocols/STRATEGY_SCENARIOS.md)
+- [R018 scenario verification](../verification/strategy-scenarios-report.md)
 
 ## Purpose
 

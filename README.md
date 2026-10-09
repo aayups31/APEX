@@ -439,6 +439,17 @@ requested/applied actions, regret and reload-checked inference weights. Smoke
 checks execution; research reports in-task learning. This policy remains in
 research and has no held-out real-race or world-model promotion claim.
 
+Evaluate existing frozen SAC weights under synthetic tyre-wear shocks:
+
+```bash
+apexsim strategy-scenarios-demo --policy-run .cache/sac-research-new --output .cache/scenarios-new
+```
+
+The [scenario protocol](research/protocols/STRATEGY_SCENARIOS.md) specifies five
+causal cases, independent continuation references and matched-state regret.
+Outputs preserve every rollout, failures, projected controls and signed full-race
+comparisons. No training occurs; published magnitudes remain unreplicated.
+
 ---
 
 ## Development Roadmap

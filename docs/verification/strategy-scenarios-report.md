@@ -1,7 +1,7 @@
 # R018 nominal and disturbed strategy scenarios
 
 - Date: 2026-10-08; baseline main 4c0bdf7
-- Status: IN_PROGRESS; global maturity before/after implementation R0
+- Status: DONE (closed 2026-10-09); global maturity before/after implementation R0
 
 ## A. Current state
 
@@ -167,3 +167,79 @@ Tests reject altered bytes, config, update count, checkpoint kind, nonfinite
 weights, extra files and traversal names before creating output. CI now runs the
 scenario CLI against its freshly generated R017 smoke artifact. Full frozen
 research study, regression and CI results are still required before R018 closure.
+
+## J. Frozen research results (2026-10-09)
+
+Run: `.cache/scenarios-research-20261009`, implementation b3989a8; unchanged
+R017 input `.cache/sac-research-20261008`. All five cases, three dry starting
+compounds and seven methods: 105 attempted/105 legal episodes, 315 laps, zero
+new training steps. All directional, causality, zero-dose, nominal action parity
+and input/policy immutability gates pass. Maximum independent smooth replay
+error 2.842170943040401e-14 s. Research summary content hash:
+55ba3ab9e123cf5696ca153fa8ca905cb519e20cf78dc0dc1140a458a9e684eb.
+Manifest content hash:
+c5ea738f28a85bc961df9676ba9075dc79885a868943e911745dfcc5782a947a.
+The saved catalog, config, plans and all rollouts were inspected.
+
+| Method | Mean matched-state regret (s) | Mean signed full-race gap to causal (s) |
+|---|---:|---:|
+| Causal replan | -1.33e-14 (roundoff) | 0 |
+| Committed nominal | 0.133709 | 0.133709 |
+| Greedy energy/early pit | 0.056615 | 0.601114 |
+| Conservative HARD | 6.222182 | 6.222182 |
+| Frozen SAC 11 | 0.428096 | -0.508962 |
+| Frozen SAC 23 | 0.737207 | -1.196247 |
+| Frozen SAC 37 | 0.719177 | -1.214376 |
+
+Each mean covers all 15 fixed cases for its method; zero-dose repeats nominal
+and is retained as preregistered. These are descriptive scores, not uncertainty
+estimates or statistically independent trials. Different policies reach different
+pre-event states: negative signed full-race gaps do not mean beating the optimum
+of the same state. The combined causal comparator keeps its nominal prefix
+until the event; it is not a hindsight full-race optimizer.
+
+All three SAC seeds changed requested energy at the boundary in all nine
+nonzero-shock cases, but none changed its pit choice compared with nominal.
+This measures requested-action response; reachability projection may alter
+applied energy. In the SOFT-start +0.6 initial case, causal replanning advances
+the stop from index 1 to index 0; the committed and all SAC schedules keep the
+later stop. Their matched regrets are 2.005642 s (committed), 2.055794 s (seed
+11), 2.014408 s (23), 2.035419 s (37); causal and greedy early pit attain zero.
+Worst SAC matched regret by seed: 2.961744, 3.157848, 3.153955 s. None of the
+three seeds beats the greedy rule's mean matched-state regret. Keep this negative
+result without disturbance retraining or retrospective checkpoint selection.
+
+Measured mean decision runtime per lap is 0.000688/0.000540/0.000504 s for
+SAC seeds 11/23/37, and 0.000692 s for causal replanning (averaged over all
+45 laps, including boundaries without a replan). Nominal R016 planning runtime
+is saved separately. Model/reference bookkeeping is excluded from decision time.
+The study ran alongside full regression on the same CPU; timing is descriptive,
+not an isolated performance benchmark. Python 3.12.12, Torch 2.14.0+cpu,
+NumPy 2.5.3, CasADi 3.7.2; all three thread limits and Torch threads are 1.
+
+Validation: 39 targeted tests passed in 11.54 s; full regression 418 passed,
+two existing dependency warnings, 93.84 s; repository Ruff and whitespace
+checks pass. Python 3.11/3.12 CI run [37882697815](https://github.com/aayups31/APEX/actions/runs/37882697815)
+passed every step, including the new frozen-policy disturbance artifact check,
+on implementation b3989a80c8348d7e472e56ed33cf6032c952cd36.
+Outcome: DIRECTIONAL_MATCH for the synthetic adaptation; published magnitude
+comparison INCONCLUSIVE because the original maps/resources/shock amplitude
+are unavailable. Global maturity remains R0 pending the separate R1 gate review.
+
+## K. Closure and next work
+
+The [machine evidence](strategy-scenarios-evidence.json) preserves the original
+R017 training reference, full R018 catalog/config/nominal plans/105 rollouts,
+summary/manifest, local validation and successful CI job/step results.
+Machine-evidence content hash:
+987752e197d68d610f77898fd182ed066404001a05f0a3d965677577055fa560.
+R018 is complete as a declared directional adaptation, with policy limitations
+and unreplicated published magnitudes explicit. Research backlog: 18/73 DONE,
+55 remaining. Build backlog remains 13/66 DONE, 53 remaining.
+
+Next: a separate R1 evidence-gate review of equations, unit maps, independent
+tests and scenario reconstruction, with an explicit promotion or remaining-gap
+decision. Then R019 immutable historical-event manifests and R020 untouched
+benchmark event selection establish the data boundary for R2 fitting. No paper
+numeric replication, real-race calibration, world-model validation or production
+policy promotion is implied by R018 closure.
