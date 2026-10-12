@@ -284,6 +284,23 @@ def freeze_public_splits(dataset: Path, assignments: Path, output: Path, purpose
     typer.echo(json.dumps(freeze_splits(dataset, payload, output, purpose=purpose), indent=2))
 
 
+@app.command("freeze-event-corpus")
+def freeze_event_corpus_command(evidence_root: Path, membership: Path, output: Path, purpose: str) -> None:
+    """Bind a development collection to verified archives and canonical bundles."""
+    from apexsim.data.event_corpus import CorpusSession, freeze_event_corpus
+
+    specs = [CorpusSession(**row) for row in json.loads(membership.read_text(encoding="utf-8"))]
+    typer.echo(json.dumps(freeze_event_corpus(evidence_root, specs, output, purpose=purpose), indent=2))
+
+
+@app.command("verify-event-corpus")
+def verify_event_corpus_command(manifest: Path, evidence_root: Path) -> None:
+    """Verify a relocated development collection without provider requests."""
+    from apexsim.data.event_corpus import verify_event_corpus
+
+    typer.echo(json.dumps(verify_event_corpus(manifest, evidence_root), indent=2))
+
+
 @app.command("research-demo")
 def research_demo(output: Path = Path("artifacts/research_demo")) -> None:
     """Run paper-derived strategy, tyre-energy and degradation demos."""

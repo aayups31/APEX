@@ -18,6 +18,10 @@ timestamp associations, coverage gaps and source disagreements over those archiv
 The [observed fields guide](observed-tables.md) covers source-backed nullable mapping,
 provider-separated evidence, quarantine reasons and complete-run verification.
 
+The [development corpus guide](event-corpus.md) binds multiple verified event
+archives and canonical bundles to one immutable collection, with explicit
+development-only membership and schema/version lineage.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

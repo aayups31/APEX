@@ -1,0 +1,13 @@
+{
+  "schema_version": "apex-session-link-v1",
+  "season": 2024,
+  "round_number": 16,
+  "session_code": "Q",
+  "session_date": "2024-08-31",
+  "fastf1_event_name": "Italian Grand Prix",
+  "openf1_session_key": 9586,
+  "openf1_meeting_key": 1244,
+  "openf1_circuit_key": 39,
+  "jolpica_circuit_id": "monza",
+  "rationale": "Explicit development-only linkage: frozen Jolpica 2024 round 16 Italian GP/Monza calendar and August 31 qualifying date; independently downloaded FastF1 exact year/round/Q identity; OpenF1 sessions query year=2024 country_name=Italy session_name=Qualifying returns Monza key 9586, meeting 1244, circuit 39. No fuzzy names, outcome-based selection or benchmark membership."
+}

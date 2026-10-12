@@ -1,0 +1,18 @@
+[
+  {
+    "fastf1": "fastf1-2024-r12-q-v2",
+    "openf1": "openf1-9554-20260916",
+    "jolpica": "jolpica-2024-20260916",
+    "observed": "observed-british-2024-q-20261008",
+    "rationale": "Previously inspected British qualifying development evidence; permanently excluded from untouched benchmark eligibility.",
+    "role": "DEVELOPMENT"
+  },
+  {
+    "fastf1": "fastf1-2024-r16-q-20261011",
+    "openf1": "openf1-9586-20261011",
+    "jolpica": "jolpica-2024-20260916",
+    "observed": "observed-monza-2024-q-20261011",
+    "rationale": "Monza qualifying selected before telemetry inspection as a second development event with a different circuit. No outcome-based selection or untouched benchmark claim.",
+    "role": "DEVELOPMENT"
+  }
+]
