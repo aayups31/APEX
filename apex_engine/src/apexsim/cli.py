@@ -317,6 +317,58 @@ def verify_benchmark_reservation_command(reservation: Path) -> None:
     typer.echo(json.dumps(load_benchmark_reservation(reservation), indent=2))
 
 
+@app.command("build-tyre-dataset")
+def build_tyre_dataset_command(archives: Annotated[list[Path], typer.Option()], calendar: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Build source-labelled dry race segments from verified non-benchmark archives."""
+    from apexsim.data.tyre_dataset import build_tyre_dataset
+    from apexsim.provenance import write_manifest
+
+    if output.exists():
+        raise FileExistsError(f"Tyre dataset output already exists: {output}")
+    if any(output.resolve().is_relative_to(p.resolve()) for p in [*archives, calendar]):
+        raise ValueError("Tyre dataset output must be outside source archives")
+    dataset = build_tyre_dataset(archives, calendar)
+    write_manifest(output, dataset)
+    typer.echo(json.dumps({"content_sha256": dataset["content_sha256"], "segments": len(dataset["segments"]),
+                           "events": [s["event_id"] for s in dataset["sources"]]}, indent=2))
+
+
+@app.command("tyre-degradation-demo")
+def tyre_degradation_demo_command(dataset: Path, output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Fit causal tyre pace and conditional Bayesian hierarchy with frozen evaluation."""
+    from apexsim.examples.tyre_degradation_demo import run_tyre_degradation_demo
+
+    summary = run_tyre_degradation_demo(dataset, output, profile=profile)
+    typer.echo(json.dumps({"profile": summary["profile"], "R021_passed": summary["R021_passed"],
+                           "R022_passed": summary["R022_passed"], "content_sha256": summary["content_sha256"]}, indent=2))
+
+
+@app.command("tyre-degradation-smoke")
+def tyre_degradation_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """Run a SIMULATED offline study for artifact verification only."""
+    from apexsim.examples.tyre_degradation_demo import (
+        make_tyre_smoke_dataset,
+        run_tyre_degradation_demo,
+        verify_tyre_study,
+    )
+    from apexsim.provenance import write_manifest
+
+    dataset = output.with_name(output.name + "-simulated-input.json")
+    if output.exists() or dataset.exists():
+        raise FileExistsError("Smoke study requires fresh input and output paths")
+    write_manifest(dataset, make_tyre_smoke_dataset())
+    run_tyre_degradation_demo(dataset, output, profile="smoke")
+    typer.echo(json.dumps(verify_tyre_study(output), indent=2))
+
+
+@app.command("verify-tyre-study")
+def verify_tyre_study_command(output: Path) -> None:
+    """Verify saved tyre-study artifacts and posterior arrays without refitting."""
+    from apexsim.examples.tyre_degradation_demo import verify_tyre_study
+
+    typer.echo(json.dumps(verify_tyre_study(output), indent=2))
+
+
 @app.command("research-demo")
 def research_demo(output: Path = Path("artifacts/research_demo")) -> None:
     """Run paper-derived strategy, tyre-energy and degradation demos."""

@@ -19,8 +19,8 @@ R017,R1,P0,RL,Train SAC on identical FIENI environment,exact oracle,regret/runti
 R018,R1,P0,replication,Reconstruct nominal and disturbance paper scenarios,SAC + oracle,directional/published tolerance report,DONE
 R019,R2,P0,data,Build immutable FastF1/OpenF1 event manifests,,"hashes, versions and schemas stored",DONE
 R020,R2,P0,data,Create permanent untouched benchmark event set,event manifests,no benchmark used in calibration,DONE
-R021,R2,P0,tyres,Fit fuel-corrected latent tyre degradation model,public lap/stint data,rolling-origin held-out metrics,TODO
-R022,R2,P1,tyres,Add Bayesian hierarchical compound/track/driver model,latent starter,posterior predictive calibration,TODO
+R021,R2,P0,tyres,Fit fuel-corrected latent tyre degradation model,public lap/stint data,rolling-origin held-out metrics,IN_PROGRESS
+R022,R2,P1,tyres,Add Bayesian hierarchical compound/track/driver model,latent starter,posterior predictive calibration,IN_PROGRESS
 R023,R2,P1,tyres,Add robust skewed-t observation model,Bayesian model,CRPS/RMSPE improvement or reject,TODO
 R024,R2,P0,forecasting,Build tyre-energy proxy dataset with provenance,canonical telemetry,measured/proxy flags complete,TODO
 R025,R2,P0,forecasting,"Benchmark linear, ridge, XGBoost, GRU, LSTM and TFT",proxy dataset,matched train/test protocol,TODO
