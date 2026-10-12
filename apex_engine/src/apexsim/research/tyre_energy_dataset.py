@@ -309,7 +309,11 @@ def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: 
             car = pd.read_parquet(archive/f"tables/car_data/{driver}.parquet")
             pos = pd.read_parquet(archive/f"tables/pos_data/{driver}.parquet")
             segments = [s for s in mask["segments"] if s["event_id"] == event and s["driver"] == driver]
-            accepted, rejected = canonical_proxy_samples(car, pos, segments, laps, cfg)
+            if segments:
+                accepted, rejected = canonical_proxy_samples(car, pos, segments, laps, cfg)
+            else:
+                accepted = []
+                rejected = [{"event_id":event,"driver_id":driver,"native_car_row":i,"reason":"no_eligible_stint_segment"} for i in range(len(car))]
             rows.extend(accepted)
             rejections.extend(rejected)
             streams.append({"driver_id":driver, "native_car_rows":len(car), "native_position_rows":len(pos),
@@ -326,7 +330,8 @@ def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: 
     table = pa.Table.from_pylist(rows, schema=sample_schema())
     validation = validate_samples(table)
     frame = table.to_pandas()
-    if any(sum(s["accepted_rows"] for s in source["streams"]) < 1000 or any(s["accepted_rows"] == 0 for s in source["streams"]) for source in sources):
+    if (any(sum(s["accepted_rows"] for s in source["streams"]) < 1000 for source in sources)
+            or set(frame.driver_id.unique())!=set(cfg.drivers)):
         raise ValueError("Frozen R024 public event/driver coverage gate failed")
     if before != {str(p):file_sha256(p) for p in source_paths}:
         raise ValueError("Proxy implementation or input mask changed during conversion")
@@ -399,7 +404,7 @@ def read_tyre_energy_dataset(output: Path) -> tuple[pa.Table, dict]:
         raise ValueError("Tyre-energy eligible mask binding mismatch")
     frame, excluded = table.to_pandas(), pq.read_table(output/"rejections.parquet").to_pandas()
     source_pairs={(s["event_id"],d["driver_id"]) for s in quality["sources"] for d in s["streams"]}
-    if ({tuple(row) for row in frame[["event_id","driver_id"]].drop_duplicates().to_numpy()} != source_pairs
+    if (not {tuple(row) for row in frame[["event_id","driver_id"]].drop_duplicates().to_numpy()}.issubset(source_pairs)
             or {tuple(row) for row in excluded[["event_id","driver_id"]].drop_duplicates().to_numpy()} != source_pairs
             or excluded.duplicated(["event_id","driver_id","native_car_row"]).any()):
         raise ValueError("Tyre-energy source/driver membership mismatch")

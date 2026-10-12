@@ -147,9 +147,10 @@ def dataset(tmp_path_factory):
         (archive/"tables/pos_data").mkdir()
         lap_frames=[]
         for driver in ("4","44"):
-            car,pos,laps,segments=stream(n=800,acceleration=0.,event=event,driver=driver)
+            car,pos,laps,segments=stream(n=1200,acceleration=0.,event=event,driver=driver)
             segments[0]["rows"][0]["native_row"]=len(lap_frames)
-            all_segments.extend(segments)
+            if not (event=="F1_2024_R03" and driver=="44"):
+                all_segments.extend(segments)
             lap_frames.append(laps)
             car.to_parquet(archive/f"tables/car_data/{driver}.parquet")
             pos.to_parquet(archive/f"tables/pos_data/{driver}.parquet")
@@ -188,6 +189,11 @@ def test_cli_artifact_reload_and_relocation(dataset,tmp_path):
     assert json.loads(result.output)["measured_wheel_targets"]==0
     table,_=read_tyre_energy_dataset(relocated)
     assert len(table)>7000
+    quality=json.loads((relocated/"quality.json").read_text())
+    source=next(s for s in quality["sources"] if s["event_id"]=="F1_2024_R03")
+    missing=next(s for s in source["streams"] if s["driver_id"]=="44")
+    assert missing["accepted_rows"]==0
+    assert missing["rejection_counts"]=={"no_eligible_stint_segment":1200}
 
 
 def test_corruption_and_output_reuse_refused(dataset,tmp_path):

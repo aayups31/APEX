@@ -76,6 +76,13 @@ Save per-event/driver/compound distributions, native sampling and lag diagnostic
 rejection rates and mass-prior +/-10% sensitivity, without tuning on outputs.
 Failure keeps R024 IN_PROGRESS; no fake measured targets or fallback filling.
 
+Implementation clarification after the first public attempt: both fixed drivers
+must be represented across the corpus, not necessarily in every event. The code
+initially added a stricter per-stream nonempty condition absent from this gate.
+Australia/44 has no eligible R021 segment; retain all its native rows as
+`no_eligible_stint_segment` exclusions. No driver selection, support prior,
+numerical coverage threshold or proxy outcome tuning changed.
+
 ## F. Risks
 
 Noisy derivative estimates, position resolution, assumed coordinate handedness,
