@@ -40,3 +40,7 @@ not a substitute for that gate or for a validated causal feature builder.
 Large source data remains ignored. Git stores code, membership/protocol and
 compact verification evidence. Hashes establish integrity, not cache authenticity,
 broadcast completeness, source licences or predictive accuracy.
+
+R020 adds a default [permanent benchmark guard](permanent-benchmark.md). Protected
+query, archive-identity or link metadata is refused before native payload reads;
+the development corpus cannot admit a reserved weekend under a different name.

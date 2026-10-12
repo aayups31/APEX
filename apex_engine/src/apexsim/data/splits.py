@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pyarrow as pa
 
+from apexsim.data.benchmark_guard import assert_development_sessions
 from apexsim.data.tables import read_dataset, validate_table
 from apexsim.provenance import payload_sha256, write_manifest
 
@@ -21,6 +22,7 @@ def validate_assignments(sessions: pa.Table, assignments: Mapping[str, Sequence[
     rather than silently rerandomized whenever a source session is added.
     """
     validate_table("sessions", sessions)
+    assert_development_sessions(sessions.to_pylist())
     if set(assignments) != set(PARTITIONS):
         raise ValueError("Splits require exactly train, val and test partitions")
     rows = {row["session_id"]: row for row in sessions.to_pylist()}

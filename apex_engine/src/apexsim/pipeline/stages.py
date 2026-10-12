@@ -79,6 +79,11 @@ def quality_stage(canonical_path: Path, run_dir: Path) -> dict:
 def dataset_stage(config: ProjectConfig, canonical_path: Path, run_dir: Path) -> dict:
     split_path = run_dir / "splits.json"
     scaler_path = run_dir / "standardizer.json"
+    # Frozen membership is checked even when split/scaler files already exist.
+    if config.data.split_manifest_path is not None:
+        from apexsim.data.splits import load_splits
+
+        load_splits(config.data.split_manifest_path, config.data.public_dataset_path)
     if split_path.exists() and scaler_path.exists():
         return {
             "splits": json.loads(split_path.read_text(encoding="utf-8")),

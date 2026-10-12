@@ -301,6 +301,22 @@ def verify_event_corpus_command(manifest: Path, evidence_root: Path) -> None:
     typer.echo(json.dumps(verify_event_corpus(manifest, evidence_root), indent=2))
 
 
+@app.command("freeze-benchmark-reservation")
+def freeze_benchmark_reservation_command(calendars: Annotated[list[Path], typer.Option()], development_corpus: Annotated[Path, typer.Option()], evidence_root: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], purpose: str) -> None:
+    """Reserve whole events from calendar metadata without acquiring benchmark telemetry."""
+    from apexsim.data.benchmark_reservation import freeze_benchmark_reservation
+
+    typer.echo(json.dumps(freeze_benchmark_reservation(calendars, development_corpus, evidence_root, output, purpose=purpose), indent=2))
+
+
+@app.command("verify-benchmark-reservation")
+def verify_benchmark_reservation_command(reservation: Path) -> None:
+    """Verify sealed systematic event membership using metadata only."""
+    from apexsim.data.benchmark_reservation import load_benchmark_reservation
+
+    typer.echo(json.dumps(load_benchmark_reservation(reservation), indent=2))
+
+
 @app.command("research-demo")
 def research_demo(output: Path = Path("artifacts/research_demo")) -> None:
     """Run paper-derived strategy, tyre-energy and degradation demos."""

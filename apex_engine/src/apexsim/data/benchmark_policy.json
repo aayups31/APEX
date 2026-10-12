@@ -1,0 +1,1212 @@
+{
+  "calendars": [
+    {
+      "archive_sha256": "62f7dad20cf71d1a5b00a5c9476d95f7ca0972d4b16bdbae369f03cc034162c8",
+      "environment": {
+        "apexsim": "0.4.0",
+        "python": "3.12.12",
+        "requests": "2.34.2"
+      },
+      "event_catalog": {
+        "complete_source_query": true,
+        "events": [
+          {
+            "circuit_id": "bahrain",
+            "event_id": "F1_2023_R01",
+            "race_date": "2023-03-05",
+            "race_name": "Bahrain Grand Prix",
+            "race_time_utc": "15:00:00Z",
+            "round_number": 1,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "jeddah",
+            "event_id": "F1_2023_R02",
+            "race_date": "2023-03-19",
+            "race_name": "Saudi Arabian Grand Prix",
+            "race_time_utc": "17:00:00Z",
+            "round_number": 2,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "albert_park",
+            "event_id": "F1_2023_R03",
+            "race_date": "2023-04-02",
+            "race_name": "Australian Grand Prix",
+            "race_time_utc": "05:00:00Z",
+            "round_number": 3,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "baku",
+            "event_id": "F1_2023_R04",
+            "race_date": "2023-04-30",
+            "race_name": "Azerbaijan Grand Prix",
+            "race_time_utc": "11:00:00Z",
+            "round_number": 4,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "miami",
+            "event_id": "F1_2023_R05",
+            "race_date": "2023-05-07",
+            "race_name": "Miami Grand Prix",
+            "race_time_utc": "19:30:00Z",
+            "round_number": 5,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "monaco",
+            "event_id": "F1_2023_R06",
+            "race_date": "2023-05-28",
+            "race_name": "Monaco Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 6,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "catalunya",
+            "event_id": "F1_2023_R07",
+            "race_date": "2023-06-04",
+            "race_name": "Spanish Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 7,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "villeneuve",
+            "event_id": "F1_2023_R08",
+            "race_date": "2023-06-18",
+            "race_name": "Canadian Grand Prix",
+            "race_time_utc": "18:00:00Z",
+            "round_number": 8,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "red_bull_ring",
+            "event_id": "F1_2023_R09",
+            "race_date": "2023-07-02",
+            "race_name": "Austrian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 9,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "silverstone",
+            "event_id": "F1_2023_R10",
+            "race_date": "2023-07-09",
+            "race_name": "British Grand Prix",
+            "race_time_utc": "14:00:00Z",
+            "round_number": 10,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "hungaroring",
+            "event_id": "F1_2023_R11",
+            "race_date": "2023-07-23",
+            "race_name": "Hungarian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 11,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "spa",
+            "event_id": "F1_2023_R12",
+            "race_date": "2023-07-30",
+            "race_name": "Belgian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 12,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "zandvoort",
+            "event_id": "F1_2023_R13",
+            "race_date": "2023-08-27",
+            "race_name": "Dutch Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 13,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "monza",
+            "event_id": "F1_2023_R14",
+            "race_date": "2023-09-03",
+            "race_name": "Italian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 14,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "marina_bay",
+            "event_id": "F1_2023_R15",
+            "race_date": "2023-09-17",
+            "race_name": "Singapore Grand Prix",
+            "race_time_utc": "12:00:00Z",
+            "round_number": 15,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "suzuka",
+            "event_id": "F1_2023_R16",
+            "race_date": "2023-09-24",
+            "race_name": "Japanese Grand Prix",
+            "race_time_utc": "05:00:00Z",
+            "round_number": 16,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "losail",
+            "event_id": "F1_2023_R17",
+            "race_date": "2023-10-08",
+            "race_name": "Qatar Grand Prix",
+            "race_time_utc": "17:00:00Z",
+            "round_number": 17,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "americas",
+            "event_id": "F1_2023_R18",
+            "race_date": "2023-10-22",
+            "race_name": "United States Grand Prix",
+            "race_time_utc": "19:00:00Z",
+            "round_number": 18,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "rodriguez",
+            "event_id": "F1_2023_R19",
+            "race_date": "2023-10-29",
+            "race_name": "Mexico City Grand Prix",
+            "race_time_utc": "20:00:00Z",
+            "round_number": 19,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "interlagos",
+            "event_id": "F1_2023_R20",
+            "race_date": "2023-11-05",
+            "race_name": "S\u00e3o Paulo Grand Prix",
+            "race_time_utc": "17:00:00Z",
+            "round_number": 20,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "vegas",
+            "event_id": "F1_2023_R21",
+            "race_date": "2023-11-19",
+            "race_name": "Las Vegas Grand Prix",
+            "race_time_utc": "06:00:00Z",
+            "round_number": 21,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "yas_marina",
+            "event_id": "F1_2023_R22",
+            "race_date": "2023-11-26",
+            "race_name": "Abu Dhabi Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 22,
+            "season": 2023,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          }
+        ],
+        "notes": [
+          "Provider-reported calendar metadata; not measured on-track session starts.",
+          "Stable event IDs are derived from season/round; provider session linkage remains separate."
+        ],
+        "rows": 22,
+        "schema_version": "apex-event-catalog-v1",
+        "season": 2023
+      },
+      "events_file_sha256": "dac197a8a49d940901524059b1d25a7f13844a803c4a8ac94069cc41f38c369e",
+      "query": {
+        "page_size": 5,
+        "season": 2023
+      }
+    },
+    {
+      "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+      "environment": {
+        "apexsim": "0.4.0",
+        "python": "3.12.12",
+        "requests": "2.34.2"
+      },
+      "event_catalog": {
+        "complete_source_query": true,
+        "events": [
+          {
+            "circuit_id": "bahrain",
+            "event_id": "F1_2024_R01",
+            "race_date": "2024-03-02",
+            "race_name": "Bahrain Grand Prix",
+            "race_time_utc": "15:00:00Z",
+            "round_number": 1,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "jeddah",
+            "event_id": "F1_2024_R02",
+            "race_date": "2024-03-09",
+            "race_name": "Saudi Arabian Grand Prix",
+            "race_time_utc": "17:00:00Z",
+            "round_number": 2,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "albert_park",
+            "event_id": "F1_2024_R03",
+            "race_date": "2024-03-24",
+            "race_name": "Australian Grand Prix",
+            "race_time_utc": "04:00:00Z",
+            "round_number": 3,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "suzuka",
+            "event_id": "F1_2024_R04",
+            "race_date": "2024-04-07",
+            "race_name": "Japanese Grand Prix",
+            "race_time_utc": "05:00:00Z",
+            "round_number": 4,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "shanghai",
+            "event_id": "F1_2024_R05",
+            "race_date": "2024-04-21",
+            "race_name": "Chinese Grand Prix",
+            "race_time_utc": "07:00:00Z",
+            "round_number": 5,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "miami",
+            "event_id": "F1_2024_R06",
+            "race_date": "2024-05-05",
+            "race_name": "Miami Grand Prix",
+            "race_time_utc": "20:00:00Z",
+            "round_number": 6,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "imola",
+            "event_id": "F1_2024_R07",
+            "race_date": "2024-05-19",
+            "race_name": "Emilia Romagna Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 7,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "monaco",
+            "event_id": "F1_2024_R08",
+            "race_date": "2024-05-26",
+            "race_name": "Monaco Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 8,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "villeneuve",
+            "event_id": "F1_2024_R09",
+            "race_date": "2024-06-09",
+            "race_name": "Canadian Grand Prix",
+            "race_time_utc": "18:00:00Z",
+            "round_number": 9,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "catalunya",
+            "event_id": "F1_2024_R10",
+            "race_date": "2024-06-23",
+            "race_name": "Spanish Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 10,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "red_bull_ring",
+            "event_id": "F1_2024_R11",
+            "race_date": "2024-06-30",
+            "race_name": "Austrian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 11,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "silverstone",
+            "event_id": "F1_2024_R12",
+            "race_date": "2024-07-07",
+            "race_name": "British Grand Prix",
+            "race_time_utc": "14:00:00Z",
+            "round_number": 12,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "hungaroring",
+            "event_id": "F1_2024_R13",
+            "race_date": "2024-07-21",
+            "race_name": "Hungarian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 13,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "spa",
+            "event_id": "F1_2024_R14",
+            "race_date": "2024-07-28",
+            "race_name": "Belgian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 14,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "zandvoort",
+            "event_id": "F1_2024_R15",
+            "race_date": "2024-08-25",
+            "race_name": "Dutch Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 15,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "monza",
+            "event_id": "F1_2024_R16",
+            "race_date": "2024-09-01",
+            "race_name": "Italian Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 16,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "baku",
+            "event_id": "F1_2024_R17",
+            "race_date": "2024-09-15",
+            "race_name": "Azerbaijan Grand Prix",
+            "race_time_utc": "11:00:00Z",
+            "round_number": 17,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "marina_bay",
+            "event_id": "F1_2024_R18",
+            "race_date": "2024-09-22",
+            "race_name": "Singapore Grand Prix",
+            "race_time_utc": "12:00:00Z",
+            "round_number": 18,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "americas",
+            "event_id": "F1_2024_R19",
+            "race_date": "2024-10-20",
+            "race_name": "United States Grand Prix",
+            "race_time_utc": "19:00:00Z",
+            "round_number": 19,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "rodriguez",
+            "event_id": "F1_2024_R20",
+            "race_date": "2024-10-27",
+            "race_name": "Mexico City Grand Prix",
+            "race_time_utc": "20:00:00Z",
+            "round_number": 20,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "interlagos",
+            "event_id": "F1_2024_R21",
+            "race_date": "2024-11-03",
+            "race_name": "S\u00e3o Paulo Grand Prix",
+            "race_time_utc": "17:00:00Z",
+            "round_number": 21,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "vegas",
+            "event_id": "F1_2024_R22",
+            "race_date": "2024-11-23",
+            "race_name": "Las Vegas Grand Prix",
+            "race_time_utc": "06:00:00Z",
+            "round_number": 22,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "losail",
+            "event_id": "F1_2024_R23",
+            "race_date": "2024-12-01",
+            "race_name": "Qatar Grand Prix",
+            "race_time_utc": "16:00:00Z",
+            "round_number": 23,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          },
+          {
+            "circuit_id": "yas_marina",
+            "event_id": "F1_2024_R24",
+            "race_date": "2024-12-08",
+            "race_name": "Abu Dhabi Grand Prix",
+            "race_time_utc": "13:00:00Z",
+            "round_number": 24,
+            "season": 2024,
+            "source": "jolpica",
+            "truth_labels": {
+              "circuit_id": "MEASURED",
+              "event_id": "RECONSTRUCTED",
+              "race_date": "MEASURED",
+              "race_name": "MEASURED",
+              "race_time_utc": "MEASURED",
+              "round_number": "MEASURED",
+              "season": "MEASURED"
+            }
+          }
+        ],
+        "notes": [
+          "Provider-reported calendar metadata; not measured on-track session starts.",
+          "Stable event IDs are derived from season/round; provider session linkage remains separate."
+        ],
+        "rows": 24,
+        "schema_version": "apex-event-catalog-v1",
+        "season": 2024
+      },
+      "events_file_sha256": "4f8ca84bb6fcaeb5ba5e3398e62aea547a2b8a0386549a79b9f715ce17e0ed10",
+      "query": {
+        "page_size": 5,
+        "season": 2024
+      }
+    }
+  ],
+  "calibration_allowed": false,
+  "content_sha256": "7d690115b7bcd0a52f20acdbf44e628e82efe556b48caf5ebe49b15e29b4ea7d",
+  "created_at_utc": "2026-10-12T02:05:42.642126+00:00",
+  "development_corpus_sha256": "fe590620134cd63ccfb36b9c0eb79c8e0a0dc8b368582d5ff416e4c889ea922d",
+  "event_count": 9,
+  "excluded_event_keys": [
+    [
+      2024,
+      12
+    ],
+    [
+      2024,
+      16
+    ]
+  ],
+  "implementation_sha256": "d47fee0cef3998db5f0b3de1e43df87cc6d280f97683e8d61e096bbef33535e9",
+  "inspection_inventory": [
+    {
+      "basis": "conservative partial-cache directory query; not authoritative source identity",
+      "event_id": "F1_2024_R12",
+      "metadata_file": null,
+      "metadata_sha256": null,
+      "path": "fastf1-2024-r12-q",
+      "round_number": 12,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R12",
+      "metadata_file": "snapshot.json",
+      "metadata_sha256": "ae02900aa96e55186c7142d557e3995ac1e8ac9f2a009f6796d6b2238ba81b6e",
+      "path": "fastf1-2024-r12-q-offline",
+      "round_number": 12,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R12",
+      "metadata_file": "manifest.json",
+      "metadata_sha256": "a8749c00107cb8703a991c29794bf97497ca382c7e297c551f9d05f33a34640b",
+      "path": "fastf1-2024-r12-q-v2",
+      "round_number": 12,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R16",
+      "metadata_file": "manifest.json",
+      "metadata_sha256": "293d3aafbd58ff3516db7f190e169f6c221802f98216b28d004bda87eaed9a4b",
+      "path": "fastf1-2024-r16-q-20261011",
+      "round_number": 16,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R16",
+      "metadata_file": "snapshot.json",
+      "metadata_sha256": "b1a8a95b85a70519a179af440417ca9dd2d01fafccb562a32fda0246196466f3",
+      "path": "fastf1-2024-r16-q-offline-20261011",
+      "round_number": 16,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R12",
+      "metadata_file": "manifest.json",
+      "metadata_sha256": "b9692f446d48c2839b9939c510823b72d957b16a9226dd287d9a96f96910c4cf",
+      "path": "openf1-9554-20260916",
+      "round_number": 12,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R12",
+      "metadata_file": "snapshot.json",
+      "metadata_sha256": "027867b5da1289212f6830c1ebaceb4b57ecfdd5c40450c9af939a6e826d3a7b",
+      "path": "openf1-9554-20260916-replay",
+      "round_number": 12,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R16",
+      "metadata_file": "manifest.json",
+      "metadata_sha256": "2ba3ee69f17089940aaeae0fb0b0576a0bd0b9b3a9b405018dc6bdbf2390cb09",
+      "path": "openf1-9586-20261011",
+      "round_number": 16,
+      "season": 2024
+    },
+    {
+      "basis": "archive/snapshot identity metadata",
+      "event_id": "F1_2024_R16",
+      "metadata_file": "snapshot.json",
+      "metadata_sha256": "84ff3ab6251c4bb1c2a388ffdea313697213177f119e5eb62888f3a19e9b10eb",
+      "path": "openf1-9586-offline-20261011",
+      "round_number": 16,
+      "season": 2024
+    }
+  ],
+  "limitations": [
+    "Reservation only; no acquired benchmark dataset or calibrated prediction claim.",
+    "Untouched claim covers managed APEX source/modelling history, not unknown external human exposure.",
+    "Technical metadata/QC access is separate from outcome inspection; no telemetry opened here.",
+    "No silent replacement for missing future source coverage; preserve these protected weekends."
+  ],
+  "members": [
+    {
+      "circuit_id": "baku",
+      "event_id": "F1_2023_R04",
+      "race_date": "2023-04-30",
+      "race_name": "Azerbaijan Grand Prix",
+      "race_time_utc": "11:00:00Z",
+      "round_number": 4,
+      "season": 2023,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "villeneuve",
+      "event_id": "F1_2023_R08",
+      "race_date": "2023-06-18",
+      "race_name": "Canadian Grand Prix",
+      "race_time_utc": "18:00:00Z",
+      "round_number": 8,
+      "season": 2023,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "spa",
+      "event_id": "F1_2023_R12",
+      "race_date": "2023-07-30",
+      "race_name": "Belgian Grand Prix",
+      "race_time_utc": "13:00:00Z",
+      "round_number": 12,
+      "season": 2023,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "suzuka",
+      "event_id": "F1_2023_R16",
+      "race_date": "2023-09-24",
+      "race_name": "Japanese Grand Prix",
+      "race_time_utc": "05:00:00Z",
+      "round_number": 16,
+      "season": 2023,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "interlagos",
+      "event_id": "F1_2023_R20",
+      "race_date": "2023-11-05",
+      "race_name": "S\u00e3o Paulo Grand Prix",
+      "race_time_utc": "17:00:00Z",
+      "round_number": 20,
+      "season": 2023,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "suzuka",
+      "event_id": "F1_2024_R04",
+      "race_date": "2024-04-07",
+      "race_name": "Japanese Grand Prix",
+      "race_time_utc": "05:00:00Z",
+      "round_number": 4,
+      "season": 2024,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "monaco",
+      "event_id": "F1_2024_R08",
+      "race_date": "2024-05-26",
+      "race_name": "Monaco Grand Prix",
+      "race_time_utc": "13:00:00Z",
+      "round_number": 8,
+      "season": 2024,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "rodriguez",
+      "event_id": "F1_2024_R20",
+      "race_date": "2024-10-27",
+      "race_name": "Mexico City Grand Prix",
+      "race_time_utc": "20:00:00Z",
+      "round_number": 20,
+      "season": 2024,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    },
+    {
+      "circuit_id": "yas_marina",
+      "event_id": "F1_2024_R24",
+      "race_date": "2024-12-08",
+      "race_name": "Abu Dhabi Grand Prix",
+      "race_time_utc": "13:00:00Z",
+      "round_number": 24,
+      "season": 2024,
+      "source": "jolpica",
+      "truth_labels": {
+        "circuit_id": "MEASURED",
+        "event_id": "RECONSTRUCTED",
+        "race_date": "MEASURED",
+        "race_name": "MEASURED",
+        "race_time_utc": "MEASURED",
+        "round_number": "MEASURED",
+        "season": "MEASURED"
+      }
+    }
+  ],
+  "purpose": "Permanent managed APEX whole-event benchmark; no calibration, tuning or ordinary experiment evaluation",
+  "role": "PERMANENT_BENCHMARK",
+  "schema_version": "apex-permanent-benchmark-reservation-v1",
+  "scope": "ALL_SESSIONS_OF_WHOLE_EVENT",
+  "selection_rule": "calendar rounds divisible by four, excluding acquired/inspected development weekends",
+  "telemetry_acquired_by_this_task": false
+}

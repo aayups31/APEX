@@ -36,7 +36,8 @@ def evidence(tmp_path, monkeypatch):
         (roots["observed"] / "session_link.json").write_text(json.dumps(link))
         manifests = {
             "fastf1": {"query": {"year": 2024, "round_number": round_number, "session": "Q"},
-                       "identity": {"event_name": "Fixture GP", "session_name": "Qualifying", "drivers": ["4"],
+                       "identity": {"year": 2024, "round_number": round_number,
+                                    "event_name": "Fixture GP", "session_name": "Qualifying", "drivers": ["4"],
                                     "t0_date": "2024-07-06T14:00:00", "session_start_time_s": 0,
                                     "api_path": f"fixture/{round_number}"}},
             "openf1": {"query": {"session_key": key}, "identity": {"year": 2024, "session_key": key,
@@ -169,3 +170,18 @@ def test_source_mutation_during_freeze(evidence, monkeypatch):
     with pytest.raises(ValueError, match="changed during"):
         freeze_event_corpus(root, specs, root / "mutation.json", purpose="Fixture")
     assert not (root / "mutation.json").exists()
+
+
+def test_benchmark_refused_before_provider_payload_verifiers(evidence, monkeypatch):
+    root, specs = evidence
+    path = root / specs[0].fastf1 / "manifest.json"
+    value = json.loads(path.read_text())
+    value["query"].update(year=2023, round_number=4)
+    path.write_text(json.dumps(value))
+    def never_read(*args):
+        pytest.fail("Protected provider payload was opened")
+    monkeypatch.setattr(module, "verify_fastf1_archive", never_read)
+    monkeypatch.setattr(module, "verify_openf1_archive", never_read)
+    with pytest.raises(ValueError, match="Permanent benchmark"):
+        freeze_event_corpus(root, specs, root / "benchmark.json", purpose="Cannot admit held-out weekend")
+    assert not (root / "benchmark.json").exists()

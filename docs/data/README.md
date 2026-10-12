@@ -22,6 +22,10 @@ The [development corpus guide](event-corpus.md) binds multiple verified event
 archives and canonical bundles to one immutable collection, with explicit
 development-only membership and schema/version lineage.
 
+The [permanent benchmark boundary](permanent-benchmark.md) reserves whole weekends
+from calendar metadata and excludes them from managed development and ordinary
+experiment splits, independently of session names and event aliases.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

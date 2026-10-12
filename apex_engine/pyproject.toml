@@ -40,7 +40,7 @@ apexsim = "apexsim.cli:app"
 where = ["src"]
 
 [tool.setuptools.package-data]
-apexsim = ["web/*.html", "web/*.css", "web/*.js"]
+apexsim = ["web/*.html", "web/*.css", "web/*.js", "data/benchmark_policy.json"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

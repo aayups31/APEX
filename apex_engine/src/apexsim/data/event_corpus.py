@@ -13,6 +13,7 @@ from pathlib import Path, PurePosixPath
 
 from apexsim import __version__
 from apexsim.data.alignment_report import validate_link
+from apexsim.data.benchmark_guard import assert_development_event
 from apexsim.data.fastf1_archive import verify_fastf1_archive
 from apexsim.data.jolpica import verify_jolpica_archive
 from apexsim.data.observed import verify_observed_tables
@@ -66,11 +67,16 @@ def _entry(root: Path, spec: CorpusSession) -> dict:
     paths = {name: _path(root, getattr(spec, name)) for name in ("fastf1", "openf1", "jolpica", "observed")}
     if len({p.resolve() for p in paths.values()}) != 4:
         raise ValueError("Corpus archive paths must be distinct")
+    # Read identity metadata before native verifier payloads: never inspect a protected weekend here.
+    fast_metadata = json.loads((paths["fastf1"] / "manifest.json").read_text(encoding="utf-8"))
+    link = json.loads((paths["observed"] / "session_link.json").read_text(encoding="utf-8"))
+    assert_development_event(fast_metadata["query"]["year"], fast_metadata["query"]["round_number"])
+    assert_development_event(fast_metadata["identity"]["year"], fast_metadata["identity"]["round_number"])
+    assert_development_event(link["season"], link["round_number"])
     archives = {"fastf1": verify_fastf1_archive(paths["fastf1"]),
                 "openf1": verify_openf1_archive(paths["openf1"]),
                 "jolpica": verify_jolpica_archive(paths["jolpica"])}
     observed = verify_observed_tables(paths["observed"])
-    link = json.loads((paths["observed"] / "session_link.json").read_text(encoding="utf-8"))
     identity = validate_link(link, archives["fastf1"], archives["openf1"], archives["jolpica"], paths["jolpica"])
     if observed["identity"] != identity or observed["source_archives_sha256"] != {
             name: m["content_sha256"] for name, m in archives.items()}:

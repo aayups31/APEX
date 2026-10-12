@@ -39,6 +39,8 @@ jobs:
         run: python -m py_compile dags/apexsim_dag.py
       - name: Verify public-data artifacts
         run: python -m apexsim.cli public-data-demo --output .cache/ci-public-data
+      - name: Verify permanent benchmark reservation
+        run: python -m apexsim.cli verify-benchmark-reservation apex_engine/src/apexsim/data/benchmark_policy.json
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
