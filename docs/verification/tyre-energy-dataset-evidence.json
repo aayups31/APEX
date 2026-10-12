@@ -356,6 +356,7 @@
   "benchmark_telemetry_acquired": false,
   "bulk_artifact": ".cache/tyre-energy-public-corrected-20261012",
   "classification": "ADAPTATION",
+  "completed_date": "2026-10-12",
   "config": {
     "field_truth_labels": {
       "brake_applied": "MEASURED",
@@ -495,8 +496,8 @@
       "wheelbase_m": 3.6
     }
   },
-  "content_sha256": "abb28713870aa1a83f849902b05c94f7d6d181a8f18c5619fca62d33d53543a1",
-  "date": "2026-10-11",
+  "content_sha256": "edd427ad87186818ac3d0cc2d459ffc9c70e8f16071d89c141db690ff22f32e5",
+  "date": "2026-10-12",
   "events": [
     {
       "drivers": [
@@ -1822,6 +1823,7 @@
   "research_foundation_maturity": "R1",
   "run_source_note": "Run started during correction review; recorded base commit dfc2a31 plus actual code fingerprints. Fingerprints match the implementation committed in 65c83a3.",
   "schema_version": "apex-tyre-energy-dataset-evidence-v1",
+  "started_date": "2026-10-11",
   "validation": {
     "airflow_compile": "PASS",
     "baseline": {

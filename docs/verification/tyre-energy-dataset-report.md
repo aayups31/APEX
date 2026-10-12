@@ -2,7 +2,7 @@
 
 ## A. Current state
 
-**R024 DONE**, 2026-10-11. Research inventory **23/73 DONE**, build inventory
+**R024 DONE**, 2026-10-12 (preregistered 2026-10-11). Research inventory **23/73 DONE**, build inventory
 13/66 unchanged. Scoped research R1/kernel R0; no maturity or production promotion.
 R023 remains TODO; R025 is the next P0 dependency-priority slice.
 
@@ -129,7 +129,7 @@ in `65c83a3`. No input or scientific code changed during conversion.
 The [machine evidence](tyre-energy-dataset-evidence.json) includes full quality,
 source manifests, field schemas/labels, distributions, exclusions, config,
 mass sensitivity, replay seals and verification metadata. Evidence seal
-`abb28713870aa1a83f849902b05c94f7d6d181a8f18c5619fca62d33d53543a1`.
+`edd427ad87186818ac3d0cc2d459ffc9c70e8f16071d89c141db690ff22f32e5`.
 Bulk provider telemetry stays ignored. See the [run/data card](../data/tyre-energy-proxy.md).
 
 ## F. Limits
