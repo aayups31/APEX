@@ -26,8 +26,9 @@ interval, and power is kW; `energy=power*dt` is checked on reload. There is no
 0.1 s proprietary sampling claim. Forecast experiments must match durations and
 horizons and must respect `sequence_id` (one event/driver/stint, split after every
 rejected native row). Partition by whole `event_id`; do not feed interleaved
-multi-driver rows to the legacy event-only window helper. R025 will build the
-matched forecasting layer separately.
+multi-driver rows to the legacy event-only window helper. The separate
+[R025 matched forecasting layer](../models/tyre-forecast-benchmark-v1.md) enforces
+these boundaries and retains the proxy interpretation.
 
 The public CLI requires five verified archives and the sealed eligible dataset:
 

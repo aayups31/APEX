@@ -34,7 +34,14 @@ The [R021/R022 tyre-pace adaptation](equations/TYRE_PACE_V1.md) has causal
 whole-event evaluation and a compound/track/driver Bayesian hierarchy on five
 development races. Its [report](../docs/verification/tyre-degradation-report.md)
 records a held-out calibration shortfall. The legacy state-space starter remains
-educational; skewed-t observations are the separate pending R023 study.
+educational. The separate [R023 robust observation adaptation](equations/ROBUST_TYRE_OBSERVATIONS_V1.md)
+retains the Gaussian-trained group posterior and compares causal conditional
+skew-t state inference against a matched Gaussian control.
+
+The [R025 architecture map](equations/TEMPORAL_FUSION_PROXY_V1.md) covers all six
+fitted forecast families, including compact TFT. Their
+[report](../docs/verification/robust-tyre-forecast-report.md) keeps proxy labels,
+validation selection, negative results and checkpoint evidence explicit.
 
 The [FIENI foundation review](equations/FIENI_2025.md) documents corrected resource
 feasibility, hand fixtures and exact tiny-grid benchmarks. Run

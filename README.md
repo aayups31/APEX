@@ -63,7 +63,14 @@ result is separate from production-kernel promotion. See the
 The [R024 tyre-energy dataset](docs/data/tyre-energy-proxy.md) supplies 132,446
 causal proxy samples across those five races, with explicit truth labels, priors,
 UNKNOWN measured wheel targets and native-row exclusions. Native sampling and
-short uninterrupted histories constrain the pending R025 forecasting benchmark.
+short uninterrupted histories constrain forecasting interpretation.
+
+The [R023/R025 study](docs/verification/robust-tyre-forecast-report.md) adds a
+conditional skew-t pace model and a matched six-family proxy forecast benchmark.
+Linear, ridge, XGBoost, GRU, LSTM and compact TFT genuinely train on the frozen
+development split, with reloadable weights and causal persistence/trend controls.
+See the [forecast run guide](docs/models/tyre-forecast-benchmark-v1.md).
+Broader seen/unseen-track evaluation is the next R026 task.
 
 ---
 
@@ -113,7 +120,8 @@ short uninterrupted histories constrain the pending R025 forecasting benchmark.
 - GRU transition models
 - Selective state-space model experiments
 - Recurrent state-space model experiments
-- Tyre-energy forecasting protocols
+- Matched six-family public proxy forecasting, including compact TFT quantiles
+- Conditional skew-t latent pace inference with saved predictive ensembles
 - Reinforcement-learning strategy environment
 - Hybrid SAC training with frozen synthetic tasks, matched optimizer comparisons and inference checkpoints
 - Counterfactual scenario interfaces

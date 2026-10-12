@@ -23,8 +23,13 @@ R024 adds `apexsim.research.tyre_energy_dataset`: a source-bound causal proxy
 dataset on five development races, with 50 labelled fields, UNKNOWN measured
 wheel targets and complete source-row accounting. Its
 [report](../docs/verification/tyre-energy-dataset-report.md) records native
-irregular sampling and short-sequence limits. R025's matched model comparison
-remains pending; dataset completion is not forecasting skill evidence.
+irregular sampling and short-sequence limits. R025 adds
+`apexsim.research.forecast_benchmark` and `temporal_fusion`: all six families
+train genuinely on matched causal histories, with validation-only selection and
+checkpoint replay. The [architecture map](equations/TEMPORAL_FUSION_PROXY_V1.md)
+and [comparison report](../docs/verification/robust-tyre-forecast-report.md)
+retain actual model rankings and proxy-target limits. R026 seen/unseen evidence
+and explanation faithfulness remain separate work.
 
 **Boundary:** measured tyre energy is proprietary. The included estimator is a physics-informed proxy useful for interface and experiment development; it must never be labelled as ground truth.
 
@@ -62,7 +67,10 @@ compound/track/driver inference. R021/R022 use five non-benchmark development ra
 the [report](../docs/verification/tyre-degradation-report.md) retains the nominal
 90% coverage shortfall. This is an independently specified Gaussian adaptation
 motivated by the reviewed abstract, not a full-paper replication. The legacy
-starter remains educational; skewed-t observation modelling is pending R023.
+starter remains educational. R023 adds `apexsim.research.skew_tyre`: the
+[Hansen density and conditional particle filter](equations/ROBUST_TYRE_OBSERVATIONS_V1.md)
+retain Gaussian-trained group draws/Q/R. The robust comparison is accepted for
+conditional research, with raw interval undercoverage and no production promotion.
 
 ### THOMAS_2025 — explainable race-strategy RL
 

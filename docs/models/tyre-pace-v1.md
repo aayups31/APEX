@@ -28,7 +28,9 @@ Fuel is assumed, not measured. Pace is confounded with driver, traffic, car,
 weather and tyre effects. The retrospective source-quality mask does not
 establish online target eligibility. Five events and two training tracks cannot
 establish broad seasonal generalization. Gaussian tails remain a limitation;
-R023 will evaluate a robust observation alternative separately.
+R023 evaluates a [robust observation alternative](robust-tyre-observations-v1.md)
+separately, with Gaussian-trained group draws/Q/R retained. Its improvement
+does not repair the R022 interval-adjustment calibration shortfall.
 
 The all-chain NPZ, configs, all predictions and sealed manifest can be reloaded
 with `verify-tyre-study`. Smoke runs use fewer draws and SIMULATED observations;

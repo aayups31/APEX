@@ -26,8 +26,11 @@ rolling evaluation and Bayesian hierarchical prediction. Its validation interval
 adjustment undercovers nominal 90% on held-out tracks; the frozen descriptive gate
 passes, without a maturity promotion. R024's source-bound tyre-energy proxy
 dataset is complete, including labelled assumptions and native exclusion accounting.
-The next dependency-priority P0 task is R025's matched forecast benchmark.
-R023's robust observation model is also pending. Benchmark reservation alone is not acquired benchmark telemetry;
+R023's conditional robust observation comparison and R025's genuine six-family
+forecast benchmark are documented in the
+[latest verification report](../verification/robust-tyre-forecast-report.md).
+The next dependency-priority P0 task is R026's broader seen/unseen-track evaluation.
+Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 
 ## Kit manifest

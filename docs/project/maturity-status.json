@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-12",
   "research_inventory": {
-    "done": 24,
+    "done": 25,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R025"
+    "R026"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -78,6 +78,37 @@
       "Finite particles and posterior draw subset; finite-ensemble CRPS bias",
       "Reused development test events, not untouched benchmark",
       "No full paper reproduction, guaranteed calibration repair or production promotion"
+    ]
+  },
+  "matched_proxy_forecast_benchmark": {
+    "backlog_id": "R025",
+    "status": "DONE",
+    "completed_date": "2026-10-12",
+    "summary_sha256": "c8f538d7ae46ec06a46d9af1b37fb9e4fe7429ac3c942845976fe2ccf189fe9f",
+    "report": "docs/verification/robust-tyre-forecast-report.md",
+    "promotion": false,
+    "target_quality": "PROXY_NOT_MEASURED",
+    "families": [
+      "linear",
+      "ridge",
+      "xgboost",
+      "gru",
+      "lstm",
+      "tft"
+    ],
+    "origins": {
+      "test": 32582,
+      "train": 19515,
+      "validation": 12671
+    },
+    "validation_selected_family": "xgboost",
+    "limitations": [
+      "R024 proxy targets, not measured wheel energy",
+      "Eight-sample native irregular histories; direct sample-index forecasts",
+      "Training-only vocabularies; test tracks all unseen in this five-event slice",
+      "Validation search budget limited; TFT is a compact architectural adaptation with native quantile loss",
+      "All output projections and raw errors disclosed; no teacher forcing/future covariates",
+      "No R026 broader seen-track study, paper reproduction, explanation faithfulness or production promotion"
     ]
   }
 }
