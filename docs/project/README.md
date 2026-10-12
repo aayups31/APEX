@@ -20,7 +20,10 @@ The research foundation has passed R1 within the reviewed FIENI equation-level
 adaptation scope. The production simulation kernel remains R0. These are
 different evidence domains: the review does not deploy research policies or
 establish R2 public-data accuracy. R019's two-event development corpus is complete;
-the next research task is R020's separate untouched benchmark reservation.
+R020's separate nine-weekend permanent benchmark reservation is complete.
+The next research task is R021's public-data tyre-degradation model with explicit
+fuel assumptions and held-out evaluation. Benchmark reservation alone is not
+an acquired benchmark telemetry dataset or a calibrated R2 model.
 
 ## Kit manifest
 

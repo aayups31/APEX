@@ -46,8 +46,12 @@ builder. Synthetic training and simulation remain available.
 
 The [event corpus](docs/data/event-corpus.md) binds multiple development events
 to their verified provider archives, canonical tables, schema versions and source
-versions. British and Italian 2024 qualifying are the initial development cases;
-an untouched benchmark remains a separate gate.
+versions. British and Italian 2024 qualifying are the initial development cases.
+
+The [permanent benchmark boundary](docs/data/permanent-benchmark.md) reserves
+nine separate whole-event weekends from calendar metadata and excludes them
+from development collections and ordinary experiment splits before fitting.
+Benchmark telemetry acquisition and final evaluation remain later workflows.
 
 ---
 

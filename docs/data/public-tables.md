@@ -129,6 +129,13 @@ work. If round is unavailable, cross-provider event identity relies on the suppl
 event_id. These checks enforce declared grouping, not an independent identity oracle.
 Repeated manual tuning against test data cannot be detected by this manifest.
 
+R020's [permanent benchmark policy](permanent-benchmark.md) additionally rejects
+protected weekends from every ordinary experiment partition, including test.
+This narrows modelling eligibility: unresolved public event identities are still
+archivable, but cannot enter an experiment split. The project reservation is
+default, sealed and digest-pinned; deleting it fails closed. A dedicated final
+benchmark evaluation protocol is separate from these ordinary splits.
+
 ## Remaining work
 
 P1-03/P1-04 now preserve and replay native source archives, P1-05 resolves event

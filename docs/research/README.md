@@ -19,6 +19,8 @@ This directory tracks the published research used to guide APEX.
 - [R1 gate review and decision](../verification/r1-gate-review.md)
 - [R019 historical corpus protocol](../../research/protocols/HISTORICAL_CORPUS.md)
 - [R019 corpus verification](../verification/historical-corpus-report.md)
+- [R020 permanent benchmark protocol](../../research/protocols/PERMANENT_BENCHMARK.md)
+- [R020 benchmark verification](../verification/permanent-benchmark-report.md)
 
 ## Purpose
 

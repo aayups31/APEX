@@ -13,9 +13,16 @@
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-11",
-  "research_inventory": {"done": 19, "total": 73},
+  "research_inventory": {"done": 20, "total": 73},
   "build_inventory": {"done": 13, "total": 66},
-  "next_research_tasks": ["R020"],
+  "next_research_tasks": ["R021"],
+  "permanent_benchmark_reservation": {
+    "event_count": 9,
+    "scope": "ALL_SESSIONS_OF_WHOLE_EVENT",
+    "policy_content_sha256": "7d690115b7bcd0a52f20acdbf44e628e82efe556b48caf5ebe49b15e29b4ea7d",
+    "benchmark_telemetry_acquired": false,
+    "report": "docs/verification/permanent-benchmark-report.md"
+  },
   "limitations": [
     "Other paper families retain their existing starter, proxy and protocol classifications.",
     "Runtime API and fixed component artifact schemas retain their R0 kernel or historical evidence labels.",
