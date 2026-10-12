@@ -379,6 +379,23 @@ def research_demo(output: Path = Path("artifacts/research_demo")) -> None:
     typer.echo(f"Saved research artifacts to {output}")
 
 
+@app.command("build-tyre-energy-dataset")
+def build_tyre_energy_dataset_command(archives: Annotated[list[Path], typer.Option()], eligible_dataset: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Build labelled R024 motion/tyre-energy proxies from frozen native race archives."""
+    from apexsim.research.tyre_energy_dataset import build_tyre_energy_dataset
+
+    typer.echo(json.dumps(build_tyre_energy_dataset(archives, eligible_dataset, output), indent=2))
+
+
+@app.command("verify-tyre-energy-dataset")
+def verify_tyre_energy_dataset_command(dataset: Path) -> None:
+    """Reload proxy field labels, seals and source-row/exclusion accounting."""
+    from apexsim.research.tyre_energy_dataset import read_tyre_energy_dataset, validate_samples
+
+    table, manifest = read_tyre_energy_dataset(dataset)
+    typer.echo(json.dumps({"manifest_sha256": manifest["content_sha256"], **validate_samples(table)}, indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""
