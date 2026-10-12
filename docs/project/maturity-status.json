@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-11",
   "research_inventory": {
-    "done": 22,
+    "done": 23,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R024"
+    "R025"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -48,5 +48,20 @@
     "report": "docs/verification/tyre-degradation-report.md",
     "promotion": false,
     "limitation": "Miami interval adjustment covers 83-85% on held-out tracks; below nominal 90% despite passing frozen descriptive gate"
+  },
+  "public_tyre_energy_dataset": {
+    "backlog_id": "R024",
+    "status": "DONE",
+    "events": 5,
+    "proxy_samples": 132446,
+    "schema_fields": 50,
+    "manifest_sha256": "7793df65b58884be74529ecf3114ccf2efc310d0a3dd99dfa9edec4d961c2272",
+    "report": "docs/verification/tyre-energy-dataset-report.md",
+    "promotion": false,
+    "limitations": [
+      "Measured wheel energy unknown; fixed vehicle/slip priors",
+      "Australia/44 has no eligible segment",
+      "Native irregular sampling and short uninterrupted sequences"
+    ]
   }
 }

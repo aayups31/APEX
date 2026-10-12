@@ -19,6 +19,13 @@ approximate beam; neither supplies the paper's nonlinear lap maps or MINLP resul
 
 **Code now:** `apexsim.research.tyre_energy`, `apexsim.research.tyre_forecasting`.
 
+R024 adds `apexsim.research.tyre_energy_dataset`: a source-bound causal proxy
+dataset on five development races, with 50 labelled fields, UNKNOWN measured
+wheel targets and complete source-row accounting. Its
+[report](../docs/verification/tyre-energy-dataset-report.md) records native
+irregular sampling and short-sequence limits. R025's matched model comparison
+remains pending; dataset completion is not forecasting skill evidence.
+
 **Boundary:** measured tyre energy is proprietary. The included estimator is a physics-informed proxy useful for interface and experiment development; it must never be labelled as ground truth.
 
 ### HEILMEIER_2018 + HEILMEIER_2020_MC — race kernel and stochastic events

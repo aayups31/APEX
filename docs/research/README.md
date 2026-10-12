@@ -24,6 +24,9 @@ This directory tracks the published research used to guide APEX.
 - [R021/R022 frozen tyre-pace protocol](../../research/protocols/TYRE_DEGRADATION.md)
 - [R021/R022 equations and uncertainty boundary](../../research/equations/TYRE_PACE_V1.md)
 - [R021/R022 real-data verification](../verification/tyre-degradation-report.md)
+- [R024 tyre-energy dataset protocol](../../research/protocols/TYRE_ENERGY_DATASET.md)
+- [R024 motion and proxy units/equations](../../research/equations/TYRE_ENERGY_PROXY_V1.md)
+- [R024 public dataset verification](../verification/tyre-energy-dataset-report.md)
 
 ## Purpose
 

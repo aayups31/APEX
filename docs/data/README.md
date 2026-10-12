@@ -30,6 +30,10 @@ The [tyre-pace dataset card](tyre-pace.md) defines a dedicated source-labelled
 dry race-lap subset, fixed fuel priors, native-row exclusions and immutable
 R021/R022 study commands. It is separate from the qualifying development corpus.
 
+The [R024 tyre-energy proxy dataset](tyre-energy-proxy.md) adds causal native
+car/position features, explicit vehicle priors, four proxy targets, UNKNOWN
+measured wheel quantities, exclusion accounting and portable Parquet reload.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

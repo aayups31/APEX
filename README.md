@@ -60,6 +60,11 @@ gates pass; adjusted interval coverage falls below nominal 90%. This research
 result is separate from production-kernel promotion. See the
 [data and run guide](docs/data/tyre-pace.md).
 
+The [R024 tyre-energy dataset](docs/data/tyre-energy-proxy.md) supplies 132,446
+causal proxy samples across those five races, with explicit truth labels, priors,
+UNKNOWN measured wheel targets and native-row exclusions. Native sampling and
+short uninterrupted histories constrain the pending R025 forecasting benchmark.
+
 ---
 
 ## What APEX Currently Includes

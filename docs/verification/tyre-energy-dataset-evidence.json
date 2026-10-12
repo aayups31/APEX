@@ -1,0 +1,1863 @@
+{
+  "actual_arrow_fields": [
+    {
+      "dtype": "string",
+      "name": "event_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "session_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "track_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "driver_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "segment_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "sequence_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "string",
+      "name": "compound",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "sample_id",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "lap_number",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "native_car_row",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "car_history_start_row",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "position_history_start_row",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "int64",
+      "name": "native_position_row",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "double",
+      "name": "time_s",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "s"
+    },
+    {
+      "dtype": "double",
+      "name": "dt_s",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "s"
+    },
+    {
+      "dtype": "double",
+      "name": "position_time_s",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "s"
+    },
+    {
+      "dtype": "double",
+      "name": "position_lag_s",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "s"
+    },
+    {
+      "dtype": "double",
+      "name": "speed_kmh",
+      "nullable": false,
+      "truth_label": "MEASURED",
+      "unit": "km/h"
+    },
+    {
+      "dtype": "double",
+      "name": "throttle_percent",
+      "nullable": false,
+      "truth_label": "MEASURED",
+      "unit": "%"
+    },
+    {
+      "dtype": "bool",
+      "name": "brake_applied",
+      "nullable": false,
+      "truth_label": "MEASURED",
+      "unit": "1"
+    },
+    {
+      "dtype": "double",
+      "name": "speed_mps",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "throttle",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "1"
+    },
+    {
+      "dtype": "double",
+      "name": "longitudinal_accel_mps2",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "m/s^2"
+    },
+    {
+      "dtype": "double",
+      "name": "geometry_speed_mps",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "heading_rate_rad_s",
+      "nullable": false,
+      "truth_label": "RECONSTRUCTED",
+      "unit": "rad/s"
+    },
+    {
+      "dtype": "double",
+      "name": "curvature_proxy_inv_m",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "1/m"
+    },
+    {
+      "dtype": "double",
+      "name": "lateral_accel_proxy_mps2",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "m/s^2"
+    },
+    {
+      "dtype": "double",
+      "name": "steering_rad_proxy",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "rad"
+    },
+    {
+      "dtype": "double",
+      "name": "brake_pressure_proxy",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "1"
+    },
+    {
+      "dtype": "double",
+      "name": "mass_prior_kg",
+      "nullable": false,
+      "truth_label": "PRIOR",
+      "unit": "kg"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_energy_front_left_kj",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_energy_front_right_kj",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_energy_rear_left_kj",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_energy_rear_right_kj",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_power_front_left_kw",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kW"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_power_front_right_kw",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kW"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_power_rear_left_kw",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kW"
+    },
+    {
+      "dtype": "double",
+      "name": "tyre_power_rear_right_kw",
+      "nullable": false,
+      "truth_label": "PROXY",
+      "unit": "kW"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_wheel_force_n_front_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "N"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_wheel_force_n_front_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "N"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_wheel_force_n_rear_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "N"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_wheel_force_n_rear_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "N"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_slip_speed_mps_front_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_slip_speed_mps_front_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_slip_speed_mps_rear_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_slip_speed_mps_rear_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "m/s"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_tyre_energy_kj_front_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_tyre_energy_kj_front_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_tyre_energy_kj_rear_left",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "kJ"
+    },
+    {
+      "dtype": "double",
+      "name": "measured_tyre_energy_kj_rear_right",
+      "nullable": true,
+      "truth_label": "UNKNOWN",
+      "unit": "kJ"
+    }
+  ],
+  "backlog_id": "R024",
+  "baseline_commit": "7fefeb4f473d983ad2435955c5523a0297cbc54b",
+  "benchmark_telemetry_acquired": false,
+  "bulk_artifact": ".cache/tyre-energy-public-corrected-20261012",
+  "classification": "ADAPTATION",
+  "config": {
+    "field_truth_labels": {
+      "brake_applied": "MEASURED",
+      "brake_pressure_proxy": "PROXY",
+      "car_history_start_row": "RECONSTRUCTED",
+      "compound": "RECONSTRUCTED",
+      "curvature_proxy_inv_m": "PROXY",
+      "driver_id": "RECONSTRUCTED",
+      "dt_s": "RECONSTRUCTED",
+      "event_id": "RECONSTRUCTED",
+      "geometry_speed_mps": "RECONSTRUCTED",
+      "heading_rate_rad_s": "RECONSTRUCTED",
+      "lap_number": "RECONSTRUCTED",
+      "lateral_accel_proxy_mps2": "PROXY",
+      "longitudinal_accel_mps2": "RECONSTRUCTED",
+      "mass_prior_kg": "PRIOR",
+      "measured_slip_speed_mps_front_left": "UNKNOWN",
+      "measured_slip_speed_mps_front_right": "UNKNOWN",
+      "measured_slip_speed_mps_rear_left": "UNKNOWN",
+      "measured_slip_speed_mps_rear_right": "UNKNOWN",
+      "measured_tyre_energy_kj_front_left": "UNKNOWN",
+      "measured_tyre_energy_kj_front_right": "UNKNOWN",
+      "measured_tyre_energy_kj_rear_left": "UNKNOWN",
+      "measured_tyre_energy_kj_rear_right": "UNKNOWN",
+      "measured_wheel_force_n_front_left": "UNKNOWN",
+      "measured_wheel_force_n_front_right": "UNKNOWN",
+      "measured_wheel_force_n_rear_left": "UNKNOWN",
+      "measured_wheel_force_n_rear_right": "UNKNOWN",
+      "native_car_row": "RECONSTRUCTED",
+      "native_position_row": "RECONSTRUCTED",
+      "position_history_start_row": "RECONSTRUCTED",
+      "position_lag_s": "RECONSTRUCTED",
+      "position_time_s": "RECONSTRUCTED",
+      "sample_id": "RECONSTRUCTED",
+      "segment_id": "RECONSTRUCTED",
+      "sequence_id": "RECONSTRUCTED",
+      "session_id": "RECONSTRUCTED",
+      "speed_kmh": "MEASURED",
+      "speed_mps": "RECONSTRUCTED",
+      "steering_rad_proxy": "PROXY",
+      "throttle": "RECONSTRUCTED",
+      "throttle_percent": "MEASURED",
+      "time_s": "RECONSTRUCTED",
+      "track_id": "RECONSTRUCTED",
+      "tyre_energy_front_left_kj": "PROXY",
+      "tyre_energy_front_right_kj": "PROXY",
+      "tyre_energy_rear_left_kj": "PROXY",
+      "tyre_energy_rear_right_kj": "PROXY",
+      "tyre_power_front_left_kw": "PROXY",
+      "tyre_power_front_right_kw": "PROXY",
+      "tyre_power_rear_left_kw": "PROXY",
+      "tyre_power_rear_right_kw": "PROXY"
+    },
+    "field_units": {
+      "brake_applied": "1",
+      "brake_pressure_proxy": "1",
+      "car_history_start_row": "1",
+      "compound": "1",
+      "curvature_proxy_inv_m": "1/m",
+      "driver_id": "1",
+      "dt_s": "s",
+      "event_id": "1",
+      "geometry_speed_mps": "m/s",
+      "heading_rate_rad_s": "rad/s",
+      "lap_number": "1",
+      "lateral_accel_proxy_mps2": "m/s^2",
+      "longitudinal_accel_mps2": "m/s^2",
+      "mass_prior_kg": "kg",
+      "measured_slip_speed_mps_front_left": "m/s",
+      "measured_slip_speed_mps_front_right": "m/s",
+      "measured_slip_speed_mps_rear_left": "m/s",
+      "measured_slip_speed_mps_rear_right": "m/s",
+      "measured_tyre_energy_kj_front_left": "kJ",
+      "measured_tyre_energy_kj_front_right": "kJ",
+      "measured_tyre_energy_kj_rear_left": "kJ",
+      "measured_tyre_energy_kj_rear_right": "kJ",
+      "measured_wheel_force_n_front_left": "N",
+      "measured_wheel_force_n_front_right": "N",
+      "measured_wheel_force_n_rear_left": "N",
+      "measured_wheel_force_n_rear_right": "N",
+      "native_car_row": "1",
+      "native_position_row": "1",
+      "position_history_start_row": "1",
+      "position_lag_s": "s",
+      "position_time_s": "s",
+      "sample_id": "1",
+      "segment_id": "1",
+      "sequence_id": "1",
+      "session_id": "1",
+      "speed_kmh": "km/h",
+      "speed_mps": "m/s",
+      "steering_rad_proxy": "rad",
+      "throttle": "1",
+      "throttle_percent": "%",
+      "time_s": "s",
+      "track_id": "1",
+      "tyre_energy_front_left_kj": "kJ",
+      "tyre_energy_front_right_kj": "kJ",
+      "tyre_energy_rear_left_kj": "kJ",
+      "tyre_energy_rear_right_kj": "kJ",
+      "tyre_power_front_left_kw": "kW",
+      "tyre_power_front_right_kw": "kW",
+      "tyre_power_rear_left_kw": "kW",
+      "tyre_power_rear_right_kw": "kW"
+    },
+    "remaining_vehicle_priors": {
+      "aero_load_n": 0.0,
+      "brake_front_fraction": 0.58,
+      "cg_height_m": 0.32,
+      "driven_rear_fraction": 1.0,
+      "front_aero_fraction": 0.46,
+      "front_weight_fraction": 0.46,
+      "track_width_m": 2.0
+    },
+    "support_and_vehicle_priors": {
+      "car_history": 5,
+      "drivers": [
+        "4",
+        "44"
+      ],
+      "mass_kg": 900.0,
+      "max_gap_s": 0.5,
+      "max_geometry_speed_ratio": 1.5,
+      "max_heading_rate_rad_s": 1.5,
+      "max_history_span_s": 2.0,
+      "max_lateral_accel_mps2": 60.0,
+      "max_longitudinal_accel_mps2": 30.0,
+      "max_position_lag_s": 0.35,
+      "max_speed_mps": 105.0,
+      "max_steering_rad": 0.6,
+      "min_car_span_s": 0.4,
+      "min_geometry_speed_ratio": 0.5,
+      "min_position_span_s": 0.8,
+      "min_speed_mps": 5.0,
+      "min_wheel_normal_load_n": 50.0,
+      "position_history": 7,
+      "wheelbase_m": 3.6
+    }
+  },
+  "content_sha256": "abb28713870aa1a83f849902b05c94f7d6d181a8f18c5619fca62d33d53543a1",
+  "date": "2026-10-11",
+  "events": [
+    {
+      "drivers": [
+        "4",
+        "44"
+      ],
+      "dt_s_quantiles": [
+        0.15899999999965075,
+        0.24000000000069122,
+        0.40099999999983993,
+        0.48100000000067666
+      ],
+      "event_id": "F1_2024_R01",
+      "position_lag_s_quantiles": [
+        0.0,
+        0.12399999999979627,
+        0.2920000000003711,
+        0.34999999999990905
+      ],
+      "rows": 26227
+    },
+    {
+      "drivers": [
+        "4"
+      ],
+      "dt_s_quantiles": [
+        0.15899999999965075,
+        0.23999999999978172,
+        0.4000000000005457,
+        0.48100000000067666
+      ],
+      "event_id": "F1_2024_R03",
+      "position_lag_s_quantiles": [
+        0.0,
+        0.1299999999996544,
+        0.29499999999916326,
+        0.34999999999990905
+      ],
+      "rows": 13061
+    },
+    {
+      "drivers": [
+        "4",
+        "44"
+      ],
+      "dt_s_quantiles": [
+        0.15899999999965075,
+        0.23999999999978172,
+        0.4000000000005457,
+        0.48099999999976717
+      ],
+      "event_id": "F1_2024_R06",
+      "position_lag_s_quantiles": [
+        0.0039999999999054126,
+        0.1289999999999054,
+        0.2929999999996653,
+        0.3499999999994543
+      ],
+      "rows": 28129
+    },
+    {
+      "drivers": [
+        "4",
+        "44"
+      ],
+      "dt_s_quantiles": [
+        0.15899999999965075,
+        0.24000000000023647,
+        0.40099999999983993,
+        0.48100000000067666
+      ],
+      "event_id": "F1_2024_R16",
+      "position_lag_s_quantiles": [
+        0.0,
+        0.12399999999979627,
+        0.295999999999367,
+        0.3469999999997526
+      ],
+      "rows": 26550
+    },
+    {
+      "drivers": [
+        "4",
+        "44"
+      ],
+      "dt_s_quantiles": [
+        0.15799999999990177,
+        0.23999999999978172,
+        0.4000000000014552,
+        0.48100000000158616
+      ],
+      "event_id": "F1_2024_R18",
+      "position_lag_s_quantiles": [
+        0.0,
+        0.12799999999970169,
+        0.2920000000003711,
+        0.34999999999990905
+      ],
+      "rows": 38479
+    }
+  ],
+  "first_public_attempt": {
+    "completion_manifest_created": false,
+    "correction": "Account for absent eligible streams as rejected rows; enforce corpus-level fixed-driver membership",
+    "driver": "44",
+    "driver_selection_changed": false,
+    "error": "No eligible stint segments for this driver",
+    "event": "F1_2024_R03",
+    "numerical_gate_changed": false,
+    "outcome": "FAIL_CLOSED",
+    "support_priors_changed": false
+  },
+  "implementation_checkpoints": [
+    "dfc2a3151d7fd3318c1f18723e2ecc70abfc0da0",
+    "65c83a341d09b335146c853bdd8fe64a8bfdcf09"
+  ],
+  "inventory": {
+    "accepted_rows": 132446,
+    "candidate_next_sample_windows": {
+      "100": 394,
+      "20": 40607,
+      "8": 81931
+    },
+    "mask_eligible_car_rows": 149263,
+    "native_car_rows": 333274,
+    "rejected_rows": 200828,
+    "rejection_counts": {
+      "history_gap_span_or_position_lag": 14478,
+      "no_eligible_stint_segment": 32266,
+      "outside_eligible_lap": 151745,
+      "segment_history_warmup": 153,
+      "unsupported_motion_envelope": 1977,
+      "unsupported_speed_or_controls": 19,
+      "wheel_load_requires_projection": 190
+    },
+    "retained_fraction_of_mask_eligible": 0.8873330966147003,
+    "sequence_length_quantiles": [
+      1.0,
+      11.0,
+      50.0,
+      143.0
+    ]
+  },
+  "manifest": {
+    "benchmark_policy_sha256": "ae9751899b4bafd64615ac7bac6f9fe6ccfb6cf2e84c467110e0fb71e62ca998",
+    "commit": "dfc2a3151d7fd3318c1f18723e2ecc70abfc0da0",
+    "content_sha256": "7793df65b58884be74529ecf3114ccf2efc310d0a3dd99dfa9edec4d961c2272",
+    "eligible_dataset_sha256": "d79966d3b13c06cb8a0bd6f6bcff1690a10965d6414e0e71840ecf6d7811d6a2",
+    "environment": {
+      "numpy": "2.5.3",
+      "pandas": "2.3.3",
+      "pyarrow": "25.0.1",
+      "python": "3.12.12"
+    },
+    "files": {
+      "config.json": {
+        "bytes": 4847,
+        "sha256": "d0c1f651630c93e555369b1cf55ed73a40c93c32e16fc535231244d5b40c58c1"
+      },
+      "eligible_input.json": {
+        "bytes": 1551719,
+        "sha256": "e6cf03c58f06e069d05c78307a6df5e62f27aba0e6bf6e693971acc9510f9f7c"
+      },
+      "quality.json": {
+        "bytes": 32595,
+        "sha256": "3b30b28bf04368788aee7f4a5517d50ea4a5e1024e7ba0efac588f0fe7da5ba1"
+      },
+      "rejections.parquet": {
+        "bytes": 540111,
+        "sha256": "7274c877f19146e7e8a7564f26405b3a30cb2cb5021623bb7992157d3bcdaab7"
+      },
+      "samples.parquet": {
+        "bytes": 21700477,
+        "sha256": "170cf4a56d57a731322646c6f04da00551b2cf55bbf30859b9fd576282ae929a"
+      }
+    },
+    "implementation_sha256": {
+      "tyre_energy.py": "36e95e3adc6c4ad41c3eb4c3d0a219d88d225ca21dce419044595de5d745f563",
+      "tyre_energy_dataset.py": "2b823b852c6d67777051c5bab66d8cf9a036f6da436cbe033e51d6e28e30f63f"
+    },
+    "schema_version": "apex-tyre-energy-proxy-v1"
+  },
+  "next": "R025 matched proxy forecasting benchmark; R023 robust skewed-t observation experiment remains pending",
+  "offline_replays": [
+    {
+      "archive_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+      "content_sha256": "0d10c344518af115bb30d6240326ef482b91c5b34ef6448420aeb607a69d90b4",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "table_count": 46
+    },
+    {
+      "archive_sha256": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+      "content_sha256": "f239eaf262e402848b2ef90dfe908533c8b0719c691884d1454cfbc09e1e92b0",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "table_count": 44
+    },
+    {
+      "archive_sha256": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+      "content_sha256": "6ea8e601077e84daa6d4a4eb1fe9a84e22cce4c26e55a0347238a596b92b8031",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "table_count": 46
+    },
+    {
+      "archive_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+      "content_sha256": "1cd16dea6f87ca07bceb0390da2b5e0ae46ed9f0df028366a9a347b5a94df88d",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "table_count": 46
+    },
+    {
+      "archive_sha256": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e",
+      "content_sha256": "4ee95b2478d6c57eee3bfcf0c8048dac6bc5781a41405f5ce3a890d103719374",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "table_count": 46
+    }
+  ],
+  "permanent_benchmark_policy_content_sha256": "7d690115b7bcd0a52f20acdbf44e628e82efe556b48caf5ebe49b15e29b4ea7d",
+  "production_kernel_maturity": "R0",
+  "promotion": false,
+  "protected_events": 9,
+  "quality": {
+    "coordinate_convention": "mathematical XY right-handed PRIOR; rightward acceleration positive loads left",
+    "distributions": [
+      {
+        "compound": "HARD",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000069122,
+          0.40099999999983993,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.9575921286139242,
+          "front_right": 1.5167462578984854,
+          "rear_left": 1.726186972608591,
+          "rear_right": 1.3998830681461352
+        },
+        "event_id": "F1_2024_R01",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12399999999979627,
+          0.29500000000007276,
+          0.3470000000015716
+        ],
+        "rows": 12472
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000069122,
+          0.4010000000007494,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.9462620827222976,
+          "front_right": 1.5174829283561977,
+          "rear_left": 1.7397804115824274,
+          "rear_right": 1.4255008471252444
+        },
+        "event_id": "F1_2024_R01",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12399999999979627,
+          0.28800000000046566,
+          0.34799999999995634
+        ],
+        "rows": 11122
+      },
+      {
+        "compound": "SOFT",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000023647,
+          0.4000000000005457,
+          0.48099999999976717
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.5829539878449361,
+          "front_right": 1.3691402157623882,
+          "rear_left": 1.4750869110724012,
+          "rear_right": 1.3191731572643506
+        },
+        "event_id": "F1_2024_R01",
+        "position_lag_s_quantiles": [
+          0.009999999999763531,
+          0.13099999999985812,
+          0.2920000000003711,
+          0.34999999999990905
+        ],
+        "rows": 2633
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4005500000001568,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 3.232255442987436,
+          "front_right": 2.3271573880220067,
+          "rear_left": 2.779430941874535,
+          "rear_right": 2.0848073926332926
+        },
+        "event_id": "F1_2024_R03",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.1289999999999054,
+          0.2969999999995707,
+          0.3499999999994543
+        ],
+        "rows": 9650
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000023647,
+          0.4000000000005457,
+          0.4810000000002219
+        ],
+        "energy_kj_mean": {
+          "front_left": 3.017530298310531,
+          "front_right": 2.276373008657483,
+          "rear_left": 2.6060364924112736,
+          "rear_right": 2.0347779394217724
+        },
+        "event_id": "F1_2024_R03",
+        "position_lag_s_quantiles": [
+          0.009000000000014552,
+          0.13000000000010914,
+          0.2899999999999636,
+          0.34999999999990905
+        ],
+        "rows": 3411
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000005457,
+          0.48099999999976717
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.0196178679811863,
+          "front_right": 2.3055063642376554,
+          "rear_left": 1.7784418835714153,
+          "rear_right": 1.9663005149930244
+        },
+        "event_id": "F1_2024_R06",
+        "position_lag_s_quantiles": [
+          0.007999999999810825,
+          0.13000000000010914,
+          0.2930000000005748,
+          0.3499999999994543
+        ],
+        "rows": 7537
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000005457,
+          0.48099999999976717
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.848142601764521,
+          "front_right": 2.062223455022956,
+          "rear_left": 1.6512710705148432,
+          "rear_right": 1.7887900321348145
+        },
+        "event_id": "F1_2024_R06",
+        "position_lag_s_quantiles": [
+          0.0039999999999054126,
+          0.1269999999999527,
+          0.2912000000002079,
+          0.3499999999994543
+        ],
+        "rows": 6577
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000005457,
+          0.48099999999976717
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.7913152304418378,
+          "front_right": 2.0260772931480466,
+          "rear_left": 1.610452640790681,
+          "rear_right": 1.7623417276455018
+        },
+        "event_id": "F1_2024_R06",
+        "position_lag_s_quantiles": [
+          0.0039999999999054126,
+          0.1269999999999527,
+          0.29110000000018715,
+          0.3499999999994543
+        ],
+        "rows": 6499
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000005457,
+          0.48099999999976717
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.005092517499984,
+          "front_right": 2.2307461500071137,
+          "rear_left": 1.7945158615336745,
+          "rear_right": 1.9362193932409122
+        },
+        "event_id": "F1_2024_R06",
+        "position_lag_s_quantiles": [
+          0.007999999999810825,
+          0.13000000000010914,
+          0.2929999999996653,
+          0.3499999999994543
+        ],
+        "rows": 7516
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000069122,
+          0.4000000000005457,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.2704228846615386,
+          "front_right": 1.4039499154832658,
+          "rear_left": 2.1198024761698253,
+          "rear_right": 1.4452644015031153
+        },
+        "event_id": "F1_2024_R16",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12399999999979627,
+          0.2970000000004802,
+          0.3469999999997526
+        ],
+        "rows": 9686
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000023647,
+          0.40099999999983993,
+          0.4810000000002219
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.068968476888874,
+          "front_right": 1.292054160338463,
+          "rear_left": 1.954195646925688,
+          "rear_right": 1.349123842686649
+        },
+        "event_id": "F1_2024_R16",
+        "position_lag_s_quantiles": [
+          0.010999999999967258,
+          0.13200000000006185,
+          0.29399999999986903,
+          0.3359999999993306
+        ],
+        "rows": 3470
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000069122,
+          0.40099999999983993,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.3394162817836484,
+          "front_right": 1.3632236538216638,
+          "rear_left": 2.148487152466774,
+          "rear_right": 1.396587017381968
+        },
+        "event_id": "F1_2024_R16",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12300000000050204,
+          0.2970000000004802,
+          0.3469999999997526
+        ],
+        "rows": 9661
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.24000000000023647,
+          0.40099999999983993,
+          0.4810000000002219
+        ],
+        "energy_kj_mean": {
+          "front_left": 2.0282760194298546,
+          "front_right": 1.3564418335844073,
+          "rear_left": 1.8862289208815832,
+          "rear_right": 1.3671279037073252
+        },
+        "event_id": "F1_2024_R16",
+        "position_lag_s_quantiles": [
+          0.010999999999967258,
+          0.13200000000006185,
+          0.29399999999986903,
+          0.3359999999993306
+        ],
+        "rows": 3733
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000014552,
+          0.48100000000158616
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.3365514600003898,
+          "front_right": 1.6761938596987633,
+          "rear_left": 1.3112058063959247,
+          "rear_right": 1.5765877469066274
+        },
+        "event_id": "F1_2024_R18",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12100000000100408,
+          0.29399999999986903,
+          0.341999999998734
+        ],
+        "rows": 10125
+      },
+      {
+        "compound": "MEDIUM",
+        "driver_id": "4",
+        "dt_s_quantiles": [
+          0.15799999999990177,
+          0.23999999999978172,
+          0.40099999999983993,
+          0.48100000000067666
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.30549221824735,
+          "front_right": 1.5920762596435591,
+          "rear_left": 1.2629908869674467,
+          "rear_right": 1.488398610680685
+        },
+        "event_id": "F1_2024_R18",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12799999999970169,
+          0.29000000000023646,
+          0.34999999999990905
+        ],
+        "rows": 9269
+      },
+      {
+        "compound": "HARD",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15899999999965075,
+          0.23999999999978172,
+          0.4000000000014552,
+          0.48100000000158616
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.2822138777159753,
+          "front_right": 1.6217781868232988,
+          "rear_left": 1.2611678309350751,
+          "rear_right": 1.5244890291305269
+        },
+        "event_id": "F1_2024_R18",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.12100000000100408,
+          0.2929999999996653,
+          0.3499999999994543
+        ],
+        "rows": 14184
+      },
+      {
+        "compound": "SOFT",
+        "driver_id": "44",
+        "dt_s_quantiles": [
+          0.15799999999990177,
+          0.24000000000023647,
+          0.40099999999983993,
+          0.4810000000002219
+        ],
+        "energy_kj_mean": {
+          "front_left": 1.24494337290411,
+          "front_right": 1.6322805675307284,
+          "rear_left": 1.2253537193135065,
+          "rear_right": 1.525018715247286
+        },
+        "event_id": "F1_2024_R18",
+        "position_lag_s_quantiles": [
+          0.0,
+          0.1289999999999054,
+          0.29100000000016735,
+          0.34999999999990905
+        ],
+        "rows": 4901
+      }
+    ],
+    "imputed_values": 0,
+    "limitations": [
+      "Retrospective clean-lap mask",
+      "Native irregular sampling; no proprietary 0.1 s claim",
+      "Steering/lateral acceleration and wheel energy are proxies",
+      "Mass/aero/slip/load parameters are PRIORs",
+      "No ground-truth wheel-energy, wear, forecasting skill or production promotion"
+    ],
+    "mass_prior_sensitivity": [
+      {
+        "energy_kj_mean_supported": {
+          "front_left": 1.732837566806925,
+          "front_right": 1.559433177372199,
+          "rear_left": 1.580921541320177,
+          "rear_right": 1.4443142632500865
+        },
+        "energy_scaling": 0.9,
+        "mass_prior_kg": 810.0,
+        "scope": "analytic conditional mass sensitivity; kinematics/control/other priors fixed; no projection",
+        "supported_rows": 132443,
+        "unsupported_rows": 3
+      },
+      {
+        "energy_kj_mean_supported": {
+          "front_left": 2.118403972431135,
+          "front_right": 1.9064082487574416,
+          "rear_left": 1.932467774894668,
+          "rear_right": 1.765449253714378
+        },
+        "energy_scaling": 1.1,
+        "mass_prior_kg": 990.0000000000001,
+        "scope": "analytic conditional mass sensitivity; kinematics/control/other priors fixed; no projection",
+        "supported_rows": 132446,
+        "unsupported_rows": 0
+      }
+    ],
+    "projection_count": 0,
+    "schema_version": "apex-tyre-energy-proxy-v1",
+    "sources": [
+      {
+        "archive_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "event_id": "F1_2024_R01",
+        "native_files": {
+          "tables/car_data/4.parquet": {
+            "bytes": 854281,
+            "sha256": "7716b862c5d30f86e6381fe90c2fa12d818aef63cea4c63d978f21bd8bbf7116"
+          },
+          "tables/car_data/44.parquet": {
+            "bytes": 859036,
+            "sha256": "61d4a5ced4888712e9ad49341ecfa07e699cad65f5e94f84cffa0c5116c7da5d"
+          },
+          "tables/laps.parquet": {
+            "bytes": 95261,
+            "sha256": "3a3953a911bf5cc94c453bcca21e49fb808d54588118807d32b496efe68745e2"
+          },
+          "tables/pos_data/4.parquet": {
+            "bytes": 922565,
+            "sha256": "8b18dbb0b0b1b40df01171b4124fc20623a8e84d2c517415095bf6ae5ec5bd74"
+          },
+          "tables/pos_data/44.parquet": {
+            "bytes": 923425,
+            "sha256": "e91011fb8c2ba102cfa8753240c32a6fafa2968720cbad9a688d848d8aad81aa"
+          }
+        },
+        "query": {
+          "round_number": 1,
+          "session": "R",
+          "year": 2024
+        },
+        "source_manifest": {
+          "accessed_at_utc": "2026-10-12T02:39:02.337358+00:00",
+          "adapter_version": "0.4.0",
+          "canonical_schema_version": "apex-fastf1-snapshot-v1",
+          "content_sha256": "38e33ff4d018b7562c2f5de0337ac7d8c48c3934653b28f70ed49990bcdf7ddd",
+          "files": [],
+          "license_id": null,
+          "notes": [
+            "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+            "HTTP and parser cache files are enumerated in the enclosing archive.",
+            "Source-data rights remain with the respective providers."
+          ],
+          "query": {
+            "round_number": 1,
+            "session": "R",
+            "year": 2024
+          },
+          "requests": [
+            {
+              "endpoint": "fastf1.get_session",
+              "payload_sha256": null,
+              "query": {
+                "backend": "fastf1",
+                "round_number": 1,
+                "session": "R",
+                "year": 2024
+              },
+              "records": null,
+              "retrieved_at_utc": "2026-10-12T02:39:02.337358+00:00"
+            },
+            {
+              "endpoint": "fastf1.Session.load",
+              "payload_sha256": null,
+              "query": {
+                "laps": true,
+                "messages": true,
+                "telemetry": true,
+                "weather": true
+              },
+              "records": 1129,
+              "retrieved_at_utc": "2026-10-12T02:39:02.337358+00:00"
+            }
+          ],
+          "schema_version": "apex-source-manifest-v1",
+          "source": "fastf1",
+          "terms_url": "https://docs.fastf1.dev/"
+        },
+        "streams": [
+          {
+            "accepted_rows": 12472,
+            "driver_id": "4",
+            "native_car_rows": 34819,
+            "native_position_rows": 35994,
+            "rejected_rows": 22347,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1287,
+              "outside_eligible_lap": 20878,
+              "segment_history_warmup": 12,
+              "unsupported_motion_envelope": 145,
+              "wheel_load_requires_projection": 25
+            }
+          },
+          {
+            "accepted_rows": 13755,
+            "driver_id": "44",
+            "native_car_rows": 34819,
+            "native_position_rows": 35994,
+            "rejected_rows": 21064,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1424,
+              "outside_eligible_lap": 19411,
+              "segment_history_warmup": 27,
+              "unsupported_motion_envelope": 179,
+              "wheel_load_requires_projection": 23
+            }
+          }
+        ]
+      },
+      {
+        "archive_sha256": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "event_id": "F1_2024_R03",
+        "native_files": {
+          "tables/car_data/4.parquet": {
+            "bytes": 863834,
+            "sha256": "ac3da636e7fc422fc868fa1e5183df80d2d41fc36eb9b142fc28143a64329ebd"
+          },
+          "tables/car_data/44.parquet": {
+            "bytes": 816153,
+            "sha256": "652cfe78f3b4cf624501566d2566cac5e7b2a61e0ad6a9efb6d214a7ce0adec0"
+          },
+          "tables/laps.parquet": {
+            "bytes": 87156,
+            "sha256": "84b4f3500a92625edd55e73dab770143c3f1f51aafb35fc911f1e810face7aa8"
+          },
+          "tables/pos_data/4.parquet": {
+            "bytes": 846541,
+            "sha256": "cf443a2b9e01ca08763892f50b9400e90b31a8c60d11d12b97bb8ffe92128eab"
+          },
+          "tables/pos_data/44.parquet": {
+            "bytes": 769927,
+            "sha256": "e74466079cc8e0975bc6229836bce992fb5c732e813c4ec61c7de55b30347475"
+          }
+        },
+        "query": {
+          "round_number": 3,
+          "session": "R",
+          "year": 2024
+        },
+        "source_manifest": {
+          "accessed_at_utc": "2026-10-12T02:39:07.531487+00:00",
+          "adapter_version": "0.4.0",
+          "canonical_schema_version": "apex-fastf1-snapshot-v1",
+          "content_sha256": "6c49382cca56d87943a5f3135aa87fcbb2b80dc966a90a53daf7b51dcd1fd8fc",
+          "files": [],
+          "license_id": null,
+          "notes": [
+            "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+            "HTTP and parser cache files are enumerated in the enclosing archive.",
+            "Source-data rights remain with the respective providers."
+          ],
+          "query": {
+            "round_number": 3,
+            "session": "R",
+            "year": 2024
+          },
+          "requests": [
+            {
+              "endpoint": "fastf1.get_session",
+              "payload_sha256": null,
+              "query": {
+                "backend": "fastf1",
+                "round_number": 3,
+                "session": "R",
+                "year": 2024
+              },
+              "records": null,
+              "retrieved_at_utc": "2026-10-12T02:39:07.531487+00:00"
+            },
+            {
+              "endpoint": "fastf1.Session.load",
+              "payload_sha256": null,
+              "query": {
+                "laps": true,
+                "messages": true,
+                "telemetry": true,
+                "weather": true
+              },
+              "records": 998,
+              "retrieved_at_utc": "2026-10-12T02:39:07.531487+00:00"
+            }
+          ],
+          "schema_version": "apex-source-manifest-v1",
+          "source": "fastf1",
+          "terms_url": "https://docs.fastf1.dev/"
+        },
+        "streams": [
+          {
+            "accepted_rows": 13061,
+            "driver_id": "4",
+            "native_car_rows": 32266,
+            "native_position_rows": 33249,
+            "rejected_rows": 19205,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1480,
+              "outside_eligible_lap": 17559,
+              "segment_history_warmup": 17,
+              "unsupported_motion_envelope": 120,
+              "wheel_load_requires_projection": 29
+            }
+          },
+          {
+            "accepted_rows": 0,
+            "driver_id": "44",
+            "native_car_rows": 32266,
+            "native_position_rows": 33249,
+            "rejected_rows": 32266,
+            "rejection_counts": {
+              "no_eligible_stint_segment": 32266
+            }
+          }
+        ]
+      },
+      {
+        "archive_sha256": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "event_id": "F1_2024_R06",
+        "native_files": {
+          "tables/car_data/4.parquet": {
+            "bytes": 839167,
+            "sha256": "565b64fc69abec125a6fce4f72b4c2d1f273810793d77112940ed70f99ad20d7"
+          },
+          "tables/car_data/44.parquet": {
+            "bytes": 842903,
+            "sha256": "d96c84f4dbf12762a01685c94ab1294e09a9cd2eefa2496ac4524a50c971d3f7"
+          },
+          "tables/laps.parquet": {
+            "bytes": 95269,
+            "sha256": "8a218446d2958649ba4ea849eea67f4da6509d30ddb69671a0d4607ad6870447"
+          },
+          "tables/pos_data/4.parquet": {
+            "bytes": 891632,
+            "sha256": "a6f22abcb6e6d26a0ea827b5216d4b9296d67d0da1813bd133497964d60d6356"
+          },
+          "tables/pos_data/44.parquet": {
+            "bytes": 894967,
+            "sha256": "8dc93369395e998cb0888802af0288dbbc4b7225ba8c1e331776ffbb8a0edd6e"
+          }
+        },
+        "query": {
+          "round_number": 6,
+          "session": "R",
+          "year": 2024
+        },
+        "source_manifest": {
+          "accessed_at_utc": "2026-10-12T02:39:13.084295+00:00",
+          "adapter_version": "0.4.0",
+          "canonical_schema_version": "apex-fastf1-snapshot-v1",
+          "content_sha256": "3a81de29b62a5e8f59d0bd3fd6046e94c050ce14c13f028e14f0d70ff4df2772",
+          "files": [],
+          "license_id": null,
+          "notes": [
+            "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+            "HTTP and parser cache files are enumerated in the enclosing archive.",
+            "Source-data rights remain with the respective providers."
+          ],
+          "query": {
+            "round_number": 6,
+            "session": "R",
+            "year": 2024
+          },
+          "requests": [
+            {
+              "endpoint": "fastf1.get_session",
+              "payload_sha256": null,
+              "query": {
+                "backend": "fastf1",
+                "round_number": 6,
+                "session": "R",
+                "year": 2024
+              },
+              "records": null,
+              "retrieved_at_utc": "2026-10-12T02:39:13.084295+00:00"
+            },
+            {
+              "endpoint": "fastf1.Session.load",
+              "payload_sha256": null,
+              "query": {
+                "laps": true,
+                "messages": true,
+                "telemetry": true,
+                "weather": true
+              },
+              "records": 1111,
+              "retrieved_at_utc": "2026-10-12T02:39:13.084295+00:00"
+            }
+          ],
+          "schema_version": "apex-source-manifest-v1",
+          "source": "fastf1",
+          "terms_url": "https://docs.fastf1.dev/"
+        },
+        "streams": [
+          {
+            "accepted_rows": 14114,
+            "driver_id": "4",
+            "native_car_rows": 33995,
+            "native_position_rows": 34375,
+            "rejected_rows": 19881,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1598,
+              "outside_eligible_lap": 17949,
+              "segment_history_warmup": 13,
+              "unsupported_motion_envelope": 301,
+              "wheel_load_requires_projection": 20
+            }
+          },
+          {
+            "accepted_rows": 14015,
+            "driver_id": "44",
+            "native_car_rows": 33995,
+            "native_position_rows": 34375,
+            "rejected_rows": 19980,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1613,
+              "outside_eligible_lap": 17843,
+              "segment_history_warmup": 13,
+              "unsupported_motion_envelope": 463,
+              "unsupported_speed_or_controls": 18,
+              "wheel_load_requires_projection": 30
+            }
+          }
+        ]
+      },
+      {
+        "archive_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "event_id": "F1_2024_R16",
+        "native_files": {
+          "tables/car_data/4.parquet": {
+            "bytes": 779453,
+            "sha256": "b64cd45d261b4e3d5f9f15cfd9ba609d9d07adaeb641666650a412a1ae9c42de"
+          },
+          "tables/car_data/44.parquet": {
+            "bytes": 783748,
+            "sha256": "3d87d03d713e5a31554f9c2dbe80fbf6195f912ed0537d7af1d04ee5ff5852e3"
+          },
+          "tables/laps.parquet": {
+            "bytes": 86397,
+            "sha256": "7c53a412aa39376ea4bab423418bc040eeb9ba6c6b97507168160ba3b8f1698d"
+          },
+          "tables/pos_data/4.parquet": {
+            "bytes": 824660,
+            "sha256": "a3a7d31c2b247d82ebd688f2ae0f74513e871943d0d4e893afe2f34ac27fdd67"
+          },
+          "tables/pos_data/44.parquet": {
+            "bytes": 826489,
+            "sha256": "270d3e6ae79cc219f79c487581b71df39d0ba568d0bb95be8b0480e0b390d640"
+          }
+        },
+        "query": {
+          "round_number": 16,
+          "session": "R",
+          "year": 2024
+        },
+        "source_manifest": {
+          "accessed_at_utc": "2026-10-12T02:39:02.469309+00:00",
+          "adapter_version": "0.4.0",
+          "canonical_schema_version": "apex-fastf1-snapshot-v1",
+          "content_sha256": "731a304e8b579128a6dd610254fee8d3a5cfd0b235670da76f21e2de85f2aeb9",
+          "files": [],
+          "license_id": null,
+          "notes": [
+            "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+            "HTTP and parser cache files are enumerated in the enclosing archive.",
+            "Source-data rights remain with the respective providers."
+          ],
+          "query": {
+            "round_number": 16,
+            "session": "R",
+            "year": 2024
+          },
+          "requests": [
+            {
+              "endpoint": "fastf1.get_session",
+              "payload_sha256": null,
+              "query": {
+                "backend": "fastf1",
+                "round_number": 16,
+                "session": "R",
+                "year": 2024
+              },
+              "records": null,
+              "retrieved_at_utc": "2026-10-12T02:39:02.469309+00:00"
+            },
+            {
+              "endpoint": "fastf1.Session.load",
+              "payload_sha256": null,
+              "query": {
+                "laps": true,
+                "messages": true,
+                "telemetry": true,
+                "weather": true
+              },
+              "records": 1008,
+              "retrieved_at_utc": "2026-10-12T02:39:02.469309+00:00"
+            }
+          ],
+          "schema_version": "apex-source-manifest-v1",
+          "source": "fastf1",
+          "terms_url": "https://docs.fastf1.dev/"
+        },
+        "streams": [
+          {
+            "accepted_rows": 13156,
+            "driver_id": "4",
+            "native_car_rows": 29218,
+            "native_position_rows": 30637,
+            "rejected_rows": 16062,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1404,
+              "outside_eligible_lap": 14490,
+              "segment_history_warmup": 18,
+              "unsupported_motion_envelope": 141,
+              "wheel_load_requires_projection": 9
+            }
+          },
+          {
+            "accepted_rows": 13394,
+            "driver_id": "44",
+            "native_car_rows": 29218,
+            "native_position_rows": 30637,
+            "rejected_rows": 15824,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 1446,
+              "outside_eligible_lap": 14112,
+              "segment_history_warmup": 19,
+              "unsupported_motion_envelope": 224,
+              "unsupported_speed_or_controls": 1,
+              "wheel_load_requires_projection": 22
+            }
+          }
+        ]
+      },
+      {
+        "archive_sha256": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "event_id": "F1_2024_R18",
+        "native_files": {
+          "tables/car_data/4.parquet": {
+            "bytes": 905928,
+            "sha256": "19eb29a54bf61a2a3c05e6d7dc0979c7c43fc48ca30b19c3a57c64770d31e185"
+          },
+          "tables/car_data/44.parquet": {
+            "bytes": 910071,
+            "sha256": "905fb3283b66d02b2a0735002b9b0c432fd3f34654989dadbb612a5b5d911b45"
+          },
+          "tables/laps.parquet": {
+            "bytes": 98333,
+            "sha256": "d5e4f594d01f6c8b13cc624d495b2494b18399c9e5badd288347dca6c2f82750"
+          },
+          "tables/pos_data/4.parquet": {
+            "bytes": 953410,
+            "sha256": "456120ef39494f0f81dc95bfdf228c028b19297571a65deccd9714781d9e853a"
+          },
+          "tables/pos_data/44.parquet": {
+            "bytes": 955333,
+            "sha256": "5d75c987b28695068a0d2f358d7fb30e420c76a57fe14c12fa9aebe1c578eff5"
+          }
+        },
+        "query": {
+          "round_number": 18,
+          "session": "R",
+          "year": 2024
+        },
+        "source_manifest": {
+          "accessed_at_utc": "2026-10-12T02:39:14.482803+00:00",
+          "adapter_version": "0.4.0",
+          "canonical_schema_version": "apex-fastf1-snapshot-v1",
+          "content_sha256": "e2dfd2d2049121ecb820e0b08ad3495a58b81afcc8948e48eeb7d9b00b7f88cd",
+          "files": [],
+          "license_id": null,
+          "notes": [
+            "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+            "HTTP and parser cache files are enumerated in the enclosing archive.",
+            "Source-data rights remain with the respective providers."
+          ],
+          "query": {
+            "round_number": 18,
+            "session": "R",
+            "year": 2024
+          },
+          "requests": [
+            {
+              "endpoint": "fastf1.get_session",
+              "payload_sha256": null,
+              "query": {
+                "backend": "fastf1",
+                "round_number": 18,
+                "session": "R",
+                "year": 2024
+              },
+              "records": null,
+              "retrieved_at_utc": "2026-10-12T02:39:14.482803+00:00"
+            },
+            {
+              "endpoint": "fastf1.Session.load",
+              "payload_sha256": null,
+              "query": {
+                "laps": true,
+                "messages": true,
+                "telemetry": true,
+                "weather": true
+              },
+              "records": 1177,
+              "retrieved_at_utc": "2026-10-12T02:39:14.482803+00:00"
+            }
+          ],
+          "schema_version": "apex-source-manifest-v1",
+          "source": "fastf1",
+          "terms_url": "https://docs.fastf1.dev/"
+        },
+        "streams": [
+          {
+            "accepted_rows": 19394,
+            "driver_id": "4",
+            "native_car_rows": 36339,
+            "native_position_rows": 37091,
+            "rejected_rows": 16945,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 2106,
+              "outside_eligible_lap": 14704,
+              "segment_history_warmup": 14,
+              "unsupported_motion_envelope": 114,
+              "wheel_load_requires_projection": 7
+            }
+          },
+          {
+            "accepted_rows": 19085,
+            "driver_id": "44",
+            "native_car_rows": 36339,
+            "native_position_rows": 37091,
+            "rejected_rows": 17254,
+            "rejection_counts": {
+              "history_gap_span_or_position_lag": 2120,
+              "outside_eligible_lap": 14799,
+              "segment_history_warmup": 20,
+              "unsupported_motion_envelope": 290,
+              "wheel_load_requires_projection": 25
+            }
+          }
+        ]
+      }
+    ],
+    "target_quality": "PROXY_NOT_MEASURED",
+    "training_ready_for_measured_energy": false,
+    "validation": {
+      "events": [
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18"
+      ],
+      "fields": 50,
+      "measured_wheel_targets": 0,
+      "proxy_wheel_targets": 4,
+      "rows": 132446,
+      "sequences": 8058,
+      "truth_labels_complete": true
+    }
+  },
+  "reload_validation": {
+    "events": [
+      "F1_2024_R01",
+      "F1_2024_R03",
+      "F1_2024_R06",
+      "F1_2024_R16",
+      "F1_2024_R18"
+    ],
+    "fields": 50,
+    "measured_wheel_targets": 0,
+    "proxy_wheel_targets": 4,
+    "rows": 132446,
+    "sequences": 8058,
+    "truth_labels_complete": true
+  },
+  "research_foundation_maturity": "R1",
+  "run_source_note": "Run started during correction review; recorded base commit dfc2a31 plus actual code fingerprints. Fingerprints match the implementation committed in 65c83a3.",
+  "schema_version": "apex-tyre-energy-dataset-evidence-v1",
+  "validation": {
+    "airflow_compile": "PASS",
+    "baseline": {
+      "commit": "7fefeb4f473d983ad2435955c5523a0297cbc54b",
+      "fresh_targeted_duration_s": 21.14,
+      "fresh_targeted_passed": 5,
+      "previous_full_regression_passed": 469,
+      "reference_artifact": ".cache/r024-baseline-research-20261012",
+      "reference_existing_warning": "ridge ill-conditioned matrix",
+      "reference_prediction_rows": 140,
+      "reference_rmse_kj": 0.055471744758730714
+    },
+    "ci": {
+      "head_sha": "65c83a341d09b335146c853bdd8fe64a8bfdcf09",
+      "id": 38201271391,
+      "python_3_11": "success",
+      "python_3_12": "success",
+      "url": "https://github.com/aayups31/APEX/actions/runs/38201271391"
+    },
+    "final_full_regression": {
+      "command": "../.venv/Scripts/python.exe -m pytest -q --basetemp ../.cache/r024-final-regression-20261012",
+      "duration_s": 201.95,
+      "passed": 478,
+      "thread_limits": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "warnings": 2,
+      "working_directory": "apex_engine"
+    },
+    "ruff": "PASS",
+    "targeted_tests": {
+      "covers_absent_driver_stream": true,
+      "duration_s": 29.88,
+      "passed": 9
+    }
+  }
+}
