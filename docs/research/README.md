@@ -17,6 +17,8 @@ This directory tracks the published research used to guide APEX.
 - [R018 disturbance protocol](../../research/protocols/STRATEGY_SCENARIOS.md)
 - [R018 scenario verification](../verification/strategy-scenarios-report.md)
 - [R1 gate review and decision](../verification/r1-gate-review.md)
+- [R019 historical corpus protocol](../../research/protocols/HISTORICAL_CORPUS.md)
+- [R019 corpus verification](../verification/historical-corpus-report.md)
 
 ## Purpose
 

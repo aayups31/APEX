@@ -19,7 +19,8 @@ Work should be selected according to the dependency order defined in the [Master
 The research foundation has passed R1 within the reviewed FIENI equation-level
 adaptation scope. The production simulation kernel remains R0. These are
 different evidence domains: the review does not deploy research policies or
-establish R2 public-data accuracy. Current next research tasks are R019/R020.
+establish R2 public-data accuracy. R019's two-event development corpus is complete;
+the next research task is R020's separate untouched benchmark reservation.
 
 ## Kit manifest
 

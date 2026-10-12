@@ -1,0 +1,2785 @@
+{
+  "schema_version": "apex-historical-corpus-verification-v1",
+  "date": "2026-10-11",
+  "backlog_id": "R019",
+  "status": "DONE",
+  "tested_implementation_commit": "1cc76493b3f3d3fecdafbb4df17f90be48fc0bed",
+  "research_foundation_maturity": "R1",
+  "production_kernel_maturity": "R0",
+  "training_ready": false,
+  "benchmark_frozen": false,
+  "new_training_steps": 0,
+  "source_sha256": {
+    "apex_engine/src/apexsim/data/event_corpus.py": "16dd69167dd07ba3bff4561ff0583d4f670ef57d246ceb303ab2585e5ffd81de",
+    "apex_engine/tests/test_event_corpus.py": "c64ac93a03de098fbfd5b2ba0fc4517e9bc2f77d916637adb473520eca978d80",
+    "research/protocols/HISTORICAL_CORPUS.md": "ad510c5b6a04ecc50f85adcd3814a95f17e7d4b04126459bdac679e7395accc6",
+    "research/fixtures/development-corpus-membership-v1.json": "b2db040a145c9deb24586bbc63f8efe14d4671603bc50ed59f6f7529a365b9f2",
+    "docs/data/session-links/monza-2024-q.json": "d1209768abae276def9f9f126d510832629c6b0b3a3771b6027d0b5d3118bc47"
+  },
+  "baseline": {
+    "passed": 418,
+    "warnings": 2,
+    "duration_s": 185.35
+  },
+  "targeted": {
+    "passed": 14,
+    "duration_s": 13.96,
+    "scope": "collection identity/lineage and CLI; provider integrity has separate existing tests"
+  },
+  "full_regression": {
+    "passed": 432,
+    "warnings": 2,
+    "duration_s": 160.73
+  },
+  "lint": "PASS",
+  "diff_check": "PASS",
+  "corpus": {
+    "adapter_version": "0.4.0",
+    "benchmark_frozen": false,
+    "canonical_schema_sha256": "371da9ddd527d357c503a208331e1bc3c106cdb8d952b026e912063d07384607",
+    "canonical_table_schema": "apex-public-tables-v1",
+    "content_sha256": "fe590620134cd63ccfb36b9c0eb79c8e0a0dc8b368582d5ff416e4c889ea922d",
+    "created_at_utc": "2026-10-12T01:38:41.901085+00:00",
+    "entries": [
+      {
+        "canonical": {
+          "fastf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "7e07981e4d9c117cd85eae7487e20ee4b59a099f61f937c318cf6dd0ba6fa78b",
+            "issue_count": 4,
+            "null_counts": {
+              "laps": {
+                "compound": 0,
+                "driver_id": 0,
+                "is_accurate": 0,
+                "lap_number": 0,
+                "lap_time_s": 113,
+                "pit_in_time_s": 267,
+                "pit_out_time_s": 266,
+                "sector1_time_s": 90,
+                "sector2_time_s": 13,
+                "sector3_time_s": 26,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 0,
+                "stint_id": 0,
+                "track_status": 0,
+                "truth_labels": 0,
+                "tyre_age_laps": 0
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 46,
+                "flag": 33,
+                "lap_number": 46,
+                "message": 0,
+                "message_id": 0,
+                "scope": 33,
+                "sector": 46,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 101
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 368,
+              "race_control": 46,
+              "sessions": 1,
+              "stints": 101,
+              "weather": 85
+            }
+          },
+          "openf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "2c26091813680a06c7196de822e0ab94dc6496c55da81de4076347e5e5271701",
+            "issue_count": 186,
+            "null_counts": {
+              "laps": {
+                "compound": 81,
+                "driver_id": 0,
+                "is_accurate": 368,
+                "lap_number": 0,
+                "lap_time_s": 46,
+                "pit_in_time_s": 368,
+                "pit_out_time_s": 368,
+                "sector1_time_s": 90,
+                "sector2_time_s": 13,
+                "sector3_time_s": 26,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 2,
+                "stint_id": 363,
+                "track_status": 368,
+                "truth_labels": 0,
+                "tyre_age_laps": 368
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 54,
+                "flag": 41,
+                "lap_number": 54,
+                "message": 0,
+                "message_id": 0,
+                "scope": 41,
+                "sector": 54,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 0
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 368,
+              "race_control": 54,
+              "sessions": 1,
+              "stints": 1,
+              "weather": 85
+            }
+          }
+        },
+        "circuit_id": "silverstone",
+        "event_id": "F1_2024_R12",
+        "mapping_environment": {
+          "apexsim": "0.4.0",
+          "pandas": "2.3.3",
+          "python": "3.12.12"
+        },
+        "mapping_implementation_sha256": "086c25664eb81b9ea245ae96fc5b4d9ea359098136ad0b96020df3d286b22269",
+        "mapping_schema_version": "apex-observed-public-fields-v1",
+        "native": {
+          "fastf1": {
+            "accessed_at_utc": "2026-09-14T20:44:59.240076+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-fastf1-archive-v1",
+            "archive_sha256": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+            "environment": {
+              "fastf1": "3.8.3",
+              "numpy": "2.5.3",
+              "pandas": "2.3.3",
+              "pyarrow": "25.0.1",
+              "python": "3.12.12"
+            },
+            "file_count": 58,
+            "license_id": null,
+            "manifest_file_sha256": "a8749c00107cb8703a991c29794bf97497ca382c7e297c551f9d05f33a34640b",
+            "native_schema_version": "apex-fastf1-snapshot-v1",
+            "query": {
+              "round_number": 12,
+              "session": "Q",
+              "year": 2024
+            },
+            "source_manifest_sha256": "4db0a50080848d80f3878c9a94b73ab66a8b249079cd912c46dbc7ddf11e8e82",
+            "terms_url": "https://docs.fastf1.dev/",
+            "total_bytes": 74163966
+          },
+          "jolpica": {
+            "accessed_at_utc": "2026-09-17T01:46:33.839903+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-jolpica-events-v1",
+            "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 11,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b60bc474c7d486a814271127393300b90592b6662685d517c0793e0e930ae042",
+            "native_schema_version": "apex-event-catalog-v1",
+            "query": {
+              "page_size": 5,
+              "season": 2024
+            },
+            "source_manifest_sha256": "c7ed2eb9deaef60d585232fa232daa424317292281ee11f4b03504c3aa09c93a",
+            "terms_url": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+            "total_bytes": 31773
+          },
+          "openf1": {
+            "accessed_at_utc": "2026-09-17T01:14:02.366537+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-openf1-archive-v1",
+            "archive_sha256": "f792e17fc1270aeac688b12ed715e397559f76d1c379319831fc36e7f43016f5",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 131,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b9692f446d48c2839b9939c510823b72d957b16a9226dd287d9a96f96910c4cf",
+            "native_schema_version": "apex-openf1-snapshot-v1",
+            "query": {
+              "session_key": 9554
+            },
+            "source_manifest_sha256": "493c2928dc36bc4af3141b2cda9b6b27f3eb6014a8d571fe1a3380714bb1797d",
+            "terms_url": "https://openf1.org/",
+            "total_bytes": 227862794
+          }
+        },
+        "observed_manifest_sha256": "9ebb0e8f371da316ec2febb3e29cb3285801cb7168829568a2e1d61c84ce87e0",
+        "observed_report_sha256": "0a0e9d7c6988066eee90df7ecd226af11a8b4250deb5f1dd3be2fd45593db893",
+        "provider_session_keys": {
+          "fastf1": "/static/2024/2024-07-07_British_Grand_Prix/2024-07-06_Qualifying/",
+          "openf1": 9554
+        },
+        "round_number": 12,
+        "season": 2024,
+        "session_code": "Q",
+        "session_date": "2024-07-06",
+        "session_link_sha256": "ae70bfaa09bd3afe47a4a27584d25314b27ef916400e49fdae9150a351321198",
+        "spec": {
+          "fastf1": "fastf1-2024-r12-q-v2",
+          "jolpica": "jolpica-2024-20260916",
+          "observed": "observed-british-2024-q-20261008",
+          "openf1": "openf1-9554-20260916",
+          "rationale": "Previously inspected British qualifying development evidence; permanently excluded from untouched benchmark eligibility.",
+          "role": "DEVELOPMENT"
+        }
+      },
+      {
+        "canonical": {
+          "fastf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "15778b481018720903c95a4e9c28086191a2cc28fcff89b71ff8de8191e095b9",
+            "issue_count": 2,
+            "null_counts": {
+              "laps": {
+                "compound": 0,
+                "driver_id": 0,
+                "is_accurate": 0,
+                "lap_number": 0,
+                "lap_time_s": 100,
+                "pit_in_time_s": 184,
+                "pit_out_time_s": 184,
+                "sector1_time_s": 90,
+                "sector2_time_s": 0,
+                "sector3_time_s": 10,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 0,
+                "stint_id": 0,
+                "track_status": 0,
+                "truth_labels": 0,
+                "tyre_age_laps": 0
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 30,
+                "flag": 22,
+                "lap_number": 30,
+                "message": 0,
+                "message_id": 0,
+                "scope": 22,
+                "sector": 30,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 92
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 276,
+              "race_control": 30,
+              "sessions": 1,
+              "stints": 92,
+              "weather": 79
+            }
+          },
+          "openf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "d01df0a0600adc0a1bfdffdbbd97f71a92089f5e709c2d017ecae80cf72dd937",
+            "issue_count": 166,
+            "null_counts": {
+              "laps": {
+                "compound": 72,
+                "driver_id": 0,
+                "is_accurate": 276,
+                "lap_number": 0,
+                "lap_time_s": 30,
+                "pit_in_time_s": 276,
+                "pit_out_time_s": 276,
+                "sector1_time_s": 90,
+                "sector2_time_s": 0,
+                "sector3_time_s": 10,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 1,
+                "stint_id": 276,
+                "track_status": 276,
+                "truth_labels": 0,
+                "tyre_age_laps": 276
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 36,
+                "flag": 28,
+                "lap_number": 36,
+                "message": 0,
+                "message_id": 0,
+                "scope": 28,
+                "sector": 36,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 0
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 276,
+              "race_control": 36,
+              "sessions": 1,
+              "stints": 0,
+              "weather": 79
+            }
+          }
+        },
+        "circuit_id": "monza",
+        "event_id": "F1_2024_R16",
+        "mapping_environment": {
+          "apexsim": "0.4.0",
+          "pandas": "2.3.3",
+          "python": "3.12.12"
+        },
+        "mapping_implementation_sha256": "086c25664eb81b9ea245ae96fc5b4d9ea359098136ad0b96020df3d286b22269",
+        "mapping_schema_version": "apex-observed-public-fields-v1",
+        "native": {
+          "fastf1": {
+            "accessed_at_utc": "2026-10-12T01:29:40.489693+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-fastf1-archive-v1",
+            "archive_sha256": "a10ce20c5bb7f80a46d76211b760babbe31e22d7c43497e02b635f1dc5e80e87",
+            "environment": {
+              "fastf1": "3.8.3",
+              "numpy": "2.5.3",
+              "pandas": "2.3.3",
+              "pyarrow": "25.0.1",
+              "python": "3.12.12"
+            },
+            "file_count": 58,
+            "license_id": null,
+            "manifest_file_sha256": "293d3aafbd58ff3516db7f190e169f6c221802f98216b28d004bda87eaed9a4b",
+            "native_schema_version": "apex-fastf1-snapshot-v1",
+            "query": {
+              "round_number": 16,
+              "session": "Q",
+              "year": 2024
+            },
+            "source_manifest_sha256": "81a4038b695868042cedaf9abb0d36a2a984456842fe62f39ecb45333e70f357",
+            "terms_url": "https://docs.fastf1.dev/",
+            "total_bytes": 66559282
+          },
+          "jolpica": {
+            "accessed_at_utc": "2026-09-17T01:46:33.839903+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-jolpica-events-v1",
+            "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 11,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b60bc474c7d486a814271127393300b90592b6662685d517c0793e0e930ae042",
+            "native_schema_version": "apex-event-catalog-v1",
+            "query": {
+              "page_size": 5,
+              "season": 2024
+            },
+            "source_manifest_sha256": "c7ed2eb9deaef60d585232fa232daa424317292281ee11f4b03504c3aa09c93a",
+            "terms_url": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+            "total_bytes": 31773
+          },
+          "openf1": {
+            "accessed_at_utc": "2026-10-12T01:29:19.561283+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-openf1-archive-v1",
+            "archive_sha256": "26a40e1b9b7a9e7bc7d536f5553f22e58da9db8cf1c965a2dca95f000a711987",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 131,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "2ba3ee69f17089940aaeae0fb0b0576a0bd0b9b3a9b405018dc6bdbf2390cb09",
+            "native_schema_version": "apex-openf1-snapshot-v1",
+            "query": {
+              "session_key": 9586
+            },
+            "source_manifest_sha256": "1f3495d39e94d7ca7d0df68162537b3207fb466dd742d91550184ba8c5060fca",
+            "terms_url": "https://openf1.org/",
+            "total_bytes": 208016782
+          }
+        },
+        "observed_manifest_sha256": "4e3ee8b44ece33da8a70e8e972d6462ce6f7fbb9f93886c6064e06c6dd70e312",
+        "observed_report_sha256": "93f29d7699735e325eef30ec174043b9eac84678d3801abd639b33f68cc7fe4d",
+        "provider_session_keys": {
+          "fastf1": "/static/2024/2024-09-01_Italian_Grand_Prix/2024-08-31_Qualifying/",
+          "openf1": 9586
+        },
+        "round_number": 16,
+        "season": 2024,
+        "session_code": "Q",
+        "session_date": "2024-08-31",
+        "session_link_sha256": "f8b6048b6095acbc1687ec064624651b5f425f365602bf6d611e5edd48d6d634",
+        "spec": {
+          "fastf1": "fastf1-2024-r16-q-20261011",
+          "jolpica": "jolpica-2024-20260916",
+          "observed": "observed-monza-2024-q-20261011",
+          "openf1": "openf1-9586-20261011",
+          "rationale": "Monza qualifying selected before telemetry inspection as a second development event with a different circuit. No outcome-based selection or untouched benchmark claim.",
+          "role": "DEVELOPMENT"
+        }
+      }
+    ],
+    "event_count": 2,
+    "implementation_sha256": "16dd69167dd07ba3bff4561ff0583d4f670ef57d246ceb303ab2585e5ffd81de",
+    "limitations": [
+      "Retrospective development evidence; no causal feature availability or model accuracy claim.",
+      "No benchmark membership or dense public training authorization.",
+      "Requires source evidence under an explicit root; hashes do not authenticate cache authors."
+    ],
+    "purpose": "R019 frozen two-event DEVELOPMENT acquisition and canonical evidence; no benchmark or model fitting",
+    "role": "DEVELOPMENT",
+    "schema_version": "apex-development-event-corpus-v1",
+    "session_count": 2,
+    "training_ready": false
+  },
+  "offline_collection_check": {
+    "schema_version": "apex-event-corpus-offline-check-v1",
+    "passed": true,
+    "network_attempts": 0,
+    "corpus_sha256": "fe590620134cd63ccfb36b9c0eb79c8e0a0dc8b368582d5ff416e4c889ea922d",
+    "event_count": 2,
+    "session_count": 2,
+    "entries": [
+      {
+        "event_id": "F1_2024_R12",
+        "canonical": {
+          "fastf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "7e07981e4d9c117cd85eae7487e20ee4b59a099f61f937c318cf6dd0ba6fa78b",
+            "issue_count": 4,
+            "null_counts": {
+              "laps": {
+                "compound": 0,
+                "driver_id": 0,
+                "is_accurate": 0,
+                "lap_number": 0,
+                "lap_time_s": 113,
+                "pit_in_time_s": 267,
+                "pit_out_time_s": 266,
+                "sector1_time_s": 90,
+                "sector2_time_s": 13,
+                "sector3_time_s": 26,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 0,
+                "stint_id": 0,
+                "track_status": 0,
+                "truth_labels": 0,
+                "tyre_age_laps": 0
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 46,
+                "flag": 33,
+                "lap_number": 46,
+                "message": 0,
+                "message_id": 0,
+                "scope": 33,
+                "sector": 46,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 101
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 368,
+              "race_control": 46,
+              "sessions": 1,
+              "stints": 101,
+              "weather": 85
+            }
+          },
+          "openf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "2c26091813680a06c7196de822e0ab94dc6496c55da81de4076347e5e5271701",
+            "issue_count": 186,
+            "null_counts": {
+              "laps": {
+                "compound": 81,
+                "driver_id": 0,
+                "is_accurate": 368,
+                "lap_number": 0,
+                "lap_time_s": 46,
+                "pit_in_time_s": 368,
+                "pit_out_time_s": 368,
+                "sector1_time_s": 90,
+                "sector2_time_s": 13,
+                "sector3_time_s": 26,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 2,
+                "stint_id": 363,
+                "track_status": 368,
+                "truth_labels": 0,
+                "tyre_age_laps": 368
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 54,
+                "flag": 41,
+                "lap_number": 54,
+                "message": 0,
+                "message_id": 0,
+                "scope": 41,
+                "sector": 54,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 0
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 368,
+              "race_control": 54,
+              "sessions": 1,
+              "stints": 1,
+              "weather": 85
+            }
+          }
+        },
+        "native": {
+          "fastf1": {
+            "accessed_at_utc": "2026-09-14T20:44:59.240076+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-fastf1-archive-v1",
+            "archive_sha256": "cab9254b9499b7adf819f550766204e9170179ac81dd05cc6b6ebc40532a0f56",
+            "environment": {
+              "fastf1": "3.8.3",
+              "numpy": "2.5.3",
+              "pandas": "2.3.3",
+              "pyarrow": "25.0.1",
+              "python": "3.12.12"
+            },
+            "file_count": 58,
+            "license_id": null,
+            "manifest_file_sha256": "a8749c00107cb8703a991c29794bf97497ca382c7e297c551f9d05f33a34640b",
+            "native_schema_version": "apex-fastf1-snapshot-v1",
+            "query": {
+              "round_number": 12,
+              "session": "Q",
+              "year": 2024
+            },
+            "source_manifest_sha256": "4db0a50080848d80f3878c9a94b73ab66a8b249079cd912c46dbc7ddf11e8e82",
+            "terms_url": "https://docs.fastf1.dev/",
+            "total_bytes": 74163966
+          },
+          "jolpica": {
+            "accessed_at_utc": "2026-09-17T01:46:33.839903+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-jolpica-events-v1",
+            "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 11,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b60bc474c7d486a814271127393300b90592b6662685d517c0793e0e930ae042",
+            "native_schema_version": "apex-event-catalog-v1",
+            "query": {
+              "page_size": 5,
+              "season": 2024
+            },
+            "source_manifest_sha256": "c7ed2eb9deaef60d585232fa232daa424317292281ee11f4b03504c3aa09c93a",
+            "terms_url": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+            "total_bytes": 31773
+          },
+          "openf1": {
+            "accessed_at_utc": "2026-09-17T01:14:02.366537+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-openf1-archive-v1",
+            "archive_sha256": "f792e17fc1270aeac688b12ed715e397559f76d1c379319831fc36e7f43016f5",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 131,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b9692f446d48c2839b9939c510823b72d957b16a9226dd287d9a96f96910c4cf",
+            "native_schema_version": "apex-openf1-snapshot-v1",
+            "query": {
+              "session_key": 9554
+            },
+            "source_manifest_sha256": "493c2928dc36bc4af3141b2cda9b6b27f3eb6014a8d571fe1a3380714bb1797d",
+            "terms_url": "https://openf1.org/",
+            "total_bytes": 227862794
+          }
+        }
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "canonical": {
+          "fastf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "15778b481018720903c95a4e9c28086191a2cc28fcff89b71ff8de8191e095b9",
+            "issue_count": 2,
+            "null_counts": {
+              "laps": {
+                "compound": 0,
+                "driver_id": 0,
+                "is_accurate": 0,
+                "lap_number": 0,
+                "lap_time_s": 100,
+                "pit_in_time_s": 184,
+                "pit_out_time_s": 184,
+                "sector1_time_s": 90,
+                "sector2_time_s": 0,
+                "sector3_time_s": 10,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 0,
+                "stint_id": 0,
+                "track_status": 0,
+                "truth_labels": 0,
+                "tyre_age_laps": 0
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 30,
+                "flag": 22,
+                "lap_number": 30,
+                "message": 0,
+                "message_id": 0,
+                "scope": 22,
+                "sector": 30,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 92
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 276,
+              "race_control": 30,
+              "sessions": 1,
+              "stints": 92,
+              "weather": 79
+            }
+          },
+          "openf1": {
+            "dataset_schema": "apex-public-dataset-v1",
+            "dataset_sha256": "d01df0a0600adc0a1bfdffdbbd97f71a92089f5e709c2d017ecae80cf72dd937",
+            "issue_count": 166,
+            "null_counts": {
+              "laps": {
+                "compound": 72,
+                "driver_id": 0,
+                "is_accurate": 276,
+                "lap_number": 0,
+                "lap_time_s": 30,
+                "pit_in_time_s": 276,
+                "pit_out_time_s": 276,
+                "sector1_time_s": 90,
+                "sector2_time_s": 0,
+                "sector3_time_s": 10,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_time_s": 1,
+                "stint_id": 276,
+                "track_status": 276,
+                "truth_labels": 0,
+                "tyre_age_laps": 276
+              },
+              "race_control": {
+                "category": 0,
+                "driver_id": 36,
+                "flag": 28,
+                "lap_number": 36,
+                "message": 0,
+                "message_id": 0,
+                "scope": 28,
+                "sector": 36,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "truth_labels": 0
+              },
+              "sessions": {
+                "event": 0,
+                "event_id": 0,
+                "round": 0,
+                "ruleset_version": 1,
+                "season": 0,
+                "session_id": 0,
+                "session_type": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "source_session_id": 0,
+                "start_utc": 0,
+                "track_id": 0,
+                "truth_labels": 0
+              },
+              "stints": {
+                "compound": 0,
+                "driver_id": 0,
+                "end_lap": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "start_lap": 0,
+                "stint_id": 0,
+                "truth_labels": 0,
+                "tyre_age_at_start_laps": 0
+              },
+              "weather": {
+                "air_temp_c": 0,
+                "humidity_pct": 0,
+                "pressure_pa": 0,
+                "rainfall": 0,
+                "session_id": 0,
+                "source": 0,
+                "source_manifest_sha256": 0,
+                "timestamp_utc": 0,
+                "track_temp_c": 0,
+                "truth_labels": 0,
+                "wind_direction_deg": 0,
+                "wind_speed_mps": 0
+              }
+            },
+            "table_rows": {
+              "laps": 276,
+              "race_control": 36,
+              "sessions": 1,
+              "stints": 0,
+              "weather": 79
+            }
+          }
+        },
+        "native": {
+          "fastf1": {
+            "accessed_at_utc": "2026-10-12T01:29:40.489693+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-fastf1-archive-v1",
+            "archive_sha256": "a10ce20c5bb7f80a46d76211b760babbe31e22d7c43497e02b635f1dc5e80e87",
+            "environment": {
+              "fastf1": "3.8.3",
+              "numpy": "2.5.3",
+              "pandas": "2.3.3",
+              "pyarrow": "25.0.1",
+              "python": "3.12.12"
+            },
+            "file_count": 58,
+            "license_id": null,
+            "manifest_file_sha256": "293d3aafbd58ff3516db7f190e169f6c221802f98216b28d004bda87eaed9a4b",
+            "native_schema_version": "apex-fastf1-snapshot-v1",
+            "query": {
+              "round_number": 16,
+              "session": "Q",
+              "year": 2024
+            },
+            "source_manifest_sha256": "81a4038b695868042cedaf9abb0d36a2a984456842fe62f39ecb45333e70f357",
+            "terms_url": "https://docs.fastf1.dev/",
+            "total_bytes": 66559282
+          },
+          "jolpica": {
+            "accessed_at_utc": "2026-09-17T01:46:33.839903+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-jolpica-events-v1",
+            "archive_sha256": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 11,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "b60bc474c7d486a814271127393300b90592b6662685d517c0793e0e930ae042",
+            "native_schema_version": "apex-event-catalog-v1",
+            "query": {
+              "page_size": 5,
+              "season": 2024
+            },
+            "source_manifest_sha256": "c7ed2eb9deaef60d585232fa232daa424317292281ee11f4b03504c3aa09c93a",
+            "terms_url": "https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md",
+            "total_bytes": 31773
+          },
+          "openf1": {
+            "accessed_at_utc": "2026-10-12T01:29:19.561283+00:00",
+            "adapter_version": "0.4.0",
+            "archive_schema": "apex-openf1-archive-v1",
+            "archive_sha256": "26a40e1b9b7a9e7bc7d536f5553f22e58da9db8cf1c965a2dca95f000a711987",
+            "environment": {
+              "apexsim": "0.4.0",
+              "python": "3.12.12",
+              "requests": "2.34.2"
+            },
+            "file_count": 131,
+            "license_id": "CC-BY-NC-SA-4.0",
+            "manifest_file_sha256": "2ba3ee69f17089940aaeae0fb0b0576a0bd0b9b3a9b405018dc6bdbf2390cb09",
+            "native_schema_version": "apex-openf1-snapshot-v1",
+            "query": {
+              "session_key": 9586
+            },
+            "source_manifest_sha256": "1f3495d39e94d7ca7d0df68162537b3207fb466dd742d91550184ba8c5060fca",
+            "terms_url": "https://openf1.org/",
+            "total_bytes": 208016782
+          }
+        }
+      }
+    ]
+  },
+  "metadata_identity_resolution": {
+    "query": {
+      "year": 2024,
+      "country_name": "Italy",
+      "session_name": "Qualifying"
+    },
+    "url": "https://api.openf1.org/v1/sessions?year=2024&country_name=Italy&session_name=Qualifying",
+    "retrieved_at_utc": "2026-10-12T01:27:18.146700+00:00",
+    "rows": [
+      {
+        "session_key": 9511,
+        "session_type": "Qualifying",
+        "session_name": "Qualifying",
+        "date_start": "2024-05-18T14:00:00+00:00",
+        "date_end": "2024-05-18T15:00:00+00:00",
+        "meeting_key": 1235,
+        "circuit_key": 6,
+        "circuit_short_name": "Imola",
+        "country_key": 13,
+        "country_code": "ITA",
+        "country_name": "Italy",
+        "location": "Imola",
+        "gmt_offset": "02:00:00",
+        "year": 2024,
+        "is_cancelled": false
+      },
+      {
+        "session_key": 9586,
+        "session_type": "Qualifying",
+        "session_name": "Qualifying",
+        "date_start": "2024-08-31T14:00:00+00:00",
+        "date_end": "2024-08-31T15:00:00+00:00",
+        "meeting_key": 1244,
+        "circuit_key": 39,
+        "circuit_short_name": "Monza",
+        "country_key": 13,
+        "country_code": "ITA",
+        "country_name": "Italy",
+        "location": "Monza",
+        "gmt_offset": "02:00:00",
+        "year": 2024,
+        "is_cancelled": false
+      }
+    ]
+  },
+  "new_provider_replays": {
+    "fastf1": {
+      "archive_sha256": "a10ce20c5bb7f80a46d76211b760babbe31e22d7c43497e02b635f1dc5e80e87",
+      "content_sha256": "13853668e9a99d823f311c98260329c88a54e6b9865564415c33d6af597f3d81",
+      "environment": {
+        "fastf1": "3.8.3",
+        "numpy": "2.5.3",
+        "pandas": "2.3.3",
+        "pyarrow": "25.0.1",
+        "python": "3.12.12"
+      },
+      "identity": {
+        "api_path": "/static/2024/2024-09-01_Italian_Grand_Prix/2024-08-31_Qualifying/",
+        "drivers": [
+          "1",
+          "10",
+          "11",
+          "14",
+          "16",
+          "18",
+          "20",
+          "22",
+          "23",
+          "24",
+          "27",
+          "3",
+          "31",
+          "4",
+          "43",
+          "44",
+          "55",
+          "63",
+          "77",
+          "81"
+        ],
+        "event_name": "Italian Grand Prix",
+        "round_number": 16,
+        "session_name": "Qualifying",
+        "session_start_time_s": 662.302,
+        "t0_date": "2024-08-31T13:48:57.769000",
+        "year": 2024
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "rows": {
+        "car_data/1": 17406,
+        "car_data/10": 17406,
+        "car_data/11": 17406,
+        "car_data/14": 17406,
+        "car_data/16": 17406,
+        "car_data/18": 17406,
+        "car_data/20": 17406,
+        "car_data/22": 17406,
+        "car_data/23": 17406,
+        "car_data/24": 17406,
+        "car_data/27": 17406,
+        "car_data/3": 17406,
+        "car_data/31": 17406,
+        "car_data/4": 17406,
+        "car_data/43": 17406,
+        "car_data/44": 17406,
+        "car_data/55": 17406,
+        "car_data/63": 17406,
+        "car_data/77": 17406,
+        "car_data/81": 17406,
+        "laps": 276,
+        "pos_data/1": 18239,
+        "pos_data/10": 18239,
+        "pos_data/11": 18239,
+        "pos_data/14": 18239,
+        "pos_data/16": 18239,
+        "pos_data/18": 18239,
+        "pos_data/20": 18239,
+        "pos_data/22": 18239,
+        "pos_data/23": 18239,
+        "pos_data/24": 18239,
+        "pos_data/27": 18239,
+        "pos_data/3": 18239,
+        "pos_data/31": 18239,
+        "pos_data/4": 18239,
+        "pos_data/43": 18239,
+        "pos_data/44": 18239,
+        "pos_data/55": 18239,
+        "pos_data/63": 18239,
+        "pos_data/77": 18239,
+        "pos_data/81": 18239,
+        "race_control_messages": 30,
+        "results": 20,
+        "session_status": 11,
+        "track_status": 3,
+        "weather_data": 79
+      },
+      "schema_version": "apex-fastf1-replay-v1",
+      "table_count": 46
+    },
+    "openf1": {
+      "archive_sha256": "26a40e1b9b7a9e7bc7d536f5553f22e58da9db8cf1c965a2dca95f000a711987",
+      "archive_unchanged": true,
+      "content_sha256": "7959113980997ff216d5d7f272c7b48fe437976b5a9d68feb7f624255c74133d",
+      "empty_endpoints": [
+        "championship_drivers",
+        "championship_teams",
+        "intervals",
+        "overtakes"
+      ],
+      "endpoint_count": 18,
+      "identity": {
+        "circuit_key": 39,
+        "circuit_short_name": "Monza",
+        "country_code": "ITA",
+        "country_key": 13,
+        "country_name": "Italy",
+        "date_end": "2024-08-31T15:00:00+00:00",
+        "date_start": "2024-08-31T14:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Monza",
+        "meeting_key": 1244,
+        "session_key": 9586,
+        "session_name": "Qualifying",
+        "session_type": "Qualifying",
+        "year": 2024
+      },
+      "mismatched_tables": [],
+      "network_attempts": 0,
+      "passed": true,
+      "request_count": 56,
+      "rows": {
+        "car_data": 348120,
+        "championship_drivers": 0,
+        "championship_teams": 0,
+        "drivers": 20,
+        "intervals": 0,
+        "laps": 276,
+        "location": 364780,
+        "meetings": 1,
+        "overtakes": 0,
+        "pit": 92,
+        "position": 1190,
+        "race_control": 36,
+        "session_result": 20,
+        "sessions": 1,
+        "starting_grid": 20,
+        "stints": 92,
+        "team_radio": 39,
+        "weather": 79
+      },
+      "schema_version": "apex-openf1-replay-v1"
+    }
+  },
+  "new_observed_report": {
+    "content_sha256": "93f29d7699735e325eef30ec174043b9eac84678d3801abd639b33f68cc7fe4d",
+    "environment": {
+      "apexsim": "0.4.0",
+      "pandas": "2.3.3",
+      "python": "3.12.12"
+    },
+    "identity": {
+      "drivers_fastf1": [
+        "1",
+        "10",
+        "11",
+        "14",
+        "16",
+        "18",
+        "20",
+        "22",
+        "23",
+        "24",
+        "27",
+        "3",
+        "31",
+        "4",
+        "43",
+        "44",
+        "55",
+        "63",
+        "77",
+        "81"
+      ],
+      "event_id": "F1_2024_R16",
+      "fastf1_start_utc": "2024-08-31T14:00:00.071000+00:00",
+      "fastf1_t0_utc": "2024-08-31T13:48:57.769000+00:00",
+      "jolpica_scheduled_session": {
+        "date": "2024-08-31",
+        "time": "14:00:00Z"
+      },
+      "mapping_kind": "explicit_assertion_checked_against_provider_metadata",
+      "openf1_scheduled_start_utc": "2024-08-31T14:00:00+00:00",
+      "start_difference_ms": 71.0
+    },
+    "implementation_sha256": "086c25664eb81b9ea245ae96fc5b4d9ea359098136ad0b96020df3d286b22269",
+    "limitations": [
+      "Provider lap-start definitions differ; no cross-provider substitution or clock correction.",
+      "OpenF1 pit dates/durations do not establish separate canonical entry/exit timestamps here.",
+      "FastF1 stint-start tyre age and OpenF1 per-lap tyre age remain unknown.",
+      "Overlapping OpenF1 stint rows are quarantined; ambiguous lap compounds remain unknown.",
+      "No telemetry pit-occupancy flag, weather resampling, grip or safety-car proxy is invented.",
+      "Native race-control sector indices are not mapped to canonical timing sectors 1-3.",
+      "Retrospective evidence only; source availability times and calibrated feature semantics remain unverified."
+    ],
+    "maturity": "R0",
+    "providers": {
+      "fastf1": {
+        "dataset_sha256": "15778b481018720903c95a4e9c28086191a2cc28fcff89b71ff8de8191e095b9",
+        "issues": [
+          {
+            "field": "sector",
+            "native_table": "race_control_messages",
+            "reason": "source_sector_namespace_not_canonical_timing_sector; native value preserved",
+            "row": 5
+          },
+          {
+            "field": "sector",
+            "native_table": "race_control_messages",
+            "reason": "source_sector_namespace_not_canonical_timing_sector; native value preserved",
+            "row": 6
+          }
+        ],
+        "native_table_rows": {
+          "laps": 276,
+          "race_control_messages": 30,
+          "weather_data": 79
+        },
+        "null_counts": {
+          "laps": {
+            "compound": 0,
+            "driver_id": 0,
+            "is_accurate": 0,
+            "lap_number": 0,
+            "lap_time_s": 100,
+            "pit_in_time_s": 184,
+            "pit_out_time_s": 184,
+            "sector1_time_s": 90,
+            "sector2_time_s": 0,
+            "sector3_time_s": 10,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_time_s": 0,
+            "stint_id": 0,
+            "track_status": 0,
+            "truth_labels": 0,
+            "tyre_age_laps": 0
+          },
+          "race_control": {
+            "category": 0,
+            "driver_id": 30,
+            "flag": 22,
+            "lap_number": 30,
+            "message": 0,
+            "message_id": 0,
+            "scope": 22,
+            "sector": 30,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "truth_labels": 0
+          },
+          "sessions": {
+            "event": 0,
+            "event_id": 0,
+            "round": 0,
+            "ruleset_version": 1,
+            "season": 0,
+            "session_id": 0,
+            "session_type": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "source_session_id": 0,
+            "start_utc": 0,
+            "track_id": 0,
+            "truth_labels": 0
+          },
+          "stints": {
+            "compound": 0,
+            "driver_id": 0,
+            "end_lap": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_lap": 0,
+            "stint_id": 0,
+            "truth_labels": 0,
+            "tyre_age_at_start_laps": 92
+          },
+          "weather": {
+            "air_temp_c": 0,
+            "humidity_pct": 0,
+            "pressure_pa": 0,
+            "rainfall": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "track_temp_c": 0,
+            "truth_labels": 0,
+            "wind_direction_deg": 0,
+            "wind_speed_mps": 0
+          }
+        },
+        "source_manifest_sha256": "43c7d70cef1adb466eb64275cdbe82c69f2a4a2ad6b971c7361afd9e1d606fe9",
+        "table_rows": {
+          "laps": 276,
+          "race_control": 30,
+          "sessions": 1,
+          "stints": 92,
+          "weather": 79
+        },
+        "unmapped_pit_records": 0
+      },
+      "openf1": {
+        "dataset_sha256": "d01df0a0600adc0a1bfdffdbbd97f71a92089f5e709c2d017ecae80cf72dd937",
+        "issues": [
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 0
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 1
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 2
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 3
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 4
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 5
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 6
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 7
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 8
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 9
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 10
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 11
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 12
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 13
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 14
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 15
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 16
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 17
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 18
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 19
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 20
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 21
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 22
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 23
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 24
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 25
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 26
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 27
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 28
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 29
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 30
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 31
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 32
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 33
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 34
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 35
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 36
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 37
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 38
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 39
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 40
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 41
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 42
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 43
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 44
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 45
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 46
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 47
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 48
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 49
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 50
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 51
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 52
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 53
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 54
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 55
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 56
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 57
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 58
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 59
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 60
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 61
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 62
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 63
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 64
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 65
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 66
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 67
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 68
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 69
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 70
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 71
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 72
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 73
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 74
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 75
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 76
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 77
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 78
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 79
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 80
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 81
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 82
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 83
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 84
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 85
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 86
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 87
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 88
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 89
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 90
+          },
+          {
+            "field": "lap_range",
+            "native_table": "stints",
+            "reason": "incompatible_inclusive_range; quarantined with native row preserved",
+            "row": 91
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 49
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 51
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 52
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 53
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 57
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 76
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 77
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 79
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 80
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 81
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 82
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 83
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 84
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 85
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 86
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 88
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 90
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 91
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 92
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 93
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 94
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 95
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 123
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 124
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 125
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 126
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 127
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 128
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 129
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 130
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 131
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 132
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 133
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 144
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 149
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 152
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 154
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 163
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 164
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 176
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 177
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 178
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 179
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 180
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 181
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 182
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 183
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 184
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 185
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 186
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 195
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 196
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 217
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 218
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 219
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 220
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 221
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 222
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 223
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 224
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 225
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 226
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 247
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 248
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 249
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 250
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 251
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 252
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 253
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 254
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 255
+          },
+          {
+            "field": "compound",
+            "native_table": "laps",
+            "reason": "ambiguous_stint_range",
+            "row": 256
+          },
+          {
+            "field": "sector",
+            "native_table": "race_control",
+            "reason": "source_sector_namespace_not_canonical_timing_sector; native value preserved",
+            "row": 6
+          },
+          {
+            "field": "sector",
+            "native_table": "race_control",
+            "reason": "source_sector_namespace_not_canonical_timing_sector; native value preserved",
+            "row": 7
+          }
+        ],
+        "native_table_rows": {
+          "drivers": 20,
+          "laps": 276,
+          "pit": 92,
+          "race_control": 36,
+          "stints": 92,
+          "weather": 79
+        },
+        "null_counts": {
+          "laps": {
+            "compound": 72,
+            "driver_id": 0,
+            "is_accurate": 276,
+            "lap_number": 0,
+            "lap_time_s": 30,
+            "pit_in_time_s": 276,
+            "pit_out_time_s": 276,
+            "sector1_time_s": 90,
+            "sector2_time_s": 0,
+            "sector3_time_s": 10,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_time_s": 1,
+            "stint_id": 276,
+            "track_status": 276,
+            "truth_labels": 0,
+            "tyre_age_laps": 276
+          },
+          "race_control": {
+            "category": 0,
+            "driver_id": 36,
+            "flag": 28,
+            "lap_number": 36,
+            "message": 0,
+            "message_id": 0,
+            "scope": 28,
+            "sector": 36,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "truth_labels": 0
+          },
+          "sessions": {
+            "event": 0,
+            "event_id": 0,
+            "round": 0,
+            "ruleset_version": 1,
+            "season": 0,
+            "session_id": 0,
+            "session_type": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "source_session_id": 0,
+            "start_utc": 0,
+            "track_id": 0,
+            "truth_labels": 0
+          },
+          "stints": {
+            "compound": 0,
+            "driver_id": 0,
+            "end_lap": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "start_lap": 0,
+            "stint_id": 0,
+            "truth_labels": 0,
+            "tyre_age_at_start_laps": 0
+          },
+          "weather": {
+            "air_temp_c": 0,
+            "humidity_pct": 0,
+            "pressure_pa": 0,
+            "rainfall": 0,
+            "session_id": 0,
+            "source": 0,
+            "source_manifest_sha256": 0,
+            "timestamp_utc": 0,
+            "track_temp_c": 0,
+            "truth_labels": 0,
+            "wind_direction_deg": 0,
+            "wind_speed_mps": 0
+          }
+        },
+        "source_manifest_sha256": "effb02cf507b41ad9b389b8b0beea550b13022e37ebe5bb14b1df9a373feb8af",
+        "table_rows": {
+          "laps": 276,
+          "race_control": 36,
+          "sessions": 1,
+          "stints": 0,
+          "weather": 79
+        },
+        "unmapped_pit_records": 92
+      }
+    },
+    "report_complete": true,
+    "schema_version": "apex-observed-public-fields-v1",
+    "source_archives_sha256": {
+      "fastf1": "a10ce20c5bb7f80a46d76211b760babbe31e22d7c43497e02b635f1dc5e80e87",
+      "jolpica": "66ace4d99431f6021ed128600f7112ca3b48b57049401bc0fa9c41d1f962d232",
+      "openf1": "26a40e1b9b7a9e7bc7d536f5553f22e58da9db8cf1c965a2dca95f000a711987"
+    },
+    "source_archives_unchanged": true,
+    "training_ready": false
+  },
+  "github_ci": {
+    "run_id": 38192681842,
+    "url": "https://github.com/aayups31/APEX/actions/runs/38192681842",
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install APEX",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Lint",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Compile Airflow wrapper",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify public-data artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify smooth lap-map artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched strategy-solver artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify SAC training and checkpoint artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen-policy disturbance artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "Python 3.12",
+        "status": "completed",
+        "conclusion": "success",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install APEX",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Lint",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Compile Airflow wrapper",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify public-data artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify smooth lap-map artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched strategy-solver artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify SAC training and checkpoint artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen-policy disturbance artifacts",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Two qualifying DEVELOPMENT events only; no calibrated model accuracy or kernel promotion.",
+    "Both inspected events are excluded from future untouched benchmark eligibility.",
+    "Monza OpenF1 native stint ranges remain quarantined, not repaired or discarded.",
+    "Bulk archives and canonical bundles remain ignored; source integrity is not authenticity."
+  ],
+  "next": "R020 freeze a separate whole-event untouched benchmark before fitting",
+  "content_sha256": "cc7b6b8fc0e883722fd469f3e1501e7a64c1cd02e019c96f83064535e45b619b"
+}

@@ -44,6 +44,11 @@ into separate nullable provider bundles with native-row lineage. The legacy publ
 dense CSV converters are retired; public-data training requires a validated feature
 builder. Synthetic training and simulation remain available.
 
+The [event corpus](docs/data/event-corpus.md) binds multiple development events
+to their verified provider archives, canonical tables, schema versions and source
+versions. British and Italian 2024 qualifying are the initial development cases;
+an untouched benchmark remains a separate gate.
+
 ---
 
 ## What APEX Currently Includes

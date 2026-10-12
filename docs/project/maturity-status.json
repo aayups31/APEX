@@ -12,9 +12,10 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "research_inventory": {"done": 18, "total": 73},
+  "last_progress_date": "2026-10-11",
+  "research_inventory": {"done": 19, "total": 73},
   "build_inventory": {"done": 13, "total": 66},
-  "next_research_tasks": ["R019", "R020"],
+  "next_research_tasks": ["R020"],
   "limitations": [
     "Other paper families retain their existing starter, proxy and protocol classifications.",
     "Runtime API and fixed component artifact schemas retain their R0 kernel or historical evidence labels.",
