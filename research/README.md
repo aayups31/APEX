@@ -24,10 +24,17 @@ This folder is the evidence and replication layer for the simulator.
 - `ENGINE_CROSSWALK`: the existing engine covers part of the paper’s structure but is not a reproduction.
 - `RUNNABLE_STARTER`: a minimal faithful mathematical starter runs.
 - `RUNNABLE_SURROGATE`: the topology/equations run with public or synthetic parameters, not confidential paper maps/data.
+- `PUBLIC_DATA_ADAPTATION`: a declared adaptation has held-out public-data evidence; it does not establish paper reproduction or production promotion.
 - `INTERFACE_IMPLEMENTED`: compatible contracts exist; the full learning result has not been reproduced.
 - `REPLICATED`: reserved for matched data/protocol/results within declared tolerance.
 
 Do not promote a status because the output looks plausible.
+
+The [R021/R022 tyre-pace adaptation](equations/TYRE_PACE_V1.md) has causal
+whole-event evaluation and a compound/track/driver Bayesian hierarchy on five
+development races. Its [report](../docs/verification/tyre-degradation-report.md)
+records a held-out calibration shortfall. The legacy state-space starter remains
+educational; skewed-t observations are the separate pending R023 study.
 
 The [FIENI foundation review](equations/FIENI_2025.md) documents corrected resource
 feasibility, hand fixtures and exact tiny-grid benchmarks. Run

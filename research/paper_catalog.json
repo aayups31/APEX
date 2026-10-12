@@ -148,12 +148,12 @@
     "year": 2025,
     "domain": "probabilistic tyre degradation",
     "priority": "P0",
-    "implementation_stage": "RUNNABLE_STARTER",
-    "apex_module": "apexsim.research.state_space_tyre",
-    "validation_target": "held-out predictive density and reset behavior",
+    "implementation_stage": "PUBLIC_DATA_ADAPTATION",
+    "apex_module": "apexsim.research.tyre_pace; apexsim.research.hierarchical_tyre",
+    "validation_target": "rolling held-out pace and posterior predictive calibration",
     "source_url": "https://arxiv.org/abs/2512.00640",
     "local_pdf": "",
-    "notes": ""
+    "notes": "R021/R022 Gaussian adaptation on five development races; abstract reviewed only; nominal 90% calibration shortfall; skewed-t R023 pending; no paper reproduction or production promotion"
   },
   {
     "paper_id": "PERANTONI_2014",

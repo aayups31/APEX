@@ -49,7 +49,13 @@ approximate beam; neither supplies the paper's nonlinear lap maps or MINLP resul
 
 **What enters APEX:** fuel-corrected lap-time observations, latent tyre pace, stint resets, robust observation noise, predictive distributions and rolling-origin validation.
 
-**Code now:** a lightweight interpretable state-space starter. Bayesian hierarchical inference and skewed-t observation models remain planned.
+**Code now:** `apexsim.research.tyre_pace` and `hierarchical_tyre` add training-only
+Gaussian state fitting, causal rolling forecasts and conditional Bayesian
+compound/track/driver inference. R021/R022 use five non-benchmark development races;
+the [report](../docs/verification/tyre-degradation-report.md) retains the nominal
+90% coverage shortfall. This is an independently specified Gaussian adaptation
+motivated by the reviewed abstract, not a full-paper replication. The legacy
+starter remains educational; skewed-t observation modelling is pending R023.
 
 ### THOMAS_2025 — explainable race-strategy RL
 

@@ -16,6 +16,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [Temporal alignment](temporal-alignment-report.md)
 - [Observed public fields and CSV migration](observed-public-fields-report.md)
 - [FIENI equations, hand calculations and exact tiny-grid oracle](fieni-foundation-report.md)
+- [R021/R022 fuel-corrected pace and hierarchical prediction](tyre-degradation-report.md)
 
 ## Purpose
 

@@ -26,6 +26,10 @@ The [permanent benchmark boundary](permanent-benchmark.md) reserves whole weeken
 from calendar metadata and excludes them from managed development and ordinary
 experiment splits, independently of session names and event aliases.
 
+The [tyre-pace dataset card](tyre-pace.md) defines a dedicated source-labelled
+dry race-lap subset, fixed fuel priors, native-row exclusions and immutable
+R021/R022 study commands. It is separate from the qualifying development corpus.
+
 APEX treats every public-data retrieval as immutable evidence. A source adapter must
 create a sidecar using schema `apex-source-manifest-v1` before its output can enter a
 calibration or evaluation pipeline.

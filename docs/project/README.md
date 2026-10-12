@@ -21,9 +21,13 @@ adaptation scope. The production simulation kernel remains R0. These are
 different evidence domains: the review does not deploy research policies or
 establish R2 public-data accuracy. R019's two-event development corpus is complete;
 R020's separate nine-weekend permanent benchmark reservation is complete.
-The next research task is R021's public-data tyre-degradation model with explicit
-fuel assumptions and held-out evaluation. Benchmark reservation alone is not
-an acquired benchmark telemetry dataset or a calibrated R2 model.
+R021/R022's five-race public tyre-pace study is complete with fixed fuel priors,
+rolling evaluation and Bayesian hierarchical prediction. Its validation interval
+adjustment undercovers nominal 90% on held-out tracks; the frozen descriptive gate
+passes, without a maturity promotion. The next dependency-priority P0 task is
+R024's tyre-energy proxy dataset and provenance. R023's robust observation model
+is also pending. Benchmark reservation alone is not acquired benchmark telemetry;
+the production kernel remains R0 and a separate R2 review is still required.
 
 ## Kit manifest
 

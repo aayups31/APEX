@@ -53,6 +53,13 @@ nine separate whole-event weekends from calendar metadata and excludes them
 from development collections and ordinary experiment splits before fitting.
 Benchmark telemetry acquisition and final evaluation remain later workflows.
 
+The [public tyre-pace study](docs/verification/tyre-degradation-report.md) completes
+R021/R022 on five development races: fuel-corrected latent pace, causal 1/3/5-lap
+forecasts, and a Bayesian compound/track/driver hierarchy. The frozen descriptive
+gates pass; adjusted interval coverage falls below nominal 90%. This research
+result is separate from production-kernel promotion. See the
+[data and run guide](docs/data/tyre-pace.md).
+
 ---
 
 ## What APEX Currently Includes

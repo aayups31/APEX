@@ -21,6 +21,9 @@ This directory tracks the published research used to guide APEX.
 - [R019 corpus verification](../verification/historical-corpus-report.md)
 - [R020 permanent benchmark protocol](../../research/protocols/PERMANENT_BENCHMARK.md)
 - [R020 benchmark verification](../verification/permanent-benchmark-report.md)
+- [R021/R022 frozen tyre-pace protocol](../../research/protocols/TYRE_DEGRADATION.md)
+- [R021/R022 equations and uncertainty boundary](../../research/equations/TYRE_PACE_V1.md)
+- [R021/R022 real-data verification](../verification/tyre-degradation-report.md)
 
 ## Purpose
 
