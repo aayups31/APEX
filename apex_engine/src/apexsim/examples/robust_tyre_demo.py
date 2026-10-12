@@ -105,6 +105,7 @@ def run_robust_tyre_demo(baseline: Path, output: Path, profile: str = "research"
                "model_decision":"ACCEPT_CONDITIONAL_RESEARCH" if accepted else "REJECT_NO_FROZEN_IMPROVEMENT",
                "R023_comparison_complete":True,"task_closure_eligible":profile=="research",
                "promotion":False,"baseline_summary_sha256":base["content_sha256"],"input_dataset_sha256":dataset["content_sha256"],
+               "target_quality":"FUEL_CORRECTED_PACE_PROXY","fuel_prior":dataset["fuel_prior"],"input_truth_labels":dataset["truth_labels"],
                "environment":{"python":platform.python_version(),"numpy":np.__version__,"scipy":__import__("scipy").__version__},
                "shape_fit":fit,"settings":settings,"seeds":list(seeds),"split":base["hierarchical_split"],
                "test_metrics":metrics,"validation_metrics":grouped_observation_metrics([r for r in rows if r["phase"]=="validation"],("method","horizon")),

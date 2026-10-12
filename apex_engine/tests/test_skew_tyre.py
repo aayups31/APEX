@@ -11,9 +11,9 @@ from apexsim.research.skew_tyre import SkewStudent, empirical_crps, observation_
 from apexsim.research.tyre_pace import PaceParameters
 
 
-@pytest.mark.parametrize("skew",[-.25,0.,.5])
-def test_density_normalization_mean_variance_and_inverse(skew):
-    model=SkewStudent(8,skew)
+@pytest.mark.parametrize("nu,skew",[(8,-.25),(8,0.),(8,.5),(4,.5)])
+def test_density_normalization_mean_variance_and_inverse(nu,skew):
+    model=SkewStudent(nu,skew)
     a,b,_=model.constants()
     def moment(order):
         def function(x):
@@ -27,6 +27,21 @@ def test_density_normalization_mean_variance_and_inverse(skew):
     if skew==0:
         x=np.linspace(-5,5,100)
         np.testing.assert_allclose(model.logpdf(x),t.logpdf(x,8,scale=np.sqrt(6/8)),atol=1e-12)
+
+
+def test_large_particle_near_gaussian_limit_matches_independent_kalman():
+    from types import SimpleNamespace
+
+    from apexsim.research.tyre_pace import filter_prefix
+
+    values=np.array([90.,90.2,90.25,90.5,90.6,90.7,90.8])
+    data=segments()[:1]
+    data[0]["rows"]=[{"lap":i+1,"corrected_s":float(value)} for i,value in enumerate(values)]
+    model=SimpleNamespace(noise=PaceParameters((.1,.1,.1),.01,.04),drift_draws=lambda _:np.full(10,.1))
+    rows,_=observation_forecasts(data,model,SkewStudent(10000,0),group_draws=1,state_particles=32768)
+    for row in rows:
+        mean,_=filter_prefix(values[:row["origin_lap"]],.1,.01,.04)
+        assert row["predicted_s"]==pytest.approx(mean+row["horizon"]*.1,abs=.012)
 
 
 def test_sampling_moments_and_invalid_shape():

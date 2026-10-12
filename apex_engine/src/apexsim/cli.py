@@ -413,6 +413,40 @@ def verify_robust_tyre_study_command(output: Path) -> None:
     typer.echo(json.dumps(verify_robust_tyre_study(output),indent=2))
 
 
+@app.command("tyre-forecast-benchmark")
+def tyre_forecast_benchmark_command(dataset: Path, output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Fit all six requested families with train-only preprocessing and matched horizons."""
+    from apexsim.examples.tyre_forecast_benchmark import run_forecast_benchmark
+
+    summary=run_forecast_benchmark(dataset,output,profile,progress=typer.echo)
+    typer.echo(json.dumps({k:summary[k] for k in ("validation_selected_family","task_closure_eligible","content_sha256")},indent=2))
+
+
+@app.command("tyre-forecast-smoke")
+def tyre_forecast_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED execution-only six-family training/checkpoint smoke."""
+    from apexsim.examples.tyre_forecast_benchmark import (
+        make_forecast_smoke_dataset,
+        run_forecast_benchmark,
+        verify_forecast_benchmark,
+    )
+
+    if output.exists():
+        raise FileExistsError("Forecast smoke output must be fresh")
+    source=output.with_name(output.name+"-simulated-input")
+    make_forecast_smoke_dataset(source)
+    run_forecast_benchmark(source,output,"smoke")
+    typer.echo(json.dumps(verify_forecast_benchmark(output),indent=2))
+
+
+@app.command("verify-tyre-forecast-benchmark")
+def verify_tyre_forecast_benchmark_command(output: Path) -> None:
+    """Reload every saved model and reproduce its held-out forecasts."""
+    from apexsim.examples.tyre_forecast_benchmark import verify_forecast_benchmark
+
+    typer.echo(json.dumps(verify_forecast_benchmark(output),indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""
