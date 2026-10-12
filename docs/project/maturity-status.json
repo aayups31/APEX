@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-12",
   "research_inventory": {
-    "done": 23,
+    "done": 24,
     "total": 73
   },
   "build_inventory": {
@@ -64,5 +64,20 @@
       "Native irregular sampling and short uninterrupted sequences"
     ],
     "completed_date": "2026-10-12"
+  },
+  "robust_tyre_observation_study": {
+    "backlog_id": "R023",
+    "status": "DONE",
+    "completed_date": "2026-10-12",
+    "decision": "ACCEPT_CONDITIONAL_RESEARCH",
+    "summary_sha256": "b0dbcad581395d9bba763d6065f842747977de34db7bba280db23e30a999ee2a",
+    "report": "docs/verification/robust-tyre-forecast-report.md",
+    "promotion": false,
+    "limitations": [
+      "Gaussian-trained hierarchy and Q/R fixed; conditional modular adaptation",
+      "Finite particles and posterior draw subset; finite-ensemble CRPS bias",
+      "Reused development test events, not untouched benchmark",
+      "No full paper reproduction, guaranteed calibration repair or production promotion"
+    ]
   }
 }

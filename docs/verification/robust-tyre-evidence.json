@@ -1,0 +1,687 @@
+{
+  "schema_version": "apex-robust-tyre-evidence-v1",
+  "date": "2026-10-12",
+  "status": "DONE",
+  "task": "R023",
+  "summary": {
+    "R023_comparison_complete": true,
+    "baseline_summary_sha256": "107dbe9d7c8a7757d99f0a5a24e4ee9bef8880dc111e2c61b0b831644bf9de95",
+    "classification": "ADAPTATION",
+    "content_sha256": "b0dbcad581395d9bba763d6065f842747977de34db7bba280db23e30a999ee2a",
+    "environment": {
+      "numpy": "2.5.3",
+      "python": "3.12.12",
+      "scipy": "1.18.1"
+    },
+    "event_metrics": [
+      {
+        "coverage_90": 0.9139784946236559,
+        "crps_s": 0.2841315201275218,
+        "event_id": "F1_2024_R16",
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 2511,
+        "rmse_s": 0.55106455940848,
+        "rmspe_percent": 0.6598446468364928,
+        "width_90_s": 1.711061943040547
+      },
+      {
+        "coverage_90": 0.9170049616599008,
+        "crps_s": 0.34716228662268117,
+        "event_id": "F1_2024_R16",
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 2217,
+        "rmse_s": 0.6409337304438963,
+        "rmspe_percent": 0.7701796653501746,
+        "width_90_s": 2.0236981357494823
+      },
+      {
+        "coverage_90": 0.9131565262610505,
+        "crps_s": 0.402082973173254,
+        "event_id": "F1_2024_R16",
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 1923,
+        "rmse_s": 0.7208134743888729,
+        "rmspe_percent": 0.8694985797606372,
+        "width_90_s": 2.333405536851524
+      },
+      {
+        "coverage_90": 0.885576923076923,
+        "crps_s": 0.3270212899177977,
+        "event_id": "F1_2024_R18",
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 3120,
+        "rmse_s": 0.6445249604070955,
+        "rmspe_percent": 0.6567790095878134,
+        "width_90_s": 1.7189558840140873
+      },
+      {
+        "coverage_90": 0.8624561403508771,
+        "crps_s": 0.40127473733547314,
+        "event_id": "F1_2024_R18",
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 2850,
+        "rmse_s": 0.7531350040890397,
+        "rmspe_percent": 0.7708486752235894,
+        "width_90_s": 2.055766735206006
+      },
+      {
+        "coverage_90": 0.8655038759689923,
+        "crps_s": 0.4364187143355063,
+        "event_id": "F1_2024_R18",
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 2580,
+        "rmse_s": 0.8117079830931591,
+        "rmspe_percent": 0.8310361039881605,
+        "width_90_s": 2.3964247418766553
+      },
+      {
+        "coverage_90": 0.9099960175228993,
+        "crps_s": 0.25799846986317365,
+        "event_id": "F1_2024_R16",
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 2511,
+        "rmse_s": 0.5187983463687084,
+        "rmspe_percent": 0.6200622083519032,
+        "width_90_s": 1.5501621029950472
+      },
+      {
+        "coverage_90": 0.9025710419485792,
+        "crps_s": 0.3233656717056915,
+        "event_id": "F1_2024_R16",
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 2217,
+        "rmse_s": 0.608584291755314,
+        "rmspe_percent": 0.730706460875256,
+        "width_90_s": 1.8927711352328367
+      },
+      {
+        "coverage_90": 0.9095163806552262,
+        "crps_s": 0.3811882778970309,
+        "event_id": "F1_2024_R16",
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 1923,
+        "rmse_s": 0.6910189973793501,
+        "rmspe_percent": 0.8330540347386299,
+        "width_90_s": 2.2230466664660677
+      },
+      {
+        "coverage_90": 0.8759615384615385,
+        "crps_s": 0.30278019913799165,
+        "event_id": "F1_2024_R18",
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 3120,
+        "rmse_s": 0.6225628057576355,
+        "rmspe_percent": 0.6332299644921199,
+        "width_90_s": 1.565374832869452
+      },
+      {
+        "coverage_90": 0.8656140350877193,
+        "crps_s": 0.37762476113917587,
+        "event_id": "F1_2024_R18",
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 2850,
+        "rmse_s": 0.7277298927942064,
+        "rmspe_percent": 0.7436695673925249,
+        "width_90_s": 1.9307338416263742
+      },
+      {
+        "coverage_90": 0.8643410852713178,
+        "crps_s": 0.4159482825346261,
+        "event_id": "F1_2024_R18",
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 2580,
+        "rmse_s": 0.7860998257384347,
+        "rmspe_percent": 0.8043344206220031,
+        "width_90_s": 2.2898353161704783
+      }
+    ],
+    "fuel_prior": {
+      "burn_kg_per_lap": 1.4,
+      "initial_kg": 105.0,
+      "time_s_per_kg": 0.03
+    },
+    "implementation_sha256": {
+      "robust_tyre_demo.py": "4a36c57dc8bf4d88c6ffd080f86d670aa6dfadfcaaee5f1c5604dcf8e28c198d",
+      "skew_tyre.py": "205b197333b08db280383e591a9eb7419c35d15884e36ddf30d0fb5f62a21e95"
+    },
+    "improvements": [
+      {
+        "crps_relative_improvement": 0.08147162106159878,
+        "horizon": 1,
+        "rmspe_relative_improvement": 0.04673043227662421
+      },
+      {
+        "crps_relative_improvement": 0.06280251031502104,
+        "horizon": 3,
+        "rmspe_relative_improvement": 0.04221663639018758
+      },
+      {
+        "crps_relative_improvement": 0.04896582019554985,
+        "horizon": 5,
+        "rmspe_relative_improvement": 0.03651438568837473
+      }
+    ],
+    "input_dataset_sha256": "d79966d3b13c06cb8a0bd6f6bcff1690a10965d6414e0e71840ecf6d7811d6a2",
+    "input_truth_labels": {
+      "corrected_pace": "PROXY",
+      "fuel": "PRIOR",
+      "lap_values": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+      "latent_state": "MODEL_ESTIMATE_NOT_PHYSICAL_WEAR"
+    },
+    "limitations": [
+      "Gaussian-trained hierarchy and Q/R fixed; conditional modular adaptation",
+      "Finite particles and posterior draw subset; finite-ensemble CRPS bias",
+      "Reused development test events, not untouched benchmark",
+      "No full paper reproduction, guaranteed calibration repair or production promotion"
+    ],
+    "model_decision": "ACCEPT_CONDITIONAL_RESEARCH",
+    "paired_crps_intervals": [
+      {
+        "clusters": 94,
+        "horizon": 1,
+        "resamples": 500,
+        "scope": "paired segment clusters include all seed replicas; not independent lap/seed samples",
+        "seed": 2023,
+        "skew_minus_gaussian_crps_s_lower_95": -0.03195099880357892,
+        "skew_minus_gaussian_crps_s_upper_95": -0.01966825263866612
+      },
+      {
+        "clusters": 94,
+        "horizon": 3,
+        "resamples": 500,
+        "scope": "paired segment clusters include all seed replicas; not independent lap/seed samples",
+        "seed": 2023,
+        "skew_minus_gaussian_crps_s_lower_95": -0.030934412767270082,
+        "skew_minus_gaussian_crps_s_upper_95": -0.01717534049519339
+      },
+      {
+        "clusters": 94,
+        "horizon": 5,
+        "resamples": 500,
+        "scope": "paired segment clusters include all seed replicas; not independent lap/seed samples",
+        "seed": 2023,
+        "skew_minus_gaussian_crps_s_lower_95": -0.029524391816673913,
+        "skew_minus_gaussian_crps_s_upper_95": -0.01392656608216575
+      }
+    ],
+    "profile": "research",
+    "promotion": false,
+    "schema_version": "apex-robust-tyre-study-v1",
+    "seed_metrics": [
+      {
+        "coverage_90": 0.8987746403835908,
+        "crps_s": 0.30757160934403865,
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 1877,
+        "rmse_s": 0.6044930454528383,
+        "rmspe_percent": 0.6579279409647975,
+        "seed": 11,
+        "width_90_s": 1.7154263486312336
+      },
+      {
+        "coverage_90": 0.8851391355831854,
+        "crps_s": 0.3774293713042515,
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 1689,
+        "rmse_s": 0.7060032808400925,
+        "rmspe_percent": 0.7702445333840553,
+        "seed": 11,
+        "width_90_s": 2.0412144875489777
+      },
+      {
+        "coverage_90": 0.8834110592938041,
+        "crps_s": 0.4220697478706137,
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 1501,
+        "rmse_s": 0.7747138584889782,
+        "rmspe_percent": 0.8481788047161882,
+        "seed": 11,
+        "width_90_s": 2.369710153544508
+      },
+      {
+        "coverage_90": 0.8971763452317528,
+        "crps_s": 0.3079156763498453,
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 1877,
+        "rmse_s": 0.6046767140171938,
+        "rmspe_percent": 0.6582250005805663,
+        "seed": 23,
+        "width_90_s": 1.7157058020327554
+      },
+      {
+        "coverage_90": 0.8880994671403197,
+        "crps_s": 0.3775468351051783,
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 1689,
+        "rmse_s": 0.7063698942362413,
+        "rmspe_percent": 0.7707438194988859,
+        "seed": 23,
+        "width_90_s": 2.0411976149814692
+      },
+      {
+        "coverage_90": 0.8867421718854097,
+        "crps_s": 0.4217823246403228,
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 1501,
+        "rmse_s": 0.7742458868707897,
+        "rmspe_percent": 0.8478629994450577,
+        "seed": 23,
+        "width_90_s": 2.3694960567456604
+      },
+      {
+        "coverage_90": 0.8987746403835908,
+        "crps_s": 0.308199806252699,
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 1877,
+        "rmse_s": 0.6047382693398113,
+        "rmspe_percent": 0.6582904496242733,
+        "seed": 37,
+        "width_90_s": 1.7151751999480336
+      },
+      {
+        "coverage_90": 0.8857312018946122,
+        "crps_s": 0.3778194068816198,
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 1689,
+        "rmse_s": 0.7063456671719186,
+        "rmspe_percent": 0.7706796417196604,
+        "seed": 37,
+        "width_90_s": 2.0427945062876223
+      },
+      {
+        "coverage_90": 0.8874083944037309,
+        "crps_s": 0.4214149763883131,
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 1501,
+        "rmse_s": 0.7736346082767662,
+        "rmspe_percent": 0.8469826966434619,
+        "seed": 37,
+        "width_90_s": 2.3693312190284526
+      },
+      {
+        "coverage_90": 0.8923814597762387,
+        "crps_s": 0.28275146620039787,
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 1877,
+        "rmse_s": 0.578349495327802,
+        "rmspe_percent": 0.6270156621280287,
+        "seed": 11,
+        "width_90_s": 1.557033775115901
+      },
+      {
+        "coverage_90": 0.8804026050917703,
+        "crps_s": 0.3537275936213925,
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 1689,
+        "rmse_s": 0.677857744761589,
+        "rmspe_percent": 0.737587966289951,
+        "seed": 11,
+        "width_90_s": 1.9128318655454364
+      },
+      {
+        "coverage_90": 0.8814123917388408,
+        "crps_s": 0.4013773751181782,
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 1501,
+        "rmse_s": 0.7471380908383223,
+        "rmspe_percent": 0.8167566408499265,
+        "seed": 11,
+        "width_90_s": 2.259802122559055
+      },
+      {
+        "coverage_90": 0.8913159296750133,
+        "crps_s": 0.28261473450888736,
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 1877,
+        "rmse_s": 0.5784647232267452,
+        "rmspe_percent": 0.6273021172804543,
+        "seed": 23,
+        "width_90_s": 1.5588911860839694
+      },
+      {
+        "coverage_90": 0.8821788040260509,
+        "crps_s": 0.3536033122564487,
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 1689,
+        "rmse_s": 0.6779108169199229,
+        "rmspe_percent": 0.737741504318379,
+        "seed": 23,
+        "width_90_s": 1.9121941392999988
+      },
+      {
+        "coverage_90": 0.8834110592938041,
+        "crps_s": 0.40079829810835904,
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 1501,
+        "rmse_s": 0.7467515640847229,
+        "rmspe_percent": 0.8165119735171555,
+        "seed": 23,
+        "width_90_s": 2.260807510758696
+      },
+      {
+        "coverage_90": 0.8897176345231753,
+        "crps_s": 0.2830666065027357,
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 1877,
+        "rmse_s": 0.5789712104708021,
+        "rmspe_percent": 0.6278587796932629,
+        "seed": 37,
+        "width_90_s": 1.5598483574859328
+      },
+      {
+        "coverage_90": 0.8827708703374778,
+        "crps_s": 0.3543222992246865,
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 1689,
+        "rmse_s": 0.678770634791744,
+        "rmspe_percent": 0.7387472312931297,
+        "seed": 37,
+        "width_90_s": 1.9173452535597548
+      },
+      {
+        "coverage_90": 0.8860759493670886,
+        "crps_s": 0.40113653685695755,
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 1501,
+        "rmse_s": 0.7470436223518107,
+        "rmspe_percent": 0.816899298733544,
+        "seed": 37,
+        "width_90_s": 2.263330310275908
+      }
+    ],
+    "seeds": [
+      11,
+      23,
+      37
+    ],
+    "settings": {
+      "group_draws": 32,
+      "state_particles": 64
+    },
+    "shape_fit": {
+      "boundary": "conditional on Gaussian-trained hierarchy and fixed Q/R; shape is a training likelihood grid estimate",
+      "candidates": [
+        {
+          "nu": 4.0,
+          "skew": -0.25,
+          "training_nll": 953.9745036696304
+        },
+        {
+          "nu": 4.0,
+          "skew": 0.0,
+          "training_nll": 890.532783440643
+        },
+        {
+          "nu": 4.0,
+          "skew": 0.25,
+          "training_nll": 832.0593972465148
+        },
+        {
+          "nu": 4.0,
+          "skew": 0.5,
+          "training_nll": 782.6550058746005
+        },
+        {
+          "nu": 8.0,
+          "skew": -0.25,
+          "training_nll": 1096.0441963105775
+        },
+        {
+          "nu": 8.0,
+          "skew": 0.0,
+          "training_nll": 1015.4158039304402
+        },
+        {
+          "nu": 8.0,
+          "skew": 0.25,
+          "training_nll": 945.326163790538
+        },
+        {
+          "nu": 8.0,
+          "skew": 0.5,
+          "training_nll": 887.6139038029389
+        },
+        {
+          "nu": 20.0,
+          "skew": -0.25,
+          "training_nll": 1225.1611602072815
+        },
+        {
+          "nu": 20.0,
+          "skew": 0.0,
+          "training_nll": 1113.1359365642486
+        },
+        {
+          "nu": 20.0,
+          "skew": 0.25,
+          "training_nll": 1034.05430323141
+        },
+        {
+          "nu": 20.0,
+          "skew": 0.5,
+          "training_nll": 978.9584808800015
+        }
+      ],
+      "particles": 512,
+      "seed": 101,
+      "selected": {
+        "nu": 4.0,
+        "skew": 0.5,
+        "training_nll": 782.6550058746005
+      },
+      "training_events": [
+        "F1_2024_R01",
+        "F1_2024_R03"
+      ]
+    },
+    "split": {
+      "calibration": [
+        "F1_2024_R06"
+      ],
+      "test": [
+        "F1_2024_R16",
+        "F1_2024_R18"
+      ],
+      "train": [
+        "F1_2024_R01",
+        "F1_2024_R03"
+      ]
+    },
+    "target_quality": "FUEL_CORRECTED_PACE_PROXY",
+    "task_closure_eligible": true,
+    "test_metrics": [
+      {
+        "coverage_90": 0.8982418753329782,
+        "crps_s": 0.30789569731552763,
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 5631,
+        "rmse_s": 0.6046360185763521,
+        "rmspe_percent": 0.6581478159598071,
+        "width_90_s": 1.7154357835373404
+      },
+      {
+        "coverage_90": 0.8863232682060391,
+        "crps_s": 0.37759853776368313,
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 5067,
+        "rmse_s": 0.7062396339234146,
+        "rmspe_percent": 0.7705560301204354,
+        "width_90_s": 2.04173553627269
+      },
+      {
+        "coverage_90": 0.8858538751943149,
+        "crps_s": 0.4217556829664165,
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 4503,
+        "rmse_s": 0.7741982439906809,
+        "rmspe_percent": 0.8476749846907092,
+        "width_90_s": 2.3695124764395405
+      },
+      {
+        "coverage_90": 0.8911383413248091,
+        "crps_s": 0.28281093573734023,
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 5631,
+        "rmse_s": 0.5785952060285741,
+        "rmspe_percent": 0.6273922840180892,
+        "width_90_s": 1.5585911062286009
+      },
+      {
+        "coverage_90": 0.8817840931517663,
+        "crps_s": 0.35388440170084257,
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 5067,
+        "rmse_s": 0.6781798612182199,
+        "rmspe_percent": 0.7380257463785745,
+        "width_90_s": 1.9141237528017299
+      },
+      {
+        "coverage_90": 0.8836331334665778,
+        "crps_s": 0.40110407002783166,
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 4503,
+        "rmse_s": 0.7469777772109484,
+        "rmspe_percent": 0.8167226533613255,
+        "width_90_s": 2.261313314531219
+      }
+    ],
+    "validation_metrics": [
+      {
+        "coverage_90": 0.9361979166666666,
+        "crps_s": 0.2459688393962049,
+        "horizon": 1,
+        "method": "gaussian",
+        "predictions": 2304,
+        "rmse_s": 0.45188878092245455,
+        "rmspe_percent": 0.4955960063502765,
+        "width_90_s": 1.7091007730888117
+      },
+      {
+        "coverage_90": 0.9199004975124379,
+        "crps_s": 0.30402838138293287,
+        "horizon": 3,
+        "method": "gaussian",
+        "predictions": 2010,
+        "rmse_s": 0.5618208232023737,
+        "rmspe_percent": 0.6164341473287294,
+        "width_90_s": 2.014782802256077
+      },
+      {
+        "coverage_90": 0.9446386946386947,
+        "crps_s": 0.3428744811426228,
+        "horizon": 5,
+        "method": "gaussian",
+        "predictions": 1716,
+        "rmse_s": 0.6207133700275571,
+        "rmspe_percent": 0.6808490330752471,
+        "width_90_s": 2.317276197268765
+      },
+      {
+        "coverage_90": 0.9275173611111112,
+        "crps_s": 0.23196865596519503,
+        "horizon": 1,
+        "method": "skew_t",
+        "predictions": 2304,
+        "rmse_s": 0.441552277188297,
+        "rmspe_percent": 0.4843009830743936,
+        "width_90_s": 1.5502175095227175
+      },
+      {
+        "coverage_90": 0.9144278606965174,
+        "crps_s": 0.29440900101777645,
+        "horizon": 3,
+        "method": "skew_t",
+        "predictions": 2010,
+        "rmse_s": 0.5576293809329599,
+        "rmspe_percent": 0.6119918210886679,
+        "width_90_s": 1.8882405461377372
+      },
+      {
+        "coverage_90": 0.9399766899766899,
+        "crps_s": 0.33330754815207314,
+        "horizon": 5,
+        "method": "skew_t",
+        "predictions": 1716,
+        "rmse_s": 0.6150756694098822,
+        "rmspe_percent": 0.6749251513187328,
+        "width_90_s": 2.212155581096163
+      }
+    ]
+  },
+  "manifest": {
+    "content_sha256": "0a2747dd1f28d8f2ab7360d9470c6da3bc81dc0c8c4f62fd58c82583e1874c7f",
+    "files": {
+      "config.json": {
+        "bytes": 1784,
+        "sha256": "1c8cc74402184530a64cb93e59c63737552caca9b3792f60810c1f0ef6d4e9df"
+      },
+      "group_posterior.npz": {
+        "bytes": 666253,
+        "sha256": "b5131b46e649d8d23a9160f8a2da36fc6c15edba5b3dace6a6b86c1307654d18"
+      },
+      "predictions.json": {
+        "bytes": 25121242,
+        "sha256": "741474fdd0704ea5ceffc247b82b2a28c8fc548001f9a5d657f7e6d4b54632a7"
+      },
+      "predictive_ensembles.npz": {
+        "bytes": 610459789,
+        "sha256": "1e0fe4d40af4e7bf70f44209bcd5607f5b378d8ce9ba29fab23f3aa734e1e976"
+      },
+      "summary.json": {
+        "bytes": 18217,
+        "sha256": "35e0156bf35250ae569cefcbf3cf399effe05e5521c1871d79307a9f421c744b"
+      }
+    },
+    "schema_version": "apex-robust-tyre-manifest-v1",
+    "summary_sha256": "b0dbcad581395d9bba763d6065f842747977de34db7bba280db23e30a999ee2a"
+  },
+  "verification": {
+    "verified": true,
+    "task_closure_eligible": true,
+    "model_decision": "ACCEPT_CONDITIONAL_RESEARCH",
+    "summary_sha256": "b0dbcad581395d9bba763d6065f842747977de34db7bba280db23e30a999ee2a"
+  },
+  "full_regression": {
+    "passed": 497,
+    "seconds": 294.65
+  },
+  "implementation_ci": "https://github.com/aayups31/APEX/actions/runs/38285768668",
+  "promotion": false,
+  "content_sha256": "5aeb9b446f1a1e29d8d08d87659505480d0baa5a3e52d82161ec0eae87883377"
+}
