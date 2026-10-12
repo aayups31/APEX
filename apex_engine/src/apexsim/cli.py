@@ -396,6 +396,23 @@ def verify_tyre_energy_dataset_command(dataset: Path) -> None:
     typer.echo(json.dumps({"manifest_sha256": manifest["content_sha256"], **validate_samples(table)}, indent=2))
 
 
+@app.command("robust-tyre-demo")
+def robust_tyre_demo_command(baseline: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Run frozen conditional skew-t versus Gaussian observation comparison."""
+    from apexsim.examples.robust_tyre_demo import run_robust_tyre_demo
+
+    summary=run_robust_tyre_demo(baseline,output,profile)
+    typer.echo(json.dumps({k:summary[k] for k in ("model_decision","task_closure_eligible","content_sha256")},indent=2))
+
+
+@app.command("verify-robust-tyre-study")
+def verify_robust_tyre_study_command(output: Path) -> None:
+    """Recompute CRPS from saved predictive ensembles and verify their seals."""
+    from apexsim.examples.robust_tyre_demo import verify_robust_tyre_study
+
+    typer.echo(json.dumps(verify_robust_tyre_study(output),indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""

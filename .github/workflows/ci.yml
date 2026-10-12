@@ -43,6 +43,8 @@ jobs:
         run: python -m apexsim.cli verify-benchmark-reservation apex_engine/src/apexsim/data/benchmark_policy.json
       - name: Verify causal tyre-study and posterior artifacts
         run: python -m apexsim.cli tyre-degradation-smoke --output .cache/ci-tyre-degradation
+      - name: Verify robust tyre observation ensembles
+        run: python -m apexsim.cli robust-tyre-demo --baseline .cache/ci-tyre-degradation --output .cache/ci-robust-tyre --profile smoke
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
