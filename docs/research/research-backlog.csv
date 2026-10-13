@@ -24,7 +24,7 @@ R022,R2,P1,tyres,Add Bayesian hierarchical compound/track/driver model,latent st
 R023,R2,P1,tyres,Add robust skewed-t observation model,Bayesian model,CRPS/RMSPE improvement or reject,DONE
 R024,R2,P0,forecasting,Build tyre-energy proxy dataset with provenance,canonical telemetry,measured/proxy flags complete,DONE
 R025,R2,P0,forecasting,"Benchmark linear, ridge, XGBoost, GRU, LSTM and TFT",proxy dataset,matched train/test protocol,DONE
-R026,R2,P0,forecasting,Evaluate seen versus unseen tracks,forecast benchmark,separate confidence intervals,IN_PROGRESS
+R026,R2,P0,forecasting,Evaluate seen versus unseen tracks,forecast benchmark,separate confidence intervals,DONE
 R027,R2,P1,XAI,Implement temporal perturbation/TIME-like explanations,forecast models,faithfulness tests,TODO
 R028,R2,P1,XAI,Implement feasible counterfactual explanations,forecast models,counterfactual validity tests,TODO
 R029,R3,P0,track,Reconstruct curvilinear track from public position data,event manifests,closure and curvature error gates,TODO

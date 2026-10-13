@@ -43,6 +43,11 @@ fitted forecast families, including compact TFT. Their
 [report](../docs/verification/robust-tyre-forecast-report.md) keeps proxy labels,
 validation selection, negative results and checkpoint evidence explicit.
 
+The [R026 frozen generalization protocol](protocols/TRACK_GENERALIZATION.md)
+evaluates separate 2023 seen/unseen circuit events without refitting the R025
+models or preprocessing. The [report](../docs/verification/track-generalization-report.md)
+preserves event/sequence confidence, actual interval coverage and proxy limits.
+
 The [FIENI foundation review](equations/FIENI_2025.md) documents corrected resource
 feasibility, hand fixtures and exact tiny-grid benchmarks. Run
 `apexsim strategy-foundation-demo --output <new-directory>` from the checkout

@@ -19,11 +19,11 @@
     "domain": "tyre energy forecasting/XAI",
     "priority": "P0",
     "implementation_stage": "PUBLIC_DATA_ADAPTATION",
-    "apex_module": "apexsim.research.tyre_energy; apexsim.research.tyre_forecasting; apexsim.research.forecast_benchmark; apexsim.research.temporal_fusion",
+    "apex_module": "apexsim.research.tyre_energy; apexsim.research.tyre_forecasting; apexsim.research.forecast_benchmark; apexsim.research.temporal_fusion; apexsim.research.track_generalization",
     "validation_target": "seen/unseen-track RMSE, SMAPE, explanation faithfulness",
     "source_url": "https://doi.org/10.1145/3672608.3707765",
     "local_pdf": "research/user_provided_papers/tyre-energy-in-F1.pdf",
-    "notes": "R024/R025 source-bound public proxy dataset and matched six-family benchmark; compact TFT architectural adaptation; R026 seen/unseen and XAI faithfulness pending; no measured energy or production promotion"
+    "notes": "R024/R025/R026 source-bound public proxy dataset, matched six-family training and frozen seen/unseen cross-season evaluation; compact TFT adaptation; only two circuits per stratum, weak unseen interval coverage; XAI/counterfactual faithfulness pending; no measured energy or production promotion"
   },
   {
     "paper_id": "HEILMEIER_2018",
@@ -248,7 +248,7 @@
   },
   {
     "paper_id": "BOTTINGER_2023",
-    "title": "Mastering Nordschleife — A Comprehensive Race Simulation for AI Strategy Decision-Making in Motorsports",
+    "title": "Mastering Nordschleife \u00e2\u20ac\u201d A Comprehensive Race Simulation for AI Strategy Decision-Making in Motorsports",
     "year": 2023,
     "domain": "endurance simulation/RL",
     "priority": "P1",

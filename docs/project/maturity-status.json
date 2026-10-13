@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-10-12",
+  "last_progress_date": "2026-10-13",
   "research_inventory": {
-    "done": 25,
+    "done": 26,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,9 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R026"
+    "R029",
+    "R027",
+    "R028"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -109,6 +111,25 @@
       "Validation search budget limited; TFT is a compact architectural adaptation with native quantile loss",
       "All output projections and raw errors disclosed; no teacher forcing/future covariates",
       "No R026 broader seen-track study, paper reproduction, explanation faithfulness or production promotion"
+    ]
+  },
+  "track_generalization_evaluation": {
+    "backlog_id": "R026",
+    "status": "DONE",
+    "completed_date": "2026-10-13",
+    "summary_sha256": "f565de0903a71ca19a6dc753fc96ffeb82410d11c00e317bb071ee3fc02bec18",
+    "report": "docs/verification/track-generalization-report.md",
+    "decision": "SUPPORTED_IN_FROZEN_DEVELOPMENT_COHORT",
+    "selected_family": "xgboost",
+    "events": 4,
+    "origins": 41664,
+    "promotion": false,
+    "limitations": [
+      "Retrospective 2024-trained/2023-tested development evaluation; not prospective deployment",
+      "Only two circuits/events per stratum; bootstrap intervals are descriptive, not population guarantees",
+      "Driver/car/layout/regime changes confound causal track novelty interpretation",
+      "R024 energy proxies and fixed priors; no measured wheel targets",
+      "Frozen seeds/configs; no retraining, recalibration, test-driven selection or production promotion"
     ]
   }
 }

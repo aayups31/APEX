@@ -7,6 +7,7 @@ This directory contains project-planning and package-tracking material.
 - [Build backlog](build-backlog.csv)
 - [Kit manifest](kit-manifest.json)
 - [Current scoped maturity status](maturity-status.json)
+- [Engineering target and evidence expected by a motorsport reviewer](engineering-target.md)
 - [R1 evidence-gate review](../verification/r1-gate-review.md)
 - [Local platform and API](../platform/README.md)
 
@@ -29,7 +30,10 @@ dataset is complete, including labelled assumptions and native exclusion account
 R023's conditional robust observation comparison and R025's genuine six-family
 forecast benchmark are documented in the
 [latest verification report](../verification/robust-tyre-forecast-report.md).
-The next dependency-priority P0 task is R026's broader seen/unseen-track evaluation.
+R026's [frozen seen/unseen evaluation](../verification/track-generalization-report.md)
+is complete on four separate 2023 development races, with preserved model weights
+and event/sequence uncertainty. The next dependency-priority P0 task is R029
+track reconstruction. R027/R028 remain pending P1 explanation/counterfactual work.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 

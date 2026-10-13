@@ -28,8 +28,12 @@ irregular sampling and short-sequence limits. R025 adds
 train genuinely on matched causal histories, with validation-only selection and
 checkpoint replay. The [architecture map](equations/TEMPORAL_FUSION_PROXY_V1.md)
 and [comparison report](../docs/verification/robust-tyre-forecast-report.md)
-retain actual model rankings and proxy-target limits. R026 seen/unseen evidence
-and explanation faithfulness remain separate work.
+retain actual model rankings and proxy-target limits. R026's
+`apexsim.research.track_generalization` adds frozen-weight cross-season seen/unseen
+scores and hierarchical event/sequence confidence. Its
+[report](../docs/verification/track-generalization-report.md) records limited
+cohort support and weak unseen quantile coverage. Explanation faithfulness and
+feasible counterfactuals remain separate pending work.
 
 **Boundary:** measured tyre energy is proprietary. The included estimator is a physics-informed proxy useful for interface and experiment development; it must never be labelled as ground truth.
 

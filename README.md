@@ -70,7 +70,11 @@ conditional skew-t pace model and a matched six-family proxy forecast benchmark.
 Linear, ridge, XGBoost, GRU, LSTM and compact TFT genuinely train on the frozen
 development split, with reloadable weights and causal persistence/trend controls.
 See the [forecast run guide](docs/models/tyre-forecast-benchmark-v1.md).
-Broader seen/unseen-track evaluation is the next R026 task.
+The [R026 evaluation](docs/verification/track-generalization-report.md) replays
+the frozen models on four separate 2023 races, with distinct seen/unseen circuit
+scores and event/sequence confidence. The selected XGBoost candidate passes the
+frozen descriptive gate; proxy labels and weak unseen interval coverage remain
+explicit. Next priority is track reconstruction for calibrated vehicle replay.
 
 ---
 
