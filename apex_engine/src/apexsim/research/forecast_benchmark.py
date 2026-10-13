@@ -51,7 +51,8 @@ class ForecastWindows:
                                [self.metadata[i] for i in indices],self.vocabulary)
 
 
-def build_forecast_windows(frame: pd.DataFrame) -> ForecastWindows:
+def build_forecast_windows(frame: pd.DataFrame, *, expected_events: tuple[str,...] = EVENTS,
+                           vocabulary: dict[str,list[str]] | None = None) -> ForecastWindows:
     """Same origins for every horizon; no future values, native gaps or mixed drivers."""
     required={"event_id","sequence_id","segment_id","native_car_row","time_s",*DYNAMIC,*STATIC}
     if not required.issubset(frame):
@@ -61,10 +62,18 @@ def build_forecast_windows(frame: pd.DataFrame) -> ForecastWindows:
         if not match:
             raise ValueError("Forecast event IDs must have canonical season/round identities")
         assert_development_event(int(match[1]),int(match[2]),event_id=event)
-    if set(frame.event_id.unique())!=set(EVENTS):
-        raise ValueError("R025 requires all five frozen development events")
-    training=frame[frame.event_id.isin(EVENTS[:2])]
-    vocabulary={field:["UNKNOWN",*sorted(training[field].unique().tolist())] for field in STATIC}
+    if not expected_events or len(set(expected_events))!=len(expected_events) or set(frame.event_id.unique())!=set(expected_events):
+        raise ValueError("Forecast requires all unique frozen development events")
+    if vocabulary is None:
+        if expected_events!=EVENTS:
+            raise ValueError("Evaluation cohorts require a frozen training vocabulary")
+        training=frame[frame.event_id.isin(EVENTS[:2])]
+        vocabulary={field:["UNKNOWN",*sorted(training[field].unique().tolist())] for field in STATIC}
+    elif (set(vocabulary)!=set(STATIC) or any(not values or values[0]!="UNKNOWN"
+          or len(values)!=len(set(values)) or not all(isinstance(v,str) for v in values)
+          for values in vocabulary.values())):
+        raise ValueError("Invalid frozen forecasting vocabulary")
+    vocabulary=copy.deepcopy(vocabulary)
     xs,ss,ys,metadata=[],[],[],[]
     for sequence,group in frame.groupby("sequence_id",sort=True):
         group=group.sort_values("time_s",kind="stable")
@@ -87,7 +96,7 @@ def build_forecast_windows(frame: pd.DataFrame) -> ForecastWindows:
             ss.append(static)
             ys.append(target[[origin+h for h in HORIZONS]])
             row=records[origin]
-            metadata.append({"event_id":row["event_id"],"driver_id":row["driver_id"],"compound":row["compound"],
+            metadata.append({"event_id":row["event_id"],"driver_id":row["driver_id"],"compound":row["compound"],"track_id":row["track_id"],
                              "sequence_id":sequence,"origin_native_row":int(row["native_car_row"]),
                              "origin_time_s":float(row["time_s"]),
                              "target_native_rows":[int(records[origin+h]["native_car_row"]) for h in HORIZONS],

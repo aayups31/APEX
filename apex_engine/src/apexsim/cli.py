@@ -447,6 +447,48 @@ def verify_tyre_forecast_benchmark_command(output: Path) -> None:
     typer.echo(json.dumps(verify_forecast_benchmark(output),indent=2))
 
 
+@app.command("build-track-generalization-dataset")
+def build_track_generalization_dataset_command(archives: Annotated[list[Path], typer.Option()], calendar: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Build the four preregistered R026 races with unchanged proxy equations/priors."""
+    from apexsim.examples.track_generalization_demo import build_generalization_dataset
+
+    typer.echo(json.dumps(build_generalization_dataset(archives, calendar, output), indent=2))
+
+
+@app.command("track-generalization-demo")
+def track_generalization_demo_command(dataset: Path, reference: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Evaluate frozen R025 checkpoints with separate seen/unseen confidence intervals."""
+    from apexsim.examples.track_generalization_demo import run_track_generalization
+
+    summary = run_track_generalization(dataset, reference, output, profile)
+    typer.echo(json.dumps({k: summary[k] for k in ("frozen_family_decision", "task_closure_eligible", "content_sha256")}, indent=2))
+
+
+@app.command("track-generalization-smoke")
+def track_generalization_smoke_command(reference: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED inference-only smoke using an existing six-family smoke reference."""
+    from apexsim.examples.track_generalization_demo import (
+        make_generalization_smoke_dataset,
+        run_track_generalization,
+        verify_track_generalization,
+    )
+
+    if output.exists():
+        raise FileExistsError("Generalization smoke output must be fresh")
+    source = output.with_name(output.name+"-simulated-input")
+    make_generalization_smoke_dataset(reference, source)
+    run_track_generalization(source, reference, output, "smoke")
+    typer.echo(json.dumps(verify_track_generalization(output), indent=2))
+
+
+@app.command("verify-track-generalization")
+def verify_track_generalization_command(output: Path) -> None:
+    """Replay all frozen inference weights, quantiles and clustered scores."""
+    from apexsim.examples.track_generalization_demo import verify_track_generalization
+
+    typer.echo(json.dumps(verify_track_generalization(output), indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""

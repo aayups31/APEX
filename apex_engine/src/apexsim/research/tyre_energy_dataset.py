@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import platform
+import re
 import subprocess
 from collections import Counter
 from dataclasses import asdict, dataclass
@@ -274,17 +275,25 @@ def validate_samples(table: pa.Table) -> dict:
             "sequences": int(frame.sequence_id.nunique())}
 
 
-def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: Path) -> dict:
-    """Offline five-event public builder; benchmark guards precede archive payloads."""
+def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: Path, *,
+                             expected_events: tuple[str, ...] = EVENTS) -> dict:
+    """Offline explicit-cohort builder; the default frozen R024 membership is unchanged."""
     if output.exists():
         raise FileExistsError(f"Tyre-energy output already exists: {output}")
     if any(output.resolve().is_relative_to(p.resolve()) for p in [*archives, pace_dataset]):
         raise ValueError("Tyre-energy output must be outside frozen inputs")
+    if not expected_events or len(set(expected_events)) != len(expected_events):
+        raise ValueError("Proxy cohort requires unique explicit events")
+    for event in expected_events:
+        match = re.fullmatch(r"F1_(\d{4})_R(\d{2})", event)
+        if not match:
+            raise ValueError("Proxy cohort requires canonical event IDs")
+        assert_development_event(int(match[1]), int(match[2]), event_id=event)
     mask = json.loads(pace_dataset.read_text(encoding="utf-8"))
     if mask.get("content_sha256") != payload_sha256({k:v for k,v in mask.items() if k!="content_sha256"}):
         raise ValueError("Eligible tyre-pace dataset hash mismatch")
-    if mask.get("schema_version") != "apex-tyre-pace-dataset-v1" or {s["event_id"] for s in mask["sources"]} != set(EVENTS):
-        raise ValueError("R024 requires the frozen five-event eligible source mask")
+    if mask.get("schema_version") != "apex-tyre-pace-dataset-v1" or {s["event_id"] for s in mask["sources"]} != set(expected_events):
+        raise ValueError("Proxy builder requires the frozen eligible source membership")
     cfg = ProxyDatasetConfig()
     for segment in mask["segments"]:
         assert_development_event(segment["season"],segment["round_number"],event_id=segment["event_id"])
@@ -296,8 +305,8 @@ def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: 
         query = metadata["query"]
         assert_development_event(query["year"], query["round_number"])
         event = f"F1_{query['year']}_R{query['round_number']:02d}"
-        if event in seen or event not in EVENTS or query["session"] != "R":
-            raise ValueError("Duplicate/unsupported R024 development race")
+        if event in seen or event not in expected_events or query["session"] != "R":
+            raise ValueError("Duplicate/unsupported proxy development race")
         seen.add(event)
         manifest = verify_fastf1_archive(archive)
         source = next(s for s in mask["sources"] if s["event_id"] == event)
@@ -322,11 +331,12 @@ def build_tyre_energy_dataset(archives: list[Path], pace_dataset: Path, output: 
         if verify_fastf1_archive(archive)["content_sha256"] != manifest["content_sha256"]:
             raise ValueError("Native source changed during proxy conversion")
         sources.append({"event_id":event, "archive_sha256":manifest["content_sha256"], "query":query,
+                        "identity":manifest.get("identity"),
                         "source_manifest":manifest["source_manifest"], "environment":manifest["environment"], "streams":streams,
                         "native_files":{k:v for k,v in manifest["files"].items() if k=="tables/laps.parquet" or k in
                                         {f"tables/{kind}/{driver}.parquet" for kind in ("car_data","pos_data") for driver in cfg.drivers}}})
-    if seen != set(EVENTS):
-        raise ValueError("R024 requires all five frozen development events")
+    if seen != set(expected_events):
+        raise ValueError("Proxy builder requires all frozen development events")
     table = pa.Table.from_pylist(rows, schema=sample_schema())
     validation = validate_samples(table)
     frame = table.to_pandas()
