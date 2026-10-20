@@ -489,6 +489,35 @@ def verify_track_generalization_command(output: Path) -> None:
     typer.echo(json.dumps(verify_track_generalization(output), indent=2))
 
 
+@app.command("track-reconstruction-demo")
+def track_reconstruction_demo_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Reconstruct preregistered public reference traces with held-out geometry gates."""
+    from apexsim.examples.track_reconstruction_demo import run_track_reconstruction
+
+    summary = run_track_reconstruction(archives, mask_2024, mask_2023, output)
+    typer.echo(json.dumps({k: summary[k] for k in ("decision", "task_closure_eligible", "content_sha256")}, indent=2))
+
+
+@app.command("track-reconstruction-smoke")
+def track_reconstruction_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED circle/ellipse execution; cannot close public reconstruction research."""
+    from apexsim.examples.track_reconstruction_demo import (
+        run_track_reconstruction_smoke,
+        verify_track_reconstruction,
+    )
+
+    run_track_reconstruction_smoke(output)
+    typer.echo(json.dumps(verify_track_reconstruction(output), indent=2))
+
+
+@app.command("verify-track-reconstruction")
+def verify_track_reconstruction_command(output: Path) -> None:
+    """Refit stored training laps and replay geometry, diagnostics and frozen decisions."""
+    from apexsim.examples.track_reconstruction_demo import verify_track_reconstruction
+
+    typer.echo(json.dumps(verify_track_reconstruction(output), indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""

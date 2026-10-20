@@ -6,6 +6,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from apexsim.track_geometry import GeometrySample
+
 
 @dataclass(frozen=True)
 class TrackSample:
@@ -55,6 +57,19 @@ class TrackMap:
 
     def wrap(self, distance_m: float) -> float:
         return float(distance_m % self.length_m)
+
+    def sample_geometry(self, distance_m: float) -> GeometrySample:
+        """Read-only common geometry view; existing simulation sampling is unchanged."""
+        if not np.isfinite(distance_m):
+            raise ValueError("Geometry query distance must be finite")
+        s = self.wrap(distance_m)
+        stations = np.r_[self.s_m, self.length_m]
+        x, y = np.r_[self.x_m, self.x_m[0]], np.r_[self.y_m, self.y_m[0]]
+        index = min(int(np.searchsorted(stations, s, side="right")-1), len(self.s_m)-1)
+        heading = float(np.arctan2(y[index+1]-y[index], x[index+1]-x[index]))
+        return GeometrySample(s, float(np.interp(s, stations, x)), float(np.interp(s, stations, y)), heading,
+                              float(np.interp(s, stations, np.r_[self.curvature_1pm, self.curvature_1pm[0]])),
+                              "LEGACY_UNCALIBRATED_GEOMETRY")
 
     def sample(self, distance_m: float) -> TrackSample:
         s = self.wrap(distance_m)
