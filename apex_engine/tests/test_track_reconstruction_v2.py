@@ -9,7 +9,10 @@ from typer.testing import CliRunner
 from apexsim.cli import app
 from apexsim.examples.track_reconstruction_v2 import (
     COUNTS,
+    FROZEN_LAPS,
+    FROZEN_LAPS_V3,
     run_track_reconstruction_v2,
+    select_v2_laps,
     verify_track_reconstruction_v2,
 )
 from apexsim.provenance import file_sha256, payload_sha256
@@ -115,3 +118,29 @@ def test_v2_1_partial_observation_cli_replays_and_cannot_promote(tmp_path):
         partial = [m for m in case["lap_metrics"] if m["raw_closure_gap_m"] is None]
         assert len(partial) == 1 and partial[0]["observed_time_fraction"] >= .98
         assert len(partial[0]["registration"]["nearest_curve_rms_steps_m"]) == 9
+
+
+def test_v3_confirmation_cohort_keeps_previous_laps_and_uses_fixed_mask_indices():
+    for (event, driver), laps in FROZEN_LAPS_V3.items():
+        if event[3:7] == "2024":
+            continue
+        assert set(FROZEN_LAPS[(event, driver)]).issubset(laps) and len(laps) == 12
+        rows = [{"lap": n, "native_row": i} for i,n in enumerate([1, 2, 3, *laps])]
+        mask = {"segments": [{"event_id": event, "driver": driver, "rows": rows}]}
+        selected = select_v2_laps(mask, event, driver, "test", coherent_curvature=True)
+        assert [r["lap_number"] for r in selected] == laps
+    with pytest.raises(ValueError, match="observed-boundary"):
+        run_track_reconstruction_v2([], None, None, None, coherent_curvature=True)
+
+
+def test_v3_source_coherent_cli_replays_holes_partial_boundaries_and_reversals(tmp_path):
+    path = tmp_path/"source-coherent"
+    result = CliRunner().invoke(app, ["track-reconstruction-v2-smoke", "--observed-boundaries", "--coherent-curvature", "--output", str(path)])
+    assert result.exit_code == 0, result.output+repr(result.exception)
+    summary = json.loads((path/"summary.json").read_text())
+    assert summary["profile"] == "smoke_v3" and not summary["task_closure_eligible"]
+    for track, case in summary["cases"].items():
+        assert case["gate"]["passed"]
+        assert any(m["source_reversal_vertices"] > 0 for m in case["lap_metrics"])
+        with np.load(path/f"{track}_geometry_predictions.npz") as arrays:
+            assert any((arrays[m["lap_id"]+"_coarse_time_supported"]&~arrays[m["lap_id"]+"_coarse_supported"]).any() for m in case["lap_metrics"])

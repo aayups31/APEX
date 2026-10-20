@@ -30,6 +30,11 @@ FROZEN_LAPS = {
 }
 COUNTS = {"research_v2": (10, 10, 12), "development_v2": (10, 10, 0), "smoke_v2": (4, 3, 6)}
 COUNTS.update({"research_v2_1": (10, 10, 12), "development_v2_1": (10, 10, 0), "smoke_v2_1": (4, 3, 6)})
+COUNTS.update({"research_v3": (10, 10, 24), "development_v3": (10, 10, 0), "smoke_v3": (4, 3, 6)})
+FROZEN_LAPS_V3 = {**FROZEN_LAPS,
+                  ("F1_2023_R01", "4"): [7, 8, 9, 19, 20, 21, 22, 23, 24, 25, 26, 29],
+                  ("F1_2023_R01", "44"): [6, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19],
+                  ("F1_2023_R14", "4"): list(range(9, 21)), ("F1_2023_R14", "44"): list(range(5, 17))}
 
 
 def _read(path: Path):
@@ -42,24 +47,29 @@ def _decision(profile: str, passed: bool) -> str:
     if profile.startswith("development_"):
         return "DEVELOPMENT_ONLY"
     partial = profile.endswith("_v2_1")
+    if profile.endswith("_v3"):
+        return "PASS_FROZEN_SOURCE_COHERENT_GEOMETRY_V3" if passed else "REJECT_FROZEN_V3_GEOMETRY_GATES"
     if passed:
         return "PASS_FROZEN_OBSERVED_SUPPORT_GEOMETRY"+("_V2_1" if partial else "")
     return "REJECT_FROZEN_V2_1_GEOMETRY_GATES" if partial else "REJECT_FROZEN_V2_GEOMETRY_GATES"
 
 
-def select_v2_laps(mask: dict, event: str, driver: str, role: str) -> list[dict]:
+def select_v2_laps(mask: dict, event: str, driver: str, role: str, *, coherent_curvature: bool = False) -> list[dict]:
     rows = sorted([r for s in mask["segments"] if s["event_id"] == event and s["driver"] == driver for r in s["rows"]], key=lambda r: r["lap"])
-    selected = rows[:10] if event[3:7] == "2024" else rows[3:9]
-    if [r["lap"] for r in selected] != FROZEN_LAPS[(event, driver)]:
+    selected = rows[:10] if event[3:7] == "2024" else rows[3:15] if coherent_curvature else rows[3:9]
+    cohort = FROZEN_LAPS_V3 if coherent_curvature else FROZEN_LAPS
+    if [r["lap"] for r in selected] != cohort[(event, driver)]:
         raise ValueError("R029 v2 frozen source selection differs; replacement forbidden")
     return [{"event_id": event, "driver_id": driver, "lap_number": r["lap"], "native_row": r["native_row"],
              "track_id": EVENT_TRACKS[event], "role": role} for r in selected]
 
 
-def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023: Path, output: Path, *, stage: str = "research", observed_boundaries: bool = False) -> dict:
+def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023: Path, output: Path, *, stage: str = "research", observed_boundaries: bool = False, coherent_curvature: bool = False) -> dict:
     """Fit observed vertices with explicit source holes; public acceptance requires all gates."""
     if stage not in ("research", "development"):
         raise ValueError("R029 v2 stage must be research or development")
+    if coherent_curvature and not observed_boundaries:
+        raise ValueError("R029 v3 requires explicit observed-boundary policy")
     if output.exists():
         raise FileExistsError("R029 v2 output must be fresh")
     if any(output.resolve().is_relative_to(p.resolve()) for p in [*archives, mask_2024, mask_2023]):
@@ -82,7 +92,7 @@ def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023
                Path(supported_geometry.__file__), Path(track_reconstruction_demo.__file__)]
     watched += [path/"manifest.json" for path,_ in sources.values()]
     before = {str(p): file_sha256(p) for p in watched}
-    profile = stage+("_v2_1" if observed_boundaries else "_v2")
+    profile = stage+("_v3" if coherent_curvature else "_v2_1" if observed_boundaries else "_v2")
     cases, inputs = {}, {}
     for track, current, older in (("bahrain", "F1_2024_R01", "F1_2023_R01"), ("monza", "F1_2024_R16", "F1_2023_R14")):
         traces, native = [], {}
@@ -97,10 +107,12 @@ def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023
                 positions = pd.read_parquet(path/f"tables/pos_data/{driver}.parquet")
                 native[event+"_"+driver] = positions
                 role = ("train" if driver == "4" else "validation") if event == current else "test"
-                for selection in select_v2_laps(mask, event, driver, role):
+                for selection in select_v2_laps(mask, event, driver, role, coherent_curvature=coherent_curvature):
+                    if role == "test" and coherent_curvature:
+                        selection["evaluation_stratum"] = "retrospective" if selection["lap_number"] in FROZEN_LAPS[(event, driver)] else "additional_confirmation"
                     traces.append(extract_position_lap(native[event], positions, selection, allow_interior_gaps=True,
                                                        observed_boundaries=observed_boundaries and role == "test"))
-        result, arrays = fit_supported_case(traces, track, expected_counts=COUNTS[profile], refine_test_pose=observed_boundaries)
+        result, arrays = fit_supported_case(traces, track, expected_counts=COUNTS[profile], refine_test_pose=observed_boundaries, coherent_curvature=coherent_curvature)
         anchor = next(m for m in result["lap_metrics"] if m["lap_id"] == result["frame_anchor_lap_id"])
         curve = ReferenceCurve(arrays["coefficients"], GeometryConfig(**result["selected_config"]), track)
         result["annotations"] = _annotations(curve, traces, native[current], native[current+"_4"], anchor["registration"])
@@ -112,7 +124,7 @@ def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023
     if before != {str(p): file_sha256(p) for p in watched}:
         raise ValueError("R029 v2 code/input changed during study")
     passed = stage == "research" and all(c["gate"]["passed"] for c in cases.values())
-    summary = {"schema_version": "apex-reference-geometry-study-v2.1" if observed_boundaries else "apex-reference-geometry-study-v2", "classification": "ADAPTATION", "profile": profile,
+    summary = {"schema_version": "apex-reference-geometry-study-v3" if coherent_curvature else "apex-reference-geometry-study-v2.1" if observed_boundaries else "apex-reference-geometry-study-v2", "classification": "ADAPTATION", "profile": profile,
                "R029_complete": passed, "task_closure_eligible": passed, "promotion": False,
                "decision": _decision(profile, passed),
                "cases": cases, "sources": [{"event_id": e, "archive_sha256": m["content_sha256"], "manifest": m} for e,(_,m) in sources.items()],
@@ -127,6 +139,9 @@ def run_track_reconstruction_v2(archives: list[Path], mask_2024: Path, mask_2023
     if observed_boundaries:
         summary["prior_strict_v2_decision"] = "REJECT_STRICT_V2_BOUNDARY_SUPPORT"
         summary["limitations"].append("Unsupported test anchors UNKNOWN; >=98% retained time span; errors conditional on optimized rigid pose")
+    if coherent_curvature:
+        summary["prior_v2_1_decision"] = "REJECT_FROZEN_V2_1_GEOMETRY_GATES"
+        summary["limitations"].append("Source-only forward derivative QC; retrospective and additional same-event confirmation laps reported separately")
     summary["content_sha256"] = payload_sha256(summary)
     _save_artifacts(output, summary, inputs)
     return summary
@@ -143,15 +158,17 @@ def verify_track_reconstruction_v2(output: Path) -> dict:
         if Path(name).name != name or file_sha256(output/name) != item["sha256"] or (output/name).stat().st_size != item["bytes"]:
             raise ValueError("R029 v2 artifact hash mismatch")
     summary = _read(output/"summary.json")
-    if summary["content_sha256"] != manifest["summary_sha256"] or summary["content_sha256"] != payload_sha256({k:v for k,v in summary.items() if k != "content_sha256"}) or summary.get("schema_version") not in ("apex-reference-geometry-study-v2", "apex-reference-geometry-study-v2.1"):
+    if summary["content_sha256"] != manifest["summary_sha256"] or summary["content_sha256"] != payload_sha256({k:v for k,v in summary.items() if k != "content_sha256"}) or summary.get("schema_version") not in ("apex-reference-geometry-study-v2", "apex-reference-geometry-study-v2.1", "apex-reference-geometry-study-v3"):
         raise ValueError("R029 v2 summary hash/schema mismatch")
     profile = summary["profile"]
     if profile not in COUNTS:
         raise ValueError("R029 v2 profile mismatch")
-    partial = profile.endswith("_v2_1")
+    coherent = profile.endswith("_v3")
+    partial = profile.endswith("_v2_1") or coherent
     smoke = profile.startswith("smoke_")
     research = profile.startswith("research_")
-    if (summary["schema_version"] == "apex-reference-geometry-study-v2.1") != partial:
+    expected_schema = "apex-reference-geometry-study-v3" if coherent else "apex-reference-geometry-study-v2.1" if partial else "apex-reference-geometry-study-v2"
+    if summary["schema_version"] != expected_schema:
         raise ValueError("R029 v2 protocol/profile mismatch")
     if not smoke and (set(summary["cases"]) != {"bahrain", "monza"} or len(summary["sources"]) != 4 or {s["event_id"] for s in summary["sources"]} != set(EVENT_TRACKS) or summary["mask_sha256"] != {str(y):s for y,s in MASK_SEALS.items()}):
         raise ValueError("R029 v2 research source/cohort mismatch")
@@ -175,9 +192,16 @@ def verify_track_reconstruction_v2(output: Path) -> dict:
                 if role != m["role"]:
                     raise ValueError("R029 v2 lap role mismatch")
                 cohorts.setdefault((event, driver), []).append(m["lap_number"])
-            expected = {k:v for k,v in FROZEN_LAPS.items() if EVENT_TRACKS[k[0]] == track and (research or k[0][3:7] == "2024")}
+            cohort = FROZEN_LAPS_V3 if coherent else FROZEN_LAPS
+            expected = {k:v for k,v in cohort.items() if EVENT_TRACKS[k[0]] == track and (research or k[0][3:7] == "2024")}
             if cohorts != expected:
                 raise ValueError("R029 v2 frozen lap cohort mismatch")
+            if coherent:
+                for m in metadata:
+                    if m["role"] == "test":
+                        stratum = "retrospective" if m["lap_number"] in FROZEN_LAPS[(m["event_id"], m["driver_id"])] else "additional_confirmation"
+                        if m["evaluation_stratum"] != stratum:
+                            raise ValueError("R029 v3 confirmation stratum mismatch")
         with np.load(output/f"{track}_lap_inputs.npz", allow_pickle=False) as raw:
             laps = []
             for m in metadata:
@@ -199,7 +223,7 @@ def verify_track_reconstruction_v2(output: Path) -> dict:
                     elif m["boundary_samples"] != 2 or not np.isclose(np.linalg.norm(xy[-1]-xy[0]), m["raw_closure_gap_m"]) or m["raw_closure_gap_m"] > 30:
                         raise ValueError("R029 v2 source closure mismatch")
                 laps.append({"metadata": m, "xy_m": xy, "time_s": time, "native_parents": raw[key+"_native_parents"], "interval_supported": np.diff(time) <= .75})
-        replay, arrays = fit_supported_case(laps, track, expected_counts=COUNTS[profile], refine_test_pose=partial)
+        replay, arrays = fit_supported_case(laps, track, expected_counts=COUNTS[profile], refine_test_pose=partial, coherent_curvature=coherent)
         for name in ("selected_config", "selected_candidate_index", "candidate_selection", "length_m", "gate", "lap_metrics", "coverage", "sensitivity"):
             if not _close_values(replay[name], stored[name]):
                 raise ValueError(f"R029 v2 scientific diagnostics replay mismatch: {name}")
@@ -229,10 +253,12 @@ def verify_track_reconstruction_v2(output: Path) -> dict:
     return {"verified": True, "task_closure_eligible": eligible, "decision": summary["decision"], "summary_sha256": summary["content_sha256"]}
 
 
-def run_track_reconstruction_v2_smoke(output: Path, *, observed_boundaries: bool = False) -> dict:
+def run_track_reconstruction_v2_smoke(output: Path, *, observed_boundaries: bool = False, coherent_curvature: bool = False) -> dict:
     """Simulated complementary missing intervals; never public source/geometry acceptance."""
     if output.exists():
         raise FileExistsError("R029 v2 smoke output must be fresh")
+    if coherent_curvature and not observed_boundaries:
+        raise ValueError("R029 v3 smoke requires observed-boundary policy")
     cases, inputs = {}, {}
     for track, radii in (("sim_circle", (500., 500.)), ("sim_ellipse", (600., 400.))):
         laps = []
@@ -249,6 +275,8 @@ def run_track_reconstruction_v2_smoke(output: Path, *, observed_boundaries: bool
             angle = .02*i
             rotation = np.array([[np.cos(angle), -np.sin(angle)], [np.sin(angle), np.cos(angle)]])
             xy = original[keep]@rotation+np.array([2.*i, -3.*i])
+            if coherent_curvature and i == 8:
+                xy[100:104] = xy[100:104][::-1]
             metadata = {"lap_id": f"{track}_{i}", "role": role, "driver_id": "4" if role == "train" else "44", "lap_number": i+1,
                         "track_id": track, "input_truth": "SIMULATED", "raw_closure_gap_m": None if partial_test else float(np.linalg.norm(xy[-1]-xy[0]))}
             if partial_test:
@@ -256,9 +284,9 @@ def run_track_reconstruction_v2_smoke(output: Path, *, observed_boundaries: bool
                                 observed_endpoint_gap_m=float(np.linalg.norm(xy[-1]-xy[0])), boundary_truth="SIMULATED_PARTIAL_OBSERVATION")
             laps.append({"metadata": metadata, "xy_m": xy, "time_s": time[keep], "interval_supported": np.diff(time[keep]) <= .75,
                          "native_parents": np.column_stack((np.flatnonzero(keep), np.flatnonzero(keep)))})
-        result, arrays = fit_supported_case(laps, track, expected_counts=COUNTS["smoke_v2"], refine_test_pose=observed_boundaries)
+        result, arrays = fit_supported_case(laps, track, expected_counts=COUNTS["smoke_v2"], refine_test_pose=observed_boundaries, coherent_curvature=coherent_curvature)
         cases[track], inputs[track] = result, {"laps": laps, "arrays": arrays}
-    summary = {"schema_version": "apex-reference-geometry-study-v2.1" if observed_boundaries else "apex-reference-geometry-study-v2", "classification": "ADAPTATION", "profile": "smoke_v2_1" if observed_boundaries else "smoke_v2",
+    summary = {"schema_version": "apex-reference-geometry-study-v3" if coherent_curvature else "apex-reference-geometry-study-v2.1" if observed_boundaries else "apex-reference-geometry-study-v2", "classification": "ADAPTATION", "profile": "smoke_v3" if coherent_curvature else "smoke_v2_1" if observed_boundaries else "smoke_v2",
                "input_truth": "SIMULATED", "sources": [], "mask_sha256": {}, "cases": cases,
                "R029_complete": False, "task_closure_eligible": False, "promotion": False, "decision": "SIMULATED_EXECUTION_ONLY"}
     summary["content_sha256"] = payload_sha256(summary)

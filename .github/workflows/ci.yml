@@ -52,7 +52,7 @@ jobs:
       - name: Verify periodic reference geometry and held-out reconstruction
         run: python -m apexsim.cli track-reconstruction-smoke --output .cache/ci-track-reconstruction
       - name: Verify observed track support partial boundaries and rigid shape registration
-        run: python -m apexsim.cli track-reconstruction-v2-smoke --observed-boundaries --output .cache/ci-track-reconstruction-v2-1
+        run: python -m apexsim.cli track-reconstruction-v2-smoke --observed-boundaries --coherent-curvature --output .cache/ci-track-reconstruction-v3
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts

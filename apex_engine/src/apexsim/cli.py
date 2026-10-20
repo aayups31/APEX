@@ -490,11 +490,11 @@ def verify_track_generalization_command(output: Path) -> None:
 
 
 @app.command("track-reconstruction-v2")
-def track_reconstruction_v2_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], stage: Annotated[str, typer.Option()] = "research", observed_boundaries: Annotated[bool, typer.Option()] = False) -> None:
+def track_reconstruction_v2_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], stage: Annotated[str, typer.Option()] = "research", observed_boundaries: Annotated[bool, typer.Option()] = False, coherent_curvature: Annotated[bool, typer.Option()] = False) -> None:
     """Reconstruct native observed support; development stage never opens geometry test laps."""
     from apexsim.examples.track_reconstruction_v2 import run_track_reconstruction_v2
 
-    summary = run_track_reconstruction_v2(archives, mask_2024, mask_2023, output, stage=stage, observed_boundaries=observed_boundaries)
+    summary = run_track_reconstruction_v2(archives, mask_2024, mask_2023, output, stage=stage, observed_boundaries=observed_boundaries, coherent_curvature=coherent_curvature)
     typer.echo(json.dumps({k: summary[k] for k in ("decision", "task_closure_eligible", "content_sha256")}, indent=2))
 
 
@@ -507,14 +507,14 @@ def verify_track_reconstruction_v2_command(output: Path) -> None:
 
 
 @app.command("track-reconstruction-v2-smoke")
-def track_reconstruction_v2_smoke_command(output: Annotated[Path, typer.Option()], observed_boundaries: Annotated[bool, typer.Option()] = False) -> None:
+def track_reconstruction_v2_smoke_command(output: Annotated[Path, typer.Option()], observed_boundaries: Annotated[bool, typer.Option()] = False, coherent_curvature: Annotated[bool, typer.Option()] = False) -> None:
     """SIMULATED complementary gaps and native-support replay; cannot close public R029."""
     from apexsim.examples.track_reconstruction_v2 import (
         run_track_reconstruction_v2_smoke,
         verify_track_reconstruction_v2,
     )
 
-    run_track_reconstruction_v2_smoke(output, observed_boundaries=observed_boundaries)
+    run_track_reconstruction_v2_smoke(output, observed_boundaries=observed_boundaries, coherent_curvature=coherent_curvature)
     typer.echo(json.dumps(verify_track_reconstruction_v2(output), indent=2))
 
 
