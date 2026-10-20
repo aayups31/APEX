@@ -36,7 +36,12 @@ def boundary_position(arrays: tuple, time: float, *, allow_pit_status: bool = Fa
     return xy[left]*(1-weight)+xy[right]*weight, (left, right), float(weight)
 
 
-def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection: dict) -> dict:
+def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection: dict, *, allow_interior_gaps: bool = False) -> dict:
+    """Extract native vertices; v2 optionally retains explicit unsupported interior intervals.
+
+    Timing-anchor support, native quality, identity and closure rules never change.
+    The default remains the frozen v1 complete-lap policy.
+    """
     row = laps.iloc[selection["native_row"]]
     if str(row.DriverNumber) != selection["driver_id"] or int(row.LapNumber) != selection["lap_number"]:
         raise ValueError("Selected lap/native row identity mismatch")
@@ -57,7 +62,8 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
         raise ValueError("Selected lap needs >=100 supported native OnTrack position rows")
     times = np.r_[start, timestamps[indices], end]
     points = np.vstack((first, xy[indices], last))
-    if not np.isfinite(points).all() or np.any(np.diff(times) > .75):
+    interval_supported = np.diff(times) <= .75
+    if not np.isfinite(points).all() or (not allow_interior_gaps and not interval_supported.all()):
         raise ValueError("Selected position lap has unsupported samples/gaps")
     raw_gap = float(np.linalg.norm(points[-1]-points[0]))
     if raw_gap > 30:
@@ -67,7 +73,7 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
     for name in ("Sector1Time", "Sector2Time"):
         value = row.get(name)
         sectors.append(float(value.total_seconds()) if pd.notna(value) else None)
-    return {"xy_m": points, "time_s": times,
+    result = {"xy_m": points, "time_s": times,
             "native_parents": np.vstack((first_parents, np.column_stack((indices, indices)), last_parents)).astype(np.int64),
             "metadata": {**selection, "lap_id": f"{selection['event_id']}_{selection['driver_id']}_{selection['lap_number']}",
                          "lap_start_s": start, "lap_end_s": end, "native_samples": len(indices), "boundary_samples": 2,
@@ -76,3 +82,14 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
                          "sector_durations_s": sectors, "position_scale_m_per_unit": .1,
                          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
                          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible"}}
+    if allow_interior_gaps:
+        result["interval_supported"] = interval_supported
+        result["metadata"].update(
+            interval_policy="V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+            chord_phase_truth="RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+            unsupported_intervals=[{"left_vertex": int(i), "right_vertex": int(i+1),
+                                    "start_s": float(times[i]), "end_s": float(times[i+1]),
+                                    "gap_s": float(times[i+1]-times[i]),
+                                    "endpoint_chord_m": float(np.linalg.norm(points[i+1]-points[i]))}
+                                   for i in np.flatnonzero(~interval_supported)])
+    return result
