@@ -1,0 +1,3498 @@
+{
+  "schema_version": "apex-reference-geometry-evidence-v1",
+  "report_date": "2026-10-19",
+  "backlog_id": "R029",
+  "backlog_status": "INCONCLUSIVE",
+  "classification": "ADAPTATION",
+  "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
+  "R029_complete": false,
+  "production_promotion": false,
+  "research_inventory": {
+    "done": 26,
+    "total": 73
+  },
+  "build_inventory": {
+    "done": 13,
+    "total": 66
+  },
+  "maturity": {
+    "scoped_research_foundation": "R1",
+    "production_kernel": "R0",
+    "R2_public_calibration": "NOT_ACHIEVED"
+  },
+  "commits": {
+    "baseline": "d695e29caa5f1681fe2708ea3d4259257cf811fc",
+    "preregistration": "f1415e422098aad47a8084756fd73ffb6f6de172",
+    "geometry": "2f85bd39d3ff80c816e33524fb668a218978c0f0",
+    "source_audit": "984c9fa31bdcaf89c150396b469b55baf009a408",
+    "test_portability_fix": "371b638ccd90afd8907bf4cb789c37ad8697e63f"
+  },
+  "environment": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "fastf1": "3.8.3",
+    "torch": "2.14.0",
+    "pytest": "9.1.1",
+    "ruff": "0.16.6"
+  },
+  "public_source_audit": {
+    "R029_complete": false,
+    "audits": [
+      {
+        "driver_id": "4",
+        "event_id": "F1_2024_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 15,
+        "max_gap_s": 0.819999999999709,
+        "native_row": 299,
+        "native_samples": 370,
+        "raw_closure_gap_m": 8.505624609656428,
+        "role": "train",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 5083.428,
+            "gap_s": 0.819999999999709,
+            "native_parent_rows": [
+              19602,
+              19603
+            ],
+            "start_s": 5082.608
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.11749999999903366,
+            0.511111111108304
+          ],
+          "driver_id": "4",
+          "event_id": "F1_2024_R01",
+          "lap_end_s": 5191.44,
+          "lap_id": "F1_2024_R01_4_16",
+          "lap_number": 16,
+          "lap_start_s": 5094.875,
+          "max_gap_s": 0.5199999999995271,
+          "native_row": 300,
+          "native_samples": 378,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5331.16086684565,
+          "raw_closure_gap_m": 5.633212721990662,
+          "role": "train",
+          "sector_durations_s": [
+            30.716,
+            42.031
+          ],
+          "track_id": "bahrain"
+        },
+        "driver_id": "4",
+        "event_id": "F1_2024_R01",
+        "lap_number": 16,
+        "max_gap_s": 0.5199999999995271,
+        "native_row": 300,
+        "native_samples": 378,
+        "raw_closure_gap_m": 5.633212721990662,
+        "role": "train",
+        "source_gate_passed": true,
+        "track_id": "bahrain",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2024_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 17,
+        "max_gap_s": 1.300000000000182,
+        "native_row": 301,
+        "native_samples": 363,
+        "raw_closure_gap_m": 4.3057484173223175,
+        "role": "train",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 5200.948,
+            "gap_s": 1.300000000000182,
+            "native_parent_rows": [
+              20055,
+              20056
+            ],
+            "start_s": 5199.648
+          },
+          {
+            "end_s": 5260.448,
+            "gap_s": 0.9000000000005457,
+            "native_parent_rows": [
+              20274,
+              20275
+            ],
+            "start_s": 5259.548
+          },
+          {
+            "end_s": 5279.348,
+            "gap_s": 0.9799999999995634,
+            "native_parent_rows": [
+              20347,
+              20348
+            ],
+            "start_s": 5278.368
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.6583333333354175,
+            0.6952380952377756
+          ],
+          "driver_id": "44",
+          "event_id": "F1_2024_R01",
+          "lap_end_s": 3801.6,
+          "lap_id": "F1_2024_R01_44_2",
+          "lap_number": 2,
+          "lap_start_s": 3703.327,
+          "max_gap_s": 0.6599999999998545,
+          "native_row": 343,
+          "native_samples": 391,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5339.03267431758,
+          "raw_closure_gap_m": 1.9140318253901751,
+          "role": "validation",
+          "sector_durations_s": [
+            31.287,
+            42.893
+          ],
+          "track_id": "bahrain"
+        },
+        "driver_id": "44",
+        "event_id": "F1_2024_R01",
+        "lap_number": 2,
+        "max_gap_s": 0.6599999999998545,
+        "native_row": 343,
+        "native_samples": 391,
+        "raw_closure_gap_m": 1.9140318253901751,
+        "role": "validation",
+        "source_gate_passed": true,
+        "track_id": "bahrain",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2024_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 3,
+        "max_gap_s": 1.0399999999999636,
+        "native_row": 344,
+        "native_samples": 385,
+        "raw_closure_gap_m": 6.795223182983046,
+        "role": "validation",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 3836.308,
+            "gap_s": 0.9600000000000364,
+            "native_parent_rows": [
+              14778,
+              14779
+            ],
+            "start_s": 3835.348
+          },
+          {
+            "end_s": 3874.368,
+            "gap_s": 1.0399999999999636,
+            "native_parent_rows": [
+              14926,
+              14927
+            ],
+            "start_s": 3873.328
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.3499999999988631,
+            0.8388888888889661
+          ],
+          "driver_id": "44",
+          "event_id": "F1_2024_R01",
+          "lap_end_s": 3998.19,
+          "lap_id": "F1_2024_R01_44_4",
+          "lap_number": 4,
+          "lap_start_s": 3899.903,
+          "max_gap_s": 0.6199999999998909,
+          "native_row": 345,
+          "native_samples": 395,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5345.810836708922,
+          "raw_closure_gap_m": 8.703282763669879,
+          "role": "validation",
+          "sector_durations_s": [
+            30.983,
+            43.146
+          ],
+          "track_id": "bahrain"
+        },
+        "driver_id": "44",
+        "event_id": "F1_2024_R01",
+        "lap_number": 4,
+        "max_gap_s": 0.6199999999998909,
+        "native_row": 345,
+        "native_samples": 395,
+        "raw_closure_gap_m": 8.703282763669879,
+        "role": "validation",
+        "source_gate_passed": true,
+        "track_id": "bahrain",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 2,
+        "max_gap_s": 1.081000000000131,
+        "native_row": 107,
+        "native_samples": 340,
+        "raw_closure_gap_m": 2.3683879304229545,
+        "role": "train",
+        "source_gate_passed": false,
+        "track_id": "monza",
+        "unsupported_intervals": [
+          {
+            "end_s": 3441.57,
+            "gap_s": 1.081000000000131,
+            "native_parent_rows": [
+              13178,
+              13179
+            ],
+            "start_s": 3440.489
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.9733333333339397,
+            0.7625000000003908
+          ],
+          "driver_id": "4",
+          "event_id": "F1_2024_R16",
+          "lap_end_s": 3610.291,
+          "lap_id": "F1_2024_R16_4_3",
+          "lap_number": 3,
+          "lap_start_s": 3525.181,
+          "max_gap_s": 0.6799999999998363,
+          "native_row": 108,
+          "native_samples": 324,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5754.3722666269605,
+          "raw_closure_gap_m": 5.805904370185672,
+          "role": "train",
+          "sector_durations_s": [
+            27.513,
+            29.381
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "lap_number": 3,
+        "max_gap_s": 0.6799999999998363,
+        "native_row": 108,
+        "native_samples": 324,
+        "raw_closure_gap_m": 5.805904370185672,
+        "role": "train",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.7625000000003908,
+            0.045454545453511935
+          ],
+          "driver_id": "4",
+          "event_id": "F1_2024_R16",
+          "lap_end_s": 3695.459,
+          "lap_id": "F1_2024_R16_4_4",
+          "lap_number": 4,
+          "lap_start_s": 3610.291,
+          "max_gap_s": 0.68100000000004,
+          "native_row": 109,
+          "native_samples": 339,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5757.736509071586,
+          "raw_closure_gap_m": 2.513973921137768,
+          "role": "train",
+          "sector_durations_s": [
+            27.638,
+            29.468
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "lap_number": 4,
+        "max_gap_s": 0.68100000000004,
+        "native_row": 109,
+        "native_samples": 339,
+        "raw_closure_gap_m": 2.513973921137768,
+        "role": "train",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 2,
+        "max_gap_s": 1.081000000000131,
+        "native_row": 213,
+        "native_samples": 344,
+        "raw_closure_gap_m": 5.015804662013709,
+        "role": "validation",
+        "source_gate_passed": false,
+        "track_id": "monza",
+        "unsupported_intervals": [
+          {
+            "end_s": 3441.57,
+            "gap_s": 1.081000000000131,
+            "native_parent_rows": [
+              13178,
+              13179
+            ],
+            "start_s": 3440.489
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.6392857142855692,
+            0.7450000000006934
+          ],
+          "driver_id": "44",
+          "event_id": "F1_2024_R16",
+          "lap_end_s": 3612.099,
+          "lap_id": "F1_2024_R16_44_3",
+          "lap_number": 3,
+          "lap_start_s": 3526.469,
+          "max_gap_s": 0.6799999999998363,
+          "native_row": 214,
+          "native_samples": 326,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5760.934104141848,
+          "raw_closure_gap_m": 0.7908872117168787,
+          "role": "validation",
+          "sector_durations_s": [
+            27.495,
+            29.688
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "lap_number": 3,
+        "max_gap_s": 0.6799999999998363,
+        "native_row": 214,
+        "native_samples": 326,
+        "raw_closure_gap_m": 0.7908872117168787,
+        "role": "validation",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.7450000000006934,
+            0.5552631578946771
+          ],
+          "driver_id": "44",
+          "event_id": "F1_2024_R16",
+          "lap_end_s": 3697.821,
+          "lap_id": "F1_2024_R16_44_4",
+          "lap_number": 4,
+          "lap_start_s": 3612.099,
+          "max_gap_s": 0.68100000000004,
+          "native_row": 215,
+          "native_samples": 340,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5759.875996414003,
+          "raw_closure_gap_m": 0.21347629567377435,
+          "role": "validation",
+          "sector_durations_s": [
+            27.65,
+            29.626
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "lap_number": 4,
+        "max_gap_s": 0.68100000000004,
+        "native_row": 215,
+        "native_samples": 340,
+        "raw_closure_gap_m": 0.21347629567377435,
+        "role": "validation",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 4,
+        "max_gap_s": 0.8989999999994325,
+        "native_row": 763,
+        "native_samples": 402,
+        "raw_closure_gap_m": 1.5097427778557735,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 4106.596,
+            "gap_s": 0.8989999999994325,
+            "native_parent_rows": [
+              15659,
+              15660
+            ],
+            "start_s": 4105.697
+          },
+          {
+            "end_s": 4130.577,
+            "gap_s": 0.7800000000006548,
+            "native_parent_rows": [
+              15750,
+              15751
+            ],
+            "start_s": 4129.797
+          }
+        ]
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 5,
+        "max_gap_s": 0.9800000000004729,
+        "native_row": 764,
+        "native_samples": 377,
+        "raw_closure_gap_m": 10.220027630266982,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 4185.597,
+            "gap_s": 0.9799999999995634,
+            "native_parent_rows": [
+              15970,
+              15971
+            ],
+            "start_s": 4184.617
+          },
+          {
+            "end_s": 4237.117,
+            "gap_s": 0.9800000000004729,
+            "native_parent_rows": [
+              16163,
+              16164
+            ],
+            "start_s": 4236.137
+          },
+          {
+            "end_s": 4260.517,
+            "gap_s": 0.7600000000002183,
+            "native_parent_rows": [
+              16246,
+              16247
+            ],
+            "start_s": 4259.757
+          }
+        ]
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 6,
+        "max_gap_s": 1.1000000000003638,
+        "native_row": 765,
+        "native_samples": 372,
+        "raw_closure_gap_m": 9.412914400956794,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 4271.557,
+            "gap_s": 0.7809999999999491,
+            "native_parent_rows": [
+              16287,
+              16288
+            ],
+            "start_s": 4270.776
+          },
+          {
+            "end_s": 4305.097,
+            "gap_s": 0.9799999999995634,
+            "native_parent_rows": [
+              16405,
+              16406
+            ],
+            "start_s": 4304.117
+          },
+          {
+            "end_s": 4316.037,
+            "gap_s": 1.0399999999999636,
+            "native_parent_rows": [
+              16444,
+              16445
+            ],
+            "start_s": 4314.997
+          },
+          {
+            "end_s": 4334.117,
+            "gap_s": 1.1000000000003638,
+            "native_parent_rows": [
+              16517,
+              16518
+            ],
+            "start_s": 4333.017
+          },
+          {
+            "end_s": 4346.617,
+            "gap_s": 0.8200000000006185,
+            "native_parent_rows": [
+              16563,
+              16564
+            ],
+            "start_s": 4345.797
+          }
+        ]
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 3,
+        "max_gap_s": 1.3200000000001637,
+        "native_row": 817,
+        "native_samples": 377,
+        "raw_closure_gap_m": 8.618002802196647,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 3995.077,
+            "gap_s": 1.1600000000003092,
+            "native_parent_rows": [
+              15234,
+              15235
+            ],
+            "start_s": 3993.917
+          },
+          {
+            "end_s": 4023.117,
+            "gap_s": 1.2000000000002728,
+            "native_parent_rows": [
+              15342,
+              15343
+            ],
+            "start_s": 4021.917
+          },
+          {
+            "end_s": 4040.476,
+            "gap_s": 0.9390000000003056,
+            "native_parent_rows": [
+              15407,
+              15408
+            ],
+            "start_s": 4039.537
+          },
+          {
+            "end_s": 4050.617,
+            "gap_s": 1.3200000000001637,
+            "native_parent_rows": [
+              15446,
+              15447
+            ],
+            "start_s": 4049.297
+          }
+        ]
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 4,
+        "max_gap_s": 0.8989999999994325,
+        "native_row": 818,
+        "native_samples": 385,
+        "raw_closure_gap_m": 8.39512444240984,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 4106.596,
+            "gap_s": 0.8989999999994325,
+            "native_parent_rows": [
+              15659,
+              15660
+            ],
+            "start_s": 4105.697
+          },
+          {
+            "end_s": 4130.577,
+            "gap_s": 0.7800000000006548,
+            "native_parent_rows": [
+              15750,
+              15751
+            ],
+            "start_s": 4129.797
+          }
+        ]
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 5,
+        "max_gap_s": 0.9800000000004729,
+        "native_row": 819,
+        "native_samples": 374,
+        "raw_closure_gap_m": 1.1892537245382844,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "bahrain",
+        "unsupported_intervals": [
+          {
+            "end_s": 4185.597,
+            "gap_s": 0.9799999999995634,
+            "native_parent_rows": [
+              15970,
+              15971
+            ],
+            "start_s": 4184.617
+          },
+          {
+            "end_s": 4237.117,
+            "gap_s": 0.9800000000004729,
+            "native_parent_rows": [
+              16163,
+              16164
+            ],
+            "start_s": 4236.137
+          }
+        ]
+      },
+      {
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 6,
+        "max_gap_s": 1.2600000000002183,
+        "native_row": 605,
+        "native_samples": 328,
+        "raw_closure_gap_m": 3.014625408036939,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "monza",
+        "unsupported_intervals": [
+          {
+            "end_s": 5386.468,
+            "gap_s": 1.2600000000002183,
+            "native_parent_rows": [
+              20506,
+              20507
+            ],
+            "start_s": 5385.208
+          },
+          {
+            "end_s": 5424.348,
+            "gap_s": 0.8000000000001819,
+            "native_parent_rows": [
+              20649,
+              20650
+            ],
+            "start_s": 5423.548
+          },
+          {
+            "end_s": 5436.808,
+            "gap_s": 1.1589999999996508,
+            "native_parent_rows": [
+              20693,
+              20694
+            ],
+            "start_s": 5435.649
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.1319999999996071,
+            0.3264705882356639
+          ],
+          "driver_id": "4",
+          "event_id": "F1_2023_R14",
+          "lap_end_s": 5555.939,
+          "lap_id": "F1_2023_R14_4_7",
+          "lap_number": 7,
+          "lap_start_s": 5469.075,
+          "max_gap_s": 0.6999999999998181,
+          "native_row": 606,
+          "native_samples": 332,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5750.1579072484565,
+          "raw_closure_gap_m": 9.748830266132664,
+          "role": "test",
+          "sector_durations_s": [
+            28.36,
+            29.946
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "lap_number": 7,
+        "max_gap_s": 0.6999999999998181,
+        "native_row": 606,
+        "native_samples": 332,
+        "raw_closure_gap_m": 9.748830266132664,
+        "role": "test",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.3264705882356639,
+            0.5974999999994884
+          ],
+          "driver_id": "4",
+          "event_id": "F1_2023_R14",
+          "lap_end_s": 5642.567,
+          "lap_id": "F1_2023_R14_4_8",
+          "lap_number": 8,
+          "lap_start_s": 5555.939,
+          "max_gap_s": 0.5399999999999636,
+          "native_row": 607,
+          "native_samples": 340,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5771.614467871717,
+          "raw_closure_gap_m": 3.0870377723456395,
+          "role": "test",
+          "sector_durations_s": [
+            28.271,
+            29.746
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "lap_number": 8,
+        "max_gap_s": 0.5399999999999636,
+        "native_row": 607,
+        "native_samples": 340,
+        "raw_closure_gap_m": 3.0870377723456395,
+        "role": "test",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 2,
+        "max_gap_s": 1.280999999999949,
+        "native_row": 703,
+        "native_samples": 338,
+        "raw_closure_gap_m": 8.081092569665552,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "monza",
+        "unsupported_intervals": [
+          {
+            "end_s": 5071.889,
+            "gap_s": 1.280999999999949,
+            "native_parent_rows": [
+              19303,
+              19304
+            ],
+            "start_s": 5070.608
+          },
+          {
+            "end_s": 5103.908,
+            "gap_s": 0.7600000000002183,
+            "native_parent_rows": [
+              19430,
+              19431
+            ],
+            "start_s": 5103.148
+          }
+        ]
+      },
+      {
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "failure_reason": "Selected position lap has unsupported samples/gaps",
+        "lap_number": 3,
+        "max_gap_s": 0.8999999999996362,
+        "native_row": 704,
+        "native_samples": 339,
+        "raw_closure_gap_m": 0.16142064375543205,
+        "role": "test",
+        "source_gate_passed": false,
+        "track_id": "monza",
+        "unsupported_intervals": [
+          {
+            "end_s": 5162.828,
+            "gap_s": 0.7800000000006548,
+            "native_parent_rows": [
+              19654,
+              19655
+            ],
+            "start_s": 5162.048
+          },
+          {
+            "end_s": 5184.409,
+            "gap_s": 0.8999999999996362,
+            "native_parent_rows": [
+              19743,
+              19744
+            ],
+            "start_s": 5183.509
+          }
+        ]
+      },
+      {
+        "accepted_metadata": {
+          "boundary_samples": 2,
+          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+          "boundary_weights": [
+            0.5636363636347852,
+            0.3866666666663837
+          ],
+          "driver_id": "44",
+          "event_id": "F1_2023_R14",
+          "lap_end_s": 5296.245,
+          "lap_id": "F1_2023_R14_44_4",
+          "lap_number": 4,
+          "lap_start_s": 5209.012,
+          "max_gap_s": 0.47999999999956344,
+          "native_row": 705,
+          "native_samples": 331,
+          "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+          "position_scale_m_per_unit": 0.1,
+          "raw_chord_length_m": 5766.975080660766,
+          "raw_closure_gap_m": 7.0102613431632195,
+          "role": "test",
+          "sector_durations_s": [
+            28.233,
+            30.219
+          ],
+          "track_id": "monza"
+        },
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "lap_number": 4,
+        "max_gap_s": 0.47999999999956344,
+        "native_row": 705,
+        "native_samples": 331,
+        "raw_closure_gap_m": 7.0102613431632195,
+        "role": "test",
+        "source_gate_passed": true,
+        "track_id": "monza",
+        "unsupported_intervals": []
+      }
+    ],
+    "content_sha256": "f653df6113d34a947ebaaf7c20fd7bcc48a258c7e2a64a008e0bbef1dbc47598",
+    "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
+    "fit_performed": false,
+    "implementation_sha256": {
+      "position_laps.py": "dcb8ba0d82722184925f0d2f8498b2e45cf6088d478ddb0093c4d684d3191648",
+      "reference_geometry.py": "d5d93e13ffd75893b62d68cad282566c156ebdb7ab19c2ae41db65e78961f830",
+      "track_reconstruction_demo.py": "b6c5e44bcaea7a6d14d623f15e30ce158d9f2e86360c15e70733f193302d99d0",
+      "track_reconstruction_source_audit.py": "9e17ff64c18177dad18af3eb0392ed8ed5a04507551ca9dfcbb4a615b699d738"
+    },
+    "limitations": [
+      "Source support only; no geometry accuracy or task closure follows",
+      "Snapshots establish local consistency, not provider authentication",
+      "Frozen 0.75s gap limit and selected laps unchanged; no replacement or gap filling"
+    ],
+    "mask_sha256": {
+      "2023": "28f947c68e71c1d97b61b52d3cfcdfed0b30fce801bad3f0ee49136fa61a966d",
+      "2024": "d79966d3b13c06cb8a0bd6f6bcff1690a10965d6414e0e71840ecf6d7811d6a2"
+    },
+    "profile": "research_source_audit",
+    "promotion": false,
+    "schema_version": "apex-reference-geometry-source-audit-v1",
+    "selected_laps": 24,
+    "source_gate_passed": false,
+    "sources": [
+      {
+        "archive_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+        "event_id": "F1_2024_R01",
+        "manifest": {
+          "content_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+          "environment": {
+            "fastf1": "3.8.3",
+            "numpy": "2.5.3",
+            "pandas": "2.3.3",
+            "pyarrow": "25.0.1",
+            "python": "3.12.12"
+          },
+          "files": {
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/_extended_timing_data.ff1pkl": {
+              "bytes": 1254508,
+              "sha256": "c6a1e2007b8f517e64435e173e5fef9814a195d4bad336433b7b604c9655b1ce"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/car_data.ff1pkl": {
+              "bytes": 41107272,
+              "sha256": "e1604e3d693e8cd0e48946ca02f5d0fb4ebfe17e6c0f54faf282c66e82d8228d"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/driver_info.ff1pkl": {
+              "bytes": 5801,
+              "sha256": "d41dbb31f628c3358fefaf93690e381ff52f9169f4978be342a83074f9c3040c"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/lap_count.ff1pkl": {
+              "bytes": 1179,
+              "sha256": "6e0ebfab134809ead207f636138341923528b02320f7d1121ecc74f4fd171146"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/position_data.ff1pkl": {
+              "bytes": 39611913,
+              "sha256": "3b5ea95fa6d0c4c4f8cae56a2302af2719e051d6443fbf293588242d00842932"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/race_control_messages.ff1pkl": {
+              "bytes": 6948,
+              "sha256": "a93f10e485921c0bcf55161d2cf18b9666d0fb45736fe8bc596ce1d21b3867f3"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/session_info.ff1pkl": {
+              "bytes": 503,
+              "sha256": "d66136fd7f289e42e0f37739198d09ba17c951854b7e2b954af5cb44e35659ea"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/session_status_data.ff1pkl": {
+              "bytes": 216,
+              "sha256": "8c0f4b573a01577dc4d19ec3c922b24a4218edbdf530a2ce91a7e273937b7546"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/timing_app_data.ff1pkl": {
+              "bytes": 92763,
+              "sha256": "e4855e270aeab775434b3698ebae5dcdfa3b47cfade1ab23b67bef5a85c3de74"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/track_status_data.ff1pkl": {
+              "bytes": 299,
+              "sha256": "7eb9ac9dd284c8c5b564e51615742a4799d0abf64612a4776a545e64a2e56f51"
+            },
+            "cache/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/weather_data.ff1pkl": {
+              "bytes": 10240,
+              "sha256": "0f7c3b97fe2fe102f9b85c315e955b62214bf95e63ec3e6af08b385d43535bd9"
+            },
+            "cache/fastf1_http_cache.sqlite": {
+              "bytes": 24154112,
+              "sha256": "bd578d758d0e3c18f632ed50396da1c49c22adc2b18134552f2af86cea7692d1"
+            },
+            "snapshot.json": {
+              "bytes": 27448,
+              "sha256": "b834eac1e9404041c3ee485c17b92d3b8c31b9c2c784db76df0471e5d7948a46"
+            },
+            "tables/car_data/1.parquet": {
+              "bytes": 853243,
+              "sha256": "c50ee9f1411f70e71d056927542a2ec5a77bf642b8ba0df19e98a5c26a72550a"
+            },
+            "tables/car_data/10.parquet": {
+              "bytes": 852632,
+              "sha256": "11f23417bb14febc9e40d07c09b68fb2721399e367e5e362d04c917835ef2bbb"
+            },
+            "tables/car_data/11.parquet": {
+              "bytes": 854469,
+              "sha256": "480ce4f3e13e15b8ead8b0302a9848cf2247234fa7cdae65c1a0df8491a19578"
+            },
+            "tables/car_data/14.parquet": {
+              "bytes": 855522,
+              "sha256": "0739fa0f2a7ffd78fb89ef3db38c22eac1a5c5ffda3fb7b05cba6bb2cf5383cf"
+            },
+            "tables/car_data/16.parquet": {
+              "bytes": 859540,
+              "sha256": "5a74f8afb7c0dbe4bd6a69e39ffe06b54ceea32c4971144ddd33a6a5b4b14aad"
+            },
+            "tables/car_data/18.parquet": {
+              "bytes": 856424,
+              "sha256": "83620789989ef81a1384ca62f4500edc9429eb699c3a6746304cbe4224a488ab"
+            },
+            "tables/car_data/2.parquet": {
+              "bytes": 856121,
+              "sha256": "f879d2bfb28d65a02b2999014d67876c8fc541be36f2815008982d2c6f1a318c"
+            },
+            "tables/car_data/20.parquet": {
+              "bytes": 855180,
+              "sha256": "99e924386dcf5b9828c7ad2e5b3f8d0e89e7834775dc8d08bc0df96a30e92397"
+            },
+            "tables/car_data/22.parquet": {
+              "bytes": 853989,
+              "sha256": "4a4ca2e276a3d68b43c3cfb6d9f7340193333a37163d2061dc18a570e2964a70"
+            },
+            "tables/car_data/23.parquet": {
+              "bytes": 856424,
+              "sha256": "b3e518cb39c1c413647c81062899be3d15b746af3e73d72ab32c7a27edadfaea"
+            },
+            "tables/car_data/24.parquet": {
+              "bytes": 854817,
+              "sha256": "ab47ab60013aba36402c05545ea495959b3655078e0f351453ea28730eb817d2"
+            },
+            "tables/car_data/27.parquet": {
+              "bytes": 856522,
+              "sha256": "3eb7fff52acf8501f68e930d5e77d68adf93a004d424a3d2f46b4cd43eab3b69"
+            },
+            "tables/car_data/3.parquet": {
+              "bytes": 852724,
+              "sha256": "987ec950cc943247db250760027fe42043f3d033da59c4ffe3932f13ce87a5b9"
+            },
+            "tables/car_data/31.parquet": {
+              "bytes": 854878,
+              "sha256": "88c9c7276433ccd59fe0ead2e194b6ea6e931333f159f2cda3306f94fbcb58b4"
+            },
+            "tables/car_data/4.parquet": {
+              "bytes": 854281,
+              "sha256": "7716b862c5d30f86e6381fe90c2fa12d818aef63cea4c63d978f21bd8bbf7116"
+            },
+            "tables/car_data/44.parquet": {
+              "bytes": 859036,
+              "sha256": "61d4a5ced4888712e9ad49341ecfa07e699cad65f5e94f84cffa0c5116c7da5d"
+            },
+            "tables/car_data/55.parquet": {
+              "bytes": 856825,
+              "sha256": "a84ffdea5f6a81a83c804179f5586a93e0c94992543938313265b0a1c4038351"
+            },
+            "tables/car_data/63.parquet": {
+              "bytes": 856655,
+              "sha256": "cb34475db58208a4bf254526899154f809036ad33b8c76c85e78c49aa4815641"
+            },
+            "tables/car_data/77.parquet": {
+              "bytes": 856565,
+              "sha256": "661f84174ca2a34eb01c8be8647c58eaa95cb3180a0b1d1148acd52267a5e514"
+            },
+            "tables/car_data/81.parquet": {
+              "bytes": 853981,
+              "sha256": "127242077067639389f8c0f2f9233128e5c8eec4502ed097ef0ab1cc60f3b4b0"
+            },
+            "tables/laps.parquet": {
+              "bytes": 95261,
+              "sha256": "3a3953a911bf5cc94c453bcca21e49fb808d54588118807d32b496efe68745e2"
+            },
+            "tables/pos_data/1.parquet": {
+              "bytes": 922383,
+              "sha256": "aad72c1efd546594a217a2c596558ece5fbf5123d9579ba51dfc9c836e51d5b8"
+            },
+            "tables/pos_data/10.parquet": {
+              "bytes": 920693,
+              "sha256": "2731bbe8e13b0264dc4be528112b9937ef0f8b47443bcb20ad01cf65b988faf6"
+            },
+            "tables/pos_data/11.parquet": {
+              "bytes": 923820,
+              "sha256": "36fb96a07605efaab41ec721ce17b5d22836b5776a1cfcf5dd4cba25c729264f"
+            },
+            "tables/pos_data/14.parquet": {
+              "bytes": 923167,
+              "sha256": "1b8ce6139f4b2bc18bb9b1f711efb18a4c567ee5853387e138f380e11d8a9e63"
+            },
+            "tables/pos_data/16.parquet": {
+              "bytes": 922735,
+              "sha256": "589afd4bf8035f259159f4840e47b7f781ff531154f6ee3bee7a8352511376c4"
+            },
+            "tables/pos_data/18.parquet": {
+              "bytes": 924138,
+              "sha256": "b82a141ee8208962cafb70a2192f90fb5589fe480931cbc30b462e6161e05c14"
+            },
+            "tables/pos_data/2.parquet": {
+              "bytes": 921857,
+              "sha256": "5e36abcd3d45235af3a23114383d14cf562168b557949b83551cbe7a2ec7af0a"
+            },
+            "tables/pos_data/20.parquet": {
+              "bytes": 921623,
+              "sha256": "c538b942fe2482f4579010a1a78b86cfc9f7737dbe44e8dc2a8fac17d26b2fd9"
+            },
+            "tables/pos_data/22.parquet": {
+              "bytes": 923580,
+              "sha256": "59f4947538d29dc22df0fdcaf90683d31e4ce705c9edaf2e4d19d9c2f0c3e34d"
+            },
+            "tables/pos_data/23.parquet": {
+              "bytes": 922575,
+              "sha256": "8e4292de92c39c383716cd4462ea960bf4610d647d570772a4904df5cf3c2be8"
+            },
+            "tables/pos_data/24.parquet": {
+              "bytes": 922425,
+              "sha256": "281c64720b4443eee5e15b4c39c9d0b6ed0d557982b54d8a1d8fa7105b4e0f61"
+            },
+            "tables/pos_data/27.parquet": {
+              "bytes": 921912,
+              "sha256": "268aefa50f272c82823a13b3a8dabb57e0ab75c4d929262825907e3aa8f16fb0"
+            },
+            "tables/pos_data/3.parquet": {
+              "bytes": 922427,
+              "sha256": "98cf6b63c838ffdacbba6b65dab4f91236f3ced136c6a31d99b791210bd5918d"
+            },
+            "tables/pos_data/31.parquet": {
+              "bytes": 921528,
+              "sha256": "726957fd03c074e2bc00ad8f1450af4f9543b29d20f573369112b8f885ea7413"
+            },
+            "tables/pos_data/4.parquet": {
+              "bytes": 922565,
+              "sha256": "8b18dbb0b0b1b40df01171b4124fc20623a8e84d2c517415095bf6ae5ec5bd74"
+            },
+            "tables/pos_data/44.parquet": {
+              "bytes": 923425,
+              "sha256": "e91011fb8c2ba102cfa8753240c32a6fafa2968720cbad9a688d848d8aad81aa"
+            },
+            "tables/pos_data/55.parquet": {
+              "bytes": 922611,
+              "sha256": "1e144a07605bac2f1cb777e9d209e9e0f0a53567b7a0b933e0cd0ec9d8b197d3"
+            },
+            "tables/pos_data/63.parquet": {
+              "bytes": 923690,
+              "sha256": "3f8d328045b053c1d0f5e9e4a0b693d7c824d836e87674b463c484b8ad969c81"
+            },
+            "tables/pos_data/77.parquet": {
+              "bytes": 922511,
+              "sha256": "13890869e8191d24b8767276c3b7404aefaf7aa746b1ce08a0bdaaf105beee32"
+            },
+            "tables/pos_data/81.parquet": {
+              "bytes": 922777,
+              "sha256": "f4d960997a58c86db3ca2bb8b091f4677f3cd36a6e0beaf8f8a59c73d06932de"
+            },
+            "tables/race_control_messages.parquet": {
+              "bytes": 7562,
+              "sha256": "05986bcec77fcd5f0e152adee156884fe1eb78e014a4bd2941799a7ad54d6368"
+            },
+            "tables/results.parquet": {
+              "bytes": 15717,
+              "sha256": "09378a571808b6e2f8a209e3ddd755d68eeb2959e60f4114edca268db489f916"
+            },
+            "tables/session_status.parquet": {
+              "bytes": 1822,
+              "sha256": "8752892b68825244720caf63d27c978fb8229e0207183dff6771f1c231e0f672"
+            },
+            "tables/track_status.parquet": {
+              "bytes": 2310,
+              "sha256": "9a5e5f71a19b2309771c0b4ee29262866bf0bbac39c3df3c2185afaa7701770d"
+            },
+            "tables/weather_data.parquet": {
+              "bytes": 7465,
+              "sha256": "39783b1efa349fa42197d1743bc6e2d88f919e9921e63b30febf7d440b2d9d2d"
+            }
+          },
+          "identity": {
+            "api_path": "/static/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/",
+            "drivers": [
+              "1",
+              "10",
+              "11",
+              "14",
+              "16",
+              "18",
+              "2",
+              "20",
+              "22",
+              "23",
+              "24",
+              "27",
+              "3",
+              "31",
+              "4",
+              "44",
+              "55",
+              "63",
+              "77",
+              "81"
+            ],
+            "event_name": "Bahrain Grand Prix",
+            "round_number": 1,
+            "session_name": "Race",
+            "session_start_time_s": 3599.911,
+            "t0_date": "2024-03-02T14:03:42.431000",
+            "year": 2024
+          },
+          "query": {
+            "round_number": 1,
+            "session": "R",
+            "year": 2024
+          },
+          "schema_version": "apex-fastf1-archive-v1",
+          "source_manifest": {
+            "accessed_at_utc": "2026-10-12T02:39:02.337358+00:00",
+            "adapter_version": "0.4.0",
+            "canonical_schema_version": "apex-fastf1-snapshot-v1",
+            "content_sha256": "38e33ff4d018b7562c2f5de0337ac7d8c48c3934653b28f70ed49990bcdf7ddd",
+            "files": [],
+            "license_id": null,
+            "notes": [
+              "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+              "HTTP and parser cache files are enumerated in the enclosing archive.",
+              "Source-data rights remain with the respective providers."
+            ],
+            "query": {
+              "round_number": 1,
+              "session": "R",
+              "year": 2024
+            },
+            "requests": [
+              {
+                "endpoint": "fastf1.get_session",
+                "payload_sha256": null,
+                "query": {
+                  "backend": "fastf1",
+                  "round_number": 1,
+                  "session": "R",
+                  "year": 2024
+                },
+                "records": null,
+                "retrieved_at_utc": "2026-10-12T02:39:02.337358+00:00"
+              },
+              {
+                "endpoint": "fastf1.Session.load",
+                "payload_sha256": null,
+                "query": {
+                  "laps": true,
+                  "messages": true,
+                  "telemetry": true,
+                  "weather": true
+                },
+                "records": 1129,
+                "retrieved_at_utc": "2026-10-12T02:39:02.337358+00:00"
+              }
+            ],
+            "schema_version": "apex-source-manifest-v1",
+            "source": "fastf1",
+            "terms_url": "https://docs.fastf1.dev/"
+          }
+        }
+      },
+      {
+        "archive_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+        "event_id": "F1_2024_R16",
+        "manifest": {
+          "content_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+          "environment": {
+            "fastf1": "3.8.3",
+            "numpy": "2.5.3",
+            "pandas": "2.3.3",
+            "pyarrow": "25.0.1",
+            "python": "3.12.12"
+          },
+          "files": {
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/_extended_timing_data.ff1pkl": {
+              "bytes": 890713,
+              "sha256": "00cd06d3c5eb59b059cda654a18615157efdefff6a1272f64d4655bcda30a1f9"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/car_data.ff1pkl": {
+              "bytes": 34497893,
+              "sha256": "b44b9dc32895fc15bf0b122b7f1e989e4d8a12177c4fdc74a429305e06192cc1"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/driver_info.ff1pkl": {
+              "bytes": 5766,
+              "sha256": "f2a17643bc94680f2ee9b6066de752c76fbf65511cb2bbfe92f10a609cfe61b3"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/lap_count.ff1pkl": {
+              "bytes": 1101,
+              "sha256": "17bef4ccce75206ddb1bd2e38c662ce52cc793ef44429e5a604e38b2c8e4f92b"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/position_data.ff1pkl": {
+              "bytes": 33718634,
+              "sha256": "557f3bde08c8eb219dae04a6a55d0df0a344d5b7582e739b0212eea0cc531b36"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/race_control_messages.ff1pkl": {
+              "bytes": 6401,
+              "sha256": "247e25447905e41cb46ef3c6cd8af08dc8ec537f647b9ae2299a69e1320644d7"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/session_info.ff1pkl": {
+              "bytes": 502,
+              "sha256": "aa5263b5eb76f1eadd9e80499993d62e7692f46ddfb578b921d3eb159b9105a9"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/session_status_data.ff1pkl": {
+              "bytes": 216,
+              "sha256": "1091494ba1a5f2465e6269f88654ed82dcb04521dd02489deedc74658f79c763"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/timing_app_data.ff1pkl": {
+              "bytes": 93583,
+              "sha256": "c9b08ac6d60a0b744d2c762381cec1b53b61f8b77ad1ad87b2f528aa308c9a13"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/track_status_data.ff1pkl": {
+              "bytes": 128,
+              "sha256": "0befd9f1967bc93e02c64093e0f6b9154c2d9d67f943294fe1b9cc27437209f1"
+            },
+            "cache/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/weather_data.ff1pkl": {
+              "bytes": 8701,
+              "sha256": "bcba5c187a7a3bf7ebaca90242f05a8902397c81bda2e51a2d69a15164cb3639"
+            },
+            "cache/fastf1_http_cache.sqlite": {
+              "bytes": 19091456,
+              "sha256": "d5fd943d4c202e4ffe4e8cdaaca188c8e246fac4ee9c139724be20d3669b77a1"
+            },
+            "snapshot.json": {
+              "bytes": 27450,
+              "sha256": "c721700bb68a750859dc4a8add4ec20c56c8cb8982b4ed641c6baf08d3fe2c10"
+            },
+            "tables/car_data/1.parquet": {
+              "bytes": 780858,
+              "sha256": "7a15fab0a09f927134be50d534a96a7b92dd042eef444cd0cbbb2f56bc8c3b99"
+            },
+            "tables/car_data/10.parquet": {
+              "bytes": 781644,
+              "sha256": "e6387114c13163bd9bfc3dc987c2da9b6e74731d7483e1a1e75d4968e6cd9ae5"
+            },
+            "tables/car_data/11.parquet": {
+              "bytes": 781474,
+              "sha256": "4ebd3c4d28b1e8676e86821a28495caba49ac9cd3a9a7f291d13b0aa7c74f78f"
+            },
+            "tables/car_data/14.parquet": {
+              "bytes": 781545,
+              "sha256": "abf952b720e0e34102f1dfe8484314ec192f104da9ef815defc80c90295f964b"
+            },
+            "tables/car_data/16.parquet": {
+              "bytes": 783526,
+              "sha256": "57df468bcb59abb00702fdda03c72a172bce1a10f91378e0eaed83a645b7b60f"
+            },
+            "tables/car_data/18.parquet": {
+              "bytes": 782952,
+              "sha256": "953f2daa45f06ee87e7f1ddb41b9376bbe292dc5b26d3f29c2772589bc01260d"
+            },
+            "tables/car_data/20.parquet": {
+              "bytes": 782972,
+              "sha256": "3d9fd9d2ac575d185204fe3e7c808388ce7c59bc44ffbd42530f1d04913e05b1"
+            },
+            "tables/car_data/22.parquet": {
+              "bytes": 727060,
+              "sha256": "e02bed6f41eef5b8b82f09d886ef5c56c30a7368e257b5460341e81b5ef9b3b5"
+            },
+            "tables/car_data/23.parquet": {
+              "bytes": 780258,
+              "sha256": "304641a4050e79447e851a9628143c507b9e729eb08e8ff6af0bc43501c86540"
+            },
+            "tables/car_data/24.parquet": {
+              "bytes": 781895,
+              "sha256": "2d3d7db3d8af6636a69269ae14652d296a4dae78ae4408aeefb2c89881d72b9c"
+            },
+            "tables/car_data/27.parquet": {
+              "bytes": 782534,
+              "sha256": "fa0c5933ac36ecd74b676536f4a1b7516e9dbd1f0698412a6917c50516417ac1"
+            },
+            "tables/car_data/3.parquet": {
+              "bytes": 778267,
+              "sha256": "2d02bb32fc6f6ded5456c5239297bf47484c12c095071abe0589a06f24e77ebf"
+            },
+            "tables/car_data/31.parquet": {
+              "bytes": 781919,
+              "sha256": "e6d5083e6bcb6d7c39a272ae0051c140d9cd524f510fb683c50d59f4a857fe52"
+            },
+            "tables/car_data/4.parquet": {
+              "bytes": 779453,
+              "sha256": "b64cd45d261b4e3d5f9f15cfd9ba609d9d07adaeb641666650a412a1ae9c42de"
+            },
+            "tables/car_data/43.parquet": {
+              "bytes": 784934,
+              "sha256": "10c89e34be87d499c54e1992a90e0864f732dc2ead5399edf0e290ea167848ba"
+            },
+            "tables/car_data/44.parquet": {
+              "bytes": 783748,
+              "sha256": "3d87d03d713e5a31554f9c2dbe80fbf6195f912ed0537d7af1d04ee5ff5852e3"
+            },
+            "tables/car_data/55.parquet": {
+              "bytes": 780889,
+              "sha256": "37510c5902697d5f06e677fbd8ff8a6e51db15628f9792903ad5cd1708913af4"
+            },
+            "tables/car_data/63.parquet": {
+              "bytes": 783183,
+              "sha256": "95e58bee46de5b2e101fcea0c08a0423ed8bbb62793284a78615f01e29c8e03a"
+            },
+            "tables/car_data/77.parquet": {
+              "bytes": 781730,
+              "sha256": "978c3c83a5db0b83bb9cdcf148dfb8adb89adc4ba06db9b2773ffa8cfffb1b01"
+            },
+            "tables/car_data/81.parquet": {
+              "bytes": 779638,
+              "sha256": "3f234c1f2bea34b1dca2be62607ffac8b5dc1a2dfb2ae2e9879c8532a5448f1c"
+            },
+            "tables/laps.parquet": {
+              "bytes": 86397,
+              "sha256": "7c53a412aa39376ea4bab423418bc040eeb9ba6c6b97507168160ba3b8f1698d"
+            },
+            "tables/pos_data/1.parquet": {
+              "bytes": 825896,
+              "sha256": "39f75968e4e9d9543b9b16da94745c3d5cf81a9b8c853f19ae39019a8b66676e"
+            },
+            "tables/pos_data/10.parquet": {
+              "bytes": 824418,
+              "sha256": "d62abfaad7d823fe6172a0e1f47bc31b63c03018c71441c62869f42202b9004c"
+            },
+            "tables/pos_data/11.parquet": {
+              "bytes": 827777,
+              "sha256": "75320d4bfb2ab8034f5d3eb611e1d11680a7397ca2c7d0e291284a91ffe1d263"
+            },
+            "tables/pos_data/14.parquet": {
+              "bytes": 824558,
+              "sha256": "a5fc6abb3bda236bece866ca3bd88a543854c8ada358250b7488843b64df5c26"
+            },
+            "tables/pos_data/16.parquet": {
+              "bytes": 823375,
+              "sha256": "cdb3dca3c5807472c8102161a19d6ea1ff6c1f03abc768df3f42079676904c65"
+            },
+            "tables/pos_data/18.parquet": {
+              "bytes": 823915,
+              "sha256": "dc28941fde6794339f30ea45293860f6c59f19494980fae90fc3c4746195da65"
+            },
+            "tables/pos_data/20.parquet": {
+              "bytes": 825629,
+              "sha256": "4516e907da3aeec64b12858f36b79751857b7cca68eabde36f0a896fc0cf8ed0"
+            },
+            "tables/pos_data/22.parquet": {
+              "bytes": 731447,
+              "sha256": "e087993a553c4f4cdf5e5c8ba280ee30d4132f870fa94eed4ecf377c1cda71a3"
+            },
+            "tables/pos_data/23.parquet": {
+              "bytes": 823504,
+              "sha256": "e114ec5964cf3ac572dd828782f4246046a2c213dbf207efa00257eb7dd12d73"
+            },
+            "tables/pos_data/24.parquet": {
+              "bytes": 824312,
+              "sha256": "27bae5267ee086a49e1062863f73234d4f6ea88b4034b881d715fd131ee47b85"
+            },
+            "tables/pos_data/27.parquet": {
+              "bytes": 826024,
+              "sha256": "22fba04dd7074b5e1a875b996e1cc12873c37061cb29f62895b922065164fff3"
+            },
+            "tables/pos_data/3.parquet": {
+              "bytes": 823366,
+              "sha256": "d3eb09fb0ad010c44b39c12d83a41383408dfc450082c79c3dc2182b88f55956"
+            },
+            "tables/pos_data/31.parquet": {
+              "bytes": 824259,
+              "sha256": "c0af7366b703c4d7cccfe85dae1d47e0c7113badde869de18e4bed9f5da7f0b8"
+            },
+            "tables/pos_data/4.parquet": {
+              "bytes": 824660,
+              "sha256": "a3a7d31c2b247d82ebd688f2ae0f74513e871943d0d4e893afe2f34ac27fdd67"
+            },
+            "tables/pos_data/43.parquet": {
+              "bytes": 825760,
+              "sha256": "7598e67ffe518e53b7d57984299b541c61a4e94c64b417b56b0b31e2b2018024"
+            },
+            "tables/pos_data/44.parquet": {
+              "bytes": 826489,
+              "sha256": "270d3e6ae79cc219f79c487581b71df39d0ba568d0bb95be8b0480e0b390d640"
+            },
+            "tables/pos_data/55.parquet": {
+              "bytes": 823739,
+              "sha256": "6a156af33897446ab7a3b7a6efd308765a0267b7ca79761a36f9906502f4e7c6"
+            },
+            "tables/pos_data/63.parquet": {
+              "bytes": 826124,
+              "sha256": "e253ec4623ada65cd4fbc7b6279070a109d9b5efe124cb1044b8609e132f87af"
+            },
+            "tables/pos_data/77.parquet": {
+              "bytes": 824363,
+              "sha256": "834387fbac6c0dfe34797c7eb956a0566ca90ccb45030e1bed5b3fa12e2bddb4"
+            },
+            "tables/pos_data/81.parquet": {
+              "bytes": 824523,
+              "sha256": "333a3749c43ff5a8fa5e485f90de46d78795a4d4d933ed462423fa925ac78405"
+            },
+            "tables/race_control_messages.parquet": {
+              "bytes": 7113,
+              "sha256": "678b03be69f12507e734ae330d3bfa87a42b9a67a21e082626ba00d8020234e7"
+            },
+            "tables/results.parquet": {
+              "bytes": 15382,
+              "sha256": "09e68fe73ab56d2c141f3f49892de25367866b9da43938ed9fb6574c48ea8075"
+            },
+            "tables/session_status.parquet": {
+              "bytes": 1822,
+              "sha256": "3af63584f55756011f63b64fd2ff5f10d4652648167ed4ca77a4dac55c70fa4d"
+            },
+            "tables/track_status.parquet": {
+              "bytes": 2247,
+              "sha256": "19b726f769efd1d095ef2ba505525411b8468a9c54d86f1d1f9926468f84d076"
+            },
+            "tables/weather_data.parquet": {
+              "bytes": 7504,
+              "sha256": "383311cd500c160c7dd903465ef5592f6b800e11118323e5a2867f07566c8d67"
+            }
+          },
+          "identity": {
+            "api_path": "/static/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/",
+            "drivers": [
+              "1",
+              "10",
+              "11",
+              "14",
+              "16",
+              "18",
+              "20",
+              "22",
+              "23",
+              "24",
+              "27",
+              "3",
+              "31",
+              "4",
+              "43",
+              "44",
+              "55",
+              "63",
+              "77",
+              "81"
+            ],
+            "event_name": "Italian Grand Prix",
+            "round_number": 16,
+            "session_name": "Race",
+            "session_start_time_s": 3350.494,
+            "t0_date": "2024-09-01T12:07:43.919000",
+            "year": 2024
+          },
+          "query": {
+            "round_number": 16,
+            "session": "R",
+            "year": 2024
+          },
+          "schema_version": "apex-fastf1-archive-v1",
+          "source_manifest": {
+            "accessed_at_utc": "2026-10-12T02:39:02.469309+00:00",
+            "adapter_version": "0.4.0",
+            "canonical_schema_version": "apex-fastf1-snapshot-v1",
+            "content_sha256": "731a304e8b579128a6dd610254fee8d3a5cfd0b235670da76f21e2de85f2aeb9",
+            "files": [],
+            "license_id": null,
+            "notes": [
+              "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+              "HTTP and parser cache files are enumerated in the enclosing archive.",
+              "Source-data rights remain with the respective providers."
+            ],
+            "query": {
+              "round_number": 16,
+              "session": "R",
+              "year": 2024
+            },
+            "requests": [
+              {
+                "endpoint": "fastf1.get_session",
+                "payload_sha256": null,
+                "query": {
+                  "backend": "fastf1",
+                  "round_number": 16,
+                  "session": "R",
+                  "year": 2024
+                },
+                "records": null,
+                "retrieved_at_utc": "2026-10-12T02:39:02.469309+00:00"
+              },
+              {
+                "endpoint": "fastf1.Session.load",
+                "payload_sha256": null,
+                "query": {
+                  "laps": true,
+                  "messages": true,
+                  "telemetry": true,
+                  "weather": true
+                },
+                "records": 1008,
+                "retrieved_at_utc": "2026-10-12T02:39:02.469309+00:00"
+              }
+            ],
+            "schema_version": "apex-source-manifest-v1",
+            "source": "fastf1",
+            "terms_url": "https://docs.fastf1.dev/"
+          }
+        }
+      },
+      {
+        "archive_sha256": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+        "event_id": "F1_2023_R01",
+        "manifest": {
+          "content_sha256": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+          "environment": {
+            "fastf1": "3.8.3",
+            "numpy": "2.5.3",
+            "pandas": "2.3.3",
+            "pyarrow": "25.0.1",
+            "python": "3.12.12"
+          },
+          "files": {
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/_extended_timing_data.ff1pkl": {
+              "bytes": 1174937,
+              "sha256": "5e5486594793124d29dc99cf69c7de585057acdc9a92f791a27beaf76d714c75"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/car_data.ff1pkl": {
+              "bytes": 42577633,
+              "sha256": "9d9ea344faf64da9f0ca1fa8269d8b4f1a87d01583b632ddb857d94e645367e9"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/driver_info.ff1pkl": {
+              "bytes": 5319,
+              "sha256": "55d702bd08128b2a7ce9709393141b4f8d048b7ef71ae8a9705c60c74a8d2ec1"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/lap_count.ff1pkl": {
+              "bytes": 1179,
+              "sha256": "6dfb3821ea245b190cfc203fba092beb0d3c84740311c93292e94f5779c9c608"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/position_data.ff1pkl": {
+              "bytes": 40564594,
+              "sha256": "956e739a5db94b91574dd37f3a244028e9ce3ae12906c50f790137c3dda86e08"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/race_control_messages.ff1pkl": {
+              "bytes": 7428,
+              "sha256": "c909109e4dbb9fb023f3529cfc52b28a43393a082d8c80cb83ce3e8d89d30b4e"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/session_info.ff1pkl": {
+              "bytes": 503,
+              "sha256": "91398a472647e8f48440b402da2e18e527a362dd077ec7e7842df9f35601c400"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/session_status_data.ff1pkl": {
+              "bytes": 216,
+              "sha256": "5001e360b2a2948747c688312e026b77b52883b259c51e97e21b1ace82a93009"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/timing_app_data.ff1pkl": {
+              "bytes": 87701,
+              "sha256": "61ff412b5cf847ce239a33c286d0cff8f74467f47224c5e8ba92048626e60451"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/track_status_data.ff1pkl": {
+              "bytes": 421,
+              "sha256": "3606baf5e7186bf7b8d19b7e8e6d1e85e187df6caa1eb550d77de6d2b3e09aca"
+            },
+            "cache/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/weather_data.ff1pkl": {
+              "bytes": 10467,
+              "sha256": "5672dabc79837418ce2b85fb7e6623da0e5d12914f769c4cad6fbd0d095b16ce"
+            },
+            "cache/fastf1_http_cache.sqlite": {
+              "bytes": 23584768,
+              "sha256": "75decccedb8db435bb0d36dd8c70a01e8883a68c5dcca745152500db9ae09870"
+            },
+            "snapshot.json": {
+              "bytes": 27452,
+              "sha256": "e00286042af00a29bc0c1ec818c3910a0eb84e417b81dae7d4d8b276ecc750ed"
+            },
+            "tables/car_data/1.parquet": {
+              "bytes": 881999,
+              "sha256": "4f96019a63ecd6f722207ea6e157832340c1ec81026d56283db122b825748887"
+            },
+            "tables/car_data/10.parquet": {
+              "bytes": 880062,
+              "sha256": "5484ed6150cd0aed0375933dade8dc37f16692a0713a709f4b35f9fc1595e63a"
+            },
+            "tables/car_data/11.parquet": {
+              "bytes": 882080,
+              "sha256": "1ca7281a9b20f3c7360d7787f7918bfc617e015e21b8c8e6a011aa91d6c284ae"
+            },
+            "tables/car_data/14.parquet": {
+              "bytes": 885816,
+              "sha256": "47741488a5e0e07855be694b9e4f4d437e2489aab86e046f34b9f41bf8b5f2ca"
+            },
+            "tables/car_data/16.parquet": {
+              "bytes": 862732,
+              "sha256": "a6fca458f12bf39a0a5e0804ccfdee1cd259e25be76ff02606ee6bbdaaf2daa4"
+            },
+            "tables/car_data/18.parquet": {
+              "bytes": 883444,
+              "sha256": "65054964ae97570c182590ecfd7bf9b150f53aa45bbf4186f3dc4c22ce1862e4"
+            },
+            "tables/car_data/2.parquet": {
+              "bytes": 885343,
+              "sha256": "63418e7fee48ed020452eca9f61275e92a6a19fdc5d9ed76b3957ca86523b619"
+            },
+            "tables/car_data/20.parquet": {
+              "bytes": 885328,
+              "sha256": "4a917467c0a3962ef040dcb6854d561accfc229036122c47f0b037f61dfdc474"
+            },
+            "tables/car_data/21.parquet": {
+              "bytes": 885507,
+              "sha256": "2f6ceafe5bef16f86f87aaa79a3fe562d1ad0f8b31e81096a4962f9a950d6809"
+            },
+            "tables/car_data/22.parquet": {
+              "bytes": 884701,
+              "sha256": "06779b89a2e2bb933749d7445545aa5ed9f08b643939a16e12121485e745cb4b"
+            },
+            "tables/car_data/23.parquet": {
+              "bytes": 887070,
+              "sha256": "dfc7f59508c0ca2692559d2366938e110509e0c4b0bc5c41ae31ac642157bac9"
+            },
+            "tables/car_data/24.parquet": {
+              "bytes": 884829,
+              "sha256": "8ed5ce38ea38a6002e806df6c521a91850f1e9e5a1c109daeaff4772bf837bd5"
+            },
+            "tables/car_data/27.parquet": {
+              "bytes": 887212,
+              "sha256": "2b413cf8bc12c974cd73761d6fc5d80c4844d24effdebba411c93bf47496825b"
+            },
+            "tables/car_data/31.parquet": {
+              "bytes": 858724,
+              "sha256": "c8eb80642b5b8cedc81466f9d8b598f7f2ee59dcfffed952aad13ba974707b1a"
+            },
+            "tables/car_data/4.parquet": {
+              "bytes": 887476,
+              "sha256": "20068b2ee7da85a7c5d1a847f2faf2756cbed3e710777d86a4ec1a0a42e2fa1c"
+            },
+            "tables/car_data/44.parquet": {
+              "bytes": 888476,
+              "sha256": "753d3b90b08435b44a021bd1ea0abefa9e349f177ac0678f42e4c817336e4d44"
+            },
+            "tables/car_data/55.parquet": {
+              "bytes": 886336,
+              "sha256": "4f9718311927f6fc19c3c2c10ef8c12420dc26d9ee266a4fb41b2228d3f0be41"
+            },
+            "tables/car_data/63.parquet": {
+              "bytes": 887812,
+              "sha256": "bd6c57881ad69903ec54a79245d7afb903a946f5377a845c3b58413de243f745"
+            },
+            "tables/car_data/77.parquet": {
+              "bytes": 884216,
+              "sha256": "786b3dfed6047b7cec6472427d0cea0f8f2adbc39132f23c94f9276c430fb62a"
+            },
+            "tables/car_data/81.parquet": {
+              "bytes": 825398,
+              "sha256": "19e4e552d8bcc9d551137be69f079b5b7864bf323005826e998310d7b3af5a5d"
+            },
+            "tables/laps.parquet": {
+              "bytes": 92480,
+              "sha256": "7ae94007dd8ece3bc92207fc23608357e87655cea508212f9f83f8ab594699ce"
+            },
+            "tables/pos_data/1.parquet": {
+              "bytes": 929211,
+              "sha256": "d38a524002566cd17433aea0d80cd8f65eb381ccd38557d3fd9e7ac63b344dc0"
+            },
+            "tables/pos_data/10.parquet": {
+              "bytes": 927242,
+              "sha256": "1b1f9787422bcf6cbfa451bdb7f763b949f529cbe11d3b999904564cc3d09201"
+            },
+            "tables/pos_data/11.parquet": {
+              "bytes": 928766,
+              "sha256": "b63cd7d30ba59a7199f6bf59e437ab75a1ed1f7e7ccdc57a5acad13ed6081c42"
+            },
+            "tables/pos_data/14.parquet": {
+              "bytes": 931437,
+              "sha256": "d1fdcbc186368dfd164bdb203f92ab92c221e73a8d35a9a87d507faaf39d9cff"
+            },
+            "tables/pos_data/16.parquet": {
+              "bytes": 899090,
+              "sha256": "55d2bc8edb4af88c14a85227ff19fc64b42582fac0f6d86765f34918c67128e7"
+            },
+            "tables/pos_data/18.parquet": {
+              "bytes": 928687,
+              "sha256": "2039a4ad9b75c396a4872b2e323af0ff39106c99ab4526674f24076ba83ce44b"
+            },
+            "tables/pos_data/2.parquet": {
+              "bytes": 930812,
+              "sha256": "41df7762b831263490018f387b883cf68df6e59265473590a9d0e63f5ae6654a"
+            },
+            "tables/pos_data/20.parquet": {
+              "bytes": 930748,
+              "sha256": "c500030a6b39a3bce5ff7d2aa0d60037f8d832a3f86d870b3501ece965e62962"
+            },
+            "tables/pos_data/21.parquet": {
+              "bytes": 931780,
+              "sha256": "3116be9ad2bf15afdbdab0df3f0b9a946c435a365342054896573543bde07893"
+            },
+            "tables/pos_data/22.parquet": {
+              "bytes": 932451,
+              "sha256": "ee759bd8494d6ce08af4329db249a666602ebf4f220d39f5e67cbd4dc5ea1a41"
+            },
+            "tables/pos_data/23.parquet": {
+              "bytes": 932246,
+              "sha256": "fc3eb32ae618e1e936a0db4f675f1b4fbbb9bd2859156dc538130835de255980"
+            },
+            "tables/pos_data/24.parquet": {
+              "bytes": 931478,
+              "sha256": "4b20be76f2dd85d75fa3f71af1d56f087f2921df787bd16ea07168d1f6f9a2df"
+            },
+            "tables/pos_data/27.parquet": {
+              "bytes": 930706,
+              "sha256": "fb1cd87c77dccd4b242fe8c914e359512fda6e23b7c6972e687ee363c44cf767"
+            },
+            "tables/pos_data/31.parquet": {
+              "bytes": 898439,
+              "sha256": "9e5cdb86843382a3f7a7f3f7799e7380ff62005d4aa1aba9005cbec72c960ede"
+            },
+            "tables/pos_data/4.parquet": {
+              "bytes": 929675,
+              "sha256": "7a0b26a059830915a53ce615eb5f3727cd4d4e2d956b2198325b52b4042dd190"
+            },
+            "tables/pos_data/44.parquet": {
+              "bytes": 931739,
+              "sha256": "aa28dead1e95a0e9bbbd28e9df612418276cc486e8021e6acdc307de6e860fc3"
+            },
+            "tables/pos_data/55.parquet": {
+              "bytes": 930769,
+              "sha256": "47c178e132e3f58dfcf08dd1b1d8194c3a8c6349addc9176a02ec07ae82d5fec"
+            },
+            "tables/pos_data/63.parquet": {
+              "bytes": 931398,
+              "sha256": "d38d0a0d7a264864b9dd6549abe0cfc198275d8ce5db12f9b70463d492cd64a0"
+            },
+            "tables/pos_data/77.parquet": {
+              "bytes": 932069,
+              "sha256": "9f38d396b5644ec024a95f5700cfd818efafcdd9c058be46f2cf2dd0b9a1229e"
+            },
+            "tables/pos_data/81.parquet": {
+              "bytes": 847284,
+              "sha256": "48e8da1d965314909df25908b0ce2be2a49583a7a04b0604d87a2cdb5a2c86d9"
+            },
+            "tables/race_control_messages.parquet": {
+              "bytes": 7843,
+              "sha256": "750c65ca2ca957bbcf7442046354e45b8ac5790951d5be0fc33c262e687039f1"
+            },
+            "tables/results.parquet": {
+              "bytes": 15596,
+              "sha256": "449571599dcd4c0ed108ccabb6f35ee556a7e9f9b78ab47e4ed75acbdbedcc36"
+            },
+            "tables/session_status.parquet": {
+              "bytes": 1832,
+              "sha256": "177c60beb94ae1f3add2d7bebe92053c34a6fb0d0a1ef22df68741424ed050da"
+            },
+            "tables/track_status.parquet": {
+              "bytes": 2394,
+              "sha256": "065c63ab09e65a787be3517351177b33feaffa8c6345f5b93791da7f92413849"
+            },
+            "tables/weather_data.parquet": {
+              "bytes": 7646,
+              "sha256": "cb32aae20d4182ff14d28900e10b479848fb78b7f9220ddcbffe95d67726f37a"
+            }
+          },
+          "identity": {
+            "api_path": "/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/",
+            "drivers": [
+              "1",
+              "10",
+              "11",
+              "14",
+              "16",
+              "18",
+              "2",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "27",
+              "31",
+              "4",
+              "44",
+              "55",
+              "63",
+              "77",
+              "81"
+            ],
+            "event_name": "Bahrain Grand Prix",
+            "round_number": 1,
+            "session_name": "Race",
+            "session_start_time_s": 3756.652,
+            "t0_date": "2023-03-05T14:01:01.849000",
+            "year": 2023
+          },
+          "query": {
+            "round_number": 1,
+            "session": "R",
+            "year": 2023
+          },
+          "schema_version": "apex-fastf1-archive-v1",
+          "source_manifest": {
+            "accessed_at_utc": "2026-10-13T04:13:25.446247+00:00",
+            "adapter_version": "0.4.0",
+            "canonical_schema_version": "apex-fastf1-snapshot-v1",
+            "content_sha256": "1d71421e1d30bf9ae2acbb5b872f4fdebece65d300e65f7aba348260ea9967dc",
+            "files": [],
+            "license_id": null,
+            "notes": [
+              "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+              "HTTP and parser cache files are enumerated in the enclosing archive.",
+              "Source-data rights remain with the respective providers."
+            ],
+            "query": {
+              "round_number": 1,
+              "session": "R",
+              "year": 2023
+            },
+            "requests": [
+              {
+                "endpoint": "fastf1.get_session",
+                "payload_sha256": null,
+                "query": {
+                  "backend": "fastf1",
+                  "round_number": 1,
+                  "session": "R",
+                  "year": 2023
+                },
+                "records": null,
+                "retrieved_at_utc": "2026-10-13T04:13:25.446247+00:00"
+              },
+              {
+                "endpoint": "fastf1.Session.load",
+                "payload_sha256": null,
+                "query": {
+                  "laps": true,
+                  "messages": true,
+                  "telemetry": true,
+                  "weather": true
+                },
+                "records": 1056,
+                "retrieved_at_utc": "2026-10-13T04:13:25.447246+00:00"
+              }
+            ],
+            "schema_version": "apex-source-manifest-v1",
+            "source": "fastf1",
+            "terms_url": "https://docs.fastf1.dev/"
+          }
+        }
+      },
+      {
+        "archive_sha256": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+        "event_id": "F1_2023_R14",
+        "manifest": {
+          "content_sha256": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+          "environment": {
+            "fastf1": "3.8.3",
+            "numpy": "2.5.3",
+            "pandas": "2.3.3",
+            "pyarrow": "25.0.1",
+            "python": "3.12.12"
+          },
+          "files": {
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/_extended_timing_data.ff1pkl": {
+              "bytes": 951325,
+              "sha256": "b9b8ec9ba91c932a52f3ad7337bef0543f03e3b20d0f59d7d76ffd5b851cb361"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/car_data.ff1pkl": {
+              "bytes": 42478473,
+              "sha256": "325d967345864bc55472d246c369cab05e38c3aea4a7b972a1ab6398af0b31d0"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/driver_info.ff1pkl": {
+              "bytes": 5187,
+              "sha256": "0f7acbd8ac6c98c5ca612fa9e229862d9e8cb6a680648fd75d5f3e2a4270a47c"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/lap_count.ff1pkl": {
+              "bytes": 1101,
+              "sha256": "726c49d9c6c400114ded76a6e51d7435507390eeb6247b12a9776e3aa9cd13b2"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/position_data.ff1pkl": {
+              "bytes": 41081634,
+              "sha256": "6011c509bad58d77e590d41ff8e3625a0b4c656cdbe6119479576c2930838b64"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/race_control_messages.ff1pkl": {
+              "bytes": 4545,
+              "sha256": "2b657cedf46031476b07fc68905fd5dc166392748bf1cb08a52ae849fc3a87bc"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_info.ff1pkl": {
+              "bytes": 503,
+              "sha256": "6963108b982ef9b67030879347611b7b91efd1254e9e4157e550836d146fa7a1"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_status_data.ff1pkl": {
+              "bytes": 216,
+              "sha256": "861823e8d4fe371616b12a325f79597235b900192dd8383633f2b14a37b5b7e4"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/timing_app_data.ff1pkl": {
+              "bytes": 78617,
+              "sha256": "dfbe7fdf104ffbbcc939867e3725cd65b0e11b4e57403d3251c7316152c757f1"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/track_status_data.ff1pkl": {
+              "bytes": 188,
+              "sha256": "46d564ac55520c1ac1373e3b1c34b2b1fb2cd1bb42f5871302f869b8b4059985"
+            },
+            "cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/weather_data.ff1pkl": {
+              "bytes": 10142,
+              "sha256": "82d53f285bd4a48ce61f4685085c20e02263d783ed44985db88fa755663bc2ab"
+            },
+            "cache/fastf1_http_cache.sqlite": {
+              "bytes": 21495808,
+              "sha256": "f098690d051584552bf7980768e3eff94443d8ee905eb65aafac85a84109a66e"
+            },
+            "snapshot.json": {
+              "bytes": 27449,
+              "sha256": "b269c87984b157c6405af76ac461a6e1d7c6706b3f47d5a14b7f8b16b047a7a1"
+            },
+            "tables/car_data/1.parquet": {
+              "bytes": 900700,
+              "sha256": "b07bd7fad5c3306cd3edad9805ed25e8559bb88aba0ea9e8b00804549f25145a"
+            },
+            "tables/car_data/10.parquet": {
+              "bytes": 901331,
+              "sha256": "11289e5d8d35e125e03d08877757454f7b26dcaeee7c8ef51f13acf631f98812"
+            },
+            "tables/car_data/11.parquet": {
+              "bytes": 900973,
+              "sha256": "873da2741d1ed377ae9b48a50f434126e604f79486d5a695f60cdf63513819e9"
+            },
+            "tables/car_data/14.parquet": {
+              "bytes": 902179,
+              "sha256": "961f57b5f2b32e88887eea6d20f0978715805a1404ce05fae59f4090dc5d8bbc"
+            },
+            "tables/car_data/16.parquet": {
+              "bytes": 904619,
+              "sha256": "0706cc7064098615b0b1753d4298335ec68845dc277aad52383ccf13a941d799"
+            },
+            "tables/car_data/18.parquet": {
+              "bytes": 904000,
+              "sha256": "abdfaff716d259d82428585f8608f2c35f7aa4a5e51004032ac068794049056f"
+            },
+            "tables/car_data/2.parquet": {
+              "bytes": 906374,
+              "sha256": "43fbd4295fb34cbd6c35d1bb4aa43da639446126c52fb7401424151860bd8493"
+            },
+            "tables/car_data/20.parquet": {
+              "bytes": 902318,
+              "sha256": "bfe6aa030139155589c532855ac60694c3c5735e410c26c4d28d7aa0767a815f"
+            },
+            "tables/car_data/22.parquet": {
+              "bytes": 831027,
+              "sha256": "0de5fbf51d35e50a924638a54fcd9d541a9077042b40b960ec4b58df4dd05cc1"
+            },
+            "tables/car_data/23.parquet": {
+              "bytes": 902622,
+              "sha256": "c301af385a5078627890a9a7ed0026ad6963b3a16ff30185b2810506245fbf75"
+            },
+            "tables/car_data/24.parquet": {
+              "bytes": 903595,
+              "sha256": "680a8f6e2e9b41f45e40b0812e0b06fabe8a26e064c2693ec44b5dd821b0cb55"
+            },
+            "tables/car_data/27.parquet": {
+              "bytes": 903127,
+              "sha256": "c5c9f28a0a00cf7efcb439f592bcc5c5db8a289141dd0000cc10bc0bfa94f6f4"
+            },
+            "tables/car_data/31.parquet": {
+              "bytes": 886459,
+              "sha256": "934ab14f93209045328d889ead429d08778f74d282cc47089985f71414cff0e1"
+            },
+            "tables/car_data/4.parquet": {
+              "bytes": 902177,
+              "sha256": "b37c605c8789bb5d2bc63e4fdb4290f575dcf476a963056a40ba2ba71e28eecd"
+            },
+            "tables/car_data/40.parquet": {
+              "bytes": 902641,
+              "sha256": "e7d2064410f08e776b08d3a98009a28cfc78044ef9ad72fc1013dbdd4885bfd7"
+            },
+            "tables/car_data/44.parquet": {
+              "bytes": 907204,
+              "sha256": "85a490af67ae542a8c5f4fbd5e67d60e5bad29d67f0ac4af896889afff15a0d3"
+            },
+            "tables/car_data/55.parquet": {
+              "bytes": 903324,
+              "sha256": "0f95c388d53ccec3084d7046f5c1ce3d588d8422c0f9f7a511d30b3f3c686353"
+            },
+            "tables/car_data/63.parquet": {
+              "bytes": 902571,
+              "sha256": "6b2fa7c000c042f3a05939d2580c76b22d746e4f7a8ae12b924a9df15ff9ca65"
+            },
+            "tables/car_data/77.parquet": {
+              "bytes": 902668,
+              "sha256": "cf4295f50285f689514f73d51251cc859c3e2b13fa4c4f058070549daac95689"
+            },
+            "tables/car_data/81.parquet": {
+              "bytes": 902544,
+              "sha256": "4a407b00392332c927c30a87004333367ef0246dfdd99536abc4577fce48c268"
+            },
+            "tables/laps.parquet": {
+              "bytes": 82783,
+              "sha256": "70d71eed8aa0ee478e899e1cd4eaf973848399fe046b45bcf5b8b2ed667e2483"
+            },
+            "tables/pos_data/1.parquet": {
+              "bytes": 1014550,
+              "sha256": "eeadbc0b18a15b19e541ff6e7a5ccd1a202579095cce9f6e0f30910a303d6306"
+            },
+            "tables/pos_data/10.parquet": {
+              "bytes": 1013880,
+              "sha256": "f38ab747831d8185035a87fcbd93e427bb8b400984d4ae4af37408fe879378f0"
+            },
+            "tables/pos_data/11.parquet": {
+              "bytes": 1014281,
+              "sha256": "33b352576d0589c3e5948b7c6aaec06a07495c20d632051aa11d971b087490c4"
+            },
+            "tables/pos_data/14.parquet": {
+              "bytes": 1009766,
+              "sha256": "53c5d4dbef528cc4578ce554606c4b87a7e539fe4d23899bd769f12cd311a3c6"
+            },
+            "tables/pos_data/16.parquet": {
+              "bytes": 1011753,
+              "sha256": "4d376e60bdddd46fb794eb4a2ac741814a1fe684d0608d1420bdcacd09f8da54"
+            },
+            "tables/pos_data/18.parquet": {
+              "bytes": 1014446,
+              "sha256": "e37e81ecab857f1dc970e9322e82c029c85fa665516dad94491a71c89d883e88"
+            },
+            "tables/pos_data/2.parquet": {
+              "bytes": 1016122,
+              "sha256": "a770facc5adccfb41bcf9da5cab373e4d68ef46d82d5b20d3bd1dd62119342e3"
+            },
+            "tables/pos_data/20.parquet": {
+              "bytes": 1009436,
+              "sha256": "b5312ba5e0ddfda68c7adbde4fb909a4512db2a75adfe8eef3e5394376922e2f"
+            },
+            "tables/pos_data/22.parquet": {
+              "bytes": 896745,
+              "sha256": "5c30ae7c396e52487cf761d3cb8f9602ab7dd11acdb38d886d6be147f5e78c01"
+            },
+            "tables/pos_data/23.parquet": {
+              "bytes": 1009795,
+              "sha256": "8667b97b2c1ef64ee307b582c2d463ffc210565694df63b5c150d25c9989cecc"
+            },
+            "tables/pos_data/24.parquet": {
+              "bytes": 1011784,
+              "sha256": "6c6d2b7b98a8e07b4354132ac753fa3458d27891e963508735eda243cd703382"
+            },
+            "tables/pos_data/27.parquet": {
+              "bytes": 1009571,
+              "sha256": "399d30c90781be5f79231efaf994d60153b9f9f586289875b5ebbc587af6c30b"
+            },
+            "tables/pos_data/31.parquet": {
+              "bytes": 987031,
+              "sha256": "cba18f0dce168d8c46a7e7a3d7bec295335bda6ab26b67114ca5ed4e3cd71dd5"
+            },
+            "tables/pos_data/4.parquet": {
+              "bytes": 1011144,
+              "sha256": "f06ae7d197d9a4e11c178b4cddc32f2513cae319c73206eed9917605eb3fe8e8"
+            },
+            "tables/pos_data/40.parquet": {
+              "bytes": 1016001,
+              "sha256": "4678b7e30707f648411909047d2d768fecb5b0336875ccab2dda60ac31e23c96"
+            },
+            "tables/pos_data/44.parquet": {
+              "bytes": 1014828,
+              "sha256": "b467cd4e7ef8b7bd55febb0c93b63915080bde5f5df6abd3b36b1da787c1af03"
+            },
+            "tables/pos_data/55.parquet": {
+              "bytes": 1009707,
+              "sha256": "780524900eb484d563f16b57790d4fa8553b03131e187710a0b13e30bf513033"
+            },
+            "tables/pos_data/63.parquet": {
+              "bytes": 1012592,
+              "sha256": "f95d83a1c78563f377432ce3585696f424c529dbc372de5ca0c8429555347100"
+            },
+            "tables/pos_data/77.parquet": {
+              "bytes": 1011451,
+              "sha256": "ddd164e712d012ce728559cdfd543bc3c17f94a619c4586869664f1ed0fde15c"
+            },
+            "tables/pos_data/81.parquet": {
+              "bytes": 1009003,
+              "sha256": "ff4cb3c4474bef4bfb845e1b387ab227d3e3fed7531618414f729be438ab4251"
+            },
+            "tables/race_control_messages.parquet": {
+              "bytes": 6912,
+              "sha256": "831ac29d8cab113861ae8c66582763bebc9f9ce43c956d049f97285c2b85e118"
+            },
+            "tables/results.parquet": {
+              "bytes": 15339,
+              "sha256": "1ac06d41f55ebb80929a3ff99ea11192a01445cb04bb7c933f9bd736222a7f0a"
+            },
+            "tables/session_status.parquet": {
+              "bytes": 1832,
+              "sha256": "4ec7a96f40c0876ce73685d67442254935098e44131973cb2df858badef758b1"
+            },
+            "tables/track_status.parquet": {
+              "bytes": 2275,
+              "sha256": "1915c13f5d5f85671c5f464b8795d2acd5cb55d7d21ddb6fd2b886caa837a53a"
+            },
+            "tables/weather_data.parquet": {
+              "bytes": 7522,
+              "sha256": "4a37357fe7b90f872808e4d50962b397206d3edbaaae00d9c3af60539795f933"
+            }
+          },
+          "identity": {
+            "api_path": "/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/",
+            "drivers": [
+              "1",
+              "10",
+              "11",
+              "14",
+              "16",
+              "18",
+              "2",
+              "20",
+              "22",
+              "23",
+              "24",
+              "27",
+              "31",
+              "4",
+              "40",
+              "44",
+              "55",
+              "63",
+              "77",
+              "81"
+            ],
+            "event_name": "Italian Grand Prix",
+            "round_number": 14,
+            "session_name": "Race",
+            "session_start_time_s": 4941.726,
+            "t0_date": "2023-09-03T12:01:01.045000",
+            "year": 2023
+          },
+          "query": {
+            "round_number": 14,
+            "session": "R",
+            "year": 2023
+          },
+          "schema_version": "apex-fastf1-archive-v1",
+          "source_manifest": {
+            "accessed_at_utc": "2026-10-13T04:13:35.825246+00:00",
+            "adapter_version": "0.4.0",
+            "canonical_schema_version": "apex-fastf1-snapshot-v1",
+            "content_sha256": "8e2ff0a3da5e9019227816ede2890ede7a8209f21f6dea62ab4da5efb6190434",
+            "files": [],
+            "license_id": null,
+            "notes": [
+              "Native FastF1 tables include upstream reconstructions; not raw measured ground truth.",
+              "HTTP and parser cache files are enumerated in the enclosing archive.",
+              "Source-data rights remain with the respective providers."
+            ],
+            "query": {
+              "round_number": 14,
+              "session": "R",
+              "year": 2023
+            },
+            "requests": [
+              {
+                "endpoint": "fastf1.get_session",
+                "payload_sha256": null,
+                "query": {
+                  "backend": "fastf1",
+                  "round_number": 14,
+                  "session": "R",
+                  "year": 2023
+                },
+                "records": null,
+                "retrieved_at_utc": "2026-10-13T04:13:35.825246+00:00"
+              },
+              {
+                "endpoint": "fastf1.Session.load",
+                "payload_sha256": null,
+                "query": {
+                  "laps": true,
+                  "messages": true,
+                  "telemetry": true,
+                  "weather": true
+                },
+                "records": 957,
+                "retrieved_at_utc": "2026-10-13T04:13:35.825246+00:00"
+              }
+            ],
+            "schema_version": "apex-source-manifest-v1",
+            "source": "fastf1",
+            "terms_url": "https://docs.fastf1.dev/"
+          }
+        }
+      }
+    ],
+    "supported_laps": 10,
+    "task_closure_eligible": false
+  },
+  "source_audit_artifact_path": ".cache\\r029-source-audit-research-20261019",
+  "source_audit_artifact_manifest": {
+    "content_sha256": "7a06311c032af17700939f46160df27bfe6fcd5df6be288f63c774e67519ea4a",
+    "files": {
+      "native_position_inputs.npz": {
+        "bytes": 1976084,
+        "sha256": "f1a9ba2261cf6c435c107fb8bf3767076a8a35ad428c7d3fc90cd5cbbdc4180c"
+      },
+      "selected_native_laps.json": {
+        "bytes": 14666,
+        "sha256": "afd00d5aac42a2b7a04929218da68e8a820f7d7686a1ef050cfb5c5b5d31ff3d"
+      },
+      "summary.json": {
+        "bytes": 84176,
+        "sha256": "af265065a6932e999118f94419f92a5bce88b064d441e2f31990138ac1f25721"
+      }
+    },
+    "schema_version": "apex-reference-source-audit-manifest-v1",
+    "summary_sha256": "f653df6113d34a947ebaaf7c20fd7bcc48a258c7e2a64a008e0bbef1dbc47598"
+  },
+  "portable_verification": {
+    "verified": true,
+    "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
+    "supported_laps": 10,
+    "selected_laps": 24,
+    "task_closure_eligible": false,
+    "summary_sha256": "f653df6113d34a947ebaaf7c20fd7bcc48a258c7e2a64a008e0bbef1dbc47598"
+  },
+  "independent_integer_time_audit": {
+    "method": "Independent integer-nanosecond native-window gaps and NumPy boundary positions; no geometry/extraction module used",
+    "records": [
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "4",
+        "lap_number": 15,
+        "role": "train",
+        "native_samples": 370,
+        "max_gap_s": 0.82,
+        "unsupported_intervals": 1,
+        "gap_supported": false,
+        "raw_closure_gap_m": 8.505624609633326
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "4",
+        "lap_number": 16,
+        "role": "train",
+        "native_samples": 378,
+        "max_gap_s": 0.52,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 5.633212721972049
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "4",
+        "lap_number": 17,
+        "role": "train",
+        "native_samples": 363,
+        "max_gap_s": 1.3,
+        "unsupported_intervals": 3,
+        "gap_supported": false,
+        "raw_closure_gap_m": 4.305748417185906
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "44",
+        "lap_number": 2,
+        "role": "validation",
+        "native_samples": 391,
+        "max_gap_s": 0.66,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 1.9140318254402764
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "44",
+        "lap_number": 3,
+        "role": "validation",
+        "native_samples": 385,
+        "max_gap_s": 1.04,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 6.795223182984923
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "44",
+        "lap_number": 4,
+        "role": "validation",
+        "native_samples": 395,
+        "max_gap_s": 0.62,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 8.703282763658612
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "4",
+        "lap_number": 2,
+        "role": "train",
+        "native_samples": 340,
+        "max_gap_s": 1.081,
+        "unsupported_intervals": 1,
+        "gap_supported": false,
+        "raw_closure_gap_m": 2.3683879304051745
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "4",
+        "lap_number": 3,
+        "role": "train",
+        "native_samples": 324,
+        "max_gap_s": 0.68,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 5.8059043701696895
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "4",
+        "lap_number": 4,
+        "role": "train",
+        "native_samples": 339,
+        "max_gap_s": 0.681,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 2.5139739211123593
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "44",
+        "lap_number": 2,
+        "role": "validation",
+        "native_samples": 344,
+        "max_gap_s": 1.081,
+        "unsupported_intervals": 1,
+        "gap_supported": false,
+        "raw_closure_gap_m": 5.015804662014721
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "44",
+        "lap_number": 3,
+        "role": "validation",
+        "native_samples": 326,
+        "max_gap_s": 0.68,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 0.7908872117012865
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "44",
+        "lap_number": 4,
+        "role": "validation",
+        "native_samples": 340,
+        "max_gap_s": 0.681,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 0.2134762956603428
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "4",
+        "lap_number": 4,
+        "role": "test",
+        "native_samples": 402,
+        "max_gap_s": 0.899,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 1.5097427778360555
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "4",
+        "lap_number": 5,
+        "role": "test",
+        "native_samples": 377,
+        "max_gap_s": 0.98,
+        "unsupported_intervals": 3,
+        "gap_supported": false,
+        "raw_closure_gap_m": 10.220027630245088
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "4",
+        "lap_number": 6,
+        "role": "test",
+        "native_samples": 372,
+        "max_gap_s": 1.1,
+        "unsupported_intervals": 5,
+        "gap_supported": false,
+        "raw_closure_gap_m": 9.412914400945711
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "44",
+        "lap_number": 3,
+        "role": "test",
+        "native_samples": 377,
+        "max_gap_s": 1.32,
+        "unsupported_intervals": 4,
+        "gap_supported": false,
+        "raw_closure_gap_m": 8.618002802225643
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "44",
+        "lap_number": 4,
+        "role": "test",
+        "native_samples": 385,
+        "max_gap_s": 0.899,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 8.395124442462553
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "44",
+        "lap_number": 5,
+        "role": "test",
+        "native_samples": 374,
+        "max_gap_s": 0.98,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 1.1892537245518426
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "4",
+        "lap_number": 6,
+        "role": "test",
+        "native_samples": 328,
+        "max_gap_s": 1.26,
+        "unsupported_intervals": 3,
+        "gap_supported": false,
+        "raw_closure_gap_m": 3.01462540809154
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "4",
+        "lap_number": 7,
+        "role": "test",
+        "native_samples": 332,
+        "max_gap_s": 0.7,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 9.748830266157018
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "4",
+        "lap_number": 8,
+        "role": "test",
+        "native_samples": 340,
+        "max_gap_s": 0.54,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 3.0870377723709583
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "44",
+        "lap_number": 2,
+        "role": "test",
+        "native_samples": 338,
+        "max_gap_s": 1.281,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 8.081092569610368
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "44",
+        "lap_number": 3,
+        "role": "test",
+        "native_samples": 339,
+        "max_gap_s": 0.9,
+        "unsupported_intervals": 2,
+        "gap_supported": false,
+        "raw_closure_gap_m": 0.16142064372296736
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "44",
+        "lap_number": 4,
+        "role": "test",
+        "native_samples": 331,
+        "max_gap_s": 0.48,
+        "unsupported_intervals": 0,
+        "gap_supported": true,
+        "raw_closure_gap_m": 7.010261343143608
+      }
+    ],
+    "supported_laps": 10,
+    "rejected_laps": 14,
+    "unsupported_intervals": 33,
+    "geometry_fit_performed": false
+  },
+  "independent_native_snapshot_lineage": {
+    "verified_against_original_native_tables": true,
+    "position_streams": [
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "4",
+        "native_rows": 35994,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2024_R01",
+        "driver_id": "44",
+        "native_rows": 35994,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "4",
+        "native_rows": 30637,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2024_R16",
+        "driver_id": "44",
+        "native_rows": 30637,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "4",
+        "native_rows": 36860,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2023_R01",
+        "driver_id": "44",
+        "native_rows": 36860,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "4",
+        "native_rows": 37330,
+        "all_snapshot_columns_equal": true
+      },
+      {
+        "event_id": "F1_2023_R14",
+        "driver_id": "44",
+        "native_rows": 37330,
+        "all_snapshot_columns_equal": true
+      }
+    ],
+    "selected_lap_identity_and_timestamps_checked": 24
+  },
+  "prior_offline_replay_evidence": [
+    {
+      "path": ".cache/fastf1-2024-r1-race-offline-20261011/replay_report.json",
+      "report": {
+        "archive_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+        "content_sha256": "0d10c344518af115bb30d6240326ef482b91c5b34ef6448420aeb607a69d90b4",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "identity": {
+          "api_path": "/static/2024/2024-03-02_Bahrain_Grand_Prix/2024-03-02_Race/",
+          "drivers": [
+            "1",
+            "10",
+            "11",
+            "14",
+            "16",
+            "18",
+            "2",
+            "20",
+            "22",
+            "23",
+            "24",
+            "27",
+            "3",
+            "31",
+            "4",
+            "44",
+            "55",
+            "63",
+            "77",
+            "81"
+          ],
+          "event_name": "Bahrain Grand Prix",
+          "round_number": 1,
+          "session_name": "Race",
+          "session_start_time_s": 3599.911,
+          "t0_date": "2024-03-02T14:03:42.431000",
+          "year": 2024
+        },
+        "mismatched_tables": [],
+        "network_attempts": 0,
+        "passed": true,
+        "rows": {
+          "car_data/1": 34819,
+          "car_data/10": 34819,
+          "car_data/11": 34819,
+          "car_data/14": 34819,
+          "car_data/16": 34819,
+          "car_data/18": 34819,
+          "car_data/2": 34819,
+          "car_data/20": 34819,
+          "car_data/22": 34819,
+          "car_data/23": 34819,
+          "car_data/24": 34819,
+          "car_data/27": 34819,
+          "car_data/3": 34819,
+          "car_data/31": 34819,
+          "car_data/4": 34819,
+          "car_data/44": 34819,
+          "car_data/55": 34819,
+          "car_data/63": 34819,
+          "car_data/77": 34819,
+          "car_data/81": 34819,
+          "laps": 1129,
+          "pos_data/1": 35994,
+          "pos_data/10": 35994,
+          "pos_data/11": 35994,
+          "pos_data/14": 35994,
+          "pos_data/16": 35994,
+          "pos_data/18": 35994,
+          "pos_data/2": 35994,
+          "pos_data/20": 35994,
+          "pos_data/22": 35994,
+          "pos_data/23": 35994,
+          "pos_data/24": 35994,
+          "pos_data/27": 35994,
+          "pos_data/3": 35994,
+          "pos_data/31": 35994,
+          "pos_data/4": 35994,
+          "pos_data/44": 35994,
+          "pos_data/55": 35994,
+          "pos_data/63": 35994,
+          "pos_data/77": 35994,
+          "pos_data/81": 35994,
+          "race_control_messages": 69,
+          "results": 20,
+          "session_status": 5,
+          "track_status": 7,
+          "weather_data": 157
+        },
+        "schema_version": "apex-fastf1-replay-v1",
+        "table_count": 46
+      },
+      "evidence_origin": "Previously completed native offline replay; not rerun in this slice"
+    },
+    {
+      "path": ".cache/fastf1-2024-r16-race-offline-20261011/replay_report.json",
+      "report": {
+        "archive_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+        "content_sha256": "1cd16dea6f87ca07bceb0390da2b5e0ae46ed9f0df028366a9a347b5a94df88d",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "identity": {
+          "api_path": "/static/2024/2024-09-01_Italian_Grand_Prix/2024-09-01_Race/",
+          "drivers": [
+            "1",
+            "10",
+            "11",
+            "14",
+            "16",
+            "18",
+            "20",
+            "22",
+            "23",
+            "24",
+            "27",
+            "3",
+            "31",
+            "4",
+            "43",
+            "44",
+            "55",
+            "63",
+            "77",
+            "81"
+          ],
+          "event_name": "Italian Grand Prix",
+          "round_number": 16,
+          "session_name": "Race",
+          "session_start_time_s": 3350.494,
+          "t0_date": "2024-09-01T12:07:43.919000",
+          "year": 2024
+        },
+        "mismatched_tables": [],
+        "network_attempts": 0,
+        "passed": true,
+        "rows": {
+          "car_data/1": 29218,
+          "car_data/10": 29218,
+          "car_data/11": 29218,
+          "car_data/14": 29218,
+          "car_data/16": 29218,
+          "car_data/18": 29218,
+          "car_data/20": 29218,
+          "car_data/22": 29218,
+          "car_data/23": 29218,
+          "car_data/24": 29218,
+          "car_data/27": 29218,
+          "car_data/3": 29218,
+          "car_data/31": 29218,
+          "car_data/4": 29218,
+          "car_data/43": 29218,
+          "car_data/44": 29218,
+          "car_data/55": 29218,
+          "car_data/63": 29218,
+          "car_data/77": 29218,
+          "car_data/81": 29218,
+          "laps": 1008,
+          "pos_data/1": 30637,
+          "pos_data/10": 30637,
+          "pos_data/11": 30637,
+          "pos_data/14": 30637,
+          "pos_data/16": 30637,
+          "pos_data/18": 30637,
+          "pos_data/20": 30637,
+          "pos_data/22": 30637,
+          "pos_data/23": 30637,
+          "pos_data/24": 30637,
+          "pos_data/27": 30637,
+          "pos_data/3": 30637,
+          "pos_data/31": 30637,
+          "pos_data/4": 30637,
+          "pos_data/43": 30637,
+          "pos_data/44": 30637,
+          "pos_data/55": 30637,
+          "pos_data/63": 30637,
+          "pos_data/77": 30637,
+          "pos_data/81": 30637,
+          "race_control_messages": 59,
+          "results": 20,
+          "session_status": 5,
+          "track_status": 1,
+          "weather_data": 133
+        },
+        "schema_version": "apex-fastf1-replay-v1",
+        "table_count": 46
+      },
+      "evidence_origin": "Previously completed native offline replay; not rerun in this slice"
+    },
+    {
+      "path": ".cache/r026-fastf1-2023-r1-offline-20261013/replay_report.json",
+      "report": {
+        "archive_sha256": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+        "content_sha256": "e86f35ecc8032de9695b75820816eb4e9ca90a6e49131995c1e9943423649af0",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "identity": {
+          "api_path": "/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/",
+          "drivers": [
+            "1",
+            "10",
+            "11",
+            "14",
+            "16",
+            "18",
+            "2",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "27",
+            "31",
+            "4",
+            "44",
+            "55",
+            "63",
+            "77",
+            "81"
+          ],
+          "event_name": "Bahrain Grand Prix",
+          "round_number": 1,
+          "session_name": "Race",
+          "session_start_time_s": 3756.652,
+          "t0_date": "2023-03-05T14:01:01.849000",
+          "year": 2023
+        },
+        "mismatched_tables": [],
+        "network_attempts": 0,
+        "passed": true,
+        "rows": {
+          "car_data/1": 36065,
+          "car_data/10": 36065,
+          "car_data/11": 36065,
+          "car_data/14": 36065,
+          "car_data/16": 36065,
+          "car_data/18": 36065,
+          "car_data/2": 36065,
+          "car_data/20": 36065,
+          "car_data/21": 36065,
+          "car_data/22": 36065,
+          "car_data/23": 36065,
+          "car_data/24": 36065,
+          "car_data/27": 36065,
+          "car_data/31": 36065,
+          "car_data/4": 36065,
+          "car_data/44": 36065,
+          "car_data/55": 36065,
+          "car_data/63": 36065,
+          "car_data/77": 36065,
+          "car_data/81": 36065,
+          "laps": 1056,
+          "pos_data/1": 36860,
+          "pos_data/10": 36860,
+          "pos_data/11": 36860,
+          "pos_data/14": 36860,
+          "pos_data/16": 36860,
+          "pos_data/18": 36860,
+          "pos_data/2": 36860,
+          "pos_data/20": 36860,
+          "pos_data/21": 36860,
+          "pos_data/22": 36860,
+          "pos_data/23": 36860,
+          "pos_data/24": 36860,
+          "pos_data/27": 36860,
+          "pos_data/31": 36860,
+          "pos_data/4": 36860,
+          "pos_data/44": 36860,
+          "pos_data/55": 36860,
+          "pos_data/63": 36860,
+          "pos_data/77": 36860,
+          "pos_data/81": 36860,
+          "race_control_messages": 73,
+          "results": 20,
+          "session_status": 5,
+          "track_status": 11,
+          "weather_data": 161
+        },
+        "schema_version": "apex-fastf1-replay-v1",
+        "table_count": 46
+      },
+      "evidence_origin": "Previously completed native offline replay; not rerun in this slice"
+    },
+    {
+      "path": ".cache/r026-fastf1-2023-r14-offline-20261013/replay_report.json",
+      "report": {
+        "archive_sha256": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+        "content_sha256": "27b726f30f153292f69768de42fc81557424b1ce05edbd359f1c91576149dc32",
+        "environment": {
+          "fastf1": "3.8.3",
+          "numpy": "2.5.3",
+          "pandas": "2.3.3",
+          "pyarrow": "25.0.1",
+          "python": "3.12.12"
+        },
+        "identity": {
+          "api_path": "/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/",
+          "drivers": [
+            "1",
+            "10",
+            "11",
+            "14",
+            "16",
+            "18",
+            "2",
+            "20",
+            "22",
+            "23",
+            "24",
+            "27",
+            "31",
+            "4",
+            "40",
+            "44",
+            "55",
+            "63",
+            "77",
+            "81"
+          ],
+          "event_name": "Italian Grand Prix",
+          "round_number": 14,
+          "session_name": "Race",
+          "session_start_time_s": 4941.726,
+          "t0_date": "2023-09-03T12:01:01.045000",
+          "year": 2023
+        },
+        "mismatched_tables": [],
+        "network_attempts": 0,
+        "passed": true,
+        "rows": {
+          "car_data/1": 35981,
+          "car_data/10": 35981,
+          "car_data/11": 35981,
+          "car_data/14": 35981,
+          "car_data/16": 35981,
+          "car_data/18": 35981,
+          "car_data/2": 35981,
+          "car_data/20": 35981,
+          "car_data/22": 35981,
+          "car_data/23": 35981,
+          "car_data/24": 35981,
+          "car_data/27": 35981,
+          "car_data/31": 35981,
+          "car_data/4": 35981,
+          "car_data/40": 35981,
+          "car_data/44": 35981,
+          "car_data/55": 35981,
+          "car_data/63": 35981,
+          "car_data/77": 35981,
+          "car_data/81": 35981,
+          "laps": 957,
+          "pos_data/1": 37330,
+          "pos_data/10": 37330,
+          "pos_data/11": 37330,
+          "pos_data/14": 37330,
+          "pos_data/16": 37330,
+          "pos_data/18": 37330,
+          "pos_data/2": 37330,
+          "pos_data/20": 37330,
+          "pos_data/22": 37330,
+          "pos_data/23": 37330,
+          "pos_data/24": 37330,
+          "pos_data/27": 37330,
+          "pos_data/31": 37330,
+          "pos_data/4": 37330,
+          "pos_data/40": 37330,
+          "pos_data/44": 37330,
+          "pos_data/55": 37330,
+          "pos_data/63": 37330,
+          "pos_data/77": 37330,
+          "pos_data/81": 37330,
+          "race_control_messages": 43,
+          "results": 20,
+          "session_status": 5,
+          "track_status": 3,
+          "weather_data": 156
+        },
+        "schema_version": "apex-fastf1-replay-v1",
+        "table_count": 46
+      },
+      "evidence_origin": "Previously completed native offline replay; not rerun in this slice"
+    }
+  ],
+  "protected_benchmark": {
+    "event_count": 9,
+    "scope": "ALL_SESSIONS_OF_WHOLE_EVENT",
+    "policy_sha256": "7d690115b7bcd0a52f20acdbf44e628e82efe556b48caf5ebe49b15e29b4ea7d",
+    "telemetry_acquired_by_this_slice": false
+  },
+  "verification": {
+    "baseline": {
+      "passed": 508,
+      "seconds": 246.42,
+      "basetemp": ".cache/r029-baseline-tests-20261019"
+    },
+    "targeted_geometry": {
+      "passed": 12,
+      "seconds": 58.77,
+      "basetemp": ".cache/r029-targeted-complete-20261019"
+    },
+    "targeted_source_audit_corrected": {
+      "passed": 3,
+      "seconds": 17.04,
+      "basetemp": ".cache/r029-audit-portability-tests-20261019"
+    },
+    "full_geometry_checkpoint": {
+      "passed": 520,
+      "warnings": 2,
+      "seconds": 345.39,
+      "basetemp": ".cache/r029-full-regression-20261019"
+    },
+    "full_audit_checkpoint": {
+      "passed": 523,
+      "warnings": 2,
+      "seconds": 240.69,
+      "basetemp": ".cache/r029-final-regression-20261019",
+      "subsequent_change": "Test assertion only: exact ns snapshot and replay decision equality instead of pandas inferred duration dtype. Three targeted tests rerun; full matrix CI verifies final code."
+    },
+    "lint": "PASS",
+    "diff_check": "PASS",
+    "public_reconstruction_attempt": {
+      "result": "Stopped before fitting first training lap",
+      "event_id": "F1_2024_R01",
+      "driver_id": "4",
+      "lap_number": 15,
+      "max_native_gap_s": 0.82,
+      "limit_s": 0.75,
+      "complete_geometry_artifact_created": false
+    },
+    "synthetic_race": {
+      "summary": {
+        "track_id": "apex_test_track",
+        "standings": [
+          {
+            "position": 1,
+            "car_id": "CAR_01",
+            "driver_id": "Apex",
+            "status": "FINISHED",
+            "race_time_s": 529.5,
+            "laps_completed": 6,
+            "total_distance_m": 21607.51742233512,
+            "final_compound": "HARD",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.88392975364407,
+            "tyre_health": 0.956213346267628
+          },
+          {
+            "position": 2,
+            "car_id": "CAR_02",
+            "driver_id": "Orion",
+            "status": "FINISHED",
+            "race_time_s": 532.0,
+            "laps_completed": 6,
+            "total_distance_m": 21599.255592427362,
+            "final_compound": "HARD",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.88550476580917,
+            "tyre_health": 0.9709993109895468
+          },
+          {
+            "position": 3,
+            "car_id": "CAR_03",
+            "driver_id": "Nova",
+            "status": "FINISHED",
+            "race_time_s": 534.25,
+            "laps_completed": 6,
+            "total_distance_m": 21592.179975300664,
+            "final_compound": "MEDIUM",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.88300635052424,
+            "tyre_health": 0.9157877556030326
+          },
+          {
+            "position": 4,
+            "car_id": "CAR_04",
+            "driver_id": "Vector",
+            "status": "FINISHED",
+            "race_time_s": 536.0,
+            "laps_completed": 6,
+            "total_distance_m": 21583.33325408443,
+            "final_compound": "HARD",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.88602500543858,
+            "tyre_health": 0.9704697812116146
+          },
+          {
+            "position": 5,
+            "car_id": "CAR_05",
+            "driver_id": "Pulse",
+            "status": "FINISHED",
+            "race_time_s": 538.75,
+            "laps_completed": 6,
+            "total_distance_m": 21573.00669524675,
+            "final_compound": "MEDIUM",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.8853406200195,
+            "tyre_health": 0.9189083995561829
+          },
+          {
+            "position": 6,
+            "car_id": "CAR_06",
+            "driver_id": "Zenith",
+            "status": "FINISHED",
+            "race_time_s": 539.5,
+            "laps_completed": 6,
+            "total_distance_m": 21561.414523250332,
+            "final_compound": "HARD",
+            "pit_stops": 1,
+            "fuel_remaining_kg": 101.88711848090098,
+            "tyre_health": 0.969813447828157
+          }
+        ],
+        "quality": {
+          "telemetry_rows": 6169,
+          "cars": 6,
+          "duplicate_car_times": 0,
+          "negative_speed_rows": 0,
+          "negative_fuel_rows": 0,
+          "excess_fuel_rows": 0,
+          "invalid_battery_rows": 0,
+          "invalid_tyre_health_rows": 0,
+          "backward_distance_steps": 0,
+          "backward_time_steps": 0,
+          "backward_lap_steps": 0,
+          "invalid_position_rows": 0,
+          "duplicate_position_rows": 0,
+          "invalid_control_rows": 0,
+          "conflicting_terminal_rows": 0,
+          "finite_numeric": true,
+          "passed": true
+        }
+      },
+      "quality": {
+        "telemetry_rows": 6169,
+        "cars": 6,
+        "duplicate_car_times": 0,
+        "negative_speed_rows": 0,
+        "negative_fuel_rows": 0,
+        "excess_fuel_rows": 0,
+        "invalid_battery_rows": 0,
+        "invalid_tyre_health_rows": 0,
+        "backward_distance_steps": 0,
+        "backward_time_steps": 0,
+        "backward_lap_steps": 0,
+        "invalid_position_rows": 0,
+        "duplicate_position_rows": 0,
+        "invalid_control_rows": 0,
+        "conflicting_terminal_rows": 0,
+        "finite_numeric": true,
+        "passed": true
+      }
+    },
+    "research_preview": {
+      "summary": {
+        "paper_count": 22,
+        "strategy": {
+          "race_time_s": 770.9385021735404,
+          "compound_changed": true,
+          "residual_fuel_energy_mj": 0.0,
+          "residual_battery_mj": 0.0
+        },
+        "tyre_energy": {
+          "train_windows": 420,
+          "test_windows": 140,
+          "ridge_test_rmse": 0.055471744758730714,
+          "target_quality": "synthetic proxy, not proprietary measured tyre energy"
+        },
+        "state_space": {
+          "rows": 20,
+          "pit_reset_lap": 11,
+          "final_latent_degradation_s": 0.28142252793994854
+        }
+      },
+      "warning": "Existing synthetic ridge ill-conditioning warning; no public geometry fitting"
+    },
+    "geometry_implementation_ci": {
+      "run_id": 39357133885,
+      "head_sha": "2f85bd39d3ff80c816e33524fb668a218978c0f0",
+      "conclusion": "success",
+      "python_matrix": [
+        "3.11",
+        "3.12"
+      ],
+      "url": "https://github.com/aayups31/APEX/actions/runs/39357133885"
+    },
+    "initial_audit_ci": {
+      "run_id": 39357712063,
+      "conclusion": "failure",
+      "reason": "Only new test required pandas duration storage dtype equality; 522 other tests pass per matrix. Scientific code unchanged by correction."
+    },
+    "corrected_implementation_ci": {
+      "run_id": 39358141650,
+      "head_sha": "371b638ccd90afd8907bf4cb789c37ad8697e63f",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/aayups31/APEX/actions/runs/39358141650",
+      "jobs": [
+        {
+          "name": "Python 3.11",
+          "conclusion": "success",
+          "started_at": "2026-10-20T02:17:56Z",
+          "completed_at": "2026-10-20T02:22:14Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install APEX",
+              "conclusion": "success"
+            },
+            {
+              "name": "Lint",
+              "conclusion": "success"
+            },
+            {
+              "name": "Test",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compile Airflow wrapper",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify public-data artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify permanent benchmark reservation",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify causal tyre-study and posterior artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify robust tyre observation ensembles",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify matched six-family forecasting and checkpoint reload",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify frozen seen/unseen track inference and clustered confidence",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify periodic reference geometry and held-out reconstruction",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify smooth lap-map artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify matched strategy-solver artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify SAC training and checkpoint artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify frozen-policy disturbance artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "name": "Python 3.12",
+          "conclusion": "success",
+          "started_at": "2026-10-20T02:17:56Z",
+          "completed_at": "2026-10-20T02:22:23Z",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install APEX",
+              "conclusion": "success"
+            },
+            {
+              "name": "Lint",
+              "conclusion": "success"
+            },
+            {
+              "name": "Test",
+              "conclusion": "success"
+            },
+            {
+              "name": "Compile Airflow wrapper",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify public-data artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify permanent benchmark reservation",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify causal tyre-study and posterior artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify robust tyre observation ensembles",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify matched six-family forecasting and checkpoint reload",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify frozen seen/unseen track inference and clustered confidence",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify periodic reference geometry and held-out reconstruction",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify smooth lap-map artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify matched strategy-solver artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify SAC training and checkpoint artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify frozen-policy disturbance artifacts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Source support only; no geometry accuracy or task closure follows",
+    "Snapshots establish local consistency, not provider authentication",
+    "Frozen 0.75s gap limit and selected laps unchanged; no replacement or gap filling",
+    "Public XY/curvature residuals, selected configs, sensitivity and annotations NOT_EVALUATED",
+    "No source threshold loosening, failed-lap replacement, private-data claim or maturity promotion"
+  ],
+  "next": {
+    "primary": "Preregister separate source-support-aware R029 method before R030 calibration",
+    "pending_P1": [
+      "R027",
+      "R028"
+    ]
+  },
+  "rollback": "Revert implementation commits; immutable prior evidence retained",
+  "public_interval_counts": {
+    "lap_level_instances": 33,
+    "distinct_event_time_intervals": 28,
+    "intervals_shared_by_both_drivers": 5
+  },
+  "content_sha256": "3858a988ae9041f3ad0dbbacec35b018d0e59f0717ab3283431f9c58807e2909"
+}

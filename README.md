@@ -74,7 +74,14 @@ The [R026 evaluation](docs/verification/track-generalization-report.md) replays
 the frozen models on four separate 2023 races, with distinct seen/unseen circuit
 scores and event/sequence confidence. The selected XGBoost candidate passes the
 frozen descriptive gate; proxy labels and weak unseen interval coverage remain
-explicit. Next priority is track reconstruction for calibrated vehicle replay.
+explicit.
+
+The [R029 geometry implementation and source audit](docs/verification/track-reconstruction-report.md)
+add periodic reference curves, analytic curvature, monotone arc distance and
+portable native-evidence replay. The frozen Bahrain/Monza source gate rejects
+14/24 selected laps for position gaps; real shape accuracy remains unevaluated.
+R029 stays incomplete. Next priority is a preregistered method that handles
+observed support and uncertainty before longitudinal vehicle calibration.
 
 ---
 

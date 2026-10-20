@@ -27,6 +27,9 @@ This directory tracks the published research used to guide APEX.
 - [R024 tyre-energy dataset protocol](../../research/protocols/TYRE_ENERGY_DATASET.md)
 - [R024 motion and proxy units/equations](../../research/equations/TYRE_ENERGY_PROXY_V1.md)
 - [R024 public dataset verification](../verification/tyre-energy-dataset-report.md)
+- [R029 frozen geometry protocol](../../research/protocols/TRACK_RECONSTRUCTION.md)
+- [R029 geometry equations](../../research/equations/REFERENCE_GEOMETRY_V1.md)
+- [R029 source-support failure and verification](../verification/track-reconstruction-report.md)
 
 ## Purpose
 

@@ -53,7 +53,14 @@ feasible counterfactuals remain separate pending work.
 
 **What enters APEX:** curvilinear track coordinates, vehicle state equations, direct transcription, nonlinear constraints, racing-line/control co-optimization and track-specific setup sensitivity.
 
-**Code now:** transparent track/vehicle crosswalk only. This paper defines the upgrade path from the current point-mass kernel to a validated minimum-lap-time solver.
+**Code now:** `apexsim.research.reference_geometry` adds independently specified
+periodic reference curves, curvilinear station and analytic curvature; it is a
+geometry prerequisite adaptation, not this paper's optimal-control model.
+The [R029 report](../docs/verification/track-reconstruction-report.md) records
+passing analytic controls and a failed public source-support gate. No real
+reference curve is accepted yet. This paper still defines the upgrade path from
+the current point-mass kernel to a validated minimum-lap-time solver; vehicle
+equations, direct transcription and racing-line optimization remain pending.
 
 ### TREMLETT_2016 + WEST_2020 + FARRONI_2017 — tyre thermodynamics and wear
 

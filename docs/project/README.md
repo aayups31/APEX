@@ -32,8 +32,12 @@ forecast benchmark are documented in the
 [latest verification report](../verification/robust-tyre-forecast-report.md).
 R026's [frozen seen/unseen evaluation](../verification/track-generalization-report.md)
 is complete on four separate 2023 development races, with preserved model weights
-and event/sequence uncertainty. The next dependency-priority P0 task is R029
-track reconstruction. R027/R028 remain pending P1 explanation/counterfactual work.
+and event/sequence uncertainty. R029's
+[geometry/source audit](../verification/track-reconstruction-report.md) delivers
+tested reconstruction mathematics and portable rejection evidence:14/24 frozen
+laps fail the 0.75s source-gap gate. R029 is INCONCLUSIVE and remains the next P0
+dependency; R030 requires accepted geometry. R027/R028 remain pending P1
+explanation/counterfactual work.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 
