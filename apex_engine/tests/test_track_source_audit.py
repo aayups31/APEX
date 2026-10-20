@@ -19,7 +19,11 @@ def test_pre_fit_gap_audit_localizes_native_intervals_without_filling():
     assert result["unsupported_intervals"] == [{"start_s": 9.75, "end_s": 12., "gap_s": 2.25, "native_parent_rows": [39, 40]}]
     assert result["raw_closure_gap_m"] < 1e-8
     assert "gaps" in result["failure_reason"]
-    pd.testing.assert_frame_equal(audit._restore_lap(audit._lap_snapshot(laps.iloc[0]), selection), laps, check_like=True)
+    snapshot = audit._lap_snapshot(laps.iloc[0])
+    restored = audit._restore_lap(snapshot, selection)
+    # The snapshot contract preserves exact ns values, not pandas' inferred s/ns dtype.
+    assert audit._lap_snapshot(restored.iloc[0]) == snapshot
+    assert audit.audit_lap(restored, broken, selection) == result
 
 
 @pytest.mark.parametrize("missing_support", [True, False])
