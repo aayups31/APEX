@@ -36,12 +36,14 @@ def boundary_position(arrays: tuple, time: float, *, allow_pit_status: bool = Fa
     return xy[left]*(1-weight)+xy[right]*weight, (left, right), float(weight)
 
 
-def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection: dict, *, allow_interior_gaps: bool = False) -> dict:
+def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection: dict, *, allow_interior_gaps: bool = False, observed_boundaries: bool = False) -> dict:
     """Extract native vertices; v2 optionally retains explicit unsupported interior intervals.
 
     Timing-anchor support, native quality, identity and closure rules never change.
     The default remains the frozen v1 complete-lap policy.
     """
+    if observed_boundaries and (not allow_interior_gaps or selection["role"] != "test"):
+        raise ValueError("Partial observed boundaries are allowed only for explicit v2.1 test observations")
     row = laps.iloc[selection["native_row"]]
     if str(row.DriverNumber) != selection["driver_id"] or int(row.LapNumber) != selection["lap_number"]:
         raise ValueError("Selected lap/native row identity mismatch")
@@ -55,18 +57,31 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
         raise ValueError("Unsupported native lap timing consistency")
     arrays = position_arrays(positions)
     timestamps, xy, source, status = arrays
-    first, first_parents, first_weight = boundary_position(arrays, start)
-    last, last_parents, last_weight = boundary_position(arrays, end)
+    anchors, boundary_status = [], []
+    for time in (start, end):
+        try:
+            anchors.append(boundary_position(arrays, time))
+            boundary_status.append({"status": "SUPPORTED_BOUNDED_ANCHOR"})
+        except ValueError as exc:
+            if not observed_boundaries:
+                raise
+            anchors.append(None)
+            boundary_status.append({"status": "UNKNOWN", "reason": str(exc)})
     indices = np.flatnonzero((timestamps > start+1e-8)&(timestamps < end-1e-8))
     if len(indices) < 100 or any(source[i] != "pos" or status[i] != "OnTrack" for i in indices):
         raise ValueError("Selected lap needs >=100 supported native OnTrack position rows")
-    times = np.r_[start, timestamps[indices], end]
-    points = np.vstack((first, xy[indices], last))
+    times = np.r_[([start] if anchors[0] else []), timestamps[indices], ([end] if anchors[1] else [])]
+    points = np.vstack(([anchors[0][0]] if anchors[0] else [])+[p for p in xy[indices]]+([anchors[1][0]] if anchors[1] else []))
+    parents = np.vstack(([anchors[0][1]] if anchors[0] else [])+[tuple((i, i)) for i in indices]+([anchors[1][1]] if anchors[1] else []))
+    time_coverage = float((times[-1]-times[0])/duration)
+    if observed_boundaries and time_coverage < .98:
+        raise ValueError("Partial test observations cover less than98% of native lap duration")
     interval_supported = np.diff(times) <= .75
     if not np.isfinite(points).all() or (not allow_interior_gaps and not interval_supported.all()):
         raise ValueError("Selected position lap has unsupported samples/gaps")
-    raw_gap = float(np.linalg.norm(points[-1]-points[0]))
-    if raw_gap > 30:
+    endpoint_gap = float(np.linalg.norm(points[-1]-points[0]))
+    raw_gap = endpoint_gap if all(a is not None for a in anchors) else None
+    if raw_gap is not None and raw_gap > 30:
         raise ValueError("Selected raw position lap fails30m endpoint closure")
     _, raw_length = chord_parameter(points)
     sectors = []
@@ -74,10 +89,10 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
         value = row.get(name)
         sectors.append(float(value.total_seconds()) if pd.notna(value) else None)
     result = {"xy_m": points, "time_s": times,
-            "native_parents": np.vstack((first_parents, np.column_stack((indices, indices)), last_parents)).astype(np.int64),
+            "native_parents": parents.astype(np.int64),
             "metadata": {**selection, "lap_id": f"{selection['event_id']}_{selection['driver_id']}_{selection['lap_number']}",
-                         "lap_start_s": start, "lap_end_s": end, "native_samples": len(indices), "boundary_samples": 2,
-                         "boundary_weights": [first_weight, last_weight], "raw_closure_gap_m": raw_gap,
+                         "lap_start_s": start, "lap_end_s": end, "native_samples": len(indices), "boundary_samples": sum(a is not None for a in anchors),
+                         "boundary_weights": [a[2] if a else None for a in anchors], "raw_closure_gap_m": raw_gap,
                          "raw_chord_length_m": raw_length, "max_gap_s": float(np.diff(times).max()),
                          "sector_durations_s": sectors, "position_scale_m_per_unit": .1,
                          "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
@@ -92,4 +107,11 @@ def extract_position_lap(laps: pd.DataFrame, positions: pd.DataFrame, selection:
                                     "gap_s": float(times[i+1]-times[i]),
                                     "endpoint_chord_m": float(np.linalg.norm(points[i+1]-points[i]))}
                                    for i in np.flatnonzero(~interval_supported)])
+    if observed_boundaries:
+        result["metadata"].update(boundary_policy="V2.1_OBSERVED_HOLDOUT; UNSUPPORTED_ANCHORS_UNKNOWN",
+                                  boundary_status=boundary_status, observed_time_fraction=time_coverage,
+                                  lap_duration_s=duration,
+                                  unobserved_start_s=float(times[0]-start), unobserved_end_s=float(end-times[-1]),
+                                  observed_endpoint_gap_m=endpoint_gap,
+                                  boundary_truth="SUPPORTED_BOUNDED_ANCHORS_ONLY; missing anchors UNKNOWN and omitted")
     return result

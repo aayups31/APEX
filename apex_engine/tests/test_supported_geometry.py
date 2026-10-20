@@ -4,9 +4,10 @@ import pytest
 from test_reference_geometry import native_fixture
 
 from apexsim.research.position_laps import extract_position_lap
-from apexsim.research.reference_geometry import GeometryConfig, fit_reference
+from apexsim.research.reference_geometry import GeometryConfig, fit_reference, register_lap
 from apexsim.research.supported_geometry import (
     evaluate_supported,
+    refine_rigid_pose,
     station_support,
     supported_polyline_distances,
     supported_windows,
@@ -88,3 +89,42 @@ def test_coverage_endpoint_roundoff_does_not_expand_real_missing_regions():
     assert tiny[:, 0].all()
     _, real = station_support(1000., [np.array([.01, 50.])]*3, [np.array([True])]*3)
     assert not real[:, 0].any()
+
+
+def test_missing_holdout_anchor_is_unknown_and_omitted_without_extrapolation():
+    laps, positions, selection = native_fixture()
+    selection = {**selection, "role": "test"}
+    truncated = positions.iloc[:400].copy()
+    with pytest.raises(ValueError, match="boundary bracket"):
+        extract_position_lap(laps, truncated, selection, allow_interior_gaps=True)
+    trace = extract_position_lap(laps, truncated, selection, allow_interior_gaps=True, observed_boundaries=True)
+    m = trace["metadata"]
+    assert m["boundary_samples"] == 1 and m["raw_closure_gap_m"] is None
+    assert m["boundary_status"][-1]["status"] == "UNKNOWN"
+    assert m["observed_time_fraction"] > .99
+    assert trace["time_s"][-1] == 99.75
+    np.testing.assert_array_equal(trace["xy_m"][-1], positions.loc[399, ["X", "Y"]].to_numpy(float)*.1)
+    assert len(trace["xy_m"]) == m["native_samples"]+1
+
+
+def test_partial_observations_cannot_relax_training_or_cover_too_little_time():
+    laps, positions, selection = native_fixture()
+    with pytest.raises(ValueError, match=r"only.*test"):
+        extract_position_lap(laps, positions, selection, allow_interior_gaps=True, observed_boundaries=True)
+    with pytest.raises(ValueError, match="98%"):
+        extract_position_lap(laps, positions.iloc[20:].reset_index(drop=True), {**selection, "role": "test"}, allow_interior_gaps=True, observed_boundaries=True)
+
+
+def test_proper_rigid_icp_reduces_partial_ellipse_error_without_shape_fitting():
+    theta = np.linspace(0., 2*np.pi, 1025)
+    full = np.column_stack((600*np.cos(theta), 400*np.sin(theta)))
+    curve = fit_reference([full], GeometryConfig(64, .05), "ellipse")
+    coefficients = curve.coefficients.copy()
+    xy = full[:-12]@np.array([[0., -1.], [1., 0.]])+np.array([1200., -300.])
+    aligned, initial = register_lap(xy, full)
+    _, pose = refine_rigid_pose(xy, aligned, initial, curve)
+    rms = pose["nearest_curve_rms_steps_m"]
+    assert len(rms) == 9 and np.max(np.diff(rms)) <= 1e-6
+    assert rms[-1] < rms[0] and pose["determinant"] == pytest.approx(1)
+    assert pose["scale"] == 1 and not pose["shape_coefficients_changed"]
+    np.testing.assert_array_equal(coefficients, curve.coefficients)

@@ -114,7 +114,32 @@ def test_lap_passed(m: dict) -> bool:
                 and m["coarse_curvature_p95_1pm"] <= .015)
 
 
-def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[int, int, int] = (10, 10, 12)) -> tuple[dict, dict]:
+def refine_rigid_pose(xy: np.ndarray, aligned: np.ndarray, registration: dict, curve: ReferenceCurve) -> tuple[np.ndarray, dict]:
+    """Eight proper rigid ICP steps against a fixed curve; never change shape coefficients."""
+    rotation = np.asarray(registration["rotation"], float)
+    translation = np.asarray(registration["translation_m"], float)
+    rms = [float(np.sqrt(np.mean(curve.project(aligned)["distance_m"]**2)))]
+    initial = {"rotation": rotation.tolist(), "translation_m": translation.tolist(), "phase_rms_after_m": registration["rms_after_m"]}
+    for _ in range(8):
+        targets = curve.project(aligned)["xy_m"]
+        xc, yc = aligned.mean(axis=0), targets.mean(axis=0)
+        u, _, vt = np.linalg.svd((aligned-xc).T@(targets-yc))
+        step_r = u@np.diag([1., np.linalg.det(u@vt)])@vt
+        step_t = yc-xc@step_r
+        rotation, translation = rotation@step_r, translation@step_r+step_t
+        aligned = xy@rotation+translation
+        rms.append(float(np.sqrt(np.mean(curve.project(aligned)["distance_m"]**2))))
+        if rms[-1] > rms[-2]+1e-6:
+            raise ValueError("Rigid closest-curve registration increased native RMS")
+    result = {**registration, "rotation": rotation.tolist(), "translation_m": translation.tolist(),
+              "determinant": float(np.linalg.det(rotation)), "initial_phase_registration": initial,
+              "rms_after_m": rms[-1], "rms_after_definition": "Native nearest-curve RMS after rigid pose refinement",
+              "method": "KABSCH_512_THEN_8_FIXED_CURVE_RIGID_ICP_STEPS", "nearest_curve_rms_steps_m": rms,
+              "shape_coefficients_changed": False}
+    return aligned, result
+
+
+def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[int, int, int] = (10, 10, 12), refine_test_pose: bool = False) -> tuple[dict, dict]:
     """Fit/choose on train/validation only, then evaluate native support and frozen test gates."""
     groups = [[lap for lap in laps if lap["metadata"]["role"] == role] for role in ("train", "validation", "test")]
     if tuple(map(len, groups)) != expected_counts:
@@ -141,6 +166,8 @@ def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[i
     saved, metrics, station_arrays, support_arrays = {}, [], [], []
     for lap in laps:
         key = lap["metadata"]["lap_id"]
+        if refine_test_pose and lap["metadata"]["role"] == "test":
+            aligned[key], registrations[key] = refine_rigid_pose(lap["xy_m"], aligned[key], registrations[key], curve)
         result, arrays = evaluate_supported(curve, lap, aligned[key], training_xy[0], train[0]["interval_supported"])
         metrics.append({**lap["metadata"], "registration": registrations[key], **result})
         saved[key+"_aligned_xy"] = aligned[key]
@@ -179,4 +206,4 @@ def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[i
             "candidate_selection": candidates, "length_m": curve.length_m, "gate": gate, "lap_metrics": metrics,
             "coverage": coverage, "sensitivity": sensitivity, "frame_anchor_lap_id": train[0]["metadata"]["lap_id"],
             "geometry_truth": "RECONSTRUCTED_REFERENCE_RACING_TRACE_NOT_SURVEYED_CENTERLINE",
-            "frame_truth": "LOCAL_SOURCE_XY; WHOLE_LAP_RIGID_REGISTRATION_FOR_SHAPE_EVALUATION"}, saved
+            "frame_truth": "CONDITIONAL_REGISTERED_SHAPE_AFTER_RIGID_POSE_OPTIMIZATION" if refine_test_pose else "LOCAL_SOURCE_XY; WHOLE_LAP_RIGID_REGISTRATION_FOR_SHAPE_EVALUATION"}, saved
