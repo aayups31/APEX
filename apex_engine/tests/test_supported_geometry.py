@@ -6,6 +6,7 @@ from test_reference_geometry import native_fixture
 from apexsim.research.position_laps import extract_position_lap
 from apexsim.research.reference_geometry import GeometryConfig, fit_reference, register_lap
 from apexsim.research.supported_geometry import (
+    coherent_derivative_intervals,
     evaluate_supported,
     refine_rigid_pose,
     station_support,
@@ -128,3 +129,28 @@ def test_proper_rigid_icp_reduces_partial_ellipse_error_without_shape_fitting():
     assert rms[-1] < rms[0] and pose["determinant"] == pytest.approx(1)
     assert pose["scale"] == 1 and not pose["shape_coefficients_changed"]
     np.testing.assert_array_equal(coefficients, curve.coefficients)
+
+
+def test_native_reversal_marks_derivative_intervals_without_any_model_input():
+    xy = np.column_stack(([0., 10., 20., 10., 30., 40.], np.zeros(6)))
+    mask, cosine = coherent_derivative_intervals(xy, np.ones(5, bool))
+    np.testing.assert_array_equal(mask, [True, False, False, False, True])
+    np.testing.assert_allclose(cosine, [1., -1., -1., 1.])
+
+
+def test_reversal_proxy_abstention_retains_diagnostic_and_every_position_score():
+    theta = np.linspace(0., 2*np.pi, 401)
+    xy = np.column_stack((500*np.cos(theta), 500*np.sin(theta)))
+    curve = fit_reference([xy], GeometryConfig(32, .05), "circle")
+    distorted = xy.copy()
+    distorted[190:194] = distorted[190:194][::-1]
+    flags = np.ones(400, bool)
+    old, old_arrays = evaluate_supported(curve, {"interval_supported": flags}, distorted, xy, flags)
+    clean, arrays = evaluate_supported(curve, {"interval_supported": flags}, distorted, xy, flags, coherent_curvature=True)
+    assert clean["source_reversal_vertices"] == 2
+    assert clean["xy_rmse_m"] == old["xy_rmse_m"]
+    np.testing.assert_array_equal(arrays["distance_m"], old_arrays["distance_m"])
+    invalid = arrays["coarse_time_supported"]&~arrays["coarse_supported"]
+    assert invalid.any()
+    assert np.isnan(arrays["coarse_curvature_proxy_1pm"][invalid]).all()
+    np.testing.assert_allclose(arrays["coarse_unfiltered_proxy_diagnostic_1pm"][invalid], old_arrays["coarse_curvature_proxy_1pm"][invalid])

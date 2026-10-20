@@ -50,7 +50,24 @@ def supported_polyline_distances(points: np.ndarray, line: np.ndarray, intervals
     return result
 
 
-def evaluate_supported(curve: ReferenceCurve, lap: dict, aligned_xy: np.ndarray, baseline_xy: np.ndarray, baseline_intervals: np.ndarray) -> tuple[dict, dict]:
+def coherent_derivative_intervals(xy: np.ndarray, intervals: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Source-only forward-trace support: a >=90deg reversal invalidates adjacent derivatives."""
+    xy = np.asarray(xy, float)
+    mask = np.asarray(intervals, bool).copy()
+    if xy.ndim != 2 or xy.shape[1] != 2 or mask.shape != (len(xy)-1,) or not np.isfinite(xy).all():
+        raise ValueError("Invalid native derivative support input")
+    delta = np.diff(xy, axis=0)
+    length = np.linalg.norm(delta, axis=1)
+    if np.any(length <= 1e-9):
+        raise ValueError("Degenerate native derivative displacement")
+    cosine = np.sum(delta[:-1]*delta[1:], axis=1)/(length[:-1]*length[1:])
+    vertices = np.flatnonzero(cosine <= 0)+1
+    mask[vertices-1] = False
+    mask[vertices] = False
+    return mask, cosine
+
+
+def evaluate_supported(curve: ReferenceCurve, lap: dict, aligned_xy: np.ndarray, baseline_xy: np.ndarray, baseline_intervals: np.ndarray, *, coherent_curvature: bool = False) -> tuple[dict, dict]:
     """Score every observed vertex; curvature targets abstain on missing source stencils."""
     support = np.asarray(lap["interval_supported"], bool)
     projection = curve.project(aligned_xy)
@@ -58,17 +75,23 @@ def evaluate_supported(curve: ReferenceCurve, lap: dict, aligned_xy: np.ndarray,
     raw = supported_polyline_distances(aligned_xy, baseline_xy, baseline_intervals)
     phase, length = chord_parameter(aligned_xy)
     centers = np.arange(25., length-25., 25.)
-    valid = supported_windows(phase*length, support, centers)
+    time_valid = supported_windows(phase*length, support, centers)
+    derivative, cosines = coherent_derivative_intervals(lap.get("xy_m", aligned_xy), support) if coherent_curvature else (support, None)
+    valid = supported_windows(phase*length, derivative, centers) if coherent_curvature else time_valid
     proxy = np.full(len(centers), np.nan)
+    unfiltered = np.full(len(centers), np.nan)
     model = np.full(len(centers), np.nan)
     coarse_xy = np.full((len(centers), 2), np.nan)
-    points = [np.column_stack([np.interp(centers[valid]+offset, phase*length, aligned_xy[:, axis]) for axis in (0, 1)]) for offset in (-25., 0., 25.)]
-    if valid.any():
+    points = [np.column_stack([np.interp(centers[time_valid]+offset, phase*length, aligned_xy[:, axis]) for axis in (0, 1)]) for offset in (-25., 0., 25.)]
+    if time_valid.any():
         a, b = points[1]-points[0], points[2]-points[1]
         turning = np.arctan2(a[:, 0]*b[:, 1]-a[:, 1]*b[:, 0], np.sum(a*b, axis=1))
-        proxy[valid] = turning/((np.linalg.norm(a, axis=1)+np.linalg.norm(b, axis=1))/2)
-        coarse_xy[valid] = points[1]
-        model[valid] = curve.project(points[1])["curvature_1pm"]
+        unfiltered[time_valid] = turning/((np.linalg.norm(a, axis=1)+np.linalg.norm(b, axis=1))/2)
+        coarse_xy[time_valid] = points[1]
+        coarse_xy[~valid] = np.nan
+        proxy[valid] = unfiltered[valid]
+        if valid.any():
+            model[valid] = curve.project(coarse_xy[valid])["curvature_1pm"]
     differences = abs(model[valid]-proxy[valid])
     unwrapped = np.unwrap(projection["station_m"]/curve.length_m*2*np.pi)*curve.length_m/(2*np.pi)
     metrics = {"xy_rmse_m": float(np.sqrt(np.mean(distances**2))), "xy_p95_m": float(np.quantile(distances, .95)),
@@ -83,6 +106,11 @@ def evaluate_supported(curve: ReferenceCurve, lap: dict, aligned_xy: np.ndarray,
     saved = {**projection, "raw_polyline_distance_m": raw, "interval_supported": support,
              "coarse_station_chord_m": centers, "coarse_supported": valid, "coarse_xy_m": coarse_xy,
              "coarse_curvature_proxy_1pm": proxy, "coarse_model_curvature_1pm": model}
+    if coherent_curvature:
+        metrics.update(source_reversal_vertices=int(np.count_nonzero(cosines <= 0)),
+                       derivative_quality="SOURCE_ONLY_FORWARD_TRACE; adjacent turn below90deg")
+        saved.update(curvature_interval_supported=derivative, native_turn_cosine=cosines,
+                     coarse_time_supported=time_valid, coarse_unfiltered_proxy_diagnostic_1pm=unfiltered)
     return metrics, saved
 
 
@@ -139,7 +167,7 @@ def refine_rigid_pose(xy: np.ndarray, aligned: np.ndarray, registration: dict, c
     return aligned, result
 
 
-def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[int, int, int] = (10, 10, 12), refine_test_pose: bool = False) -> tuple[dict, dict]:
+def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[int, int, int] = (10, 10, 12), refine_test_pose: bool = False, coherent_curvature: bool = False) -> tuple[dict, dict]:
     """Fit/choose on train/validation only, then evaluate native support and frozen test gates."""
     groups = [[lap for lap in laps if lap["metadata"]["role"] == role] for role in ("train", "validation", "test")]
     if tuple(map(len, groups)) != expected_counts:
@@ -168,7 +196,7 @@ def fit_supported_case(laps: list[dict], track: str, *, expected_counts: tuple[i
         key = lap["metadata"]["lap_id"]
         if refine_test_pose and lap["metadata"]["role"] == "test":
             aligned[key], registrations[key] = refine_rigid_pose(lap["xy_m"], aligned[key], registrations[key], curve)
-        result, arrays = evaluate_supported(curve, lap, aligned[key], training_xy[0], train[0]["interval_supported"])
+        result, arrays = evaluate_supported(curve, lap, aligned[key], training_xy[0], train[0]["interval_supported"], coherent_curvature=coherent_curvature)
         metrics.append({**lap["metadata"], "registration": registrations[key], **result})
         saved[key+"_aligned_xy"] = aligned[key]
         saved.update({key+"_"+name: values for name, values in arrays.items()})

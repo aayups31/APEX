@@ -50,8 +50,13 @@ been inspected. Frozen test selection becomes original-mask positions[3:15].
 
 | Event | driver4 test laps | driver44 test laps |
 | --- | --- | --- |
-| Bahrain2023R01 | 7,8,9,19,20,21,22,23,24,25,26,27 | 6,7,8,9,10,11,14,15,16,17,18,19 |
+| Bahrain2023R01 | 7,8,9,19,20,21,22,23,24,25,26,29 | 6,7,8,9,10,11,14,15,16,17,18,19 |
 | Monza2023R14 | 9–20 | 5–16 |
+
+Metadata-only enumeration correction before any additional geometry metrics:
+Bahrain driver4's fifteenth eligible lap is29, not27. The frozen[3:15] index
+selection rule and all masks are unchanged; this corrects the original table's
+handwritten last entry, not an outcome-driven lap substitution.
 
 Total88 laps:20 training,20 validation,24 retrospective test,24 additional
 confirmation test. Report both test strata separately and every lap individually.
