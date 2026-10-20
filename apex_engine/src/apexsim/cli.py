@@ -489,6 +489,35 @@ def verify_track_generalization_command(output: Path) -> None:
     typer.echo(json.dumps(verify_track_generalization(output), indent=2))
 
 
+@app.command("track-reconstruction-v2")
+def track_reconstruction_v2_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], stage: Annotated[str, typer.Option()] = "research") -> None:
+    """Reconstruct native observed support; development stage never opens geometry test laps."""
+    from apexsim.examples.track_reconstruction_v2 import run_track_reconstruction_v2
+
+    summary = run_track_reconstruction_v2(archives, mask_2024, mask_2023, output, stage=stage)
+    typer.echo(json.dumps({k: summary[k] for k in ("decision", "task_closure_eligible", "content_sha256")}, indent=2))
+
+
+@app.command("verify-track-reconstruction-v2")
+def verify_track_reconstruction_v2_command(output: Path) -> None:
+    """Refit all observed inputs, missing-data support, projections, sensitivity and decisions."""
+    from apexsim.examples.track_reconstruction_v2 import verify_track_reconstruction_v2
+
+    typer.echo(json.dumps(verify_track_reconstruction_v2(output), indent=2))
+
+
+@app.command("track-reconstruction-v2-smoke")
+def track_reconstruction_v2_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED complementary gaps and native-support replay; cannot close public R029."""
+    from apexsim.examples.track_reconstruction_v2 import (
+        run_track_reconstruction_v2_smoke,
+        verify_track_reconstruction_v2,
+    )
+
+    run_track_reconstruction_v2_smoke(output)
+    typer.echo(json.dumps(verify_track_reconstruction_v2(output), indent=2))
+
+
 @app.command("track-reconstruction-demo")
 def track_reconstruction_demo_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
     """Reconstruct preregistered public reference traces with held-out geometry gates."""

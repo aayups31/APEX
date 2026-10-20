@@ -51,6 +51,8 @@ jobs:
         run: python -m apexsim.cli track-generalization-smoke --reference .cache/ci-tyre-forecast --output .cache/ci-track-generalization
       - name: Verify periodic reference geometry and held-out reconstruction
         run: python -m apexsim.cli track-reconstruction-smoke --output .cache/ci-track-reconstruction
+      - name: Verify observed track support and missing-interval reconstruction
+        run: python -m apexsim.cli track-reconstruction-v2-smoke --output .cache/ci-track-reconstruction-v2
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
