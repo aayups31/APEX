@@ -1,6 +1,9 @@
 # R029 source-supported reference geometry v3
 
-Status:public confirmation and final verification pending. This is a reconstructed
+**R029 DONE,2026-10-20:** all48 test laps pass the frozen v3 gates; native audit,
+portable scientific replay,544 regression tests and Python3.11/3.12 CI pass.
+See the [final report](../verification/track-reconstruction-v3-report.md).
+This is a reconstructed
 reference RACING TRACE for Bahrain and Monza, not a surveyed centerline or road
 boundary. The [protocol](../../research/protocols/TRACK_RECONSTRUCTION_V3.md),
 [source-coherence equations](../../research/equations/SOURCE_COHERENT_CURVATURE_V3.md),
@@ -36,10 +39,19 @@ The command name retains backward compatibility; the two explicit flags select
 the declared v3 scientific profile. Use fresh outputs from the checkout:
 
 ```powershell
+$env:OMP_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+$env:OPENBLAS_NUM_THREADS='1'
 .venv/Scripts/python.exe -m apexsim.cli track-reconstruction-v2 --observed-boundaries --coherent-curvature --archives .cache/fastf1-2024-r1-race-20261011 --archives .cache/fastf1-2024-r16-race-20261011 --archives .cache/r026-fastf1-2023-r1-race-20261013 --archives .cache/r026-fastf1-2023-r14-race-20261013 --mask-2024 .cache/tyre-dataset-20261011.json --mask-2023 .cache/r026-proxy-public-20261013/eligible_input.json --output .cache/track-reference-v3-new
 .venv/Scripts/python.exe -m apexsim.cli verify-track-reconstruction-v2 .cache/track-reference-v3-new
 .venv/Scripts/python.exe -m apexsim.cli track-reconstruction-v2-smoke --observed-boundaries --coherent-curvature --output .cache/track-reference-v3-smoke-new
 .venv/Scripts/python.exe research/scripts/plot_reference_geometry.py --input .cache/track-reference-v3-new --output .cache/track-reference-v3-figures-new
+```
+
+Independent native-table/NumPy audit of a completed run:
+
+```powershell
+.venv/Scripts/python.exe research/scripts/audit_reference_geometry.py --input .cache/track-reference-v3-new --development .cache/r029-v2-development-20261019 --retrospective .cache/r029-v2-1-research-20261019 --archives .cache/fastf1-2024-r1-race-20261011 --archives .cache/fastf1-2024-r16-race-20261011 --archives .cache/r026-fastf1-2023-r1-race-20261013 --archives .cache/r026-fastf1-2023-r14-race-20261013 --output .cache/track-reference-v3-audit-new.json
 ```
 
 Artifacts retain raw XY/times/native parents and source-labelled metadata, every

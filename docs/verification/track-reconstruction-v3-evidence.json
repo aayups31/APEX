@@ -1,0 +1,408 @@
+{
+  "schema_version": "apex-reference-geometry-verification-v3",
+  "date": "2026-10-20",
+  "backlog_id": "R029",
+  "backlog_status": "DONE",
+  "classification": "ADAPTATION",
+  "decision": "PASS_FROZEN_SOURCE_COHERENT_GEOMETRY_V3",
+  "task_closure_eligible": true,
+  "promotion": false,
+  "maturity": {
+    "scoped_research": "R1",
+    "production_kernel": "R0"
+  },
+  "inventory": {
+    "research_done": 27,
+    "research_total": 73,
+    "build_done": 13,
+    "build_total": 66
+  },
+  "baseline": {
+    "commit": "df51bf41cad1dd142c84b82b502cc9279ff55991",
+    "passed_tests": 523,
+    "seconds": 246.19,
+    "warnings": 2,
+    "reference_command": "verify-track-reconstruction-source-audit .cache/r029-source-audit-research-20261019",
+    "reference_decision": "REJECT_FROZEN_SOURCE_SUPPORT"
+  },
+  "environment": {
+    "python": "3.12.12",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.1",
+    "fastf1": "3.8.3",
+    "matplotlib": "3.11.1",
+    "pytest": "9.1.1",
+    "ruff": "0.16.6"
+  },
+  "implementation_commit": "766d0bca1649c373e69d8fe99e4ff47b704e0622",
+  "study_checkpoint_commit": "478fa4785e08a3d1e3d0be83b870469d874ecd63",
+  "protocol_commits": {
+    "v2": "9b275dd",
+    "v2_1": "4133551",
+    "v3": "fe96688",
+    "metadata_index_enumeration_correction": "f154d9d"
+  },
+  "summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684",
+  "artifact_path": ".cache\\r029-v3-research-20261020",
+  "artifact_manifest": {
+    "content_sha256": "0caa4285294656c9d223ae4c79348c7f0990ff117c04e6f026947e4d0b7d0162",
+    "files": {
+      "bahrain_geometry_predictions.npz": {
+        "bytes": 2135374,
+        "sha256": "53a4a45965f92fee290a2b6b8ed7b6b58ce5be9264e7cb4bc9a3c30184454f66"
+      },
+      "bahrain_lap_inputs.npz": {
+        "bytes": 216343,
+        "sha256": "a7910b04b4d674c7a811b24c165456b386ad31e2e11c2e406e50edf6366c8c74"
+      },
+      "bahrain_lap_metadata.json": {
+        "bytes": 76997,
+        "sha256": "a69d926c02c3186db80f097b08a7ec1a37832d811dd897484ae93f6247cbc0fc"
+      },
+      "monza_geometry_predictions.npz": {
+        "bytes": 2013360,
+        "sha256": "58c7915ded7cbc3ec937f479b30922e26fec849129e678db2513b6824267c499"
+      },
+      "monza_lap_inputs.npz": {
+        "bytes": 199413,
+        "sha256": "01c8c8597b93963e6711375fbe1dfdd8ffc55b433fa30ad7d4903dfeb034abe7"
+      },
+      "monza_lap_metadata.json": {
+        "bytes": 71833,
+        "sha256": "eb1b401f10266a0a00d2839c966a9df54ffda76c76a9feb5e61b352756b4c704"
+      },
+      "summary.json": {
+        "bytes": 471290,
+        "sha256": "20ab23d99a09c698f390186412772dfe41a56ee5171ccbf5071b2eb1bd80dd13"
+      }
+    },
+    "schema_version": "apex-reference-geometry-manifest-v1",
+    "summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684"
+  },
+  "portable_scientific_replay": {
+    "verified": true,
+    "task_closure_eligible": true,
+    "decision": "PASS_FROZEN_SOURCE_COHERENT_GEOMETRY_V3",
+    "summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684"
+  },
+  "independent_audit": {
+    "path": "docs/verification/track-reconstruction-v3-independent-audit.json",
+    "content_sha256": "87dc54394ea76a4162ce70e0f762bf0b08cfb185a77ee99d44b8fe73039e1ffe",
+    "verified": true,
+    "native_laps_checked": 88,
+    "test_laps_checked": 48,
+    "checks": {
+      "bahrain": {
+        "all_native_vertices_and_parents_match_sources": true,
+        "coefficients_and_arc_equal_development": true,
+        "minimum_donor_laps": 7,
+        "retrospective_position_predictions_reproduce_v2_1": true,
+        "unfiltered_proxy_diagnostics_reproduce_v2_1": true
+      },
+      "monza": {
+        "all_native_vertices_and_parents_match_sources": true,
+        "coefficients_and_arc_equal_development": true,
+        "minimum_donor_laps": 5,
+        "retrospective_position_predictions_reproduce_v2_1": true,
+        "unfiltered_proxy_diagnostics_reproduce_v2_1": true
+      }
+    }
+  },
+  "figure_manifest": {
+    "content_sha256": "d9ff9a40f9e3ff7fea1d0d77b706d26bd80b9e13f9257445210c5172097b6fee",
+    "files": {
+      "bahrain-reference-geometry-v3.png": "04c106cf1091ee282e033f352f9968741f75673abcc5a329f0d9c3a7cbd2ad27",
+      "monza-reference-geometry-v3.png": "d74da5630a666c1bf3d5c597939712071bfcaa8d7f8b52c4cf00250816ee8e54"
+    },
+    "plot_script_sha256": "47982fcc0b022e21bb16ae339fa7cdc578f03e5c9e1db9df75c78ef314febde6",
+    "schema_version": "apex-reference-geometry-figures-v1",
+    "source_manifest_sha256": "0caa4285294656c9d223ae4c79348c7f0990ff117c04e6f026947e4d0b7d0162",
+    "source_summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684"
+  },
+  "committed_file_sha256": {
+    "docs\\verification\\track-reconstruction-v3-study.json": "20ab23d99a09c698f390186412772dfe41a56ee5171ccbf5071b2eb1bd80dd13",
+    "docs\\verification\\track-reconstruction-v3-independent-audit.json": "30fd587a01d209582d1ea86af258508a95f318a6ab97668a492c9396384a4556",
+    "research\\scripts\\audit_reference_geometry.py": "a81cd52b7bf115f98cb697acd5004f37209be09616cdddaad9e5e7377bbf109b",
+    "research\\scripts\\plot_reference_geometry.py": "47982fcc0b022e21bb16ae339fa7cdc578f03e5c9e1db9df75c78ef314febde6"
+  },
+  "checks": {
+    "full_suite": {
+      "passed": 544,
+      "seconds": 511.11,
+      "warnings": 2,
+      "command": "../.venv/Scripts/python.exe -m pytest -q --basetemp ../.cache/r029-v3-final-regression-20261020",
+      "cwd": "apex_engine"
+    },
+    "r029_specific_tests": 36,
+    "v2_checkpoint_full_suite": {
+      "passed": 536,
+      "seconds": 403.2
+    },
+    "v2_1_checkpoint_full_suite": {
+      "passed": 540,
+      "seconds": 366.0
+    },
+    "targeted_v2_1": {
+      "passed": 20,
+      "seconds": 175.78
+    },
+    "targeted_source_derivative": {
+      "passed": 12,
+      "seconds": 30.69
+    },
+    "latest_combined_v3_cli": {
+      "passed": 1,
+      "seconds": 132.92
+    },
+    "lint": "PASS",
+    "diff_check": "PASS",
+    "figures_visually_inspected": true,
+    "interrupted_attempt": "No complete v3 artifact; restarted unchanged into fresh2026-10-20 output"
+  },
+  "implementation_ci": {
+    "run_id": 39371854814,
+    "head_sha": "766d0bca1649c373e69d8fe99e4ff47b704e0622",
+    "conclusion": "success",
+    "url": "https://github.com/aayups31/APEX/actions/runs/39371854814",
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "conclusion": "success",
+        "started_at": "2026-10-20T04:52:21Z",
+        "completed_at": "2026-10-20T04:59:12Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install APEX",
+            "conclusion": "success"
+          },
+          {
+            "name": "Lint",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test",
+            "conclusion": "success"
+          },
+          {
+            "name": "Compile Airflow wrapper",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify public-data artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify permanent benchmark reservation",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify causal tyre-study and posterior artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify robust tyre observation ensembles",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched six-family forecasting and checkpoint reload",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen seen/unseen track inference and clustered confidence",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify periodic reference geometry and held-out reconstruction",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify observed track support partial boundaries and rigid shape registration",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify smooth lap-map artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched strategy-solver artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify SAC training and checkpoint artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen-policy disturbance artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "name": "Python 3.12",
+        "conclusion": "success",
+        "started_at": "2026-10-20T04:52:21Z",
+        "completed_at": "2026-10-20T04:59:14Z",
+        "steps": [
+          {
+            "name": "Set up job",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "conclusion": "success"
+          },
+          {
+            "name": "Install APEX",
+            "conclusion": "success"
+          },
+          {
+            "name": "Lint",
+            "conclusion": "success"
+          },
+          {
+            "name": "Test",
+            "conclusion": "success"
+          },
+          {
+            "name": "Compile Airflow wrapper",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify public-data artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify permanent benchmark reservation",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify causal tyre-study and posterior artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify robust tyre observation ensembles",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched six-family forecasting and checkpoint reload",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen seen/unseen track inference and clustered confidence",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify periodic reference geometry and held-out reconstruction",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify observed track support partial boundaries and rigid shape registration",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify smooth lap-map artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify matched strategy-solver artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify SAC training and checkpoint artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verify frozen-policy disturbance artifacts",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "conclusion": "success"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "conclusion": "success"
+          },
+          {
+            "name": "Complete job",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
+  },
+  "protected_benchmark": {
+    "event_count": 9,
+    "scope": "ALL_SESSIONS_OF_WHOLE_EVENT",
+    "policy_sha256": "7d690115b7bcd0a52f20acdbf44e628e82efe556b48caf5ebe49b15e29b4ea7d",
+    "payloads_acquired_by_this_task": false
+  },
+  "prior_failures": [
+    {
+      "version": "v1",
+      "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
+      "evidence": "docs/verification/track-reconstruction-evidence.json"
+    },
+    {
+      "version": "strict v2",
+      "decision": "REJECT_STRICT_V2_BOUNDARY_SUPPORT",
+      "evidence": "docs/verification/track-reconstruction-v2-source-failure.json"
+    },
+    {
+      "version": "v2.1",
+      "decision": "REJECT_FROZEN_V2_1_GEOMETRY_GATES",
+      "evidence": "docs/verification/track-reconstruction-v2-1-rejected-evidence.json"
+    }
+  ],
+  "limitations": [
+    "Reference racing trace, not surveyed road centerline/boundaries",
+    "Rigid full-lap registration evaluates shape, not absolute or online localization",
+    "Missing intervals stay unsupported; chord phase is reconstructed",
+    "Coarse supported curvature is a proxy; no surveyed curvature truth",
+    "Ten-lap sensitivity is descriptive, not calibrated confidence; two development circuits only",
+    "Official DRS, road width/elevation, surveyed centerline and full pit route UNKNOWN",
+    "Prior development-event reuse disclosed; reserved benchmarks untouched",
+    "No vehicle/world-model validation, production or R3 maturity promotion",
+    "Unsupported test anchors UNKNOWN; >=98% retained time span; errors conditional on optimized rigid pose",
+    "Source-only forward derivative QC; retrospective and additional same-event confirmation laps reported separately"
+  ],
+  "next": {
+    "dependency_ready_P0": "R030",
+    "unblocked_P1": [
+      "R027",
+      "R028"
+    ],
+    "next_tasks_started": false
+  },
+  "content_sha256": "8f636dd23811e252a1b6ede43dc36da593f49a04bdc9335edc7d3dd008e4c7e5"
+}

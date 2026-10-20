@@ -1,6 +1,10 @@
 # R029 observed-support reference geometry v2
 
-Status:IN_PROGRESS pending complete public study and verification. See the
+Historical result:strict v2 is rejected for unsupported holdout anchors; v2.1
+is rejected for one unfiltered chronological curvature-proxy failure. Both
+decisions remain preserved. [V3](reference-geometry-v3.md) completes R029 under
+a separately preregistered source-support method and additional confirmation.
+See the
 [protocol](../../research/protocols/TRACK_RECONSTRUCTION_V2.md),
 [equations](../../research/equations/OBSERVED_TRACK_SUPPORT_V2.md), and
 [decision record](../architecture/adr-0006-observed-track-support.md).
