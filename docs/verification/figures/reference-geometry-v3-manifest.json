@@ -1,0 +1,11 @@
+{
+  "content_sha256": "d9ff9a40f9e3ff7fea1d0d77b706d26bd80b9e13f9257445210c5172097b6fee",
+  "files": {
+    "bahrain-reference-geometry-v3.png": "04c106cf1091ee282e033f352f9968741f75673abcc5a329f0d9c3a7cbd2ad27",
+    "monza-reference-geometry-v3.png": "d74da5630a666c1bf3d5c597939712071bfcaa8d7f8b52c4cf00250816ee8e54"
+  },
+  "plot_script_sha256": "47982fcc0b022e21bb16ae339fa7cdc578f03e5c9e1db9df75c78ef314febde6",
+  "schema_version": "apex-reference-geometry-figures-v1",
+  "source_manifest_sha256": "0caa4285294656c9d223ae4c79348c7f0990ff117c04e6f026947e4d0b7d0162",
+  "source_summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684"
+}
