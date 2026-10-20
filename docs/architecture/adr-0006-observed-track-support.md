@@ -26,3 +26,13 @@ R029 can close only with a passing separate v2 public study plus complete replay
 regression and CI evidence. Research R1/kernel R0 maturity remains unchanged.
 Road width, surveyed centerline, validated elevation, official zones and full
 pit route remain UNKNOWN; accepted reference shape is not a production road model.
+
+The [v2.1 extension](../../research/protocols/TRACK_RECONSTRUCTION_V2_1.md) addresses
+two holdout timing anchors whose native brackets also exceed.75s. Strict v2 is
+retained as a source failure. Test-only partial observation retains native points,
+labels unsupported anchors UNKNOWN and requires>=98% observed time coverage;
+complete training/validation closure remains mandatory. Eight proper rigid
+closest-curve pose steps handle partial-phase gauge differences, with explicit
+conditional-shape interpretation. The same frozen cohort, selected weights and
+accuracy/coverage thresholds remain unchanged. This decision precedes inspection
+of any holdout geometry errors.

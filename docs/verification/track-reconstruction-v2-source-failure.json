@@ -1,0 +1,399 @@
+{
+  "schema_version": "apex-reference-geometry-v2-source-failure-v1",
+  "decision": "REJECT_STRICT_V2_BOUNDARY_SUPPORT",
+  "cohort_replaced": false,
+  "thresholds_changed": false,
+  "source_audit": [
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 7,
+      "native_row": 766,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.3149999999995998,
+      "last_native_offset_s": 0.03099999999994907,
+      "native_time_coverage": 0.9965649385461594,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 8,
+      "native_row": 767,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.14900000000034197,
+      "last_native_offset_s": 0.068000000000211,
+      "native_time_coverage": 0.9978484388788031,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 9,
+      "native_row": 768,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.2319999999999709,
+      "last_native_offset_s": 0.3710000000000946,
+      "native_time_coverage": 0.9940168480795366,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 19,
+      "native_row": 778,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.11700000000018917,
+      "last_native_offset_s": 0.10899999999946886,
+      "native_time_coverage": 0.997693077190049,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 20,
+      "native_row": 779,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.13100000000031287,
+      "last_native_offset_s": 0.17399999999997817,
+      "native_time_coverage": 0.9968986730387891,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "4",
+      "lap_number": 21,
+      "native_row": 780,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.10599999999976717,
+      "last_native_offset_s": 0.03099999999994907,
+      "native_time_coverage": 0.9986062646876332,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 6,
+      "native_row": 820,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.1069999999999709,
+      "last_native_offset_s": 0.028999999999541615,
+      "native_time_coverage": 0.9986366734833041,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 7,
+      "native_row": 821,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.3900000000003274,
+      "last_native_offset_s": 0.2460000000000946,
+      "native_time_coverage": 0.9936245075533504,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 8,
+      "native_row": 822,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.113999999999578,
+      "last_native_offset_s": 0.2529999999997017,
+      "native_time_coverage": 0.9963397728066136,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 9,
+      "native_row": 823,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.007000000000516593,
+      "last_native_offset_s": 0.056000000000494765,
+      "native_time_coverage": 0.9993720283484244,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 10,
+      "native_row": 824,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.38400000000001455,
+      "last_native_offset_s": 0.08500000000003638,
+      "native_time_coverage": 0.9953235150415295,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R01",
+      "driver_id": "44",
+      "lap_number": 11,
+      "native_row": 825,
+      "track_id": "bahrain",
+      "role": "test",
+      "first_native_offset_s": 0.2539999999999054,
+      "last_native_offset_s": 0.21700000000055297,
+      "native_time_coverage": 0.9953251548356314,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 9,
+      "native_row": 608,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.1610000000000582,
+      "last_native_offset_s": 0.21200000000044383,
+      "native_time_coverage": 0.995707364229564,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 10,
+      "native_row": 609,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.1289999999999054,
+      "last_native_offset_s": 0.5360000000000582,
+      "native_time_coverage": 0.9923532455585584,
+      "boundary_support": [
+        true,
+        false
+      ],
+      "strict_v2_source_passed": false,
+      "reason": "Unsupported timing boundary bracket; no extrapolation/gap filling"
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 11,
+      "native_row": 610,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.38400000000001455,
+      "last_native_offset_s": 0.06199999999989814,
+      "native_time_coverage": 0.9948774492913431,
+      "boundary_support": [
+        false,
+        true
+      ],
+      "strict_v2_source_passed": false,
+      "reason": "Unsupported timing boundary bracket; no extrapolation/gap filling"
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 12,
+      "native_row": 611,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.43800000000010186,
+      "last_native_offset_s": 0.1610000000000582,
+      "native_time_coverage": 0.9931494315972442,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 13,
+      "native_row": 612,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.1790000000000873,
+      "last_native_offset_s": 0.018999999999323336,
+      "native_time_coverage": 0.9977334905390468,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "4",
+      "lap_number": 14,
+      "native_row": 613,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.28100000000085856,
+      "last_native_offset_s": 0.03699999999935244,
+      "native_time_coverage": 0.9963648002926426,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 5,
+      "native_row": 706,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.18400000000019645,
+      "last_native_offset_s": 0.1710000000002765,
+      "native_time_coverage": 0.9959202436361493,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 6,
+      "native_row": 707,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.08899999999994179,
+      "last_native_offset_s": 0.08299999999962893,
+      "native_time_coverage": 0.9980163993034382,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 7,
+      "native_row": 708,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.11700000000018917,
+      "last_native_offset_s": 0.2830000000003565,
+      "native_time_coverage": 0.9953863898500515,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 8,
+      "native_row": 709,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.09699999999975262,
+      "last_native_offset_s": 0.20600000000013097,
+      "native_time_coverage": 0.9965028911741297,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 9,
+      "native_row": 710,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.033999999999650754,
+      "last_native_offset_s": 0.14099999999962165,
+      "native_time_coverage": 0.9979828484485307,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    },
+    {
+      "event_id": "F1_2023_R14",
+      "driver_id": "44",
+      "lap_number": 10,
+      "native_row": 711,
+      "track_id": "monza",
+      "role": "test",
+      "first_native_offset_s": 0.05900000000019645,
+      "last_native_offset_s": 0.09599999999954889,
+      "native_time_coverage": 0.9982182884073827,
+      "boundary_support": [
+        true,
+        true
+      ],
+      "strict_v2_source_passed": true
+    }
+  ],
+  "test_geometry_metrics_inspected": false,
+  "run_progress": "Bahrain computed internally; Monza source extraction failed before any complete study artifact was emitted",
+  "failed_boundary_count": 2,
+  "task_closure_eligible": false,
+  "content_sha256": "f7a0123075afeea97b774e34ee29bc286e92e461c81fd805f4946cb8cde847a4"
+}
