@@ -102,3 +102,16 @@ def test_resealed_smoke_cannot_claim_real_source_acceptance(study, tmp_path):
     (moved/"manifest.json").write_text(json.dumps(manifest))
     with pytest.raises(ValueError, match="source/cohort mismatch"):
         verify_track_reconstruction_v2(moved)
+
+
+def test_v2_1_partial_observation_cli_replays_and_cannot_promote(tmp_path):
+    path = tmp_path/"observed-boundaries"
+    result = CliRunner().invoke(app, ["track-reconstruction-v2-smoke", "--observed-boundaries", "--output", str(path)])
+    assert result.exit_code == 0, result.output+repr(result.exception)
+    summary = json.loads((path/"summary.json").read_text())
+    assert summary["profile"] == "smoke_v2_1" and not summary["task_closure_eligible"]
+    for case in summary["cases"].values():
+        assert case["gate"]["passed"]
+        partial = [m for m in case["lap_metrics"] if m["raw_closure_gap_m"] is None]
+        assert len(partial) == 1 and partial[0]["observed_time_fraction"] >= .98
+        assert len(partial[0]["registration"]["nearest_curve_rms_steps_m"]) == 9
