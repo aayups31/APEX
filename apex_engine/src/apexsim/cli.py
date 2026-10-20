@@ -498,6 +498,23 @@ def track_reconstruction_demo_command(archives: Annotated[list[Path], typer.Opti
     typer.echo(json.dumps({k: summary[k] for k in ("decision", "task_closure_eligible", "content_sha256")}, indent=2))
 
 
+@app.command("track-reconstruction-source-audit")
+def track_reconstruction_source_audit_command(archives: Annotated[list[Path], typer.Option()], mask_2024: Annotated[Path, typer.Option()], mask_2023: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Persist all frozen pre-fit source checks, including rejected native evidence."""
+    from apexsim.examples.track_reconstruction_source_audit import run_source_audit
+
+    summary = run_source_audit(archives, mask_2024, mask_2023, output)
+    typer.echo(json.dumps({k: summary[k] for k in ("decision", "supported_laps", "selected_laps", "task_closure_eligible", "content_sha256")}, indent=2))
+
+
+@app.command("verify-track-reconstruction-source-audit")
+def verify_track_reconstruction_source_audit_command(output: Path) -> None:
+    """Replay every pre-fit decision from saved native snapshots without source caches."""
+    from apexsim.examples.track_reconstruction_source_audit import verify_source_audit
+
+    typer.echo(json.dumps(verify_source_audit(output), indent=2))
+
+
 @app.command("track-reconstruction-smoke")
 def track_reconstruction_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
     """SIMULATED circle/ellipse execution; cannot close public reconstruction research."""
