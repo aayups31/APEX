@@ -56,9 +56,12 @@ feasible counterfactuals remain separate pending work.
 **Code now:** `apexsim.research.reference_geometry` adds independently specified
 periodic reference curves, curvilinear station and analytic curvature; it is a
 geometry prerequisite adaptation, not this paper's optimal-control model.
-The [R029 report](../docs/verification/track-reconstruction-report.md) records
-passing analytic controls and a failed public source-support gate. No real
-reference curve is accepted yet. This paper still defines the upgrade path from
+The [completed R029 report](../docs/verification/track-reconstruction-v3-report.md)
+adds `supported_geometry` and observed native-lap support, with all48 retrospective/
+confirmation test laps passing, unchanged development weights, independent native
+auditing and portable replay. Earlier source/proxy failures remain preserved.
+Accepted registered reference traces do not identify surveyed road boundaries or
+reproduce this paper's optimal-control solver. This paper still defines the upgrade path from
 the current point-mass kernel to a validated minimum-lap-time solver; vehicle
 equations, direct transcription and racing-line optimization remain pending.
 

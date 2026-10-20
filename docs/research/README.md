@@ -30,6 +30,9 @@ This directory tracks the published research used to guide APEX.
 - [R029 frozen geometry protocol](../../research/protocols/TRACK_RECONSTRUCTION.md)
 - [R029 geometry equations](../../research/equations/REFERENCE_GEOMETRY_V1.md)
 - [R029 source-support failure and verification](../verification/track-reconstruction-report.md)
+- [R029 v3 frozen confirmation and source-coherence protocol](../../research/protocols/TRACK_RECONSTRUCTION_V3.md)
+- [R029 completed reference-geometry verification](../verification/track-reconstruction-v3-report.md)
+- [R029 source-coherent equations](../../research/equations/SOURCE_COHERENT_CURVATURE_V3.md)
 
 ## Purpose
 

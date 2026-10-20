@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-10-19",
+  "last_progress_date": "2026-10-20",
   "research_inventory": {
-    "done": 26,
+    "done": 27,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R029",
+    "R030",
     "R027",
     "R028"
   ],
@@ -134,23 +134,58 @@
   },
   "reference_geometry_reconstruction": {
     "backlog_id": "R029",
-    "status": "INCONCLUSIVE",
-    "evaluated_date": "2026-10-19",
-    "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
-    "report": "docs/verification/track-reconstruction-report.md",
-    "summary_sha256": "f653df6113d34a947ebaaf7c20fd7bcc48a258c7e2a64a008e0bbef1dbc47598",
-    "selected_laps": 24,
-    "supported_laps": 10,
-    "rejected_laps": 14,
-    "unsupported_intervals": 33,
-    "gap_limit_s": 0.75,
-    "largest_gap_s": 1.32,
-    "real_geometry_fit_performed": false,
+    "status": "DONE",
+    "completed_date": "2026-10-20",
+    "decision": "PASS_FROZEN_SOURCE_COHERENT_GEOMETRY_V3",
+    "report": "docs/verification/track-reconstruction-v3-report.md",
+    "evidence": "docs/verification/track-reconstruction-v3-evidence.json",
+    "summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684",
+    "native_laps": 88,
+    "native_positions": 31101,
+    "supported_timing_anchors": 173,
+    "training_laps": 20,
+    "validation_laps": 20,
+    "retrospective_test_laps": 24,
+    "additional_confirmation_laps": 24,
+    "all_test_laps_passed": 48,
+    "circuits": [
+      "bahrain",
+      "monza"
+    ],
+    "source_gap_limit_s": 0.75,
+    "full_regression_tests_passed": 544,
+    "implementation_commit": "766d0bca1649c373e69d8fe99e4ff47b704e0622",
+    "implementation_ci_url": "https://github.com/aayups31/APEX/actions/runs/39371854814",
+    "source_scope": "RECONSTRUCTED_REFERENCE_RACING_TRACE; conditional registered shape",
     "promotion": false,
     "limitations": [
-      "Numerical geometry tests pass; frozen public source support fails before fitting",
-      "No public shape/curvature accuracy or accepted track follows",
-      "Separate preregistered support-aware method required before R030 calibration"
+      "Reference racing trace, not surveyed road centerline/boundaries",
+      "Rigid full-lap registration evaluates shape, not absolute or online localization",
+      "Missing intervals stay unsupported; chord phase is reconstructed",
+      "Coarse supported curvature is a proxy; no surveyed curvature truth",
+      "Ten-lap sensitivity is descriptive, not calibrated confidence; two development circuits only",
+      "Official DRS, road width/elevation, surveyed centerline and full pit route UNKNOWN",
+      "Prior development-event reuse disclosed; reserved benchmarks untouched",
+      "No vehicle/world-model validation, production or R3 maturity promotion",
+      "Unsupported test anchors UNKNOWN; >=98% retained time span; errors conditional on optimized rigid pose",
+      "Source-only forward derivative QC; retrospective and additional same-event confirmation laps reported separately"
+    ],
+    "prior_experiments": [
+      {
+        "version": "v1",
+        "decision": "REJECT_FROZEN_SOURCE_SUPPORT",
+        "evidence": "docs/verification/track-reconstruction-evidence.json"
+      },
+      {
+        "version": "strict v2",
+        "decision": "REJECT_STRICT_V2_BOUNDARY_SUPPORT",
+        "evidence": "docs/verification/track-reconstruction-v2-source-failure.json"
+      },
+      {
+        "version": "v2.1",
+        "decision": "REJECT_FROZEN_V2_1_GEOMETRY_GATES",
+        "evidence": "docs/verification/track-reconstruction-v2-1-rejected-evidence.json"
+      }
     ]
   }
 }

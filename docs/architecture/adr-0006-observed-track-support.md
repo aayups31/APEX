@@ -36,3 +36,15 @@ closest-curve pose steps handle partial-phase gauge differences, with explicit
 conditional-shape interpretation. The same frozen cohort, selected weights and
 accuracy/coverage thresholds remain unchanged. This decision precedes inspection
 of any holdout geometry errors.
+
+V2.1 subsequently failed one unfiltered curvature-proxy gate despite passing all
+position gates. The [v3 protocol](../../research/protocols/TRACK_RECONSTRUCTION_V3.md)
+was committed before additional confirmation outcomes. It retains every previous
+test lap and all native XY scores, identifies derivative support from source-only
+direction coherence, and adds24 confirmation laps without changing the fitted
+model or numerical tolerances. The old failed proxy remains a saved diagnostic.
+
+On2026-10-20 the [v3 acceptance report](../verification/track-reconstruction-v3-report.md)
+closes R029 on all48 test laps, native audit, scientific replay,544 tests and
+Python3.11/3.12 CI. This changes the accepted research experiment, not the truth
+of earlier failures or the production-maturity boundary.

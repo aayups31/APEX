@@ -33,10 +33,12 @@ forecast benchmark are documented in the
 R026's [frozen seen/unseen evaluation](../verification/track-generalization-report.md)
 is complete on four separate 2023 development races, with preserved model weights
 and event/sequence uncertainty. R029's
-[geometry/source audit](../verification/track-reconstruction-report.md) delivers
-tested reconstruction mathematics and portable rejection evidence:14/24 frozen
-laps fail the 0.75s source-gap gate. R029 is INCONCLUSIVE and remains the next P0
-dependency; R030 requires accepted geometry. R027/R028 remain pending P1
+[accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
+passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
+source-only target support, ten-lap sensitivity, native audit and portable replay.
+Research inventory is 27/73 DONE; build inventory 13/66. The scope is registered
+reference shape, with unknown surveyed road properties and no production promotion.
+R030 longitudinal calibration is dependency-ready. R027/R028 remain unblocked P1
 explanation/counterfactual work.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.

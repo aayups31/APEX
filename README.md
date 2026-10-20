@@ -76,12 +76,15 @@ scores and event/sequence confidence. The selected XGBoost candidate passes the
 frozen descriptive gate; proxy labels and weak unseen interval coverage remain
 explicit.
 
-The [R029 geometry implementation and source audit](docs/verification/track-reconstruction-report.md)
-add periodic reference curves, analytic curvature, monotone arc distance and
-portable native-evidence replay. The frozen Bahrain/Monza source gate rejects
-14/24 selected laps for position gaps; real shape accuracy remains unevaluated.
-R029 stays incomplete. Next priority is a preregistered method that handles
-observed support and uncertainty before longitudinal vehicle calibration.
+The [completed R029 reference-geometry study](docs/verification/track-reconstruction-v3-report.md)
+adds source-supported Bahrain/Monza traces, analytic curvature, monotone arc
+distance and portable scientific replay. All 48 test laps pass the frozen v3
+gates, including 24 additional confirmation laps. Missing observations and invalid
+derivative stencils remain explicit; all native XY points are evaluated. Earlier
+failed studies remain preserved. Results concern registered public-source shape;
+surveyed boundaries and production promotion remain separate. See the
+[run card](docs/models/reference-geometry-v3.md). Longitudinal calibration is now
+dependency-ready; R027/R028 explanation studies remain open.
 
 ---
 
@@ -91,7 +94,8 @@ observed support and uncertainty before longitudinal vehicle calibration.
 
 - Multi-car race execution
 - Lap and sector progression
-- Synthetic and reconstructed tracks
+- Synthetic track maps in the race prototype
+- Source-supported reconstructed reference traces in research
 - Pit stops and compound changes
 - Driver pace modes
 - Traffic and simplified overtaking

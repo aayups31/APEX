@@ -1,6 +1,6 @@
 # R029 source-supported reference geometry v3
 
-**R029 DONE,2026-10-20:** all48 test laps pass the frozen v3 gates; native audit,
+**R029 DONE, 2026-10-20:** all 48 test laps pass the frozen v3 gates; native audit,
 portable scientific replay,544 regression tests and Python3.11/3.12 CI pass.
 See the [final report](../verification/track-reconstruction-v3-report.md).
 This is a reconstructed
@@ -13,7 +13,7 @@ define the exact method and acceptance scope.
 
 The four verified non-benchmark race archives retain their original source/mask
 seals. Native XY converts decimetres to metres. Ten2024 training laps per circuit
-fit shape; ten2024 laps from the other driver select among six candidates.
+fit shape; ten 2024 laps from the other driver select among six candidates.
 The2023 tests contain24 retrospective laps plus24 additional confirmation laps,
 with no substitution. All88 selected laps and every native test position remain
 inspectable. Nine reserved whole-event benchmarks remain protected. These are

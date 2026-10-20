@@ -11,6 +11,7 @@ This directory describes how APEX is designed to evolve from a deterministic pro
 - [ADR 0002: public evidence tables](adr-0002-public-evidence-tables.md)
 - [ADR 0003: replace fabricated public CSV features](adr-0003-observed-public-fields.md)
 - [ADR 0004: strategy resource feasibility](adr-0004-strategy-resource-feasibility.md)
+- [ADR 0006: observed track support and explicit experimental revisions](adr-0006-observed-track-support.md)
 - [Master Build Guide](../../00_MASTER_BUILD_GUIDE.md)
 
 ## Architectural direction
