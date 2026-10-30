@@ -564,6 +564,31 @@ def verify_track_reconstruction_command(output: Path) -> None:
     typer.echo(json.dumps(verify_track_reconstruction(output), indent=2))
 
 
+@app.command("freeze-forecast-explanation-cohort")
+def freeze_forecast_explanation_cohort_command(reference: Annotated[Path, typer.Option()], evaluation: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
+    """Freeze source-key origins/donors without reading prediction or target payloads."""
+    from apexsim.examples.forecast_explanation_study import freeze_cohort
+
+    typer.echo(json.dumps(freeze_cohort(reference, evaluation, output, profile), indent=2))
+
+
+@app.command("forecast-explanation-study")
+def forecast_explanation_study_command(reference: Annotated[Path, typer.Option()], evaluation: Annotated[Path, typer.Option()], cohort: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Evaluate faithful diagnostics and constraint-feasible scenarios using frozen weights."""
+    from apexsim.examples.forecast_explanation_study import run_explanation_study
+
+    summary = run_explanation_study(reference, evaluation, cohort, output, lambda message: typer.echo(message, err=True))
+    typer.echo(json.dumps(summary, indent=2))
+
+
+@app.command("verify-forecast-explanation-study")
+def verify_forecast_explanation_study_command(output: Path) -> None:
+    """Reload checkpoints and replay every explanation, constraint and candidate choice."""
+    from apexsim.examples.forecast_explanation_study import verify_explanation_study
+
+    typer.echo(json.dumps(verify_explanation_study(output, lambda message: typer.echo(message, err=True)), indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""

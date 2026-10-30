@@ -113,6 +113,7 @@ def test_exact_finite_catalogue_oracle_minimality_and_deterministic_tie_break():
     raw[[a, b]] = .8
     result = counterfactual_result(catalogue, raw, np.ones((3, 4)))
     assert result["selected_index"] == min([a, b], key=lambda i: (scenario_cost(i), *SCENARIOS[i]))
+    assert result["selected_index"] == a
 
 
 def test_seed_robust_crossing_cannot_hide_a_failing_seed_in_ensemble_mean():

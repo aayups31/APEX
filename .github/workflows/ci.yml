@@ -49,6 +49,12 @@ jobs:
         run: python -m apexsim.cli tyre-forecast-smoke --output .cache/ci-tyre-forecast
       - name: Verify frozen seen/unseen track inference and clustered confidence
         run: python -m apexsim.cli track-generalization-smoke --reference .cache/ci-tyre-forecast --output .cache/ci-track-generalization
+      - name: Freeze simulated explanation cohort without reading model outcomes
+        run: python -m apexsim.cli freeze-forecast-explanation-cohort --reference .cache/ci-tyre-forecast --evaluation .cache/ci-track-generalization --profile smoke --output .cache/ci-explanation-cohort.json
+      - name: Verify frozen-model explanation and constrained counterfactual study
+        run: python -m apexsim.cli forecast-explanation-study --reference .cache/ci-tyre-forecast --evaluation .cache/ci-track-generalization --cohort .cache/ci-explanation-cohort.json --output .cache/ci-forecast-explanations
+      - name: Reload and audit all simulated explanation and counterfactual outputs
+        run: python -m apexsim.cli verify-forecast-explanation-study .cache/ci-forecast-explanations
       - name: Verify periodic reference geometry and held-out reconstruction
         run: python -m apexsim.cli track-reconstruction-smoke --output .cache/ci-track-reconstruction
       - name: Verify observed track support partial boundaries and rigid shape registration

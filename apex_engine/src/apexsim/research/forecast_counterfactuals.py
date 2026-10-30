@@ -160,7 +160,8 @@ def build_catalogue(history: np.ndarray, envelope: TrainingEnvelope) -> Scenario
 def scenario_cost(index: int) -> float:
     """Dimensionless L1 cost in two declared scenario parameters; not lap time."""
     factor, offset = SCENARIOS[index]
-    return abs(factor-1)/.2+abs(offset)/.2
+    # The finite decimal catalogue has exact rational costs; remove binary tie noise.
+    return round(abs(factor-1)/.2+abs(offset)/.2, 12)
 
 
 def counterfactual_result(catalogue: ScenarioCatalogue, raw_predictions: np.ndarray,
