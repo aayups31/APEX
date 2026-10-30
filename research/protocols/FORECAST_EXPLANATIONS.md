@@ -33,6 +33,10 @@ UI, VSC causal-effect estimation, world model or simulator/planner integration.
   `c8f538d7ae46ec06a46d9af1b37fb9e4fe7429ac3c942845976fe2ccf189fe9f`.
 - Frozen R026 evaluation summary:
   `f565de0903a71ca19a6dc753fc96ffeb82410d11c00e317bb071ee3fc02bec18`.
+- Inventory anchors (recorded before study outcomes): R025 manifest content seal
+  `77e0de71402a8ca9a5c9a73afac0540d68e435d6c1211b9eea19b3b595559616`;
+  R026 manifest content seal
+  `7584f03bf8d8b54c9b9106451b063a9e2f019f0e00aa26fbc717b6a54a8eaaab`.
 - R025 training windows only supply donors, scaling and marginal support ranges:
   2024 Bahrain/Australia. All ten checkpoint bytes remain unchanged. XGBoost is
   the previously validation-selected primary family; no new family selection.
