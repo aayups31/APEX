@@ -242,6 +242,8 @@ def evaluate_study(reference: Path, evaluation: Path, cohort: dict,
             cf_static.append(static[i])
             cf_slots.append((i, j))
     records = [{"name": k, "kind": k} for k in ("persistence", "trend")]+ref["records"]
+    with np.load(evaluation/"predictions.npz", allow_pickle=False) as saved:
+        original_baselines = {record["name"]: saved[record["name"]+"_raw"][indices] for record in records}
     reports, raw_outputs = {}, {}
     old_threads = torch.get_num_threads()
     torch.set_num_threads(1)
@@ -288,6 +290,9 @@ def evaluate_study(reference: Path, evaluation: Path, cohort: dict,
             all_raw = np.concatenate((base_raw.ravel(), valid_cf.ravel()))
             _, projection = project_nonnegative(all_raw)
             reports[name] = {"kind": record["kind"], "cases": cases, "raw_output_projection": projection,
+                             "maximum_baseline_difference_to_original_r026_kj": float(np.max(abs(base_raw-original_baselines[name]))),
+                             "inference_accumulation": "FP64_FIXED_ROW_EINSUM" if record["kind"] in ("linear", "ridge") else
+                                                       "NATIVE_FP32_FIXED_PADDED_BATCH32" if record["kind"] in ("gru", "lstm", "tft") else "FROZEN_NATIVE_MODEL",
                              "aggregates": _aggregate(cases, metadata, ref["vocabulary"]["track_id"])}
             raw_outputs[name] = arrays
     finally:
@@ -366,6 +371,7 @@ def run_explanation_study(reference: Path, evaluation: Path, cohort_path: Path, 
     shutil.copytree(evaluation, output/"evaluation")
     shutil.copyfile(cohort_path, output/"cohort.json")
     shutil.copyfile(PROTOCOL, output/"protocol.md")
+    shutil.copyfile(PROTOCOL.with_name("FORECAST_EXPLANATIONS_NUMERICS.md"), output/"numerical-correction.md")
     result, raw = evaluate_study(output/"reference", output/"evaluation", cohort, progress)
     if before != _implementation_hashes():
         raise ValueError("Explanation implementation changed during evaluation")

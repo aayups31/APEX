@@ -3,6 +3,11 @@
 Preregistered 2026-10-30, before explanation/counterfactual outcomes. Classification:
 **ADAPTATION**. Research only; no production promotion or causal intervention claim.
 
+The [numerical implementation correction](FORECAST_EXPLANATIONS_NUMERICS.md)
+records the first attempt's batch-rounding invariant failure and fixed FP64
+linear/ridge accumulation plus fixed-shape neural inference. It changes no
+scientific gate, input or fitted model.
+
 ## A. Current state
 
 Research foundation R1; production kernel R0. R024, R025, R026 and R029 are DONE.

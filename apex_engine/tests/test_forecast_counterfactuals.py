@@ -15,6 +15,7 @@ from apexsim.research.forecast_counterfactuals import (
     transform_history,
     unprojected_loads,
 )
+from apexsim.research.forecast_explanation_audit import independent_scenarios
 from apexsim.research.forecast_explanations import FrozenForecastPredictor
 
 
@@ -144,3 +145,15 @@ def test_persistence_loaded_predictor_never_receives_future_target():
     np.testing.assert_array_equal(raw[0, 0], x[-1, 10:])
     np.testing.assert_array_equal(raw[:, 0], raw[:, 2])
     assert IDENTITY_INDEX == 27
+
+
+def test_independent_scenario_equations_match_physical_and_rejected_cases():
+    for bad in (False, True):
+        x = physical_history()
+        if bad:
+            x[:, 1] = 1.1
+        support = broad_envelope()
+        independent, valid = independent_scenarios(x, support.minimum, support.maximum)
+        generated = build_catalogue(x, support)
+        np.testing.assert_array_equal(valid, generated.valid)
+        np.testing.assert_array_equal(independent[valid], generated.histories[valid])

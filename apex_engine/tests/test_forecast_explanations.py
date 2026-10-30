@@ -3,9 +3,10 @@ import copy
 import numpy as np
 import pytest
 
-from apexsim.research.forecast_benchmark import EVENTS
+from apexsim.research.forecast_benchmark import EVENTS, ForecastScaler
 from apexsim.research.forecast_explanations import (
     PLAYERS,
+    FrozenForecastPredictor,
     donor_indices,
     guard_origins,
     rank_correlation,
@@ -112,3 +113,17 @@ def test_guard_native_source_identity_and_permanent_benchmarks(mutation):
 def test_tied_spearman_and_undefined_constant_rank():
     assert rank_correlation(np.array([1., 1., 2.]), np.array([2., 2., 4.])) == pytest.approx(1)
     assert rank_correlation(np.ones(3), np.arange(3)) is None
+
+
+def test_linear_checkpoint_is_bitwise_invariant_to_inference_batch_size(tmp_path):
+    rng = np.random.default_rng(2728)
+    vocabulary = {"driver_id": ["UNKNOWN"], "compound": ["UNKNOWN"], "track_id": ["UNKNOWN"]}
+    scaler = ForecastScaler(np.zeros(14), np.ones(14), np.zeros((3, 4)), np.ones((3, 4)))
+    path = tmp_path/"linear.npz"
+    np.savez(path, coef=rng.normal(size=(12, 115)).astype(np.float32),
+             intercept=rng.normal(size=12).astype(np.float32))
+    predictor = FrozenForecastPredictor(path, {"kind": "linear"}, scaler, vocabulary)
+    x, static = rng.normal(size=(128, 8, 14)).astype(np.float32), np.ones((128, 3), np.float32)
+    together = predictor(x, static)
+    separate = np.concatenate([predictor(x[i:i+1], static[i:i+1]) for i in range(128)])
+    np.testing.assert_array_equal(together, separate)

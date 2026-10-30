@@ -161,11 +161,24 @@ class FrozenForecastPredictor:
         if self.kind in ("persistence", "trend"):
             return transparent_prediction(data, self.kind)
         if self.kind in ("linear", "ridge"):
-            result = flat_features(data, self.scaler) @ self.coef.T + self.intercept
+            # Fixed row-wise FP64 accumulation avoids SGEMM batch-size roundoff.
+            # Input normalization and stored fitted parameters remain frozen.
+            result = np.einsum("ij,kj->ik", flat_features(data, self.scaler).astype(np.float64),
+                               self.coef.astype(np.float64), optimize=False)+self.intercept.astype(np.float64)
             return self.scaler.inverse(result.reshape(n, 3, 4))
         if self.kind == "xgboost":
             return statistical_prediction(self.model, data, self.scaler)
-        return neural_prediction(self.model, self.kind, data, self.scaler)
+        # CPU neural GEMM kernels also vary rounding with batch shape. Always use
+        # 32 rows, padding the final chunk with its last row and discarding padding.
+        values = []
+        for start in range(0, n, 32):
+            indices = np.arange(start, min(start+32, n))
+            count = len(indices)
+            indices = np.pad(indices, (0, 32-count), mode="edge")
+            chunk = ForecastWindows(dynamic[indices], static[indices], np.zeros((32, 3, 4)),
+                                    [{} for _ in range(32)], self.vocabulary)
+            values.append(neural_prediction(self.model, self.kind, chunk, self.scaler)[:count])
+        return np.concatenate(values)
 
 
 def replace_players(history: np.ndarray, donor: np.ndarray, indices: tuple[int, ...]) -> np.ndarray:

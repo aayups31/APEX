@@ -589,6 +589,14 @@ def verify_forecast_explanation_study_command(output: Path) -> None:
     typer.echo(json.dumps(verify_explanation_study(output, lambda message: typer.echo(message, err=True)), indent=2))
 
 
+@app.command("audit-forecast-explanation-study")
+def audit_forecast_explanation_study_command(output: Path) -> None:
+    """Independently audit scenario equations, minimality and selected checkpoint forecasts."""
+    from apexsim.research.forecast_explanation_audit import independent_explanation_audit
+
+    typer.echo(json.dumps(independent_explanation_audit(output), indent=2))
+
+
 @app.command("strategy-foundation-demo")
 def strategy_foundation_demo(output: Annotated[Path, typer.Option()]) -> None:
     """Verify frozen hand calculations and exhaustive tiny strategy optima."""
