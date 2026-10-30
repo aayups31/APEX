@@ -165,6 +165,10 @@ causal VSC effect can be inferred from this exercise.
   finite-catalogue optimality replay. Unstable explanations must abstain.
   Neither a 100% CF success rate nor universal model faithfulness is required:
   failures are findings, not grounds for changing thresholds.
+- Minimum useful public evidence: at least one reliable primary XGBoost
+  explanation and one jointly crossing, seed-robust XGBoost counterfactual in
+  each of the seen/unseen strata. A negative result is retained if this fails;
+  it cannot be repaired by loosening gates or dropping origins in this version.
 - Immutable output, complete file inventory/hashes, source/checkpoint/protocol
   seals, portable checkpoint reload, full deterministic metric/decision replay,
   relocation and tamper tests. Numeric prediction replay rtol1e-6/atol1e-7;

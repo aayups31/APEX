@@ -62,11 +62,14 @@ def guard_origins(metadata: list[dict]) -> None:
     """Fail closed on protected events and mixed/duplicate native identities."""
     identities: dict[str, tuple] = {}
     keys = set()
+    events = set()
     for row in metadata:
-        match = re.fullmatch(r"F1_(\d{4})_R(\d{2})", row["event_id"])
-        if match is None:
-            raise ValueError("Explanation requires canonical event identity")
-        assert_development_event(int(match[1]), int(match[2]), event_id=row["event_id"])
+        if row["event_id"] not in events:
+            match = re.fullmatch(r"F1_(\d{4})_R(\d{2})", row["event_id"])
+            if match is None:
+                raise ValueError("Explanation requires canonical event identity")
+            assert_development_event(int(match[1]), int(match[2]), event_id=row["event_id"])
+            events.add(row["event_id"])
         key = source_key(row)
         identity = row["event_id"], row["driver_id"], row["compound"], row.get("track_id")
         if (type(key[3]) is not int or key[3] < 7 or key in keys
