@@ -112,7 +112,9 @@ All results and arrays regenerate with **maximum difference0.0**. Independent
 audit verifies all seven cases. Thirteen targeted tests cover equations,
 contact/uniqueness rejection, structural confounds, independent code paths,
 portable/immutable artifacts, tampering, false identification and numeric tolerance.
-The complete final regression and CI record is in project maturity status.
+Implementation CI [41238903597](https://github.com/aayups31/APEX/actions/runs/41238903597)
+passes all **664 tests** on both Python3.11 and3.12, including the synthetic study,
+scientific replay and independent audit. The complete record is in project maturity status.
 
 Study seal:
 `7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c`.

@@ -49,8 +49,11 @@ reference reconstruction and R027/R028's scoped model explanation/conditional
 counterfactual study are accepted. R030's bounded high-speed/full-throttle
 longitudinal calibration is accepted; R031's synthetic lateral dynamics/friction
 ellipse force and stability gate is complete, including an explicit unsupported
-rear-saturation challenge. R032 aero balance/load transfer and sensitivity are
-next. Calibrated prediction uncertainty and real-car intervention validity remain
+rear-saturation challenge. R032's synthetic aero/load-transfer and identifiability
+study and R033's scoped public observation alignment are complete. R033 reports
+94.55% joint native observation coverage; full measured bicycle input coverage
+remains0% because chassis controls/states are missing. R034 matched open-loop
+errors are next. Calibrated prediction uncertainty and real-car intervention validity remain
 unestablished. Historical
 replay and closed-loop stability follow their existing backlog dependencies.
 Tyre/fuel/ERS validation, stochastic full-field behavior,

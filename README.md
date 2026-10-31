@@ -107,10 +107,20 @@ The [R031 bicycle model](docs/verification/bicycle-dynamics-report.md) adds
 steering/yaw dynamics and axle-level combined grip, with synthetic force, energy,
 stability and independent integration checks. Thirteen supported cases pass;
 one unchanged full-rear-drive challenge explicitly rejects at its yaw support
-limit. All 634 tests pass. These are generic-prior equation checks, with no
+limit. The R031 checkpoint passes634 tests. These are generic-prior equation checks, with no
 public cornering calibration or production promotion. See the
-[model/run guide](docs/models/bicycle-dynamics-v1.md). Next is R032 aero balance
-and load transfer, followed by full recorded-control/state alignment and replay.
+[model/run guide](docs/models/bicycle-dynamics-v1.md).
+
+The [R032 aero/load-transfer study](docs/verification/aero-load-transfer-report.md)
+adds self-consistent axle loads, independent dynamics checks and explicit
+parameter-identifiability limits. The
+[R033 recorded replay layer](docs/verification/recorded-replay-alignment-report.md)
+aligns30,299 native rows across88 frozen laps:94.55% joint observed coverage,
+91.86% interval coverage and all150 longitudinal input bundles supported.
+Missing steering/body/fuel/battery states remain UNKNOWN; complete measured
+bicycle-input coverage is0%. Next is R034 matched open-loop errors by horizon
+and operating regime. Both results remain in research; production is unchanged.
+The implementation passes664 tests and full CI on Python3.11/3.12.
 
 ---
 

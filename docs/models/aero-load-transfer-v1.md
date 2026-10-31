@@ -34,5 +34,5 @@ The research extension accepts axle-force commands, not an implicit R030
 power/drag adapter whose fitted drag would otherwise be counted twice.
 
 Stop using this versioned module to roll back; original R031 and production
-remain intact. Next dependencies are R033 observed-state/control alignment and
+remain intact. R033 supplies scoped observed-state/control alignment; next is
 R034 matched replay errors. Research foundation remains R1 and kernel R0.

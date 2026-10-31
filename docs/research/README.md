@@ -36,6 +36,14 @@ This directory tracks the published research used to guide APEX.
 
 ## Purpose
 
+R032's [aero/load-transfer protocol](../../research/protocols/AERO_LOAD_TRANSFER.md)
+and [equations](../../research/equations/AERO_LOAD_TRANSFER_V1.md) are verified
+in the [synthetic study](../verification/aero-load-transfer-report.md).
+R033's [alignment protocol](../../research/protocols/RECORDED_REPLAY_ALIGNMENT.md)
+and [observation map](../../research/equations/RECORDED_REPLAY_ALIGNMENT_V1.md)
+support the [frozen public coverage report](../verification/recorded-replay-alignment-report.md).
+R034's matched predictive errors remain the next research dependency.
+
 Research is incorporated through a traceable process:
 
 ```text

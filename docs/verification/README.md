@@ -20,6 +20,8 @@ This directory contains recorded verification results for major stages of APEX.
 - [R024 public tyre-energy proxy dataset and provenance](tyre-energy-dataset-report.md)
 - [R030 high-speed longitudinal calibration](longitudinal-calibration-report.md)
 - [R031 synthetic bicycle forces, stability and support rejection](bicycle-dynamics-report.md)
+- [R032 aero balance, coupled load transfer and parameter confounding](aero-load-transfer-report.md)
+- [R033 causal public observation alignment and missing chassis states](recorded-replay-alignment-report.md)
 
 ## Purpose
 

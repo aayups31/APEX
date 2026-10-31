@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 31,
+    "done": 33,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R032"
+    "R034"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -322,6 +322,79 @@
       "Full-rear saturation challenge abstains at yaw support; boundary clarification disclosed after first campaign",
       "Local linear stability and independent numerical agreement do not establish real-car accuracy",
       "No public cornering uncertainty, autonomous lap, production or formal maturity promotion"
+    ]
+  },
+  "aero_load_transfer_study": {
+    "backlog_id": "R032",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_AERO_LOAD_TRANSFER",
+    "scope": "Synthetic coupled axle loads and quasi-static pitch with aero balance; sensitivity and structural identifiability",
+    "report": "docs/verification/aero-load-transfer-report.md",
+    "model_card": "docs/models/aero-load-transfer-v1.md",
+    "evidence": "docs/verification/aero-load-transfer-evidence.json",
+    "summary_sha256": "7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c",
+    "evidence_content_sha256": "e9482e74b980ae7a0a3845df6a96ddcb9ec5ac5a927682fb04aa2e77279ce99d",
+    "input_truth": "SYNTHETIC",
+    "parameter_truth": "GENERIC_PRIOR",
+    "dynamics_cases": 7,
+    "force_grid_points": 45,
+    "supported_force_grid_points": 41,
+    "conservative_uniqueness_abstentions": 4,
+    "sensitivity_perturbations": 8,
+    "oracle_parameter_rank": 4,
+    "oracle_parameters": 5,
+    "real_parameters_identified": false,
+    "scientific_reload_maximum_difference": 0.0,
+    "maximum_independent_lateral_speed_difference_mps": 0.000019262977165313,
+    "promotion": false,
+    "implementation_commit": "d9f021ad36aea261e394810c3620f66cad9c5541",
+    "implementation_ci_run": 41238903597,
+    "full_regression": {"passed": 664, "python_versions": ["3.11", "3.12"], "ci_run": 41238903597},
+    "targeted_tests": 13,
+    "limitations": [
+      "Synthetic force/load oracle; generic priors do not identify actual vehicle parameters",
+      "Quasi-static pitch, fixed axle stiffness; no lateral transfer, suspension or ride-height aero map",
+      "Front saturation intervals without a sufficient uniqueness proof explicitly abstain",
+      "Initial independent full-capacity arithmetic rejection and root endpoint failure are preserved; thresholds unchanged",
+      "No public cornering accuracy, production or formal maturity promotion"
+    ]
+  },
+  "recorded_observation_alignment": {
+    "backlog_id": "R033",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_RECORDED_OBSERVATION_ALIGNMENT",
+    "scope": "Causal native recorded-control and observed speed/RPM/gear/position alignment; full chassis fields UNKNOWN",
+    "report": "docs/verification/recorded-replay-alignment-report.md",
+    "model_card": "docs/models/recorded-replay-alignment-v1.md",
+    "evidence": "docs/verification/recorded-replay-alignment-evidence.json",
+    "summary_sha256": "42cede289de897d6153ae3f66d84631de5394911fa979d5df453316b92912620",
+    "evidence_content_sha256": "0946fd06720de3ce2a4dde9051d05763f1b6c82b8c16a499343382a196851f01",
+    "input_truth": "FASTF1_PARSED_SOURCE",
+    "source_laps": 88,
+    "native_car_rows": 30299,
+    "joint_observed_rows": 28648,
+    "joint_observed_row_coverage": 0.945509752797122,
+    "joint_interval_duration_coverage": 0.9185705091464482,
+    "minimum_lap_joint_row_coverage": 0.9032258064516129,
+    "longitudinal_sections": 150,
+    "supported_longitudinal_sections": 150,
+    "full_bicycle_measured_state_control_coverage": 0.0,
+    "future_position_matches": 0,
+    "maximum_native_reload_difference": 0.0,
+    "independent_native_conversion_difference": 0.0,
+    "promotion": false,
+    "implementation_commit": "d9f021ad36aea261e394810c3620f66cad9c5541",
+    "implementation_ci_run": 41238903597,
+    "full_regression": {"passed": 664, "python_versions": ["3.11", "3.12"], "ci_run": 41238903597},
+    "targeted_tests": 17,
+    "limitations": [
+      "Steering, body vx/vy, yaw rate, fuel and battery remain UNKNOWN; complete measured bicycle adapter abstains",
+      "Boolean brake is not force/pressure; RPM/gear do not identify torque or hybrid deployment",
+      "Source-clock consistency cannot establish true sensor latency; geometry is supplied offline registered reference",
+      "Reused development cohort; reserved benchmark events untouched",
+      "Observed coverage is not predictive accuracy, autonomous lap validity or production promotion"
     ]
   }
 }

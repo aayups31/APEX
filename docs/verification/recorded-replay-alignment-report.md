@@ -106,8 +106,11 @@ Seventeen targeted R033 tests pass: causal/asynchronous streams, half-open
 boundaries, gaps/clocks, field missingness, future-target independence, independent
 pointer code, protected-event checks before payload access, portable/immutable
 outputs, raw-byte tamper refusal, fake public profile, resealed false acceptance,
-fabricated body state and dropped section inventory. The complete final
-regression and CI record is in project maturity status.
+fabricated body state and dropped section inventory. Implementation CI
+[41238903597](https://github.com/aayups31/APEX/actions/runs/41238903597) passes all
+**664 tests** on Python3.11 and3.12, including source/alignment smoke, scientific
+replay and independent audit. Public native replay is separately verified on the
+preserved local package. The complete record is in project maturity status.
 
 Accepted local package: `.cache/r033-public-20261031`, recorded build runtime18.68s.
 Dataset seal:
