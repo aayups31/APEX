@@ -564,6 +564,22 @@ def verify_track_reconstruction_command(output: Path) -> None:
     typer.echo(json.dumps(verify_track_reconstruction(output), indent=2))
 
 
+@app.command("prepare-longitudinal-dataset")
+def prepare_longitudinal_dataset_command(geometry: Annotated[Path, typer.Option()], archives: Annotated[list[Path], typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Freeze source-bound R030 sections before any coefficient fitting."""
+    from apexsim.examples.longitudinal_dataset import prepare_longitudinal_dataset
+
+    typer.echo(json.dumps(prepare_longitudinal_dataset(geometry, archives, output), indent=2))
+
+
+@app.command("verify-longitudinal-dataset")
+def verify_longitudinal_dataset_command(output: Path) -> None:
+    """Regenerate native controls, section membership and rejected-row accounting."""
+    from apexsim.examples.longitudinal_dataset import verify_longitudinal_dataset
+
+    typer.echo(json.dumps(verify_longitudinal_dataset(output), indent=2))
+
+
 @app.command("freeze-forecast-explanation-cohort")
 def freeze_forecast_explanation_cohort_command(reference: Annotated[Path, typer.Option()], evaluation: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()], profile: str = "research") -> None:
     """Freeze source-key origins/donors without reading prediction or target payloads."""
