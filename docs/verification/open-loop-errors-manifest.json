@@ -1,0 +1,16 @@
+{
+  "content_sha256": "596ff208026fafdac5241e295480b1e8a28c117fbbd9c1faa7a0387eb0b36992",
+  "evidence_sha256": "92720f64c2495d293f80ecc6736436f91bfe06dd3d44f77e6939f2ed3e2e4dd8",
+  "files": {
+    "open-loop-errors-evidence.json": {
+      "bytes": 3385137,
+      "sha256": "3beefb064111e08a18192d0e3f4bf096163b9cb8ddfef96d4641945f3f0ea74b"
+    },
+    "open-loop-errors-summary.png": {
+      "bytes": 251635,
+      "sha256": "c190501f391f9e9fcba29942cc4a360e49966d14969fa575372a8e49d476dc2c"
+    }
+  },
+  "publisher_sha256": "af7ab2af3da1505b2c26363a6e628152352c53e72a1a72930353c7f11ac08238",
+  "schema_version": "apex-open-loop-errors-publication-manifest-v1"
+}

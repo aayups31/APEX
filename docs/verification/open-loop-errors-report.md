@@ -11,6 +11,12 @@ and R030 model payload `598d646b23e1eeb8ea0d6a88a5f2f4d54656ef7af91e4de01597abc2
 bind the inputs. Reused2023 Bahrain/Monza are training events;2024 Bahrain is
 validation and2024 Monza is test. Nine protected benchmark events remain untouched.
 
+The [sealed evidence](open-loop-errors-evidence.json) includes every score,
+abstention, source catalog, original run manifest and both verification receipts.
+Its publication is bound by the [figure/evidence manifest](open-loop-errors-manifest.json).
+
+![Matched errors and complete source support accounting](open-loop-errors-summary.png)
+
 ## Matched held-out results
 
 Each method sees identical initial states, causal history, controls, forecast nodes
