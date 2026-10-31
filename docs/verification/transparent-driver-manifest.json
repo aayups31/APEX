@@ -1,0 +1,16 @@
+{
+  "content_sha256": "7e522143e67d1bec9b7b12adcda2388726061209de4045d0180fbc4938d9358b",
+  "evidence_sha256": "b79a9c320b8c42f431c2688977460623ff5d3348dd7263d30cd68f8ebd375ad1",
+  "files": {
+    "transparent-driver-evidence.json": {
+      "bytes": 93112,
+      "sha256": "ac98c878c72b2b7412a715f9872963e72e71a4af51d314ea02a43734d9af1440"
+    },
+    "transparent-driver-summary.png": {
+      "bytes": 292446,
+      "sha256": "8b71a278a9e32a266ef22fd55bbdc1a8793df4e1c5d9bee35360a2331089023b"
+    }
+  },
+  "publisher_sha256": "d72daeb409ced19f7d52ca906d3c94a2d5232d27576b4372eac1915f26d9a4e3",
+  "schema_version": "apex-transparent-driver-publication-manifest-v1"
+}

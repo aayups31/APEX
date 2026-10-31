@@ -91,6 +91,6 @@ def test_resealed_source_binding_change_is_rejected(artifact):
 def test_protected_header_is_guarded_before_missing_binary_payload(tmp_path):
     (tmp_path/"recorded").mkdir()
     write_manifest(tmp_path/"recorded/inputs.json", {"schema_version": RECORDED_VERSION+"-inputs",
-                                                   "laps": [{"event_id": "F1_2024_R05", "track_id": "shanghai", "driver_id": "4"}]})
-    with pytest.raises(ValueError):
+                                                   "laps": [{"event_id": "F1_2024_R04", "track_id": "suzuka", "driver_id": "4"}]})
+    with pytest.raises(ValueError, match="Permanent benchmark event"):
         driver_study.load_calibration(tmp_path)

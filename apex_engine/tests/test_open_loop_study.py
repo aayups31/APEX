@@ -78,11 +78,11 @@ def test_protected_header_guard_precedes_missing_payload(report, tmp_path):
     copied = tmp_path/"protected"
     shutil.copytree(report, copied)
     header = read_json(copied/"recorded/inputs.json")
-    header["laps"][0]["event_id"] = "F1_2024_R05"
+    header["laps"][0]["event_id"] = "F1_2024_R04"
     (copied/"recorded/inputs.json").unlink()
     write_manifest(copied/"recorded/inputs.json", header)
     (copied/"predictions.npz").unlink()
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match="Permanent benchmark event"):
         load_study(copied)
 
 

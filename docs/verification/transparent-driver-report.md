@@ -30,6 +30,13 @@ Calibration seal:
 Study seal:
 `58a8e7a318e12c0db80a9c70c2dfffb6fd5818534a15fa657a8e33d6b0b49ae0`.
 
+The [sealed evidence](transparent-driver-evidence.json) contains every case,
+refinement, independent/scientific replay receipt, source manifest and posthoc
+native-speed diagnostic. The [publication manifest](transparent-driver-manifest.json)
+binds it to this inspected figure.
+
+![Conditional generated-action laps and frozen pace selection](transparent-driver-summary.png)
+
 ## Generated-action lap results
 
 The first two frozen Monza laps per driver are the complete mandatory test catalog.
@@ -74,6 +81,15 @@ and yaw-rate difference.000026832rad/s. This independent replay uses no primary
 force, load root or RHS helpers. Thirty-two representative intervals across all
 four nominal held-out conditions also pass. The full-lap tolerance is.05m and
 .01m/s; neither threshold was changed after results.
+
+All16 trajectories and their diagnostics regenerate under the full scientific
+verifier, including repeated independent replay. The
+[real-artifact boundary receipt](transparent-driver-boundary-checks.json) separately
+confirms portable inventory/calibration replay and rejects corrupted trajectory
+bytes, a resealed changed pace choice and an actual protected2024 Suzuka header
+before binary access. Twenty-six focused tests cover R034/R035 numerical,
+calibration, source-boundary and artifact contracts; two strengthened protected
+event assertions also pass.
 
 ## Pace limitation and truth boundary
 

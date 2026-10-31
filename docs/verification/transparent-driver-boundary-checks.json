@@ -1,0 +1,20 @@
+{
+  "content_sha256": "d3ed2b0c0e3645467d6aa498951265e09962498583b1f3315f77880e45c70cf1",
+  "portable_calibration_scientific_replay": {
+    "selected": {
+      "fraction": 0.65,
+      "maximum_mps": 60.0
+    },
+    "summary_sha256": "2dc610c27b9219caf53759c0d8f1211a8b5d492b82758c04743997e099059b1e",
+    "test_outcomes_used": false,
+    "verified": true
+  },
+  "portable_inventory_binding": true,
+  "protected_header_rejection": "Permanent benchmark event 2024/round 4 is forbidden in development/calibration",
+  "resealed_changed_choice_rejection": "Scientific replay numeric mismatch: results/selected/fraction",
+  "schema_version": "apex-transparent-driver-v1-real-artifact-boundary-check-v1",
+  "scope": "REAL_PUBLIC_ARTIFACT_COPIES; FULL_SCIENTIFIC_TRAJECTORY_REPLAY_HAS_SEPARATE_RECEIPT",
+  "summary_sha256": "58a8e7a318e12c0db80a9c70c2dfffb6fd5818534a15fa657a8e33d6b0b49ae0",
+  "tampered_payload_rejection": "Research evidence inventory/hash mismatch",
+  "verified": true
+}
