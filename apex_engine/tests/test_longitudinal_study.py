@@ -7,6 +7,7 @@ import pytest
 from typer.testing import CliRunner
 
 from apexsim.cli import app
+from apexsim.examples import longitudinal_study as study_module
 from apexsim.examples.longitudinal_dataset import inventory, read_json, verify_longitudinal_dataset
 from apexsim.examples.longitudinal_study import (
     VERSION,
@@ -117,3 +118,18 @@ def test_smoke_has_no_public_native_reconstruction_and_original_bytes_are_preser
     with pytest.raises(FileNotFoundError):
         verify_longitudinal_dataset(study/"development/dataset")
     assert file_sha256(study/"manifest.json") == before
+
+
+def test_numerical_tolerance_is_separate_from_exact_stored_content_binding(study, monkeypatch):
+    original = study_module.compute_development
+
+    def slightly_different(*args, **kwargs):
+        models, draws, arrays = original(*args, **kwargs)
+        # Simulate a harmless refit-rounding difference, not a stored-file mutation.
+        for candidate in models["candidates"].values():
+            for fit in candidate["cells"].values():
+                fit["parameters"]["power_per_mass"] += 1e-9
+        return models, draws, arrays
+
+    monkeypatch.setattr(study_module, "compute_development", slightly_different)
+    assert verify_longitudinal_development(study/"development")["verified"]

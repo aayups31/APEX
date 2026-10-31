@@ -181,13 +181,15 @@ def verify_longitudinal_development(output: Path) -> dict:
     summary = read_json(output/"summary.json")
     check_seal(summary)
     models, draws, arrays = compute_development(sections, source["profile"])
-    _close(read_json(output/"models.json"), models)
-    _close(read_json(output/"bootstrap_models.json"), draws)
+    stored_models = read_json(output/"models.json")
+    stored_draws = read_json(output/"bootstrap_models.json")
+    _close(stored_models, models)
+    _close(stored_draws, draws)
     with np.load(output/"validation_predictions.npz", allow_pickle=False) as stored:
         if set(stored.files) != set(arrays) or any(not np.allclose(stored[k], v, rtol=1e-6, atol=1e-7) for k, v in arrays.items()):
             raise ValueError("R030 validation prediction replay mismatch")
     if (manifest["summary_sha256"] != summary["content_sha256"] or summary["dataset_sha256"] != source["content_sha256"]
-            or summary["models_sha256"] != payload_sha256(models) or summary["bootstrap_sha256"] != payload_sha256(draws)
+            or summary["models_sha256"] != payload_sha256(stored_models) or summary["bootstrap_sha256"] != payload_sha256(stored_draws)
             or summary["selected"] != models["selected"] or summary["test_outcomes_used"] is not False
             or summary["task_closure_eligible"] is not False):
         raise ValueError("R030 development selection/source binding changed")
@@ -346,7 +348,8 @@ def verify_longitudinal_study(output: Path) -> dict:
     source, sections = load_inputs(output/"development/dataset")
     result, arrays = compute_evaluation(sections, read_json(output/"development/models.json"),
                                        read_json(output/"development/bootstrap_models.json"), source["profile"])
-    _close(read_json(output/"results.json"), result)
+    stored_result = read_json(output/"results.json")
+    _close(stored_result, result)
     maximum = 0.
     with np.load(output/"predictions.npz", allow_pickle=False) as stored:
         if set(stored.files) != set(arrays):
@@ -357,7 +360,7 @@ def verify_longitudinal_study(output: Path) -> dict:
             maximum = max(maximum, float(np.max(abs(stored[key]-value))))
     if (manifest["summary_sha256"] != summary["content_sha256"] or summary["development_sha256"] != verified["summary_sha256"]
             or summary["dataset_sha256"] != source["content_sha256"] or summary["selected"] != result["selected"]
-            or summary["results_sha256"] != payload_sha256(result) or summary["profile"] != source["profile"]
+            or summary["results_sha256"] != payload_sha256(stored_result) or summary["profile"] != source["profile"]
             or summary["decision"] != result["decision"] or summary["task_closure_eligible"] != result["task_closure_eligible"]
             or summary["promotion"] is not False):
         raise ValueError("R030 held-out source/decision binding replay mismatch")
