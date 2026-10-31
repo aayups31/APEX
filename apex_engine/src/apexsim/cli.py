@@ -850,5 +850,35 @@ def audit_open_loop_errors_command(output: Path) -> None:
     typer.echo(json.dumps(audit_open_loop_study(output), indent=2))
 
 
+@app.command("freeze-driver-calibration")
+def freeze_driver_calibration_command(open_loop: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Freeze transparent pace selection on train/validation labels before test laps."""
+    from apexsim.examples.driver_study import freeze_driver_calibration
+
+    typer.echo(json.dumps(freeze_driver_calibration(open_loop, output), indent=2))
+
+
+@app.command("verify-driver-calibration")
+def verify_driver_calibration_command(output: Path) -> None:
+    from apexsim.examples.driver_study import verify_driver_calibration
+
+    typer.echo(json.dumps(verify_driver_calibration(output), indent=2))
+
+
+@app.command("transparent-driver-study")
+def transparent_driver_study_command(calibration: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Run every frozen conditional lap case, baseline, refinement and independent audit."""
+    from apexsim.examples.driver_study import run_driver_study
+
+    typer.echo(json.dumps(run_driver_study(calibration, output, lambda m: typer.echo(m, err=True)), indent=2))
+
+
+@app.command("verify-transparent-driver")
+def verify_transparent_driver_command(output: Path) -> None:
+    from apexsim.examples.driver_study import verify_driver_study
+
+    typer.echo(json.dumps(verify_driver_study(output, lambda m: typer.echo(m, err=True)), indent=2))
+
+
 if __name__ == "__main__":
     app()
