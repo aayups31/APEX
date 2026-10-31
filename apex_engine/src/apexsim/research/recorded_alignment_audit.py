@@ -11,8 +11,8 @@ from apexsim.research.recorded_alignment import UNKNOWN_FIELDS
 
 def audit_aligned_lap(car: pd.DataFrame, position: pd.DataFrame, lap: dict, stored: pd.DataFrame) -> dict:
     """Use a scalar backward pointer, not the primary searchsorted alignment helper."""
-    ct = [float(v.total_seconds()) for v in car.SessionTime]
-    pt = [float(v.total_seconds()) for v in position.SessionTime]
+    ct = [float(v.value/1e9) for v in car.SessionTime]
+    pt = [float(v.value/1e9) for v in position.SessionTime]
     start, end = lap["lap_start_s"], lap["lap_end_s"]
     car_ids = [i for i, t in enumerate(ct) if start <= t < end]
     pos_ids = [i for i, t in enumerate(pt) if start <= t < end]

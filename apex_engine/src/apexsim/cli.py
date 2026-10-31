@@ -604,6 +604,41 @@ def verify_longitudinal_calibration_command(output: Path) -> None:
     typer.echo(json.dumps(verify_longitudinal_study(output), indent=2))
 
 
+@app.command("prepare-recorded-replay")
+def prepare_recorded_replay_command(longitudinal: Annotated[Path, typer.Option()], archives: Annotated[list[Path], typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """R033 source-sealed causal controls and observed-state alignment on frozen laps."""
+    from apexsim.examples.recorded_replay import prepare_recorded_replay
+
+    result = prepare_recorded_replay(longitudinal, archives, output)
+    typer.echo(json.dumps(result, indent=2))
+    if not result["task_closure_eligible"]:
+        raise typer.Exit(code=1)
+
+
+@app.command("recorded-replay-smoke")
+def recorded_replay_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED async source/control fixture; cannot close public R033."""
+    from apexsim.examples.recorded_replay import make_recorded_smoke
+
+    typer.echo(json.dumps(make_recorded_smoke(output), indent=2))
+
+
+@app.command("verify-recorded-replay")
+def verify_recorded_replay_command(output: Path) -> None:
+    """Regenerate every native association, unknown field, input and coverage gate."""
+    from apexsim.examples.recorded_replay import verify_recorded_replay
+
+    typer.echo(json.dumps(verify_recorded_replay(output), indent=2))
+
+
+@app.command("audit-recorded-replay")
+def audit_recorded_replay_command(output: Path) -> None:
+    """Independently check native rows, causal position joins and recorded controls."""
+    from apexsim.examples.recorded_replay import audit_recorded_replay
+
+    typer.echo(json.dumps(audit_recorded_replay(output), indent=2))
+
+
 @app.command("aero-load-study")
 def aero_load_study_command(output: Annotated[Path, typer.Option()]) -> None:
     """R032 synthetic aero/load-transfer sensitivity and identifiability evidence."""

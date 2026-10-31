@@ -11,7 +11,7 @@ import numpy as np
 import scipy
 
 from apexsim.provenance import file_sha256, payload_sha256, write_manifest
-from apexsim.research import aero_audit, aero_bicycle, aero_identifiability, evidence
+from apexsim.research import aero_audit, aero_bicycle, aero_identifiability, bicycle, evidence
 from apexsim.research.aero_audit import independent_loaded_path, independent_loaded_rhs
 from apexsim.research.aero_bicycle import (
     AeroParameters,
@@ -118,7 +118,8 @@ def compute_evidence() -> tuple[dict, dict[str, np.ndarray]]:
 def run_aero_study(output: Path) -> dict:
     if output.exists():
         raise FileExistsError("R032 output must be fresh")
-    files = [Path(__file__), Path(aero_bicycle.__file__), Path(aero_audit.__file__), Path(aero_identifiability.__file__), Path(evidence.__file__), PROTOCOL]
+    files = [Path(__file__), Path(aero_bicycle.__file__), Path(aero_audit.__file__), Path(aero_identifiability.__file__),
+             Path(bicycle.__file__), Path(evidence.__file__), PROTOCOL]
     hashes = {p.name: file_sha256(p) for p in files}
     started = time.perf_counter()
     result, arrays = compute_evidence()

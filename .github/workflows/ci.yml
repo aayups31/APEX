@@ -71,6 +71,18 @@ jobs:
         run: python -m apexsim.cli verify-bicycle-dynamics .cache/ci-bicycle-dynamics
       - name: Independently audit bicycle DOP853 motion and grip-limit support exit
         run: python -m apexsim.cli audit-bicycle-dynamics .cache/ci-bicycle-dynamics
+      - name: Verify aero load transfer and structural identifiability
+        run: python -m apexsim.cli aero-load-study --output .cache/ci-aero-load
+      - name: Replay aero sensitivity and coupled-load evidence
+        run: python -m apexsim.cli verify-aero-load-study .cache/ci-aero-load
+      - name: Independently audit aero bisection and DOP853 dynamics
+        run: python -m apexsim.cli audit-aero-load-study .cache/ci-aero-load
+      - name: Prepare simulated causal recorded-control and observed-state alignment
+        run: python -m apexsim.cli recorded-replay-smoke --output .cache/ci-recorded-replay
+      - name: Rebuild all recorded input associations and coverage gates
+        run: python -m apexsim.cli verify-recorded-replay .cache/ci-recorded-replay
+      - name: Independently audit causal native rows and unknown-state handling
+        run: python -m apexsim.cli audit-recorded-replay .cache/ci-recorded-replay
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
