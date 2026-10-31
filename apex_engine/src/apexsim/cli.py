@@ -564,6 +564,65 @@ def verify_track_reconstruction_command(output: Path) -> None:
     typer.echo(json.dumps(verify_track_reconstruction(output), indent=2))
 
 
+@app.command("fit-longitudinal-calibration")
+def fit_longitudinal_calibration_command(dataset: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Fit training-only effective coefficients and freeze validation selection."""
+    from apexsim.examples.longitudinal_study import fit_longitudinal_study
+
+    typer.echo(json.dumps(fit_longitudinal_study(dataset, output), indent=2))
+
+
+@app.command("verify-longitudinal-development")
+def verify_longitudinal_development_command(output: Path) -> None:
+    """Refit training and reproduce the frozen validation choice without test scoring."""
+    from apexsim.examples.longitudinal_study import verify_longitudinal_development
+
+    typer.echo(json.dumps(verify_longitudinal_development(output), indent=2))
+
+
+@app.command("audit-longitudinal-calibration")
+def audit_longitudinal_calibration_command(output: Path) -> None:
+    """Independently check bounded-fit optimality, DOP853 paths and section scores."""
+    from apexsim.research.longitudinal_audit import independent_longitudinal_audit
+
+    typer.echo(json.dumps(independent_longitudinal_audit(output), indent=2))
+
+
+@app.command("evaluate-longitudinal-calibration")
+def evaluate_longitudinal_calibration_command(development: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Evaluate frozen longitudinal parameters on untouched section outcomes."""
+    from apexsim.examples.longitudinal_study import evaluate_longitudinal_study
+
+    typer.echo(json.dumps(evaluate_longitudinal_study(development, output), indent=2))
+
+
+@app.command("verify-longitudinal-calibration")
+def verify_longitudinal_calibration_command(output: Path) -> None:
+    """Refit training and replay validation, held-out predictions and gate decisions."""
+    from apexsim.examples.longitudinal_study import verify_longitudinal_study
+
+    typer.echo(json.dumps(verify_longitudinal_study(output), indent=2))
+
+
+@app.command("longitudinal-calibration-smoke")
+def longitudinal_calibration_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED equation/replay execution; cannot close public R030."""
+    from apexsim.examples.longitudinal_study import (
+        evaluate_longitudinal_study,
+        fit_longitudinal_study,
+        make_longitudinal_smoke_dataset,
+        verify_longitudinal_study,
+    )
+
+    if output.exists():
+        raise FileExistsError("R030 smoke output must be fresh")
+    dataset = make_longitudinal_smoke_dataset(output.with_name(output.name+"-dataset"))
+    development = output.with_name(output.name+"-development")
+    fit_longitudinal_study(dataset, development)
+    evaluate_longitudinal_study(development, output)
+    typer.echo(json.dumps(verify_longitudinal_study(output), indent=2))
+
+
 @app.command("prepare-longitudinal-dataset")
 def prepare_longitudinal_dataset_command(geometry: Annotated[Path, typer.Option()], archives: Annotated[list[Path], typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
     """Freeze source-bound R030 sections before any coefficient fitting."""
