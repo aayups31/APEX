@@ -9,11 +9,45 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from apexsim.examples.driver_study import load_calibration, load_driver_study
 from apexsim.examples.open_loop_study import load_study
 from apexsim.provenance import file_sha256, write_manifest
 from apexsim.research.evidence import read_json, seal
 from apexsim.research.open_loop_errors import HORIZONS, METHODS
+
+
+def source_speed_diagnostics(study: Path, result: dict):
+    """Post-evaluation description only; never enters calibration or feedback."""
+    recorded = study/"calibration/recorded"
+    records = []
+    with np.load(study/"trajectories.npz", allow_pickle=False) as trajectories:
+        for case in result["cases"]:
+            if case["role"] != "test" or case["mode"] != "feedback" or case["max_step_s"] != .02:
+                continue
+            key, track = case["lap_id"], case["track_id"]
+            base = recorded/"longitudinal/geometry"
+            with (np.load(base/(track+"_lap_inputs.npz"), allow_pickle=False) as native,
+                  np.load(base/(track+"_geometry_predictions.npz"), allow_pickle=False) as geometry):
+                lookup = {int(a): float(s) for (a, b), s, d in zip(native[key+"_native_parents"], geometry[key+"_station_m"],
+                                                                  geometry[key+"_distance_m"], strict=True) if a == b and d <= 15}
+            frame = pd.read_parquet(recorded/"frames"/(key+".parquet"))
+            subset = frame.loc[frame.joint_observed_ready & frame.position_source_row.isin(lookup)]
+            stations = np.array([lookup[int(v)] for v in subset.position_source_row])
+            progress = trajectories[case["case_id"]+"__station_m"]
+            states = trajectories[case["case_id"]+"__states"]
+            if np.any(np.diff(progress) <= 0):
+                raise ValueError("Posthoc source comparison requires monotone simulated progress")
+            selected = (stations >= progress[0]) & (stations <= progress[-1])
+            source = subset.speed_mps.to_numpy(float)[selected]
+            simulated = np.interp(stations[selected], progress, np.hypot(states[:, 3], states[:, 4]))
+            delta = simulated-source
+            records.append({"case_id": case["case_id"], "compared_native_rows": len(delta), "all_native_rows": len(frame),
+                            "source_speed_truth": "FASTF1_PARSED_SOURCE", "station_truth": "RECONSTRUCTED_BACKWARD_NATIVE_POSITION_ON_SUPPLIED_MAP",
+                            "simulated_speed_truth": "SIMULATED_GENERIC_PRIOR_VEHICLE", "use": "POSTHOC_DESCRIPTION_ONLY; NOT_ACCEPTANCE_OR_CALIBRATION",
+                            "speed_rmse_mps": float(np.sqrt(np.mean(delta**2))), "speed_mae_mps": float(np.mean(abs(delta))),
+                            "speed_bias_mps": float(np.mean(delta)), "source_time_difference_s": case["source_time_difference_s"]})
+    return records
 
 
 def publish(kind: str, study: Path, receipts: list[Path], output: Path):
@@ -32,7 +66,8 @@ def publish(kind: str, study: Path, receipts: list[Path], output: Path):
     prefix = "open-loop-errors" if kind == "open-loop" else "transparent-driver"
     evidence = seal({"schema_version": "apex-"+prefix+"-publication-v1", "study_summary": summary, "results": result,
                      "verification_receipts": verified, "run_manifest": read_json(study/"manifest.json"),
-                     "run_manifest_sha256": file_sha256(study/"manifest.json")})
+                     "run_manifest_sha256": file_sha256(study/"manifest.json"),
+                     "posthoc_source_speed_diagnostics": source_speed_diagnostics(study, result) if kind == "driver" else None})
     write_manifest(output/(prefix+"-evidence.json"), evidence)
     fig, axes = plt.subplots(2, 2, figsize=(14, 9), constrained_layout=True)
     if kind == "open-loop":
