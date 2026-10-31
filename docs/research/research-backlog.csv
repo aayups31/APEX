@@ -28,7 +28,7 @@ R026,R2,P0,forecasting,Evaluate seen versus unseen tracks,forecast benchmark,sep
 R027,R2,P1,XAI,Implement temporal perturbation/TIME-like explanations,forecast models,faithfulness tests,DONE
 R028,R2,P1,XAI,Implement feasible counterfactual explanations,forecast models,counterfactual validity tests,DONE
 R029,R3,P0,track,Reconstruct curvilinear track from public position data,event manifests,closure and curvature error gates,DONE
-R030,R3,P0,vehicle,Calibrate longitudinal acceleration/drag model,track + telemetry,held-out section error beats baseline,TODO
+R030,R3,P0,vehicle,Calibrate longitudinal acceleration/drag model,track + telemetry,held-out section error beats baseline,IN_PROGRESS
 R031,R3,P0,vehicle,Add bicycle lateral dynamics and friction ellipse,longitudinal model,force and stability tests,TODO
 R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/identifiability report,TODO
 R033,R3,P0,replay,Align recorded controls and engine state,canonical replay,coverage > declared threshold,TODO
