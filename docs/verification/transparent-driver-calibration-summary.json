@@ -1,0 +1,53 @@
+{
+  "aero_parameters": {
+    "air_density_kgpm3": 1.225,
+    "cg_height_m": 0.3,
+    "downforce_area_m2": 3.0,
+    "drag_area_m2": 1.1,
+    "front_downforce_fraction": 0.45,
+    "minimum_contact_load_n": 1.0
+  },
+  "calibration_sha256": "016059acbfdb6232a5f0f6be40e657e06607aa8ccdf36dc5a7250e8b9cab997b",
+  "commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
+  "content_sha256": "2dc610c27b9219caf53759c0d8f1211a8b5d492b82758c04743997e099059b1e",
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.12.12"
+  },
+  "implementation_sha256": {
+    "TRANSPARENT_DRIVER.md": "1b751bb866a9027ece3e5192bc34b6f986f7d047ad4905f8e9804ed3c52f987f",
+    "aero_audit.py": "c6a7b4fec152a56c351973c36d14eccbcdfa783e1307c8b7b45f6420c80cfde6",
+    "aero_bicycle.py": "f725e4a844e065da44b93a376b7903a0318690eaaf87d12912c4e0458c9f6539",
+    "bicycle.py": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795",
+    "driver_audit.py": "b80236070222cf1f8933f4c07d9c88dbcc754f9cbec8271822ccd110343f629f",
+    "driver_study.py": "1f3911eae7788ec4a95cf63ace438de30739d40b93a0b29d26a6e4c4f8dd3717",
+    "transparent_driver.py": "3d3efeba83c1af99c30f651d855fd6a1410f69d87568f67f18ee3a101531dec9"
+  },
+  "production_promotion": false,
+  "profile": "research",
+  "r034_sha256": "8e6c5ae08b4768afd8311b7a3a82c055c482fcc88859607da774f84270f24092",
+  "recorded_sha256": "42cede289de897d6153ae3f66d84631de5394911fa979d5df453316b92912620",
+  "schema_version": "apex-transparent-driver-v1-calibration",
+  "selected": {
+    "fraction": 0.65,
+    "maximum_mps": 60.0
+  },
+  "test_outcomes_used": false,
+  "vehicle_parameters": {
+    "front_distance_m": 1.6,
+    "front_stiffness_nprad": 100000.0,
+    "gravity_mps2": 9.81,
+    "mass_kg": 900.0,
+    "max_axle_slip_rad": 0.5,
+    "max_sideslip_rad": 0.35,
+    "max_steering_rad": 0.6,
+    "max_vx_mps": 110.0,
+    "max_yaw_rate_radps": 2.0,
+    "min_vx_mps": 5.0,
+    "mu_x": 1.5,
+    "mu_y": 1.7,
+    "rear_distance_m": 2.0,
+    "rear_stiffness_nprad": 120000.0,
+    "yaw_inertia_kgm2": 1500.0
+  }
+}

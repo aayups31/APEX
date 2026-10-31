@@ -1,0 +1,286 @@
+[
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.27499999999715785,
+      0.11749999999903366
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "4",
+    "event_id": "F1_2024_R01",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 5094.875,
+    "lap_id": "F1_2024_R01_4_15",
+    "lap_number": 15,
+    "lap_start_s": 4997.963,
+    "max_gap_s": 0.819999999999709,
+    "native_row": 299,
+    "native_samples": 370,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5345.623216268791,
+    "raw_closure_gap_m": 8.505624609656428,
+    "role": "train",
+    "sector_durations_s": [
+      31.011,
+      42.058
+    ],
+    "track_id": "bahrain",
+    "unsupported_intervals": [
+      {
+        "end_s": 5083.428,
+        "endpoint_chord_m": 67.00358199380089,
+        "gap_s": 0.819999999999709,
+        "left_vertex": 329,
+        "right_vertex": 330,
+        "start_s": 5082.608
+      }
+    ]
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.11749999999903366,
+      0.511111111108304
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "4",
+    "event_id": "F1_2024_R01",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 5191.44,
+    "lap_id": "F1_2024_R01_4_16",
+    "lap_number": 16,
+    "lap_start_s": 5094.875,
+    "max_gap_s": 0.5199999999995271,
+    "native_row": 300,
+    "native_samples": 378,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5331.16086684565,
+    "raw_closure_gap_m": 5.633212721990662,
+    "role": "train",
+    "sector_durations_s": [
+      30.716,
+      42.031
+    ],
+    "track_id": "bahrain",
+    "unsupported_intervals": []
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.6583333333354175,
+      0.6952380952377756
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "44",
+    "event_id": "F1_2024_R01",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3801.6,
+    "lap_id": "F1_2024_R01_44_2",
+    "lap_number": 2,
+    "lap_start_s": 3703.327,
+    "max_gap_s": 0.6599999999998545,
+    "native_row": 343,
+    "native_samples": 391,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5339.03267431758,
+    "raw_closure_gap_m": 1.9140318253901751,
+    "role": "validation",
+    "sector_durations_s": [
+      31.287,
+      42.893
+    ],
+    "track_id": "bahrain",
+    "unsupported_intervals": []
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.6952380952377756,
+      0.3499999999988631
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "44",
+    "event_id": "F1_2024_R01",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3899.903,
+    "lap_id": "F1_2024_R01_44_3",
+    "lap_number": 3,
+    "lap_start_s": 3801.6,
+    "max_gap_s": 1.0399999999999636,
+    "native_row": 344,
+    "native_samples": 385,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5330.984156677887,
+    "raw_closure_gap_m": 6.795223182983046,
+    "role": "validation",
+    "sector_durations_s": [
+      31.062,
+      43.099
+    ],
+    "track_id": "bahrain",
+    "unsupported_intervals": [
+      {
+        "end_s": 3836.308,
+        "endpoint_chord_m": 45.035985611508494,
+        "gap_s": 0.9600000000000364,
+        "left_vertex": 140,
+        "right_vertex": 141,
+        "start_s": 3835.348
+      },
+      {
+        "end_s": 3874.368,
+        "endpoint_chord_m": 65.27671866753104,
+        "gap_s": 1.0399999999999636,
+        "left_vertex": 288,
+        "right_vertex": 289,
+        "start_s": 3873.328
+      }
+    ]
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.18500000000013073,
+      0.9733333333339397
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "4",
+    "event_id": "F1_2024_R16",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3525.181,
+    "lap_id": "F1_2024_R16_4_2",
+    "lap_number": 2,
+    "lap_start_s": 3439.723,
+    "max_gap_s": 1.081000000000131,
+    "native_row": 107,
+    "native_samples": 340,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5762.512343414121,
+    "raw_closure_gap_m": 2.3683879304229545,
+    "role": "train",
+    "sector_durations_s": [
+      27.676,
+      29.408
+    ],
+    "track_id": "monza",
+    "unsupported_intervals": [
+      {
+        "end_s": 3441.57,
+        "endpoint_chord_m": 96.8649059257273,
+        "gap_s": 1.081000000000131,
+        "left_vertex": 3,
+        "right_vertex": 4,
+        "start_s": 3440.489
+      }
+    ]
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.9733333333339397,
+      0.7625000000003908
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "4",
+    "event_id": "F1_2024_R16",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3610.291,
+    "lap_id": "F1_2024_R16_4_3",
+    "lap_number": 3,
+    "lap_start_s": 3525.181,
+    "max_gap_s": 0.6799999999998363,
+    "native_row": 108,
+    "native_samples": 324,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5754.3722666269605,
+    "raw_closure_gap_m": 5.805904370185672,
+    "role": "train",
+    "sector_durations_s": [
+      27.513,
+      29.381
+    ],
+    "track_id": "monza",
+    "unsupported_intervals": []
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.7136363636362321,
+      0.6392857142855692
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "44",
+    "event_id": "F1_2024_R16",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3526.469,
+    "lap_id": "F1_2024_R16_44_2",
+    "lap_number": 2,
+    "lap_start_s": 3440.426,
+    "max_gap_s": 1.081000000000131,
+    "native_row": 213,
+    "native_samples": 344,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5784.800445309399,
+    "raw_closure_gap_m": 5.015804662013709,
+    "role": "validation",
+    "sector_durations_s": [
+      27.701,
+      29.754
+    ],
+    "track_id": "monza",
+    "unsupported_intervals": [
+      {
+        "end_s": 3441.57,
+        "endpoint_chord_m": 96.16756209866193,
+        "gap_s": 1.081000000000131,
+        "left_vertex": 1,
+        "right_vertex": 2,
+        "start_s": 3440.489
+      }
+    ]
+  },
+  {
+    "boundary_samples": 2,
+    "boundary_truth": "BOUNDED_LINEAR_RECONSTRUCTION_FROM_NATIVE_POS",
+    "boundary_weights": [
+      0.6392857142855692,
+      0.7450000000006934
+    ],
+    "chord_phase_truth": "RECONSTRUCTED_CHORD_PARAMETER; lower-bound distance across missing intervals",
+    "driver_id": "44",
+    "event_id": "F1_2024_R16",
+    "interval_policy": "V2_NATIVE_VERTICES_WITH_EXPLICIT_UNSUPPORTED_INTERVALS",
+    "lap_end_s": 3612.099,
+    "lap_id": "F1_2024_R16_44_3",
+    "lap_number": 3,
+    "lap_start_s": 3526.469,
+    "max_gap_s": 0.6799999999998363,
+    "native_row": 214,
+    "native_samples": 326,
+    "native_truth": "FASTF1_PARSED_SOURCE; upstream reconstruction possible",
+    "position_scale_m_per_unit": 0.1,
+    "raw_chord_length_m": 5760.934104141848,
+    "raw_closure_gap_m": 0.7908872117168787,
+    "role": "validation",
+    "sector_durations_s": [
+      27.495,
+      29.688
+    ],
+    "track_id": "monza",
+    "unsupported_intervals": []
+  }
+]
