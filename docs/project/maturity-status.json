@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 29,
+    "done": 30,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R030"
+    "R031"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -231,6 +231,56 @@
       "existing_dependency_warnings": 2,
       "seconds": 470.78,
       "output_root": ".cache/r027-r028-full-fp64-20261031"
+    }
+  },
+  "longitudinal_calibration_study": {
+    "backlog_id": "R030",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_LONGITUDINAL_CALIBRATION",
+    "scope": "High-speed full-throttle low-curvature recorded-control section replay; research only",
+    "report": "docs/verification/longitudinal-calibration-report.md",
+    "model_card": "docs/models/longitudinal-calibration-v1.md",
+    "evidence": "docs/verification/longitudinal-calibration-evidence.json",
+    "summary_sha256": "46e854809b2b22ecc89ba8e91713c3bf167f0191a316cfd39fe126e3faf4d286",
+    "evidence_content_sha256": "bac796f97986aa8d2fe3d5d559913edce939c414471ef528af622a80148155ae",
+    "dataset_sha256": "2559478bf6a00a40f1850222035a86bf0046e14b857d1c81973513e209b3b9ab",
+    "development_sha256": "82fc70acfef2a5c730ba908d6659ff35a1730aac1d5663612029c03333081e99",
+    "selected_model": "shared_drag",
+    "source_sections": 150,
+    "test_sections": 33,
+    "test_laps": 18,
+    "test_speed_rmse_mps": 1.1097620503511452,
+    "best_baseline_rmse_mps": 1.9177059286660518,
+    "rmse_improvement_over_best_baseline": 0.42130749362437914,
+    "scientific_reload_maximum_difference_mps": 0.0,
+    "independent_dop853_maximum_difference_mps": 6.658638085355051e-10,
+    "parameter_band_test_coverage": 0.35014005602240894,
+    "drs_effect_identified": false,
+    "prediction_intervals_calibrated": false,
+    "promotion": false,
+    "implementation_ci_run": 41214310018,
+    "implementation_ci_python_versions": [
+      "3.11",
+      "3.12"
+    ],
+    "limitations": [
+      "Effective ratios confound mass/ERS/wind/grade/setup; absolute power and CdA UNKNOWN",
+      "One held-out event and two drivers; reused development data and supplied offline registered geometry",
+      "Full-throttle high-speed straights only; braking/lateral/low-speed/full-lap control remain unvalidated",
+      "DRS-specific class rank deficient; no imputed causal DRS effect",
+      "Parameter-only bands cover35% of observed nodes;11/33 initial speeds outside training ranges retained",
+      "No production or formal R2/R3 maturity promotion"
+    ],
+    "tests": 607,
+    "local_full_regression": {
+      "date": "2026-10-31",
+      "python": "3.12.12",
+      "platform": "Windows",
+      "passed": 607,
+      "existing_dependency_warnings": 2,
+      "seconds": 399.95,
+      "output_root": ".cache/r030-final-regression-20261031"
     }
   }
 }

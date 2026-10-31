@@ -92,8 +92,17 @@ gates, including 24 additional confirmation laps. Missing observations and inval
 derivative stencils remain explicit; all native XY points are evaluated. Earlier
 failed studies remain preserved. Results concern registered public-source shape;
 surveyed boundaries and production promotion remain separate. See the
-[run card](docs/models/reference-geometry-v3.md). Longitudinal calibration is now
-dependency-ready and resumes next after completed R027/R028.
+[run card](docs/models/reference-geometry-v3.md).
+
+The [R030 longitudinal calibration](docs/verification/longitudinal-calibration-report.md)
+fits effective power/drag ratios and tests recorded-control speed replay on
+high-speed full-throttle straights. Frozen event splits yield33 held-out sections:
+speed RMSE1.11m/s versus1.92m/s for the strongest matched baseline. Native
+source replay, independent integration and uncertainty/support diagnostics are
+saved. Parameter-only bands are not calibrated prediction intervals; full-car
+physics and production promotion remain separate. See the
+[model/run guide](docs/models/longitudinal-calibration-v1.md). R031 lateral
+dynamics and friction-ellipse validation is next.
 
 ---
 
