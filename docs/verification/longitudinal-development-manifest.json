@@ -1,0 +1,151 @@
+{
+  "content_sha256": "cdbc76d20bdbad4066c33fcf9756024269847808ad9fafbcfbe6620b8b63b36e",
+  "files": {
+    "bootstrap_models.json": {
+      "bytes": 836808,
+      "sha256": "553d968755a324af7b415bf92304bb6977f5214dee7bbd258b5fc8a17e36bfd8"
+    },
+    "dataset/geometry/bahrain_geometry_predictions.npz": {
+      "bytes": 2135374,
+      "sha256": "53a4a45965f92fee290a2b6b8ed7b6b58ce5be9264e7cb4bc9a3c30184454f66"
+    },
+    "dataset/geometry/bahrain_lap_inputs.npz": {
+      "bytes": 216343,
+      "sha256": "a7910b04b4d674c7a811b24c165456b386ad31e2e11c2e406e50edf6366c8c74"
+    },
+    "dataset/geometry/bahrain_lap_metadata.json": {
+      "bytes": 76997,
+      "sha256": "a69d926c02c3186db80f097b08a7ec1a37832d811dd897484ae93f6247cbc0fc"
+    },
+    "dataset/geometry/manifest.json": {
+      "bytes": 1315,
+      "sha256": "f89a3384eb3d6d7556db04aa855da645764424f689ec509cf7ae0b9fa120f3ed"
+    },
+    "dataset/geometry/monza_geometry_predictions.npz": {
+      "bytes": 2013360,
+      "sha256": "58c7915ded7cbc3ec937f479b30922e26fec849129e678db2513b6824267c499"
+    },
+    "dataset/geometry/monza_lap_inputs.npz": {
+      "bytes": 199413,
+      "sha256": "01c8c8597b93963e6711375fbe1dfdd8ffc55b433fa30ad7d4903dfeb034abe7"
+    },
+    "dataset/geometry/monza_lap_metadata.json": {
+      "bytes": 71833,
+      "sha256": "eb1b401f10266a0a00d2839c966a9df54ffda76c76a9feb5e61b352756b4c704"
+    },
+    "dataset/geometry/summary.json": {
+      "bytes": 471290,
+      "sha256": "20ab23d99a09c698f390186412772dfe41a56ee5171ccbf5071b2eb1bd80dd13"
+    },
+    "dataset/manifest.json": {
+      "bytes": 5028,
+      "sha256": "47989262407bc21a76bbeba990ae0177ea8c12e146b2d1ebc655ec5d755ecada"
+    },
+    "dataset/native/F1_2023_R01/manifest.json": {
+      "bytes": 12024,
+      "sha256": "7f7d7c68e8fffc4ced3e163b2b162fb86b750eb3cce7b0c6559bb5fd05c3a317"
+    },
+    "dataset/native/F1_2023_R01/tables/car_data/4.parquet": {
+      "bytes": 887476,
+      "sha256": "20068b2ee7da85a7c5d1a847f2faf2756cbed3e710777d86a4ec1a0a42e2fa1c"
+    },
+    "dataset/native/F1_2023_R01/tables/car_data/44.parquet": {
+      "bytes": 888476,
+      "sha256": "753d3b90b08435b44a021bd1ea0abefa9e349f177ac0678f42e4c817336e4d44"
+    },
+    "dataset/native/F1_2023_R01/tables/laps.parquet": {
+      "bytes": 92480,
+      "sha256": "7ae94007dd8ece3bc92207fc23608357e87655cea508212f9f83f8ab594699ce"
+    },
+    "dataset/native/F1_2023_R14/manifest.json": {
+      "bytes": 12044,
+      "sha256": "ddb440ac73bf69249331826d8e359c1650bcad13aa2adb8ccaeae02be2c65ce0"
+    },
+    "dataset/native/F1_2023_R14/tables/car_data/4.parquet": {
+      "bytes": 902177,
+      "sha256": "b37c605c8789bb5d2bc63e4fdb4290f575dcf476a963056a40ba2ba71e28eecd"
+    },
+    "dataset/native/F1_2023_R14/tables/car_data/44.parquet": {
+      "bytes": 907204,
+      "sha256": "85a490af67ae542a8c5f4fbd5e67d60e5bad29d67f0ac4af896889afff15a0d3"
+    },
+    "dataset/native/F1_2023_R14/tables/laps.parquet": {
+      "bytes": 82783,
+      "sha256": "70d71eed8aa0ee478e899e1cd4eaf973848399fe046b45bcf5b8b2ed667e2483"
+    },
+    "dataset/native/F1_2024_R01/manifest.json": {
+      "bytes": 12021,
+      "sha256": "85e17a681af177681a07a7a890ea276609edc7e0e30a29ed2a9dc47e22653784"
+    },
+    "dataset/native/F1_2024_R01/tables/car_data/4.parquet": {
+      "bytes": 854281,
+      "sha256": "7716b862c5d30f86e6381fe90c2fa12d818aef63cea4c63d978f21bd8bbf7116"
+    },
+    "dataset/native/F1_2024_R01/tables/car_data/44.parquet": {
+      "bytes": 859036,
+      "sha256": "61d4a5ced4888712e9ad49341ecfa07e699cad65f5e94f84cffa0c5116c7da5d"
+    },
+    "dataset/native/F1_2024_R01/tables/laps.parquet": {
+      "bytes": 95261,
+      "sha256": "3a3953a911bf5cc94c453bcca21e49fb808d54588118807d32b496efe68745e2"
+    },
+    "dataset/native/F1_2024_R16/manifest.json": {
+      "bytes": 12026,
+      "sha256": "522f161f9609962e09e6b7ae15cb8ee3b8d19f07eedafa47f31b83184bc9e203"
+    },
+    "dataset/native/F1_2024_R16/tables/car_data/4.parquet": {
+      "bytes": 779453,
+      "sha256": "b64cd45d261b4e3d5f9f15cfd9ba609d9d07adaeb641666650a412a1ae9c42de"
+    },
+    "dataset/native/F1_2024_R16/tables/car_data/44.parquet": {
+      "bytes": 783748,
+      "sha256": "3d87d03d713e5a31554f9c2dbe80fbf6195f912ed0537d7af1d04ee5ff5852e3"
+    },
+    "dataset/native/F1_2024_R16/tables/laps.parquet": {
+      "bytes": 86397,
+      "sha256": "7c53a412aa39376ea4bab423418bc040eeb9ba6c6b97507168160ba3b8f1698d"
+    },
+    "dataset/protocol.md": {
+      "bytes": 10899,
+      "sha256": "39879870569846075cb03d3cea2da92a83d80da9ea0b894f71fa508595951886"
+    },
+    "dataset/quality.json": {
+      "bytes": 39009,
+      "sha256": "7a7482373ab0111491faaa50b7f1a30331a2f0ccf9b4405d22b029d84ebf2ca8"
+    },
+    "dataset/rejections.json": {
+      "bytes": 3097407,
+      "sha256": "03f6b37fabb3d15ee3e282660f1aff6f7db10fe50f44440d32729c35b5ef1b38"
+    },
+    "dataset/section_metadata.json": {
+      "bytes": 74992,
+      "sha256": "b52c9d8154fd4fe6a50740573f310a1dcb22bdc904e1ff1f947d445874c5152f"
+    },
+    "dataset/sections.npz": {
+      "bytes": 282679,
+      "sha256": "1bcda3d5db4c5f3e120fd91ed9803fa80897729817f6a053f42312811de6d949"
+    },
+    "dataset/summary.json": {
+      "bytes": 2200,
+      "sha256": "af768933143c0bfcf16937cdad34f9ca0b678c5798b8c559995eeec705144f1a"
+    },
+    "models.json": {
+      "bytes": 132588,
+      "sha256": "44683bb70fb44536c68bd38299742ba8d3b18833daa2ba430c9f9c0eb8bcdc0e"
+    },
+    "protocol.md": {
+      "bytes": 10899,
+      "sha256": "39879870569846075cb03d3cea2da92a83d80da9ea0b894f71fa508595951886"
+    },
+    "summary.json": {
+      "bytes": 1412,
+      "sha256": "f07a353d7336f67b119ab913420c84c770b7c03e5db168d865d81e822176e5b8"
+    },
+    "validation_predictions.npz": {
+      "bytes": 48813,
+      "sha256": "6ee241a0fb2ef5a386d9bbf220f393d3934d6251fbc9465d4737fa13d7ee9763"
+    }
+  },
+  "schema_version": "apex-longitudinal-calibration-v1-development-manifest",
+  "summary_sha256": "82fc70acfef2a5c730ba908d6659ff35a1730aac1d5663612029c03333081e99"
+}

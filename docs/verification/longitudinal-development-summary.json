@@ -1,0 +1,31 @@
+{
+  "bootstrap_sha256": "e184c0174031e1a32d2c2472354fb41e6b422d3108e26f500774481ee0692260",
+  "commit": "bfbcba15ec8e46170d8382846704eaf762d2731f",
+  "content_sha256": "82fc70acfef2a5c730ba908d6659ff35a1730aac1d5663612029c03333081e99",
+  "dataset_sha256": "2559478bf6a00a40f1850222035a86bf0046e14b857d1c81973513e209b3b9ab",
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.12.12",
+    "scipy": "1.18.1"
+  },
+  "implementation_sha256": {
+    "longitudinal_calibration.py": "bd9b1a91d47250a854b015696d796a8e885b7b632afa1e21dcb7ba63686a0a89",
+    "longitudinal_data.py": "143162182219661fa174493ff0414afda8d2935342a0924e14cdc161e5aa152c",
+    "longitudinal_scores.py": "97dda832e8d30339a987fca2cde4fb324cac79f172b348c657fccf94c70c861d",
+    "longitudinal_study.py": "bc3989ecb5a5340b0425d1b69d824a606ba056893d77a8e3e67bfe6ff60202d4"
+  },
+  "models_sha256": "598d646b23e1eeb8ea0d6a88a5f2f4d54656ef7af91e4de01597abc2460c713b",
+  "profile": "research",
+  "promotion": false,
+  "schema_version": "apex-longitudinal-calibration-v1-development",
+  "selected": "shared_drag",
+  "task_closure_eligible": false,
+  "test_outcomes_used": false,
+  "validation_rmse_mps": {
+    "constant_acceleration": 3.817248912718542,
+    "constant_speed": 4.964100685395786,
+    "legacy_huber": 2.628754464050439,
+    "physical_prior": 3.7638611757897342,
+    "shared_drag": 1.4163897101588392
+  }
+}
