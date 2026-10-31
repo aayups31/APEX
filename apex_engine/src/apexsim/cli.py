@@ -604,6 +604,33 @@ def verify_longitudinal_calibration_command(output: Path) -> None:
     typer.echo(json.dumps(verify_longitudinal_study(output), indent=2))
 
 
+@app.command("aero-load-study")
+def aero_load_study_command(output: Annotated[Path, typer.Option()]) -> None:
+    """R032 synthetic aero/load-transfer sensitivity and identifiability evidence."""
+    from apexsim.examples.aero_study import run_aero_study
+
+    result = run_aero_study(output)
+    typer.echo(json.dumps(result, indent=2))
+    if not result["task_closure_eligible"]:
+        raise typer.Exit(code=1)
+
+
+@app.command("verify-aero-load-study")
+def verify_aero_load_study_command(output: Path) -> None:
+    """Regenerate all coupled-load equations, sensitivity and synthetic trajectories."""
+    from apexsim.examples.aero_study import verify_aero_study
+
+    typer.echo(json.dumps(verify_aero_study(output), indent=2))
+
+
+@app.command("audit-aero-load-study")
+def audit_aero_load_study_command(output: Path) -> None:
+    """Independently integrate coupled-load dynamics with bisection and DOP853."""
+    from apexsim.examples.aero_study import audit_aero_study
+
+    typer.echo(json.dumps(audit_aero_study(output), indent=2))
+
+
 @app.command("bicycle-dynamics-study")
 def bicycle_dynamics_study_command(output: Annotated[Path, typer.Option()]) -> None:
     """Run R031 synthetic force/stability acceptance; no public cornering calibration."""
