@@ -1,0 +1,52 @@
+{
+  "atol_kj": 1e-07,
+  "cohort_sha256": "459c031ae0127fcf486a0bc3e2c42f32aa46b2213346e9b1a333743b24bb8312",
+  "content_sha256": "ffcae250cd060a47add69385c029cb6eeb06b08b9e4345320f0e73f229c49254",
+  "models": {
+    "gru_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 3.552713678800501e-15
+    },
+    "gru_seed23": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 3.552713678800501e-15
+    },
+    "linear_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 0.0
+    },
+    "lstm_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 3.552713678800501e-15
+    },
+    "lstm_seed23": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 3.552713678800501e-15
+    },
+    "ridge_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 0.0
+    },
+    "tft_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 6.217248937900877e-15
+    },
+    "tft_seed23": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 3.552713678800501e-15
+    },
+    "xgboost_seed11": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 0.0
+    },
+    "xgboost_seed23": {
+      "failed_cells": 0,
+      "maximum_batch_difference_kj": 0.0
+    }
+  },
+  "origins": 128,
+  "passed": true,
+  "rtol": 1e-06,
+  "schema_version": "apex-forecast-explanation-numerical-preflight-v1",
+  "scientific_outcomes_used": false
+}

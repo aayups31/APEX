@@ -76,7 +76,7 @@ def test_every_checkpoint_family_works_with_temporal_black_box_interface(study):
             assert all(np.isfinite(v).all() for v in arrays.values())
             batch = predictor(x[:8], static[:8])
             separate = np.concatenate([predictor(x[i:i+1], static[i:i+1]) for i in range(8)])
-            np.testing.assert_array_equal(batch, separate)
+            np.testing.assert_allclose(batch, separate, rtol=1e-12, atol=1e-12)
         assert torch.equal(rng_before, torch.random.get_rng_state())
     finally:
         torch.set_num_threads(old)

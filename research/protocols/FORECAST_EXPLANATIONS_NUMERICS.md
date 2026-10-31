@@ -36,3 +36,21 @@ models use the older saved-checkpoint loader, with the same32-row padding for
 neural inference. No cohort, donor, scenario,
 faithfulness, support, crossing or acceptance threshold changes. Rerun the same
 frozen cohort to a fresh output directory. Both protocol documents accompany it.
+
+## Real-data preflight correction, 2026-10-31
+
+The fixed32-row shape passed synthetic-checkpoint tests but the second public
+attempt (`.cache/r027-r028-research-stable-20261030`, preserved incomplete) still
+stopped at the unchanged invariant for GRU. Row position/other-batch-content
+rounding remains visible in native float32 CPU inference. That proposed neural
+fix is superseded, not treated as accepted evidence.
+
+Evaluate loaded GRU/LSTM/TFT weights in **float64**, after the same frozen float32
+input normalization. Casting preserves every stored coefficient value exactly;
+there is no retraining, input change or output adjustment. Use at most256 rows
+per inference chunk. Independently instantiate/reload the architecture and
+evaluate selected scenarios in float64 in the audit. The original historical
+float32 loaders/results remain unchanged, and every model's maximum historical
+baseline drift remains reported. Add a complete128-origin, ten-real-checkpoint
+batch2-vs128 numerical preflight before another public run. The original replay
+tolerance and all scientific gates, cohorts, donors and scenarios remain fixed.

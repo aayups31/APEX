@@ -292,7 +292,7 @@ def evaluate_study(reference: Path, evaluation: Path, cohort: dict,
             reports[name] = {"kind": record["kind"], "cases": cases, "raw_output_projection": projection,
                              "maximum_baseline_difference_to_original_r026_kj": float(np.max(abs(base_raw-original_baselines[name]))),
                              "inference_accumulation": "FP64_FIXED_ROW_EINSUM" if record["kind"] in ("linear", "ridge") else
-                                                       "NATIVE_FP32_FIXED_PADDED_BATCH32" if record["kind"] in ("gru", "lstm", "tft") else "FROZEN_NATIVE_MODEL",
+                                                       "FP64_NEURAL_UNCHANGED_FROZEN_WEIGHTS" if record["kind"] in ("gru", "lstm", "tft") else "FROZEN_NATIVE_MODEL",
                              "aggregates": _aggregate(cases, metadata, ref["vocabulary"]["track_id"])}
             raw_outputs[name] = arrays
     finally:

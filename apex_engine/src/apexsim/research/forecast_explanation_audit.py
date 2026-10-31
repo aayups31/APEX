@@ -15,7 +15,13 @@ from scipy.stats import spearmanr
 
 from apexsim.examples.forecast_explanation_study import VERSION, _input_metadata, _verify_inventory
 from apexsim.examples.tyre_forecast_benchmark import checkpoint_prediction
-from apexsim.research.forecast_benchmark import EVENTS, ForecastScaler, ForecastWindows, flat_features
+from apexsim.research.forecast_benchmark import (
+    EVENTS,
+    ForecastScaler,
+    ForecastWindows,
+    flat_features,
+    neural_model,
+)
 from apexsim.research.tyre_energy import TyreEnergyInputs, estimate_wheel_tyre_energy
 
 
@@ -160,15 +166,17 @@ def independent_explanation_audit(output: Path) -> dict:
                             loaded = scaler.inverse((features @ weights["coef"].astype(float).T+
                                                      weights["intercept"].astype(float)).reshape(-1, 3, 4))
                     elif record["kind"] in ("gru", "lstm", "tft"):
-                        parts = []
-                        for start in range(0, len(chosen_x), 32):
-                            rows = np.arange(start, min(start+32, len(chosen_x)))
-                            count = len(rows)
-                            rows = np.pad(rows, (0, 32-count), mode="edge")
-                            chunk = ForecastWindows(data.dynamic[rows], data.static[rows], np.zeros((32, 3, 4)),
-                                                    [{} for _ in range(32)], ref["vocabulary"])
-                            parts.append(checkpoint_prediction(checkpoint, record, chunk, scaler)[:count])
-                        loaded = np.concatenate(parts)
+                        widths = data.static_widths
+                        with torch.random.fork_rng(devices=[]):
+                            model = neural_model(record["kind"], widths, record["hidden"])
+                            model.load_state_dict(torch.load(checkpoint, map_location="cpu", weights_only=True))
+                        model.to(dtype=torch.float64).eval()
+                        with torch.no_grad():
+                            values = model(torch.as_tensor(scaler.inputs(data), dtype=torch.float64),
+                                           torch.as_tensor(data.static, dtype=torch.float64))
+                        if record["kind"] == "tft":
+                            values = values[..., 1]
+                        loaded = scaler.inverse(values.numpy())
                     else:
                         loaded = checkpoint_prediction(checkpoint, record, data, scaler)
                     if not np.allclose(loaded, expected, rtol=1e-6, atol=1e-7):
@@ -182,7 +190,7 @@ def independent_explanation_audit(output: Path) -> dict:
                 raise ValueError("Independent joint-seed counterfactual audit failed")
     finally:
         torch.set_num_threads(old_threads)
-    return {"verified": True, "audit": "INDEPENDENT_EQUATIONS_SCALAR_CATALOGUE_OLDER_NATIVE_LOADER_AND_FP64_LINEAR_COEFFICIENTS",
+    return {"verified": True, "audit": "INDEPENDENT_EQUATIONS_SCALAR_CATALOGUE_AND_SEPARATE_FP64_WEIGHT_RELOAD",
             "origins": len(x), "methods": len(stored["models"]), "valid_counterfactual_successes": cf_successes,
             "reliable_model_diagnostics": reliable, "selected_learned_scenario_reloads": reloads,
             "maximum_selected_reload_difference_kj": max_difference, "promotion": False}

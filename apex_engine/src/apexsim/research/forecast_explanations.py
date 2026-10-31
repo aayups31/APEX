@@ -23,7 +23,6 @@ from apexsim.research.forecast_benchmark import (
     NativeBoostRegressor,
     flat_features,
     neural_model,
-    neural_prediction,
     project_nonnegative,
     statistical_prediction,
     transparent_prediction,
@@ -150,7 +149,7 @@ class FrozenForecastPredictor:
             with torch.random.fork_rng(devices=[]):
                 self.model = neural_model(self.kind, widths, record["hidden"])
                 self.model.load_state_dict(torch.load(path, map_location="cpu", weights_only=True))
-            self.model.eval()
+            self.model.to(dtype=torch.float64).eval()
         else:
             raise ValueError("Unknown frozen explanation model family")
 
@@ -168,17 +167,19 @@ class FrozenForecastPredictor:
             return self.scaler.inverse(result.reshape(n, 3, 4))
         if self.kind == "xgboost":
             return statistical_prediction(self.model, data, self.scaler)
-        # CPU neural GEMM kernels also vary rounding with batch shape. Always use
-        # 32 rows, padding the final chunk with its last row and discarding padding.
+        # Preserve the frozen float32 normalization, then evaluate the unchanged
+        # fitted weights in FP64. This suppresses batch/row-dependent FP32 roundoff.
+        normalized = self.scaler.inputs(data)
         values = []
-        for start in range(0, n, 32):
-            indices = np.arange(start, min(start+32, n))
-            count = len(indices)
-            indices = np.pad(indices, (0, 32-count), mode="edge")
-            chunk = ForecastWindows(dynamic[indices], static[indices], np.zeros((32, 3, 4)),
-                                    [{} for _ in range(32)], self.vocabulary)
-            values.append(neural_prediction(self.model, self.kind, chunk, self.scaler)[:count])
-        return np.concatenate(values)
+        with torch.no_grad():
+            for start in range(0, n, 256):
+                inputs = torch.from_numpy(normalized[start:start+256]).to(dtype=torch.float64)
+                categories = torch.from_numpy(static[start:start+256]).to(dtype=torch.float64)
+                predicted = self.model(inputs, categories)
+                if self.kind == "tft":
+                    predicted = predicted[..., 1]
+                values.append(predicted.cpu().numpy())
+        return self.scaler.inverse(np.concatenate(values))
 
 
 def replace_players(history: np.ndarray, donor: np.ndarray, indices: tuple[int, ...]) -> np.ndarray:
