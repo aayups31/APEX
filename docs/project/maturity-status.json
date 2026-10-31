@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 30,
+    "done": 31,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R031"
+    "R032"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -282,5 +282,46 @@
       "seconds": 399.95,
       "output_root": ".cache/r030-final-regression-20261031"
     }
+  },
+  "bicycle_dynamics_study": {
+    "backlog_id": "R031",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_BICYCLE_FORCE_STABILITY",
+    "scope": "Synthetic planar bicycle with static axle loads and longitudinal-priority friction ellipse",
+    "report": "docs/verification/bicycle-dynamics-report.md",
+    "model_card": "docs/models/bicycle-dynamics-v1.md",
+    "evidence": "docs/verification/bicycle-dynamics-evidence.json",
+    "summary_sha256": "8525ea3405407e0006d5d6cde0a9a627ab8c90f6b94c87802c77ddaa066ddda2",
+    "evidence_content_sha256": "68a2d744406a767e30e8988b5c6a418be1d5fab46c4c24bcfe7fe4d46c267f30",
+    "input_truth": "SYNTHETIC",
+    "parameter_truth": "GENERIC_PRIOR",
+    "supported_cases": 13,
+    "abstention_challenges": 1,
+    "force_grid_points": 420,
+    "scientific_reload_maximum_difference_si": 0.0,
+    "maximum_independent_lateral_speed_difference_mps": 0.000026744552973134716,
+    "independent_yaw_support_exit_s": 0.5922461624125949,
+    "promotion": false,
+    "implementation_commit": "f71b3689b32a8999af8ee990c08eafaa63cea743",
+    "implementation_ci_run": 41220708362,
+    "implementation_ci_python_versions": ["3.11", "3.12"],
+    "tests": 634,
+    "local_full_regression": {
+      "date": "2026-10-31",
+      "python": "3.12.12",
+      "platform": "Windows",
+      "passed": 634,
+      "existing_dependency_warnings": 2,
+      "seconds": 556.24,
+      "log": ".cache/r031-final-regression.log"
+    },
+    "limitations": [
+      "Generic priors and synthetic evidence; actual lateral parameters and controls uncalibrated",
+      "Static axle loads; no aero/load transfer/wheel spin or thermal model",
+      "Full-rear saturation challenge abstains at yaw support; boundary clarification disclosed after first campaign",
+      "Local linear stability and independent numerical agreement do not establish real-car accuracy",
+      "No public cornering uncertainty, autonomous lap, production or formal maturity promotion"
+    ]
   }
 }

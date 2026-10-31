@@ -47,7 +47,9 @@ independent reviewer should be able to reproduce the claims and reject weak ones
 R026 tests transfer to seen and unseen circuits with frozen forecasters. R029
 reference reconstruction and R027/R028's scoped model explanation/conditional
 counterfactual study are accepted. R030's bounded high-speed/full-throttle
-longitudinal calibration is accepted; R031 lateral dynamics/friction ellipse is
+longitudinal calibration is accepted; R031's synthetic lateral dynamics/friction
+ellipse force and stability gate is complete, including an explicit unsupported
+rear-saturation challenge. R032 aero balance/load transfer and sensitivity are
 next. Calibrated prediction uncertainty and real-car intervention validity remain
 unestablished. Historical
 replay and closed-loop stability follow their existing backlog dependencies.

@@ -18,6 +18,8 @@ This directory contains recorded verification results for major stages of APEX.
 - [FIENI equations, hand calculations and exact tiny-grid oracle](fieni-foundation-report.md)
 - [R021/R022 fuel-corrected pace and hierarchical prediction](tyre-degradation-report.md)
 - [R024 public tyre-energy proxy dataset and provenance](tyre-energy-dataset-report.md)
+- [R030 high-speed longitudinal calibration](longitudinal-calibration-report.md)
+- [R031 synthetic bicycle forces, stability and support rejection](bicycle-dynamics-report.md)
 
 ## Purpose
 

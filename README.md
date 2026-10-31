@@ -101,8 +101,16 @@ speed RMSE1.11m/s versus1.92m/s for the strongest matched baseline. Native
 source replay, independent integration and uncertainty/support diagnostics are
 saved. Parameter-only bands are not calibrated prediction intervals; full-car
 physics and production promotion remain separate. See the
-[model/run guide](docs/models/longitudinal-calibration-v1.md). R031 lateral
-dynamics and friction-ellipse validation is next.
+[model/run guide](docs/models/longitudinal-calibration-v1.md).
+
+The [R031 bicycle model](docs/verification/bicycle-dynamics-report.md) adds
+steering/yaw dynamics and axle-level combined grip, with synthetic force, energy,
+stability and independent integration checks. Thirteen supported cases pass;
+one unchanged full-rear-drive challenge explicitly rejects at its yaw support
+limit. All 634 tests pass. These are generic-prior equation checks, with no
+public cornering calibration or production promotion. See the
+[model/run guide](docs/models/bicycle-dynamics-v1.md). Next is R032 aero balance
+and load transfer, followed by full recorded-control/state alignment and replay.
 
 ---
 

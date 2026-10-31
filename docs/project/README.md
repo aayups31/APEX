@@ -36,7 +36,7 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 30/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 31/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
 R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
 adds independent temporal faithfulness tests and finite-catalogue counterfactual
@@ -46,8 +46,12 @@ checks. Full real-car intervention feasibility remains UNKNOWN.
 R030's [accepted longitudinal calibration](../verification/longitudinal-calibration-report.md)
 reduces held-out high-speed/full-throttle section error42.1% versus its strongest
 baseline. Effective ratios, unsupported DRS identification and parameter-only
-uncertainty limitations are explicit. The next dependency is R031 bicycle lateral
-dynamics and friction ellipse; full-car replay and closed-loop gates remain open.
+uncertainty limitations are explicit. R031's
+[bicycle force/stability study](../verification/bicycle-dynamics-report.md)
+is complete on synthetic priors: 13 supported paths and one preserved yaw-limit
+abstention challenge, with 634 passing tests and independent numerical replay.
+R032 aero balance/load transfer and its sensitivity/identifiability gate are next;
+public cornering calibration, full-car replay and closed-loop gates remain open.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 
