@@ -29,7 +29,7 @@ R027,R2,P1,XAI,Implement temporal perturbation/TIME-like explanations,forecast m
 R028,R2,P1,XAI,Implement feasible counterfactual explanations,forecast models,counterfactual validity tests,DONE
 R029,R3,P0,track,Reconstruct curvilinear track from public position data,event manifests,closure and curvature error gates,DONE
 R030,R3,P0,vehicle,Calibrate longitudinal acceleration/drag model,track + telemetry,held-out section error beats baseline,DONE
-R031,R3,P0,vehicle,Add bicycle lateral dynamics and friction ellipse,longitudinal model,force and stability tests,TODO
+R031,R3,P0,vehicle,Add bicycle lateral dynamics and friction ellipse,longitudinal model,force and stability tests,IN_PROGRESS
 R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/identifiability report,TODO
 R033,R3,P0,replay,Align recorded controls and engine state,canonical replay,coverage > declared threshold,TODO
 R034,R3,P0,replay,Report section/lap/stint open-loop errors,alignment,matched horizons and regimes,TODO
