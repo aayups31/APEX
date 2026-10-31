@@ -60,10 +60,18 @@ subtracted a second time. This contact-patch/force-height convention is explicit
 Tyre forces use R031's axle ellipse/tanh law evaluated at the solved loads.
 Solve `g(Fzf)=Fzf-base+h*T_x(Fzf)/(a+b)=0` on
 `[minimum_contact_load,N-minimum_contact_load]`, default minimum 1 N.
-For uniqueness, enforce
-`h/(a+b) * [mu_x*(1+abs(cos(delta)))+mu_y*abs(sin(delta))] < .9`.
-The term bounds the tyre-wrench load derivative, so g is strictly increasing.
-Outside that sufficient condition abstain, rather than choose an arbitrary root.
+For uniqueness, enclose every possible root in
+`I=[base-h*Tmax/L,base+h*Tmax/L]` intersected with the contact domain, with
+`Tmax=(mu_x+mu_y*abs(sin(delta)))*N`. On I, the rear Fx slope is <=mu_x.
+For steered front forces: if the request is fully saturated throughout I, the
+front body-x slope is <=mu_x*abs(cos(delta)); if fully unsaturated throughout I,
+the slope is <=mu_y*abs(sin(delta))/sqrt(1-(Fx_req/(mu_x*I_lower))²).
+Require h/L times the summed front/rear bounds <.9. At zero steer use2*mu_x;
+at zero h the load is explicit. If the front saturation threshold crosses I,
+abstain. These are conservative sufficient conditions, not global stability.
+This corrects the initial draft's constant lateral-slope bound during algebra
+review before study outcomes: a fixed-Fx ellipse has an unbounded normal-load
+slope near partial saturation. No numerical accuracy gate is changed.
 No bracket means loss of contact/support; reject rather than clamp loads.
 Use Brent root solve, xtol1e-9 N, rtol1e-12; report force/moment residuals.
 
