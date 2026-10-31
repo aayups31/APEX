@@ -83,7 +83,9 @@ def test_future_position_is_not_used_and_timing_anchors_are_not_native_observati
 def test_clock_disagreement_and_missing_channels_fail_closed():
     car, lap, geometry = native_fixture()
     bad = car.copy()
-    bad.loc[30, "Date"] = pd.Timestamp(bad.at[30, "Date"])+pd.Timedelta(milliseconds=2)
+    offsets = np.zeros(len(car), dtype=int)
+    offsets[30] = 2
+    bad["Date"] = car.Date+pd.to_timedelta(offsets, unit="ms")
     with pytest.raises(ValueError, match="clocks"):
         extract_sections(bad, lap, geometry)
     with pytest.raises(ValueError, match="channels"):
