@@ -30,7 +30,7 @@ R028,R2,P1,XAI,Implement feasible counterfactual explanations,forecast models,co
 R029,R3,P0,track,Reconstruct curvilinear track from public position data,event manifests,closure and curvature error gates,DONE
 R030,R3,P0,vehicle,Calibrate longitudinal acceleration/drag model,track + telemetry,held-out section error beats baseline,DONE
 R031,R3,P0,vehicle,Add bicycle lateral dynamics and friction ellipse,longitudinal model,force and stability tests,DONE
-R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/identifiability report,TODO
+R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/identifiability report,IN_PROGRESS
 R033,R3,P0,replay,Align recorded controls and engine state,canonical replay,coverage > declared threshold,TODO
 R034,R3,P0,replay,Report section/lap/stint open-loop errors,alignment,matched horizons and regimes,TODO
 R035,R4,P0,driver,Calibrate transparent driver policy,single-car replay,complete held-out laps,TODO
