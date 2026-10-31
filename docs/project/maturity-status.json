@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 34,
+    "done": 35,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R035"
+    "R037"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -359,6 +359,42 @@
       "Initial independent full-capacity arithmetic rejection and root endpoint failure are preserved; thresholds unchanged",
       "No public cornering accuracy, production or formal maturity promotion"
     ]
+  },
+  "transparent_conditional_driver": {
+    "backlog_id": "R035",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_CONDITIONAL_RESEARCH_DRIVER",
+    "scope": "Generated-action known-map six-state laps in generic-prior R032 physics; not real-car replay",
+    "report": "docs/verification/transparent-driver-report.md",
+    "model_card": "docs/models/transparent-driver-v1.md",
+    "evidence": "docs/verification/transparent-driver-evidence.json",
+    "summary_sha256": "58a8e7a318e12c0db80a9c70c2dfffb6fd5818534a15fa657a8e33d6b0b49ae0",
+    "evidence_content_sha256": "b79a9c320b8c42f431c2688977460623ff5d3348dd7263d30cd68f8ebd375ad1",
+    "calibration_summary_sha256": "2dc610c27b9219caf53759c0d8f1211a8b5d492b82758c04743997e099059b1e",
+    "calibration_laps": 68,
+    "calibration_rows": 22531,
+    "selected_pace": {"lateral_fraction": 0.65, "maximum_speed_mps": 60.0},
+    "held_out_nominal_laps": 4,
+    "completed_held_out_nominal_laps": 4,
+    "total_saved_cases": 16,
+    "maximum_held_out_lateral_error_m": 0.3261608590306083,
+    "maximum_held_out_p95_lateral_error_m": 0.23515438037997569,
+    "independent_full_laps": 1,
+    "independent_representative_intervals": 32,
+    "maximum_independent_full_lap_position_difference_m": 0.0020841945122198613,
+    "maximum_refinement_position_difference_m": 0.00007043283758622388,
+    "observed_source_time_shortfall_s": [47.541081062119446, 48.47338721679222],
+    "complete_measured_car_replay": false,
+    "production_promotion": false,
+    "component_targeted_tests": 16,
+    "combined_completion_evidence": "docs/verification/r034-r035-completion.json",
+    "combined_completion_evidence_sha256": "00a92caca463d17c332216b291c931e8f9627357f9e522e3e924c52285fcdc1a",
+    "full_regression": {"passed": 690, "python_versions": ["3.11", "3.12"], "ci_run": 41243887574},
+    "implementation_commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
+    "artifact_test_commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
+    "follow_up_order": ["R037", "R038", "R036"],
+    "limitations": ["Known supplied reconstructed map and generic vehicle priors", "Source lap time/speed agreement is poor; no real-car pace validation", "Multi-lap drift, broad recovery and OOD/fallback remain later gates", "No formal R4 or production promotion"]
   },
   "matched_open_loop_error_report": {
     "backlog_id": "R034",

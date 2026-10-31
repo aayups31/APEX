@@ -1,7 +1,8 @@
 # R035 conditional transparent research driver
 
-Component under evaluation; closure requires the complete frozen held-out lap
-catalog and all independent/refinement gates. The
+Accepted conditional research component: all four frozen held-out nominal laps,
+independent replay, refinement and full regression gates pass. See the
+[complete evidence and limitations](../verification/transparent-driver-report.md). The
 [preregistered protocol](../../research/protocols/TRANSPARENT_DRIVER.md) defines the
 scope. This component stays in `apexsim.research`; it cannot advance the formal
 maturity level or influence the production simulator.
@@ -51,7 +52,8 @@ case catalog, applied actions, states, reference errors, actuator interventions,
 failure prefixes, timestep comparisons and independent scalar replay are saved.
 The verifier distinguishes exact inventory integrity from tolerant scientific
 regeneration. Complete-lap independent replay uses bisection/DOP853 and no primary
-force or RHS helpers.
+force or RHS helpers. The final690-test suite passes locally and on Python3.11/3.12
+CI. This does not reduce the pace and data limitations below.
 
 ## Limits
 

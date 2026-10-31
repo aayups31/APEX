@@ -23,6 +23,7 @@ This directory contains recorded verification results for major stages of APEX.
 - [R032 aero balance, coupled load transfer and parameter confounding](aero-load-transfer-report.md)
 - [R033 causal public observation alignment and missing chassis states](recorded-replay-alignment-report.md)
 - [R034 matched forecast horizons and unavailable full physical lap/stint replay](open-loop-errors-report.md)
+- [R035 conditional generated-action driver and preserved source-pace shortfall](transparent-driver-report.md)
 
 ## Purpose
 

@@ -113,5 +113,21 @@ See the [model/run card](../models/transparent-driver-v1.md) and
 directories are required. Calibration is frozen independently from evaluation;
 changed controller code requires an explicit new freeze. Original artifacts stay
 immutable. The final publication includes exact inventories and independent/
-scientific replay receipts. Task closure additionally requires final regression
-and Python3.11/3.12 CI; progress is registered in the live maturity status.
+scientific replay receipts.
+
+## Closure and next work
+
+R035 is DONE for its declared conditional component. The local full suite passes
+690 tests in578.37s with two existing dependency deprecation warnings. The first
+full invocation from repository root produced13 missing-config failures; rerunning
+from the required `apex_engine` directory passes all690. All690 also pass in
+Python3.11/3.12 [CI41243887574](https://github.com/aayups31/APEX/actions/runs/41243887574),
+including every artifact workflow. The [sealed completion receipt](r034-r035-completion.json)
+binds these results and both studies' verification receipts. Stronger assertions
+against an actual reserved event separately pass and are committed with the final
+publication. No dynamics or acceptance thresholds changed after the public runs.
+
+Research inventory is35/73 DONE, build inventory13/66. R037 multi-lap compounding
+error/recovery is next, followed by R038 OOD/fallback. R036 imitation is lower
+priority than those P0 control gates. Accurate all-regime real-car pace and formal
+maturity review remain separate prerequisites for later production promotion.

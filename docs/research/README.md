@@ -42,7 +42,11 @@ in the [synthetic study](../verification/aero-load-transfer-report.md).
 R033's [alignment protocol](../../research/protocols/RECORDED_REPLAY_ALIGNMENT.md)
 and [observation map](../../research/equations/RECORDED_REPLAY_ALIGNMENT_V1.md)
 support the [frozen public coverage report](../verification/recorded-replay-alignment-report.md).
-R034's matched predictive errors remain the next research dependency.
+R034's [matched predictive errors and unavailable scopes](../verification/open-loop-errors-report.md)
+are complete. R035's [conditional generated-action driver](../verification/transparent-driver-report.md)
+completes four held-out nominal laps in generic-prior physics. Its source-pace
+shortfall remains explicit. R037 multi-lap drift/recovery and R038 OOD/fallback
+are the next P0 research dependencies; R036 imitation follows that stronger baseline.
 
 Research is incorporated through a traceable process:
 

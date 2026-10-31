@@ -1,0 +1,431 @@
+{
+  "artifact_test_commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
+  "baseline_commit": "d31a7fe0b787745e9ef6276b4b66b30891ba0acd",
+  "baseline_regression": {
+    "passed": 664,
+    "seconds": 581.9,
+    "warnings": 2
+  },
+  "completed_date": "2026-10-31",
+  "content_sha256": "00a92caca463d17c332216b291c931e8f9627357f9e522e3e924c52285fcdc1a",
+  "implementation_commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
+  "limitations": [
+    "R034 complete physical lap/stint replay remains unavailable",
+    "R035 proves conditional generic-prior known-map control; source pace disagreement remains large",
+    "No formal maturity, real-car accuracy or production promotion"
+  ],
+  "linux_ci": {
+    "all_artifact_workflow_steps_passed": true,
+    "commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
+    "conclusion": "success",
+    "python_3_11": {
+      "passed": 690,
+      "seconds": 296.85
+    },
+    "python_3_12": {
+      "passed": 690,
+      "seconds": 313.95
+    },
+    "run": 41243887574
+  },
+  "local_regression": {
+    "command": "python -m pytest -q",
+    "log_sha256": "91ffa35e7ac19aa68aa580e1dc6b578eba802d8d3bbe121cef4ac527227987b6",
+    "passed": 690,
+    "prior_invalid_invocation": "Running from repository root caused13 missing-config failures; corrected project-directory run passed all690",
+    "python": "3.12.12",
+    "seconds": 578.37,
+    "warnings": 2,
+    "working_directory": "apex_engine"
+  },
+  "next_priority_order": [
+    "R037",
+    "R038",
+    "R036"
+  ],
+  "production_kernel_maturity": "R0",
+  "production_promotion": false,
+  "r034_independent_audit": {
+    "maximum_independent_speed_difference_mps": 5.555740756335581e-09,
+    "paths_checked": 2525,
+    "summary_sha256": "8e6c5ae08b4768afd8311b7a3a82c055c482fcc88859607da774f84270f24092",
+    "task_closure_eligible": true,
+    "verified": true
+  },
+  "r034_verification": {
+    "maximum_replay_difference": 0.0,
+    "sections": 150,
+    "source_laps": 88,
+    "summary_sha256": "8e6c5ae08b4768afd8311b7a3a82c055c482fcc88859607da774f84270f24092",
+    "task_closure_eligible": true,
+    "verified": true
+  },
+  "r035_real_artifact_boundary_checks": {
+    "content_sha256": "d3ed2b0c0e3645467d6aa498951265e09962498583b1f3315f77880e45c70cf1",
+    "portable_calibration_scientific_replay": {
+      "selected": {
+        "fraction": 0.65,
+        "maximum_mps": 60.0
+      },
+      "summary_sha256": "2dc610c27b9219caf53759c0d8f1211a8b5d492b82758c04743997e099059b1e",
+      "test_outcomes_used": false,
+      "verified": true
+    },
+    "portable_inventory_binding": true,
+    "protected_header_rejection": "Permanent benchmark event 2024/round 4 is forbidden in development/calibration",
+    "resealed_changed_choice_rejection": "Scientific replay numeric mismatch: results/selected/fraction",
+    "schema_version": "apex-transparent-driver-v1-real-artifact-boundary-check-v1",
+    "scope": "REAL_PUBLIC_ARTIFACT_COPIES; FULL_SCIENTIFIC_TRAJECTORY_REPLAY_HAS_SEPARATE_RECEIPT",
+    "summary_sha256": "58a8e7a318e12c0db80a9c70c2dfffb6fd5818534a15fa657a8e33d6b0b49ae0",
+    "tampered_payload_rejection": "Research evidence inventory/hash mismatch",
+    "verified": true
+  },
+  "r035_verification": {
+    "cases": 16,
+    "independent_audit": {
+      "checks": [
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "intervals": 1336,
+          "maximum_body_velocity_difference_mps": 3.819709604657717e-05,
+          "maximum_heading_difference_rad": 2.7585289839038296e-06,
+          "maximum_position_difference_m": 0.0020841945122198613,
+          "maximum_yaw_rate_difference_radps": 2.6831811571549277e-05,
+          "passed": true,
+          "scope": "COMPLETE_LAP"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.5767582884906872e-06,
+          "maximum_heading_difference_rad": 2.6968186572773334e-08,
+          "maximum_position_difference_m": 1.6786313588706244e-07,
+          "maximum_yaw_rate_difference_radps": 3.097608019669851e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 6.606054673397033e-06,
+          "maximum_heading_difference_rad": 2.6568085143008346e-07,
+          "maximum_position_difference_m": 3.216048190338821e-08,
+          "maximum_yaw_rate_difference_radps": 8.816545806311638e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 3.978377014213219e-06,
+          "maximum_heading_difference_rad": 3.0997433647650396e-08,
+          "maximum_position_difference_m": 1.0793891447388417e-07,
+          "maximum_yaw_rate_difference_radps": 2.1359175887691872e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 572,
+          "maximum_body_velocity_difference_mps": 7.258562236545085e-07,
+          "maximum_heading_difference_rad": 1.3920795460808932e-08,
+          "maximum_position_difference_m": 1.0007992328420531e-08,
+          "maximum_yaw_rate_difference_radps": 1.2296632888320058e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 6.849325283830865e-06,
+          "maximum_heading_difference_rad": 5.977399242240722e-08,
+          "maximum_position_difference_m": 2.2689253368904417e-07,
+          "maximum_yaw_rate_difference_radps": 3.0531454553450743e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 953,
+          "maximum_body_velocity_difference_mps": 1.3278445648579051e-06,
+          "maximum_heading_difference_rad": 1.6827174098565933e-08,
+          "maximum_position_difference_m": 6.993734626310102e-08,
+          "maximum_yaw_rate_difference_radps": 5.095111810238251e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 1144,
+          "maximum_body_velocity_difference_mps": 3.375771769453806e-06,
+          "maximum_heading_difference_rad": 7.242383714967104e-08,
+          "maximum_position_difference_m": 2.9014982503918103e-07,
+          "maximum_yaw_rate_difference_radps": 6.538271989653399e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_2_feedback_0.02",
+          "interval_index": 1335,
+          "maximum_body_velocity_difference_mps": 3.775342297340778e-06,
+          "maximum_heading_difference_rad": 2.4483999716551352e-08,
+          "maximum_position_difference_m": 1.428740291277164e-07,
+          "maximum_yaw_rate_difference_radps": 3.1660447729134344e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.5539779690820765e-06,
+          "maximum_heading_difference_rad": 2.6808568920344555e-08,
+          "maximum_position_difference_m": 1.6725594336988457e-07,
+          "maximum_yaw_rate_difference_radps": 3.097968407014817e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 6.930272552496675e-06,
+          "maximum_heading_difference_rad": 2.7903523991401613e-07,
+          "maximum_position_difference_m": 3.686569521119773e-08,
+          "maximum_yaw_rate_difference_radps": 9.271068955762907e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 3.997590118987038e-06,
+          "maximum_heading_difference_rad": 3.0262812908410375e-08,
+          "maximum_position_difference_m": 1.1582485321877421e-07,
+          "maximum_yaw_rate_difference_radps": 2.338342507401947e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 572,
+          "maximum_body_velocity_difference_mps": 7.769996670237145e-07,
+          "maximum_heading_difference_rad": 1.4488130861689541e-08,
+          "maximum_position_difference_m": 8.370667005042194e-09,
+          "maximum_yaw_rate_difference_radps": 1.2325888784636696e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 6.906419851182566e-06,
+          "maximum_heading_difference_rad": 5.969630700874973e-08,
+          "maximum_position_difference_m": 2.3212731310330959e-07,
+          "maximum_yaw_rate_difference_radps": 3.1751769588583834e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 953,
+          "maximum_body_velocity_difference_mps": 1.2855436161141043e-06,
+          "maximum_heading_difference_rad": 1.612706435061284e-08,
+          "maximum_position_difference_m": 6.86521679358461e-08,
+          "maximum_yaw_rate_difference_radps": 5.232045841019328e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 1144,
+          "maximum_body_velocity_difference_mps": 3.4836191427078944e-06,
+          "maximum_heading_difference_rad": 7.343678887217209e-08,
+          "maximum_position_difference_m": 2.860051521130201e-07,
+          "maximum_yaw_rate_difference_radps": 6.472125171352872e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_4_3_feedback_0.02",
+          "interval_index": 1335,
+          "maximum_body_velocity_difference_mps": 3.7736303608593147e-06,
+          "maximum_heading_difference_rad": 2.4364096518070255e-08,
+          "maximum_position_difference_m": 1.43730554085069e-07,
+          "maximum_yaw_rate_difference_radps": 3.19007212916389e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.5312383767618343e-06,
+          "maximum_heading_difference_rad": 2.6648440787369054e-08,
+          "maximum_position_difference_m": 1.6664856951587483e-07,
+          "maximum_yaw_rate_difference_radps": 3.098261540379621e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 7.279350908051541e-06,
+          "maximum_heading_difference_rad": 2.9305833471049425e-07,
+          "maximum_position_difference_m": 4.473012944664482e-08,
+          "maximum_yaw_rate_difference_radps": 9.749180848395156e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 4.011002927739593e-06,
+          "maximum_heading_difference_rad": 2.9756180741635774e-08,
+          "maximum_position_difference_m": 1.2129569312787617e-07,
+          "maximum_yaw_rate_difference_radps": 2.4787475680354554e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 572,
+          "maximum_body_velocity_difference_mps": 8.105787212275839e-07,
+          "maximum_heading_difference_rad": 1.4871801401472595e-08,
+          "maximum_position_difference_m": 7.3614732715198175e-09,
+          "maximum_yaw_rate_difference_radps": 1.2367833662763061e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 6.950286213558421e-06,
+          "maximum_heading_difference_rad": 5.956814641550068e-08,
+          "maximum_position_difference_m": 2.3653559210089112e-07,
+          "maximum_yaw_rate_difference_radps": 3.282308549956703e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 953,
+          "maximum_body_velocity_difference_mps": 1.2573930228132468e-06,
+          "maximum_heading_difference_rad": 1.5667650288264667e-08,
+          "maximum_position_difference_m": 6.774386442312885e-08,
+          "maximum_yaw_rate_difference_radps": 5.305595013327391e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 1144,
+          "maximum_body_velocity_difference_mps": 3.5614958977525646e-06,
+          "maximum_heading_difference_rad": 7.41683103822055e-08,
+          "maximum_position_difference_m": 2.8302153672010804e-07,
+          "maximum_yaw_rate_difference_radps": 6.424517531022911e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_2_feedback_0.02",
+          "interval_index": 1335,
+          "maximum_body_velocity_difference_mps": 3.772427879744633e-06,
+          "maximum_heading_difference_rad": 2.428775225382651e-08,
+          "maximum_position_difference_m": 1.4426293378163348e-07,
+          "maximum_yaw_rate_difference_radps": 3.2052259567663666e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.4858821700269864e-06,
+          "maximum_heading_difference_rad": 2.6326640423235403e-08,
+          "maximum_position_difference_m": 1.6543364400555082e-07,
+          "maximum_yaw_rate_difference_radps": 3.098642951948616e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 8.235611679507926e-06,
+          "maximum_heading_difference_rad": 3.3002286758954114e-07,
+          "maximum_position_difference_m": 7.506217616605348e-08,
+          "maximum_yaw_rate_difference_radps": 1.1044257186787476e-05,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 4.054908249617739e-06,
+          "maximum_heading_difference_rad": 2.8134141502600407e-08,
+          "maximum_position_difference_m": 1.3899815484724578e-07,
+          "maximum_yaw_rate_difference_radps": 2.932924417289873e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 572,
+          "maximum_body_velocity_difference_mps": 9.397476752603939e-07,
+          "maximum_heading_difference_rad": 1.6183158646487783e-08,
+          "maximum_position_difference_m": 2.545669529480179e-09,
+          "maximum_yaw_rate_difference_radps": 1.2200701199338582e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 7.048844350154848e-06,
+          "maximum_heading_difference_rad": 5.932019764287588e-08,
+          "maximum_position_difference_m": 2.4625453177188037e-07,
+          "maximum_yaw_rate_difference_radps": 3.5115610530489505e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 953,
+          "maximum_body_velocity_difference_mps": 1.1904309252797063e-06,
+          "maximum_heading_difference_rad": 1.45744283308602e-08,
+          "maximum_position_difference_m": 6.562853302754084e-08,
+          "maximum_yaw_rate_difference_radps": 5.483647674831005e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 1144,
+          "maximum_body_velocity_difference_mps": 3.835725921330635e-06,
+          "maximum_heading_difference_rad": 7.700133575205825e-08,
+          "maximum_position_difference_m": 2.7532546830197745e-07,
+          "maximum_yaw_rate_difference_radps": 6.307588961140809e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "F1_2024_R16_44_3_feedback_0.02",
+          "interval_index": 1335,
+          "maximum_body_velocity_difference_mps": 3.7679819601121878e-06,
+          "maximum_heading_difference_rad": 2.3976101104494774e-08,
+          "maximum_position_difference_m": 1.4649352001671336e-07,
+          "maximum_yaw_rate_difference_radps": 3.267980645642321e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        }
+      ],
+      "complete_laps_checked": 1,
+      "method": "SCALAR_TYRE_LOAD_BISECTION_DOP853",
+      "passed": true,
+      "primary_rhs_reused": false
+    },
+    "summary_sha256": "58a8e7a318e12c0db80a9c70c2dfffb6fd5818534a15fa657a8e33d6b0b49ae0",
+    "task_closure_eligible": true,
+    "verified": true
+  },
+  "research_foundation_maturity": "R1",
+  "schema_version": "apex-r034-r035-completion-v1",
+  "strengthened_reserved_event_assertions_passed": 2,
+  "targeted_tests": 26
+}

@@ -123,7 +123,13 @@ accounts for150 sections,88 laps and all600 requested forecast cases:505 support
 95 explicitly too short. All2525 saved model/baseline paths pass independent
 integration checks. Complete physical lap/stint errors remain unavailable.
 The R034 implementation passes674 tests and full CI on Python3.11/3.12.
-R035's conditional research driver is under final verification; production is unchanged.
+The [R035 conditional research driver](docs/verification/transparent-driver-report.md)
+generates steering and drive/brake forces and completes all four frozen held-out
+Monza lap conditions in six-state generic-prior physics. Maximum reference error
+is<.33m; full-lap independent replay differs by2.1mm. All690 tests pass locally and
+on Python3.11/3.12 CI. Simulated laps remain about48s slower than source laps: this
+is known-map closed-loop control evidence, not accurate F1 pace or formal R4.
+Next are multi-lap recovery and OOD/fallback. Production remains unchanged.
 
 ---
 

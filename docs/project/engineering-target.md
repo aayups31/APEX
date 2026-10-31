@@ -52,10 +52,14 @@ ellipse force and stability gate is complete, including an explicit unsupported
 rear-saturation challenge. R032's synthetic aero/load-transfer and identifiability
 study and R033's scoped public observation alignment are complete. R033 reports
 94.55% joint native observation coverage; full measured bicycle input coverage
-remains0% because chassis controls/states are missing. R034 matched open-loop
-errors are next. Calibrated prediction uncertainty and real-car intervention validity remain
-unestablished. Historical
-replay and closed-loop stability follow their existing backlog dependencies.
+remains0% because chassis controls/states are missing. R034's matched-horizon
+report accounts for every section/lap/stint scope without inventing full-car
+errors. R035's conditional known-map controller completes its frozen lap catalog
+under generic vehicle priors, with independent replay and690 passing tests.
+Source pace disagreement remains large. R037 multi-lap recovery and R038 OOD/
+fallback are the next P0 gates, before lower-priority R036 imitation. Calibrated
+prediction uncertainty, all-regime car replay and real-car intervention validity
+remain unestablished.
 Tyre/fuel/ERS validation, stochastic full-field behavior,
 strategy regret and world-model planning require their later evidence gates.
 

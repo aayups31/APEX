@@ -78,4 +78,5 @@ destination, tampering and resealed false completion. The fresh pre-change full
 suite passed664 tests. Implementation commit
 `7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce` passed674 tests and all workflow steps
 on Python3.11/3.12 in [CI41242991828](https://github.com/aayups31/APEX/actions/runs/41242991828).
-The final combined regression is recorded with R035. No production behavior is changed.
+The [final combined regression](r034-r035-completion.json) passes690 tests locally
+and on Python3.11/3.12 CI. No production behavior is changed.
