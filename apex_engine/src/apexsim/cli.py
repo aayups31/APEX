@@ -604,6 +604,33 @@ def verify_longitudinal_calibration_command(output: Path) -> None:
     typer.echo(json.dumps(verify_longitudinal_study(output), indent=2))
 
 
+@app.command("bicycle-dynamics-study")
+def bicycle_dynamics_study_command(output: Annotated[Path, typer.Option()]) -> None:
+    """Run R031 synthetic force/stability acceptance; no public cornering calibration."""
+    from apexsim.examples.bicycle_study import run_bicycle_study
+
+    summary = run_bicycle_study(output)
+    typer.echo(json.dumps(summary, indent=2))
+    if not summary["task_closure_eligible"]:
+        raise typer.Exit(code=1)
+
+
+@app.command("verify-bicycle-dynamics")
+def verify_bicycle_dynamics_command(output: Path) -> None:
+    """Regenerate all synthetic trajectories, force gates and stability evidence."""
+    from apexsim.examples.bicycle_study import verify_bicycle_study
+
+    typer.echo(json.dumps(verify_bicycle_study(output), indent=2))
+
+
+@app.command("audit-bicycle-dynamics")
+def audit_bicycle_dynamics_command(output: Path) -> None:
+    """Rebuild scalar forces and independently integrate saved R031 trajectories."""
+    from apexsim.examples.bicycle_study import audit_bicycle_study
+
+    typer.echo(json.dumps(audit_bicycle_study(output), indent=2))
+
+
 @app.command("longitudinal-calibration-smoke")
 def longitudinal_calibration_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
     """SIMULATED equation/replay execution; cannot close public R030."""

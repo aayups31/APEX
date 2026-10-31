@@ -65,6 +65,12 @@ jobs:
         run: python -m apexsim.cli longitudinal-calibration-smoke --output .cache/ci-longitudinal-calibration
       - name: Independently audit longitudinal convex fits and DOP853 integration
         run: python -m apexsim.cli audit-longitudinal-calibration .cache/ci-longitudinal-calibration
+      - name: Verify synthetic bicycle forces stability and explicit support abstention
+        run: python -m apexsim.cli bicycle-dynamics-study --output .cache/ci-bicycle-dynamics
+      - name: Replay every bicycle equation gate and trajectory
+        run: python -m apexsim.cli verify-bicycle-dynamics .cache/ci-bicycle-dynamics
+      - name: Independently audit bicycle DOP853 motion and grip-limit support exit
+        run: python -m apexsim.cli audit-bicycle-dynamics .cache/ci-bicycle-dynamics
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts

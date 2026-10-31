@@ -135,3 +135,25 @@ or closed-loop safety. Never pass it directly to a planner or race kernel.
 4. Add independent solver and immutable evidence CLI/replay; test and push.
 5. Run declared cases, inspect outputs, publish evidence and limitations.
 6. Run full regression and CI, close R031 only on acceptance, hand off R032.
+
+## Recorded boundary clarification before the second campaign
+
+The first campaign's `near_limit_drive` (30 m/s, .01 rad steering, 6200 N rear
+request, 1 s) correctly rejected a state outside support. All other 13 cases
+stayed supported. The original run did not publish an acceptance artifact;
+its traceback is preserved in `.cache/r031-first-campaign.log`. No force,
+parameter, command, timestep, duration or supported-case accuracy threshold is
+changed. The force request exceeds the rear 5886 N capacity and therefore leaves
+zero rear lateral budget; this is an intended failure challenge, not evidence
+that full saturation is safe.
+
+Clarify E7: preserve this exact case as mandatory **ABSTAIN**, record the rejected
+state, first rejection time and last supported samples at every timestep, and
+independently locate the support exit using a DOP853 terminal root. RK4 rejection
+time must agree with that root within .02 s, all three timesteps must reject,
+and supported common-prefix trajectories must still agree within 1e-4 SI units.
+Do not integrate the bicycle past the boundary or shorten/filter the case to
+turn it into a completion. Report 13 supported cases and one rejected challenge;
+no claim of successful full-horizon replay for the rejected case. This is a
+documented clarification of the preregistered abstention requirement, not a
+relaxation of supported trajectory error or a production stability claim.

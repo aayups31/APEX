@@ -84,6 +84,17 @@ class BicycleControl:
             raise ValueError("R031 controls require finite forces/angle and nonnegative resistance")
 
 
+class BicycleSupportError(ValueError):
+    """Explicit support exit, including rejected state and bounded replay prefix."""
+
+    def __init__(self, state: BicycleState) -> None:
+        super().__init__("R031 state outside forward-speed/sideslip/yaw support; no state clipping")
+        self.state = state.array()
+        self.time_s: float | None = None
+        self.partial_states: np.ndarray | None = None
+        self.partial_time_s: np.ndarray | None = None
+
+
 @dataclass(frozen=True)
 class AxleForce:
     """Applied wheel forces and exposed friction constraint intervention."""
@@ -141,7 +152,7 @@ def validate_state(state: BicycleState, params: BicycleParameters) -> None:
     if (not np.isfinite(state.array()).all() or not params.min_vx_mps <= state.vx_mps <= params.max_vx_mps
             or abs(atan2(state.vy_mps, state.vx_mps)) > params.max_sideslip_rad
             or abs(state.yaw_rate_radps) > params.max_yaw_rate_radps):
-        raise ValueError("R031 state outside forward-speed/sideslip/yaw support; no state clipping")
+        raise BicycleSupportError(state)
 
 
 def bicycle_rhs(state: BicycleState, control: BicycleControl,
@@ -260,10 +271,16 @@ def integrate_bicycle(initial: BicycleState, time_s: np.ndarray,
               "maximum_abs_sideslip_rad": abs(atan2(initial.vy_mps, initial.vx_mps)),
               "maximum_abs_yaw_rate_radps": abs(initial.yaw_rate_radps)}
 
-    def evaluate(values, command):
+    def evaluate(values, command, stage_time):
         state = BicycleState.from_array(values)
         applied = command.at(state, params) if isinstance(command, StraightPowerDragInput) else command
-        derivative, d = bicycle_rhs(state, applied, params)
+        try:
+            derivative, d = bicycle_rhs(state, applied, params)
+        except BicycleSupportError as exc:
+            exc.time_s = float(stage_time)
+            exc.partial_states = np.array(states)
+            exc.partial_time_s = time_s[:len(states)].copy()
+            raise
         checks["stage_evaluations"] += 1
         for axle in (d.front, d.rear):
             checks["projected_axle_requests"] += int(axle.longitudinal_projected)
@@ -283,13 +300,14 @@ def integrate_bicycle(initial: BicycleState, time_s: np.ndarray,
     for i, dt in enumerate(np.diff(time_s)):
         count = int(requested_steps[i])
         h, command = dt/count, controls[i]
-        for _ in range(count):
-            k1 = evaluate(values, command)
-            k2 = evaluate(values+h*k1/2, command)
-            k3 = evaluate(values+h*k2/2, command)
-            k4 = evaluate(values+h*k3, command)
+        for j in range(count):
+            now = time_s[i]+j*h
+            k1 = evaluate(values, command, now)
+            k2 = evaluate(values+h*k1/2, command, now+h/2)
+            k3 = evaluate(values+h*k2/2, command, now+h/2)
+            k4 = evaluate(values+h*k3, command, now+h)
             values = values+h*(k1+2*k2+2*k3+k4)/6
             # Validate the accepted endpoint too; k4 is an intermediate estimate.
-            evaluate(values, command)
+            evaluate(values, command, now+h)
         states.append(values.copy())
     return BicycleRollout(time_s.copy(), np.array(states), checks)
