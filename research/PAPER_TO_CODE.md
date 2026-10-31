@@ -32,8 +32,12 @@ retain actual model rankings and proxy-target limits. R026's
 `apexsim.research.track_generalization` adds frozen-weight cross-season seen/unseen
 scores and hierarchical event/sequence confidence. Its
 [report](../docs/verification/track-generalization-report.md) records limited
-cohort support and weak unseen quantile coverage. Explanation faithfulness and
-feasible counterfactuals remain separate pending work.
+cohort support and weak unseen quantile coverage. R027/R028's
+[accepted study](../docs/verification/forecast-explanation-report.md) adds
+independently audited temporal perturbation diagnostics and coupled finite
+scenario counterfactuals with support checks, exact catalogue minima and explicit
+abstention. These are model/proxy explanations; causal VSC effects and full
+real-car intervention feasibility remain UNKNOWN.
 
 **Boundary:** measured tyre energy is proprietary. The included estimator is a physics-informed proxy useful for interface and experiment development; it must never be labelled as ground truth.
 

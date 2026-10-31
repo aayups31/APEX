@@ -51,3 +51,9 @@ and Windows installs the corresponding full distribution running on CPU.
 The benchmark establishes executable open-loop comparisons under the specified
 budget. It does not demonstrate measured-energy accuracy, stable imagined
 rollouts, intervention validity, planner performance or production promotion.
+
+Later R027/R028 [explanation evidence](../verification/forecast-explanation-report.md)
+uses these frozen parameters for independently tested temporal diagnostics and
+bounded model what-if scenarios. It does not validate TFT attention weights,
+causal real-car interventions or production use. The separate
+[run card](forecast-explanations-v1.md) records numerical precision and support.

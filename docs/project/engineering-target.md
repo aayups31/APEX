@@ -45,8 +45,9 @@ independent reviewer should be able to reproduce the claims and reject weak ones
 ## Current dependency order
 
 R026 tests transfer to seen and unseen circuits with frozen forecasters. R029
-track reconstruction is the next dependency-ready P0 for vehicle calibration.
-R027/R028 remain pending P1 explanation and counterfactual research. Historical
+reference reconstruction and R027/R028's scoped model explanation/conditional
+counterfactual study are accepted. R030 longitudinal vehicle calibration is next.
+Real-car intervention validity remains UNKNOWN. Historical
 replay and closed-loop stability follow their existing backlog dependencies.
 Tyre/fuel/ERS validation, stochastic full-field behavior,
 strategy regret and world-model planning require their later evidence gates.

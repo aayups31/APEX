@@ -36,10 +36,15 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 27/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 29/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
-R030 longitudinal calibration is dependency-ready. R027/R028 remain unblocked P1
-explanation/counterfactual work.
+R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
+adds independent temporal faithfulness tests and finite-catalogue counterfactual
+validity on all ten frozen checkpoints. Unsupported/unstable cases abstain;
+feasibility is conditional on declared kinematic/proxy and marginal-support
+checks. Full real-car intervention feasibility remains UNKNOWN.
+R030 longitudinal calibration is the next dependency-ready task, restoring the
+normal sequence after the user's explicitly scheduled R027/R028 slice.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 

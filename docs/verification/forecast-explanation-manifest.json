@@ -1,0 +1,231 @@
+{
+  "content_sha256": "1d45af5c3f2b0e620bf88df004c28d8a35ce554e69df2d6fd4174277258c0f0c",
+  "files": {
+    "cohort.json": {
+      "bytes": 580036,
+      "sha256": "496b278b6faf1d4ea80229b71ec4ee64b7d5ff6d2bd22f078f4a79e47e8b3948"
+    },
+    "evaluation/eligible_input.json": {
+      "bytes": 1109170,
+      "sha256": "9c42f391ed662fdb6a1811743fdef74e6ed58595ef545d6a06d4276275b4fe14"
+    },
+    "evaluation/gru_seed11.pt": {
+      "bytes": 12279,
+      "sha256": "8ab8556c1fc598ce3e4e25436ce9b34972e4a6d3a5782939245033783bc5467d"
+    },
+    "evaluation/gru_seed23.pt": {
+      "bytes": 12279,
+      "sha256": "9db55c1f64a23e4bf61d7435fbfcd00249fbeb31ae8b6bc052e0e133e61bc0d1"
+    },
+    "evaluation/input_config.json": {
+      "bytes": 4847,
+      "sha256": "d0c1f651630c93e555369b1cf55ed73a40c93c32e16fc535231244d5b40c58c1"
+    },
+    "evaluation/input_manifest.json": {
+      "bytes": 1475,
+      "sha256": "622e88ea2cb7583bfd066b7737dffaa30fcce163c4f6154630b73e58ac9d28d6"
+    },
+    "evaluation/input_quality.json": {
+      "bytes": 30427,
+      "sha256": "c0770fa402e7840e62c94b0b3fc3b7b9c06f4899421067cd679828489f6bc5cb"
+    },
+    "evaluation/linear_seed11.npz": {
+      "bytes": 6416,
+      "sha256": "ae761729e86f5be0d8cf15fd3a175436ad9411b70b2a2a7990d3db4f51e154a0"
+    },
+    "evaluation/lstm_seed11.pt": {
+      "bytes": 14341,
+      "sha256": "69289f34f41d7ba86aa83ec4cd07fa4340a1121dfcd7f5d19e03794df7b1d62b"
+    },
+    "evaluation/lstm_seed23.pt": {
+      "bytes": 14341,
+      "sha256": "2959619027549ab6b71afccfd879c64b19764067f0fc6b05e4a4a8d4f3243124"
+    },
+    "evaluation/manifest.json": {
+      "bytes": 3259,
+      "sha256": "10da8124927601e0547d38c82da08836a68691499e4fa6debc96081b0fd03801"
+    },
+    "evaluation/predictions.npz": {
+      "bytes": 126150335,
+      "sha256": "cbfd00b645094537773d241cc6f90ccb372fc08d19f924d6563acb16bf0f05b6"
+    },
+    "evaluation/reference_manifest.json": {
+      "bytes": 2519,
+      "sha256": "716dbd2c44118e7198f0a96f8aae3d0963fc267cc8239709cfbb825dc984080c"
+    },
+    "evaluation/reference_summary.json": {
+      "bytes": 113085,
+      "sha256": "c7d29a0f24d7f68fb12d052d3c0b5794f97d97ea355ddb2a75f3650a6fce4a49"
+    },
+    "evaluation/ridge_seed11.npz": {
+      "bytes": 6416,
+      "sha256": "da86b20d53ec38256eb88ad5985bfb087c281578cbfaca5cc3b3aab1fd0e794e"
+    },
+    "evaluation/scaler.json": {
+      "bytes": 1533,
+      "sha256": "46c939a8f7e6d2432f9abe701e259b4701542a63a0b1a7e25c82a724394a33d3"
+    },
+    "evaluation/summary.json": {
+      "bytes": 187372,
+      "sha256": "805b73c61dbf0f1195f8b72819fff9dda4e13207123244c473e8fa61ed39f03a"
+    },
+    "evaluation/tft_seed11.pt": {
+      "bytes": 750778,
+      "sha256": "caea9070bc3a37159987720208eaac0b869b5f7eb240bf9fc73513408620376f"
+    },
+    "evaluation/tft_seed23.pt": {
+      "bytes": 750778,
+      "sha256": "85430d7f8abd72d371950caf975ed7e94d56d16f0df2b68c4aef96f874eb6c43"
+    },
+    "evaluation/window_metadata.json": {
+      "bytes": 17536582,
+      "sha256": "4fe759d1c254622c815fbbb97f52e2c6791da5314dfa627d620885b8732b857b"
+    },
+    "evaluation/windows.npz": {
+      "bytes": 4322641,
+      "sha256": "20f070f60a6faa0544014b55b10247844b74df9714cbe39273366569cfa361e4"
+    },
+    "evaluation/xgboost_seed11.ubj": {
+      "bytes": 2099969,
+      "sha256": "33821e67430b190d8916c2fd34cdbf9b11049a1b05eb1a46fd94b980a5d593ab"
+    },
+    "evaluation/xgboost_seed23.ubj": {
+      "bytes": 2099426,
+      "sha256": "c8a8aa0d1ae21cdf5659a3dc857ec786a4e7e4850e97f1faa811a6187e5ff9d8"
+    },
+    "gru_seed11.npz": {
+      "bytes": 2895958,
+      "sha256": "831c137d131aee4fc80965954316b6cf3aa5e31afe57527e839ddc0d3705b53f"
+    },
+    "gru_seed23.npz": {
+      "bytes": 2896186,
+      "sha256": "69d5c75a97f635054f139c7b68e9433d121e7762f4b7bbaf2380d107a31685c4"
+    },
+    "linear_seed11.npz": {
+      "bytes": 2909647,
+      "sha256": "425a4bb045c3122889524f535e4543dad0e226e592627e22af22f03dbc5b50bd"
+    },
+    "lstm_seed11.npz": {
+      "bytes": 2898577,
+      "sha256": "c977840a24baab3870d1ab9178390cd3c3d454e733fae0bc2a3d196328ee63c0"
+    },
+    "lstm_seed23.npz": {
+      "bytes": 2896893,
+      "sha256": "44ee4ef016c78a1381270515677ee1cc4f300ca96e21dd145903151fc4a0497c"
+    },
+    "numerical-correction.md": {
+      "bytes": 3693,
+      "sha256": "2c9d6e2f14c4f145ec6a1ea4a9ac8d0a1d27e3ed1b77aae0459fe35ac5a23939"
+    },
+    "persistence.npz": {
+      "bytes": 124507,
+      "sha256": "27cce0a4018c7335c80794f6a544f3372da30ca4a02f73d54efadfb4bca53e7c"
+    },
+    "protocol.md": {
+      "bytes": 12618,
+      "sha256": "59476a06fbeaec980129de1bda736db907c306021d3d89c1cf34a206e1dc420d"
+    },
+    "reference/config.json": {
+      "bytes": 19249,
+      "sha256": "8825c3b1d43628e5b2bb34ccf05eb474a9213d970fe42b5a7a9c0aeb8bff0fb6"
+    },
+    "reference/gru_seed11.pt": {
+      "bytes": 12279,
+      "sha256": "8ab8556c1fc598ce3e4e25436ce9b34972e4a6d3a5782939245033783bc5467d"
+    },
+    "reference/gru_seed23.pt": {
+      "bytes": 12279,
+      "sha256": "9db55c1f64a23e4bf61d7435fbfcd00249fbeb31ae8b6bc052e0e133e61bc0d1"
+    },
+    "reference/linear_seed11.npz": {
+      "bytes": 6416,
+      "sha256": "ae761729e86f5be0d8cf15fd3a175436ad9411b70b2a2a7990d3db4f51e154a0"
+    },
+    "reference/lstm_seed11.pt": {
+      "bytes": 14341,
+      "sha256": "69289f34f41d7ba86aa83ec4cd07fa4340a1121dfcd7f5d19e03794df7b1d62b"
+    },
+    "reference/lstm_seed23.pt": {
+      "bytes": 14341,
+      "sha256": "2959619027549ab6b71afccfd879c64b19764067f0fc6b05e4a4a8d4f3243124"
+    },
+    "reference/manifest.json": {
+      "bytes": 2519,
+      "sha256": "716dbd2c44118e7198f0a96f8aae3d0963fc267cc8239709cfbb825dc984080c"
+    },
+    "reference/ridge_seed11.npz": {
+      "bytes": 6416,
+      "sha256": "da86b20d53ec38256eb88ad5985bfb087c281578cbfaca5cc3b3aab1fd0e794e"
+    },
+    "reference/scaler.json": {
+      "bytes": 1533,
+      "sha256": "46c939a8f7e6d2432f9abe701e259b4701542a63a0b1a7e25c82a724394a33d3"
+    },
+    "reference/summary.json": {
+      "bytes": 113085,
+      "sha256": "c7d29a0f24d7f68fb12d052d3c0b5794f97d97ea355ddb2a75f3650a6fce4a49"
+    },
+    "reference/test_predictions.npz": {
+      "bytes": 98613396,
+      "sha256": "0f5b0080970c834608cab5d935720c9be30af9ebc0012e8085f8d8c2647f84d3"
+    },
+    "reference/tft_seed11.pt": {
+      "bytes": 750778,
+      "sha256": "caea9070bc3a37159987720208eaac0b869b5f7eb240bf9fc73513408620376f"
+    },
+    "reference/tft_seed23.pt": {
+      "bytes": 750778,
+      "sha256": "85430d7f8abd72d371950caf975ed7e94d56d16f0df2b68c4aef96f874eb6c43"
+    },
+    "reference/window_metadata.json": {
+      "bytes": 25376885,
+      "sha256": "7a3768de77333334d09555833d61fe8577b298433e576a6195e37011b099276c"
+    },
+    "reference/windows.npz": {
+      "bytes": 6599081,
+      "sha256": "657b250171016cc280918170738a594331229eeaf7121e555fae6b7ce2817358"
+    },
+    "reference/xgboost_seed11.ubj": {
+      "bytes": 2099969,
+      "sha256": "33821e67430b190d8916c2fd34cdbf9b11049a1b05eb1a46fd94b980a5d593ab"
+    },
+    "reference/xgboost_seed23.ubj": {
+      "bytes": 2099426,
+      "sha256": "c8a8aa0d1ae21cdf5659a3dc857ec786a4e7e4850e97f1faa811a6187e5ff9d8"
+    },
+    "results.json": {
+      "bytes": 31024417,
+      "sha256": "2f64f1f4e242036d5df0c671e7daa6655cd34325aad1c2fbc36f72306dd97271"
+    },
+    "ridge_seed11.npz": {
+      "bytes": 2909730,
+      "sha256": "89a914897ba0cd7da3ec99f4de47a7ebcbf77ba1f96922fe401cba56b360c1ca"
+    },
+    "summary.json": {
+      "bytes": 1469,
+      "sha256": "b804e676764c8b19ea8a69f258ac462ba9d98afc5a4831a9c7c6c757ddf0fb48"
+    },
+    "tft_seed11.npz": {
+      "bytes": 2882893,
+      "sha256": "84e5bec36371f2307e039f177c508a537cf33f110816797e5ccf679d7e8244be"
+    },
+    "tft_seed23.npz": {
+      "bytes": 2883763,
+      "sha256": "d5bb3ce399c06f118d23e299c986f2a4829b54b693d8408d294f1556ecb1436f"
+    },
+    "trend.npz": {
+      "bytes": 469722,
+      "sha256": "edf5e16f984da40b713bf07325213ebc8b2976a0b60c28fe743b2ffc115498ac"
+    },
+    "xgboost_seed11.npz": {
+      "bytes": 2093097,
+      "sha256": "2f1a5f89b7d7fd98b5841fa0f0e3d5e7b0cf38c821e42ae01867b014a8fc4959"
+    },
+    "xgboost_seed23.npz": {
+      "bytes": 2096134,
+      "sha256": "31298a34791bde7abb8d6d4f5eb799f5c79c03ed6853ce1d2291ea53f664552f"
+    }
+  },
+  "schema_version": "apex-forecast-explanation-study-v1-manifest",
+  "summary_sha256": "c59e1025e2055331c14affdca3aea29aaae4ed4df7cf8718c948a6a8b4db4aed"
+}

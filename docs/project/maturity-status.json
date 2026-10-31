@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-10-20",
+  "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 27,
+    "done": 29,
     "total": 73
   },
   "build_inventory": {
@@ -22,9 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R030",
-    "R027",
-    "R028"
+    "R030"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -187,5 +185,52 @@
         "evidence": "docs/verification/track-reconstruction-v2-1-rejected-evidence.json"
       }
     ]
+  },
+  "forecast_explanation_study": {
+    "backlog_ids": [
+      "R027",
+      "R028"
+    ],
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_PUBLIC_MODEL_EXPLANATIONS",
+    "origins": 128,
+    "methods": 12,
+    "summary_sha256": "c59e1025e2055331c14affdca3aea29aaae4ed4df7cf8718c948a6a8b4db4aed",
+    "evidence_content_sha256": "4d0da500f814b583be053ad0daf601b3df5d5341fb71f95b34f97255641063b2",
+    "report": "docs/verification/forecast-explanation-report.md",
+    "evidence": "docs/verification/forecast-explanation-evidence.json",
+    "model_card": "docs/models/forecast-explanations-v1.md",
+    "implementation_commit": "1d08ca8d2a01da20c0c1d751b848a218cf11a569",
+    "primary_robust_counterfactuals": 102,
+    "donor_supported_origins": 104,
+    "scientific_reload_maximum_difference_kj": 0.0,
+    "independent_audit_successes": 1329,
+    "independent_selected_weight_reloads": 1095,
+    "tests": 582,
+    "ci_run": 41178319213,
+    "ci_python_versions": [
+      "3.11",
+      "3.12"
+    ],
+    "promotion": false,
+    "target_quality": "PROXY_NOT_MEASURED",
+    "limitations": [
+      "Model dependence and bounded kinematic/proxy scenarios; causal effects UNKNOWN",
+      "Actuator/friction-circle/complete path/thermal/race-control feasibility UNKNOWN",
+      "Reused development events and training marginal support; no population guarantee",
+      "Explicit donor/faithfulness/support/crossing abstentions retained",
+      "Mean-target crossing can increase individual wheel/horizon outputs; two non-monotone primary responses preserved",
+      "No production promotion; research foundation R1 and kernel R0 unchanged"
+    ],
+    "local_full_regression": {
+      "date": "2026-10-31",
+      "python": "3.12.12",
+      "platform": "Windows",
+      "passed": 582,
+      "existing_dependency_warnings": 2,
+      "seconds": 470.78,
+      "output_root": ".cache/r027-r028-full-fp64-20261031"
+    }
   }
 }

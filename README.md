@@ -76,6 +76,15 @@ scores and event/sequence confidence. The selected XGBoost candidate passes the
 frozen descriptive gate; proxy labels and weak unseen interval coverage remain
 explicit.
 
+The [R027/R028 explanation study](docs/verification/forecast-explanation-report.md)
+adds temporal model diagnostics with independent faithfulness tests and bounded,
+constraint-checked counterfactual scenarios. All ten frozen checkpoints and two
+baselines were evaluated on128 fixed development origins. The primary XGBoost
+family finds102 scenarios that cross both saved seeds' targets, while unsupported
+or unstable cases abstain. These are public proxy/model what-if results; complete
+real-car feasibility and causal effects remain UNKNOWN. See the
+[model and run guide](docs/models/forecast-explanations-v1.md).
+
 The [completed R029 reference-geometry study](docs/verification/track-reconstruction-v3-report.md)
 adds source-supported Bahrain/Monza traces, analytic curvature, monotone arc
 distance and portable scientific replay. All 48 test laps pass the frozen v3
@@ -84,7 +93,7 @@ derivative stencils remain explicit; all native XY points are evaluated. Earlier
 failed studies remain preserved. Results concern registered public-source shape;
 surveyed boundaries and production promotion remain separate. See the
 [run card](docs/models/reference-geometry-v3.md). Longitudinal calibration is now
-dependency-ready; R027/R028 explanation studies remain open.
+dependency-ready and resumes next after completed R027/R028.
 
 ---
 

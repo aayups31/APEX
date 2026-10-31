@@ -50,6 +50,20 @@ def main() -> None:
                          "maximum_baseline_difference_to_original_r026_kj": method["maximum_baseline_difference_to_original_r026_kj"],
                          "inference_accumulation": method["inference_accumulation"]}
     source_failures = dict(Counter(r for d in result["source_and_scenario_diagnostics"] for r in d["source_violations"]))
+    robust_successes = [i for i, c in enumerate(result["robust_primary_counterfactuals"]) if c["selected_index"] is not None]
+    output_tradeoffs, nonmonotone = {}, []
+    for name in result["primary_frozen_seeds"]:
+        with np.load(args.study/(name+".npz"), allow_pickle=False) as raw:
+            changes = np.array([np.maximum(raw["counterfactual_raw"][i, result["robust_primary_counterfactuals"][i]["selected_index"]], 0)-
+                                np.maximum(raw["baseline_raw"][i], 0) for i in robust_successes])
+            output_tradeoffs[name] = {"increased_wheel_horizon_cells": int(np.sum(changes > 1e-7)),
+                                     "wheel_horizon_cells": int(changes.size), "maximum_increase_kj": float(changes.max())}
+    for i in robust_successes:
+        case = result["robust_primary_counterfactuals"][i]
+        a, b = case["selected_parameters"]
+        if a > 1 or b > 0:
+            nonmonotone.append({"origin": cohort["cases"][i]["origin"], "counterfactual": case,
+                                "interpretation": "NON_MONOTONE_MODEL_RESPONSE; NOT_A_DRIVING_RECOMMENDATION"})
     splice_failures = Counter()
     for diagnostic in result["source_and_scenario_diagnostics"]:
         splice_failures.update(diagnostic["splice_constraint_violations"])
@@ -63,6 +77,8 @@ def main() -> None:
                 "gates": result["gates"], "useful_evidence_by_stratum": result["useful_evidence_by_stratum"],
                 "same_family_seed_stability": result["same_family_seed_stability"], "methods": methods,
                 "robust_primary_counterfactuals": result["robust_primary_counterfactuals"],
+                "primary_per_wheel_horizon_tradeoffs": output_tradeoffs,
+                "primary_nonmonotone_model_responses": nonmonotone,
                 "source_constraint_failures": source_failures,
                 "diagnostic_splices": sum(d["diagnostic_splices"] for d in result["source_and_scenario_diagnostics"]),
                 "diagnostic_splice_constraint_failures": dict(splice_failures),
@@ -104,8 +120,8 @@ def main() -> None:
         ax.invert_yaxis()
         ax.set_xlim(0, 100)
         ax.set_xlabel("Percent of all selected origins (including abstentions)")
-        ax.set_title(title)
-        ax.legend(loc="lower right", fontsize=8)
+        ax.set_title(title, pad=30)
+        ax.legend(loc="lower center", bbox_to_anchor=(.5, 1.), ncol=2, frameon=False, fontsize=8)
         ax.grid(axis="x", alpha=.18)
     fig.suptitle("APEX R027/R028 · 128 fixed development origins · frozen models\nPROXY targets; model diagnostics and bounded scenarios, no real-car causal claim", fontsize=12)
     fig.savefig(figure_path, dpi=170)
