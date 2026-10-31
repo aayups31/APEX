@@ -10,6 +10,8 @@ from math import atan2, cos, sin, sqrt, tanh
 
 import numpy as np
 
+from apexsim.research.longitudinal_calibration import SpecificPowerDrag
+
 
 @dataclass(frozen=True)
 class BicycleParameters:
@@ -178,3 +180,116 @@ def kinetic_energy_j(state: BicycleState, params: BicycleParameters) -> float:
     """Planar translational plus yaw kinetic energy; no wheel/suspension energy."""
     validate_state(state, params)
     return .5*(params.mass_kg*(state.vx_mps**2+state.vy_mps**2)+params.yaw_inertia_kgm2*state.yaw_rate_radps**2)
+
+
+@dataclass(frozen=True)
+class StraightPowerDragInput:
+    """R030 straight-only consistency adapter; fixed throttle/DRS, state-dependent force.
+
+    Effective ratios are multiplied by the supplied PRIOR mass solely to test
+    algebraic compatibility. This does not identify actual engine or tyre forces.
+    Grip can limit the request; equivalence holds only when it is unsaturated.
+    """
+
+    model: SpecificPowerDrag
+    throttle: float = 1.
+    drs: int = 0
+
+    def __post_init__(self) -> None:
+        if not np.isfinite(self.throttle) or not .98 <= self.throttle <= 1 or self.drs not in (0, 1):
+            raise ValueError("R031 R030 adapter requires original full-throttle/DRS support")
+
+    def at(self, state: BicycleState, params: BicycleParameters) -> BicycleControl:
+        """Evaluate forces at each RK stage, without treating power as constant force."""
+        if not 40 <= state.vx_mps <= 105 or max(abs(state.vy_mps), abs(state.yaw_rate_radps)) > 1e-12:
+            raise ValueError("R031 R030 adapter is restricted to straight original speed support")
+        drag = self.model.open_drag_per_mass+self.model.extra_closed_drag_per_mass*(1-self.drs)
+        return BicycleControl(rear_fx_request_n=params.mass_kg*self.model.power_per_mass*self.throttle/state.vx_mps,
+                              resistance_n=params.mass_kg*(drag*state.vx_mps**2+self.model.rolling_acceleration))
+
+
+def lateral_linear_system(speed_mps: float, params: BicycleParameters) -> tuple[np.ndarray, np.ndarray]:
+    """Exact zero-slip Jacobian for [vy,r] at fixed vx, zero longitudinal forces.
+
+    This local small-angle reference is not a finite-slip stability guarantee.
+    B multiplies road-wheel steering in radians. Both axle forces are unsaturated.
+    """
+    if not np.isfinite(speed_mps) or not params.min_vx_mps <= speed_mps <= params.max_vx_mps:
+        raise ValueError("R031 linearization speed outside forward support")
+    cf, cr = params.front_stiffness_nprad, params.rear_stiffness_nprad
+    a, b, m, iz, v = params.front_distance_m, params.rear_distance_m, params.mass_kg, params.yaw_inertia_kgm2, speed_mps
+    return (np.array([[-(cf+cr)/(m*v), (-a*cf+b*cr)/(m*v)-v],
+                      [(-a*cf+b*cr)/(iz*v), -(a*a*cf+b*b*cr)/(iz*v)]]),
+            np.array([cf/m, a*cf/iz]))
+
+
+@dataclass(frozen=True)
+class BicycleRollout:
+    """Reproducible sampled trajectory plus all RK-stage constraint diagnostics."""
+
+    time_s: np.ndarray
+    states: np.ndarray
+    integration_checks: dict
+
+
+def integrate_bicycle(initial: BicycleState, time_s: np.ndarray,
+                      controls: list[BicycleControl | StraightPowerDragInput],
+                      params: BicycleParameters, *, max_step_s: float = .01,
+                      max_substeps: int = 200000) -> BicycleRollout:
+    """Forward RK4, left-held commands; validate every intermediate and final state.
+
+    A StraightPowerDragInput holds throttle/DRS rather than force; the adapter
+    resolves its power law at every stage. There are no observation resets,
+    speed clipping, low-speed blends or hidden numerical stabilization.
+    """
+    time_s = np.asarray(time_s, dtype=float)
+    if (time_s.ndim != 1 or len(time_s) < 2 or not np.isfinite(time_s).all()
+            or time_s[0] < 0 or np.any(np.diff(time_s) <= 0) or len(controls) != len(time_s)-1
+            or not all(isinstance(c, (BicycleControl, StraightPowerDragInput)) for c in controls)
+            or not np.isfinite(max_step_s) or not 0 < max_step_s <= .02
+            or type(max_substeps) is not int or max_substeps < 1):
+        raise ValueError("R031 requires increasing finite times, one command/interval and max step <=.02s")
+    requested_steps = np.ceil(np.diff(time_s)/max_step_s)
+    if not np.isfinite(requested_steps).all() or np.sum(requested_steps) > max_substeps:
+        raise ValueError("R031 integration substep budget exceeded")
+    validate_state(initial, params)
+    checks = {"stage_evaluations": 0, "projected_axle_requests": 0, "lateral_over_budget_axles": 0,
+              "maximum_fx_projection_n": 0., "maximum_utilization_squared": 0.,
+              "maximum_lateral_slip_power_w": 0., "maximum_power_balance_error_w": 0.,
+              "minimum_vx_mps": initial.vx_mps, "maximum_vx_mps": initial.vx_mps,
+              "maximum_abs_sideslip_rad": abs(atan2(initial.vy_mps, initial.vx_mps)),
+              "maximum_abs_yaw_rate_radps": abs(initial.yaw_rate_radps)}
+
+    def evaluate(values, command):
+        state = BicycleState.from_array(values)
+        applied = command.at(state, params) if isinstance(command, StraightPowerDragInput) else command
+        derivative, d = bicycle_rhs(state, applied, params)
+        checks["stage_evaluations"] += 1
+        for axle in (d.front, d.rear):
+            checks["projected_axle_requests"] += int(axle.longitudinal_projected)
+            checks["lateral_over_budget_axles"] += int(axle.lateral_demand_exceeds_budget)
+            checks["maximum_fx_projection_n"] = max(checks["maximum_fx_projection_n"], abs(axle.requested_fx_n-axle.fx_n))
+            checks["maximum_utilization_squared"] = max(checks["maximum_utilization_squared"], axle.utilization_squared)
+        checks["maximum_lateral_slip_power_w"] = max(checks["maximum_lateral_slip_power_w"], d.lateral_slip_power_w)
+        checks["maximum_power_balance_error_w"] = max(checks["maximum_power_balance_error_w"], abs(d.wheel_power_w-d.kinetic_energy_rate_w))
+        checks["minimum_vx_mps"] = min(checks["minimum_vx_mps"], state.vx_mps)
+        checks["maximum_vx_mps"] = max(checks["maximum_vx_mps"], state.vx_mps)
+        checks["maximum_abs_sideslip_rad"] = max(checks["maximum_abs_sideslip_rad"], abs(atan2(state.vy_mps, state.vx_mps)))
+        checks["maximum_abs_yaw_rate_radps"] = max(checks["maximum_abs_yaw_rate_radps"], abs(state.yaw_rate_radps))
+        return derivative
+
+    values = initial.array()
+    states = [values.copy()]
+    for i, dt in enumerate(np.diff(time_s)):
+        count = int(requested_steps[i])
+        h, command = dt/count, controls[i]
+        for _ in range(count):
+            k1 = evaluate(values, command)
+            k2 = evaluate(values+h*k1/2, command)
+            k3 = evaluate(values+h*k2/2, command)
+            k4 = evaluate(values+h*k3, command)
+            values = values+h*(k1+2*k2+2*k3+k4)/6
+            # Validate the accepted endpoint too; k4 is an intermediate estimate.
+            evaluate(values, command)
+        states.append(values.copy())
+    return BicycleRollout(time_s.copy(), np.array(states), checks)
