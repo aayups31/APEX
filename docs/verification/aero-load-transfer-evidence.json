@@ -1,0 +1,968 @@
+{
+  "content_sha256": "e9482e74b980ae7a0a3845df6a96ddcb9ec5ac5a927682fb04aa2e77279ce99d",
+  "independent_audit": {
+    "cases": 7,
+    "input_truth": "SYNTHETIC",
+    "maximum_error_by_state": [
+      3.1209979596269477e-06,
+      2.0747688598277136e-06,
+      3.132849478448829e-07,
+      2.1854228720030733e-06,
+      1.9262977165313e-05,
+      2.1933824456699114e-06
+    ],
+    "summary_sha256": "7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c",
+    "verified": true
+  },
+  "results": {
+    "cases": [
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 4.320099833421409e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 7.275957614183426e-12,
+          "maximum_root_residual_n": 0.0,
+          "maximum_utilization_squared": 0.0,
+          "minimum_contact_load_n": 5363.425994126717,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            4.547473508864641e-13,
+            0.0,
+            0.0,
+            4.263256414560601e-14,
+            0.0,
+            0.0
+          ],
+          [
+            5.684341886080802e-14,
+            0.0,
+            0.0,
+            4.263256414560601e-14,
+            0.0,
+            0.0
+          ],
+          [
+            5.684341886080802e-14,
+            0.0,
+            0.0,
+            2.1316282072803006e-14,
+            0.0,
+            0.0
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          2.842170943040401e-14,
+          0.0,
+          0.0,
+          5.684341886080802e-14,
+          0.0,
+          0.0
+        ],
+        "name": "coast",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 4.774847184307873e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.9103830456733704e-11,
+          "maximum_root_residual_n": 0.0,
+          "maximum_utilization_squared": 0.11927594373288557,
+          "minimum_contact_load_n": 5791.0,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            6.679101716144942e-13,
+            0.0,
+            0.0,
+            1.7053025658242404e-13,
+            0.0,
+            0.0
+          ],
+          [
+            7.105427357601002e-14,
+            0.0,
+            0.0,
+            1.4210854715202004e-14,
+            0.0,
+            0.0
+          ],
+          [
+            4.263256414560601e-14,
+            0.0,
+            0.0,
+            4.973799150320701e-14,
+            0.0,
+            0.0
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          8.526512829121202e-14,
+          0.0,
+          0.0,
+          6.394884621840902e-14,
+          0.0,
+          0.0
+        ],
+        "name": "drive",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 4.433786671143025e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 5.820766091346741e-11,
+          "maximum_root_residual_n": 0.0,
+          "maximum_utilization_squared": 0.049855967526817764,
+          "minimum_contact_load_n": 4671.889416605558,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            2.3305801732931286e-12,
+            0.0,
+            0.0,
+            1.2079226507921703e-13,
+            0.0,
+            0.0
+          ],
+          [
+            1.4210854715202004e-13,
+            0.0,
+            0.0,
+            4.263256414560601e-14,
+            0.0,
+            0.0
+          ],
+          [
+            8.526512829121202e-14,
+            0.0,
+            0.0,
+            4.973799150320701e-14,
+            0.0,
+            0.0
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          2.1316282072803006e-13,
+          0.0,
+          0.0,
+          8.171241461241152e-14,
+          0.0,
+          0.0
+        ],
+        "name": "brake",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 5.616840326183592e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 3.637978807091713e-11,
+          "maximum_root_residual_n": 4.547473508864641e-13,
+          "maximum_utilization_squared": 0.056338154005551366,
+          "minimum_contact_load_n": 5345.68144899491,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            6.603990101439194e-07,
+            7.696306170146272e-07,
+            1.2503114587766873e-07,
+            4.6607502213191765e-07,
+            9.217768471077303e-06,
+            8.260617838928841e-07
+          ],
+          [
+            3.792872860231e-08,
+            4.4417822309128496e-08,
+            7.438405384696534e-09,
+            2.6849527046124422e-08,
+            5.522524279683028e-07,
+            5.2303323616609276e-08
+          ],
+          [
+            2.2693029677611776e-09,
+            2.6628974580944487e-09,
+            4.5298631165535674e-10,
+            1.6096706190182886e-09,
+            3.374469293576654e-08,
+            3.27796528809543e-09
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          3.5659425634548825e-08,
+          4.175492485103405e-08,
+          6.985419073041177e-09,
+          2.5239856427106133e-08,
+          5.185077350325362e-07,
+          4.9025358328513846e-08
+        ],
+        "name": "left",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 5.616840326183592e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 3.637978807091713e-11,
+          "maximum_root_residual_n": 4.547473508864641e-13,
+          "maximum_utilization_squared": 0.056338154005551366,
+          "minimum_contact_load_n": 5345.68144899491,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            6.603990101439194e-07,
+            7.696306170146272e-07,
+            1.2503114587766873e-07,
+            4.6607502213191765e-07,
+            9.217768471077303e-06,
+            8.260617838928841e-07
+          ],
+          [
+            3.792872860231e-08,
+            4.4417822309128496e-08,
+            7.438405384696534e-09,
+            2.6849527046124422e-08,
+            5.522524279683028e-07,
+            5.2303323616609276e-08
+          ],
+          [
+            2.2693029677611776e-09,
+            2.6628974580944487e-09,
+            4.5298631165535674e-10,
+            1.6096706190182886e-09,
+            3.374469293576654e-08,
+            3.27796528809543e-09
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          3.5659425634548825e-08,
+          4.175492485103405e-08,
+          6.985419073041177e-09,
+          2.5239856427106133e-08,
+          5.185077350325362e-07,
+          4.9025358328513846e-08
+        ],
+        "name": "right",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 6.0254023992456496e-12,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.3655745685100555e-11,
+          "maximum_root_residual_n": 4.831690603168681e-13,
+          "maximum_utilization_squared": 0.12766891843404674,
+          "minimum_contact_load_n": 4974.591207542818,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            1.5891762643605034e-06,
+            2.0747688598277136e-06,
+            1.6000988192765853e-07,
+            9.964247240645818e-07,
+            1.2449268881511988e-05,
+            1.0595605772212302e-06
+          ],
+          [
+            9.132628520092112e-08,
+            1.195697141298524e-07,
+            9.611222279853893e-09,
+            5.7561130972771934e-08,
+            7.513245727508444e-07,
+            6.799054710904251e-08
+          ],
+          [
+            5.464983132696943e-09,
+            7.1635692933114115e-09,
+            5.879790647422833e-10,
+            3.455589592249453e-09,
+            4.606758287339918e-08,
+            4.287004667924421e-09
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          8.586130206822418e-08,
+          1.1240614483654099e-07,
+          9.02324321511161e-09,
+          5.410554138052248e-08,
+          7.052569898774452e-07,
+          6.370354244111809e-08
+        ],
+        "name": "combined",
+        "passed": true
+      },
+      {
+        "diagnostics": {
+          "force_evaluations": 1040,
+          "maximum_pitch_residual_nm": 6.3765011049099485e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.1827872842550278e-11,
+          "maximum_root_residual_n": 1.7701893284538528e-09,
+          "maximum_utilization_squared": 0.12305503880124095,
+          "minimum_contact_load_n": 5351.914504613824,
+          "projected_axle_requests": 0
+        },
+        "maximum_dop853_error_by_step_and_state": [
+          [
+            3.1209979596269477e-06,
+            1.143944892478821e-06,
+            3.132849478448829e-07,
+            2.1854228720030733e-06,
+            1.9262977165313e-05,
+            2.1933824456699114e-06
+          ],
+          [
+            2.304115298557008e-07,
+            7.537870638785193e-08,
+            1.9967100015061412e-08,
+            1.6645768852185938e-07,
+            1.2520026760054481e-06,
+            1.4998667133281351e-07
+          ],
+          [
+            1.5916299389573396e-08,
+            7.056237594227355e-09,
+            1.2729290538304738e-09,
+            1.1655984621938842e-08,
+            8.885489283239068e-08,
+            1.0177602982608391e-08
+          ]
+        ],
+        "maximum_fine_refinement_by_state": [
+          2.144952304661274e-07,
+          7.049899108935165e-08,
+          1.8694170961230938e-08,
+          1.5480170389992054e-07,
+          1.1711121059160279e-06,
+          1.3980906835020512e-07
+        ],
+        "name": "pulse",
+        "passed": true
+      }
+    ],
+    "decision": "ACCEPT_SCOPED_AERO_LOAD_TRANSFER",
+    "force_grid": {
+      "abstained": 4,
+      "attempted": 45,
+      "maximum_independent_load_error_n": 1.2441887520253658e-09,
+      "maximum_independent_rhs_error": 1.7132961716015416e-12,
+      "rejections": [
+        {
+          "each_axle_fx_n": -20000,
+          "reason": "UNPROVEN_UNIQUENESS_AT_FRONT_SATURATION",
+          "speed_mps": 90,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "reason": "UNPROVEN_UNIQUENESS_AT_FRONT_SATURATION",
+          "speed_mps": 90,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "reason": "UNPROVEN_UNIQUENESS_AT_FRONT_SATURATION",
+          "speed_mps": 90,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "reason": "UNPROVEN_UNIQUENESS_AT_FRONT_SATURATION",
+          "speed_mps": 90,
+          "steering_rad": 0.1
+        }
+      ],
+      "supported": 41,
+      "supported_points": [
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 6110.507626728688,
+          "pitch_residual_nm": 0.0,
+          "rear_load_n": 2902.3158732713127,
+          "speed_mps": 10,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 5551.30532309915,
+          "pitch_residual_nm": -8.892584446584806e-10,
+          "rear_load_n": 3461.5181769008504,
+          "speed_mps": 10,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 5051.491344692008,
+          "pitch_residual_nm": -8.347740276803961e-10,
+          "rear_load_n": 3961.3321553079923,
+          "speed_mps": 10,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 4543.4536915996705,
+          "pitch_residual_nm": -3.9374299376504496e-09,
+          "rear_load_n": 4469.36980840033,
+          "speed_mps": 10,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 3863.530332372984,
+          "pitch_residual_nm": -4.547473508864641e-13,
+          "rear_load_n": 5149.293167627016,
+          "speed_mps": 10,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 6114.323512500029,
+          "pitch_residual_nm": -1.0459189070388675e-10,
+          "rear_load_n": 2898.499987499971,
+          "speed_mps": 10,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 5487.720575,
+          "pitch_residual_nm": -9.094947017729282e-13,
+          "rear_load_n": 3525.102925,
+          "speed_mps": 10,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 4987.720575,
+          "pitch_residual_nm": -8.668621376273222e-13,
+          "rear_load_n": 4025.102925,
+          "speed_mps": 10,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 4487.720575,
+          "pitch_residual_nm": -9.094947017729282e-13,
+          "rear_load_n": 4525.102925,
+          "speed_mps": 10,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 3861.1176374999714,
+          "pitch_residual_nm": 1.0277290130034089e-10,
+          "rear_load_n": 5151.705862500029,
+          "speed_mps": 10,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 6110.507626728688,
+          "pitch_residual_nm": 0.0,
+          "rear_load_n": 2902.3158732713127,
+          "speed_mps": 10,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 5537.877308499489,
+          "pitch_residual_nm": -5.393303581513464e-10,
+          "rear_load_n": 3474.9461915005113,
+          "speed_mps": 10,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 5038.648750297084,
+          "pitch_residual_nm": -6.232596660993295e-10,
+          "rear_load_n": 3974.1747497029164,
+          "speed_mps": 10,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 4535.256774049478,
+          "pitch_residual_nm": -2.0463630789890885e-12,
+          "rear_load_n": 4477.566725950523,
+          "speed_mps": 10,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 3863.530332372984,
+          "pitch_residual_nm": -4.547473508864641e-13,
+          "rear_load_n": 5149.293167627016,
+          "speed_mps": 10,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 7694.36229221214,
+          "pitch_residual_nm": 0.0,
+          "rear_load_n": 4074.71120778786,
+          "speed_mps": 40,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 6795.074954581769,
+          "pitch_residual_nm": -1.175749275716953e-09,
+          "rear_load_n": 4973.9985454182315,
+          "speed_mps": 40,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 6295.411991713341,
+          "pitch_residual_nm": -1.461785359424539e-09,
+          "rear_load_n": 5473.661508286659,
+          "speed_mps": 40,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 5792.019752044253,
+          "pitch_residual_nm": -2.1973391994833946e-09,
+          "rear_load_n": 5977.053747955747,
+          "speed_mps": 40,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 4759.871328807073,
+          "pitch_residual_nm": -9.094947017729282e-13,
+          "rear_load_n": 7009.202171192927,
+          "speed_mps": 40,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 7699.167262500029,
+          "pitch_residual_nm": -1.0459189070388675e-10,
+          "rear_load_n": 4069.906237499971,
+          "speed_mps": 40,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 6728.033075,
+          "pitch_residual_nm": -6.821210263296962e-13,
+          "rear_load_n": 5041.040425,
+          "speed_mps": 40,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 6228.033075,
+          "pitch_residual_nm": -6.821210263296962e-13,
+          "rear_load_n": 5541.040425,
+          "speed_mps": 40,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 5728.033075,
+          "pitch_residual_nm": -6.821210263296962e-13,
+          "rear_load_n": 6041.040425,
+          "speed_mps": 40,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 4756.898887499971,
+          "pitch_residual_nm": 1.0277290130034089e-10,
+          "rear_load_n": 7012.174612500029,
+          "speed_mps": 40,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 7694.36229221214,
+          "pitch_residual_nm": 0.0,
+          "rear_load_n": 4074.71120778786,
+          "speed_mps": 40,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 6790.395337919516,
+          "pitch_residual_nm": -7.480593922082335e-10,
+          "rear_load_n": 4978.678162080484,
+          "speed_mps": 40,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 6290.921875907427,
+          "pitch_residual_nm": -9.37546928980737e-10,
+          "rear_load_n": 5478.151624092573,
+          "speed_mps": 40,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 5788.429927295907,
+          "pitch_residual_nm": -4.457206159713678e-09,
+          "rear_load_n": 5980.6435727040935,
+          "speed_mps": 40,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 4759.871328807073,
+          "pitch_residual_nm": -9.094947017729282e-13,
+          "rear_load_n": 7009.202171192927,
+          "speed_mps": 40,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 12180.29297773465,
+          "pitch_residual_nm": -4.547473508864641e-11,
+          "rear_load_n": 11532.530522265355,
+          "speed_mps": 90,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 11681.20049844259,
+          "pitch_residual_nm": -6.480149750132114e-11,
+          "rear_load_n": 12031.623001557417,
+          "speed_mps": 90,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 11181.669146185366,
+          "pitch_residual_nm": 2.5715962692629546e-10,
+          "rear_load_n": 12531.15435381464,
+          "speed_mps": 90,
+          "steering_rad": -0.1
+        },
+        {
+          "each_axle_fx_n": -20000,
+          "front_load_n": 14429.769048148151,
+          "pitch_residual_nm": -1.8189894035458565e-12,
+          "rear_load_n": 9283.054451851855,
+          "speed_mps": 90,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 12102.720575000003,
+          "pitch_residual_nm": 9.094947017729282e-13,
+          "rear_load_n": 11610.102925000003,
+          "speed_mps": 90,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 11602.720575000003,
+          "pitch_residual_nm": 9.094947017729282e-13,
+          "rear_load_n": 12110.102925000003,
+          "speed_mps": 90,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 11102.720575000003,
+          "pitch_residual_nm": 9.094947017729282e-13,
+          "rear_load_n": 12610.102925000003,
+          "speed_mps": 90,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": 20000,
+          "front_load_n": 8832.047918518521,
+          "pitch_residual_nm": 0.0,
+          "rear_load_n": 14880.775581481485,
+          "speed_mps": 90,
+          "steering_rad": 0
+        },
+        {
+          "each_axle_fx_n": -3000,
+          "front_load_n": 12176.884564033138,
+          "pitch_residual_nm": -2.864908310584724e-11,
+          "rear_load_n": 11535.938935966868,
+          "speed_mps": 90,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 0,
+          "front_load_n": 11677.835427709833,
+          "pitch_residual_nm": -3.780087354243733e-11,
+          "rear_load_n": 12034.988072290173,
+          "speed_mps": 90,
+          "steering_rad": 0.1
+        },
+        {
+          "each_axle_fx_n": 3000,
+          "front_load_n": 11178.401926999097,
+          "pitch_residual_nm": 1.6120793588925153e-10,
+          "rear_load_n": 12534.42157300091,
+          "speed_mps": 90,
+          "steering_rad": 0.1
+        }
+      ]
+    },
+    "hand_error_n": 9.094947017729282e-13,
+    "identifiability": {
+      "drag_only_rank": 1,
+      "fixed_density_parameters": 4,
+      "fixed_density_rank": 4,
+      "maximum_normalized_fd_error": 1.4788332174992487e-11,
+      "maximum_null_direction_error": 2.220446049250313e-16,
+      "maximum_product_invariance_error_n": 0.0,
+      "observation_truth": "SYNTHETIC_FORCE_SENSOR_ORACLE; NOT_PUBLIC_MEASUREMENTS",
+      "parameter_order": [
+        "air_density_kgpm3",
+        "drag_area_m2",
+        "downforce_area_m2",
+        "front_downforce_fraction",
+        "cg_height_m"
+      ],
+      "parameters": 5,
+      "passed": true,
+      "rank": 4,
+      "real_parameters_identified": false,
+      "relative_parameter_jacobian_singular_values": [
+        4.378655370208765,
+        1.6860730478737522,
+        1.2320626860563542,
+        0.0982484075712187,
+        3.124926652208232e-16
+      ],
+      "zero_tyre_force_rank": 3
+    },
+    "input_truth": "SYNTHETIC",
+    "limitations": [
+      "Generic priors and synthetic force-sensor oracle; real vehicle parameters not identified",
+      "Static pitch equilibrium and fixed axle stiffness; no lateral load transfer, suspension or ride-height map",
+      "Drag at CoG; no independent torque/fuel/ERS calibration or production promotion"
+    ],
+    "production_promotion": false,
+    "schema_version": "apex-aero-load-transfer-v1-results",
+    "sensitivity": [
+      {
+        "initial_front_load_n": 6360.2726851355965,
+        "initial_rear_load_n": 5408.7273148644035,
+        "parameter": "drag_area_m2",
+        "terminal_state_difference": [
+          0.40531642290284253,
+          0.0920252560032484,
+          0.0005075882122185238,
+          0.38885352212336954,
+          -0.017552192478688167,
+          0.0005142258356896634
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 0.8800000000000001
+      },
+      {
+        "initial_front_load_n": 6360.2726851355965,
+        "initial_rear_load_n": 5408.7273148644035,
+        "parameter": "drag_area_m2",
+        "terminal_state_difference": [
+          -0.39939951455872347,
+          -0.09073421004381466,
+          -0.0005157065955226359,
+          -0.3804634785979317,
+          0.016972970943027077,
+          -0.0005271040529548632
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 1.32
+      },
+      {
+        "initial_front_load_n": 6095.656299891131,
+        "initial_rear_load_n": 5085.343700108869,
+        "parameter": "downforce_area_m2",
+        "terminal_state_difference": [
+          0.0015881706991933697,
+          -0.010745384064529517,
+          -0.00015575062991590727,
+          -0.0007948151440615447,
+          -0.0023462160664570186,
+          -6.368721219171536e-05
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 2.4
+      },
+      {
+        "initial_front_load_n": 6624.887193249607,
+        "initial_rear_load_n": 5732.112806750393,
+        "parameter": "downforce_area_m2",
+        "terminal_state_difference": [
+          -0.0018648638924361194,
+          0.010848959586558848,
+          0.0001862859905263914,
+          0.0005847935054958953,
+          0.0019629049532756127,
+          7.374100965112929e-05
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 3.6
+      },
+      {
+        "initial_front_load_n": 6066.254349538385,
+        "initial_rear_load_n": 5702.745650461615,
+        "parameter": "front_downforce_fraction",
+        "terminal_state_difference": [
+          0.01979697930713087,
+          -0.06477501922829987,
+          -0.0021470337952229634,
+          0.004034431506092062,
+          0.003883881242920717,
+          -0.0008223718593527163
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 0.35
+      },
+      {
+        "initial_front_load_n": 6654.288701825825,
+        "initial_rear_load_n": 5114.711298174175,
+        "parameter": "front_downforce_fraction",
+        "terminal_state_difference": [
+          -0.020349449089408722,
+          0.06527116587793103,
+          0.002196862110221298,
+          -0.004311788428744023,
+          -0.004289879414312081,
+          0.0008360481149597143
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 0.55
+      },
+      {
+        "initial_front_load_n": 6333.816909147,
+        "initial_rear_load_n": 5435.183090853,
+        "parameter": "cg_height_m",
+        "terminal_state_difference": [
+          0.0020289656154091062,
+          -0.0065270588591630485,
+          -0.0002291811773789676,
+          0.000434824495663122,
+          0.0004903828652501607,
+          -0.00010216017910993913
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 0.24
+      },
+      {
+        "initial_front_load_n": 6386.729058191458,
+        "initial_rear_load_n": 5382.270941808542,
+        "parameter": "cg_height_m",
+        "terminal_state_difference": [
+          -0.0020347491256416106,
+          0.006532697792398068,
+          0.00022977719078626224,
+          -0.0004379119721278357,
+          -0.0004963952814717731,
+          0.00010239260980407505
+        ],
+        "truth": "SYNTHETIC_PRIOR_SENSITIVITY",
+        "value": 0.36
+      }
+    ],
+    "task_closure_eligible": true,
+    "zero_aero_height_r031_maximum_difference": 0.0
+  },
+  "run_manifest": {
+    "content_sha256": "b976b24ee214a7ce5d70e47b78ef41aa537ca08a04b5c7f3a40d93bd84fb285e",
+    "files": {
+      "configuration.json": {
+        "bytes": 27214,
+        "sha256": "bb1745e2ff8f4c631f0a0ef87c4fc376f4b808cbf2970d4ce12b931671a2e15a"
+      },
+      "results.json": {
+        "bytes": 25822,
+        "sha256": "13c3a0b726055b25f190d60a0dafb6e90f9e46f7b1ce50c42789078214ae2a97"
+      },
+      "sources/AERO_LOAD_TRANSFER.md": {
+        "bytes": 8013,
+        "sha256": "37a5ab4e906afd725932890220616cc2b9a3225d673c3267fc92876b1ed1ba84"
+      },
+      "sources/aero_audit.py": {
+        "bytes": 3457,
+        "sha256": "c6a7b4fec152a56c351973c36d14eccbcdfa783e1307c8b7b45f6420c80cfde6"
+      },
+      "sources/aero_bicycle.py": {
+        "bytes": 10339,
+        "sha256": "f725e4a844e065da44b93a376b7903a0318690eaaf87d12912c4e0458c9f6539"
+      },
+      "sources/aero_identifiability.py": {
+        "bytes": 4002,
+        "sha256": "187d08a318fe97af435525779a3280bbef669b19268db57283317b90520e49ae"
+      },
+      "sources/aero_study.py": {
+        "bytes": 12741,
+        "sha256": "93a1576e1132749b979ddd6cfaddfd77d87313d1454be1108bc54e97bbba00b6"
+      },
+      "sources/bicycle.py": {
+        "bytes": 15182,
+        "sha256": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795"
+      },
+      "sources/evidence.py": {
+        "bytes": 3627,
+        "sha256": "5a55e56b943880c3d8adc72f3a5cdef2edfb6891c463401eb922dd66cc706b74"
+      },
+      "summary.json": {
+        "bytes": 1408,
+        "sha256": "affd885a696822ef2c330fecc61b3207904d357e82eece3a8e6885981f156a84"
+      },
+      "trajectories.npz": {
+        "bytes": 27823,
+        "sha256": "d9975264c3fba89d5cb0176424d11098f12ce8c766b03ad1afc03cf23a161fb5"
+      }
+    },
+    "schema_version": "apex-aero-load-transfer-v1-manifest",
+    "summary_sha256": "7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c"
+  },
+  "run_manifest_sha256": "ba1ac40a009583ab175bb4afc38c595dadce2bbdb036a7a84040be55df195376",
+  "schema_version": "apex-aero-load-transfer-publication-v1",
+  "study_summary": {
+    "commit": "d9f021ad36aea261e394810c3620f66cad9c5541",
+    "configuration_sha256": "5dbdac222e451ee6ec6b0dd55f809405700206eac808e9cd581379c158bf796e",
+    "content_sha256": "7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c",
+    "decision": "ACCEPT_SCOPED_AERO_LOAD_TRANSFER",
+    "environment": {
+      "numpy": "2.5.3",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.12",
+      "scipy": "1.18.1"
+    },
+    "implementation_sha256": {
+      "AERO_LOAD_TRANSFER.md": "37a5ab4e906afd725932890220616cc2b9a3225d673c3267fc92876b1ed1ba84",
+      "aero_audit.py": "c6a7b4fec152a56c351973c36d14eccbcdfa783e1307c8b7b45f6420c80cfde6",
+      "aero_bicycle.py": "f725e4a844e065da44b93a376b7903a0318690eaaf87d12912c4e0458c9f6539",
+      "aero_identifiability.py": "187d08a318fe97af435525779a3280bbef669b19268db57283317b90520e49ae",
+      "aero_study.py": "93a1576e1132749b979ddd6cfaddfd77d87313d1454be1108bc54e97bbba00b6",
+      "bicycle.py": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795",
+      "evidence.py": "5a55e56b943880c3d8adc72f3a5cdef2edfb6891c463401eb922dd66cc706b74"
+    },
+    "input_truth": "SYNTHETIC",
+    "production_promotion": false,
+    "results_sha256": "0ee301a6a1991470e7d88c1c2f2e355836a0a43e453157db53029000052033a0",
+    "runtime_seconds": 15.142414399997506,
+    "schema_version": "apex-aero-load-transfer-v1-study",
+    "task_closure_eligible": true
+  },
+  "verification": {
+    "decision": "ACCEPT_SCOPED_AERO_LOAD_TRANSFER",
+    "maximum_reload_difference": 0.0,
+    "summary_sha256": "7114c89fcfcb53a968f2645ea6285dbdbb713c1ca6895c6c5029e8a2bfc4441c",
+    "verified": true
+  }
+}

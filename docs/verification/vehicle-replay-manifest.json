@@ -1,0 +1,23 @@
+{
+  "content_sha256": "c5ad074aa18da93992870096d80a126b37a44a6b34ae4b610d12b5cf250fca1b",
+  "evidence_sha256": [
+    "e9482e74b980ae7a0a3845df6a96ddcb9ec5ac5a927682fb04aa2e77279ce99d",
+    "0946fd06720de3ce2a4dde9051d05763f1b6c82b8c16a499343382a196851f01"
+  ],
+  "files": {
+    "aero-load-transfer-evidence.json": {
+      "bytes": 31926,
+      "sha256": "4d03a79d425eb6deea510e271c16fb7fea837fa1a8178c907bb67a28f22acdf9"
+    },
+    "recorded-replay-alignment-evidence.json": {
+      "bytes": 113575,
+      "sha256": "552c8dece4d8673a2d90e64b98a175e1888b6f5051dece6ed78b465802598388"
+    },
+    "vehicle-replay-summary.png": {
+      "bytes": 231643,
+      "sha256": "6383b534757c8ca3e95cff062d56b61aedc4da8b80a27395d8aaa16870ddaa99"
+    }
+  },
+  "publisher_sha256": "c202a82b4f19f64c6396d5d07d552a316a0984f4051a38edc9d1f03df47ed9a2",
+  "schema_version": "apex-vehicle-replay-publication-manifest-v1"
+}
