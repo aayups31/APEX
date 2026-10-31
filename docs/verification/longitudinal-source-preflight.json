@@ -1,0 +1,85 @@
+{
+  "content_sha256": "2559478bf6a00a40f1850222035a86bf0046e14b857d1c81973513e209b3b9ab",
+  "coverage": {
+    "test/monza/4": {
+      "closed_intervals": 132,
+      "intervals": 157,
+      "laps": 8,
+      "open_intervals": 25,
+      "sections": 14
+    },
+    "test/monza/44": {
+      "closed_intervals": 190,
+      "intervals": 200,
+      "laps": 10,
+      "open_intervals": 10,
+      "sections": 19
+    },
+    "train/bahrain/4": {
+      "closed_intervals": 230,
+      "intervals": 270,
+      "laps": 12,
+      "open_intervals": 40,
+      "sections": 26
+    },
+    "train/bahrain/44": {
+      "closed_intervals": 234,
+      "intervals": 234,
+      "laps": 11,
+      "open_intervals": 0,
+      "sections": 22
+    },
+    "train/monza/4": {
+      "closed_intervals": 8,
+      "intervals": 189,
+      "laps": 11,
+      "open_intervals": 181,
+      "sections": 18
+    },
+    "train/monza/44": {
+      "closed_intervals": 10,
+      "intervals": 175,
+      "laps": 11,
+      "open_intervals": 165,
+      "sections": 17
+    },
+    "validation/bahrain/4": {
+      "closed_intervals": 142,
+      "intervals": 142,
+      "laps": 8,
+      "open_intervals": 0,
+      "sections": 14
+    },
+    "validation/bahrain/44": {
+      "closed_intervals": 53,
+      "intervals": 205,
+      "laps": 10,
+      "open_intervals": 152,
+      "sections": 20
+    }
+  },
+  "eligible_rows": 6628,
+  "fitting_performed": false,
+  "geometry_summary_sha256": "e22c1c6e0bf35a195120e47e6198c02d38549af4d51d38ef9f400c125d4ba684",
+  "input_truth": "FASTF1_PARSED_SOURCE",
+  "native_lap_rows": 30299,
+  "profile": "research",
+  "promotion": false,
+  "rejection_counts": {
+    "outside_full_throttle_high_speed_domain": 14477,
+    "outside_reference_straight_support": 7968,
+    "unknown_drs_code": 3,
+    "unsupported_causal_position": 820,
+    "unsupported_causal_speed_warmup": 403
+  },
+  "schema_version": "apex-longitudinal-dataset-v1",
+  "sections": 150,
+  "selected_source_laps": 88,
+  "source_gate_passed": true,
+  "split": {
+    "F1_2023_R01": "train",
+    "F1_2023_R14": "train",
+    "F1_2024_R01": "validation",
+    "F1_2024_R16": "test"
+  }
+}
