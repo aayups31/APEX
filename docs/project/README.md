@@ -36,7 +36,7 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 33/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 34/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
 R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
 adds independent temporal faithfulness tests and finite-catalogue counterfactual
@@ -55,8 +55,11 @@ passes its synthetic sensitivity/identifiability gate. R033's
 [recorded observation alignment](../verification/recorded-replay-alignment-report.md)
 passes frozen public coverage on88 laps/30,299 rows, with all150 longitudinal
 inputs supported. Complete measured bicycle readiness remains0%; unknown states
-are not fabricated. Next is R034 matched open-loop error evaluation; public
-cornering calibration, full-car replay and closed-loop gates remain open.
+are not fabricated. R034's [matched-horizon report](../verification/open-loop-errors-report.md)
+is complete:505 supported cases,95 explicit abstentions,2525 independently checked
+paths. Continuous full physical lap/stint replay remains unavailable. R035's
+conditional research controller is under final verification; public cornering
+calibration and full-car replay remain unresolved.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 

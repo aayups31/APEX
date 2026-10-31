@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-10-31",
   "research_inventory": {
-    "done": 33,
+    "done": 34,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R034"
+    "R035"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -359,6 +359,30 @@
       "Initial independent full-capacity arithmetic rejection and root endpoint failure are preserved; thresholds unchanged",
       "No public cornering accuracy, production or formal maturity promotion"
     ]
+  },
+  "matched_open_loop_error_report": {
+    "backlog_id": "R034",
+    "status": "DONE",
+    "completed_date": "2026-10-31",
+    "decision": "ACCEPT_SCOPED_ERROR_REPORT",
+    "report": "docs/verification/open-loop-errors-report.md",
+    "model_card": "docs/models/open-loop-errors-v1.md",
+    "evidence": "docs/verification/open-loop-errors-evidence.json",
+    "summary_sha256": "8e6c5ae08b4768afd8311b7a3a82c055c482fcc88859607da774f84270f24092",
+    "evidence_content_sha256": "92720f64c2495d293f80ecc6736436f91bfe06dd3d44f77e6939f2ed3e2e4dd8",
+    "source_sections": 150,
+    "source_laps": 88,
+    "supported_horizon_cases": 505,
+    "abstained_horizon_cases": 95,
+    "independently_audited_paths": 2525,
+    "maximum_independent_speed_difference_mps": 0.000000005555740756335581,
+    "scientific_replay_maximum_difference": 0.0,
+    "complete_measured_car_replay": false,
+    "production_promotion": false,
+    "targeted_tests": 10,
+    "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
+    "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
+    "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
   },
   "recorded_observation_alignment": {
     "backlog_id": "R033",

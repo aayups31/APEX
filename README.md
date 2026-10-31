@@ -118,9 +118,12 @@ parameter-identifiability limits. The
 aligns30,299 native rows across88 frozen laps:94.55% joint observed coverage,
 91.86% interval coverage and all150 longitudinal input bundles supported.
 Missing steering/body/fuel/battery states remain UNKNOWN; complete measured
-bicycle-input coverage is0%. Next is R034 matched open-loop errors by horizon
-and operating regime. Both results remain in research; production is unchanged.
-The implementation passes664 tests and full CI on Python3.11/3.12.
+bicycle-input coverage is0%. The [R034 matched-error report](docs/verification/open-loop-errors-report.md)
+accounts for150 sections,88 laps and all600 requested forecast cases:505 supported,
+95 explicitly too short. All2525 saved model/baseline paths pass independent
+integration checks. Complete physical lap/stint errors remain unavailable.
+The R034 implementation passes674 tests and full CI on Python3.11/3.12.
+R035's conditional research driver is under final verification; production is unchanged.
 
 ---
 
