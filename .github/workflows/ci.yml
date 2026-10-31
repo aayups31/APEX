@@ -83,6 +83,12 @@ jobs:
         run: python -m apexsim.cli verify-recorded-replay .cache/ci-recorded-replay
       - name: Independently audit causal native rows and unknown-state handling
         run: python -m apexsim.cli audit-recorded-replay .cache/ci-recorded-replay
+      - name: Report matched forecast horizons and unavailable continuous scopes
+        run: python -m apexsim.cli open-loop-error-study --recorded .cache/ci-recorded-replay --development .cache/ci-longitudinal-calibration-development --output .cache/ci-open-loop-errors
+      - name: Regenerate all matched horizon errors and support denominators
+        run: python -m apexsim.cli verify-open-loop-errors .cache/ci-open-loop-errors
+      - name: Independently audit horizon paths and scalar score hierarchy
+        run: python -m apexsim.cli audit-open-loop-errors .cache/ci-open-loop-errors
       - name: Verify smooth lap-map artifacts
         run: python -m apexsim.cli smooth-lap-demo --output .cache/ci-smooth-lap
       - name: Verify matched strategy-solver artifacts
