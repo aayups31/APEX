@@ -87,8 +87,11 @@ def solve_axle_loads(state: BicycleState, control: BicycleControl, p: BicyclePar
     # contraction using a constant mu_y slope bound.
     maximum_tyrex = (p.mu_x+p.mu_y*abs(s))*total
     radius = aero.cg_height_m*maximum_tyrex/length
-    lower = max(aero.minimum_contact_load_n, base-radius)
-    upper = min(total-aero.minimum_contact_load_n, base+radius)
+    # Outward floating-point enclosure keeps an exact capacity-boundary root
+    # bracketed; this is a few ULPs, not a physical load correction.
+    enclosure_roundoff = 16*np.spacing(total)
+    lower = max(aero.minimum_contact_load_n, base-radius-enclosure_roundoff)
+    upper = min(total-aero.minimum_contact_load_n, base+radius+enclosure_roundoff)
     if not np.isfinite([total, base, radius]).all() or lower > upper:
         raise ValueError("R032 contact-load domain is empty")
     requested = abs(control.front_fx_request_n)
