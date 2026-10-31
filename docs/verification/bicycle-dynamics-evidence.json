@@ -1,0 +1,893 @@
+{
+  "content_sha256": "68a2d744406a767e30e8988b5c6a418be1d5fab46c4c24bcfe7fe4d46c267f30",
+  "independent_audit": {
+    "cases": 14,
+    "input_truth": "SYNTHETIC",
+    "maximum_error_by_state": [
+      7.030324866263982e-06,
+      1.7697848093689572e-06,
+      1.1305885256329695e-06,
+      3.560842039007639e-06,
+      2.6744552973134716e-05,
+      9.036684355701041e-06
+    ],
+    "production_promotion": false,
+    "state_units": [
+      "m",
+      "m",
+      "rad",
+      "m/s",
+      "m/s",
+      "rad/s"
+    ],
+    "summary_sha256": "8525ea3405407e0006d5d6cde0a9a627ab8c90f6b94c87802c77ddaa066ddda2",
+    "verified": true
+  },
+  "results": {
+    "abstention_challenges": 1,
+    "cases": [
+      {
+        "duration_s": 3.0,
+        "name": "coast",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          1.8474111129762605e-13,
+          0.0,
+          0.0,
+          1.1368683772161603e-13,
+          0.0,
+          0.0
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          1.3073986337985843e-12,
+          0.0,
+          0.0,
+          9.023892744153272e-13,
+          0.0,
+          0.0
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.8474111129762605e-13,
+          0.0,
+          0.0,
+          1.8474111129762605e-13,
+          0.0,
+          0.0
+        ],
+        "special_checks": {
+          "maximum_node_energy_increase_j": -1170.4999999989523
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0,
+          "maximum_abs_yaw_rate_radps": 0.0,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 1.8189894035458565e-12,
+          "maximum_utilization_squared": 0.0,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 39.00000000000091,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "duration_s": 3.0,
+        "name": "drive",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          2.2737367544323206e-12,
+          0.0,
+          0.0,
+          1.3358203432289883e-12,
+          0.0,
+          0.0
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          3.979039320256561e-13,
+          0.0,
+          0.0,
+          2.6290081223123707e-13,
+          0.0,
+          0.0
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          3.694822225952521e-13,
+          0.0,
+          0.0,
+          2.6290081223123707e-13,
+          0.0,
+          0.0
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0,
+          "maximum_abs_yaw_rate_radps": 0.0,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.9103830456733704e-11,
+          "maximum_utilization_squared": 0.1804012331246913,
+          "maximum_vx_mps": 48.33333333333357,
+          "minimum_vx_mps": 40.0,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "duration_s": 3.0,
+        "name": "brake",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          1.9895196601282805e-13,
+          0.0,
+          0.0,
+          7.105427357601002e-14,
+          0.0,
+          0.0
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          7.958078640513122e-13,
+          0.0,
+          0.0,
+          4.867217739956686e-13,
+          0.0,
+          0.0
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.7053025658242404e-13,
+          0.0,
+          0.0,
+          1.0658141036401503e-13,
+          0.0,
+          0.0
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0,
+          "maximum_abs_yaw_rate_radps": 0.0,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.9103830456733704e-11,
+          "maximum_utilization_squared": 0.07389234508787358,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 28.333333333332874,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "duration_s": 3.0,
+        "name": "left",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          6.610005698348687e-08,
+          9.567877867766583e-08,
+          6.29241367691713e-09,
+          2.4911734897159477e-08,
+          4.863511978772661e-07,
+          4.272787762493735e-08
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          7.030537574337359e-08,
+          1.0176629317015795e-07,
+          6.7018472750535185e-09,
+          2.650228481115846e-08,
+          5.180768786472445e-07,
+          4.5599708287102914e-08
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.224141911393417e-06,
+          1.7697848093689572e-06,
+          1.1190996935736552e-07,
+          4.5907232504305284e-07,
+          8.607850944683526e-06,
+          7.124919556289466e-07
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.011184633212590092,
+          "maximum_abs_yaw_rate_radps": 0.14398854858088722,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 1.8189894035458565e-12,
+          "maximum_utilization_squared": 0.09359938466804424,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 39.68164978105355,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "duration_s": 3.0,
+        "name": "right",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          6.610005698348687e-08,
+          9.567877867766583e-08,
+          6.29241367691713e-09,
+          2.4911734897159477e-08,
+          4.863511978772661e-07,
+          4.272787762493735e-08
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          7.030537574337359e-08,
+          1.0176629317015795e-07,
+          6.7018472750535185e-09,
+          2.650228481115846e-08,
+          5.180768786472445e-07,
+          4.5599708287102914e-08
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.224141911393417e-06,
+          1.7697848093689572e-06,
+          1.1190996935736552e-07,
+          4.5907232504305284e-07,
+          8.607850944683526e-06,
+          7.124919556289466e-07
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.011184633212590092,
+          "maximum_abs_yaw_rate_radps": 0.14398854858088722,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 1.8189894035458565e-12,
+          "maximum_utilization_squared": 0.09359938466804424,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 39.68164978105355,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "duration_s": 3.0,
+        "name": "combined_brake",
+        "outcome": "SUPPORTED",
+        "output_nodes": 31,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          6.036114541529969e-08,
+          8.548924768092547e-08,
+          6.308620268541398e-09,
+          2.389566589044989e-08,
+          4.808141549211831e-07,
+          4.5029751261083106e-08
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          6.42001083406285e-08,
+          9.092854114101101e-08,
+          6.7188084817981775e-09,
+          2.5421179827844753e-08,
+          5.121729335852421e-07,
+          4.804795772361814e-08
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.1186530315399068e-06,
+          1.5818800633837782e-06,
+          1.1234648876132236e-07,
+          4.404042428518551e-07,
+          8.512415337030843e-06,
+          7.551353517487591e-07
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.010179138161885,
+          "maximum_abs_yaw_rate_radps": 0.13972271346335027,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 5.820766091346741e-11,
+          "maximum_utilization_squared": 0.15847405124153974,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 29.77209663333816,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1580
+        }
+      },
+      {
+        "independent_exit_time_s": 0.5922461624125949,
+        "maximum_prefix_error_by_state": [
+          4.503680859357928e-07,
+          1.3142293771584157e-06,
+          1.1305885256329695e-06,
+          3.560842039007639e-06,
+          2.6744552973134716e-05,
+          9.036684355701041e-06
+        ],
+        "name": "near_limit_drive",
+        "outcome": "ABSTAIN_SUPPORT_EXIT",
+        "output_nodes": 6,
+        "passed": true,
+        "rejection_by_step": [
+          {
+            "first_rejected_stage_time_s": 0.6000000000000001,
+            "independent_exit_time_difference_s": 0.007753837587405221,
+            "last_supported_output_time_s": 0.5,
+            "max_step_s": 0.02,
+            "rejected_state": [
+              19.142230736429873,
+              0.4041264728658478,
+              0.35172202096869576,
+              32.32518715008775,
+              -9.265149284731848,
+              2.067467869006974
+            ]
+          },
+          {
+            "first_rejected_stage_time_s": 0.5954545454545456,
+            "independent_exit_time_difference_s": 0.003208383041950702,
+            "last_supported_output_time_s": 0.5,
+            "max_step_s": 0.01,
+            "rejected_state": [
+              18.98983811674932,
+              0.39305424239354186,
+              0.34232423792845046,
+              32.38286359302063,
+              -9.002765177745854,
+              2.0277780585579177
+            ]
+          },
+          {
+            "first_rejected_stage_time_s": 0.592857142857143,
+            "independent_exit_time_difference_s": 0.0006109804445481037,
+            "last_supported_output_time_s": 0.5,
+            "max_step_s": 0.005,
+            "rejected_state": [
+              18.90279429219265,
+              0.3869633355915703,
+              0.3371515468879,
+              32.41147850837077,
+              -8.858458931979069,
+              2.005277986596079
+            ]
+          }
+        ],
+        "requested_duration_s": 1.0,
+        "supported_prefix_duration_s": 0.5
+      },
+      {
+        "duration_s": 4.0,
+        "name": "pulse",
+        "outcome": "SUPPORTED",
+        "output_nodes": 41,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          4.935159836350067e-07,
+          3.0919420623831684e-07,
+          1.7530050369640726e-08,
+          1.519266916716333e-07,
+          1.1415830721145381e-06,
+          1.226235637474815e-07
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          5.305655861320702e-07,
+          3.4055502018404127e-07,
+          1.8709432211827526e-08,
+          1.6336664288019165e-07,
+          1.2204051858255571e-06,
+          1.3168288226506064e-07
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          7.030324866263982e-06,
+          1.4259906843117065e-06,
+          2.9859413962218806e-07,
+          2.146792418500354e-06,
+          1.8766384716692452e-05,
+          1.8773408519412449e-06
+        ],
+        "special_checks": {},
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.019751216875929317,
+          "maximum_abs_yaw_rate_radps": 0.24390181235992917,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 3.637978807091713e-12,
+          "maximum_utilization_squared": 0.20963133900287456,
+          "maximum_vx_mps": 40.0,
+          "minimum_vx_mps": 39.82796743037065,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 2120
+        }
+      },
+      {
+        "duration_s": 6.0,
+        "name": "disturbance",
+        "outcome": "SUPPORTED",
+        "output_nodes": 61,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          1.3940280041424558e-09,
+          4.107807659997631e-09,
+          1.9030241191469316e-09,
+          2.530811116230325e-10,
+          8.289894124630104e-08,
+          2.1173367441285063e-08
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          1.4846079920971533e-09,
+          4.373998614692898e-09,
+          2.023749334561717e-09,
+          2.6903990146820433e-10,
+          8.804758110103617e-08,
+          2.2541147939522665e-08
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          2.6895662585957325e-08,
+          7.361342613601551e-08,
+          3.5465731407441706e-08,
+          4.76090633583226e-09,
+          1.6027260041906466e-06,
+          3.817309263461771e-07
+        ],
+        "special_checks": {
+          "maximum_node_energy_increase_j": 0.0,
+          "vy_recovery_fraction": 8.133843659413905e-25,
+          "yaw_recovery_fraction": 2.0270272969324308e-24
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0049999583339583225,
+          "maximum_abs_yaw_rate_radps": 0.02010615191480524,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 5.684341886080802e-14,
+          "maximum_utilization_squared": 0.005159703717988783,
+          "maximum_vx_mps": 40.00025313952349,
+          "minimum_vx_mps": 40.0,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 3160
+        }
+      },
+      {
+        "duration_s": 4.0,
+        "name": "small_angle_20",
+        "outcome": "SUPPORTED",
+        "output_nodes": 41,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          6.394884621840902e-13,
+          5.2696055249143014e-11,
+          1.2064029455456518e-10,
+          6.572520305780927e-13,
+          3.891477408162706e-09,
+          2.5201132270412374e-09
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          1.1652900866465643e-12,
+          5.579247875058934e-11,
+          1.2796718203386443e-10,
+          6.963318810448982e-13,
+          4.126313597069015e-09,
+          2.6734967570394945e-09
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          2.7569058147491887e-11,
+          1.1271747241229377e-09,
+          2.4395882911567776e-09,
+          1.3173462320992257e-11,
+          7.958509138609061e-08,
+          5.076718582634277e-08
+        ],
+        "special_checks": {
+          "maximum_linear_vy_error_mps": 4.163399290905631e-09,
+          "maximum_linear_yaw_error_radps": 2.7108519545879922e-09
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 1.7489605729183918e-05,
+          "maximum_abs_yaw_rate_radps": 0.00046960318874257715,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.938893903907228e-18,
+          "maximum_utilization_squared": 1.4382146802604628e-06,
+          "maximum_vx_mps": 20,
+          "minimum_vx_mps": 19.999998480471813,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 2120
+        }
+      },
+      {
+        "duration_s": 4.0,
+        "name": "small_angle_40",
+        "outcome": "SUPPORTED",
+        "output_nodes": 41,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          2.4442670110147446e-12,
+          1.0149677069805482e-10,
+          3.925741678891155e-11,
+          1.0231815394945443e-12,
+          2.7784990505748917e-09,
+          2.7137770774055686e-10
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          1.9610979506978765e-12,
+          1.0779892540543684e-10,
+          4.180230966065179e-11,
+          6.821210263296962e-13,
+          2.9597320338938665e-09,
+          2.895208222469803e-10
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          3.026912054338027e-11,
+          1.9652150644048553e-09,
+          7.072705508282331e-10,
+          1.198685595227289e-11,
+          4.966531247629349e-08,
+          4.619391866960733e-09
+        ],
+        "special_checks": {
+          "maximum_linear_vy_error_mps": 2.871742110657858e-09,
+          "maximum_linear_yaw_error_radps": 3.878162555632711e-10
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 5.381647253866488e-05,
+          "maximum_abs_yaw_rate_radps": 0.0007237943963127107,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.163336342344337e-17,
+          "maximum_utilization_squared": 2.398124130440512e-06,
+          "maximum_vx_mps": 40,
+          "minimum_vx_mps": 39.999989226674664,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 2120
+        }
+      },
+      {
+        "duration_s": 4.0,
+        "name": "small_angle_70",
+        "outcome": "SUPPORTED",
+        "output_nodes": 41,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          2.9558577807620168e-12,
+          1.2627324512892116e-10,
+          2.7003607358001835e-11,
+          9.521272659185342e-13,
+          2.6710222887638135e-09,
+          3.0092635425627706e-10
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          2.8990143619012088e-12,
+          1.3441946391552903e-10,
+          2.8903506568396867e-11,
+          9.805489753489383e-13,
+          2.856592672476066e-09,
+          3.2039068783001196e-10
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          4.382627594168298e-11,
+          2.281601811596082e-09,
+          4.485621998080898e-10,
+          1.6299850358336698e-11,
+          4.350098698792382e-08,
+          5.412057308925612e-09
+        ],
+        "special_checks": {
+          "maximum_linear_vy_error_mps": 1.7744126886570788e-08,
+          "maximum_linear_yaw_error_radps": 1.3299593809058818e-09
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0001335543822675346,
+          "maximum_abs_yaw_rate_radps": 0.000931591299195911,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.220446049250313e-16,
+          "maximum_utilization_squared": 7.492540537638783e-06,
+          "maximum_vx_mps": 70,
+          "minimum_vx_mps": 69.9999710008455,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 2120
+        }
+      },
+      {
+        "duration_s": 2.0,
+        "name": "straight_force",
+        "outcome": "SUPPORTED",
+        "output_nodes": 21,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          3.552713678800501e-13,
+          0.0,
+          0.0,
+          3.126388037344441e-13,
+          0.0,
+          0.0
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          4.263256414560601e-14,
+          0.0,
+          0.0,
+          6.394884621840902e-14,
+          0.0,
+          0.0
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.4210854715202004e-14,
+          0.0,
+          0.0,
+          3.552713678800501e-14,
+          0.0,
+          0.0
+        ],
+        "special_checks": {
+          "maximum_analytical_position_error_m": 5.684341886080802e-14,
+          "maximum_analytical_speed_error_mps": 6.039613253960852e-14
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0,
+          "maximum_abs_yaw_rate_radps": 0.0,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 0.0,
+          "maximum_utilization_squared": 0.09351999925184,
+          "maximum_vx_mps": 24.000000000000057,
+          "minimum_vx_mps": 20,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1040
+        }
+      },
+      {
+        "duration_s": 2.0,
+        "name": "r030_consistency",
+        "outcome": "SUPPORTED",
+        "output_nodes": 21,
+        "passed": true,
+        "rk4_01_vs_005_maximum_by_state": [
+          1.0722089882619912e-10,
+          0.0,
+          0.0,
+          1.13473674900888e-11,
+          0.0,
+          0.0
+        ],
+        "rk4_01_vs_dop853_maximum_by_state": [
+          1.1466738669696497e-10,
+          0.0,
+          0.0,
+          1.2157386208855314e-11,
+          0.0,
+          0.0
+        ],
+        "rk4_02_vs_dop853_maximum_by_state": [
+          1.7227392845597933e-09,
+          0.0,
+          0.0,
+          1.8687984493226395e-10,
+          0.0,
+          0.0
+        ],
+        "special_checks": {
+          "maximum_r030_speed_error_mps": 0.0,
+          "r030_acceleration_error_mps2": 0.0
+        },
+        "stage_diagnostics": {
+          "lateral_over_budget_axles": 0,
+          "maximum_abs_sideslip_rad": 0.0,
+          "maximum_abs_yaw_rate_radps": 0.0,
+          "maximum_fx_projection_n": 0.0,
+          "maximum_lateral_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 2.3283064365386963e-10,
+          "maximum_utilization_squared": 0.2663128103694975,
+          "maximum_vx_mps": 74.39686946201628,
+          "minimum_vx_mps": 50,
+          "projected_axle_requests": 0,
+          "stage_evaluations": 1040
+        }
+      }
+    ],
+    "classification": "EQUATION_LEVEL_ADAPTATION",
+    "decision": "ACCEPT_SCOPED_BICYCLE_FORCE_STABILITY",
+    "force_checks": {
+      "grid_points": 420,
+      "maximum_hand_fixture_error_si": 4.547473508864641e-13,
+      "maximum_positive_slip_power_w": 0.0,
+      "maximum_utilization_squared": 1.0,
+      "passed": true
+    },
+    "input_truth": "SYNTHETIC",
+    "limitations": [
+      "Synthetic dynamics and generic priors; real-car lateral parameters uncalibrated",
+      "Static axle loads, no aero/load transfer/thermal/wheel-spin dynamics",
+      "Forward-only restricted speed/slip; no low-speed or full-lap controller",
+      "Longitudinal-priority combined-slip prior; not an identified tyre model",
+      "R030 adapter checks algebra only; effective ratios do not identify absolute forces",
+      "No public cornering accuracy, uncertainty calibration or maturity promotion"
+    ],
+    "linear_checks": {
+      "default_maximum_real_eigenvalue_per_s": -3.3414141414141416,
+      "deliberate_oversteer_maximum_real_eigenvalue_per_s": 3.828156772257401,
+      "eigenvalues": {
+        "10": [
+          {
+            "imag_per_s": 0.0,
+            "real_per_s": -24.687517982520014
+          },
+          {
+            "imag_per_s": 0.0,
+            "real_per_s": -48.8235931285911
+          }
+        ],
+        "100": [
+          {
+            "imag_per_s": 7.16544658003659,
+            "real_per_s": -3.6755555555555564
+          },
+          {
+            "imag_per_s": -7.16544658003659,
+            "real_per_s": -3.6755555555555564
+          }
+        ],
+        "110": [
+          {
+            "imag_per_s": 7.1895024880665925,
+            "real_per_s": -3.3414141414141416
+          },
+          {
+            "imag_per_s": -7.1895024880665925,
+            "real_per_s": -3.3414141414141416
+          }
+        ],
+        "20": [
+          {
+            "imag_per_s": 1.8948924201522865,
+            "real_per_s": -18.37777777777778
+          },
+          {
+            "imag_per_s": -1.8948924201522865,
+            "real_per_s": -18.37777777777778
+          }
+        ],
+        "40": [
+          {
+            "imag_per_s": 6.395127388956975,
+            "real_per_s": -9.18888888888889
+          },
+          {
+            "imag_per_s": -6.395127388956975,
+            "real_per_s": -9.18888888888889
+          }
+        ],
+        "5": [
+          {
+            "imag_per_s": 0.0,
+            "real_per_s": -46.261338204593336
+          },
+          {
+            "imag_per_s": 0.0,
+            "real_per_s": -100.7608840176289
+          }
+        ],
+        "70": [
+          {
+            "imag_per_s": 7.019451791397321,
+            "real_per_s": -5.250793650793652
+          },
+          {
+            "imag_per_s": -7.019451791397321,
+            "real_per_s": -5.250793650793652
+          }
+        ]
+      },
+      "maximum_jacobian_error": 5.382304379963898e-09,
+      "passed": true
+    },
+    "mirror_maximum_error_si": 0.0,
+    "parameter_truth": "GENERIC_PRIOR",
+    "production_kernel_maturity": "R0",
+    "production_promotion": false,
+    "research_foundation_maturity": "R1",
+    "schema_version": "apex-bicycle-dynamics-v1-results",
+    "state_order": [
+      "x_m",
+      "y_m",
+      "heading_rad",
+      "vx_mps",
+      "vy_mps",
+      "yaw_rate_radps"
+    ],
+    "state_units": [
+      "m",
+      "m",
+      "rad",
+      "m/s",
+      "m/s",
+      "rad/s"
+    ],
+    "supported_cases": 13,
+    "task_closure_eligible": true
+  },
+  "schema_version": "apex-bicycle-publication-v1",
+  "study_manifest": {
+    "content_sha256": "04e4e108108ba586fe598a7f7dc67e2ca8c255328e366f3ca3789480fd0c481d",
+    "files": {
+      "configuration.json": {
+        "bytes": 112293,
+        "sha256": "12373ebc9a9d5b314eb630e99ee7bc4a0d1d47a7172e23963a33654fb917cf36"
+      },
+      "results.json": {
+        "bytes": 24376,
+        "sha256": "4c634c339bc569a8a8981d3fc0310675735642c5226a078ee27496b418500333"
+      },
+      "sources/BICYCLE_DYNAMICS.md": {
+        "bytes": 9687,
+        "sha256": "0927b3fd7194d6a7bacdb68e77a26ff9ca10a564f68a49c81d66d879dbba6de0"
+      },
+      "sources/bicycle.py": {
+        "bytes": 15182,
+        "sha256": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795"
+      },
+      "sources/bicycle_audit.py": {
+        "bytes": 4530,
+        "sha256": "8da83a7c1752d20959c32416afa3b3ed5e91e5fc61130e241d1e7000f7c2d80b"
+      },
+      "sources/bicycle_study.py": {
+        "bytes": 23271,
+        "sha256": "92f51cae959134e06c1c4e327922cad7c755757fffdaa42948250970b7a47dac"
+      },
+      "summary.json": {
+        "bytes": 1150,
+        "sha256": "173a38135f29c41d093042e22655d279bae826618a0dd27a07dd9d45965cd46e"
+      },
+      "trajectories.npz": {
+        "bytes": 78517,
+        "sha256": "f6c2131957acf717a3c166711418efd885a91eafd4f34ab6a57d7092f8c021e6"
+      }
+    },
+    "schema_version": "apex-bicycle-dynamics-v1-manifest",
+    "summary_sha256": "8525ea3405407e0006d5d6cde0a9a627ab8c90f6b94c87802c77ddaa066ddda2"
+  },
+  "study_manifest_sha256": "87fdc17633a0febd055ec198cea893a633399cb80f2d9671f50605738421b864",
+  "study_summary": {
+    "cases": 14,
+    "commit": "f71b3689b32a8999af8ee990c08eafaa63cea743",
+    "configuration_sha256": "dd84bc2f5bcd2f08ca1ff8ad8bcb9ef7a1a8e47ef63f5a03621c15f3ef69deeb",
+    "content_sha256": "8525ea3405407e0006d5d6cde0a9a627ab8c90f6b94c87802c77ddaa066ddda2",
+    "decision": "ACCEPT_SCOPED_BICYCLE_FORCE_STABILITY",
+    "environment": {
+      "numpy": "2.5.3",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.12",
+      "scipy": "1.18.1"
+    },
+    "implementation_sha256": {
+      "BICYCLE_DYNAMICS.md": "0927b3fd7194d6a7bacdb68e77a26ff9ca10a564f68a49c81d66d879dbba6de0",
+      "bicycle.py": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795",
+      "bicycle_audit.py": "8da83a7c1752d20959c32416afa3b3ed5e91e5fc61130e241d1e7000f7c2d80b",
+      "bicycle_study.py": "92f51cae959134e06c1c4e327922cad7c755757fffdaa42948250970b7a47dac"
+    },
+    "input_truth": "SYNTHETIC",
+    "production_promotion": false,
+    "results_sha256": "1ca4a6e8a81ea9e97d7ed668d529eefda6af03fe114eb70b7f976b592f6b1a1c",
+    "runtime_seconds": 4.496486500000174,
+    "schema_version": "apex-bicycle-dynamics-v1-study",
+    "task_closure_eligible": true
+  },
+  "verification": {
+    "decision": "ACCEPT_SCOPED_BICYCLE_FORCE_STABILITY",
+    "input_truth": "SYNTHETIC",
+    "maximum_reload_difference_si": 0.0,
+    "production_promotion": false,
+    "summary_sha256": "8525ea3405407e0006d5d6cde0a9a627ab8c90f6b94c87802c77ddaa066ddda2",
+    "task_closure_eligible": true,
+    "verified": true
+  }
+}

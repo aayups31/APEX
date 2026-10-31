@@ -1,0 +1,16 @@
+{
+  "content_sha256": "741efdb6d9f188c5c0fa42682f5efb6c21b45901258e4f319415522af4019531",
+  "evidence_sha256": "68a2d744406a767e30e8988b5c6a418be1d5fab46c4c24bcfe7fe4d46c267f30",
+  "files": {
+    "bicycle-dynamics-evidence.json": {
+      "bytes": 29857,
+      "sha256": "f257de7011a156b4aa47652a4fce025be13152592a001258498e80f08cf23746"
+    },
+    "bicycle-dynamics-summary.png": {
+      "bytes": 242859,
+      "sha256": "189040b02952d93f4ac4dc6ae5c23f82341b6dd67cf24cba711f16b145071784"
+    }
+  },
+  "publisher_sha256": "f3215fbd09b3b3ed3729d16a5ba7054291c89d712b511071f0d5d4a737bd4092",
+  "schema_version": "apex-bicycle-publication-manifest-v1"
+}
