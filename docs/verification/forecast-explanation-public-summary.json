@@ -1,0 +1,40 @@
+{
+  "cohort_sha256": "459c031ae0127fcf486a0bc3e2c42f32aa46b2213346e9b1a333743b24bb8312",
+  "commit": "1d08ca8d2a01da20c0c1d751b848a218cf11a569",
+  "content_sha256": "c59e1025e2055331c14affdca3aea29aaae4ed4df7cf8718c948a6a8b4db4aed",
+  "decision": "ACCEPT_SCOPED_PUBLIC_MODEL_EXPLANATIONS",
+  "environment": {
+    "cpu_threads": 1,
+    "numpy": "2.5.3",
+    "python": "3.12.12",
+    "torch": "2.14.0+cpu"
+  },
+  "evaluation_seconds": 158.53340500002378,
+  "implementation_sha256": {
+    "forecast_counterfactuals.py": "7697d64814a987c8502e1d2dead3738bcb143f4f9364aabee5513660ea8d6140",
+    "forecast_explanation_study.py": "9025df2ac6f73a1888546b0cf4a4ed40c9c418445c41f43df22f387442b30467",
+    "forecast_explanations.py": "e0e6bbf3a5e1f5080ab39e36275012640f65a232a46254b28e9dacdd55ad7c63"
+  },
+  "methods": [
+    "persistence",
+    "trend",
+    "linear_seed11",
+    "ridge_seed11",
+    "xgboost_seed11",
+    "xgboost_seed23",
+    "gru_seed11",
+    "gru_seed23",
+    "lstm_seed11",
+    "lstm_seed23",
+    "tft_seed11",
+    "tft_seed23"
+  ],
+  "origins": 128,
+  "profile": "research",
+  "promotion": false,
+  "protocol_file_sha256": "59476a06fbeaec980129de1bda736db907c306021d3d89c1cf34a206e1dc420d",
+  "results_sha256": "6b2db00c9d607087f6715e3463cde128a9a28abfa259e8fc9a1704a32d737f27",
+  "schema_version": "apex-forecast-explanation-study-v1-summary",
+  "target_quality": "PROXY_NOT_MEASURED",
+  "task_closure_eligible": true
+}
