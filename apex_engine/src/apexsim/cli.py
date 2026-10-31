@@ -828,5 +828,27 @@ def api(
     uvicorn.run(create_api(artifacts_dir), host=host, port=port)
 
 
+@app.command("open-loop-error-study")
+def open_loop_error_study_command(recorded: Annotated[Path, typer.Option()], development: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Report frozen matched section errors and explicit unavailable lap/stint scopes."""
+    from apexsim.examples.open_loop_study import run_open_loop_study
+
+    typer.echo(json.dumps(run_open_loop_study(recorded, development, output), indent=2))
+
+
+@app.command("verify-open-loop-errors")
+def verify_open_loop_errors_command(output: Path) -> None:
+    from apexsim.examples.open_loop_study import verify_open_loop_study
+
+    typer.echo(json.dumps(verify_open_loop_study(output), indent=2))
+
+
+@app.command("audit-open-loop-errors")
+def audit_open_loop_errors_command(output: Path) -> None:
+    from apexsim.research.open_loop_audit import audit_open_loop_study
+
+    typer.echo(json.dumps(audit_open_loop_study(output), indent=2))
+
+
 if __name__ == "__main__":
     app()
