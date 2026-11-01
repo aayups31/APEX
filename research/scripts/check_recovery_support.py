@@ -13,6 +13,7 @@ from apexsim.examples.support_study import VERSION as SUPPORT_VERSION
 from apexsim.examples.support_study import load_support, load_support_detector
 from apexsim.provenance import payload_sha256, write_manifest
 from apexsim.research.evidence import finish_run, read_json, seal
+from apexsim.research.support_fallback import support_score
 
 
 def check_catalog(root: Path, kind: str, result: dict) -> None:
@@ -114,8 +115,23 @@ def check(study: Path, output: Path, kind: str) -> dict:
     resealed_rejection = expected_rejection(lambda: check_catalog(moved, kind, resealed), "catalog mismatch")
     for name, value in zip(("summary.json", "manifest.json", "results.json"), (original_summary, original_manifest, original_results), strict=True):
         (moved/name).write_bytes(value)
-    detector_rejection = None
+    detector_rejection, probes = None, None
     if kind == "support":
+        _, model = load_support_detector(study/"detector")
+        center, width, cutoff = np.array(model["center"]), np.array(model["half_range"]), model["cutoff"]
+        outside, inside = [], []
+        for coordinate in range(8):
+            for sign in (-1, 1):
+                a, b = center.copy(), center.copy()
+                a[coordinate] += sign*1.01*cutoff*width[coordinate]
+                b[coordinate] += sign*.99*cutoff*width[coordinate]
+                outside.append(support_score(model, a) > cutoff)
+                inside.append(support_score(model, b) <= cutoff)
+        blind_spot = support_score(model, center+.99*cutoff*width) <= cutoff
+        assert all(outside) and all(inside) and blind_spot
+        probes = {"outside_axis_points_rejected": sum(outside), "inside_axis_points_supported": sum(inside),
+                  "joint_in_box_corner_not_rejected": bool(blind_spot),
+                  "scope": "CONSTRUCTED_API_BOUNDARY_AND_STRUCTURAL_BLIND_SPOT_CHECKS; NOT_REAL_WORLD_OOD_ACCURACY"}
         detector = output/"changed-detector"
         shutil.copytree(study/"detector", detector)
         old = read_json(detector/"summary.json")
@@ -133,6 +149,7 @@ def check(study: Path, output: Path, kind: str) -> dict:
                     "corrupted_payload_rejection": byte_rejection, "missing_case_rejection": catalog_rejection,
                     "resealed_missing_case_independent_catalog_rejection": resealed_rejection,
                     "reserved_header_rejection": reserved_rejection, "resealed_changed_cutoff_rejection": detector_rejection,
+                    "actual_detector_boundary_probes": probes,
                     "scope": "ACTUAL_ARTIFACT_COPIES; FULL_SCIENTIFIC_REGENERATION_HAS_SEPARATE_BOUND_RECEIPT"})
     write_manifest(output/"receipt.json", receipt)
     return receipt

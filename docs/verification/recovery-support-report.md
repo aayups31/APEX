@@ -44,8 +44,17 @@ regenerate exactly. Smoke cannot close public R037. The first R038 smoke campaig
 passes its20 physical-case and6 hard-abstention catalog, including every detection,
 release, refinement and independent gate. Subsequent numeric overflow hardening
 does not change its envelope formula/thresholds; the hardened implementation must
-pass fresh pipeline/regression checks before closure. These constructed faults do
-not establish real-world OOD accuracy or a certified safe region.
+pass fresh pipeline/regression checks before closure. The hardened campaign now
+passes fresh full26-case regeneration with zero difference. All10 artifact tests
+pass in574.26s, covering the full physical smoke pipelines, portability, leakage,
+protected events, changed data/thresholds/ledgers and resealed false completion.
+The [development verification receipt](recovery-support-development.json) binds
+the baseline and32 new targeted tests to the complete synthetic replay receipts.
+Actual-copy boundary inspections also reject changed bytes, reserved events,
+resealed omitted cases and a resealed changed cutoff. All16 outside-axis points
+are detected while the constructed joint in-box corner remains undetected, an
+explicit structural blind spot. These constructed faults do not establish
+real-world OOD accuracy or a certified safe region.
 
 ## Pending public evidence and next gate
 

@@ -1,0 +1,1046 @@
+{
+  "cases": 15,
+  "decision": "SIMULATED_EXECUTION_ONLY",
+  "independent_audit": {
+    "checks": [
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "intervals": 362,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 0.00010208665035826933,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "COMPLETE_CONTINUOUS_HORIZON"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1582567609191852e-06,
+        "maximum_heading_difference_rad": 3.547290994276864e-08,
+        "maximum_position_difference_m": 2.049387984278402e-08,
+        "maximum_yaw_rate_difference_radps": 4.6110760015816155e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 4.01905942526426e-07,
+        "maximum_heading_difference_rad": 1.4735361375528555e-08,
+        "maximum_position_difference_m": 1.026347494773818e-08,
+        "maximum_yaw_rate_difference_radps": 2.7555652426514143e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 3.9781687144468947e-07,
+        "maximum_heading_difference_rad": 1.5012533438607534e-08,
+        "maximum_position_difference_m": 9.720709700476559e-09,
+        "maximum_yaw_rate_difference_radps": 2.741279749862713e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.138425965358959e-06,
+        "maximum_heading_difference_rad": 7.717080485747374e-08,
+        "maximum_position_difference_m": 4.861902115415527e-08,
+        "maximum_yaw_rate_difference_radps": 1.0227869386980615e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.1654725180498815e-06,
+        "maximum_heading_difference_rad": 4.774894790671169e-08,
+        "maximum_position_difference_m": 2.7743047563016792e-08,
+        "maximum_yaw_rate_difference_radps": 6.610210875335198e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__nominal__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 7.05787519650336e-07,
+        "maximum_heading_difference_rad": 2.7412642822355338e-08,
+        "maximum_position_difference_m": 1.4771156600226056e-08,
+        "maximum_yaw_rate_difference_radps": 5.300767441651644e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 156,
+        "maximum_body_velocity_difference_mps": 2.525712188013174e-06,
+        "maximum_heading_difference_rad": 5.087323451391512e-08,
+        "maximum_position_difference_m": 5.924640294412705e-08,
+        "maximum_yaw_rate_difference_radps": 4.7049391160847165e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 161,
+        "maximum_body_velocity_difference_mps": 3.1400664756708885e-06,
+        "maximum_heading_difference_rad": 7.91183403237028e-08,
+        "maximum_position_difference_m": 9.684425004901389e-08,
+        "maximum_yaw_rate_difference_radps": 7.941856600690578e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1527912284481356e-06,
+        "maximum_heading_difference_rad": 3.528080760872854e-08,
+        "maximum_position_difference_m": 2.0382337849196208e-08,
+        "maximum_yaw_rate_difference_radps": 4.583028057059124e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 3.144309201896789e-07,
+        "maximum_heading_difference_rad": 1.1036421554422304e-08,
+        "maximum_position_difference_m": 8.861228693703509e-09,
+        "maximum_yaw_rate_difference_radps": 2.0238117304227643e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 4.590934369330668e-07,
+        "maximum_heading_difference_rad": 1.7630778614829978e-08,
+        "maximum_position_difference_m": 1.064269469032345e-08,
+        "maximum_yaw_rate_difference_radps": 3.238217337608873e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.141538980537927e-06,
+        "maximum_heading_difference_rad": 7.721431849461169e-08,
+        "maximum_position_difference_m": 4.865809239673628e-08,
+        "maximum_yaw_rate_difference_radps": 1.023595147420231e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.161441079977621e-06,
+        "maximum_heading_difference_rad": 4.755399629630119e-08,
+        "maximum_position_difference_m": 2.756866748275983e-08,
+        "maximum_yaw_rate_difference_radps": 6.579513066595766e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 317,
+        "maximum_body_velocity_difference_mps": 9.204677067220501e-07,
+        "maximum_heading_difference_rad": 2.466035553538859e-08,
+        "maximum_position_difference_m": 2.641123534031246e-08,
+        "maximum_yaw_rate_difference_radps": 3.076670157531325e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 322,
+        "maximum_body_velocity_difference_mps": 6.898349662248782e-06,
+        "maximum_heading_difference_rad": 2.3132520965418735e-07,
+        "maximum_position_difference_m": 1.8954313078258903e-07,
+        "maximum_yaw_rate_difference_radps": 2.9400188348294165e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_left__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 6.126328907507528e-07,
+        "maximum_heading_difference_rad": 2.355449879587468e-08,
+        "maximum_position_difference_m": 1.3452849455300792e-08,
+        "maximum_yaw_rate_difference_radps": 4.516286593592156e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 156,
+        "maximum_body_velocity_difference_mps": 3.4778494141293054e-06,
+        "maximum_heading_difference_rad": 8.90253080143566e-08,
+        "maximum_position_difference_m": 9.824659687553518e-08,
+        "maximum_yaw_rate_difference_radps": 8.464231570082248e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 161,
+        "maximum_body_velocity_difference_mps": 3.163507842601776e-06,
+        "maximum_heading_difference_rad": 6.580553169044379e-08,
+        "maximum_position_difference_m": 6.798787176255206e-08,
+        "maximum_yaw_rate_difference_radps": 7.175930271663411e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1644430471524636e-06,
+        "maximum_heading_difference_rad": 3.5690879585104085e-08,
+        "maximum_position_difference_m": 2.062000538669445e-08,
+        "maximum_yaw_rate_difference_radps": 4.6430142924824835e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 4.97166656732162e-07,
+        "maximum_heading_difference_rad": 1.874060195916627e-08,
+        "maximum_position_difference_m": 1.1735380507234213e-08,
+        "maximum_yaw_rate_difference_radps": 3.553027662084318e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 3.305562694677633e-07,
+        "maximum_heading_difference_rad": 1.2124488080189622e-08,
+        "maximum_position_difference_m": 8.684636686909584e-09,
+        "maximum_yaw_rate_difference_radps": 2.19212140217806e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.1344011962298737e-06,
+        "maximum_heading_difference_rad": 7.710056415533018e-08,
+        "maximum_position_difference_m": 4.8556156363705735e-08,
+        "maximum_yaw_rate_difference_radps": 1.021612638374414e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.168966587417053e-06,
+        "maximum_heading_difference_rad": 4.792681096432716e-08,
+        "maximum_position_difference_m": 2.7906765847140905e-08,
+        "maximum_yaw_rate_difference_radps": 6.640183674022637e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 317,
+        "maximum_body_velocity_difference_mps": 6.2312723442259355e-06,
+        "maximum_heading_difference_rad": 2.3323535458530387e-07,
+        "maximum_position_difference_m": 1.8471653601418397e-07,
+        "maximum_yaw_rate_difference_radps": 3.036810510725907e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 322,
+        "maximum_body_velocity_difference_mps": 2.190255845468947e-06,
+        "maximum_heading_difference_rad": 5.4752767653099e-08,
+        "maximum_position_difference_m": 4.6974962943225843e-08,
+        "maximum_yaw_rate_difference_radps": 7.112021130906143e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__pulse_right__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 8.386967281781565e-07,
+        "maximum_heading_difference_rad": 3.289231642611412e-08,
+        "maximum_position_difference_m": 1.654524852546775e-08,
+        "maximum_yaw_rate_difference_radps": 6.422609289957748e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1582567609191852e-06,
+        "maximum_heading_difference_rad": 3.547290994276864e-08,
+        "maximum_position_difference_m": 2.049387984278402e-08,
+        "maximum_yaw_rate_difference_radps": 4.6110760015816155e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 4.01905942526426e-07,
+        "maximum_heading_difference_rad": 1.4735361375528555e-08,
+        "maximum_position_difference_m": 1.026347494773818e-08,
+        "maximum_yaw_rate_difference_radps": 2.7555652426514143e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 3.9781687144468947e-07,
+        "maximum_heading_difference_rad": 1.5012533438607534e-08,
+        "maximum_position_difference_m": 9.720709700476559e-09,
+        "maximum_yaw_rate_difference_radps": 2.741279749862713e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.138425965358959e-06,
+        "maximum_heading_difference_rad": 7.717080485747374e-08,
+        "maximum_position_difference_m": 4.861902115415527e-08,
+        "maximum_yaw_rate_difference_radps": 1.0227869386980615e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.1654725180498815e-06,
+        "maximum_heading_difference_rad": 4.774894790671169e-08,
+        "maximum_position_difference_m": 2.7743047563016792e-08,
+        "maximum_yaw_rate_difference_radps": 6.610210875335198e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__nominal__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 7.05787519650336e-07,
+        "maximum_heading_difference_rad": 2.7412642822355338e-08,
+        "maximum_position_difference_m": 1.4771156600226056e-08,
+        "maximum_yaw_rate_difference_radps": 5.300767441651644e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 156,
+        "maximum_body_velocity_difference_mps": 2.525712188013174e-06,
+        "maximum_heading_difference_rad": 5.087323451391512e-08,
+        "maximum_position_difference_m": 5.924640294412705e-08,
+        "maximum_yaw_rate_difference_radps": 4.7049391160847165e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 161,
+        "maximum_body_velocity_difference_mps": 3.1400664756708885e-06,
+        "maximum_heading_difference_rad": 7.91183403237028e-08,
+        "maximum_position_difference_m": 9.684425004901389e-08,
+        "maximum_yaw_rate_difference_radps": 7.941856600690578e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1527912284481356e-06,
+        "maximum_heading_difference_rad": 3.528080760872854e-08,
+        "maximum_position_difference_m": 2.0382337849196208e-08,
+        "maximum_yaw_rate_difference_radps": 4.583028057059124e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 3.144309201896789e-07,
+        "maximum_heading_difference_rad": 1.1036421554422304e-08,
+        "maximum_position_difference_m": 8.861228693703509e-09,
+        "maximum_yaw_rate_difference_radps": 2.0238117304227643e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 4.590934369330668e-07,
+        "maximum_heading_difference_rad": 1.7630778614829978e-08,
+        "maximum_position_difference_m": 1.064269469032345e-08,
+        "maximum_yaw_rate_difference_radps": 3.238217337608873e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.141538980537927e-06,
+        "maximum_heading_difference_rad": 7.721431849461169e-08,
+        "maximum_position_difference_m": 4.865809239673628e-08,
+        "maximum_yaw_rate_difference_radps": 1.023595147420231e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.161441079977621e-06,
+        "maximum_heading_difference_rad": 4.755399629630119e-08,
+        "maximum_position_difference_m": 2.756866748275983e-08,
+        "maximum_yaw_rate_difference_radps": 6.579513066595766e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 317,
+        "maximum_body_velocity_difference_mps": 9.204677067220501e-07,
+        "maximum_heading_difference_rad": 2.466035553538859e-08,
+        "maximum_position_difference_m": 2.641123534031246e-08,
+        "maximum_yaw_rate_difference_radps": 3.076670157531325e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 322,
+        "maximum_body_velocity_difference_mps": 6.898349662248782e-06,
+        "maximum_heading_difference_rad": 2.3132520965418735e-07,
+        "maximum_position_difference_m": 1.8954313078258903e-07,
+        "maximum_yaw_rate_difference_radps": 2.9400188348294165e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_left__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 6.126328907507528e-07,
+        "maximum_heading_difference_rad": 2.355449879587468e-08,
+        "maximum_position_difference_m": 1.3452849455300792e-08,
+        "maximum_yaw_rate_difference_radps": 4.516286593592156e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 103,
+        "maximum_body_velocity_difference_mps": 6.792688778123335e-07,
+        "maximum_heading_difference_rad": 1.9309311483084457e-08,
+        "maximum_position_difference_m": 7.889149075711504e-09,
+        "maximum_yaw_rate_difference_radps": 2.3405575377832832e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 154,
+        "maximum_body_velocity_difference_mps": 5.9217566045211e-08,
+        "maximum_heading_difference_rad": 7.664837653464929e-10,
+        "maximum_position_difference_m": 3.5512002209747278e-09,
+        "maximum_yaw_rate_difference_radps": 1.3331165615859675e-09,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 156,
+        "maximum_body_velocity_difference_mps": 3.4778494141293054e-06,
+        "maximum_heading_difference_rad": 8.90253080143566e-08,
+        "maximum_position_difference_m": 9.824659687553518e-08,
+        "maximum_yaw_rate_difference_radps": 8.464231570082248e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 161,
+        "maximum_body_velocity_difference_mps": 3.163507842601776e-06,
+        "maximum_heading_difference_rad": 6.580553169044379e-08,
+        "maximum_position_difference_m": 6.798787176255206e-08,
+        "maximum_yaw_rate_difference_radps": 7.175930271663411e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 206,
+        "maximum_body_velocity_difference_mps": 1.1644430471524636e-06,
+        "maximum_heading_difference_rad": 3.5690879585104085e-08,
+        "maximum_position_difference_m": 2.062000538669445e-08,
+        "maximum_yaw_rate_difference_radps": 4.6430142924824835e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 243,
+        "maximum_body_velocity_difference_mps": 4.97166656732162e-07,
+        "maximum_heading_difference_rad": 1.874060195916627e-08,
+        "maximum_position_difference_m": 1.1735380507234213e-08,
+        "maximum_yaw_rate_difference_radps": 3.553027662084318e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 244,
+        "maximum_body_velocity_difference_mps": 3.305562694677633e-07,
+        "maximum_heading_difference_rad": 1.2124488080189622e-08,
+        "maximum_position_difference_m": 8.684636686909584e-09,
+        "maximum_yaw_rate_difference_radps": 2.19212140217806e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 257,
+        "maximum_body_velocity_difference_mps": 2.1344011962298737e-06,
+        "maximum_heading_difference_rad": 7.710056415533018e-08,
+        "maximum_position_difference_m": 4.8556156363705735e-08,
+        "maximum_yaw_rate_difference_radps": 1.021612638374414e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 309,
+        "maximum_body_velocity_difference_mps": 1.168966587417053e-06,
+        "maximum_heading_difference_rad": 4.792681096432716e-08,
+        "maximum_position_difference_m": 2.7906765847140905e-08,
+        "maximum_yaw_rate_difference_radps": 6.640183674022637e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 317,
+        "maximum_body_velocity_difference_mps": 6.2312723442259355e-06,
+        "maximum_heading_difference_rad": 2.3323535458530387e-07,
+        "maximum_position_difference_m": 1.8471653601418397e-07,
+        "maximum_yaw_rate_difference_radps": 3.036810510725907e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 322,
+        "maximum_body_velocity_difference_mps": 2.190255845468947e-06,
+        "maximum_heading_difference_rad": 5.4752767653099e-08,
+        "maximum_position_difference_m": 4.6974962943225843e-08,
+        "maximum_yaw_rate_difference_radps": 7.112021130906143e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_44_SIMULATED__pulse_right__0.02",
+        "interval_index": 361,
+        "maximum_body_velocity_difference_mps": 8.386967281781565e-07,
+        "maximum_heading_difference_rad": 3.289231642611412e-08,
+        "maximum_position_difference_m": 1.654524852546775e-08,
+        "maximum_yaw_rate_difference_radps": 6.422609289957748e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 0,
+        "maximum_body_velocity_difference_mps": 4.6440050867291305e-05,
+        "maximum_heading_difference_rad": 1.76156999698307e-06,
+        "maximum_position_difference_m": 3.6061770890268472e-06,
+        "maximum_yaw_rate_difference_radps": 0.00011761717113639714,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 51,
+        "maximum_body_velocity_difference_mps": 1.6730133537978809e-06,
+        "maximum_heading_difference_rad": 5.3208245809344135e-08,
+        "maximum_position_difference_m": 2.4063488375675955e-08,
+        "maximum_yaw_rate_difference_radps": 9.064888898402401e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 102,
+        "maximum_body_velocity_difference_mps": 5.919140410523549e-07,
+        "maximum_heading_difference_rad": 1.6971872796034404e-08,
+        "maximum_position_difference_m": 5.902249924181015e-09,
+        "maximum_yaw_rate_difference_radps": 2.0307926307250312e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 125,
+        "maximum_body_velocity_difference_mps": 6.343389877816463e-07,
+        "maximum_heading_difference_rad": 2.468694937363125e-08,
+        "maximum_position_difference_m": 1.3548148140367692e-08,
+        "maximum_yaw_rate_difference_radps": 4.7150509452364986e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 126,
+        "maximum_body_velocity_difference_mps": 2.3841708873817424e-07,
+        "maximum_heading_difference_rad": 8.344304802676561e-09,
+        "maximum_position_difference_m": 6.986586439082729e-09,
+        "maximum_yaw_rate_difference_radps": 1.462593189893724e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 153,
+        "maximum_body_velocity_difference_mps": 1.5828368141179716e-07,
+        "maximum_heading_difference_rad": 4.753141880087242e-09,
+        "maximum_position_difference_m": 1.2665575022260558e-09,
+        "maximum_yaw_rate_difference_radps": 5.729240837304417e-08,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 156,
+        "maximum_body_velocity_difference_mps": 3.642487256066973e-06,
+        "maximum_heading_difference_rad": 2.5392370162080624e-07,
+        "maximum_position_difference_m": 2.11048718350681e-07,
+        "maximum_yaw_rate_difference_radps": 1.945631342481491e-06,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 176,
+        "maximum_body_velocity_difference_mps": 9.249404165347086e-05,
+        "maximum_heading_difference_rad": 3.7288073073682426e-08,
+        "maximum_position_difference_m": 4.684608685642808e-06,
+        "maximum_yaw_rate_difference_radps": 0.00010935003967663115,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 204,
+        "maximum_body_velocity_difference_mps": 1.10954821036513e-06,
+        "maximum_heading_difference_rad": 3.404053572353405e-08,
+        "maximum_position_difference_m": 1.9549904417845256e-08,
+        "maximum_yaw_rate_difference_radps": 4.357218676975805e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 239,
+        "maximum_body_velocity_difference_mps": 3.509007924229479e-07,
+        "maximum_heading_difference_rad": 1.26480266260387e-08,
+        "maximum_position_difference_m": 9.449833559424343e-09,
+        "maximum_yaw_rate_difference_radps": 2.339801674633435e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 240,
+        "maximum_body_velocity_difference_mps": 4.612528814451622e-07,
+        "maximum_heading_difference_rad": 1.7795318996149945e-08,
+        "maximum_position_difference_m": 1.0698111794648001e-08,
+        "maximum_yaw_rate_difference_radps": 3.266936751122884e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 255,
+        "maximum_body_velocity_difference_mps": 2.006962114109445e-06,
+        "maximum_heading_difference_rad": 6.982014610912302e-08,
+        "maximum_position_difference_m": 4.236022228892818e-08,
+        "maximum_yaw_rate_difference_radps": 9.374753335844588e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 306,
+        "maximum_body_velocity_difference_mps": 1.4220279015431103e-06,
+        "maximum_heading_difference_rad": 5.745475561980129e-08,
+        "maximum_position_difference_m": 3.491625346105797e-08,
+        "maximum_yaw_rate_difference_radps": 7.748774532023717e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      },
+      {
+        "case_id": "learned__F1_2024_R16_4_SIMULATED__challenge__0.02",
+        "interval_index": 357,
+        "maximum_body_velocity_difference_mps": 8.492046997821134e-07,
+        "maximum_heading_difference_rad": 3.332613829343245e-08,
+        "maximum_position_difference_m": 1.6680472584737058e-08,
+        "maximum_yaw_rate_difference_radps": 6.5052088626949e-07,
+        "passed": true,
+        "scope": "SEAM_PULSE_OR_REPRESENTATIVE_INTERVAL"
+      }
+    ],
+    "complete_horizons": 1,
+    "method": "INDEPENDENT_SCALAR_LOAD_BISECTION_DOP853",
+    "passed": true,
+    "primary_rhs_reused": false
+  },
+  "maximum_replay_difference": 0.0,
+  "summary_sha256": "b34c32eecfe6954a85327e0adc03e0f4053156cc557c33464de70bb778072254",
+  "task_closure_eligible": false,
+  "verified": true
+}
