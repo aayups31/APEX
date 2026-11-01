@@ -27,7 +27,17 @@ def publish(study: Path, receipt: Path, output: Path, kind: str) -> dict:
     compact = []
     for row in result["cases"]:
         decisions = row["decisions"]
+        seam_drift = None
+        if row["seam_states"]:
+            states = np.array([r["state"] for r in row["seam_states"]])
+            heading = states[:, 2]-states[0, 2]
+            seam_drift = {"maximum_position_change_from_first_seam_m": float(max(np.linalg.norm(states[:, :2]-states[0, :2], axis=1))),
+                          "maximum_body_velocity_change_mps": float(max(np.linalg.norm(states[:, 3:5]-states[0, 3:5], axis=1))),
+                          "maximum_wrapped_heading_change_rad": float(max(abs(np.arctan2(np.sin(heading), np.cos(heading))))),
+                          "maximum_yaw_rate_change_radps": float(max(abs(states[:, 5]-states[0, 5]))),
+                          "scope": "POSTHOC_SAME_REFERENCE_PHASE_DIAGNOSTIC; NOT_A_NEW_ACCEPTANCE_GATE"}
         compact.append({**{k: v for k, v in row.items() if k != "decisions"},
+                        "same_phase_drift": seam_drift,
                         "mode_counts": dict(Counter(d["mode"] for d in decisions)),
                         "reason_counts": dict(Counter(d["reason"] or "SUPPORTED" for d in decisions))})
     output.mkdir(parents=True)
@@ -86,18 +96,21 @@ def publish(study: Path, receipt: Path, output: Path, kind: str) -> dict:
                    title="Injected preview-feature fault; first condition", ylim=(-.15, 1.2))
             right = ax.twinx()
             right.plot(x, [d["score"] for d in decisions], color="darkorange", alpha=.45)
+            cutoff = read_json(study/"detector/detector.json")["model"]["cutoff"]
+            right.axhline(cutoff, color="grey", linestyle="--", label="Frozen cutoff")
+            right.legend(fontsize=7, loc="upper right")
             right.set_ylabel("Empirical box score", color="darkorange")
             ax = axes[1, 1]
             faults = ("nominal", "feature_shift", "residual_bias", "nonfinite")
             table = []
             for actor in ("unguarded", "guarded"):
-                table.append([sum(r["completed"] for r in result["cases"] if r["actor"] == actor and r["scenario"] == fault and r["max_step_s"] == .02) for fault in faults])
+                table.append([sum(r["passed"] for r in result["cases"] if r["actor"] == actor and r["scenario"] == fault and r["max_step_s"] == .02) for fault in faults])
             ax.imshow(table, vmin=0, vmax=max(max(r) for r in table), cmap="Blues", aspect="auto")
             for i, row in enumerate(table):
                 for j, value in enumerate(row):
                     ax.text(j, i, str(value), ha="center", va="center", color="darkred", fontsize=13)
             ax.set(xticks=range(4), xticklabels=["nominal", "feature shift", "action bias", "nonfinite"], yticks=[0, 1],
-                   yticklabels=["unguarded", "guarded"], title="Complete runs; unsafe prefixes remain in evidence")
+                   yticklabels=["unguarded", "guarded"], title="Runs within declared stability and error limits")
         ax = axes[1, 0]
         refinements = result["refinements"]
         ax.bar(np.arange(len(refinements))+1, [r["maximum_position_difference_m"] for r in refinements], color="#39799b")

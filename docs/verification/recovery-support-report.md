@@ -50,6 +50,10 @@ pass in574.26s, covering the full physical smoke pipelines, portability, leakage
 protected events, changed data/thresholds/ledgers and resealed false completion.
 The [development verification receipt](recovery-support-development.json) binds
 the baseline and32 new targeted tests to the complete synthetic replay receipts.
+All745 tests and every artifact workflow pass Python3.11/3.12 in
+[implementation CI41359598572](https://github.com/aayups31/APEX/actions/runs/41359598572)
+at6d4b3b4. Test runtimes are615.13s/651.87s respectively; the
+[captured CI receipt](recovery-support-ci.json) preserves both complete jobs.
 Actual-copy boundary inspections also reject changed bytes, reserved events,
 resealed omitted cases and a resealed changed cutoff. All16 outside-axis points
 are detected while the constructed joint in-box corner remains undetected, an
