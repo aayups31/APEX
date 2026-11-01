@@ -1,0 +1,16 @@
+{
+  "content_sha256": "627c5ca5fcd4d033ae05aa981629e20f615860becaa09e8aaa00845656c6b8e1",
+  "evidence_sha256": "b96781f4d46111c4d8d3bdf6217db30e626ea9e2db2fb1098236b161b805950e",
+  "files": {
+    "imitation-driver-evidence.json": {
+      "bytes": 198822,
+      "sha256": "f77c87964b9bd3ce9e67879aaf1cd8e62076279ba7e4a3a6f92a2009d2114b26"
+    },
+    "imitation-driver-summary.png": {
+      "bytes": 353337,
+      "sha256": "bd0b82802506c6a387cf4d39de6b40d2fecba3f9af7513e260459bfad4befaa9"
+    }
+  },
+  "publisher_sha256": "dbd9aac8c0ae1791eff27b585387b6e987340087fc4fa450e5624a242a073c6f",
+  "schema_version": "apex-imitation-driver-publication-manifest-v1"
+}

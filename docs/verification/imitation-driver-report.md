@@ -1,7 +1,7 @@
 # R036 conditional imitation driver
 
-2026-11-01. **Numerical campaign ACCEPT_CONDITIONAL_IMITATION_DRIVER; final full
-replay/publication pending before task closure.**
+2026-11-01. **R036 DONE: ACCEPT_CONDITIONAL_IMITATION_DRIVER.** Every declared
+acceptance and replay gate passes within the conditional simulated-expert scope.
 Foundation R1 and production kernel R0 remain unchanged. The
 [protocol](../../research/protocols/IMITATION_DRIVER.md),
 [source/sequence ADR](../architecture/adr-0008-conditional-imitation.md),
@@ -19,7 +19,7 @@ compute measurement. The unchanged isolated test passed in21.82s. No timeout or
 source behavior was relaxed. The final full regression now passes713 tests in
 706.01s with the same two existing dependency warnings. All713 also pass on
 Python3.11/3.12 in [CI41350406803](https://github.com/aayups31/APEX/actions/runs/41350406803),
-including all artifact workflows. Final held-out scientific gates remain pending.
+including all artifact workflows. Final held-out scientific gates also pass.
 
 A fresh R035 disturbed-circle reference passes, seal
 `89d42bea396787ed2f518ae1968c8665ad7bbedd0fcb6e03dc01dd89e84583df`.
@@ -124,4 +124,33 @@ All four nominal timestep refinements pass: maximum common-station XY difference
 The scalar-bisection/DOP853 audit completes one1335-interval final-policy lap with
 maximum XY difference.002029037m and body-velocity difference.000030133m/s. Another
 32 representative nominal intervals pass. Full regeneration of all44 saved runs
-is in progress; these primary metrics do not by themselves close the task.
+has zero difference; the independent lap/interval audit also passes again in the
+[final replay receipt](imitation-evaluation-replay.json). Actual artifact copies
+pass [portability and tamper checks](imitation-driver-boundary-checks.json),
+including rejection of a resealed changed model choice and a reserved event header.
+An independent [saved-action bound inspection](imitation-control-bound-check.json)
+checks58,927 held actions across all44 runs. Its maximum steering rate exceeds
+1.5rad/s only by floating-point rounding (1.5000000000000002).
+
+## Published evidence and interpretation
+
+The [run-bound evidence](imitation-driver-evidence.json),
+[publication manifest](imitation-driver-manifest.json) and
+[sealed completion receipt](r036-completion.json) bind the frozen training,
+primary results, full replay, boundary checks and713-test regression evidence.
+
+![R036 frozen comparison and numerical checks](imitation-driver-summary.png)
+
+The top-right example is2024 Monza driver44/lap2; expert/final curves overlap.
+Posthoc diagnostics show teacher-forced residual RMSE6.79531e-8rad on simulated
+expert states and maximum autonomous expert/student XY drift1.72889e-5m. These
+measure imitation of the analytic expert, not measured human driving accuracy.
+The local CPU policy-head benchmark is113.98microseconds/row; it excludes feature
+construction and vehicle integration and is descriptive rather than a latency gate.
+
+The simulated final laps remain47.3753–48.3086s slower than their source records;
+posthoc native-speed RMSE is24.7137–25.2164m/s. Improved conditional tracking does
+not resolve that pace mismatch. The analytic expert remains equally accurate and
+simpler. The retained smoke failure and higher nominal peak error preclude a
+broad robustness claim. R037 multi-lap drift/recovery, then R038 OOD/fallback,
+remain next; neither is implemented or credited by this completion.

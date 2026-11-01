@@ -1,8 +1,12 @@
 # R036 conditional imitation driver
 
-Research component under evaluation. Completion requires every gate in the
-[preregistered protocol](../../research/protocols/IMITATION_DRIVER.md). Production
-and formal maturity remain unchanged. [Source contract](../data/imitation-driver.md).
+Accepted conditional research component (R036 DONE,2026-11-01): every gate in the
+[preregistered protocol](../../research/protocols/IMITATION_DRIVER.md) passes.
+The [verification report](../verification/imitation-driver-report.md) records all
+eight final cases passing,44 exactly regenerated comparator/refinement runs and
+713 passing tests locally and on Python3.11/3.12 CI. Nominal tracking RMSE improves
+23.6452% over R035; worst nominal peak error rises from.326161m to.383115m.
+Production and formal maturity remain unchanged. [Source contract](../data/imitation-driver.md).
 
 ## What is learned
 

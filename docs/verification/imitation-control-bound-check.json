@@ -1,0 +1,13 @@
+{
+  "cases": 44,
+  "content_sha256": "15bf4178bab0e0df0ea5cc6f0b4f15295d17a3acd90ecdc6cba3070870e33e8b",
+  "held_actions_checked": 58927,
+  "maximum_body_sideslip_rad": 0.08425947153414098,
+  "maximum_brake_force_n": 15010.477404779856,
+  "maximum_rear_drive_power_w": 321610.082080301,
+  "maximum_steering_rad": 0.23136241847057737,
+  "maximum_steering_rate_radps": 1.5000000000000002,
+  "scope": "INDEPENDENT_SAVED_ACTION_PRIOR_BOUND_INSPECTION; DYNAMICS_HAVE_SEPARATE_REPLAY",
+  "summary_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae",
+  "verified": true
+}

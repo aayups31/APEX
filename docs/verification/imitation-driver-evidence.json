@@ -1,0 +1,4862 @@
+{
+  "base_episode_ledger": [
+    {
+      "case_id": "expert_train__F1_2023_R01_4_7__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_7__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_8__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_8__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_6__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_6__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_7__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_7__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_9__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_9__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_10__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_10__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_5__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_5__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_6__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_6__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.0625
+    }
+  ],
+  "content_sha256": "b96781f4d46111c4d8d3bdf6217db30e626ea9e2db2fb1098236b161b805950e",
+  "development_summary": {
+    "commit": "5ff90c924c22e8b4dc57f86e3c97f3976936a397",
+    "content_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+    "dataset_sha256": "44b927325c958198f3239000957dc6970b79ef8afa98a0d9d53d534ad95e963b",
+    "development_sha256": "8b1ddaf6ca1415f8ab65b9ff4c2832dd83a6766aaeb28505c4d3dddbbce9a6bc",
+    "environment": {
+      "numpy": "2.5.3",
+      "python": "3.12.12"
+    },
+    "implementation_sha256": {
+      "IMITATION_DRIVER.md": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c",
+      "imitation_audit.py": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea",
+      "imitation_driver.py": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c",
+      "imitation_study.py": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+    },
+    "production_promotion": false,
+    "profile": "research",
+    "schema_version": "apex-imitation-driver-v1-development",
+    "selected": "bc_d2_a1e-08",
+    "selected_lead_s": 0.1,
+    "selected_model_sha256": "32aebfa9a7a49534bc4d05e79db8686f7c9e24903d169fbd32d33b299df2de9f",
+    "task_closure_eligible": false,
+    "test_outcomes_used": false
+  },
+  "development_verification": {
+    "maximum_independent_feature_difference": 2.220446049250313e-16,
+    "maximum_independent_ridge_prediction_difference_rad": 1.3614109839465982e-14,
+    "maximum_physical_replay_difference": 0.0,
+    "profile": "research",
+    "replay_dynamics": true,
+    "selected": "bc_d2_a1e-08",
+    "selected_lead_s": 0.1,
+    "summary_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+    "task_closure_eligible": false,
+    "test_outcomes_used": false,
+    "training_rows": 45200,
+    "trials_checked": 68,
+    "verified": true
+  },
+  "episode_ledger": [
+    {
+      "case_id": "expert_train__F1_2023_R01_4_7__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_7__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_8__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_4_8__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_6__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_6__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_7__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R01_44_7__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_9__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_9__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_10__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_4_10__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_5__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_5__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_6__nominal__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "expert_train__F1_2023_R14_44_6__disturbed__0.02",
+      "collection_round": 0,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_4_7__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_4_7__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_4_8__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_4_8__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_4_8",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_44_6__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_44_6__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_6",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_44_7__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R01_44_7__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R01",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R01_44_7",
+      "role": "train",
+      "rows": 1490,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_4_9__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_4_9__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_4_10__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_4_10__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "4",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_4_10",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_44_5__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_44_5__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_5",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_44_6__nominal__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    },
+    {
+      "case_id": "collection_learner__F1_2023_R14_44_6__disturbed__0.02",
+      "collection_round": 1,
+      "completed": true,
+      "driver_id": "44",
+      "event_id": "F1_2023_R14",
+      "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+      "lap_id": "F1_2023_R14_44_6",
+      "role": "train",
+      "rows": 1335,
+      "total_weight": 0.03125
+    }
+  ],
+  "inference_benchmark": {
+    "median_microseconds_per_row": 113.9828124792075,
+    "numpy": "2.5.3",
+    "parameters": 45,
+    "python": "3.12.12",
+    "repeat_microseconds_per_row": [
+      113.9828124792075,
+      113.45937497253544,
+      151.41679688213117,
+      131.0968750090069,
+      101.73671870461476
+    ],
+    "scope": "DESCRIPTIVE_LOCAL_CPU_POLICY_INFERENCE; NO_DYNAMICS_OR_MAP_EXTRACTION"
+  },
+  "model_selection": {
+    "best_bc": "bc_d2_a1e-08",
+    "best_linear": "bc_d1_a1e-08",
+    "expert_validation_scores": {
+      "0.025": 0.005918525440778609,
+      "0.05": 0.0049218124273621875,
+      "0.075": 0.004303849935762587,
+      "0.1": 0.004105893534110392
+    },
+    "selected": "bc_d2_a1e-08",
+    "selected_lead_s": 0.1,
+    "validation_scores": {
+      "aggregated": 0.004105885401225437,
+      "bc_d1_a0.0001": 0.02984276824027241,
+      "bc_d1_a1e-08": 0.01854843387289717,
+      "bc_d2_a0.0001": 0.18622887462817883,
+      "bc_d2_a1e-08": 0.004105885400678307
+    }
+  },
+  "models": {
+    "aggregated": {
+      "alpha": 1e-08,
+      "augmented_condition_number": 5807.015634405909,
+      "augmented_rank": 45,
+      "coefficients": [
+        -3.359801104535513e-06,
+        -1.1366462893996856e-06,
+        -0.07233439186692696,
+        0.07238911181146229,
+        1.882829023725543e-07,
+        -8.662337329590685e-08,
+        -6.254203332696842e-08,
+        -2.1365970657216262e-07,
+        -4.044538200191137e-06,
+        6.427053117138981e-11,
+        -0.02156076173064809,
+        0.02157687270030454,
+        -1.917906458424965e-07,
+        2.808374531017288e-08,
+        -9.571676066761486e-08,
+        -2.5898165911288074e-08,
+        -1.9728749526409795e-07,
+        8.303222062463339e-07,
+        -1.647176264297015e-06,
+        -1.589685089189996e-07,
+        -1.0501547379436482e-07,
+        -1.7080374978967194e-08,
+        2.2955090766066388e-07,
+        -6.160765791355521e-07,
+        -1.9273074735107198e-07,
+        -1.4965641552747155e-07,
+        6.584014774005387e-08,
+        -3.6264375322114795e-08,
+        2.4907578167684963e-07,
+        1.7907636606709354e-06,
+        2.2376866498641235e-08,
+        -2.1142687085676584e-08,
+        6.001555597281993e-08,
+        9.083206369431968e-08,
+        2.0315632821409774e-07,
+        9.151629246084703e-10,
+        -1.6199997027004087e-08,
+        6.573472138143854e-09,
+        4.533962219815252e-08,
+        3.102796474266367e-08,
+        6.068785889795647e-08,
+        5.864901490675034e-08,
+        -5.68396393077486e-08,
+        -3.411508883444103e-07,
+        -1.9902608528951649e-07
+      ],
+      "constant_features": [],
+      "degree": 2,
+      "feature_names": [
+        "speed_squared_over_3600",
+        "curvature_times_50",
+        "preview_curvature_times_50",
+        "velocity_heading_error_rad",
+        "cross_track_atan_rad",
+        "yaw_error_radps",
+        "body_sideslip_rad",
+        "previous_steering_rad"
+      ],
+      "mean": [
+        0.4883690256460339,
+        -0.07843971271101016,
+        -0.07846452266199437,
+        -1.8265537041642882e-05,
+        0.00033254418172692327,
+        1.7974418744029415e-05,
+        0.0020528539199356943,
+        -0.00838981483847239
+      ],
+      "parameters": 45,
+      "residual_limit_rad": 0.2,
+      "scale": [
+        0.3244104538125623,
+        0.5538849899181203,
+        0.554261970463566,
+        0.00529051617808896,
+        0.0021056140469790027,
+        0.030453549820696764,
+        0.014557861822227056,
+        0.04865517956533057
+      ],
+      "schema_version": "apex-imitation-policy-v1",
+      "target_truth": "SIMULATED_EXPERT_STEERING_RESIDUAL; NOT_MEASURED_HUMAN_ACTION",
+      "training_rows": 45200,
+      "training_weighted_mse_rad2": 4.153525417834308e-15
+    },
+    "bc_d1_a0.0001": {
+      "alpha": 0.0001,
+      "augmented_condition_number": 44.29381964334185,
+      "augmented_rank": 9,
+      "coefficients": [
+        -1.4195856970286047e-05,
+        -4.6970157106922435e-05,
+        -0.06559076786588736,
+        0.05375413295087865,
+        0.0019441267616340926,
+        -0.0007388270518983452,
+        0.0038426311762944456,
+        0.002257860048345099,
+        0.010859253300303457
+      ],
+      "constant_features": [],
+      "degree": 1,
+      "feature_names": [
+        "speed_squared_over_3600",
+        "curvature_times_50",
+        "preview_curvature_times_50",
+        "velocity_heading_error_rad",
+        "cross_track_atan_rad",
+        "yaw_error_radps",
+        "body_sideslip_rad",
+        "previous_steering_rad"
+      ],
+      "mean": [
+        0.4883690267430907,
+        -0.078439711018575,
+        -0.07846452098253123,
+        -1.8265803187589844e-05,
+        0.0003325440365768223,
+        1.7974988736457286e-05,
+        0.0020528540061836827,
+        -0.008389814828303595
+      ],
+      "parameters": 9,
+      "residual_limit_rad": 0.2,
+      "scale": [
+        0.3244104537324333,
+        0.5538849867346467,
+        0.5542619672361601,
+        0.005290516378266054,
+        0.0021056142062324825,
+        0.030453528122616206,
+        0.014557861933143868,
+        0.04865517861946393
+      ],
+      "schema_version": "apex-imitation-policy-v1",
+      "target_truth": "SIMULATED_EXPERT_STEERING_RESIDUAL; NOT_MEASURED_HUMAN_ACTION",
+      "training_rows": 22600,
+      "training_weighted_mse_rad2": 2.477562282822689e-06
+    },
+    "bc_d1_a1e-08": {
+      "alpha": 1e-08,
+      "augmented_condition_number": 45.654962775046315,
+      "augmented_rank": 9,
+      "coefficients": [
+        -1.4195856970286047e-05,
+        -4.812236892028695e-05,
+        -0.0690308185009097,
+        0.05540978417332662,
+        0.0018395980456807994,
+        -0.0007143625717022505,
+        0.0037232031134419486,
+        0.002519703838449109,
+        0.01258187916033803
+      ],
+      "constant_features": [],
+      "degree": 1,
+      "feature_names": [
+        "speed_squared_over_3600",
+        "curvature_times_50",
+        "preview_curvature_times_50",
+        "velocity_heading_error_rad",
+        "cross_track_atan_rad",
+        "yaw_error_radps",
+        "body_sideslip_rad",
+        "previous_steering_rad"
+      ],
+      "mean": [
+        0.4883690267430907,
+        -0.078439711018575,
+        -0.07846452098253123,
+        -1.8265803187589844e-05,
+        0.0003325440365768223,
+        1.7974988736457286e-05,
+        0.0020528540061836827,
+        -0.008389814828303595
+      ],
+      "parameters": 9,
+      "residual_limit_rad": 0.2,
+      "scale": [
+        0.3244104537324333,
+        0.5538849867346467,
+        0.5542619672361601,
+        0.005290516378266054,
+        0.0021056142062324825,
+        0.030453528122616206,
+        0.014557861933143868,
+        0.04865517861946393
+      ],
+      "schema_version": "apex-imitation-policy-v1",
+      "target_truth": "SIMULATED_EXPERT_STEERING_RESIDUAL; NOT_MEASURED_HUMAN_ACTION",
+      "training_rows": 22600,
+      "training_weighted_mse_rad2": 2.4442336599623963e-06
+    },
+    "bc_d2_a0.0001": {
+      "alpha": 0.0001,
+      "augmented_condition_number": 1132.6689680670588,
+      "augmented_rank": 45,
+      "coefficients": [
+        -0.0005131636217814285,
+        -0.000751848690496454,
+        -0.04861943699562617,
+        0.07085151220831148,
+        0.0005718257762396039,
+        -0.0002984409242491697,
+        -0.00023205803083651872,
+        -0.0006687394115582434,
+        -0.015886359916623204,
+        -2.199229760611182e-06,
+        -0.012839882486653797,
+        0.019979900951053512,
+        -0.0008017574462747508,
+        9.639417098683285e-05,
+        -0.0004352726067250257,
+        -0.00019258347915861288,
+        -0.0016372010089145293,
+        -0.0005491725382403253,
+        -0.0009421947898700035,
+        -0.000867859881986695,
+        1.9082355090403822e-05,
+        -0.0005071556323396767,
+        0.0011883308719569927,
+        9.378496715412455e-05,
+        -0.0004252479753809671,
+        -0.00023406813051805343,
+        -0.0001548197367421851,
+        -0.0003082167355553944,
+        0.00021471446587431435,
+        0.001264905783575708,
+        7.870398166792344e-05,
+        -0.00011371877195757844,
+        0.00022702053774012812,
+        0.0004133079266637283,
+        0.0006899460916337374,
+        5.859453940312842e-06,
+        -7.754829128115218e-05,
+        1.7110233042835765e-05,
+        0.0001518849266379024,
+        0.00015724265501287395,
+        0.0003467632049496787,
+        0.00072149705823156,
+        -0.00021099020680341238,
+        -0.0009745710959727094,
+        0.0004634257168211267
+      ],
+      "constant_features": [],
+      "degree": 2,
+      "feature_names": [
+        "speed_squared_over_3600",
+        "curvature_times_50",
+        "preview_curvature_times_50",
+        "velocity_heading_error_rad",
+        "cross_track_atan_rad",
+        "yaw_error_radps",
+        "body_sideslip_rad",
+        "previous_steering_rad"
+      ],
+      "mean": [
+        0.4883690267430907,
+        -0.078439711018575,
+        -0.07846452098253123,
+        -1.8265803187589844e-05,
+        0.0003325440365768223,
+        1.7974988736457286e-05,
+        0.0020528540061836827,
+        -0.008389814828303595
+      ],
+      "parameters": 45,
+      "residual_limit_rad": 0.2,
+      "scale": [
+        0.3244104537324333,
+        0.5538849867346467,
+        0.5542619672361601,
+        0.005290516378266054,
+        0.0021056142062324825,
+        0.030453528122616206,
+        0.014557861933143868,
+        0.04865517861946393
+      ],
+      "schema_version": "apex-imitation-policy-v1",
+      "target_truth": "SIMULATED_EXPERT_STEERING_RESIDUAL; NOT_MEASURED_HUMAN_ACTION",
+      "training_rows": 22600,
+      "training_weighted_mse_rad2": 1.1404455489771586e-07
+    },
+    "bc_d2_a1e-08": {
+      "alpha": 1e-08,
+      "augmented_condition_number": 5807.114595354863,
+      "augmented_rank": 45,
+      "coefficients": [
+        -3.35980529036052e-06,
+        -1.1366502428475655e-06,
+        -0.07233439139610316,
+        0.07238911148520194,
+        1.8829808600252882e-07,
+        -8.66282987177394e-08,
+        -6.253655581388556e-08,
+        -2.1366951253405735e-07,
+        -4.044660067415199e-06,
+        6.436387696689277e-11,
+        -0.021560761598492448,
+        0.02157687256865124,
+        -1.917972908421512e-07,
+        2.808555388082723e-08,
+        -9.57196518262815e-08,
+        -2.589559531217256e-08,
+        -1.972662738505826e-07,
+        8.303244659613185e-07,
+        -1.6472066984383332e-06,
+        -1.5897288546153077e-07,
+        -1.0502254187312599e-07,
+        -1.7079924745366792e-08,
+        2.2955561292115068e-07,
+        -6.160588999094135e-07,
+        -1.9273484010498554e-07,
+        -1.496554368988351e-07,
+        6.584487107635928e-08,
+        -3.625974879378768e-08,
+        2.4908121184358256e-07,
+        1.7907951503637332e-06,
+        2.2377056180244992e-08,
+        -2.1144245229047856e-08,
+        6.001621365159249e-08,
+        9.08323918320103e-08,
+        2.031606179883627e-07,
+        9.15562479997245e-10,
+        -1.6202119599954823e-08,
+        6.574158963740251e-09,
+        4.534151394879754e-08,
+        3.102803231881668e-08,
+        6.068774702217006e-08,
+        5.8647062244759907e-08,
+        -5.6840530237439735e-08,
+        -3.4115832299799753e-07,
+        -1.9904416003607706e-07
+      ],
+      "constant_features": [],
+      "degree": 2,
+      "feature_names": [
+        "speed_squared_over_3600",
+        "curvature_times_50",
+        "preview_curvature_times_50",
+        "velocity_heading_error_rad",
+        "cross_track_atan_rad",
+        "yaw_error_radps",
+        "body_sideslip_rad",
+        "previous_steering_rad"
+      ],
+      "mean": [
+        0.4883690267430907,
+        -0.078439711018575,
+        -0.07846452098253123,
+        -1.8265803187589844e-05,
+        0.0003325440365768223,
+        1.7974988736457286e-05,
+        0.0020528540061836827,
+        -0.008389814828303595
+      ],
+      "parameters": 45,
+      "residual_limit_rad": 0.2,
+      "scale": [
+        0.3244104537324333,
+        0.5538849867346467,
+        0.5542619672361601,
+        0.005290516378266054,
+        0.0021056142062324825,
+        0.030453528122616206,
+        0.014557861933143868,
+        0.04865517861946393
+      ],
+      "schema_version": "apex-imitation-policy-v1",
+      "target_truth": "SIMULATED_EXPERT_STEERING_RESIDUAL; NOT_MEASURED_HUMAN_ACTION",
+      "training_rows": 22600,
+      "training_weighted_mse_rad2": 4.15360258144929e-15
+    }
+  },
+  "policy_diagnostics": {
+    "autonomous_expert_student_drift": [
+      {
+        "finish_time_difference_s": 3.349105668348784e-07,
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_common_station_xy_drift_m": 3.874059466723485e-06,
+        "scenario": "nominal",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": 1.4974898476793896e-07,
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_common_station_xy_drift_m": 1.7288892886312357e-05,
+        "scenario": "disturbed",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": -1.4535848436025844e-07,
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_common_station_xy_drift_m": 3.8768886878934294e-06,
+        "scenario": "nominal",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": -1.3920094943387085e-07,
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_common_station_xy_drift_m": 1.7069714069290936e-05,
+        "scenario": "disturbed",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": 1.716446718091902e-08,
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_common_station_xy_drift_m": 3.8797913299159136e-06,
+        "scenario": "nominal",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": 1.6523244994459674e-08,
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_common_station_xy_drift_m": 1.1973754056199906e-05,
+        "scenario": "disturbed",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": -1.3761933814748772e-08,
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_common_station_xy_drift_m": 3.8830572329962895e-06,
+        "scenario": "nominal",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      },
+      {
+        "finish_time_difference_s": -1.4085117072681896e-08,
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_common_station_xy_drift_m": 1.1609365411202255e-05,
+        "scenario": "disturbed",
+        "supported": true,
+        "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"
+      }
+    ],
+    "teacher_forced_residual_errors": [
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 0.008988640971451602,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0009984700596125905,
+        "residual_mse_rad2": 2.483899916460781e-06,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 2.4818625489649027e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.717524365239124e-08,
+        "residual_mse_rad2": 2.872276986904851e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 2.4818625489649027e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.717524365239124e-08,
+        "residual_mse_rad2": 2.872276986904851e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 0.009057636950172306,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0010009923353614825,
+        "residual_mse_rad2": 2.525521898707509e-06,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 2.009921583420878e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 4.1877329693985007e-08,
+        "residual_mse_rad2": 7.741453648973031e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_absolute_residual_error_rad": 2.009921583420878e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 4.1877329693985007e-08,
+        "residual_mse_rad2": 7.741453648973031e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 0.008998343265826918,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0009981741559164118,
+        "residual_mse_rad2": 2.48392392557149e-06,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 2.443579886759681e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.7134002737869135e-08,
+        "residual_mse_rad2": 2.8741462807536697e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 2.443579886759681e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.7134002737869135e-08,
+        "residual_mse_rad2": 2.8741462807536697e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 0.00907405325612325,
+        "nodes": 1335,
+        "residual_mae_rad": 0.001001159843346614,
+        "residual_mse_rad2": 2.526433299603024e-06,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 1.990241288714052e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 4.180963526626854e-08,
+        "residual_mse_rad2": 7.678807127900802e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_absolute_residual_error_rad": 1.990241288714052e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 4.180963526626854e-08,
+        "residual_mse_rad2": 7.678807127900802e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 0.008934604752075782,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0009969148005132481,
+        "residual_mse_rad2": 2.47768416982221e-06,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 2.3722478264057156e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.6962717812609446e-08,
+        "residual_mse_rad2": 2.8651499171323203e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 2.3722478264057156e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.6962717812609446e-08,
+        "residual_mse_rad2": 2.8651499171323203e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 0.012992301858754697,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0010031072569435934,
+        "residual_mse_rad2": 2.5977107124808416e-06,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 1.4374171313322626e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 3.897556266261669e-08,
+        "residual_mse_rad2": 5.0435025534108716e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_absolute_residual_error_rad": 1.4374171313322626e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 3.897556266261669e-08,
+        "residual_mse_rad2": 5.0435025534108716e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 0.008923253944518126,
+        "nodes": 1335,
+        "residual_mae_rad": 0.000994321690966825,
+        "residual_mse_rad2": 2.468867224933829e-06,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 2.8341792496808065e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.6757974263117996e-08,
+        "residual_mse_rad2": 2.878492096096335e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 2.8341792496808065e-07,
+        "nodes": 1335,
+        "residual_mae_rad": 3.6757974263117996e-08,
+        "residual_mse_rad2": 2.878492096096335e-15,
+        "scenario": "nominal",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "linear",
+        "checkpoint": "bc_d1_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 0.012855628325176165,
+        "nodes": 1335,
+        "residual_mae_rad": 0.0010018795670035051,
+        "residual_mse_rad2": 2.588422462657956e-06,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "bc",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 1.4083390821427325e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 3.8802412207396703e-08,
+        "residual_mse_rad2": 4.98714840644276e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      },
+      {
+        "actor": "final",
+        "checkpoint": "bc_d2_a1e-08",
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_absolute_residual_error_rad": 1.4083390821427325e-06,
+        "nodes": 1335,
+        "residual_mae_rad": 3.8802412207396703e-08,
+        "residual_mse_rad2": 4.98714840644276e-15,
+        "scenario": "disturbed",
+        "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"
+      }
+    ]
+  },
+  "posthoc_source_discrepancies": [
+    {
+      "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+      "matched_native_rows": 315,
+      "scope": "POSTHOC_DESCRIPTION_ONLY; NOT_TRAINING_OR_REAL_CAR_ACCEPTANCE",
+      "simulated_finish_s": 133.41992229824652,
+      "source_lap_time_s": 85.45800000000008,
+      "source_time_difference_s": 47.961922298246435,
+      "speed_bias_mps": -23.509208349580636,
+      "speed_mae_mps": 23.509208349580636,
+      "speed_rmse_mps": 24.90022310358093,
+      "truth": "SIMULATED_SPEED_VS_PARSED_SOURCE_AT_RECONSTRUCTED_BACKWARD_STATION"
+    },
+    {
+      "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+      "matched_native_rows": 304,
+      "scope": "POSTHOC_DESCRIPTION_ONLY; NOT_TRAINING_OR_REAL_CAR_ACCEPTANCE",
+      "simulated_finish_s": 133.41862246052946,
+      "source_lap_time_s": 85.11000000000013,
+      "source_time_difference_s": 48.308622460529335,
+      "speed_bias_mps": -23.92948479339934,
+      "speed_mae_mps": 23.92948479339934,
+      "speed_rmse_mps": 25.2163496960048,
+      "truth": "SIMULATED_SPEED_VS_PARSED_SOURCE_AT_RECONSTRUCTED_BACKWARD_STATION"
+    },
+    {
+      "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+      "matched_native_rows": 319,
+      "scope": "POSTHOC_DESCRIPTION_ONLY; NOT_TRAINING_OR_REAL_CAR_ACCEPTANCE",
+      "simulated_finish_s": 133.41830023585288,
+      "source_lap_time_s": 86.04300000000012,
+      "source_time_difference_s": 47.37530023585276,
+      "speed_bias_mps": -23.427815205540135,
+      "speed_mae_mps": 23.427815205540135,
+      "speed_rmse_mps": 24.800772588394935,
+      "truth": "SIMULATED_SPEED_VS_PARSED_SOURCE_AT_RECONSTRUCTED_BACKWARD_STATION"
+    },
+    {
+      "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+      "matched_native_rows": 305,
+      "scope": "POSTHOC_DESCRIPTION_ONLY; NOT_TRAINING_OR_REAL_CAR_ACCEPTANCE",
+      "simulated_finish_s": 133.41844772226702,
+      "source_lap_time_s": 85.63000000000011,
+      "source_time_difference_s": 47.78844772226691,
+      "speed_bias_mps": -23.44785762751682,
+      "speed_mae_mps": 23.44785762751682,
+      "speed_rmse_mps": 24.713738393352628,
+      "truth": "SIMULATED_SPEED_VS_PARSED_SOURCE_AT_RECONSTRUCTED_BACKWARD_STATION"
+    }
+  ],
+  "results": {
+    "cases": [
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_4_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 9.125187716563232e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 9.313225746154785e-10,
+          "maximum_root_residual_n": 2.5349322640977334e-09,
+          "maximum_utilization_squared": 0.587159975295115,
+          "minimum_contact_load_n": 3714.1119214098917,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.5824245518135,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11336488745962203,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 496,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.32542125816948325,
+        "p95_lateral_error_m": 0.23359115471071523,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.748466476847,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010270594635231351,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_4_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 8.670667739352211e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4076030058495235e-09,
+          "maximum_utilization_squared": 0.5871754686507127,
+          "minimum_contact_load_n": 3714.129074143225,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.5824285294998,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11336599175991881,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 496,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5734340417965198,
+        "p95_lateral_error_m": 0.24194276688667513,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.748229933767,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.014609492610494568,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_4_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.034920367412269e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.5088411348406225e-09,
+          "maximum_utilization_squared": 0.5673635745183143,
+          "minimum_contact_load_n": 3708.5145814838816,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41992196333595,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06882102177418686,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3766960868203232,
+        "p95_lateral_error_m": 0.17438655612978637,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.473639845627,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005989992158599387,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_4_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.923279892769642e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.479055183357559e-09,
+          "maximum_utilization_squared": 0.5673771825527274,
+          "minimum_contact_load_n": 3708.5879898070434,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.42044919561974,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06892855667404323,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.591062999919225,
+        "p95_lateral_error_m": 0.1945118402724133,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.442187521409,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.01077778842624424,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_4_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33950,
+          "maximum_pitch_residual_nm": 1.0258645488647744e-08,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 5.820766091346741e-10,
+          "maximum_root_residual_n": 2.8499016480054706e-09,
+          "maximum_utilization_squared": 0.8185099035441321,
+          "minimum_contact_load_n": 3728.3589465518753,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.7179727953227,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.29583774680757763,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 542,
+          "learned_residual": 0,
+          "steering": 448
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.6980650782963795,
+        "p95_lateral_error_m": 0.40369886328122223,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.5461910439835,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.038943129298450535,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_4_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33925,
+          "maximum_pitch_residual_nm": 9.82709025265649e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.7303030947223306e-09,
+          "maximum_utilization_squared": 0.7813399066446105,
+          "minimum_contact_load_n": 3719.95650047651,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.65112920247935,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.24091720698639807,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 538,
+          "learned_residual": 0,
+          "steering": 460
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.7067226473852078,
+        "p95_lateral_error_m": 0.44212451876970116,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5763.58927032174,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.04516072872661199,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_4_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.033783499035053e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.509580099285813e-09,
+          "maximum_utilization_squared": 0.5673636496232365,
+          "minimum_contact_load_n": 3708.514878505538,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41992229824652,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06882122532689848,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.37669650677744126,
+        "p95_lateral_error_m": 0.17438707348209784,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.473619874129,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005990008122978095,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_4_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.929646355682053e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4801920517347753e-09,
+          "maximum_utilization_squared": 0.5673772526784592,
+          "minimum_contact_load_n": 3708.588263234389,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.42044934536872,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06892872261915477,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5910700728896973,
+        "p95_lateral_error_m": 0.19451236927825355,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.44217859599,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010777910263161347,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.033783499035053e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.509580099285813e-09,
+          "maximum_utilization_squared": 0.5673636496232365,
+          "minimum_contact_load_n": 3708.514878505538,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41992229824652,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06882122532689848,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.37669650677744126,
+        "p95_lateral_error_m": 0.17438707348209784,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.473619874129,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005990008122978095,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.929646355682053e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4801920517347753e-09,
+          "maximum_utilization_squared": 0.5673772526784592,
+          "minimum_contact_load_n": 3708.588263234389,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.42044934536872,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06892872261915477,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5910700728896973,
+        "p95_lateral_error_m": 0.19451236927825355,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.44217859599,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010777910263161347,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_2__nominal__0.01",
+        "checks": {
+          "force_evaluations": 66750,
+          "maximum_pitch_residual_nm": 9.013319868245162e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.502247298252769e-09,
+          "maximum_utilization_squared": 0.5673647798653392,
+          "minimum_contact_load_n": 3708.517753090903,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41993474789564,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06882369777811641,
+        "initial_speed_mps": 88.33333333333333,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.01,
+        "maximum_lateral_error_m": 0.37667303240535654,
+        "p95_lateral_error_m": 0.1743739079440075,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.47287715135,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005989907002957042,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_4_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 8.945789886638522e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4846542601153487e-09,
+          "maximum_utilization_squared": 0.5890333885063704,
+          "minimum_contact_load_n": 3715.655742248943,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.58338721679237,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11363026498822966,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3259219891485827,
+        "p95_lateral_error_m": 0.23415364932238106,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.69121868028,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010282457793151125,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_4_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 9.005361789604649e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.5036115403054282e-09,
+          "maximum_utilization_squared": 0.5890506484609088,
+          "minimum_contact_load_n": 3715.6735003463573,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.58339664561834,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.1136328277240408,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5727780020020714,
+        "p95_lateral_error_m": 0.24240482910770836,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.6906579613615,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.014593310161835578,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_4_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.642643933853833e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.402927634648222e-09,
+          "maximum_utilization_squared": 0.5683201029246279,
+          "minimum_contact_load_n": 3711.101647513193,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41862260588795,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06858028952132422,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3791236694763551,
+        "p95_lateral_error_m": 0.17352609700646948,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.551096652477,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.006006027404890045,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_4_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.490189884469146e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.3579502794746077e-09,
+          "maximum_utilization_squared": 0.5683252175886738,
+          "minimum_contact_load_n": 3711.114536513849,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41860382460837,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.0685771145455079,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5902216835225909,
+        "p95_lateral_error_m": 0.19463381910122873,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.552215482377,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010759702338337169,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_4_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33925,
+          "maximum_pitch_residual_nm": 9.785708243725821e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.717683855735231e-09,
+          "maximum_utilization_squared": 0.7983685770596948,
+          "minimum_contact_load_n": 3716.597557565533,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.69250832160853,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.2103259823407786,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 539,
+          "learned_residual": 0,
+          "steering": 468
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.7049113156221568,
+        "p95_lateral_error_m": 0.42191562797034066,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.145290460362,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.038294278069289193,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_4_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33925,
+          "maximum_pitch_residual_nm": 9.876202966552228e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.7437181415734813e-09,
+          "maximum_utilization_squared": 0.8195057965213176,
+          "minimum_contact_load_n": 3702.039554108068,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.68950147536668,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.31835715299090867,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 536,
+          "learned_residual": 0,
+          "steering": 468
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.6972278435192243,
+        "p95_lateral_error_m": 0.45389820608941106,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.322782108814,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.05250747284828673,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_4_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.65156835061498e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4020465616558795e-09,
+          "maximum_utilization_squared": 0.568320156092047,
+          "minimum_contact_load_n": 3711.1019473893875,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41862246052946,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06858040446696846,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3791240748881566,
+        "p95_lateral_error_m": 0.17352664294952258,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.551105320506,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.006006043465458315,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_4_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.49047410156345e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.358191864004766e-09,
+          "maximum_utilization_squared": 0.5683252689367301,
+          "minimum_contact_load_n": 3711.1148282113563,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41860368540742,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06857723056611374,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5902286952268336,
+        "p95_lateral_error_m": 0.19463432887158283,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.55222378359,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010759822130479215,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.65156835061498e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.4020465616558795e-09,
+          "maximum_utilization_squared": 0.568320156092047,
+          "minimum_contact_load_n": 3711.1019473893875,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41862246052946,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06858040446696846,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3791240748881566,
+        "p95_lateral_error_m": 0.17352664294952258,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.551105320506,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.006006043465458315,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.49047410156345e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.358191864004766e-09,
+          "maximum_utilization_squared": 0.5683252689367301,
+          "minimum_contact_load_n": 3711.1148282113563,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41860368540742,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06857723056611374,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5902286952268336,
+        "p95_lateral_error_m": 0.19463432887158283,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.55222378359,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010759822130479215,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_4_3__nominal__0.01",
+        "checks": {
+          "force_evaluations": 66750,
+          "maximum_pitch_residual_nm": 9.238419806933962e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.5638655642978847e-09,
+          "maximum_utilization_squared": 0.5683219191627185,
+          "minimum_contact_load_n": 3711.1047168479827,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41861794769721,
+        "driver_id": "4",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06857959672515927,
+        "initial_speed_mps": 88.05555555555556,
+        "interventions": {
+          "force": 491,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_4_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.01,
+        "maximum_lateral_error_m": 0.37910045129468045,
+        "p95_lateral_error_m": 0.1735146677311617,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.55137412706,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.006005936965623854,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_44_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 9.26638676901348e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 9.313225746154785e-10,
+          "maximum_root_residual_n": 2.5742110665305518e-09,
+          "maximum_utilization_squared": 0.5902562096239631,
+          "minimum_contact_load_n": 3717.235127062164,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.58408106211957,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11379174310486108,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.32616085903057995,
+        "p95_lateral_error_m": 0.2345819744121344,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.649956492914,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010289148404604747,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_44_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 1.067974153556861e-08,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.9644979804288596e-09,
+          "maximum_utilization_squared": 0.5903695672602982,
+          "minimum_contact_load_n": 3717.4504099670557,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.5841503416084,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11380870698376672,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.6350022186617938,
+        "p95_lateral_error_m": 0.2434414405060219,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.645836502779,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.015506149582952995,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_44_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.523319022264332e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.644583219080232e-09,
+          "maximum_utilization_squared": 0.5687850083625016,
+          "minimum_contact_load_n": 3711.714938057884,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41830021868842,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06852114564166553,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.37995121059555026,
+        "p95_lateral_error_m": 0.17417409505933773,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.570309313842,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005999939809029435,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_44_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.232280717696995e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.56352450378472e-09,
+          "maximum_utilization_squared": 0.568845397186786,
+          "minimum_contact_load_n": 3711.6915755326663,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.4183881836326,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853647923779012,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5934768872910362,
+        "p95_lateral_error_m": 0.1945877564495097,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.565070810218,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010778098006880945,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_44_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33950,
+          "maximum_pitch_residual_nm": 9.791619959287345e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.7202986530028284e-09,
+          "maximum_utilization_squared": 0.8005886656327306,
+          "minimum_contact_load_n": 3700.3132039037127,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.7014081369455,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.1450438893429921,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 538,
+          "learned_residual": 0,
+          "steering": 444
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.7160841352926148,
+        "p95_lateral_error_m": 0.4348063292826962,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5766.523852123125,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.04136389165386076,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_44_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33950,
+          "maximum_pitch_residual_nm": 9.236600817530416e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.56704879575409e-09,
+          "maximum_utilization_squared": 0.7964185977413907,
+          "minimum_contact_load_n": 3691.4829599383274,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.72918792169025,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.2377476898128805,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 535,
+          "learned_residual": 0,
+          "steering": 464
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.7126100585920447,
+        "p95_lateral_error_m": 0.4597456267683428,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5764.884668027898,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.04639185109567237,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_44_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.51058609643951e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.641968421812635e-09,
+          "maximum_utilization_squared": 0.5687850590156169,
+          "minimum_contact_load_n": 3711.715055083563,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41830023585288,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06852128907543259,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.37995160298207903,
+        "p95_lateral_error_m": 0.1741732015731225,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.570308301283,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005999955697514747,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_44_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.222958397003822e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.5618760446377564e-09,
+          "maximum_utilization_squared": 0.5688454458832926,
+          "minimum_contact_load_n": 3711.69166582458,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41838820015585,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853662230199288,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5934864844196068,
+        "p95_lateral_error_m": 0.1945880355339195,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.565069835832,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010778191553104211,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.51058609643951e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.641968421812635e-09,
+          "maximum_utilization_squared": 0.5687850590156169,
+          "minimum_contact_load_n": 3711.715055083563,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41830023585288,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06852128907543259,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.37995160298207903,
+        "p95_lateral_error_m": 0.1741732015731225,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.570308301283,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005999955697514747,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_2__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.222958397003822e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.5618760446377564e-09,
+          "maximum_utilization_squared": 0.5688454458832926,
+          "minimum_contact_load_n": 3711.69166582458,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41838820015585,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853662230199288,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5934864844196068,
+        "p95_lateral_error_m": 0.1945880355339195,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.565069835832,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010778191553104211,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_2__nominal__0.01",
+        "checks": {
+          "force_evaluations": 66750,
+          "maximum_pitch_residual_nm": 9.303903425461613e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.5822828320087865e-09,
+          "maximum_utilization_squared": 0.568787914574097,
+          "minimum_contact_load_n": 3711.7168940431648,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.4183036519961,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06852184145690847,
+        "initial_speed_mps": 87.77777777777777,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_2",
+        "lead_s": 0.1,
+        "max_step_s": 0.01,
+        "maximum_lateral_error_m": 0.3799279675367533,
+        "p95_lateral_error_m": 0.17417066430519937,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.570104832347,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005999836331224398,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_44_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 8.609049473307095e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.3901520762592554e-09,
+          "maximum_utilization_squared": 0.5937404139135856,
+          "minimum_contact_load_n": 3714.9040793656422,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.5866332226117,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11434585824795088,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.32560414270613863,
+        "p95_lateral_error_m": 0.23515438037997569,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.498177955469,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.0103146690099284,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "transparent",
+        "attempted_final_control": null,
+        "case_id": "transparent__F1_2024_R16_44_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33400,
+          "maximum_pitch_residual_nm": 1.055877874023281e-08,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.931528797489591e-09,
+          "maximum_utilization_squared": 0.5939473158861086,
+          "minimum_contact_load_n": 3714.025533233462,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.58695576063255,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.1144344626242135,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 495,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "transparent",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.6318511329360945,
+        "p95_lateral_error_m": 0.2429905429357975,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5761.478995855498,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.015465311936329794,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_44_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.484619229420787e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.3559039163956186e-09,
+          "maximum_utilization_squared": 0.5688866897591204,
+          "minimum_contact_load_n": 3714.69886523436,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41844773602895,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06854813575945283,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3831142098494973,
+        "p95_lateral_error_m": 0.174541784215048,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.561524369029,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005998657968938904,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "expert",
+        "attempted_final_control": null,
+        "case_id": "expert__F1_2024_R16_44_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.043105819728225e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 4.656612873077393e-10,
+          "maximum_root_residual_n": 2.5127633307420183e-09,
+          "maximum_utilization_squared": 0.5688583556714774,
+          "minimum_contact_load_n": 3714.8448619788314,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41840697575233,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853975401442775,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "expert",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5906849019252732,
+        "p95_lateral_error_m": 0.1946003137845607,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.5639516973915,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010721070822607702,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_44_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33925,
+          "maximum_pitch_residual_nm": 1.0464646038599312e-08,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.9082229957566597e-09,
+          "maximum_utilization_squared": 0.8160170947704795,
+          "minimum_contact_load_n": 3700.1778804927735,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.66481935200275,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.1452268882494775,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 536,
+          "learned_residual": 0,
+          "steering": 469
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.7164827520724713,
+        "p95_lateral_error_m": 0.4405806469173437,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5762.784417361746,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.049062392081489305,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "linear",
+        "attempted_final_control": null,
+        "case_id": "linear__F1_2024_R16_44_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33925,
+          "maximum_pitch_residual_nm": 9.28616827877704e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.581600710982457e-09,
+          "maximum_utilization_squared": 0.7961680458292755,
+          "minimum_contact_load_n": 3698.3097545608634,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 135.67484275340072,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.11902895063388898,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 537,
+          "learned_residual": 0,
+          "steering": 466
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.6990730380226602,
+        "p95_lateral_error_m": 0.4440268368524097,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5762.187846918988,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.049642328148707164,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_44_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.476035873172805e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.3556196993013145e-09,
+          "maximum_utilization_squared": 0.568886716476263,
+          "minimum_contact_load_n": 3714.698861867234,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41844772226702,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.0685482733111543,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3831145728517315,
+        "p95_lateral_error_m": 0.17454240701652995,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.561525198186,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005998674022350885,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "bc",
+        "attempted_final_control": null,
+        "case_id": "bc__F1_2024_R16_44_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.035602488438599e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.511058028176194e-09,
+          "maximum_utilization_squared": 0.5688583829189446,
+          "minimum_contact_load_n": 3714.8448587734056,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41840696166722,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853989169082461,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5906942711812976,
+        "p95_lateral_error_m": 0.19460057401194703,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.563952545798,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010721158915350797,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 8.476035873172805e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.3556196993013145e-09,
+          "maximum_utilization_squared": 0.568886716476263,
+          "minimum_contact_load_n": 3714.698861867234,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41844772226702,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.0685482733111543,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.3831145728517315,
+        "p95_lateral_error_m": 0.17454240701652995,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.561525198186,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005998674022350885,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_3__disturbed__0.02",
+        "checks": {
+          "force_evaluations": 33375,
+          "maximum_pitch_residual_nm": 9.035602488438599e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.511058028176194e-09,
+          "maximum_utilization_squared": 0.5688583829189446,
+          "minimum_contact_load_n": 3714.8448587734056,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.41840696166722,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06853989169082461,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.02,
+        "maximum_lateral_error_m": 0.5906942711812976,
+        "p95_lateral_error_m": 0.19460057401194703,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.563952545798,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "disturbed",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.010721158915350797,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      },
+      {
+        "actor": "final",
+        "attempted_final_control": null,
+        "case_id": "final__F1_2024_R16_44_3__nominal__0.01",
+        "checks": {
+          "force_evaluations": 66750,
+          "maximum_pitch_residual_nm": 9.508084986009635e-09,
+          "maximum_positive_slip_power_w": 0.0,
+          "maximum_power_balance_error_w": 6.984919309616089e-10,
+          "maximum_root_residual_n": 2.6411726139485836e-09,
+          "maximum_utilization_squared": 0.5688867127021501,
+          "minimum_contact_load_n": 3714.701313055518,
+          "projected_axle_requests": 0
+        },
+        "completed": true,
+        "completion_time_s": 133.4184469802764,
+        "driver_id": "44",
+        "event_id": "F1_2024_R16",
+        "failure": null,
+        "final_lateral_error_m": 0.06854810760419022,
+        "initial_speed_mps": 87.22222222222221,
+        "interventions": {
+          "force": 492,
+          "learned_residual": 0,
+          "steering": 0
+        },
+        "kind": "learned",
+        "lap_id": "F1_2024_R16_44_3",
+        "lead_s": 0.1,
+        "max_step_s": 0.01,
+        "maximum_lateral_error_m": 0.38309098748257114,
+        "p95_lateral_error_m": 0.1745429269435856,
+        "passed": true,
+        "production_promotion": false,
+        "progress_m": 5765.561569355129,
+        "rejected_state": null,
+        "role": "test",
+        "scenario": "nominal",
+        "state_truth": "SIMULATED; INITIAL_MAP_POSE_RECONSTRUCTED; INITIAL_SPEED_SOURCE_OR_FIXTURE; INITIAL_VY_R_PRIOR",
+        "station_weighted_mse_m2": 0.005998573950209232,
+        "track_id": "monza",
+        "vehicle_truth": "GENERIC_PRIOR"
+      }
+    ],
+    "checkpoint_identities": {
+      "bc": "bc_d2_a1e-08",
+      "expert": null,
+      "final": "bc_d2_a1e-08",
+      "linear": "bc_d1_a1e-08",
+      "transparent": null
+    },
+    "complete_measured_car_replay": false,
+    "conditional_research_only": true,
+    "decision": "ACCEPT_CONDITIONAL_IMITATION_DRIVER",
+    "development_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+    "gate": {
+      "by_driver": {
+        "4": {
+          "baseline_mse_m2": 0.010276526214191239,
+          "final_mse_m2": 0.005998025794218206,
+          "p95_ratio": 0.7438109700669235,
+          "rmse_ratio": 0.763978254732518,
+          "supported": true
+        },
+        "44": {
+          "baseline_mse_m2": 0.010301908707266574,
+          "final_mse_m2": 0.005999314859932816,
+          "p95_ratio": 0.7423645307248627,
+          "rmse_ratio": 0.7631184949511861,
+          "supported": true
+        }
+      },
+      "catalog_passed": true,
+      "evaluated_final_cases": 8,
+      "finish_noninferiority_passed": true,
+      "macro_rmse_ratio": 0.7635479656177168,
+      "passed": true,
+      "profile": "research",
+      "refinement_passed": true,
+      "required_final_cases": 8,
+      "small_disturbance_recovery_passed": true,
+      "stability_passed": true,
+      "tracking_improvement_passed": true
+    },
+    "independent_audit": {
+      "checks": [
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "intervals": 1335,
+          "maximum_body_velocity_difference_mps": 3.0132615664646423e-05,
+          "maximum_heading_difference_rad": 2.6940127202390585e-06,
+          "maximum_position_difference_m": 0.0020290365072338865,
+          "maximum_yaw_rate_difference_radps": 2.6113815127834505e-05,
+          "passed": true,
+          "scope": "COMPLETE_LAP"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.753900871648284e-06,
+          "maximum_heading_difference_rad": 2.997066261833936e-08,
+          "maximum_position_difference_m": 1.861755963015479e-07,
+          "maximum_yaw_rate_difference_radps": 3.4362317596903225e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.549131684268183e-06,
+          "maximum_heading_difference_rad": 2.1832218788375712e-07,
+          "maximum_position_difference_m": 3.867711389593674e-08,
+          "maximum_yaw_rate_difference_radps": 7.209130701513189e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 1.9343322322507017e-06,
+          "maximum_heading_difference_rad": 3.163483697221636e-08,
+          "maximum_position_difference_m": 8.074937849958065e-08,
+          "maximum_yaw_rate_difference_radps": 2.3788296753257665e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 8.916931386326876e-07,
+          "maximum_heading_difference_rad": 1.4336440035123132e-08,
+          "maximum_position_difference_m": 3.0837510619368153e-09,
+          "maximum_yaw_rate_difference_radps": 9.593442136524022e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.0441028888716914e-06,
+          "maximum_heading_difference_rad": 4.1406862827386703e-08,
+          "maximum_position_difference_m": 4.0871057774825575e-09,
+          "maximum_yaw_rate_difference_radps": 1.396912881479473e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.5919386995300044e-06,
+          "maximum_heading_difference_rad": 2.1701794139517006e-08,
+          "maximum_position_difference_m": 7.140362854148614e-08,
+          "maximum_yaw_rate_difference_radps": 1.7498740123578216e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 4.103912769615192e-07,
+          "maximum_heading_difference_rad": 3.696492800742135e-08,
+          "maximum_position_difference_m": 2.886852952721169e-07,
+          "maximum_yaw_rate_difference_radps": 6.751144068090076e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3158748357898773e-06,
+          "maximum_heading_difference_rad": 2.142914379277272e-08,
+          "maximum_position_difference_m": 3.545403105285287e-08,
+          "maximum_yaw_rate_difference_radps": 5.404253714848262e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.7322952296228156e-06,
+          "maximum_heading_difference_rad": 2.9856543459771956e-08,
+          "maximum_position_difference_m": 1.858874793878876e-07,
+          "maximum_yaw_rate_difference_radps": 3.4437924628649697e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.6801101769865525e-06,
+          "maximum_heading_difference_rad": 2.2507177588337868e-07,
+          "maximum_position_difference_m": 3.607650257813616e-08,
+          "maximum_yaw_rate_difference_radps": 7.442293742609962e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.0504312109592693e-06,
+          "maximum_heading_difference_rad": 3.125976313911316e-08,
+          "maximum_position_difference_m": 6.760186825938322e-08,
+          "maximum_yaw_rate_difference_radps": 2.0608967014629914e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.0238441748022797e-06,
+          "maximum_heading_difference_rad": 1.5626759775067e-08,
+          "maximum_position_difference_m": 8.217768468745171e-09,
+          "maximum_yaw_rate_difference_radps": 9.335565633039611e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.3036930373597784e-06,
+          "maximum_heading_difference_rad": 4.2811390876806854e-08,
+          "maximum_position_difference_m": 1.854842836759342e-08,
+          "maximum_yaw_rate_difference_radps": 1.1059892657261372e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4708079436598354e-06,
+          "maximum_heading_difference_rad": 1.9822688379633746e-08,
+          "maximum_position_difference_m": 6.700665775517004e-08,
+          "maximum_yaw_rate_difference_radps": 1.9624379565819083e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 6.495666657890808e-07,
+          "maximum_heading_difference_rad": 3.9421569564268566e-08,
+          "maximum_position_difference_m": 2.8372167739591527e-07,
+          "maximum_yaw_rate_difference_radps": 6.677227846890732e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3074333087569343e-06,
+          "maximum_heading_difference_rad": 2.140820498652829e-08,
+          "maximum_position_difference_m": 3.486879006120824e-08,
+          "maximum_yaw_rate_difference_radps": 5.263727099504012e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.7106227412633235e-06,
+          "maximum_heading_difference_rad": 2.9741010543204993e-08,
+          "maximum_position_difference_m": 1.85595768765252e-07,
+          "maximum_yaw_rate_difference_radps": 3.4512685029991497e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.6823462637467514e-06,
+          "maximum_heading_difference_rad": 2.2589175951992502e-07,
+          "maximum_position_difference_m": 3.5241889787332556e-08,
+          "maximum_yaw_rate_difference_radps": 7.4425157851054635e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.064864274009537e-06,
+          "maximum_heading_difference_rad": 3.1214161866355283e-08,
+          "maximum_position_difference_m": 6.597280265016776e-08,
+          "maximum_yaw_rate_difference_radps": 2.0214942009471465e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.0375507092375003e-06,
+          "maximum_heading_difference_rad": 1.5762600891200407e-08,
+          "maximum_position_difference_m": 8.736312574992074e-09,
+          "maximum_yaw_rate_difference_radps": 9.313216085826692e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.3612256059578627e-06,
+          "maximum_heading_difference_rad": 4.3338474586818165e-08,
+          "maximum_position_difference_m": 2.0455462024628415e-08,
+          "maximum_yaw_rate_difference_radps": 1.085491865560062e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4351127217704374e-06,
+          "maximum_heading_difference_rad": 1.9288904029579612e-08,
+          "maximum_position_difference_m": 6.555397750168e-08,
+          "maximum_yaw_rate_difference_radps": 1.978390701262711e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 6.91733346158685e-07,
+          "maximum_heading_difference_rad": 3.9855375666419945e-08,
+          "maximum_position_difference_m": 2.8285390221934785e-07,
+          "maximum_yaw_rate_difference_radps": 6.664308490056392e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.305344877440163e-06,
+          "maximum_heading_difference_rad": 2.1404450656348217e-08,
+          "maximum_position_difference_m": 3.471239200630455e-08,
+          "maximum_yaw_rate_difference_radps": 5.225975171531394e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.6670803315577132e-06,
+          "maximum_heading_difference_rad": 2.9505682563879532e-08,
+          "maximum_position_difference_m": 1.850018885039152e-07,
+          "maximum_yaw_rate_difference_radps": 3.46596134681576e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 6.2051906377647015e-06,
+          "maximum_heading_difference_rad": 2.488899295549629e-07,
+          "maximum_position_difference_m": 2.978163154109184e-08,
+          "maximum_yaw_rate_difference_radps": 8.215346513185118e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.093377581391387e-06,
+          "maximum_heading_difference_rad": 3.112474109001617e-08,
+          "maximum_position_difference_m": 6.275805134264816e-08,
+          "maximum_yaw_rate_difference_radps": 1.9437312973220877e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.040730412876778e-06,
+          "maximum_heading_difference_rad": 1.579314246047403e-08,
+          "maximum_position_difference_m": 8.860843399736954e-09,
+          "maximum_yaw_rate_difference_radps": 9.305994699837505e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.373863462607929e-06,
+          "maximum_heading_difference_rad": 4.3443624697658834e-08,
+          "maximum_position_difference_m": 2.0946685397946476e-08,
+          "maximum_yaw_rate_difference_radps": 1.0788975632336495e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4299720565436047e-06,
+          "maximum_heading_difference_rad": 1.920996739457337e-08,
+          "maximum_position_difference_m": 6.537083839205147e-08,
+          "maximum_yaw_rate_difference_radps": 1.9866875922147642e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 7.008146936104964e-07,
+          "maximum_heading_difference_rad": 3.994882868951777e-08,
+          "maximum_position_difference_m": 2.826673225357962e-07,
+          "maximum_yaw_rate_difference_radps": 6.661530140561478e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3063045734850185e-06,
+          "maximum_heading_difference_rad": 2.1406093786424663e-08,
+          "maximum_position_difference_m": 3.47847527602435e-08,
+          "maximum_yaw_rate_difference_radps": 5.2434840587534115e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        }
+      ],
+      "complete_laps": 1,
+      "method": "SCALAR_BISECTION_DOP853",
+      "passed": true,
+      "primary_rhs_reused": false
+    },
+    "production_promotion": false,
+    "profile": "research",
+    "refinements": [
+      {
+        "completion_time_difference_s": 1.2449649119616879e-05,
+        "lap_id": "F1_2024_R16_4_2",
+        "maximum_common_station_position_difference_m": 2.4851959494511133e-05,
+        "maximum_common_station_speed_difference_mps": 0.00015260871344224824,
+        "passed": true
+      },
+      {
+        "completion_time_difference_s": 4.5128322483378724e-06,
+        "lap_id": "F1_2024_R16_4_3",
+        "maximum_common_station_position_difference_m": 2.4812687436490943e-05,
+        "maximum_common_station_speed_difference_mps": 0.00010962146750870261,
+        "passed": true
+      },
+      {
+        "completion_time_difference_s": 3.416143215417833e-06,
+        "lap_id": "F1_2024_R16_44_2",
+        "maximum_common_station_position_difference_m": 2.4907169160219334e-05,
+        "maximum_common_station_speed_difference_mps": 0.00016761554883970575,
+        "passed": true
+      },
+      {
+        "completion_time_difference_s": 7.41990618280397e-07,
+        "lap_id": "F1_2024_R16_44_3",
+        "maximum_common_station_position_difference_m": 2.502109948406893e-05,
+        "maximum_common_station_speed_difference_mps": 7.0708331243452e-05,
+        "passed": true
+      }
+    ],
+    "selected": "bc_d2_a1e-08",
+    "selected_lead_s": 0.1,
+    "task_closure_eligible": true,
+    "training_action_truth": "SIMULATED_EXPERT; NOT_MEASURED_HUMAN"
+  },
+  "run_manifest": {
+    "content_sha256": "e6dd0ef56d85d87702118c831ffc9a4070c4a2ad2913237f1a42881b9d55130e",
+    "files": {
+      "development/dataset/inputs.json": {
+        "bytes": 26925,
+        "sha256": "928a343d23fed7f83bd4de637bb4419b07cd9922d49c64e8dd0c5c59fd5cab51"
+      },
+      "development/dataset/manifest.json": {
+        "bytes": 30918,
+        "sha256": "acc2ccbc11baef9f2ef3955d14be805e21acfd5f08ebbfcb3620c48acb5283cf"
+      },
+      "development/dataset/parent/calibration/calibration.json": {
+        "bytes": 294208,
+        "sha256": "bfc123eff5977604028493a9440e2493c56d5e35b64cc5313a70e088235fa533"
+      },
+      "development/dataset/parent/calibration/lap_catalog.json": {
+        "bytes": 9170,
+        "sha256": "0e3fc3c0efc4d25656cf6b5d8b1a73d6a3d176a3519e267994037d8a77202b56"
+      },
+      "development/dataset/parent/calibration/manifest.json": {
+        "bytes": 25887,
+        "sha256": "b8d061a8cc4182840d62bfe288508f40cdb6207e5ba53c01efe7aed497ac8785"
+      },
+      "development/dataset/parent/calibration/maps.npz": {
+        "bytes": 211053,
+        "sha256": "05d01b303e51719f8eac7dd8aace7882e845e44b7ca0325a17cab488d5225120"
+      },
+      "development/dataset/parent/calibration/r034_summary.json": {
+        "bytes": 1104,
+        "sha256": "777f119a8c561935928a233686f49a7991c9bba24c96a54fd9a64b1d91bd0af3"
+      },
+      "development/dataset/parent/calibration/recorded/field_contract.json": {
+        "bytes": 1340,
+        "sha256": "824b48888e5d0895df5652db699627faa7bcb27fc55a2cc772f96b20602baf18"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_10.parquet": {
+        "bytes": 51218,
+        "sha256": "620afdaae7ce1b0bd631f2858f19d2e42c024233e219ce3bcf441f4211466ad6"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_11.parquet": {
+        "bytes": 51912,
+        "sha256": "d3e5cc26979f38ec665ac30b2759b335f1e08e3bd7baa1841df573d778d1b531"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_14.parquet": {
+        "bytes": 51739,
+        "sha256": "9a9868dd6a08b277902c62c1c4510fc92962da4b7df923d7827098a45796acea"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_15.parquet": {
+        "bytes": 51078,
+        "sha256": "f94030de4f01d257164aa0130a68c0ba76467b49a4a29300943953cd4b992846"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_16.parquet": {
+        "bytes": 52452,
+        "sha256": "c36f6380a5680a486066fe812794b31da714968693a81be7ca01398ab7c45167"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_17.parquet": {
+        "bytes": 51469,
+        "sha256": "e53cb7e91415de69f800305bf380d026fac5ba0c5e52b7fac75803f9eb92686f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_18.parquet": {
+        "bytes": 52420,
+        "sha256": "e91e1e6dcf41fc1bfa6764d5f2a46c82c252e1afb29c7e5323470c437f5621a3"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_19.parquet": {
+        "bytes": 51368,
+        "sha256": "dcdb3d2e242dffafbf4834d8fcdf8ec44fadaf14e0ee0833bd7ef2bdc2650e9b"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_6.parquet": {
+        "bytes": 51712,
+        "sha256": "8d47ae2d7fa88eee4e508a10b482c4d8792e356c31481359e581aa6442421a26"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_7.parquet": {
+        "bytes": 51270,
+        "sha256": "5584139e6999eb96427c3fd26d01ec48836bb87f9c11785937c4ef40820ea430"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_8.parquet": {
+        "bytes": 52626,
+        "sha256": "6f41c4ac6985d1c35f4dc6ac77c38e047b3d8410a9cc2280662e23fd906b7bda"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_44_9.parquet": {
+        "bytes": 51629,
+        "sha256": "3d8077d960ef742a671f3e129f37e65cfcf0d581132e0e333c639661fae243e2"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_19.parquet": {
+        "bytes": 50996,
+        "sha256": "61089248d479b3dde6898d9956e8819171d09c9f1f07cadd3a968229ce366997"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_20.parquet": {
+        "bytes": 51931,
+        "sha256": "ad0be1e3d84abc5d562bd09d736fa836bbfacc57fccb83eb362fca278520dff7"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_21.parquet": {
+        "bytes": 51763,
+        "sha256": "307a7630f9175b8fb41d9c17af0491c6d87a4a3b4a8b1dd1f7a1e3125e164452"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_22.parquet": {
+        "bytes": 50886,
+        "sha256": "e9f137416e4812b8b9ba582263d7626584c0e4a370e9a2fc8aec2df464858f04"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_23.parquet": {
+        "bytes": 51486,
+        "sha256": "b9822f85a063c09496e2d517e4fa55b4618bc56530290f3373b649e7307c6774"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_24.parquet": {
+        "bytes": 51551,
+        "sha256": "22caed3eae6c82eccf946582710a3d85fbcb25e9e9a5aa25afc600c6de70ffca"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_25.parquet": {
+        "bytes": 51212,
+        "sha256": "a47ed57c70c5f52d30797b5fdeff8c2c0b805b4a15b04e52d16f40fb0f768a08"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_26.parquet": {
+        "bytes": 51179,
+        "sha256": "4d3964f05b8565207ca567a9a067ee1d6bbeede2d49388be0717fee72e7c5a92"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_29.parquet": {
+        "bytes": 51506,
+        "sha256": "a9a09c6c348841e128af0b3bfdcba20020c948994fe2855776478730ab9ceee3"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_7.parquet": {
+        "bytes": 51203,
+        "sha256": "92731551534d8790abe02728449f7f7dc64f8d61d00a23f41dd0f9af9ce6461f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_8.parquet": {
+        "bytes": 53250,
+        "sha256": "94ae09fcd0fcae57a644c10c1d5b151ad09066303fa6b62bcaa41fca205c227f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R01_4_9.parquet": {
+        "bytes": 51747,
+        "sha256": "db72ed4faa8a2998b6198dc2038503c091227963f7d1fa296aaf11cbb19fc39a"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_10.parquet": {
+        "bytes": 48972,
+        "sha256": "187bbab9dcc894d9303342c89755c8e229f6fa43280a32d2e19647c71740fc5f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_11.parquet": {
+        "bytes": 48453,
+        "sha256": "44f7df2829ee38b790795a8b277379efa8439bbdd1f77d9c078300eed68352cd"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_12.parquet": {
+        "bytes": 48951,
+        "sha256": "d8b575a112e67fc99b65b948b94ca88a41a40fd6de2f23ea823b3d579fd856bd"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_13.parquet": {
+        "bytes": 47903,
+        "sha256": "cdf67deae8c25383894080369b9c8c0c875594c170f6fda80ed6af4c9970f64f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_14.parquet": {
+        "bytes": 48553,
+        "sha256": "33a421623f5982e224e7f90e710abdd1005f5f88bfbe8386bc347b55f780de27"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_15.parquet": {
+        "bytes": 48705,
+        "sha256": "a277c1c662ab1623ba85fda174a06558af6510f4da945795407000d2e6550779"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_16.parquet": {
+        "bytes": 48197,
+        "sha256": "e3cd531439733445fb21aa56fae03b5d6f7ac4412d2067123d4d8ca871b45344"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_5.parquet": {
+        "bytes": 47661,
+        "sha256": "441eafac83bdd4e2f856b4c0156bb5aa8a20f8567c0976cfab41a342bd1367d1"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_6.parquet": {
+        "bytes": 48594,
+        "sha256": "8d3c1082b98e75fbce659bcd3e163b5533f1e5c8a2f5469c57d007a5d3a10274"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_7.parquet": {
+        "bytes": 48552,
+        "sha256": "58ebfbd29e3ecd087e7cc4c7adb4b56965a70eee63f944a9cbbef2f4b62cff12"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_8.parquet": {
+        "bytes": 48983,
+        "sha256": "55fbd147fe67c04c79c9013f6974f3e727b00f5548481e4a2ee45c2b56644630"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_44_9.parquet": {
+        "bytes": 49319,
+        "sha256": "1712d15719fa81d125286a627cfaabba5d394f1bb5f2daf15728faabd587ac70"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_10.parquet": {
+        "bytes": 48425,
+        "sha256": "fd3d18ea0950ceccfc8c7ce91a7a014bd7cb0bbb3e89d81b565603ccfaf1b7a7"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_11.parquet": {
+        "bytes": 48513,
+        "sha256": "8e69acd63dd3d4688a46d0859445b10f5967a1adc56472c6b97b730aba91d217"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_12.parquet": {
+        "bytes": 48403,
+        "sha256": "92dc197722763c3e87fdd47c440fb01f998406f569db775e3ce1c60eeaa29246"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_13.parquet": {
+        "bytes": 47641,
+        "sha256": "e3b5a8c6130a21eadbfcc37f73f30a217177be36c91f3fccf4df1f16f564a3be"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_14.parquet": {
+        "bytes": 48431,
+        "sha256": "c50b2865afcc4696f9fe15b8f2e80167adc2c2dc399152b0cc114b0f63e80e4e"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_15.parquet": {
+        "bytes": 48612,
+        "sha256": "a77fdf2c68f4d36e7212a9fc31f48a2fbf0fd1d7b669f51873ae15e3437f71e1"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_16.parquet": {
+        "bytes": 48037,
+        "sha256": "2a918295b92cf953222255b8a3d00b6d7548f05be36c11ff7d6c4290f7aedb02"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_17.parquet": {
+        "bytes": 48663,
+        "sha256": "8d08c89da9b46f5322c27431c60ca0a3f6de97cd9807e5c0b5ba6dd7385387a7"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_18.parquet": {
+        "bytes": 48681,
+        "sha256": "8e848538fdf63be3f647fdb99919b2f6f80d2842559b285dddad1687598fc211"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_19.parquet": {
+        "bytes": 48888,
+        "sha256": "edc073601bff953ca47ed459851ba3baafe866f70ea5cb4b73bda11825eb15ce"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_20.parquet": {
+        "bytes": 49383,
+        "sha256": "489c2f333d4635579a83864a095cfd5296efd4ba223d6f78c37d1c0f221e9728"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2023_R14_4_9.parquet": {
+        "bytes": 49346,
+        "sha256": "621e5b566d9d58a7817731c54ffdd9252c03a81d80b4323103bc412e71ff182e"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_14.parquet": {
+        "bytes": 51383,
+        "sha256": "2e084b33f271c72e40030beef3ac4b989694ecfb0c9529a4f13042c7dc8b02f9"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_15.parquet": {
+        "bytes": 51453,
+        "sha256": "d8c9db31c1aa365123ae006e125f862126110dbba3dd5c7140aebe697e504053"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_2.parquet": {
+        "bytes": 52611,
+        "sha256": "77eae28a160c13de88fa58c76242a747f41baba2241f5e5e8ae67c4c0ef4dd4d"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_3.parquet": {
+        "bytes": 51586,
+        "sha256": "dc7b600524ecc5412e150e4481ca5dbd49fcb7277787d60d9b540210d71018d6"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_4.parquet": {
+        "bytes": 52092,
+        "sha256": "83c9f5b4133ed859d3e3a286079c77b8e6ad1635e8b1b9e30a508d2344807e29"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_5.parquet": {
+        "bytes": 51853,
+        "sha256": "552c8a088631fd03803ca45c40755c51e3ae87495ce9d180618768f454ec0bac"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_6.parquet": {
+        "bytes": 50098,
+        "sha256": "f72e0c43b02c572018248d700eb3e9fbea2de27b49795439e7c4b7aa36dadfc6"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_7.parquet": {
+        "bytes": 52582,
+        "sha256": "bd209ab1af6f88707b3eca2428f0f6e8a200899ba03510fbf4fe8b0b17e6a64e"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_8.parquet": {
+        "bytes": 51344,
+        "sha256": "e2ff9fa9614de9ce159d6d990cce93f20122cfcc82aacc6a497d1d46dfa254f5"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_44_9.parquet": {
+        "bytes": 51730,
+        "sha256": "12354fd85138992104915ab0563e71e0559b0ec9e0c6fcbeaaaaa0331789f0a9"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_15.parquet": {
+        "bytes": 52229,
+        "sha256": "243bf33dc93f70f7b6129ba75560ea424d971c1c8cb742ec8c751e0b505a6b91"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_16.parquet": {
+        "bytes": 51446,
+        "sha256": "22f3edd32a6dff681bc26f6288fe2fc55ea6d0d10d580bdd1704d8648605ac5f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_17.parquet": {
+        "bytes": 51031,
+        "sha256": "3fb0f0f479b02e15ca9e736060984600cd6d409e910d977b3737466d2a0f3f89"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_18.parquet": {
+        "bytes": 50660,
+        "sha256": "d69c0fdfb0a7effe0e2a377273caa4120d7ac28276fd40973395f1b6bdd91045"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_19.parquet": {
+        "bytes": 51071,
+        "sha256": "e62b836ce5c299f60e0ff1bac27549a98d93870415ca04d71aa3c1f7e94ab9dc"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_20.parquet": {
+        "bytes": 51063,
+        "sha256": "9ec809a26911991237b90e55809b1f70a52a4bd6b4446029853d7f9901a7d86a"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_21.parquet": {
+        "bytes": 51631,
+        "sha256": "851e4f4ee1214820aaf0ee4ddd32da3cb71f58bc0b6e49bfc66d395b348ce34d"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_22.parquet": {
+        "bytes": 51400,
+        "sha256": "74cce71daa784a94973cba5596c0684234fa857a44122149c98b1a6bc9892c5b"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_23.parquet": {
+        "bytes": 50286,
+        "sha256": "9ac1ccf6b05c2c8204b3ac5cdf5bf851cde78116086406e74f16d134bd61de6d"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R01_4_24.parquet": {
+        "bytes": 51036,
+        "sha256": "a2ff2c547b5cc19f82ee95b40fd25b3fde94c3fb077f812cdd44520721a03c00"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_10.parquet": {
+        "bytes": 48049,
+        "sha256": "1feb75e1e1911de59beeae5222972dd1b88a1caf688b3b39023306d93bb20078"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_11.parquet": {
+        "bytes": 48294,
+        "sha256": "c49190acf9116bd8dc256c29986211ff0df56555d89c2104e2afc9cda3ebbfac"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_2.parquet": {
+        "bytes": 49345,
+        "sha256": "120f40fc16d7c1a85f89fea106d56b4cb6d91c8fe226969e639fe4b8ad4d3027"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_3.parquet": {
+        "bytes": 47852,
+        "sha256": "6b99b41015238214f1d62bc06b7e2ffa5782834e33b5306ee615daf99a6f9d1f"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_4.parquet": {
+        "bytes": 48809,
+        "sha256": "ba96f727b8d9aa80d8adfb373d673d658a241c23d80f363ab5aa93449bce8117"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_5.parquet": {
+        "bytes": 48631,
+        "sha256": "bcdf5bd1daad280ea35146a4d7127cc3cb3c7eb72c3a34bbf4e280e6664b9650"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_6.parquet": {
+        "bytes": 47880,
+        "sha256": "24ce3c930fbe356fd40386c1bec5af3d5030243db568497f3926d7b08efcf2ee"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_7.parquet": {
+        "bytes": 47169,
+        "sha256": "c010d250b72e1447cfd6f210cdb749e4a1e7bcc2dd1dd3f9d2c9ea1a5cb0b2e0"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_8.parquet": {
+        "bytes": 47678,
+        "sha256": "d21558ac1853cc98ed16154d1a11caedfda01be7fec09fb38c70506b699e8e9e"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_44_9.parquet": {
+        "bytes": 48502,
+        "sha256": "3c7b678c492e0cc19b60a17179619b46dc2dc81bdddb2b785bcf9a5dc1823340"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_10.parquet": {
+        "bytes": 48186,
+        "sha256": "9a2d3ed4842b5d50f914fcdce56fff4de6b58deeb00002a355007af9030437e5"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_11.parquet": {
+        "bytes": 48035,
+        "sha256": "9a22069303a1c76a23f31171f24a73bca5e14e1d542ca23e9ffea42b56eff12e"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_2.parquet": {
+        "bytes": 49207,
+        "sha256": "d249f597446b3d13382661e1e93f0d0ec95f0f1c44b668cf3df5212607e03061"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_3.parquet": {
+        "bytes": 47658,
+        "sha256": "d78c01e8fd05c90ee869d8cb51435e66d3341f9c55a1e364f7f4c4c109823447"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_4.parquet": {
+        "bytes": 48545,
+        "sha256": "3057a45494251efb79486d3a4ca7013c9311434eab36a82f1debec4d48761c38"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_5.parquet": {
+        "bytes": 48721,
+        "sha256": "29efc1ab8646453473ecb04e8827fcb6f170f66f4c234d6163dc1c8dec0b4b3c"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_6.parquet": {
+        "bytes": 47711,
+        "sha256": "f1933c1c79113020a1d91204bd751bbfe3bdd424a3cc54a5af1ad2fa10f3441d"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_7.parquet": {
+        "bytes": 47502,
+        "sha256": "1d94a9bc05378b877795842e1ea4e937e45bfac884a9199e76df46b1696b98a5"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_8.parquet": {
+        "bytes": 47906,
+        "sha256": "acf97b557743e03afc7f891c773e405b5b52ec1425e4fb0c636a37dfdd147975"
+      },
+      "development/dataset/parent/calibration/recorded/frames/F1_2024_R16_4_9.parquet": {
+        "bytes": 47998,
+        "sha256": "7c4a19563f3876caa162f1ddb1de3706a5a93549fc5ef683089d19227c1d679a"
+      },
+      "development/dataset/parent/calibration/recorded/inputs.json": {
+        "bytes": 158414,
+        "sha256": "92493ab63fc97e7bfee2ed91b0bf8a304c8a4bcf8d774472c819a490ce667f5a"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/bahrain_geometry_predictions.npz": {
+        "bytes": 2135374,
+        "sha256": "53a4a45965f92fee290a2b6b8ed7b6b58ce5be9264e7cb4bc9a3c30184454f66"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/bahrain_lap_inputs.npz": {
+        "bytes": 216343,
+        "sha256": "a7910b04b4d674c7a811b24c165456b386ad31e2e11c2e406e50edf6366c8c74"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/bahrain_lap_metadata.json": {
+        "bytes": 76997,
+        "sha256": "a69d926c02c3186db80f097b08a7ec1a37832d811dd897484ae93f6247cbc0fc"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/manifest.json": {
+        "bytes": 1315,
+        "sha256": "f89a3384eb3d6d7556db04aa855da645764424f689ec509cf7ae0b9fa120f3ed"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/monza_geometry_predictions.npz": {
+        "bytes": 2013360,
+        "sha256": "58c7915ded7cbc3ec937f479b30922e26fec849129e678db2513b6824267c499"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/monza_lap_inputs.npz": {
+        "bytes": 199413,
+        "sha256": "01c8c8597b93963e6711375fbe1dfdd8ffc55b433fa30ad7d4903dfeb034abe7"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/monza_lap_metadata.json": {
+        "bytes": 71833,
+        "sha256": "eb1b401f10266a0a00d2839c966a9df54ffda76c76a9feb5e61b352756b4c704"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/geometry/summary.json": {
+        "bytes": 471290,
+        "sha256": "20ab23d99a09c698f390186412772dfe41a56ee5171ccbf5071b2eb1bd80dd13"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/manifest.json": {
+        "bytes": 5028,
+        "sha256": "47989262407bc21a76bbeba990ae0177ea8c12e146b2d1ebc655ec5d755ecada"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R01/manifest.json": {
+        "bytes": 12024,
+        "sha256": "7f7d7c68e8fffc4ced3e163b2b162fb86b750eb3cce7b0c6559bb5fd05c3a317"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R01/tables/car_data/4.parquet": {
+        "bytes": 887476,
+        "sha256": "20068b2ee7da85a7c5d1a847f2faf2756cbed3e710777d86a4ec1a0a42e2fa1c"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R01/tables/car_data/44.parquet": {
+        "bytes": 888476,
+        "sha256": "753d3b90b08435b44a021bd1ea0abefa9e349f177ac0678f42e4c817336e4d44"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R01/tables/laps.parquet": {
+        "bytes": 92480,
+        "sha256": "7ae94007dd8ece3bc92207fc23608357e87655cea508212f9f83f8ab594699ce"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R14/manifest.json": {
+        "bytes": 12044,
+        "sha256": "ddb440ac73bf69249331826d8e359c1650bcad13aa2adb8ccaeae02be2c65ce0"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R14/tables/car_data/4.parquet": {
+        "bytes": 902177,
+        "sha256": "b37c605c8789bb5d2bc63e4fdb4290f575dcf476a963056a40ba2ba71e28eecd"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R14/tables/car_data/44.parquet": {
+        "bytes": 907204,
+        "sha256": "85a490af67ae542a8c5f4fbd5e67d60e5bad29d67f0ac4af896889afff15a0d3"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2023_R14/tables/laps.parquet": {
+        "bytes": 82783,
+        "sha256": "70d71eed8aa0ee478e899e1cd4eaf973848399fe046b45bcf5b8b2ed667e2483"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R01/manifest.json": {
+        "bytes": 12021,
+        "sha256": "85e17a681af177681a07a7a890ea276609edc7e0e30a29ed2a9dc47e22653784"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R01/tables/car_data/4.parquet": {
+        "bytes": 854281,
+        "sha256": "7716b862c5d30f86e6381fe90c2fa12d818aef63cea4c63d978f21bd8bbf7116"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R01/tables/car_data/44.parquet": {
+        "bytes": 859036,
+        "sha256": "61d4a5ced4888712e9ad49341ecfa07e699cad65f5e94f84cffa0c5116c7da5d"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R01/tables/laps.parquet": {
+        "bytes": 95261,
+        "sha256": "3a3953a911bf5cc94c453bcca21e49fb808d54588118807d32b496efe68745e2"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R16/manifest.json": {
+        "bytes": 12026,
+        "sha256": "522f161f9609962e09e6b7ae15cb8ee3b8d19f07eedafa47f31b83184bc9e203"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R16/tables/car_data/4.parquet": {
+        "bytes": 779453,
+        "sha256": "b64cd45d261b4e3d5f9f15cfd9ba609d9d07adaeb641666650a412a1ae9c42de"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R16/tables/car_data/44.parquet": {
+        "bytes": 783748,
+        "sha256": "3d87d03d713e5a31554f9c2dbe80fbf6195f912ed0537d7af1d04ee5ff5852e3"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/native/F1_2024_R16/tables/laps.parquet": {
+        "bytes": 86397,
+        "sha256": "7c53a412aa39376ea4bab423418bc040eeb9ba6c6b97507168160ba3b8f1698d"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/protocol.md": {
+        "bytes": 10899,
+        "sha256": "39879870569846075cb03d3cea2da92a83d80da9ea0b894f71fa508595951886"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/quality.json": {
+        "bytes": 39009,
+        "sha256": "7a7482373ab0111491faaa50b7f1a30331a2f0ccf9b4405d22b029d84ebf2ca8"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/rejections.json": {
+        "bytes": 3097407,
+        "sha256": "03f6b37fabb3d15ee3e282660f1aff6f7db10fe50f44440d32729c35b5ef1b38"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/section_metadata.json": {
+        "bytes": 74992,
+        "sha256": "b52c9d8154fd4fe6a50740573f310a1dcb22bdc904e1ff1f947d445874c5152f"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/sections.npz": {
+        "bytes": 282679,
+        "sha256": "1bcda3d5db4c5f3e120fd91ed9803fa80897729817f6a053f42312811de6d949"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal/summary.json": {
+        "bytes": 2200,
+        "sha256": "af768933143c0bfcf16937cdad34f9ca0b678c5798b8c559995eeec705144f1a"
+      },
+      "development/dataset/parent/calibration/recorded/longitudinal_inputs.json": {
+        "bytes": 132245,
+        "sha256": "355743443849b7562dcd809a1f177683365826dc5710b3d82d42e3f63099bbfe"
+      },
+      "development/dataset/parent/calibration/recorded/manifest.json": {
+        "bytes": 22457,
+        "sha256": "48dc5aec9286a68bc03a73794b8622dcaed6dbc9b2a037979ffdb71ec1567bac"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2023_R01/4.parquet": {
+        "bytes": 929675,
+        "sha256": "7a0b26a059830915a53ce615eb5f3727cd4d4e2d956b2198325b52b4042dd190"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2023_R01/44.parquet": {
+        "bytes": 931739,
+        "sha256": "aa28dead1e95a0e9bbbd28e9df612418276cc486e8021e6acdc307de6e860fc3"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2023_R14/4.parquet": {
+        "bytes": 1011144,
+        "sha256": "f06ae7d197d9a4e11c178b4cddc32f2513cae319c73206eed9917605eb3fe8e8"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2023_R14/44.parquet": {
+        "bytes": 1014828,
+        "sha256": "b467cd4e7ef8b7bd55febb0c93b63915080bde5f5df6abd3b36b1da787c1af03"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2024_R01/4.parquet": {
+        "bytes": 922565,
+        "sha256": "8b18dbb0b0b1b40df01171b4124fc20623a8e84d2c517415095bf6ae5ec5bd74"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2024_R01/44.parquet": {
+        "bytes": 923425,
+        "sha256": "e91011fb8c2ba102cfa8753240c32a6fafa2968720cbad9a688d848d8aad81aa"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2024_R16/4.parquet": {
+        "bytes": 824660,
+        "sha256": "a3a7d31c2b247d82ebd688f2ae0f74513e871943d0d4e893afe2f34ac27fdd67"
+      },
+      "development/dataset/parent/calibration/recorded/positions/F1_2024_R16/44.parquet": {
+        "bytes": 826489,
+        "sha256": "270d3e6ae79cc219f79c487581b71df39d0ba568d0bb95be8b0480e0b390d640"
+      },
+      "development/dataset/parent/calibration/recorded/results.json": {
+        "bytes": 82836,
+        "sha256": "a591869b8e6005d0a28c06f980bf797a01f9492d8c30eb3ce569d80ce8d1bb31"
+      },
+      "development/dataset/parent/calibration/recorded/sources/RECORDED_REPLAY_ALIGNMENT.md": {
+        "bytes": 7874,
+        "sha256": "de2579064e48ee3cefbba3b9f7abd52aaa561d5f6842bc1f1c43d3e678cd9a14"
+      },
+      "development/dataset/parent/calibration/recorded/sources/evidence.py": {
+        "bytes": 3627,
+        "sha256": "5a55e56b943880c3d8adc72f3a5cdef2edfb6891c463401eb922dd66cc706b74"
+      },
+      "development/dataset/parent/calibration/recorded/sources/longitudinal_data.py": {
+        "bytes": 8551,
+        "sha256": "143162182219661fa174493ff0414afda8d2935342a0924e14cdc161e5aa152c"
+      },
+      "development/dataset/parent/calibration/recorded/sources/longitudinal_dataset.py": {
+        "bytes": 12527,
+        "sha256": "6d235fc760716384884431948cee11f3c0f3f408e1d0a09f6d29a59773738c7b"
+      },
+      "development/dataset/parent/calibration/recorded/sources/recorded_alignment.py": {
+        "bytes": 10548,
+        "sha256": "a4b39a40efa174478319f9c8c483d29e89c1ef674946103a6bcf1f0f84c5f991"
+      },
+      "development/dataset/parent/calibration/recorded/sources/recorded_alignment_audit.py": {
+        "bytes": 5309,
+        "sha256": "46df52d12cb525d3a1bc220772f11cbe487d62be16d0dc31f39e36632ccc2c71"
+      },
+      "development/dataset/parent/calibration/recorded/sources/recorded_replay.py": {
+        "bytes": 23510,
+        "sha256": "c9c35ec2a8489fafb5114f3cdb96f24909fa3c928458d792a62f03702954591a"
+      },
+      "development/dataset/parent/calibration/recorded/summary.json": {
+        "bytes": 1595,
+        "sha256": "c41b9eb1b30d63b844e80ce53d6eeb4e13c05ac8811e3ca8089ff99611d6b7dc"
+      },
+      "development/dataset/parent/calibration/sources/TRANSPARENT_DRIVER.md": {
+        "bytes": 7472,
+        "sha256": "1b751bb866a9027ece3e5192bc34b6f986f7d047ad4905f8e9804ed3c52f987f"
+      },
+      "development/dataset/parent/calibration/sources/aero_audit.py": {
+        "bytes": 3457,
+        "sha256": "c6a7b4fec152a56c351973c36d14eccbcdfa783e1307c8b7b45f6420c80cfde6"
+      },
+      "development/dataset/parent/calibration/sources/aero_bicycle.py": {
+        "bytes": 10339,
+        "sha256": "f725e4a844e065da44b93a376b7903a0318690eaaf87d12912c4e0458c9f6539"
+      },
+      "development/dataset/parent/calibration/sources/bicycle.py": {
+        "bytes": 15182,
+        "sha256": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795"
+      },
+      "development/dataset/parent/calibration/sources/driver_audit.py": {
+        "bytes": 2309,
+        "sha256": "b80236070222cf1f8933f4c07d9c88dbcc754f9cbec8271822ccd110343f629f"
+      },
+      "development/dataset/parent/calibration/sources/driver_study.py": {
+        "bytes": 20502,
+        "sha256": "1f3911eae7788ec4a95cf63ace438de30739d40b93a0b29d26a6e4c4f8dd3717"
+      },
+      "development/dataset/parent/calibration/sources/transparent_driver.py": {
+        "bytes": 11283,
+        "sha256": "3d3efeba83c1af99c30f651d855fd6a1410f69d87568f67f18ee3a101531dec9"
+      },
+      "development/dataset/parent/calibration/summary.json": {
+        "bytes": 2086,
+        "sha256": "66e862062f5cdb95cd30a93af57f1c7cddf2f56b323663dad6a1aa074b476b14"
+      },
+      "development/dataset/parent/calibration/target_catalog.json": {
+        "bytes": 22204,
+        "sha256": "dc4a6523416d4a8095681fd216b31630f8c3de70393e2dc5818b9f98b0a9772c"
+      },
+      "development/dataset/parent/calibration/targets.npz": {
+        "bytes": 237655,
+        "sha256": "e2e1625b06e80ac4ebcb3748ecb4fb5566bf0f2adf8ee264be516a30f7d946b6"
+      },
+      "development/dataset/parent/manifest.json": {
+        "bytes": 29338,
+        "sha256": "199f8618540cbb8481997c9b99eb7a3a5e747933143a225b375ba8ec286eef34"
+      },
+      "development/dataset/parent/results.json": {
+        "bytes": 39949,
+        "sha256": "437db303fe507c4d01f0baa91d4f5c930d1131c5cfb226f7c39d838804297493"
+      },
+      "development/dataset/parent/sources/TRANSPARENT_DRIVER.md": {
+        "bytes": 7472,
+        "sha256": "1b751bb866a9027ece3e5192bc34b6f986f7d047ad4905f8e9804ed3c52f987f"
+      },
+      "development/dataset/parent/sources/aero_audit.py": {
+        "bytes": 3457,
+        "sha256": "c6a7b4fec152a56c351973c36d14eccbcdfa783e1307c8b7b45f6420c80cfde6"
+      },
+      "development/dataset/parent/sources/aero_bicycle.py": {
+        "bytes": 10339,
+        "sha256": "f725e4a844e065da44b93a376b7903a0318690eaaf87d12912c4e0458c9f6539"
+      },
+      "development/dataset/parent/sources/bicycle.py": {
+        "bytes": 15182,
+        "sha256": "25a530073a1d95083d1956d71663f8892f6061c65028cd27c4e564c16f4ff795"
+      },
+      "development/dataset/parent/sources/driver_audit.py": {
+        "bytes": 2309,
+        "sha256": "b80236070222cf1f8933f4c07d9c88dbcc754f9cbec8271822ccd110343f629f"
+      },
+      "development/dataset/parent/sources/driver_study.py": {
+        "bytes": 20502,
+        "sha256": "1f3911eae7788ec4a95cf63ace438de30739d40b93a0b29d26a6e4c4f8dd3717"
+      },
+      "development/dataset/parent/sources/transparent_driver.py": {
+        "bytes": 11283,
+        "sha256": "3d3efeba83c1af99c30f651d855fd6a1410f69d87568f67f18ee3a101531dec9"
+      },
+      "development/dataset/parent/summary.json": {
+        "bytes": 1227,
+        "sha256": "6b40d7badf1f5a185fd43f72bae97c467f274b9b82c4d7179a25ebdb049bb33a"
+      },
+      "development/dataset/parent/trajectories.npz": {
+        "bytes": 2962762,
+        "sha256": "d6f061ab76c29d1661f12ac676c6667854e5a2deb27e39bd344f0955927215e1"
+      },
+      "development/dataset/summary.json": {
+        "bytes": 397,
+        "sha256": "936bbefe465bc2f990f28146be81c21d46bc616f0369ec5352e6daa2843436d2"
+      },
+      "development/development.json": {
+        "bytes": 142549,
+        "sha256": "c3e2bc6152f48304fec336016ffb34489e6531da0afaf9c70be13880cb4c644f"
+      },
+      "development/manifest.json": {
+        "bytes": 33583,
+        "sha256": "9fcd48d65be0259e4bb4450b35772838f29785b964733942867fb9a88b47c7e1"
+      },
+      "development/rollouts.npz": {
+        "bytes": 16269181,
+        "sha256": "03ea161e6e3f4730a5c216f87730a5365886e83dad950dd041831515d5de9fda"
+      },
+      "development/sources/IMITATION_DRIVER.md": {
+        "bytes": 9775,
+        "sha256": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c"
+      },
+      "development/sources/imitation_audit.py": {
+        "bytes": 12385,
+        "sha256": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea"
+      },
+      "development/sources/imitation_driver.py": {
+        "bytes": 13179,
+        "sha256": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c"
+      },
+      "development/sources/imitation_study.py": {
+        "bytes": 31080,
+        "sha256": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+      },
+      "development/summary.json": {
+        "bytes": 1166,
+        "sha256": "5007b51623a90de7125ca7bba8ea787269d59ce43bc2aa60233ebe9db7bd84a2"
+      },
+      "development/training.npz": {
+        "bytes": 4610214,
+        "sha256": "fb9f0b7cba7fae8981623a5a5000af81866cae7f76797c9b5e0468492743e63a"
+      },
+      "development_verification.json": {
+        "bytes": 542,
+        "sha256": "48da0a09f6b1f4f3d1c70e2587bc738d21353a8a7c5ce2b40930f23d3c3280f2"
+      },
+      "results.json": {
+        "bytes": 88785,
+        "sha256": "620115da632023b8abefb0144895eab3504cfbc8e5b5101436a448eb720b37f6"
+      },
+      "sources/IMITATION_DRIVER.md": {
+        "bytes": 9775,
+        "sha256": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c"
+      },
+      "sources/imitation_audit.py": {
+        "bytes": 12385,
+        "sha256": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea"
+      },
+      "sources/imitation_driver.py": {
+        "bytes": 13179,
+        "sha256": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c"
+      },
+      "sources/imitation_study.py": {
+        "bytes": 31080,
+        "sha256": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+      },
+      "summary.json": {
+        "bytes": 1091,
+        "sha256": "6b80fd81b7d5efc2b9eb8b747bf6f27a807a4a46893980534a357444f13c271e"
+      },
+      "trajectories.npz": {
+        "bytes": 9501945,
+        "sha256": "0fbe185275098cd2c6ae6d43c17e7b04cf576c991f2cabf53727a7667fedb2b8"
+      }
+    },
+    "schema_version": "apex-imitation-driver-v1-manifest",
+    "summary_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae"
+  },
+  "run_manifest_sha256": "7258d137885cda2b6094e38e8440564aa6e2ef1401b82ab430f714629bff3926",
+  "schema_version": "apex-imitation-driver-publication-v1",
+  "study_summary": {
+    "commit": "08772e407981a392d7bcd02ff23c96ff505d8dff",
+    "conditional_research_only": true,
+    "content_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae",
+    "decision": "ACCEPT_CONDITIONAL_IMITATION_DRIVER",
+    "development_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+    "development_verification_sha256": "f210ff63c458eefd783b4e1d6bac90f0b93eed98a1bd998920b46fb3f1626aee",
+    "implementation_sha256": {
+      "IMITATION_DRIVER.md": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c",
+      "imitation_audit.py": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea",
+      "imitation_driver.py": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c",
+      "imitation_study.py": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+    },
+    "production_promotion": false,
+    "profile": "research",
+    "results_sha256": "c9bb60a491c7ba0cddede8ec55cb17b4b73a49f67d87ea48f0f8632e3c21304d",
+    "schema_version": "apex-imitation-driver-v1",
+    "task_closure_eligible": true
+  },
+  "verification": {
+    "cases": 44,
+    "decision": "ACCEPT_CONDITIONAL_IMITATION_DRIVER",
+    "development_equation_audit": {
+      "maximum_independent_feature_difference": 2.220446049250313e-16,
+      "maximum_independent_ridge_prediction_difference_rad": 1.3614109839465982e-14,
+      "maximum_physical_replay_difference": 0.0,
+      "profile": "research",
+      "replay_dynamics": false,
+      "selected": "bc_d2_a1e-08",
+      "selected_lead_s": 0.1,
+      "summary_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+      "task_closure_eligible": false,
+      "test_outcomes_used": false,
+      "training_rows": 45200,
+      "trials_checked": 68,
+      "verified": true
+    },
+    "independent_audit": {
+      "checks": [
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "intervals": 1335,
+          "maximum_body_velocity_difference_mps": 3.0132615664646423e-05,
+          "maximum_heading_difference_rad": 2.6940127202390585e-06,
+          "maximum_position_difference_m": 0.0020290365072338865,
+          "maximum_yaw_rate_difference_radps": 2.6113815127834505e-05,
+          "passed": true,
+          "scope": "COMPLETE_LAP"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.753900871648284e-06,
+          "maximum_heading_difference_rad": 2.997066261833936e-08,
+          "maximum_position_difference_m": 1.861755963015479e-07,
+          "maximum_yaw_rate_difference_radps": 3.4362317596903225e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.549131684268183e-06,
+          "maximum_heading_difference_rad": 2.1832218788375712e-07,
+          "maximum_position_difference_m": 3.867711389593674e-08,
+          "maximum_yaw_rate_difference_radps": 7.209130701513189e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 1.9343322322507017e-06,
+          "maximum_heading_difference_rad": 3.163483697221636e-08,
+          "maximum_position_difference_m": 8.074937849958065e-08,
+          "maximum_yaw_rate_difference_radps": 2.3788296753257665e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 8.916931386326876e-07,
+          "maximum_heading_difference_rad": 1.4336440035123132e-08,
+          "maximum_position_difference_m": 3.0837510619368153e-09,
+          "maximum_yaw_rate_difference_radps": 9.593442136524022e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.0441028888716914e-06,
+          "maximum_heading_difference_rad": 4.1406862827386703e-08,
+          "maximum_position_difference_m": 4.0871057774825575e-09,
+          "maximum_yaw_rate_difference_radps": 1.396912881479473e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.5919386995300044e-06,
+          "maximum_heading_difference_rad": 2.1701794139517006e-08,
+          "maximum_position_difference_m": 7.140362854148614e-08,
+          "maximum_yaw_rate_difference_radps": 1.7498740123578216e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 4.103912769615192e-07,
+          "maximum_heading_difference_rad": 3.696492800742135e-08,
+          "maximum_position_difference_m": 2.886852952721169e-07,
+          "maximum_yaw_rate_difference_radps": 6.751144068090076e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_2__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3158748357898773e-06,
+          "maximum_heading_difference_rad": 2.142914379277272e-08,
+          "maximum_position_difference_m": 3.545403105285287e-08,
+          "maximum_yaw_rate_difference_radps": 5.404253714848262e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.7322952296228156e-06,
+          "maximum_heading_difference_rad": 2.9856543459771956e-08,
+          "maximum_position_difference_m": 1.858874793878876e-07,
+          "maximum_yaw_rate_difference_radps": 3.4437924628649697e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.6801101769865525e-06,
+          "maximum_heading_difference_rad": 2.2507177588337868e-07,
+          "maximum_position_difference_m": 3.607650257813616e-08,
+          "maximum_yaw_rate_difference_radps": 7.442293742609962e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.0504312109592693e-06,
+          "maximum_heading_difference_rad": 3.125976313911316e-08,
+          "maximum_position_difference_m": 6.760186825938322e-08,
+          "maximum_yaw_rate_difference_radps": 2.0608967014629914e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.0238441748022797e-06,
+          "maximum_heading_difference_rad": 1.5626759775067e-08,
+          "maximum_position_difference_m": 8.217768468745171e-09,
+          "maximum_yaw_rate_difference_radps": 9.335565633039611e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.3036930373597784e-06,
+          "maximum_heading_difference_rad": 4.2811390876806854e-08,
+          "maximum_position_difference_m": 1.854842836759342e-08,
+          "maximum_yaw_rate_difference_radps": 1.1059892657261372e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4708079436598354e-06,
+          "maximum_heading_difference_rad": 1.9822688379633746e-08,
+          "maximum_position_difference_m": 6.700665775517004e-08,
+          "maximum_yaw_rate_difference_radps": 1.9624379565819083e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 6.495666657890808e-07,
+          "maximum_heading_difference_rad": 3.9421569564268566e-08,
+          "maximum_position_difference_m": 2.8372167739591527e-07,
+          "maximum_yaw_rate_difference_radps": 6.677227846890732e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_4_3__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3074333087569343e-06,
+          "maximum_heading_difference_rad": 2.140820498652829e-08,
+          "maximum_position_difference_m": 3.486879006120824e-08,
+          "maximum_yaw_rate_difference_radps": 5.263727099504012e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.7106227412633235e-06,
+          "maximum_heading_difference_rad": 2.9741010543204993e-08,
+          "maximum_position_difference_m": 1.85595768765252e-07,
+          "maximum_yaw_rate_difference_radps": 3.4512685029991497e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 5.6823462637467514e-06,
+          "maximum_heading_difference_rad": 2.2589175951992502e-07,
+          "maximum_position_difference_m": 3.5241889787332556e-08,
+          "maximum_yaw_rate_difference_radps": 7.4425157851054635e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.064864274009537e-06,
+          "maximum_heading_difference_rad": 3.1214161866355283e-08,
+          "maximum_position_difference_m": 6.597280265016776e-08,
+          "maximum_yaw_rate_difference_radps": 2.0214942009471465e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.0375507092375003e-06,
+          "maximum_heading_difference_rad": 1.5762600891200407e-08,
+          "maximum_position_difference_m": 8.736312574992074e-09,
+          "maximum_yaw_rate_difference_radps": 9.313216085826692e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.3612256059578627e-06,
+          "maximum_heading_difference_rad": 4.3338474586818165e-08,
+          "maximum_position_difference_m": 2.0455462024628415e-08,
+          "maximum_yaw_rate_difference_radps": 1.085491865560062e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4351127217704374e-06,
+          "maximum_heading_difference_rad": 1.9288904029579612e-08,
+          "maximum_position_difference_m": 6.555397750168e-08,
+          "maximum_yaw_rate_difference_radps": 1.978390701262711e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 6.91733346158685e-07,
+          "maximum_heading_difference_rad": 3.9855375666419945e-08,
+          "maximum_position_difference_m": 2.8285390221934785e-07,
+          "maximum_yaw_rate_difference_radps": 6.664308490056392e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_2__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.305344877440163e-06,
+          "maximum_heading_difference_rad": 2.1404450656348217e-08,
+          "maximum_position_difference_m": 3.471239200630455e-08,
+          "maximum_yaw_rate_difference_radps": 5.225975171531394e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 0,
+          "maximum_body_velocity_difference_mps": 1.6670803315577132e-06,
+          "maximum_heading_difference_rad": 2.9505682563879532e-08,
+          "maximum_position_difference_m": 1.850018885039152e-07,
+          "maximum_yaw_rate_difference_radps": 3.46596134681576e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 190,
+          "maximum_body_velocity_difference_mps": 6.2051906377647015e-06,
+          "maximum_heading_difference_rad": 2.488899295549629e-07,
+          "maximum_position_difference_m": 2.978163154109184e-08,
+          "maximum_yaw_rate_difference_radps": 8.215346513185118e-06,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 381,
+          "maximum_body_velocity_difference_mps": 2.093377581391387e-06,
+          "maximum_heading_difference_rad": 3.112474109001617e-08,
+          "maximum_position_difference_m": 6.275805134264816e-08,
+          "maximum_yaw_rate_difference_radps": 1.9437312973220877e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 571,
+          "maximum_body_velocity_difference_mps": 1.040730412876778e-06,
+          "maximum_heading_difference_rad": 1.579314246047403e-08,
+          "maximum_position_difference_m": 8.860843399736954e-09,
+          "maximum_yaw_rate_difference_radps": 9.305994699837505e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 762,
+          "maximum_body_velocity_difference_mps": 3.373863462607929e-06,
+          "maximum_heading_difference_rad": 4.3443624697658834e-08,
+          "maximum_position_difference_m": 2.0946685397946476e-08,
+          "maximum_yaw_rate_difference_radps": 1.0788975632336495e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 952,
+          "maximum_body_velocity_difference_mps": 1.4299720565436047e-06,
+          "maximum_heading_difference_rad": 1.920996739457337e-08,
+          "maximum_position_difference_m": 6.537083839205147e-08,
+          "maximum_yaw_rate_difference_radps": 1.9866875922147642e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 1143,
+          "maximum_body_velocity_difference_mps": 7.008146936104964e-07,
+          "maximum_heading_difference_rad": 3.994882868951777e-08,
+          "maximum_position_difference_m": 2.826673225357962e-07,
+          "maximum_yaw_rate_difference_radps": 6.661530140561478e-07,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        },
+        {
+          "case_id": "final__F1_2024_R16_44_3__nominal__0.02",
+          "interval_index": 1334,
+          "maximum_body_velocity_difference_mps": 2.3063045734850185e-06,
+          "maximum_heading_difference_rad": 2.1406093786424663e-08,
+          "maximum_position_difference_m": 3.47847527602435e-08,
+          "maximum_yaw_rate_difference_radps": 5.2434840587534115e-08,
+          "passed": true,
+          "scope": "REPRESENTATIVE_INTERVAL"
+        }
+      ],
+      "complete_laps": 1,
+      "method": "SCALAR_BISECTION_DOP853",
+      "passed": true,
+      "primary_rhs_reused": false
+    },
+    "maximum_replay_difference": 0.0,
+    "summary_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae",
+    "task_closure_eligible": true,
+    "verified": true
+  }
+}

@@ -146,7 +146,8 @@ def publish(study: Path, verification: Path, output: Path) -> dict:
     for i, actor in enumerate(actors):
         metrics = [next(c for c in nominal if c["lap_id"] == key and c["actor"] == actor)["station_weighted_mse_m2"] for key in ids]
         values = [np.sqrt(value) if value is not None else np.nan for value in metrics]
-        ax.bar(np.arange(len(ids))+(i-2)*.16, values, width=.15, label=actor)
+        label = "final (= BC)" if actor == "final" and result["checkpoint_identities"]["final"] == result["checkpoint_identities"]["bc"] else actor
+        ax.bar(np.arange(len(ids))+(i-2)*.16, values, width=.15, label=label)
         for j, value in enumerate(values):
             if not np.isfinite(value):
                 ax.text(j+(i-2)*.16, 0, "FAILED", rotation=90, va="bottom", ha="center", fontsize=7)
