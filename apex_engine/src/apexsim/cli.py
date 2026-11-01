@@ -880,5 +880,79 @@ def verify_transparent_driver_command(output: Path) -> None:
     typer.echo(json.dumps(verify_driver_study(output, lambda m: typer.echo(m, err=True)), indent=2))
 
 
+@app.command("prepare-imitation-dataset")
+def prepare_imitation_dataset_command(teacher: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Freeze accepted R035 maps, pace and event-safe source conditions for R036."""
+    from apexsim.examples.imitation_study import prepare_imitation_dataset
+
+    typer.echo(json.dumps(prepare_imitation_dataset(teacher, output), indent=2))
+
+
+@app.command("fit-imitation-driver")
+def fit_imitation_driver_command(dataset: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Select a simulated expert and train/aggregate on training events only."""
+    from apexsim.examples.imitation_study import fit_imitation_study
+
+    typer.echo(json.dumps(fit_imitation_study(dataset, output, lambda m: typer.echo(m, err=True)), indent=2))
+
+
+@app.command("verify-imitation-development")
+def verify_imitation_development_command(output: Path, receipt: Annotated[Path | None, typer.Option()] = None) -> None:
+    """Replay every development trajectory and independently refit all checkpoints."""
+    from apexsim.examples.imitation_study import verify_imitation_development
+    from apexsim.provenance import write_manifest
+
+    result = verify_imitation_development(output, progress=lambda m: typer.echo(m, err=True))
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+
+
+@app.command("evaluate-imitation-driver")
+def evaluate_imitation_driver_command(development: Annotated[Path, typer.Option()], verification: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Run the frozen complete matched R036 test catalog, refinements and audit."""
+    from apexsim.examples.imitation_study import run_imitation_evaluation
+
+    typer.echo(json.dumps(run_imitation_evaluation(development, verification, output, lambda m: typer.echo(m, err=True)), indent=2))
+
+
+@app.command("verify-imitation-driver")
+def verify_imitation_driver_command(output: Path, receipt: Annotated[Path | None, typer.Option()] = None) -> None:
+    """Regenerate every final comparison and independent held-action lap replay."""
+    from apexsim.examples.imitation_study import verify_imitation_evaluation
+    from apexsim.provenance import write_manifest
+
+    result = verify_imitation_evaluation(output, lambda m: typer.echo(m, err=True))
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+
+
+@app.command("imitation-driver-smoke")
+def imitation_driver_smoke_command(output: Annotated[Path, typer.Option()]) -> None:
+    """SIMULATED execution of all R036 stages; cannot close public R036."""
+    from apexsim.examples.imitation_study import (
+        fit_imitation_study,
+        make_imitation_smoke_dataset,
+        run_imitation_evaluation,
+        verify_imitation_development,
+        verify_imitation_evaluation,
+    )
+    from apexsim.provenance import write_manifest
+
+    if output.exists():
+        raise FileExistsError("R036 smoke output must be fresh")
+    dataset, development = output.with_name(output.name+"-dataset"), output.with_name(output.name+"-development")
+    receipt = output.with_name(output.name+"-development-verification.json")
+    def progress(message: str) -> None:
+        typer.echo(message, err=True)
+
+    make_imitation_smoke_dataset(dataset)
+    fit_imitation_study(dataset, development, progress)
+    write_manifest(receipt, verify_imitation_development(development, progress=progress))
+    run_imitation_evaluation(development, receipt, output, progress)
+    typer.echo(json.dumps(verify_imitation_evaluation(output, progress), indent=2))
+
+
 if __name__ == "__main__":
     app()
