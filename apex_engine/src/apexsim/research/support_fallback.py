@@ -108,7 +108,17 @@ class RuntimeController:
         learner_row = row.copy()
         if active and self.fault == "feature_shift":
             learner_row[2] += 10*self.envelope["half_range"][2]*self.envelope["cutoff"]
-        residual = predict_residual(self.model, learner_row)
+        # Reject invalid/OOD learner observations before inference. Transparent
+        # feedback remains available even if the learned component cannot run.
+        score = support_score(self.envelope, learner_row)
+        residual = float("nan")
+        evaluated = False
+        if self.actor == "unguarded" or (self.actor == "guarded" and score is not None and score <= self.envelope["cutoff"]):
+            evaluated = True
+            try:
+                residual = predict_residual(self.model, learner_row)
+            except ValueError:
+                residual = float("nan")
         if active and self.fault == "residual_bias":
             residual += .3
         if active and self.fault == "nonfinite":
@@ -120,7 +130,8 @@ class RuntimeController:
         else:
             decision = {"mode": "transparent" if self.actor == "transparent" else "learned", "score": support_score(self.envelope, learner_row),
                         "reason": None, "triggered": False}
-        decision.update(fault_active=active, first_fault_command=first, learner_action_valid=bool(np.isfinite(residual) and abs(residual) <= .2))
+        decision.update(fault_active=active, first_fault_command=first, learner_action_evaluated=evaluated,
+                        learner_action_valid=bool(np.isfinite(residual) and abs(residual) <= .2))
         if decision["mode"] == "abstain":
             return None, decision
         if decision["mode"] in ("fallback", "transparent"):

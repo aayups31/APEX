@@ -133,3 +133,20 @@ def test_switch_audit_selects_both_sides_and_detects_wrong_physical_endpoint():
     arrays["case__states"] = path.states.copy()
     arrays["case__states"][2, 0] += .1
     assert not audit_switches([case], arrays)["passed"]
+
+
+@pytest.mark.parametrize("actor", ["guarded", "transparent"])
+def test_invalid_observations_and_transparent_feedback_never_require_learner_inference(monkeypatch, actor):
+    track = DriverMap.from_curve(ReferenceCurve(np.array([[0., 0.], [25., 0.], [0., 25.]]), GeometryConfig(1, 0.), "SIMULATED"))
+    profile = speed_profile(track, .65, 60.)
+    xy, heading, _ = track.at(0.)
+    state = BicycleState(*xy, heading, 10., 0., 0.)
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Unavailable learner was invoked")
+    monkeypatch.setattr("apexsim.research.support_fallback.predict_residual", forbidden)
+    controller = RuntimeController(actor, "nominal", envelope(), {})
+    log = {"steering_projected": False, "force_projected": False, "residual_projected": False}
+    action, decision = controller(state, track, profile, 0., 0., .04, 0, None, np.full(8, np.nan), log)
+    expected, _ = command(state, track, profile, 0., 0., .04)
+    assert action == expected and decision["mode"] == ("fallback" if actor == "guarded" else "transparent")
+    assert not decision["learner_action_evaluated"]
