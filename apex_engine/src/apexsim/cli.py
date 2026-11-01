@@ -982,5 +982,42 @@ def verify_recovery_command(output: Path, receipt: Annotated[Path | None, typer.
     typer.echo(json.dumps(result, indent=2))
 
 
+@app.command("fit-support-detector")
+def fit_support_command(recovery: Annotated[Path, typer.Option()], verification: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Fit train/validation-only support envelope after verified R037 recovery."""
+    from apexsim.examples.support_study import fit_support
+
+    typer.echo(json.dumps(fit_support(recovery, verification, output), indent=2))
+
+
+@app.command("verify-support-detector")
+def verify_support_detector_command(output: Path) -> None:
+    """Rebuild detector ranges/cutoff and audit independent quantiles before test."""
+    from apexsim.examples.support_study import load_support_detector
+
+    summary, model = load_support_detector(output)
+    typer.echo(json.dumps({"verified": True, "summary_sha256": summary["content_sha256"], "model": model}, indent=2))
+
+
+@app.command("run-support-benchmark")
+def run_support_command(detector: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Matched multi-lap guarded/unguarded/transparent fault and abstention study."""
+    from apexsim.examples.support_study import run_support
+
+    typer.echo(json.dumps(run_support(detector, output, lambda message: typer.echo(message, err=True)), indent=2))
+
+
+@app.command("verify-support-benchmark")
+def verify_support_command(output: Path, receipt: Annotated[Path | None, typer.Option()] = None) -> None:
+    """Regenerate all fallback paths and recheck every detector and numerical gate."""
+    from apexsim.examples.support_study import verify_support
+    from apexsim.provenance import write_manifest
+
+    result = verify_support(output, lambda message: typer.echo(message, err=True))
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+
+
 if __name__ == "__main__":
     app()
