@@ -1,0 +1,15 @@
+{
+  "maximum_independent_feature_difference": 2.220446049250313e-16,
+  "maximum_independent_ridge_prediction_difference_rad": 1.3614109839465982e-14,
+  "maximum_physical_replay_difference": 0.0,
+  "profile": "research",
+  "replay_dynamics": true,
+  "selected": "bc_d2_a1e-08",
+  "selected_lead_s": 0.1,
+  "summary_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+  "task_closure_eligible": false,
+  "test_outcomes_used": false,
+  "training_rows": 45200,
+  "trials_checked": 68,
+  "verified": true
+}

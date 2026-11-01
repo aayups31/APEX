@@ -61,13 +61,19 @@ not discovery of new driving knowledge or superiority to the expert.
 Eight core policy tests, seven split/fit/gate tests and eight artifact tests pass.
 Synthetic development replay reproduces all34 paths exactly; independent scalar
 features match and QR versus primary-SVD prediction difference is7.75e-16rad.
-The complete synthetic evaluation/replay also passes, with explicit
-SIMULATED_EXECUTION_ONLY status and no public-task eligibility. Portable artifacts,
+The complete synthetic pipeline and replay checks also pass, with explicit
+SIMULATED_EXECUTION_ONLY status and no public-task eligibility. Its separately
+trained smoke policy is stable but loses to R035 on the held-out ellipse:
+RMSE ratio1.295257, P95 ratio1.450036. That failed improvement gate is retained;
+pipeline execution does not establish policy superiority or broad robustness.
+Portable artifacts,
 genuine training, frozen model selection, actual reserved-event guards, changed
 payloads and resealed false completion are tested.
 
-Before final test execution, all source-bound development dynamics and independent
-fit/selection equations must replay. The frozen final policy then competes with
+Before final test execution, all68 source-bound development dynamics replayed
+with zero difference. Independent feature differences were zero and QR/SVD fitted
+prediction differences<=1.361411e-14rad. The [run-bound receipt](imitation-development-replay.json)
+binds the full pre-test verification to the frozen development seal. The final policy competes with
 R035, expert, linear and initial BC on the complete matched eight-case nominal/
 disturbed test catalog, followed by four timestep refinements and independent
 held-action replay. Duplicate checkpoint identities are disclosed. The task can
