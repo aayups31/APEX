@@ -46,7 +46,9 @@ def support_score(envelope: dict, row: np.ndarray) -> float | None:
         raise ValueError("R038 invalid frozen detector parameters")
     if row.shape != (8,) or not np.isfinite(row).all():
         return None
-    return float(np.max(abs((row-center)/width)))
+    with np.errstate(over="ignore", invalid="ignore"):
+        score = float(np.max(abs((row-center)/width)))
+    return score if np.isfinite(score) else None
 
 
 @dataclass

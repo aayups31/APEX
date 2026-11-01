@@ -2,7 +2,11 @@ import numpy as np
 import pytest
 
 from apexsim.research.bicycle import BicycleState
-from apexsim.research.support_fallback import Supervisor, fit_envelope, support_score
+from apexsim.research.imitation_driver import fit_policy, observation, policy_command
+from apexsim.research.reference_geometry import GeometryConfig, ReferenceCurve
+from apexsim.research.support_audit import audit_detector
+from apexsim.research.support_fallback import RuntimeController, Supervisor, fit_envelope, support_score
+from apexsim.research.transparent_driver import DriverMap, command, speed_profile
 
 
 def envelope():
@@ -71,3 +75,44 @@ def test_invalid_scaler_and_nonfinite_calibration_do_not_create_a_detector():
     bad = dict(envelope(), half_range=[0.]*8)
     with pytest.raises(ValueError, match="parameters"):
         support_score(bad, np.zeros(8))
+
+
+def test_independent_quantiles_do_not_call_primary_numpy_fit(monkeypatch):
+    x = np.random.default_rng(118).normal(size=(75, 8))
+    validation = x*1.2
+    model = fit_envelope(x, validation)
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Primary quantile called")
+    monkeypatch.setattr(np, "quantile", forbidden)
+    assert audit_detector(x, validation, model)["maximum_parameter_difference"] < 1e-12
+    changed = dict(model, cutoff=model["cutoff"]+1)
+    with pytest.raises(ValueError, match="independent detector"):
+        audit_detector(x, validation, changed)
+
+
+def test_fallback_uses_trusted_feedback_and_preserves_actual_actuator_memory(monkeypatch):
+    track = DriverMap.from_curve(ReferenceCurve(np.array([[0., 0.], [25., 0.], [0., 25.]]), GeometryConfig(1, 0.), "SIMULATED"))
+    profile = speed_profile(track, .65, 60.)
+    xy, heading, _ = track.at(1.3*track.length_m)
+    state = BicycleState(*xy, heading, 10., 0., 0.)
+    x = np.random.default_rng(119).normal(size=(24, 8))
+    model = fit_policy(x, np.zeros(24), np.ones(24), 1, 1e-8)
+    previous = .04
+    row = observation(state, track, 1.3*track.length_m, .1, previous, .1)
+    action, _, log = policy_command(state, track, profile, 1.3*track.length_m, .1, previous, .1, "learned", model)
+    controller = RuntimeController("guarded", "residual_bias", envelope(), model)
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Corrupt learner features entered fallback")
+    monkeypatch.setattr("apexsim.research.support_fallback.baseline_raw", forbidden)
+    fallback, decision = controller(state, track, profile, 1.3*track.length_m, .1, previous, 0, action, row, log)
+    expected, _ = command(state, track, profile, 1.3*track.length_m, .1, previous)
+    assert decision["mode"] == "fallback" and decision["first_fault_command"]
+    assert fallback == expected and abs(fallback.steering_rad-previous) <= .15+1e-14
+
+
+def test_finite_but_unrepresentable_score_is_unavailable_and_reverts():
+    model = dict(envelope(), half_range=[.005]*8)
+    row = np.full(8, 1e308)
+    assert support_score(model, row) is None
+    decision = Supervisor(model).decide(BicycleState(), 0., row, 0.)
+    assert decision["mode"] == "fallback" and decision["score"] is None
