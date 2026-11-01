@@ -34,7 +34,7 @@ R032,R3,P1,vehicle,Add aero balance and load transfer,bicycle model,sensitivity/
 R033,R3,P0,replay,Align recorded controls and engine state,canonical replay,coverage > declared threshold,DONE
 R034,R3,P0,replay,Report section/lap/stint open-loop errors,alignment,matched horizons and regimes,DONE
 R035,R4,P0,driver,Calibrate transparent driver policy,single-car replay,complete held-out laps,DONE
-R036,R4,P1,driver,Train imitation policy with event-level splits,transparent policy,beats transparent policy without instability,TODO
+R036,R4,P1,driver,Train imitation policy with event-level splits,transparent policy,beats transparent policy without instability,IN_PROGRESS
 R037,R4,P0,closed-loop,Add compounding-error and recovery benchmark,driver policy,bounded multi-lap drift,TODO
 R038,R4,P0,safety,Add OOD detector and fallback controller,closed-loop benchmark,abstention/fallback tests,TODO
 R039,R5,P0,tyres,Implement two-node tyre thermal model,vehicle replay,heat balance and temperature response,TODO
