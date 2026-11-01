@@ -1,6 +1,7 @@
 # R036 conditional imitation driver
 
-2026-11-01. **IN_PROGRESS: training frozen; final held-out evaluation pending.**
+2026-11-01. **Numerical campaign ACCEPT_CONDITIONAL_IMITATION_DRIVER; final full
+replay/publication pending before task closure.**
 Foundation R1 and production kernel R0 remain unchanged. The
 [protocol](../../research/protocols/IMITATION_DRIVER.md),
 [source/sequence ADR](../architecture/adr-0008-conditional-imitation.md),
@@ -71,7 +72,7 @@ genuine training, frozen model selection, actual reserved-event guards, changed
 payloads and resealed false completion are tested.
 
 Before final test execution, all68 source-bound development dynamics replayed
-with zero difference. Independent feature differences were zero and QR/SVD fitted
+with zero difference. Independent feature differences were<=2.220447e-16 and QR/SVD fitted
 prediction differences<=1.361411e-14rad. The [run-bound receipt](imitation-development-replay.json)
 binds the full pre-test verification to the frozen development seal. The final policy competes with
 R035, expert, linear and initial BC on the complete matched eight-case nominal/
@@ -87,3 +88,40 @@ priors, supplied maps/localization, existing development-event history and the
 large R035 source-pace shortfall remain. This learns steering only; longitudinal
 control stays transparent. A bounded correction does not establish OOD detection,
 fallback or multi-lap recovery. R037/R038 remain the next broader evidence gates.
+
+## Primary held-out results
+
+The unchanged frozen model was evaluated after model/choice publication. Summary
+seal `2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae` binds the
+[primary evaluation](imitation-evaluation-results.json) and
+[summary](imitation-evaluation-summary.json). All eight final nominal/disturbed
+cases pass, with44 saved comparator/refinement runs. Final and initial BC reference
+the same frozen checkpoint; they are not independent model evidence.
+
+| Nominal comparator | Macro station-weighted reference RMSE(m) |
+|---|---|
+| Frozen R035 | .101435780 |
+| Analytic preview expert | .077450980 |
+| Best linear learner | .204733785 |
+| Selected quadratic BC / final | .077451083 |
+
+The final learner reduces nominal macro RMSE23.6452% versus R035. Driver-specific
+RMSE ratios are.763978/.763118, and P95 ratios.743811/.742365. All nominal finish
+times are133.4183–133.4199s, satisfying the unchanged pace noninferiority gate.
+This is conditional reference tracking, not source GPS accuracy or real F1 pace.
+
+The peak-error tradeoff is retained: worst nominal reference error rises from
+R035's.326161m to.383115m despite better RMSE/P95. Across all eight cases, including
+the initial.4m/.01rad disturbances, maximum error is.593486m and P95<=.194635m.
+All disturbances end within.068929m of the reference. No steering-rate/angle or
+learned-residual projection occurs; shared physical force limits do intervene and
+their counts are preserved. Maximum friction utilization squared is.568887,
+minimum contact3708.514879N, pitch residual<=9.51059e-9Nm and power identity error
+<=6.98492e-10W.
+
+All four nominal timestep refinements pass: maximum common-station XY difference
+.000025022m, speed difference.000167616m/s and finish difference.000012450s.
+The scalar-bisection/DOP853 audit completes one1335-interval final-policy lap with
+maximum XY difference.002029037m and body-velocity difference.000030133m/s. Another
+32 representative nominal intervals pass. Full regeneration of all44 saved runs
+is in progress; these primary metrics do not by themselves close the task.

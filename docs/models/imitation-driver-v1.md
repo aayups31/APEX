@@ -14,6 +14,7 @@ and the supplied map. It cannot see future measured speed/control, event IDs,
 absolute XY/station as features, or expert answers during deployment.
 
 Degree1 ridge has9 coefficients and degree2 ridge45, including an unpenalized bias.
+Eight training means and eight scales are stored separately from those coefficients.
 Both penalty candidates {1e-8,1e-4} genuinely fit generated labels. Training-only
 weighted means/scales prevent validation/test normalization leakage. Event,
 driver, lap-condition, disturbance and collection-round weights are balanced.

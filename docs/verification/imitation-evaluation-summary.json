@@ -1,0 +1,19 @@
+{
+  "commit": "08772e407981a392d7bcd02ff23c96ff505d8dff",
+  "conditional_research_only": true,
+  "content_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae",
+  "decision": "ACCEPT_CONDITIONAL_IMITATION_DRIVER",
+  "development_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+  "development_verification_sha256": "f210ff63c458eefd783b4e1d6bac90f0b93eed98a1bd998920b46fb3f1626aee",
+  "implementation_sha256": {
+    "IMITATION_DRIVER.md": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c",
+    "imitation_audit.py": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea",
+    "imitation_driver.py": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c",
+    "imitation_study.py": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+  },
+  "production_promotion": false,
+  "profile": "research",
+  "results_sha256": "c9bb60a491c7ba0cddede8ec55cb17b4b73a49f67d87ea48f0f8632e3c21304d",
+  "schema_version": "apex-imitation-driver-v1",
+  "task_closure_eligible": true
+}

@@ -15,7 +15,7 @@ import pandas as pd
 from apexsim.examples.imitation_study import load_development, load_imitation_evaluation
 from apexsim.provenance import file_sha256, write_manifest
 from apexsim.research.evidence import read_json, seal
-from apexsim.research.imitation_driver import predict_residual
+from apexsim.research.imitation_driver import expert_residual, predict_residual
 
 
 def source_discrepancies(root: Path, result: dict) -> list[dict]:
@@ -73,6 +73,41 @@ def inference_benchmark(root: Path, fitted: dict) -> dict:
             "parameters": model["parameters"], "python": platform.python_version(), "numpy": np.__version__}
 
 
+def policy_diagnostics(root: Path, result: dict, fitted: dict, maps: dict) -> dict:
+    """Post-freeze teacher forcing and autonomous expert/student drift are distinct."""
+    forcing, drift = [], []
+    with np.load(root/"trajectories.npz", allow_pickle=False) as arrays:
+        for case in result["cases"]:
+            if case["actor"] != "expert" or case["max_step_s"] != .02:
+                continue
+            expert_key = case["case_id"]
+            rows = arrays[expert_key+"__features"]
+            labels = np.array([expert_residual(row) for row in rows])
+            for actor in ("linear", "bc", "final"):
+                name = result["checkpoint_identities"][actor]
+                prediction = np.array([predict_residual(fitted["models"][name], row) for row in rows])
+                error = prediction-labels
+                forcing.append({"lap_id": case["lap_id"], "scenario": case["scenario"], "actor": actor, "checkpoint": name,
+                                "nodes": len(rows), "residual_mse_rad2": float(np.mean(error**2)),
+                                "residual_mae_rad": float(np.mean(abs(error))), "maximum_absolute_residual_error_rad": float(np.max(abs(error))),
+                                "truth": "TEACHER_FORCED_ON_SIMULATED_EXPERT_STATES; NOT_AUTONOMOUS_OR_HUMAN_ACCURACY"})
+            learner = next(r for r in result["cases"] if r["lap_id"] == case["lap_id"] and r["scenario"] == case["scenario"]
+                           and r["actor"] == "final" and r["max_step_s"] == .02)
+            if not case["completed"] or not learner["completed"]:
+                drift.append({"lap_id": case["lap_id"], "scenario": case["scenario"], "supported": False, "reason": "INCOMPLETE_COMPARISON"})
+                continue
+            learner_key = learner["case_id"]
+            expert_s, learner_s = arrays[expert_key+"__station_m"], arrays[learner_key+"__station_m"]
+            station = np.linspace(0, maps[case["track_id"]].length_m, 2001)
+            paths = [np.column_stack([np.interp(station, s, arrays[key+"__states"][:, i]) for i in (0, 1)])
+                     for s, key in ((expert_s, expert_key), (learner_s, learner_key))]
+            drift.append({"lap_id": case["lap_id"], "scenario": case["scenario"], "supported": True,
+                          "maximum_common_station_xy_drift_m": float(np.max(np.linalg.norm(paths[0]-paths[1], axis=1))),
+                          "finish_time_difference_s": learner["completion_time_s"]-case["completion_time_s"],
+                          "truth": "TWO_AUTONOMOUS_SIMULATED_POLICIES; NOT_REAL_CAR_TRAJECTORY_ERROR"})
+    return {"teacher_forced_residual_errors": forcing, "autonomous_expert_student_drift": drift}
+
+
 def publish(study: Path, verification: Path, output: Path) -> dict:
     if output.exists():
         raise FileExistsError("R036 publication output must be fresh")
@@ -82,7 +117,7 @@ def publish(study: Path, verification: Path, output: Path) -> dict:
     receipt = read_json(verification)
     if receipt.get("verified") is not True or receipt.get("summary_sha256") != summary["content_sha256"]:
         raise ValueError("R036 publication requires exact run-bound scientific replay")
-    _, fitted, header, _, _ = load_development(study/"development")
+    _, fitted, header, maps, _ = load_development(study/"development")
     catalog = {c["lap_id"]: c for c in header["cases"]}
     discrepancies = source_discrepancies(study, result)
     for row in discrepancies:
@@ -99,6 +134,7 @@ def publish(study: Path, verification: Path, output: Path) -> dict:
                      "model_selection": {k: fitted[k] for k in ("expert_validation_scores", "selected_lead_s", "validation_scores", "selected", "best_bc", "best_linear")},
                      "models": fitted["models"], "base_episode_ledger": fitted["base_episode_ledger"], "episode_ledger": fitted["episode_ledger"],
                      "posthoc_source_discrepancies": discrepancies, "inference_benchmark": benchmark,
+                     "policy_diagnostics": policy_diagnostics(study, result, fitted, maps),
                      "run_manifest": read_json(study/"manifest.json"), "run_manifest_sha256": file_sha256(study/"manifest.json")})
     write_manifest(output/"imitation-driver-evidence.json", evidence)
     fig, axes = plt.subplots(2, 2, figsize=(14.5, 9), constrained_layout=True)
