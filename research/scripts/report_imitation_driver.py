@@ -27,6 +27,10 @@ def source_discrepancies(root: Path, result: dict) -> list[dict]:
             if case["actor"] != "final" or case["scenario"] != "nominal" or case["max_step_s"] != .02:
                 continue
             key, track = case["lap_id"], case["track_id"]
+            if not case["completed"]:
+                records.append({"case_id": case["case_id"], "matched_native_rows": 0, "speed_rmse_mps": None,
+                                "scope": "UNAVAILABLE_INCOMPLETE_MODEL_LAP"})
+                continue
             base = recorded/"longitudinal/geometry"
             with (np.load(base/(track+"_lap_inputs.npz"), allow_pickle=False) as native,
                   np.load(base/(track+"_geometry_predictions.npz"), allow_pickle=False) as geometry):
@@ -104,8 +108,12 @@ def publish(study: Path, verification: Path, output: Path) -> dict:
     ids = sorted({c["lap_id"] for c in nominal})
     ax = axes[0, 0]
     for i, actor in enumerate(actors):
-        values = [np.sqrt(next(c for c in nominal if c["lap_id"] == key and c["actor"] == actor)["station_weighted_mse_m2"]) for key in ids]
+        metrics = [next(c for c in nominal if c["lap_id"] == key and c["actor"] == actor)["station_weighted_mse_m2"] for key in ids]
+        values = [np.sqrt(value) if value is not None else np.nan for value in metrics]
         ax.bar(np.arange(len(ids))+(i-2)*.16, values, width=.15, label=actor)
+        for j, value in enumerate(values):
+            if not np.isfinite(value):
+                ax.text(j+(i-2)*.16, 0, "FAILED", rotation=90, va="bottom", ha="center", fontsize=7)
     ax.set_xticks(np.arange(len(ids)), [key.replace("F1_2024_R16_", "") for key in ids])
     ax.set(xlabel="Driver / source lap condition", ylabel="Station-weighted reference RMSE (m)", title="Matched pace, physics, map and initial conditions")
     ax.legend(fontsize=8)
