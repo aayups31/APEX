@@ -1,0 +1,24 @@
+{
+  "commit": "5ff90c924c22e8b4dc57f86e3c97f3976936a397",
+  "content_sha256": "69ac56b7364119fee1dd0a5ee2277e0b99356b0a8116a4e892c19871b7f1dfc2",
+  "dataset_sha256": "44b927325c958198f3239000957dc6970b79ef8afa98a0d9d53d534ad95e963b",
+  "development_sha256": "8b1ddaf6ca1415f8ab65b9ff4c2832dd83a6766aaeb28505c4d3dddbbce9a6bc",
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.12.12"
+  },
+  "implementation_sha256": {
+    "IMITATION_DRIVER.md": "69c17f89800348a2ae8db9dd6381856f08a402422dcdea81d6ac19e11ae5478c",
+    "imitation_audit.py": "3c299f6ef7569f569288d1c0d669e5425109881109f0c79c037d85bf7c434cea",
+    "imitation_driver.py": "c34fc060c6b0120bf1c4403632a33d2c0969271f316f44590330cb6d8b8ecc8c",
+    "imitation_study.py": "9c9c50b834f57466d78eae5f86f40f332d47e11f013cd1e935621b52880260b3"
+  },
+  "production_promotion": false,
+  "profile": "research",
+  "schema_version": "apex-imitation-driver-v1-development",
+  "selected": "bc_d2_a1e-08",
+  "selected_lead_s": 0.1,
+  "selected_model_sha256": "32aebfa9a7a49534bc4d05e79db8686f7c9e24903d169fbd32d33b299df2de9f",
+  "task_closure_eligible": false,
+  "test_outcomes_used": false
+}
