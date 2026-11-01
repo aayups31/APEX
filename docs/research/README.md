@@ -45,8 +45,10 @@ support the [frozen public coverage report](../verification/recorded-replay-alig
 R034's [matched predictive errors and unavailable scopes](../verification/open-loop-errors-report.md)
 are complete. R035's [conditional generated-action driver](../verification/transparent-driver-report.md)
 completes four held-out nominal laps in generic-prior physics. Its source-pace
-shortfall remains explicit. R037 multi-lap drift/recovery and R038 OOD/fallback
-are the next P0 research dependencies; R036 imitation follows that stronger baseline.
+shortfall remains explicit. R036's [conditional imitation study](../verification/imitation-driver-report.md)
+is complete with frozen supervised weights, event-level splits, an independently
+checked44-run evaluation and explicit peak-error/real-pace limitations. R037
+multi-lap drift/recovery and R038 OOD/fallback are the next P0 research dependencies.
 
 Research is incorporated through a traceable process:
 

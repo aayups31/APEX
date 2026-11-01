@@ -129,7 +129,13 @@ Monza lap conditions in six-state generic-prior physics. Maximum reference error
 is<.33m; full-lap independent replay differs by2.1mm. All690 tests pass locally and
 on Python3.11/3.12 CI. Simulated laps remain about48s slower than source laps: this
 is known-map closed-loop control evidence, not accurate F1 pace or formal R4.
-Next are multi-lap recovery and OOD/fallback. Production remains unchanged.
+The [R036 conditional imitation driver](docs/verification/imitation-driver-report.md)
+is complete: a45-coefficient policy trained from a simulated preview expert reduces
+nominal tracking RMSE23.6% versus R035. All eight final cases pass and44 saved
+comparator/refinement runs reproduce exactly. Worst nominal peak error rises
+from.326m to.383m; source pace remains unvalidated. All713 tests pass locally and
+on Python3.11/3.12 CI. Next are R037 multi-lap recovery and R038 OOD/fallback.
+Production remains unchanged.
 
 ---
 

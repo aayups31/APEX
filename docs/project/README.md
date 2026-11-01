@@ -36,7 +36,7 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 35/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 36/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
 R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
 adds independent temporal faithfulness tests and finite-catalogue counterfactual
@@ -63,8 +63,13 @@ all four frozen held-out nominal lap conditions, with maximum reference error<.3
 independent full-lap replay and timestep refinement. All690 tests pass locally and
 on Python3.11/3.12 CI. Its generic-prior simulated laps remain about48s slower than
 the source laps; real-car pace calibration and full measured replay are unresolved.
-Next priorities are R037 multi-lap drift/recovery and R038 OOD/fallback, then R036
-imitation. These scoped component completions do not promote formal maturity.
+R036's [conditional imitation driver](../verification/imitation-driver-report.md)
+is complete: a simulated-expert-trained policy reduces nominal tracking RMSE23.6%
+versus R035, with all eight final cases passing and44 exactly regenerated runs.
+Worst nominal peak error increases from.326m to.383m; the analytic expert remains
+equally accurate. All713 tests pass locally and on Python3.11/3.12 CI.
+Next priorities are R037 multi-lap drift/recovery and R038 OOD/fallback.
+These scoped component completions do not promote formal maturity.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
 

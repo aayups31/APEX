@@ -127,7 +127,9 @@ binds these results and both studies' verification receipts. Stronger assertions
 against an actual reserved event separately pass and are committed with the final
 publication. No dynamics or acceptance thresholds changed after the public runs.
 
-Research inventory is35/73 DONE, build inventory13/66. R037 multi-lap compounding
-error/recovery is next, followed by R038 OOD/fallback. R036 imitation is lower
-priority than those P0 control gates. Accurate all-regime real-car pace and formal
-maturity review remain separate prerequisites for later production promotion.
+At R035 closure the research inventory was35/73 DONE, build inventory13/66.
+Progress update2026-11-01: [R036 conditional imitation](imitation-driver-report.md)
+is now complete, taking the research inventory to36/73. R037 multi-lap compounding
+error/recovery is next, followed by R038 OOD/fallback. Accurate all-regime real-car
+pace and formal maturity review remain separate prerequisites for later production
+promotion; this update does not alter the frozen R035 evidence.

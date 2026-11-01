@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-10-31",
+  "last_progress_date": "2026-11-01",
   "research_inventory": {
-    "done": 35,
+    "done": 36,
     "total": 73
   },
   "build_inventory": {
@@ -393,7 +393,7 @@
     "full_regression": {"passed": 690, "python_versions": ["3.11", "3.12"], "ci_run": 41243887574},
     "implementation_commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
     "artifact_test_commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
-    "follow_up_order": ["R037", "R038", "R036"],
+    "follow_up_order": ["R037", "R038"],
     "limitations": ["Known supplied reconstructed map and generic vehicle priors", "Source lap time/speed agreement is poor; no real-car pace validation", "Multi-lap drift, broad recovery and OOD/fallback remain later gates", "No formal R4 or production promotion"]
   },
   "matched_open_loop_error_report": {
@@ -419,6 +419,46 @@
     "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
     "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
     "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
+  },
+  "conditional_imitation_driver": {
+    "backlog_id": "R036",
+    "status": "DONE",
+    "completed_date": "2026-11-01",
+    "decision": "ACCEPT_CONDITIONAL_IMITATION_DRIVER",
+    "report": "docs/verification/imitation-driver-report.md",
+    "model_card": "docs/models/imitation-driver-v1.md",
+    "data_contract": "docs/data/imitation-driver.md",
+    "evidence": "docs/verification/imitation-driver-evidence.json",
+    "completion_receipt": "docs/verification/r036-completion.json",
+    "completion_content_sha256": "a8560aed0d82fcdf19fa1490f9ee7c7e3c52640b0bd05614190df9b880dc59b8",
+    "summary_sha256": "2f549c5224413fde09f5d99af2043305c5cac81ce49daa9afd9647a2be4264ae",
+    "evidence_content_sha256": "b96781f4d46111c4d8d3bdf6217db30e626ea9e2db2fb1098236b161b805950e",
+    "selected_checkpoint": "bc_d2_a1e-08",
+    "expert_preview_s": 0.1,
+    "policy_coefficients": 45,
+    "original_expert_labelled_states": 22600,
+    "aggregated_labelled_states": 45200,
+    "selected_checkpoint_uses_aggregation": false,
+    "training_source": "SIMULATED_EXPERT_ACTIONS",
+    "nominal_macro_rmse_improvement_fraction": 0.2364520343822832,
+    "nominal_peak_reference_error_m": 0.3831145728517315,
+    "baseline_nominal_peak_reference_error_m": 0.326160859,
+    "final_cases_passed": 8,
+    "saved_comparator_refinement_runs": 44,
+    "scientific_replay_maximum_difference": 0.0,
+    "independent_full_laps": 1,
+    "independent_representative_intervals": 32,
+    "measured_human_steering_validated": false,
+    "production_promotion": false,
+    "targeted_tests": 23,
+    "full_regression": {"passed": 713, "python_versions": ["3.11", "3.12"], "ci_run": 41350406803},
+    "follow_up_order": ["R037", "R038"],
+    "limitations": [
+      "Tracking gains inherit an analytic preview expert; no new driving knowledge or superiority over that expert",
+      "Nominal peak error increases despite RMSE/P95 gains; separate smoke policy fails improvement gate",
+      "Generic vehicle priors and supplied maps; simulated laps remain about48s slower than source records",
+      "Multi-lap robustness and OOD/fallback unvalidated; no formal maturity or production promotion"
+    ]
   },
   "recorded_observation_alignment": {
     "backlog_id": "R033",
