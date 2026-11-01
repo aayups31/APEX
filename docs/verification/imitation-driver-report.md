@@ -15,7 +15,10 @@ in CI41244984366. The new local baseline produced689 passes and one pre-existing
 offline-Jolpica subprocess timeout. Its traceback reported a negative remaining
 timeout during the clock/date change; its82330.38s elapsed value is unusable as a
 compute measurement. The unchanged isolated test passed in21.82s. No timeout or
-source behavior was relaxed. A final full regression is required for closure.
+source behavior was relaxed. The final full regression now passes713 tests in
+706.01s with the same two existing dependency warnings. All713 also pass on
+Python3.11/3.12 in [CI41350406803](https://github.com/aayups31/APEX/actions/runs/41350406803),
+including all artifact workflows. Final held-out scientific gates remain pending.
 
 A fresh R035 disturbed-circle reference passes, seal
 `89d42bea396787ed2f518ae1968c8665ad7bbedd0fcb6e03dc01dd89e84583df`.
