@@ -46,6 +46,7 @@ def test_complete_supervised_smoke_cli_regenerates_faults_and_abstention(campaig
     summary, result = support.load_support(campaign/"support")
     assert summary["decision"] == "SIMULATED_EXECUTION_ONLY" and not result["task_closure_eligible"]
     assert len(result["cases"]) == 26 and result["gate"]["passed"]
+    assert result["switch_audit"]["passed"] and result["switch_audit"]["switches_checked"] >= 24
     hard = [r for r in result["cases"] if r["scenario"] in support.HARD]
     assert len(hard) == 6 and all(r["abstained"] and r["progress_m"] == 0 for r in hard)
 

@@ -1,12 +1,13 @@
 import numpy as np
 import pytest
 
-from apexsim.research.bicycle import BicycleState
+from apexsim.research.aero_bicycle import integrate_aero_bicycle
+from apexsim.research.bicycle import BicycleControl, BicycleState
 from apexsim.research.imitation_driver import fit_policy, observation, policy_command
 from apexsim.research.reference_geometry import GeometryConfig, ReferenceCurve
-from apexsim.research.support_audit import audit_detector
+from apexsim.research.support_audit import audit_detector, audit_switches
 from apexsim.research.support_fallback import RuntimeController, Supervisor, fit_envelope, support_score
-from apexsim.research.transparent_driver import DriverMap, command, speed_profile
+from apexsim.research.transparent_driver import AERO, CAR, DriverMap, command, speed_profile
 
 
 def envelope():
@@ -116,3 +117,19 @@ def test_finite_but_unrepresentable_score_is_unavailable_and_reverts():
     assert support_score(model, row) is None
     decision = Supervisor(model).decide(BicycleState(), 0., row, 0.)
     assert decision["mode"] == "fallback" and decision["score"] is None
+
+
+def test_switch_audit_selects_both_sides_and_detects_wrong_physical_endpoint():
+    times = np.arange(6)*.1
+    commands = [BicycleControl() for _ in range(5)]
+    path = integrate_aero_bicycle(BicycleState(vx_mps=20.), times, commands, CAR, AERO, max_step_s=.02)
+    arrays = {"case__states": path.states, "case__time_s": times, "case__controls": np.zeros((5, 4))}
+    case = {"case_id": "case", "actor": "guarded", "max_step_s": .02,
+            "decisions": [{"mode": mode} for mode in ("learned", "fallback", "fallback", "learned", "learned")]}
+    result = audit_switches([case], arrays)
+    assert result["passed"] and result["switches_checked"] == 2
+    assert [r["interval_index"] for r in result["checks"]] == [0, 1, 2, 3]
+    assert not result["primary_rhs_reused"]
+    arrays["case__states"] = path.states.copy()
+    arrays["case__states"][2, 0] += .1
+    assert not audit_switches([case], arrays)["passed"]

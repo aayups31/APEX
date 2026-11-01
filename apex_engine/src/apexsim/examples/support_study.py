@@ -13,7 +13,7 @@ from apexsim.provenance import file_sha256, payload_sha256, write_manifest
 from apexsim.research.closed_loop import compare_continuous_paths
 from apexsim.research.closed_loop_audit import audit_continuous
 from apexsim.research.evidence import check_seal, compare_numeric, finish_run, read_json, verify_inventory
-from apexsim.research.support_audit import audit_detector
+from apexsim.research.support_audit import audit_detector, audit_switches
 from apexsim.research.support_fallback import RuntimeController, fit_envelope
 
 VERSION = "apex-support-fallback-v1"
@@ -176,7 +176,8 @@ def run_support(detector: Path, output: Path, progress=None) -> dict:
     shutil.copytree(detector, output/"detector")
     result, arrays = compute_support(output/"detector", progress)
     result["independent_audit"] = audit_continuous(result["cases"], arrays, actor="guarded", full_scenario="residual_bias", progress=progress)
-    passed = result["profile"] == "research" and result["gate"]["passed"] and result["independent_audit"]["passed"]
+    result["switch_audit"] = audit_switches(result["cases"], arrays, progress)
+    passed = result["profile"] == "research" and result["gate"]["passed"] and result["independent_audit"]["passed"] and result["switch_audit"]["passed"]
     result.update(task_closure_eligible=passed, decision="ACCEPT_CONDITIONAL_SUPPORT_FALLBACK" if passed else "SIMULATED_EXECUTION_ONLY" if result["profile"] == "smoke" else "REJECT_SUPPORT_FALLBACK")
     write_manifest(output/"results.json", result)
     np.savez_compressed(output/"trajectories.npz", **arrays)
@@ -218,9 +219,12 @@ def verify_support(root: Path, progress=None) -> dict:
                 maximum = max(maximum, float(np.max(abs(archive[key]-value))))
     audit = audit_continuous(result["cases"], arrays, actor="guarded", full_scenario="residual_bias", progress=progress)
     compare_numeric(audit, saved["independent_audit"])
-    passed = result["profile"] == "research" and result["gate"]["passed"] and audit["passed"]
+    switches = audit_switches(result["cases"], arrays, progress)
+    compare_numeric(switches, saved["switch_audit"])
+    passed = result["profile"] == "research" and result["gate"]["passed"] and audit["passed"] and switches["passed"]
     decision = "ACCEPT_CONDITIONAL_SUPPORT_FALLBACK" if passed else "SIMULATED_EXECUTION_ONLY" if result["profile"] == "smoke" else "REJECT_SUPPORT_FALLBACK"
     if saved["task_closure_eligible"] != passed or saved["decision"] != decision:
         raise ValueError("R038 false completion")
     return {"verified": True, "summary_sha256": summary["content_sha256"], "task_closure_eligible": passed,
-            "decision": decision, "cases": len(result["cases"]), "maximum_replay_difference": maximum, "independent_audit": audit}
+            "decision": decision, "cases": len(result["cases"]), "maximum_replay_difference": maximum,
+            "independent_audit": audit, "switch_audit": switches}
