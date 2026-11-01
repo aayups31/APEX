@@ -62,6 +62,30 @@ real-world OOD accuracy or a certified safe region.
 
 ## Pending public evidence and next gate
 
+R037's primary numerical campaign now passes every declared gate. The
+[primary summary](recovery-primary-summary.json) binds all
+[compact primary results](recovery-primary-results.json), including28 required
+five-lap runs and the separately retained large-challenge failure. All32 required
+small pulses begin a sustained two-second matched-path recovery window within.8s.
+Maximum required station-grid error is.381478m and P95.237540m; largest last-minus-
+first lap RMSE increase is.000158607m. These are conditional reference-map metrics.
+
+| Nominal macro station RMSE(m) | Lap1 | Lap2 | Lap5 |
+|---|---|---|---|
+| R035 transparent | .101435780 | .101407471 | .101421666 |
+| Frozen R036 learned | .077451083 | .077225339 | .077221098 |
+
+All236 independent physics checks pass. The complete6695-interval five-lap
+held-action audit differs by at most.009738753m in XY and.000030257m/s in body
+velocity. Across four complete-horizon refinements, maximum common-station XY
+difference is.000740098m, speed difference.000207069m/s and finish difference
+.000002726s. Numerical agreement does not establish surveyed-map or real-car accuracy.
+
+The preregistered.3rad large challenge exits the5m experiment reference corridor
+at7236.045515m of progress. Its prefix and attempted final action are retained;
+this is not replaced by a successful run or credited as recovered. Full29-case
+scientific regeneration is now running, so R037 task closure remains pending.
+
 R037 runs all four frozen source conditions across five continuous laps with both
 controllers and both pulse signs, plus nominal timestep refinements and the large
 challenge. R038 requires its accepted, fully regenerated parent before fitting the

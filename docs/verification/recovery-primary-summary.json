@@ -1,0 +1,17 @@
+{
+  "commit": "f99c6b53234fb13e3d3f850b96f2c52598888de2",
+  "content_sha256": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+  "decision": "ACCEPT_CONDITIONAL_MULTILAP_RECOVERY",
+  "implementation_sha256": {
+    "MULTILAP_RECOVERY.md": "212f069a35d548f29438b0190c906566e25d7a3a7c9f8ebe18307d78e7c086e8",
+    "closed_loop.py": "adf5cf0c5b46f17c8fa6ee351e4a8ac298d93134036aed798fa49b00a258c60e",
+    "closed_loop_audit.py": "b3e57cc911889f966a942b8172d94547caabd58a8f9db5d49846051fd1f3fbbd",
+    "recovery_study.py": "93a294fa6d12831da1b5249658d40c733d2177a3b5dba103e76e2f4c1ee83955"
+  },
+  "input_sha256": "b163e64b46e89e5a4b4ce6ec59d3ede422f21a7bc0cc81db5e16432fd2946bd8",
+  "production_promotion": false,
+  "profile": "research",
+  "results_sha256": "154e439142ea578d513e2301fc07c7803df97405ae75d97ad6c59a0ca3a02f22",
+  "schema_version": "apex-multilap-recovery-v1",
+  "task_closure_eligible": true
+}

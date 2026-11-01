@@ -37,6 +37,9 @@ fit checks. Faulted learner features are reconstructed from the frozen injection
 recipe; stored features remain the trusted causal features. Every decision records
 support score (null if unavailable), mode/reason, active fault/first fault command,
 and candidate validity. A missing score is never interpreted as supported.
+`learner_action_evaluated` distinguishes an unavailable/skipped inference from an
+evaluated invalid candidate. Invalid or outside-envelope features are checked
+before guarded inference, and transparent feedback does not require the learner.
 Nonfinite candidate actions are detected before actuation; numeric NPZ trajectories
 remain finite. Hard-boundary abstention has zero controls and one initial state.
 It terminates a simulation; it is not a physical emergency-braking implementation.
@@ -45,4 +48,7 @@ Every output directory must be fresh. Portable nested sources, manifest hashes,
 source snapshots and truth bindings precede mathematical regeneration. Full
 regeneration checks trajectories, catalogs and metrics separately from independent
 scalar-load/DOP853 numerical audits. A smoke package is never public-task eligible.
+R038 additionally checks independent physics immediately before and after every
+recorded handover in its main.02s guarded runs; full-path numerical replay and
+these switch checks have separate bound receipts.
 An empirical envelope cannot certify safety or identify all distribution shifts.
