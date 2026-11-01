@@ -954,5 +954,33 @@ def imitation_driver_smoke_command(output: Annotated[Path, typer.Option()]) -> N
     typer.echo(json.dumps(verify_imitation_evaluation(output, progress), indent=2))
 
 
+@app.command("prepare-recovery-benchmark")
+def prepare_recovery_command(reference: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Freeze accepted R036 inputs and code before multi-lap evaluation."""
+    from apexsim.examples.recovery_study import prepare_recovery
+
+    typer.echo(json.dumps(prepare_recovery(reference, output), indent=2))
+
+
+@app.command("run-recovery-benchmark")
+def run_recovery_command(inputs: Annotated[Path, typer.Option()], output: Annotated[Path, typer.Option()]) -> None:
+    """Continuous five-lap public or three-lap explicitly simulated study."""
+    from apexsim.examples.recovery_study import run_recovery
+
+    typer.echo(json.dumps(run_recovery(inputs, output, lambda message: typer.echo(message, err=True)), indent=2))
+
+
+@app.command("verify-recovery-benchmark")
+def verify_recovery_command(output: Path, receipt: Annotated[Path | None, typer.Option()] = None) -> None:
+    """Regenerate all continuous paths and repeat independent numerical audits."""
+    from apexsim.examples.recovery_study import verify_recovery
+    from apexsim.provenance import write_manifest
+
+    result = verify_recovery(output, lambda message: typer.echo(message, err=True))
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+
+
 if __name__ == "__main__":
     app()
