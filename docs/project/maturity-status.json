@@ -420,6 +420,21 @@
     "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
     "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
   },
+  "conditional_support_fallback": {
+    "backlog_id": "R038",
+    "status": "IN_PROGRESS",
+    "decision": "REJECT_SUPPORT_FALLBACK",
+    "summary_sha256": "40c29043262d4c3ab058596a7c91bbaa8c324f11038b614e2895d455d1e1e99c",
+    "saved_runs_replayed": 52,
+    "nominal_fallback_cap": 0.05,
+    "nominal_fallback_range": [
+      0.08144458281444583,
+      0.08169364881693648
+    ],
+    "report": "docs/verification/recovery-support-report.md",
+    "replay": "docs/verification/support-public-replay.json",
+    "production_promotion": false
+  },
   "conditional_multilap_recovery": {
     "backlog_id": "R037",
     "status": "DONE",

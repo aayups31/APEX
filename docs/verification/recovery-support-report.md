@@ -92,19 +92,19 @@ checked 189,224 held actions and rejected corrupt, incomplete and reserved-event
 
 The frozen detector and its source seal were pushed in d7bbc95 before testing.
 The final implementation passed 748 local tests and both GitHub CI jobs.
-[Detector](support-detector.json) · [Source seal](support-detector-freeze.json) · [CI](https://github.com/aayups31/APEX/actions/runs/41362093331)
+[Detector](support-detector.json) Â· [Source seal](support-detector-freeze.json) Â· [CI](https://github.com/aayups31/APEX/actions/runs/41362093331)
 
 All guarded stability, injected-fault detection and release, hard-abstention,
 refinement and independent physics gates passed. The campaign retained 40 physical
 cases and 12 hard-abstention cases. The independent audit checked both sides of
 352 handovers across 704 intervals.
 
-The nominal fallback fraction was 8.14–8.17% across the four conditions,
+The nominal fallback fraction was 8.14â€“8.17% across the four conditions,
 exceeding the preregistered 5% cap in each condition. Per nominal run,
-118–121 commands triggered feature OOD and 207–210 additional commands spent
+118â€“121 commands triggered feature OOD and 207â€“210 additional commands spent
 time in recovery hysteresis. The frozen decision is REJECT_SUPPORT_FALLBACK.
-R038 remains open. Full replay is in progress.
-[Primary summary](support-primary-summary.json) · [Primary cases](support-primary-results.json)
+R038 remains open. All 52 cases reproduced with zero difference. The boundary inspection checked 132,588 saved actions and rejected altered evidence and cutoff. [Replay receipt](support-public-replay.json) | [Boundary inspection](support-boundaries.json) | [Disposition](recovery-support-disposition.json)
+[Primary summary](support-primary-summary.json) Â· [Primary cases](support-primary-results.json)
 
 A new candidate needs a separately frozen calibration of the feature envelope
 and release behavior, followed by evaluation on an independent held-out cohort

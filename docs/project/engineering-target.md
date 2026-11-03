@@ -60,7 +60,7 @@ Source pace disagreement remains large. R036's
 [conditional imitation study](../verification/imitation-driver-report.md) is also
 complete:23.6% lower nominal tracking RMSE, eight passing final cases and713
 passing tests, with a higher nominal peak error and no real-car accuracy claim.
-R037 multi-lap recovery and R038 OOD/fallback are the next P0 gates. Calibrated
+R037 multi-lap recovery is complete. R038 OOD/fallback remains the open P0 gate. Calibrated
 prediction uncertainty, all-regime car replay and real-car intervention validity
 remain unestablished.
 Tyre/fuel/ERS validation, stochastic full-field behavior,

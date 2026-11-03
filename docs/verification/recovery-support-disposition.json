@@ -1,0 +1,18 @@
+{
+  "completed": [
+    "R037"
+  ],
+  "content_sha256": "d759a4386f71d06be233a96068bedbb519412cb4f7aebcc2821cca5bac61588a",
+  "date": "2026-11-03",
+  "implementation_ci": 41362093331,
+  "local_tests_passed": 748,
+  "nominal_fallback_cap": 0.05,
+  "open": [
+    "R038"
+  ],
+  "production_promotion": false,
+  "recovery": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+  "schema_version": "apex-recovery-support-disposition-v1",
+  "support": "40c29043262d4c3ab058596a7c91bbaa8c324f11038b614e2895d455d1e1e99c",
+  "support_decision": "REJECT_SUPPORT_FALLBACK"
+}

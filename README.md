@@ -134,7 +134,7 @@ is complete: a45-coefficient policy trained from a simulated preview expert redu
 nominal tracking RMSE23.6% versus R035. All eight final cases pass and44 saved
 comparator/refinement runs reproduce exactly. Worst nominal peak error rises
 from.326m to.383m; source pace remains unvalidated. All713 tests pass locally and
-on Python3.11/3.12 CI. Next are R037 multi-lap recovery and R038 OOD/fallback.
+on Python3.11/3.12 CI. R037 multi-lap recovery is complete. R038 remains open after its public candidate exceeded the nominal fallback cap.
 Production remains unchanged.
 
 ---

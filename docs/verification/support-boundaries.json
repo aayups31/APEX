@@ -1,0 +1,29 @@
+{
+  "action_bounds": {
+    "held_actions": 132588,
+    "maximum_brake_force_n": 15010.477404779856,
+    "maximum_rear_drive_power_w": 319436.5326018908,
+    "maximum_steering_rad": 0.2286099523332722,
+    "maximum_steering_rate_radps": 1.4999999999999998,
+    "scope": "SAVED_ACTION_AND_STATE_PRIOR_BOUND_INSPECTION; DYNAMICS_HAVE_SEPARATE_REPLAY",
+    "verified": true
+  },
+  "actual_detector_boundary_probes": {
+    "inside_axis_points_supported": 16,
+    "joint_in_box_corner_not_rejected": true,
+    "outside_axis_points_rejected": 16,
+    "scope": "CONSTRUCTED_API_BOUNDARY_AND_STRUCTURAL_BLIND_SPOT_CHECKS; NOT_REAL_WORLD_OOD_ACCURACY"
+  },
+  "content_sha256": "28b1e31794f0b93eb45ccffdd4f6456450b97845c67913a7495ca2d54a6e1f38",
+  "corrupted_payload_rejection": "Research evidence inventory/hash mismatch",
+  "independent_catalog": true,
+  "missing_case_rejection": "Independent complete physical/failure/abstention catalog mismatch",
+  "portable_source_binding": true,
+  "resealed_changed_cutoff_rejection": "Scientific replay numeric mismatch: R038 refitted envelope/cutoff",
+  "resealed_missing_case_independent_catalog_rejection": "Independent complete physical/failure/abstention catalog mismatch",
+  "reserved_header_rejection": "Permanent benchmark event 2024/round 4 is forbidden in development/calibration",
+  "schema_version": "apex-support-boundary-v1",
+  "scope": "ACTUAL_ARTIFACT_COPIES; FULL_SCIENTIFIC_REGENERATION_HAS_SEPARATE_BOUND_RECEIPT",
+  "summary_sha256": "40c29043262d4c3ab058596a7c91bbaa8c324f11038b614e2895d455d1e1e99c",
+  "verified": true
+}
