@@ -1,0 +1,16 @@
+{
+  "content_sha256": "86ee7ac1b800bbe415bfb061bd3492b96612193248dd4f25c1e048d62f080e01",
+  "evidence_sha256": "f8495fe468ce992a8d3bd3844916d7ce1274008b7e95d74126af5b9294425d93",
+  "files": {
+    "support-evidence.json": {
+      "bytes": 570271,
+      "sha256": "3f7c059237e1d697cc341f4b103f8f0fa46e34a1ef40efc8ab34c1a0ad0686d3"
+    },
+    "support-summary.png": {
+      "bytes": 186589,
+      "sha256": "43b85e4fc36d1d3fcc8df29fd84d5e1c346bc8ab0fa128b808cc0708e7396d3e"
+    }
+  },
+  "publisher_sha256": "03c19be5d7b37ad749a51fa1be11710bcdc2611aa71fe1a758b7d2d6957e9029",
+  "schema_version": "apex-support-publication-manifest-v1"
+}

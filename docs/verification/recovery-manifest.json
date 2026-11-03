@@ -1,0 +1,16 @@
+{
+  "content_sha256": "985839354c442b1295ed174deefaa9d6fda66630ddd59ef3ceaa0fd17e695579",
+  "evidence_sha256": "e0642b1a1500a4ffa22a4554326a4773480178925a836b7466f0539cc658cda9",
+  "files": {
+    "recovery-evidence.json": {
+      "bytes": 270791,
+      "sha256": "b1c090e3e1f0294901550ccd3cbaaa727145b1c2f0e39ab81c4c68415532d333"
+    },
+    "recovery-summary.png": {
+      "bytes": 231035,
+      "sha256": "73557c8bc25ba8ec2d74e7cf7167d06d580e20577cfadd90f2c62bd0003f01c6"
+    }
+  },
+  "publisher_sha256": "03c19be5d7b37ad749a51fa1be11710bcdc2611aa71fe1a758b7d2d6957e9029",
+  "schema_version": "apex-recovery-publication-manifest-v1"
+}
