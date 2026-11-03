@@ -430,10 +430,13 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "decision": "REJECT_CROSSOVER_CANDIDATE",
-    "observed_windows": 72,
-    "matched_windows": 0,
-    "report": "docs/verification/tyre-wear-compounds-report.md"
+    "decision": "REJECT_CAUSAL_CROSSOVER_CANDIDATE",
+    "held_out_blocks": 37,
+    "observed_crossovers": 6,
+    "matched_crossovers": 0,
+    "original_report": "docs/verification/tyre-wear-compounds-report.md",
+    "report": "docs/verification/compound-confirmation-report.md",
+    "replay": "docs/verification/compound-v2-replay.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
