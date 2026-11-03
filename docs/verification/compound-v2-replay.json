@@ -1,0 +1,10 @@
+{
+  "blocks": 37,
+  "byte_identical": true,
+  "content_sha256": "daff02e07f9c62af144347a7aa751b63ba0ce2a1bad1ee021321eccd29edcff1",
+  "decision": "REJECT_CAUSAL_CROSSOVER_CANDIDATE",
+  "file_sha256": "86c0a6bc67353217371c5881b79f9020c5df30f76cd1f079a8392bfda377f771",
+  "opposite_drift_on_observed_crossovers": 4,
+  "results_sha256": "d9c9d7586a1178c7b306d062d783caa2d6c597cca1f4130b8e5e6b170704deaf",
+  "verified": true
+}
