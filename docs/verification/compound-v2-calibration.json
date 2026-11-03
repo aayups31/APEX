@@ -1,0 +1,23 @@
+{
+  "content_sha256": "af97397d5d608df8d24822dcfb8184b0a26693f1a2b32cbf0b4a724a74a43141",
+  "implementation": {
+    "COMPOUND_CROSSOVER_V2.md": "3d5b740109f6523ee6c11ec2f23f488b847d90b55b150b6b413e83172265fffa",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135"
+  },
+  "segments": {
+    "HARD": 108,
+    "MEDIUM": 38,
+    "SOFT": 27
+  },
+  "slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "source_sha256": "d79966d3b13c06cb8a0bd6f6bcff1690a10965d6414e0e71840ecf6d7811d6a2",
+  "training_rounds": [
+    1,
+    3,
+    6
+  ]
+}
