@@ -16,3 +16,13 @@ def test_traffic_forecast_has_bounded_exposure_and_antisymmetric_pace(monkeypatc
     assert reverse_exposure == exposure[::-1]
     assert value == pytest.approx(-.51)
     assert reverse == pytest.approx(-value)
+
+
+def test_scope_less_safety_car_deployment_is_global(monkeypatch):
+    scripts = Path(__file__).resolve().parents[2]/"research/scripts"
+    monkeypatch.syspath_prepend(str(scripts))
+    normalize = run_path(str(scripts/"confirm_compound_traffic.py"))["normalize_race_control"]
+    rows = [{"category": "SafetyCar", "scope": None, "message": "SAFETY CAR DEPLOYED"},
+            {"category": "Flag", "scope": "Sector", "message": "YELLOW"}]
+    assert normalize(rows) == [{**rows[0], "scope": "Track"}, rows[1]]
+    assert rows[0]["scope"] is None

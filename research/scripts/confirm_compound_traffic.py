@@ -71,6 +71,15 @@ def predict(frozen, prefix, compounds, traffic):
     return float(base+frozen["seconds_per_share"]*(future[0]-future[1]-left+right)), future.tolist()
 
 
+def normalize_race_control(rows):
+    """Map scope-less deployments to global status for the v2 context filter."""
+    return [
+        {**row, "scope": "Track"} if row.get("category") == "SafetyCar"
+        and "DEPLOYED" in (row.get("message") or "").upper() else row
+        for row in rows
+    ]
+
+
 def acquire(root):
     root.mkdir(parents=True)
     intervals = root/"intervals"
@@ -111,6 +120,7 @@ def evaluate(frozen, root):
         if (identity["year"], identity["meeting_key"], identity["session_name"]) != (2025, meeting, "Race"):
             raise ValueError("Race identity mismatch")
         unsupported_pairs[session] = 0
+        tables["race_control"] = normalize_race_control(tables["race_control"])
         for driver, stints in sorted(stint_rows(tables).items()):
             for (i, a, x), (j, b, y) in combinations(stints, 2):
                 if a == b:
