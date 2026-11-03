@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-11-01",
+  "last_progress_date": "2026-11-03",
   "research_inventory": {
-    "done": 36,
+    "done": 37,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R037"
+    "R038"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -393,7 +393,7 @@
     "full_regression": {"passed": 690, "python_versions": ["3.11", "3.12"], "ci_run": 41243887574},
     "implementation_commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
     "artifact_test_commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
-    "follow_up_order": ["R037", "R038"],
+    "follow_up_order": ["R038"],
     "limitations": ["Known supplied reconstructed map and generic vehicle priors", "Source lap time/speed agreement is poor; no real-car pace validation", "Multi-lap drift, broad recovery and OOD/fallback remain later gates", "No formal R4 or production promotion"]
   },
   "matched_open_loop_error_report": {
@@ -419,6 +419,18 @@
     "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
     "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
     "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
+  },
+  "conditional_multilap_recovery": {
+    "backlog_id": "R037",
+    "status": "DONE",
+    "summary_sha256": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+    "report": "docs/verification/recovery-support-report.md",
+    "replay": "docs/verification/recovery-public-replay.json",
+    "boundaries": "docs/verification/recovery-boundaries.json",
+    "required_cases_passed": 28,
+    "saved_runs_replayed": 29,
+    "maximum_recovery_s": 0.8,
+    "production_promotion": false
   },
   "conditional_imitation_driver": {
     "backlog_id": "R036",
@@ -452,7 +464,7 @@
     "production_promotion": false,
     "targeted_tests": 23,
     "full_regression": {"passed": 713, "python_versions": ["3.11", "3.12"], "ci_run": 41350406803},
-    "follow_up_order": ["R037", "R038"],
+    "follow_up_order": ["R038"],
     "limitations": [
       "Tracking gains inherit an analytic preview expert; no new driving knowledge or superiority over that expert",
       "Nominal peak error increases despite RMSE/P95 gains; separate smoke policy fails improvement gate",

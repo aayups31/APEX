@@ -1,6 +1,6 @@
 # R037/R038 continuous recovery and support supervision
 
-2026-11-01. **IN PROGRESS; public acceptance and complete replay are pending.**
+2026-11-03. **R037 complete. R038 public evaluation in progress.**
 Research foundation R1 and production kernel R0 remain unchanged.
 [R037 protocol](../../research/protocols/MULTILAP_RECOVERY.md),
 [R038 protocol](../../research/protocols/SUPPORT_FALLBACK.md),
@@ -84,7 +84,9 @@ difference is.000740098m, speed difference.000207069m/s and finish difference
 The preregistered.3rad large challenge exits the5m experiment reference corridor
 at7236.045515m of progress. Its prefix and attempted final action are retained;
 this is not replaced by a successful run or credited as recovered. Full29-case
-scientific regeneration is now running, so R037 task closure remains pending.
+[scientific regeneration](recovery-public-replay.json) reproduced all saved arrays
+with zero difference. The [independent boundary inspection](recovery-boundaries.json)
+checked 189,224 held actions and rejected corrupt, incomplete and reserved-event evidence.
 
 R037 runs all four frozen source conditions across five continuous laps with both
 controllers and both pulse signs, plus nominal timestep refinements and the large
@@ -98,3 +100,5 @@ source-bound publication and full regression/CI. No DONE status is inferred from
 the implementation or synthetic results. Real-car pace, measured steering,
 unknown-physics recognition, race-distance resource dynamics and formal maturity
 promotion remain unavailable. R039 thermal physics follows these scoped gates.
+
+The final implementation passed 748 local tests. The [frozen R038 detector](support-detector.json) and its [source seal](support-detector-freeze.json) were pushed in d7bbc95 before the public fault campaign.
