@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-03",
   "research_inventory": {
-    "done": 37,
+    "done": 38,
     "total": 73
   },
   "build_inventory": {
@@ -419,6 +419,18 @@
     "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
     "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
     "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
+  },
+  "tyre_thermal_replay": {
+    "backlog_id": "R039",
+    "status": "DONE",
+    "completed_date": "2026-11-03",
+    "scope": "RESEARCH_TWO_NODE_EFFECTIVE_AXLE_HEAT_BALANCE",
+    "summary_sha256": "5169eeff132b7a373589747a51607aa360d6e40a2020cf03f1a714cc87108ff5",
+    "report": "docs/verification/tyre-thermal-report.md",
+    "replay": "docs/verification/thermal-replay.json",
+    "cases": 4,
+    "intervals": 26780,
+    "production_promotion": false
   },
   "conditional_support_fallback": {
     "backlog_id": "R038",

@@ -37,3 +37,6 @@ response. Wear coupling belongs to R040.
 ```powershell
 apexsim run-tyre-thermal-study --recovery .cache/r037-public-20261101 --verification docs/verification/recovery-public-replay.json --output .cache/thermal-fresh
 ```
+
+R039 is complete for this research scope. Both Python 3.11 and 3.12 implementation
+CI jobs passed 758 tests. [Implementation CI](https://github.com/aayups31/APEX/actions/runs/41701813990)

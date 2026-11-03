@@ -36,7 +36,7 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 37/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 38/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
 R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
 adds independent temporal faithfulness tests and finite-catalogue counterfactual

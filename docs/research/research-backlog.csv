@@ -37,7 +37,7 @@ R035,R4,P0,driver,Calibrate transparent driver policy,single-car replay,complete
 R036,R4,P1,driver,Train imitation policy with event-level splits,transparent policy,beats transparent policy without instability,DONE
 R037,R4,P0,closed-loop,Add compounding-error and recovery benchmark,driver policy,bounded multi-lap drift,DONE
 R038,R4,P0,safety,Add OOD detector and fallback controller,closed-loop benchmark,abstention/fallback tests,IN_PROGRESS
-R039,R5,P0,tyres,Implement two-node tyre thermal model,vehicle replay,heat balance and temperature response,TODO
+R039,R5,P0,tyres,Implement two-node tyre thermal model,vehicle replay,heat balance and temperature response,DONE
 R040,R5,P0,tyres,Connect sliding energy to wear state,thermal model,monotonic/sensitivity tests,TODO
 R041,R5,P0,tyres,Calibrate compound-specific pace/wear priors,public stints,held-out crossover prediction,TODO
 R042,R5,P1,optimization,Implement multi-lap tyre optimal-control test,thermal/wear model,mesh convergence and pit crossover,TODO
