@@ -1,0 +1,24 @@
+{
+  "action_bounds": {
+    "held_actions": 189224,
+    "maximum_brake_force_n": 15010.477404779856,
+    "maximum_rear_drive_power_w": 319509.704512481,
+    "maximum_steering_rad": 0.22686182991376833,
+    "maximum_steering_rate_radps": 1.4999999999999998,
+    "scope": "SAVED_ACTION_AND_STATE_PRIOR_BOUND_INSPECTION; DYNAMICS_HAVE_SEPARATE_REPLAY",
+    "verified": true
+  },
+  "actual_detector_boundary_probes": null,
+  "content_sha256": "e4b327309e1eeeb3b7acb66c18fd14b628780f5df922f1d6dc27feaf181ec893",
+  "corrupted_payload_rejection": "Research evidence inventory/hash mismatch",
+  "independent_catalog": true,
+  "missing_case_rejection": "Independent complete physical/failure/abstention catalog mismatch",
+  "portable_source_binding": true,
+  "resealed_changed_cutoff_rejection": null,
+  "resealed_missing_case_independent_catalog_rejection": "Independent complete physical/failure/abstention catalog mismatch",
+  "reserved_header_rejection": "Permanent benchmark event 2024/round 4 is forbidden in development/calibration",
+  "schema_version": "apex-recovery-boundary-v1",
+  "scope": "ACTUAL_ARTIFACT_COPIES; FULL_SCIENTIFIC_REGENERATION_HAS_SEPARATE_BOUND_RECEIPT",
+  "summary_sha256": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+  "verified": true
+}

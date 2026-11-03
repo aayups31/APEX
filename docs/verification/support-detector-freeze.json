@@ -1,0 +1,19 @@
+{
+  "commit": "825fd3930a92b2f8af2b5c121b8b70bca72ec274",
+  "content_sha256": "4387e1110ae22d4bc7f80027740fa3d2934690c654c6d71bc2b080ebdc46aad0",
+  "implementation_sha256": {
+    "SUPPORT_FALLBACK.md": "c3f4d31f9e6a8c203107c6e43ae6c429bb4e5ce5ed87d31846fb994644d0f2c1",
+    "support_audit.py": "06a12083ffa2e57ddcf55509e1988a1a568c874c3f456d605a27430bb6746065",
+    "support_fallback.py": "4b2204c0e829c7c0cb54d82bc9b19db0e641ddb1055dbabbd8763a0a32f78ae9",
+    "support_study.py": "fb38dffa16042d0c8510cdd867a0ba74e328efcb448f5aee7d58b91906f4d7de"
+  },
+  "ledger_sha256": "2f9da082a350f78e73c85c705d5607d5f8fc327e7bf4ad6e61b98ca43502831c",
+  "model_sha256": "168792ba89feb48a9dd3931f7dc3c16efa9e1fcd27095274d2a7d24851bac404",
+  "production_promotion": false,
+  "profile": "research",
+  "recovery_sha256": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+  "recovery_verification_sha256": "f8aa4483bc90da318e42a46eab60c444d2df8b424d68a3e4025e5ecd335179c6",
+  "schema_version": "apex-support-fallback-v1-detector",
+  "task_closure_eligible": false,
+  "test_outcomes_used": false
+}

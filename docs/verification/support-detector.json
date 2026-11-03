@@ -1,0 +1,256 @@
+{
+  "independent_audit": {
+    "maximum_parameter_difference": 3.469446951953614e-18,
+    "method": "INDEPENDENT_SORTED_LINEAR_QUANTILES_SCALAR_BOX",
+    "validation_exceedance_fraction": 0.0015103205235777815,
+    "verified": true
+  },
+  "ledger": {
+    "source_rollouts_sha256": "03ea161e6e3f4730a5c216f87730a5365886e83dad950dd041831515d5de9fda",
+    "source_training_sha256": "fb9f0b7cba7fae8981623a5a5000af81866cae7f76797c9b5e0468492743e63a",
+    "test_outcomes_used_for_fit": false,
+    "training_episodes": [
+      {
+        "case_id": "expert_train__F1_2023_R01_4_7__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_4_7",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_4_7__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_4_7",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_4_8__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_4_8",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_4_8__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_4_8",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_44_6__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_44_6",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_44_6__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_44_6",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_44_7__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_44_7",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R01_44_7__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R01",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R01_44_7",
+        "role": "train",
+        "rows": 1490,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_4_9__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_4_9",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_4_9__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_4_9",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_4_10__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_4_10",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_4_10__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "4",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_4_10",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_44_5__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_44_5",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_44_5__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_44_5",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_44_6__nominal__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_44_6",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      },
+      {
+        "case_id": "expert_train__F1_2023_R14_44_6__disturbed__0.02",
+        "collection_round": 0,
+        "completed": true,
+        "driver_id": "44",
+        "event_id": "F1_2023_R14",
+        "label_truth": "SIMULATED_EXPERT; NOT_HUMAN_STEERING",
+        "lap_id": "F1_2023_R14_44_6",
+        "role": "train",
+        "rows": 1335,
+        "total_weight": 0.0625
+      }
+    ],
+    "training_rows": 22600,
+    "validation_cases": [
+      "bc_d2_a1e-08__F1_2024_R01_4_15__nominal__0.02",
+      "bc_d2_a1e-08__F1_2024_R01_4_16__nominal__0.02",
+      "bc_d2_a1e-08__F1_2024_R01_44_2__nominal__0.02",
+      "bc_d2_a1e-08__F1_2024_R01_44_3__nominal__0.02"
+    ],
+    "validation_rows": 5959
+  },
+  "model": {
+    "center": [
+      0.7615427683047401,
+      -0.03640679327171781,
+      -0.036780332982619734,
+      0.0002992876521280049,
+      0.0012369705372834595,
+      0.0016067607833102973,
+      -0.0009705252807796771,
+      -0.003483767423929099
+    ],
+    "cutoff": 1.268740819899773,
+    "floors": [
+      0.05,
+      0.02,
+      0.02,
+      0.005,
+      0.005,
+      0.02,
+      0.01,
+      0.01
+    ],
+    "half_range": [
+      0.7118700148194909,
+      2.536349803911434,
+      2.536945988482901,
+      0.019420753801700594,
+      0.00788404840774124,
+      0.10482379252195095,
+      0.06218488995823103,
+      0.19884600349560744
+    ],
+    "release_commands": 10,
+    "release_fraction": 0.8,
+    "schema_version": "apex-empirical-support-v1",
+    "statistical_coverage_guarantee": false,
+    "test_outcomes_used": false,
+    "training_rows": 22600,
+    "validation_exceedance_fraction": 0.0015103205235777815,
+    "validation_rows": 5959
+  }
+}
