@@ -1,0 +1,11 @@
+{
+  "cases": 4,
+  "content_sha256": "d88d29bdf8ddaa9a449d598c6e402d2ce078626b1f5630294c0a196090e8d7cc",
+  "intervals": 26780,
+  "manifest_sha256": "27c95194ffd2849a73a9abdebc099f428e1d7efd39702dc19fdf62ed2eadb9ee",
+  "maximum_balance_error_j": 7.958078640513122e-11,
+  "maximum_independent_difference_k": 2.8421709430404007e-12,
+  "summary_sha256": "5169eeff132b7a373589747a51607aa360d6e40a2020cf03f1a714cc87108ff5",
+  "temperature_arrays_byte_identical": true,
+  "verified": true
+}

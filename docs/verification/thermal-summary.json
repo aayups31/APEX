@@ -1,0 +1,22 @@
+{
+  "air_k": 298.15,
+  "content_sha256": "5169eeff132b7a373589747a51607aa360d6e40a2020cf03f1a714cc87108ff5",
+  "implementation_sha256": {
+    "thermal_study.py": "650f16961e4801df17ecace108a29286271d078be6694590bf1349318be09f2c",
+    "tyre_thermal.py": "f72ea29e81a4a9fdb7fa582380c875a6b9aa633d47c7b4e047a33e50fbee8203"
+  },
+  "parameter_truth": "DECLARED_EFFECTIVE_AXLE_PRIORS",
+  "parameters": {
+    "air_w_k": 35.0,
+    "carcass_capacity_j_k": 20000.0,
+    "coupling_w_k": 100.0,
+    "road_w_k": 45.0,
+    "tread_capacity_j_k": 6000.0
+  },
+  "passed": true,
+  "production_promotion": false,
+  "recovery_sha256": "8b05c521a1080a1862a3c758288a6ffe1790ed0648a3c09715e71817ec53c2f3",
+  "replay_receipt_sha256": "ac6fbadb3d57c125ca05540817faf770ba005c9e29178144367d21fda21f91b8",
+  "road_k": 308.15,
+  "schema_version": "apex-tyre-thermal-v1"
+}
