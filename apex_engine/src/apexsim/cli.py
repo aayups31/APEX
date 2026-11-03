@@ -1031,5 +1031,36 @@ def run_tyre_thermal_study_command(
     typer.echo(json.dumps(run_thermal_study(recovery, verification, output), indent=2))
 
 
+@app.command("calibrate-support-confirmation")
+def calibrate_support_confirmation_command(
+    detector: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+) -> None:
+    """Freeze R038 second-candidate parameters from development episodes."""
+    from apexsim.examples.support_confirmation import calibrate
+
+    typer.echo(json.dumps(calibrate(detector, output), indent=2))
+
+
+@app.command("run-support-confirmation")
+def run_support_confirmation_command(
+    detector: Annotated[Path, typer.Option()],
+    frozen: Annotated[Path, typer.Option()],
+    archive: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+    verify: Annotated[bool, typer.Option()] = False,
+    receipt: Annotated[Path | None, typer.Option()] = None,
+) -> None:
+    """Run or regenerate the independent-event R038 confirmation campaign."""
+    from apexsim.examples.support_confirmation import run
+    from apexsim.examples.support_confirmation import verify as verify_confirmation
+    from apexsim.provenance import write_manifest
+
+    result = (verify_confirmation if verify else run)(detector, frozen, archive, output)
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+
+
 if __name__ == "__main__":
     app()
