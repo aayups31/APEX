@@ -1019,5 +1019,17 @@ def verify_support_command(output: Path, receipt: Annotated[Path | None, typer.O
     typer.echo(json.dumps(result, indent=2))
 
 
+@app.command("run-tyre-thermal-study")
+def run_tyre_thermal_study_command(
+    recovery: Annotated[Path, typer.Option()],
+    verification: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()],
+) -> None:
+    """Replay the R039 tread and carcass heat balance on accepted R037 trajectories."""
+    from apexsim.examples.thermal_study import run_thermal_study
+
+    typer.echo(json.dumps(run_thermal_study(recovery, verification, output), indent=2))
+
+
 if __name__ == "__main__":
     app()
