@@ -1,6 +1,6 @@
 # R037/R038 continuous recovery and support supervision
 
-2026-11-03. **R037 complete. R038 public evaluation in progress.**
+2026-11-03. **R037 complete. R038 public candidate rejected.**
 Research foundation R1 and production kernel R0 remain unchanged.
 [R037 protocol](../../research/protocols/MULTILAP_RECOVERY.md),
 [R038 protocol](../../research/protocols/SUPPORT_FALLBACK.md),
@@ -60,7 +60,7 @@ are detected while the constructed joint in-box corner remains undetected, an
 explicit structural blind spot. These constructed faults do not establish
 real-world OOD accuracy or a certified safe region.
 
-## Pending public evidence and next gate
+## Public R037 results
 
 R037's primary numerical campaign now passes every declared gate. The
 [primary summary](recovery-primary-summary.json) binds all
@@ -88,17 +88,24 @@ this is not replaced by a successful run or credited as recovered. Full29-case
 with zero difference. The [independent boundary inspection](recovery-boundaries.json)
 checked 189,224 held actions and rejected corrupt, incomplete and reserved-event evidence.
 
-R037 runs all four frozen source conditions across five continuous laps with both
-controllers and both pulse signs, plus nominal timestep refinements and the large
-challenge. R038 requires its accepted, fully regenerated parent before fitting the
-public detector. Detector centers/ranges use training features only; cutoff uses
-validation episodes only. Parameters must be pushed before R038 test execution.
+## Public R038 results
 
-Task completion still requires full public catalogs, retained unsafe prefixes,
-refinement, independent complete-horizon physics, complete scientific regeneration,
-source-bound publication and full regression/CI. No DONE status is inferred from
-the implementation or synthetic results. Real-car pace, measured steering,
-unknown-physics recognition, race-distance resource dynamics and formal maturity
-promotion remain unavailable. R039 thermal physics follows these scoped gates.
+The frozen detector and its source seal were pushed in d7bbc95 before testing.
+The final implementation passed 748 local tests and both GitHub CI jobs.
+[Detector](support-detector.json) · [Source seal](support-detector-freeze.json) · [CI](https://github.com/aayups31/APEX/actions/runs/41362093331)
 
-The final implementation passed 748 local tests. The [frozen R038 detector](support-detector.json) and its [source seal](support-detector-freeze.json) were pushed in d7bbc95 before the public fault campaign.
+All guarded stability, injected-fault detection and release, hard-abstention,
+refinement and independent physics gates passed. The campaign retained 40 physical
+cases and 12 hard-abstention cases. The independent audit checked both sides of
+352 handovers across 704 intervals.
+
+The nominal fallback fraction was 8.14–8.17% across the four conditions,
+exceeding the preregistered 5% cap in each condition. Per nominal run,
+118–121 commands triggered feature OOD and 207–210 additional commands spent
+time in recovery hysteresis. The frozen decision is REJECT_SUPPORT_FALLBACK.
+R038 remains open. Full replay is in progress.
+[Primary summary](support-primary-summary.json) · [Primary cases](support-primary-results.json)
+
+A new candidate needs a separately frozen calibration of the feature envelope
+and release behavior, followed by evaluation on an independent held-out cohort
+under the existing acceptance limits.

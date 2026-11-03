@@ -1,0 +1,17 @@
+{
+  "commit": "3e7906e057fe590d7e52a4036fd40d3543214770",
+  "content_sha256": "40c29043262d4c3ab058596a7c91bbaa8c324f11038b614e2895d455d1e1e99c",
+  "decision": "REJECT_SUPPORT_FALLBACK",
+  "detector_sha256": "4387e1110ae22d4bc7f80027740fa3d2934690c654c6d71bc2b080ebdc46aad0",
+  "implementation_sha256": {
+    "SUPPORT_FALLBACK.md": "c3f4d31f9e6a8c203107c6e43ae6c429bb4e5ce5ed87d31846fb994644d0f2c1",
+    "support_audit.py": "06a12083ffa2e57ddcf55509e1988a1a568c874c3f456d605a27430bb6746065",
+    "support_fallback.py": "4b2204c0e829c7c0cb54d82bc9b19db0e641ddb1055dbabbd8763a0a32f78ae9",
+    "support_study.py": "fb38dffa16042d0c8510cdd867a0ba74e328efcb448f5aee7d58b91906f4d7de"
+  },
+  "production_promotion": false,
+  "profile": "research",
+  "results_sha256": "52e2de858cf28aaa8b5ac29ea84d2b8184aeea8a485c2e6603ea7f0209fe34b3",
+  "schema_version": "apex-support-fallback-v1",
+  "task_closure_eligible": false
+}
