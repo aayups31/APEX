@@ -1,0 +1,16 @@
+{
+  "action_bounds": {
+    "held_actions": 132582,
+    "maximum_brake_force_n": 15843.858403650771,
+    "maximum_rear_drive_power_w": 319470.6786107262,
+    "maximum_steering_rad": 0.22662534768041762,
+    "maximum_steering_rate_radps": 1.4999999999999998,
+    "scope": "SAVED_ACTION_AND_STATE_PRIOR_BOUND_INSPECTION; DYNAMICS_HAVE_SEPARATE_REPLAY",
+    "verified": true
+  },
+  "axis_inside_supported": 16,
+  "axis_outside_rejected": 16,
+  "content_sha256": "609dc5a5089f78b19a65dee09a6783bc18850570adce64e0f2d7ad0c50209734",
+  "in_envelope_joint_corner_supported": true,
+  "summary_sha256": "2b054ca138d27a85c0b251fe9bb0b98e48f6fa903a3b7ea0e25fcdf3cefacc17"
+}

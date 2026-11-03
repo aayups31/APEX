@@ -1,0 +1,12 @@
+{
+  "archive_sha256": "dedafc83ea200ddd80ef31513d8ea75f4583c61980e53d008aa22596f09e6dbf",
+  "calibration_sha256": "b84196fc7983fcfb23e48c1dc38c0172bd8a983ed052aa2ed0772b3be451792e",
+  "content_sha256": "2b054ca138d27a85c0b251fe9bb0b98e48f6fa903a3b7ea0e25fcdf3cefacc17",
+  "passed": true,
+  "production_promotion": false,
+  "schema_version": "apex-support-confirmation-v2",
+  "source_hashes": {
+    "SUPPORT_FALLBACK_V2.md": "625336d3b0b8186870ea14d3632235fb5cc54620df59eb3a2285405f1bbb5fde",
+    "support_confirmation.py": "1b881379969b7830884b1514b3343bfdc90b8b81e1c8e6998362d205811dba99"
+  }
+}
