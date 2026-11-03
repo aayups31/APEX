@@ -48,7 +48,7 @@ completes four held-out nominal laps in generic-prior physics. Its source-pace
 shortfall remains explicit. R036's [conditional imitation study](../verification/imitation-driver-report.md)
 is complete with frozen supervised weights, event-level splits, an independently
 checked44-run evaluation and explicit peak-error/real-pace limitations. R037
-multi-lap drift and recovery is complete. R038 OOD/fallback remains open.
+multi-lap drift and recovery is complete. R038 fallback confirmation and R039 tyre heat balance have passed. R040 wear coupling is next.
 
 Research is incorporated through a traceable process:
 

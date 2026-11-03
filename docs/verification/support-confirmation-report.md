@@ -24,7 +24,7 @@ saved actions and detected all 16 out-of-envelope feature-axis probes. An
 in-envelope combined shift remains a blind spot for the axis-aligned detector.
 [Primary summary](support-v2-primary-summary.json) · [All cases](support-v2-primary-results.json) · [Boundary inspection](support-v2-boundaries.json)
 
-Full regeneration is in progress. The implementation passed 758 local tests
+Full regeneration reproduced all 52 cases with zero difference. R038 is complete for this research scope. [Replay](support-v2-replay.json) | [Completion receipt](r038-r039-completion.json) The implementation passed 758 local tests
 and 758 tests in each GitHub CI job.
 [Implementation CI](https://github.com/aayups31/APEX/actions/runs/41701813990)
 

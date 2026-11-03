@@ -36,7 +36,7 @@ and event/sequence uncertainty. R029's
 [accepted reference-geometry study](../verification/track-reconstruction-v3-report.md)
 passes all 48 test laps across Bahrain/Monza, with preserved prior failures,
 source-only target support, ten-lap sensitivity, native audit and portable replay.
-Research inventory is 38/73 DONE; build inventory 13/66. The scope is registered
+Research inventory is 39/73 DONE; build inventory 13/66. The scope is registered
 reference shape, with unknown surveyed road properties and no production promotion.
 R027/R028's [accepted explanation study](../verification/forecast-explanation-report.md)
 adds independent temporal faithfulness tests and finite-catalogue counterfactual
@@ -68,7 +68,7 @@ is complete: a simulated-expert-trained policy reduces nominal tracking RMSE23.6
 versus R035, with all eight final cases passing and44 exactly regenerated runs.
 Worst nominal peak error increases from.326m to.383m; the analytic expert remains
 equally accurate. All713 tests pass locally and on Python3.11/3.12 CI.
-R037 multi-lap drift and recovery is complete. R038 OOD/fallback remains the next priority after its frozen public rejection.
+R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling is next.
 These scoped component completions do not promote formal maturity.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.

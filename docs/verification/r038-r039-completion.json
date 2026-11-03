@@ -1,0 +1,33 @@
+{
+  "completed": [
+    "R038",
+    "R039"
+  ],
+  "content_sha256": "404ee8866ef276fccb4527d5c4acbed88cb302ea9ca67dcb5aaf03b671f637b7",
+  "date": "2026-11-03",
+  "implementation_ci": 41701813990,
+  "local_tests_passed": 758,
+  "nominal_fallback_cap": 0.05,
+  "nominal_fallback_fraction": 0.0,
+  "prior_support_decision": "REJECT_SUPPORT_FALLBACK",
+  "production_promotion": false,
+  "schema_version": "apex-r038-r039-completion-v1",
+  "support_replay": {
+    "cases": 52,
+    "maximum_replay_difference": 0.0,
+    "passed": true,
+    "summary_sha256": "2b054ca138d27a85c0b251fe9bb0b98e48f6fa903a3b7ea0e25fcdf3cefacc17",
+    "verified": true
+  },
+  "thermal_replay": {
+    "cases": 4,
+    "content_sha256": "d88d29bdf8ddaa9a449d598c6e402d2ce078626b1f5630294c0a196090e8d7cc",
+    "intervals": 26780,
+    "manifest_sha256": "27c95194ffd2849a73a9abdebc099f428e1d7efd39702dc19fdf62ed2eadb9ee",
+    "maximum_balance_error_j": 7.958078640513122e-11,
+    "maximum_independent_difference_k": 2.8421709430404007e-12,
+    "summary_sha256": "5169eeff132b7a373589747a51607aa360d6e40a2020cf03f1a714cc87108ff5",
+    "temperature_arrays_byte_identical": true,
+    "verified": true
+  }
+}

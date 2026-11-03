@@ -103,7 +103,7 @@ The nominal fallback fraction was 8.14–8.17% across the four conditions,
 exceeding the preregistered 5% cap in each condition. Per nominal run,
 118–121 commands triggered feature OOD and 207–210 additional commands spent
 time in recovery hysteresis. The frozen decision is REJECT_SUPPORT_FALLBACK.
-R038 remains open. All 52 cases reproduced with zero difference. The boundary inspection checked 132,588 saved actions and rejected altered evidence and cutoff. [Replay receipt](support-public-replay.json) | [Boundary inspection](support-boundaries.json) | [Disposition](recovery-support-disposition.json)
+The first R038 candidate reproduced all 52 cases with zero difference. The revised candidate later passed the independent-event gate. [Second campaign](support-confirmation-report.md) The boundary inspection checked 132,588 saved actions and rejected altered evidence and cutoff. [Replay receipt](support-public-replay.json) | [Boundary inspection](support-boundaries.json) | [Disposition](recovery-support-disposition.json)
 [Primary summary](support-primary-summary.json) · [Primary cases](support-primary-results.json)
 
 A new candidate needs a separately frozen calibration of the feature envelope
