@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "case_id": "learned__F1_2024_R16_4_2__nominal__0.02",
+      "final_wear": [
+        0.2950073043379025,
+        0.13550233511017312
+      ],
+      "intervals": 6695,
+      "maximum_dose_difference": 1.0547118733938987e-15,
+      "sliding_j": [
+        2154582.954809754,
+        1268688.5963048898
+      ]
+    },
+    {
+      "case_id": "learned__F1_2024_R16_4_3__nominal__0.02",
+      "final_wear": [
+        0.2950228549796534,
+        0.13549915152620456
+      ],
+      "intervals": 6695,
+      "maximum_dose_difference": 8.881784197001252e-16,
+      "sliding_j": [
+        2154648.5053054616,
+        1268661.2233848546
+      ]
+    },
+    {
+      "case_id": "learned__F1_2024_R16_44_2__nominal__0.02",
+      "final_wear": [
+        0.29502455426258245,
+        0.13549645392876639
+      ],
+      "intervals": 6695,
+      "maximum_dose_difference": 9.43689570931383e-16,
+      "sliding_j": [
+        2154655.417756431,
+        1268641.3661724245
+      ]
+    },
+    {
+      "case_id": "learned__F1_2024_R16_44_3__nominal__0.02",
+      "final_wear": [
+        0.29503506092258336,
+        0.135500076815085
+      ],
+      "intervals": 6695,
+      "maximum_dose_difference": 6.106226635438361e-16,
+      "sliding_j": [
+        2154708.984624022,
+        1268663.5379790242
+      ]
+    }
+  ],
+  "passed": true,
+  "thermal_sha256": "5169eeff132b7a373589747a51607aa360d6e40a2020cf03f1a714cc87108ff5"
+}
