@@ -1,0 +1,20 @@
+{
+  "calibration_blocks": 35,
+  "content_sha256": "2b60a5168cc478739b4a3dc74fd3fb40bc443db4729c86a5805ce9e00fb8a5d7",
+  "development_sha256": "d9c9d7586a1178c7b306d062d783caa2d6c597cca1f4130b8e5e6b170704deaf",
+  "hashes": {
+    "COMPOUND_TRAFFIC_V3.md": "5ba4848441f8e1947f783a5795970d3634d9142d32a69a2f0835a41b8a366056",
+    "audit_compound_traffic.py": "0e40d8deaf590d098c745ea004c800b50bf5cb4dfae26e8c8bb88c474c640719",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_traffic.py": "d60c45cc9addae352149097627cbbf6af4481c4fc5c81488912d39558083a221"
+  },
+  "seconds_per_share": 0.05465712076999711,
+  "slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "traffic_offset": 0.16519244549583784,
+  "traffic_sha256": "f7544c8e0455ca24ad6fef280c424b0f8aa6d776b02dbaa70f0a855d82a52fd2",
+  "traffic_slope": 0.425424092404702
+}

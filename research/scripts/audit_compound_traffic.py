@@ -6,7 +6,7 @@ from pathlib import Path
 
 from apexsim.provenance import file_sha256, write_manifest
 from apexsim.research.evidence import check_seal, read_json, seal
-from confirm_compound_crossover import SESSIONS, timestamp
+from confirm_compound_crossover import timestamp
 
 
 def audit(results, archive, intervals):
@@ -17,7 +17,7 @@ def audit(results, archive, intervals):
     if evidence["archive_sha256"] != manifest["content_sha256"]:
         raise ValueError("Results and archive do not match")
     rows, sources = [], {}
-    for session in SESSIONS:
+    for session in dict.fromkeys(case["session"] for case in evidence["cases"]):
         tables = {}
         for endpoint in ("laps", "stints"):
             name = f"{session}-{endpoint}.json"
