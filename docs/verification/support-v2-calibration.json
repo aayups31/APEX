@@ -1,0 +1,75 @@
+{
+  "content_sha256": "b84196fc7983fcfb23e48c1dc38c0172bd8a983ed052aa2ed0772b3be451792e",
+  "development_cases": [
+    {
+      "commands": 4476,
+      "event_id": "F1_2023_R01",
+      "lap_id": "F1_2023_R01_4_7",
+      "role": "train",
+      "score_q999": 1.2004509193093555
+    },
+    {
+      "commands": 4015,
+      "event_id": "F1_2023_R14",
+      "lap_id": "F1_2023_R14_4_9",
+      "role": "train",
+      "score_q999": 2.0704122431060537
+    },
+    {
+      "commands": 4476,
+      "event_id": "F1_2024_R01",
+      "lap_id": "F1_2024_R01_4_15",
+      "role": "validation",
+      "score_q999": 1.1998228615475104
+    }
+  ],
+  "envelope": {
+    "center": [
+      0.7615427683047401,
+      -0.03640679327171781,
+      -0.036780332982619734,
+      0.0002992876521280049,
+      0.0012369705372834595,
+      0.0016067607833102973,
+      -0.0009705252807796771,
+      -0.003483767423929099
+    ],
+    "cutoff": 2.277453467416659,
+    "floors": [
+      0.05,
+      0.02,
+      0.02,
+      0.005,
+      0.005,
+      0.02,
+      0.01,
+      0.01
+    ],
+    "half_range": [
+      0.7118700148194909,
+      2.536349803911434,
+      2.536945988482901,
+      0.019420753801700594,
+      0.00788404840774124,
+      0.10482379252195095,
+      0.06218488995823103,
+      0.19884600349560744
+    ],
+    "release_commands": 10,
+    "release_fraction": 0.8,
+    "schema_version": "apex-empirical-support-v1",
+    "statistical_coverage_guarantee": false,
+    "test_outcomes_used": false,
+    "training_rows": 22600,
+    "validation_exceedance_fraction": 0.0015103205235777815,
+    "validation_rows": 5959
+  },
+  "original_cutoff": 1.268740819899773,
+  "parent_sha256": "4387e1110ae22d4bc7f80027740fa3d2934690c654c6d71bc2b080ebdc46aad0",
+  "schema_version": "apex-support-confirmation-v2-calibration",
+  "source_hashes": {
+    "SUPPORT_FALLBACK_V2.md": "625336d3b0b8186870ea14d3632235fb5cc54620df59eb3a2285405f1bbb5fde",
+    "support_confirmation.py": "1b881379969b7830884b1514b3343bfdc90b8b81e1c8e6998362d205811dba99"
+  },
+  "test_outcomes_used": false
+}
