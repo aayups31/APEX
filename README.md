@@ -134,7 +134,7 @@ is complete: a45-coefficient policy trained from a simulated preview expert redu
 nominal tracking RMSE23.6% versus R035. All eight final cases pass and44 saved
 comparator/refinement runs reproduce exactly. Worst nominal peak error rises
 from.326m to.383m; source pace remains unvalidated. All713 tests pass locally and
-on Python3.11/3.12 CI. R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling is next.
+on Python3.11/3.12 CI. R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling passed its replay gate. R041 compound crossover remains open.
 Production remains unchanged.
 
 ---

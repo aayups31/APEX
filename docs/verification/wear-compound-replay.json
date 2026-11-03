@@ -1,0 +1,9 @@
+{
+  "compound_decision": "REJECT_CROSSOVER_CANDIDATE",
+  "content_sha256": "ec11c38a6bfa1e66c8f091a7dfb9096768cf64058e8a69db5876ebf8a8222879",
+  "exact_inventory": true,
+  "intervals": 26780,
+  "summary_sha256": "d3ab6618be26c16ddf53f88ed51798ced23cb6c9fdfb3bb0547d65b0acaaecb8",
+  "verified": true,
+  "wear_cases": 4
+}

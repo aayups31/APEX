@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-03",
   "research_inventory": {
-    "done": 39,
+    "done": 40,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,7 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R040"
+    "R041"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -419,6 +419,21 @@
     "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
     "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
     "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
+  },
+  "tyre_wear_replay": {
+    "backlog_id": "R040",
+    "status": "DONE",
+    "intervals": 26780,
+    "report": "docs/verification/tyre-wear-compounds-report.md",
+    "production_promotion": false
+  },
+  "compound_crossover": {
+    "backlog_id": "R041",
+    "status": "IN_PROGRESS",
+    "decision": "REJECT_CROSSOVER_CANDIDATE",
+    "observed_windows": 72,
+    "matched_windows": 0,
+    "report": "docs/verification/tyre-wear-compounds-report.md"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

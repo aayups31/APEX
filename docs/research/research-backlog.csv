@@ -38,8 +38,8 @@ R036,R4,P1,driver,Train imitation policy with event-level splits,transparent pol
 R037,R4,P0,closed-loop,Add compounding-error and recovery benchmark,driver policy,bounded multi-lap drift,DONE
 R038,R4,P0,safety,Add OOD detector and fallback controller,closed-loop benchmark,abstention/fallback tests,DONE
 R039,R5,P0,tyres,Implement two-node tyre thermal model,vehicle replay,heat balance and temperature response,DONE
-R040,R5,P0,tyres,Connect sliding energy to wear state,thermal model,monotonic/sensitivity tests,TODO
-R041,R5,P0,tyres,Calibrate compound-specific pace/wear priors,public stints,held-out crossover prediction,TODO
+R040,R5,P0,tyres,Connect sliding energy to wear state,thermal model,monotonic/sensitivity tests,DONE
+R041,R5,P0,tyres,Calibrate compound-specific pace/wear priors,public stints,held-out crossover prediction,IN_PROGRESS
 R042,R5,P1,optimization,Implement multi-lap tyre optimal-control test,thermal/wear model,mesh convergence and pit crossover,TODO
 R043,R5,P0,energy,Implement sector-level ERS deploy/harvest model,vehicle model,state and terminal bounds,TODO
 R044,R5,P0,energy,Implement shrinking-horizon energy MPC,ERS model,disturbance response and runtime,TODO

@@ -32,3 +32,7 @@ better-controlled stint comparisons and an independent event evaluation.
 ```powershell
 python research/scripts/verify_tyre_wear_compounds.py --recovery .cache/r037-public-20261101 --thermal .cache/r039-thermal-20261103 --dataset .cache/tyre-dataset-20261011.json --output .cache/wear-compound-fresh
 ```
+
+The complete saved inventory reproduced exactly. R040 is DONE for its research
+scope. R041 remains open. Both Python 3.11 and 3.12 CI jobs passed.
+[Replay receipt](wear-compound-replay.json) | [CI](https://github.com/aayups31/APEX/actions/runs/41712299437)
