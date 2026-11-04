@@ -1,0 +1,2298 @@
+{
+  "comparisons": [
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 32,
+          "scores": [
+            {
+              "mae_s": 0.1899374999999992,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.19246874999999974,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 59,
+          "scores": [
+            {
+              "mae_s": 0.3504067796610178,
+              "matched": 4,
+              "observed": 6,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.38359322033898263,
+              "matched": 2,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 60,
+          "scores": [
+            {
+              "mae_s": 0.2878499999999979,
+              "matched": 3,
+              "observed": 7,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.3252666666666658,
+              "matched": 2,
+              "observed": 8,
+              "predicted": 5
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 57,
+          "scores": [
+            {
+              "mae_s": 0.46292982456140375,
+              "matched": 4,
+              "observed": 12,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.4590175438596499,
+              "matched": 3,
+              "observed": 9,
+              "predicted": 5
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 41,
+          "scores": [
+            {
+              "mae_s": 0.29602439024390037,
+              "matched": 1,
+              "observed": 5,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.2754634146341456,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 77,
+          "scores": [
+            {
+              "mae_s": 0.33697402597402437,
+              "matched": 7,
+              "observed": 13,
+              "predicted": 13
+            },
+            {
+              "mae_s": 0.38172727272727197,
+              "matched": 7,
+              "observed": 14,
+              "predicted": 14
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 37,
+          "scores": [
+            {
+              "mae_s": 0.38705405405405746,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.4481621621621639,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 80,
+          "scores": [
+            {
+              "mae_s": 0.3843250000000017,
+              "matched": 2,
+              "observed": 13,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3992250000000016,
+              "matched": 1,
+              "observed": 10,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 3,
+      "kind": "persistence",
+      "macro_mae_s": 0.3475266003052052
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 32,
+          "scores": [
+            {
+              "mae_s": 0.19156249999999542,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.20115624999999415,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 1
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 59,
+          "scores": [
+            {
+              "mae_s": 0.2935254237288135,
+              "matched": 4,
+              "observed": 6,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.33310169491525604,
+              "matched": 2,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 60,
+          "scores": [
+            {
+              "mae_s": 0.3132666666666663,
+              "matched": 2,
+              "observed": 7,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3270166666666673,
+              "matched": 3,
+              "observed": 8,
+              "predicted": 4
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 57,
+          "scores": [
+            {
+              "mae_s": 0.39791228070175483,
+              "matched": 4,
+              "observed": 12,
+              "predicted": 7
+            },
+            {
+              "mae_s": 0.3997894736842107,
+              "matched": 3,
+              "observed": 9,
+              "predicted": 6
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 41,
+          "scores": [
+            {
+              "mae_s": 0.28492682926829016,
+              "matched": 1,
+              "observed": 5,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.2932195121951181,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 77,
+          "scores": [
+            {
+              "mae_s": 0.29026623376623334,
+              "matched": 9,
+              "observed": 13,
+              "predicted": 14
+            },
+            {
+              "mae_s": 0.3219155844155836,
+              "matched": 10,
+              "observed": 14,
+              "predicted": 15
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 37,
+          "scores": [
+            {
+              "mae_s": 0.32589189189189244,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.3890540540540551,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 80,
+          "scores": [
+            {
+              "mae_s": 0.3349000000000048,
+              "matched": 1,
+              "observed": 13,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3471500000000038,
+              "matched": 0,
+              "observed": 10,
+              "predicted": 0
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 3,
+      "kind": "median",
+      "macro_mae_s": 0.31529094137215874
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 32,
+          "scores": [
+            {
+              "mae_s": 0.25880942902752735,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.26513644256042057,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 59,
+          "scores": [
+            {
+              "mae_s": 0.27028232285748244,
+              "matched": 4,
+              "observed": 6,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.3115644634960594,
+              "matched": 2,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 60,
+          "scores": [
+            {
+              "mae_s": 0.28081741422032674,
+              "matched": 2,
+              "observed": 7,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.2998297313647128,
+              "matched": 2,
+              "observed": 8,
+              "predicted": 2
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 57,
+          "scores": [
+            {
+              "mae_s": 0.3666520417250369,
+              "matched": 4,
+              "observed": 12,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.3517921643351801,
+              "matched": 4,
+              "observed": 9,
+              "predicted": 6
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 41,
+          "scores": [
+            {
+              "mae_s": 0.26744557332510444,
+              "matched": 1,
+              "observed": 5,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.2633959469236597,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 77,
+          "scores": [
+            {
+              "mae_s": 0.2848598538769018,
+              "matched": 9,
+              "observed": 13,
+              "predicted": 15
+            },
+            {
+              "mae_s": 0.32959337196318245,
+              "matched": 10,
+              "observed": 14,
+              "predicted": 16
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 37,
+          "scores": [
+            {
+              "mae_s": 0.35199330784436456,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.42385268071170723,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 80,
+          "scores": [
+            {
+              "mae_s": 0.29883416779089844,
+              "matched": 1,
+              "observed": 13,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3115872452804852,
+              "matched": 0,
+              "observed": 10,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 3,
+      "kind": "ridge",
+      "macro_mae_s": 0.3085278848314406
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 32,
+          "scores": [
+            {
+              "mae_s": 0.25504653511106623,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.2615896146394774,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 59,
+          "scores": [
+            {
+              "mae_s": 0.2708941851971652,
+              "matched": 4,
+              "observed": 6,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.3123539871829284,
+              "matched": 2,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 60,
+          "scores": [
+            {
+              "mae_s": 0.26234457404309225,
+              "matched": 2,
+              "observed": 7,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.2861279070433433,
+              "matched": 2,
+              "observed": 8,
+              "predicted": 2
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 57,
+          "scores": [
+            {
+              "mae_s": 0.3645874663250451,
+              "matched": 4,
+              "observed": 12,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.34652989311584426,
+              "matched": 3,
+              "observed": 9,
+              "predicted": 5
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 41,
+          "scores": [
+            {
+              "mae_s": 0.26826154060197754,
+              "matched": 1,
+              "observed": 5,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.26373199099926903,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 77,
+          "scores": [
+            {
+              "mae_s": 0.2847385156919461,
+              "matched": 9,
+              "observed": 13,
+              "predicted": 15
+            },
+            {
+              "mae_s": 0.328928081894079,
+              "matched": 10,
+              "observed": 14,
+              "predicted": 16
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 37,
+          "scores": [
+            {
+              "mae_s": 0.34870870532015763,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.4196151141359594,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 80,
+          "scores": [
+            {
+              "mae_s": 0.30081407628091095,
+              "matched": 1,
+              "observed": 13,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3139250522815398,
+              "matched": 0,
+              "observed": 10,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 3,
+      "kind": "ridge",
+      "macro_mae_s": 0.3055123274914876
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 32,
+          "scores": [
+            {
+              "mae_s": 0.22714319015125478,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.23382263508750528,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 59,
+          "scores": [
+            {
+              "mae_s": 0.28044101387806963,
+              "matched": 4,
+              "observed": 6,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.3214205560323853,
+              "matched": 2,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 60,
+          "scores": [
+            {
+              "mae_s": 0.2418557464725964,
+              "matched": 2,
+              "observed": 7,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.28216445388028005,
+              "matched": 2,
+              "observed": 8,
+              "predicted": 4
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 57,
+          "scores": [
+            {
+              "mae_s": 0.3829179151081345,
+              "matched": 4,
+              "observed": 12,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.35719345875947706,
+              "matched": 3,
+              "observed": 9,
+              "predicted": 5
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 41,
+          "scores": [
+            {
+              "mae_s": 0.2768804766853825,
+              "matched": 1,
+              "observed": 5,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.26982094869833834,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 77,
+          "scores": [
+            {
+              "mae_s": 0.29041605684614363,
+              "matched": 9,
+              "observed": 13,
+              "predicted": 16
+            },
+            {
+              "mae_s": 0.33289629647334446,
+              "matched": 10,
+              "observed": 14,
+              "predicted": 17
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 37,
+          "scores": [
+            {
+              "mae_s": 0.33138374524708714,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.400065787538081,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 80,
+          "scores": [
+            {
+              "mae_s": 0.31328263218796304,
+              "matched": 1,
+              "observed": 13,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3276961537034924,
+              "matched": 0,
+              "observed": 10,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 3,
+      "kind": "ridge",
+      "macro_mae_s": 0.30433756667184597
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.27466666666666684,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.28961111111111,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 1
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.509266666666665,
+              "matched": 0,
+              "observed": 7,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.5149666666666619,
+              "matched": 0,
+              "observed": 5,
+              "predicted": 0
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.42493333333333777,
+              "matched": 10,
+              "observed": 11,
+              "predicted": 13
+            },
+            {
+              "mae_s": 0.428933333333336,
+              "matched": 8,
+              "observed": 10,
+              "predicted": 11
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 27,
+          "scores": [
+            {
+              "mae_s": 0.5983333333333334,
+              "matched": 5,
+              "observed": 9,
+              "predicted": 7
+            },
+            {
+              "mae_s": 0.5446666666666673,
+              "matched": 3,
+              "observed": 5,
+              "predicted": 6
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 26,
+          "scores": [
+            {
+              "mae_s": 0.37065384615384456,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.3518846153846154,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 3
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 42,
+          "scores": [
+            {
+              "mae_s": 0.4373333333333325,
+              "matched": 5,
+              "observed": 9,
+              "predicted": 8
+            },
+            {
+              "mae_s": 0.43621428571428433,
+              "matched": 4,
+              "observed": 10,
+              "predicted": 9
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.3737600000000009,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.38919999999999844,
+              "matched": 3,
+              "observed": 4,
+              "predicted": 3
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 48,
+          "scores": [
+            {
+              "mae_s": 0.6883541666666678,
+              "matched": 2,
+              "observed": 11,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.6620416666666685,
+              "matched": 3,
+              "observed": 12,
+              "predicted": 4
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 6,
+      "kind": "persistence",
+      "macro_mae_s": 0.4559262307310744
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.31158333333333726,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.3625277777777818,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 3
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.4186666666666639,
+              "matched": 0,
+              "observed": 7,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.433299999999997,
+              "matched": 0,
+              "observed": 5,
+              "predicted": 0
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.38703333333333656,
+              "matched": 4,
+              "observed": 11,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.4471333333333322,
+              "matched": 3,
+              "observed": 10,
+              "predicted": 6
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 27,
+          "scores": [
+            {
+              "mae_s": 0.48544444444444285,
+              "matched": 4,
+              "observed": 9,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.4678518518518494,
+              "matched": 3,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 26,
+          "scores": [
+            {
+              "mae_s": 0.3704230769230726,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3644230769230762,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 42,
+          "scores": [
+            {
+              "mae_s": 0.3400952380952389,
+              "matched": 5,
+              "observed": 9,
+              "predicted": 7
+            },
+            {
+              "mae_s": 0.35107142857142837,
+              "matched": 5,
+              "observed": 10,
+              "predicted": 9
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.3769200000000012,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.37184000000000195,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 48,
+          "scores": [
+            {
+              "mae_s": 0.5926874999999999,
+              "matched": 2,
+              "observed": 11,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.5751250000000011,
+              "matched": 3,
+              "observed": 12,
+              "predicted": 4
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 6,
+      "kind": "median",
+      "macro_mae_s": 0.41600787882834755
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.35466884706293567,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.4038355137295971,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.39619375868428464,
+              "matched": 1,
+              "observed": 7,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.4109297215163093,
+              "matched": 0,
+              "observed": 5,
+              "predicted": 2
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.33022700659606696,
+              "matched": 5,
+              "observed": 11,
+              "predicted": 7
+            },
+            {
+              "mae_s": 0.3820172581884374,
+              "matched": 5,
+              "observed": 10,
+              "predicted": 7
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 27,
+          "scores": [
+            {
+              "mae_s": 0.4041054545125599,
+              "matched": 4,
+              "observed": 9,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3870983376144495,
+              "matched": 3,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 26,
+          "scores": [
+            {
+              "mae_s": 0.3735208897872594,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.36265546801902526,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 4
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 42,
+          "scores": [
+            {
+              "mae_s": 0.3450491332595006,
+              "matched": 6,
+              "observed": 9,
+              "predicted": 9
+            },
+            {
+              "mae_s": 0.3376037535010531,
+              "matched": 5,
+              "observed": 10,
+              "predicted": 10
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.5222579733290419,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.5141779733290442,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 48,
+          "scores": [
+            {
+              "mae_s": 0.4836745783913176,
+              "matched": 2,
+              "observed": 11,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.4721435093224797,
+              "matched": 3,
+              "observed": 12,
+              "predicted": 4
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 6,
+      "kind": "ridge",
+      "macro_mae_s": 0.40500994855271016
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.34519564004074876,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3943623067074101,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.3945660331255377,
+              "matched": 1,
+              "observed": 7,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.408895623583412,
+              "matched": 0,
+              "observed": 5,
+              "predicted": 1
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.3120787518079391,
+              "matched": 8,
+              "observed": 11,
+              "predicted": 10
+            },
+            {
+              "mae_s": 0.34822892933460753,
+              "matched": 7,
+              "observed": 10,
+              "predicted": 9
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 27,
+          "scores": [
+            {
+              "mae_s": 0.40578321065674144,
+              "matched": 4,
+              "observed": 9,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.39251962759087355,
+              "matched": 3,
+              "observed": 5,
+              "predicted": 4
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 26,
+          "scores": [
+            {
+              "mae_s": 0.3622952462853052,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.354027283129169,
+              "matched": 2,
+              "observed": 3,
+              "predicted": 3
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 42,
+          "scores": [
+            {
+              "mae_s": 0.34081562625631834,
+              "matched": 6,
+              "observed": 9,
+              "predicted": 9
+            },
+            {
+              "mae_s": 0.3351640856525179,
+              "matched": 5,
+              "observed": 10,
+              "predicted": 10
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.47652179679292045,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.46842721459371506,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 48,
+          "scores": [
+            {
+              "mae_s": 0.4991906789169614,
+              "matched": 2,
+              "observed": 11,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.48680911317598974,
+              "matched": 3,
+              "observed": 12,
+              "predicted": 5
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 6,
+      "kind": "ridge",
+      "macro_mae_s": 0.39530507297813544
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.2820388641169244,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3326870681008709,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.412123594285582,
+              "matched": 0,
+              "observed": 7,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.41774404827187295,
+              "matched": 0,
+              "observed": 5,
+              "predicted": 0
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 30,
+          "scores": [
+            {
+              "mae_s": 0.3352622384445734,
+              "matched": 10,
+              "observed": 11,
+              "predicted": 13
+            },
+            {
+              "mae_s": 0.3437899340736481,
+              "matched": 8,
+              "observed": 10,
+              "predicted": 11
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 27,
+          "scores": [
+            {
+              "mae_s": 0.4690024486999214,
+              "matched": 4,
+              "observed": 9,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.45123358943186986,
+              "matched": 3,
+              "observed": 5,
+              "predicted": 5
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 26,
+          "scores": [
+            {
+              "mae_s": 0.3501602211890159,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.33913844655568987,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 42,
+          "scores": [
+            {
+              "mae_s": 0.3607139594634843,
+              "matched": 6,
+              "observed": 9,
+              "predicted": 9
+            },
+            {
+              "mae_s": 0.35993142543156553,
+              "matched": 5,
+              "observed": 10,
+              "predicted": 10
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.3665600999239828,
+              "matched": 1,
+              "observed": 3,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.3543330085237732,
+              "matched": 1,
+              "observed": 4,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 48,
+          "scores": [
+            {
+              "mae_s": 0.5726346015368508,
+              "matched": 2,
+              "observed": 11,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.5522857959611238,
+              "matched": 3,
+              "observed": 12,
+              "predicted": 5
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 6,
+      "kind": "ridge",
+      "macro_mae_s": 0.39372745900067185
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "scores": [
+            {
+              "mae_s": 0.298833333333332,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.29183333333333533,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 0
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.7286000000000007,
+              "matched": 3,
+              "observed": 6,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.7428399999999971,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 3
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "scores": [
+            {
+              "mae_s": 0.526315789473685,
+              "matched": 9,
+              "observed": 9,
+              "predicted": 9
+            },
+            {
+              "mae_s": 0.5834736842105277,
+              "matched": 7,
+              "observed": 7,
+              "predicted": 7
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.7842777777777772,
+              "matched": 4,
+              "observed": 7,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.7936666666666691,
+              "matched": 3,
+              "observed": 6,
+              "predicted": 6
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "scores": [
+            {
+              "mae_s": 0.4159999999999994,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3730909090909116,
+              "matched": 2,
+              "observed": 2,
+              "predicted": 3
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "scores": [
+            {
+              "mae_s": 0.4557499999999988,
+              "matched": 6,
+              "observed": 9,
+              "predicted": 8
+            },
+            {
+              "mae_s": 0.5145714285714276,
+              "matched": 5,
+              "observed": 8,
+              "predicted": 8
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 10,
+          "scores": [
+            {
+              "mae_s": 0.34779999999999944,
+              "matched": 2,
+              "observed": 2,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.34509999999999935,
+              "matched": 2,
+              "observed": 2,
+              "predicted": 2
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 36,
+          "scores": [
+            {
+              "mae_s": 0.9749444444444468,
+              "matched": 2,
+              "observed": 14,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.9651111111111147,
+              "matched": 2,
+              "observed": 13,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 9,
+      "kind": "persistence",
+      "macro_mae_s": 0.5713880298758263
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "scores": [
+            {
+              "mae_s": 0.4187083333333301,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.412208333333331,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.4835999999999987,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.5463199999999998,
+              "matched": 1,
+              "observed": 6,
+              "predicted": 2
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "scores": [
+            {
+              "mae_s": 0.6023157894736821,
+              "matched": 5,
+              "observed": 9,
+              "predicted": 5
+            },
+            {
+              "mae_s": 0.5728421052631564,
+              "matched": 4,
+              "observed": 7,
+              "predicted": 4
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.5510555555555593,
+              "matched": 3,
+              "observed": 7,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.5345555555555587,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 2
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "scores": [
+            {
+              "mae_s": 0.3437272727272726,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.3157272727272746,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "scores": [
+            {
+              "mae_s": 0.3319285714285706,
+              "matched": 7,
+              "observed": 9,
+              "predicted": 8
+            },
+            {
+              "mae_s": 0.373249999999998,
+              "matched": 5,
+              "observed": 8,
+              "predicted": 7
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 10,
+          "scores": [
+            {
+              "mae_s": 0.22499999999999504,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            },
+            {
+              "mae_s": 0.2718999999999987,
+              "matched": 0,
+              "observed": 2,
+              "predicted": 0
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 36,
+          "scores": [
+            {
+              "mae_s": 0.8048055555555567,
+              "matched": 3,
+              "observed": 14,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.8068611111111126,
+              "matched": 3,
+              "observed": 13,
+              "predicted": 3
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 9,
+      "kind": "median",
+      "macro_mae_s": 0.47467534100402464
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "scores": [
+            {
+              "mae_s": 0.520109730808893,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.5262763974755619,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.460702235270433,
+              "matched": 3,
+              "observed": 6,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.4669584125114804,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 3
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "scores": [
+            {
+              "mae_s": 0.33777809610441983,
+              "matched": 9,
+              "observed": 9,
+              "predicted": 10
+            },
+            {
+              "mae_s": 0.32614175068694395,
+              "matched": 7,
+              "observed": 7,
+              "predicted": 8
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.3718125996713908,
+              "matched": 3,
+              "observed": 7,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.3768981532244882,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 4
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "scores": [
+            {
+              "mae_s": 0.3564319429403014,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3033410338493933,
+              "matched": 2,
+              "observed": 2,
+              "predicted": 3
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "scores": [
+            {
+              "mae_s": 0.3386676824502516,
+              "matched": 7,
+              "observed": 9,
+              "predicted": 12
+            },
+            {
+              "mae_s": 0.373967970650353,
+              "matched": 5,
+              "observed": 8,
+              "predicted": 9
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 10,
+          "scores": [
+            {
+              "mae_s": 0.438993665979852,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.47765004052142707,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 36,
+          "scores": [
+            {
+              "mae_s": 0.6256645516729894,
+              "matched": 2,
+              "observed": 14,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.6319698299890604,
+              "matched": 2,
+              "observed": 13,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 9,
+      "kind": "ridge",
+      "macro_mae_s": 0.4333352558629524
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "scores": [
+            {
+              "mae_s": 0.5154102267641759,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.5250768934308448,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 3
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.4425981763222314,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.4595453539292762,
+              "matched": 1,
+              "observed": 6,
+              "predicted": 2
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "scores": [
+            {
+              "mae_s": 0.3267966892232795,
+              "matched": 9,
+              "observed": 9,
+              "predicted": 10
+            },
+            {
+              "mae_s": 0.3258802925287319,
+              "matched": 7,
+              "observed": 7,
+              "predicted": 8
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.40165841192369484,
+              "matched": 3,
+              "observed": 7,
+              "predicted": 4
+            },
+            {
+              "mae_s": 0.409197791362211,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 4
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "scores": [
+            {
+              "mae_s": 0.33942633207562206,
+              "matched": 1,
+              "observed": 1,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.29436744708097184,
+              "matched": 2,
+              "observed": 2,
+              "predicted": 3
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "scores": [
+            {
+              "mae_s": 0.2941870165392251,
+              "matched": 8,
+              "observed": 9,
+              "predicted": 10
+            },
+            {
+              "mae_s": 0.3479132221449421,
+              "matched": 6,
+              "observed": 8,
+              "predicted": 9
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 10,
+          "scores": [
+            {
+              "mae_s": 0.4072135150765515,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.44763562278781144,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 36,
+          "scores": [
+            {
+              "mae_s": 0.6557086019098223,
+              "matched": 2,
+              "observed": 14,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.6633859735322044,
+              "matched": 2,
+              "observed": 13,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 9,
+      "kind": "ridge",
+      "macro_mae_s": 0.4285000979144748
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "scores": [
+            {
+              "mae_s": 0.41907272308710447,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            },
+            {
+              "mae_s": 0.3991599074951632,
+              "matched": 0,
+              "observed": 0,
+              "predicted": 2
+            }
+          ],
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "scores": [
+            {
+              "mae_s": 0.5079356717858065,
+              "matched": 3,
+              "observed": 6,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.5297261914348326,
+              "matched": 2,
+              "observed": 6,
+              "predicted": 3
+            }
+          ],
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "scores": [
+            {
+              "mae_s": 0.37964095621440763,
+              "matched": 9,
+              "observed": 9,
+              "predicted": 10
+            },
+            {
+              "mae_s": 0.44500937726703865,
+              "matched": 7,
+              "observed": 7,
+              "predicted": 8
+            }
+          ],
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "scores": [
+            {
+              "mae_s": 0.5793976906801637,
+              "matched": 4,
+              "observed": 7,
+              "predicted": 6
+            },
+            {
+              "mae_s": 0.5887865795690556,
+              "matched": 3,
+              "observed": 6,
+              "predicted": 6
+            }
+          ],
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "scores": [
+            {
+              "mae_s": 0.30386852527253533,
+              "matched": 0,
+              "observed": 1,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.2540503434543547,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 2
+            }
+          ],
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "scores": [
+            {
+              "mae_s": 0.34162778419939294,
+              "matched": 8,
+              "observed": 9,
+              "predicted": 9
+            },
+            {
+              "mae_s": 0.3993063556279632,
+              "matched": 6,
+              "observed": 8,
+              "predicted": 8
+            }
+          ],
+          "session": 9955
+        },
+        {
+          "blocks": 10,
+          "scores": [
+            {
+              "mae_s": 0.2432335972349054,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            },
+            {
+              "mae_s": 0.29914743558765383,
+              "matched": 1,
+              "observed": 2,
+              "predicted": 1
+            }
+          ],
+          "session": 9998
+        },
+        {
+          "blocks": 36,
+          "scores": [
+            {
+              "mae_s": 0.7766531678148801,
+              "matched": 2,
+              "observed": 14,
+              "predicted": 3
+            },
+            {
+              "mae_s": 0.7806082516636336,
+              "matched": 2,
+              "observed": 13,
+              "predicted": 2
+            }
+          ],
+          "session": 9928
+        }
+      ],
+      "horizon_laps": 9,
+      "kind": "ridge",
+      "macro_mae_s": 0.4529515348993057
+    }
+  ],
+  "content_sha256": "f5645d7e0d9e4bc46750b53c5e1d17c119ad8b7cf85685de5c1e3c83df3f8a43",
+  "helper_sha256": "7389de340965320de99b6965332ce4ccb84dd8bb715013d158955970dd4a6b1b",
+  "scope": "OPENED_EIGHT_EVENT_HORIZON_DEVELOPMENT_ONLY",
+  "source_sha256": "f609988473873844f91a5e90033bbc696f10fe3dd6143f2cbe282797d32d4d19",
+  "sources": {
+    "10014": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "9839": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9912": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9928": "389b9f306875ea51895df952f1e0835ae15bf1ad26d416827d5cf29bdf044b58",
+    "9955": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9963": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9971": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "9998": "389b9f306875ea51895df952f1e0835ae15bf1ad26d416827d5cf29bdf044b58"
+  }
+}
