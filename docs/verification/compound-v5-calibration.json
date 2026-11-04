@@ -1,0 +1,512 @@
+{
+  "content_sha256": "50a26829adebd4b7a2cebd49536ed9455fb823f8b8edc9f7a6f0e41e019ad5d1",
+  "development_events": [
+    9912,
+    9839,
+    10014,
+    9971,
+    9963,
+    9955
+  ],
+  "development_selection": [
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.42110854468599124,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.49289485714285747,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.5474472209936581,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5458333333333374,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.34891803545291844,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.31670279631083254,
+          "session": 9955
+        }
+      ],
+      "level": 0,
+      "macro_mae_s": 0.44548413131993253
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.3921145135566187,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.5179163636363642,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.502233845360004,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5581916666666686,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.32465837441247225,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.33946569788629727,
+          "session": 9955
+        }
+      ],
+      "level": 0,
+      "macro_mae_s": 0.43909674358640416
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.32236088826335,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.6547819042717455,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.4724843370044612,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.7118888888888892,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.33770280926982627,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.4103283619793487,
+          "session": 9955
+        }
+      ],
+      "level": 0,
+      "macro_mae_s": 0.48492453161293686
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.3603669516169332,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.5096228232359608,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.5697610315902167,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5482100663951228,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.3237870155895078,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.33345309819984914,
+          "session": 9955
+        }
+      ],
+      "level": 1,
+      "macro_mae_s": 0.4408668311045984
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.3355480691278634,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.5297467193738131,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.5459007706681316,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5549560592495983,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.3007478051488454,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.34174815229190675,
+          "session": 9955
+        }
+      ],
+      "level": 1,
+      "macro_mae_s": 0.43477459597669305
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.3072609958622658,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.6177386335732158,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.4826519814936428,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.6765211174215857,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.33855292484610827,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.3819650600702597,
+          "session": 9955
+        }
+      ],
+      "level": 1,
+      "macro_mae_s": 0.46744845221117964
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.44410099880696946,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.4885099297079364,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.39699840020125043,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5147662027259526,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.343892425269067,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.29019985406128174,
+          "session": 9955
+        }
+      ],
+      "level": 2,
+      "macro_mae_s": 0.41307796846207623
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.39937664079491725,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.5107024033247838,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.3997511161114121,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.5185717452760615,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.3326883564826669,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.2984298772023139,
+          "session": 9955
+        }
+      ],
+      "level": 2,
+      "macro_mae_s": 0.4099200231986926
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.35253515599986723,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.6001315847508242,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.4180398063823165,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.666861272715694,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.36048515555344474,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.35246727494341956,
+          "session": 9955
+        }
+      ],
+      "level": 2,
+      "macro_mae_s": 0.458420041724261
+    },
+    {
+      "alpha": 1.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.6443196177742657,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.4521431898724628,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.3221869361397518,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.40656606415259067,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.363144768175772,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.31635029983209234,
+          "session": 9955
+        }
+      ],
+      "level": 3,
+      "macro_mae_s": 0.41745181265782255
+    },
+    {
+      "alpha": 10.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.5400452783907219,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.4436328314630745,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.3436821572425536,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.43984630750596726,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.33480852295602903,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.2900818243092536,
+          "session": 9955
+        }
+      ],
+      "level": 3,
+      "macro_mae_s": 0.3986828203112667
+    },
+    {
+      "alpha": 100.0,
+      "folds": [
+        {
+          "blocks": 12,
+          "mae_s": 0.36994463679529827,
+          "session": 9912
+        },
+        {
+          "blocks": 25,
+          "mae_s": 0.5657243515987935,
+          "session": 9839
+        },
+        {
+          "blocks": 19,
+          "mae_s": 0.39041852084433876,
+          "session": 10014
+        },
+        {
+          "blocks": 18,
+          "mae_s": 0.6353229639120826,
+          "session": 9971
+        },
+        {
+          "blocks": 11,
+          "mae_s": 0.3200153013175621,
+          "session": 9963
+        },
+        {
+          "blocks": 28,
+          "mae_s": 0.3559288629210599,
+          "session": 9955
+        }
+      ],
+      "level": 3,
+      "macro_mae_s": 0.43955910623152256
+    }
+  ],
+  "development_sources": {
+    "10014": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "9839": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9912": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9955": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9963": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9971": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05"
+  },
+  "hashes": {
+    "COMPOUND_CONDITIONED_V5.md": "6524dbee18eb204c0f90d5f073d8675b9085de7bac5177326c55985f3bf02f48",
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "compound_conditioned.py": "0fa671c8e635c3b26602ebbb39d18efcf2ed164f8786d04afb1557ce173de248",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_conditioned.py": "e5786d10fdaf58fd6c328a84c97b154db6fb11e796f69e3b251ccc8cfd5a5ce9",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa"
+  },
+  "heldout_events": [
+    9998,
+    9928
+  ],
+  "model": {
+    "alpha": 10.0,
+    "coefficients": [
+      -0.08670506088991958,
+      0.28218931372038686,
+      0.07749894836433151,
+      0.32448340338960246,
+      0.03910781337039718,
+      0.38915861127086854
+    ],
+    "feature_level": 3,
+    "support": {
+      "HARD": {
+        "radius_s": 0.8005810844311498,
+        "windows": 58
+      },
+      "MEDIUM": {
+        "radius_s": 0.7746022228786754,
+        "windows": 46
+      },
+      "SOFT": {
+        "radius_s": 1.4384816672980216,
+        "windows": 7
+      }
+    }
+  },
+  "prior_sha256": "af97397d5d608df8d24822dcfb8184b0a26693f1a2b32cbf0b4a724a74a43141",
+  "prior_slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "schema_version": "apex-compound-conditioned-v5-calibration"
+}
