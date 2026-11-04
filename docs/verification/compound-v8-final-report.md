@@ -81,11 +81,11 @@ python research/scripts/audit_compound_v8_coverage.py --frozen docs/verification
 ```
 
 The baseline local suite passed 772 tests from `apex_engine`; later targeted
-tests cover all added behavior. The full v8 code freeze passed 786 tests on
-each Python 3.11/3.12 CI job, including the repository artifact commands.
-[Completed source CI](https://github.com/aayups31/APEX/actions/runs/41769812780).
-The coverage integration adds one test; its final matrix status is recorded
-separately when available. [Coverage source CI](https://github.com/aayups31/APEX/actions/runs/41770984455).
+tests cover all added behavior. The final coverage source freeze passed **787
+tests on each Python 3.11/3.12 CI job**, including the repository artifact
+commands. [Completed source CI](https://github.com/aayups31/APEX/actions/runs/41770984455),
+[sealed CI review](compound-v8-ci-review.json). Code verification passes;
+the independent model-accuracy gate above still fails.
 
 ## Required next work before R041 can close
 

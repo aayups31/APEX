@@ -487,7 +487,11 @@
     "failed_confirmation_events": [
       9850
     ],
-    "next_required_work": "Bounded pace residuals and validation-selected fallback before a new frozen independent confirmation"
+    "next_required_work": "Bounded pace residuals and validation-selected fallback before a new frozen independent confirmation",
+    "candidate_passed": false,
+    "source_ci_passed": true,
+    "tests_per_python": 787,
+    "source_ci_report": "docs/verification/compound-v8-ci-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

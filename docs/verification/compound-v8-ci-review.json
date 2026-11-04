@@ -1,0 +1,25 @@
+{
+  "conclusion": "success",
+  "content_sha256": "209a60b79e6c5b9c493d231609e549ab438fda07765faf4be494974923b320d2",
+  "matrix": [
+    {
+      "job_conclusion": "success",
+      "python": "3.11",
+      "test_seconds": 621.98,
+      "tests_passed": 787
+    },
+    {
+      "job_conclusion": "success",
+      "python": "3.12",
+      "test_seconds": 508.7,
+      "tests_passed": 787
+    }
+  ],
+  "model_accepted": false,
+  "model_results_sha256": "f882d69f1990b5154f6e15853f4b1342ba45d17d8e526c5bbcdaad9c315a547e",
+  "r041_status": "IN_PROGRESS",
+  "repository_artifact_commands_passed": true,
+  "reviewed_at_utc": "2026-11-04T04:22:27.471843+00:00",
+  "run_url": "https://github.com/aayups31/APEX/actions/runs/41770984455",
+  "source_commit": "5cb809515faf5d44cd96d3e6b41f78c4c21e3f77"
+}
