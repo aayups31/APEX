@@ -1,0 +1,13 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256": "2075e8ee8cde402faa8423b7d354b6c9285d2151f3732176eae7c9f6db6013bb",
+  "candidate_accepted": false,
+  "cases_audited": 392,
+  "content_sha256": "4e5cdc8bc51b9deee3a5a09c66d48d75dd3a20d9e662c347cd9b09b8043bfcd1",
+  "dataset_sha256": "57425e8e0e389b236f06c7a468d68e03e95c75cc2e6ef3785928516a3c7b56b7",
+  "development_qualified": false,
+  "outer_events_audited": 24,
+  "result_sha256": "7e0ceeb3b769017cf057d322a665da845b820a22131ccef64c8a2f8b76155a8a",
+  "schema_version": "apex-compound-repair-scalar-audit-v10",
+  "settings_audited": 18
+}

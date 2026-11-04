@@ -1,0 +1,1304 @@
+{
+  "baseline_local_seconds": 1046.22,
+  "baseline_local_tests": 801,
+  "candidate_accepted": false,
+  "cases": 392,
+  "compressed_file_sha256": "45f317afaf38fc7dcf663d107858558a6d589893682b4a8050d63c677bfaad45",
+  "content_sha256": "90dcb4959d3276a37ef89352d5fc491c2c3213eedb236af5980ac2ec5c6bc547",
+  "dataset_sha256": "57425e8e0e389b236f06c7a468d68e03e95c75cc2e6ef3785928516a3c7b56b7",
+  "decision": "REJECT_REPAIR_HYPOTHESIS",
+  "grid": [
+    {
+      "failed_event_labels": 23,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 1,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 35,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 1,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 23,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 3,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 35,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 3,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 23,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 5,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 35,
+      "macro_mae_s": 0.5753023165236322,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 5,
+        "shrinkage": 0.0
+      }
+    },
+    {
+      "failed_event_labels": 30,
+      "macro_mae_s": 0.5236687309504584,
+      "negative_control_false_alarms": 2,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 1,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 36,
+      "macro_mae_s": 0.5236687309504584,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 1,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 34,
+      "macro_mae_s": 0.537359436128869,
+      "negative_control_false_alarms": 2,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 3,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 39,
+      "macro_mae_s": 0.537359436128869,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 3,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 33,
+      "macro_mae_s": 0.5538474333862411,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 5,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 41,
+      "macro_mae_s": 0.5538474333862411,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 5,
+        "shrinkage": 0.5
+      }
+    },
+    {
+      "failed_event_labels": 33,
+      "macro_mae_s": 0.5274447591449736,
+      "negative_control_false_alarms": 5,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 1,
+        "shrinkage": 1.0
+      }
+    },
+    {
+      "failed_event_labels": 38,
+      "macro_mae_s": 0.5274447591449736,
+      "negative_control_false_alarms": 2,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 1,
+        "shrinkage": 1.0
+      }
+    },
+    {
+      "failed_event_labels": 34,
+      "macro_mae_s": 0.5395288129627444,
+      "negative_control_false_alarms": 5,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 3,
+        "shrinkage": 1.0
+      }
+    },
+    {
+      "failed_event_labels": 40,
+      "macro_mae_s": 0.5395288129627444,
+      "negative_control_false_alarms": 2,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 3,
+        "shrinkage": 1.0
+      }
+    },
+    {
+      "failed_event_labels": 34,
+      "macro_mae_s": 0.5526598156637468,
+      "negative_control_false_alarms": 1,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.15,
+        "minimum_drivers": 5,
+        "shrinkage": 1.0
+      }
+    },
+    {
+      "failed_event_labels": 41,
+      "macro_mae_s": 0.5526598156637468,
+      "negative_control_false_alarms": 0,
+      "setting": {
+        "bound_s": 0.5,
+        "decision_margin_s": 0.3,
+        "minimum_drivers": 5,
+        "shrinkage": 1.0
+      }
+    }
+  ],
+  "readiness": {
+    "development_qualified": false,
+    "events": [
+      {
+        "cases": 20,
+        "event": "10006",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.543399999999999,
+            "failure_codes": [],
+            "mae_s": 0.4695499999999974,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.4695499999999974,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.507050000000001,
+            "failure_codes": [],
+            "mae_s": 0.4738999999999997,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.4738999999999997,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 19,
+        "event": "10014",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.8559473684210507,
+            "failure_codes": [],
+            "mae_s": 0.526315789473685,
+            "matched": 7,
+            "observed": 9,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 7,
+            "prefix": "prefix_s",
+            "recall": 0.7777777777777778,
+            "reference_mae_s": 0.526315789473685,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.7103157894736817,
+            "failure_codes": [],
+            "mae_s": 0.5834736842105277,
+            "matched": 7,
+            "observed": 7,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 7,
+            "prefix": "pairwise_prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.5834736842105277,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 14,
+        "event": "10022",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5119285714285715,
+            "failure_codes": [],
+            "mae_s": 0.3730000000000006,
+            "matched": 1,
+            "observed": 2,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 1,
+            "prefix": "prefix_s",
+            "recall": 0.5,
+            "reference_mae_s": 0.3730000000000006,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.5067857142857152,
+            "failure_codes": [],
+            "mae_s": 0.3500714285714303,
+            "matched": 1,
+            "observed": 1,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 1,
+            "prefix": "pairwise_prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.3500714285714303,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 0,
+        "event": "10033",
+        "failure_codes": [
+          "NO_ELIGIBLE_COMPARISONS"
+        ],
+        "informative": false,
+        "labels": [],
+        "passed": false
+      },
+      {
+        "cases": 25,
+        "event": "9839",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF",
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.6658799999999968,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.7286000000000007,
+            "matched": 3,
+            "observed": 6,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 3,
+            "prefix": "prefix_s",
+            "recall": 0.5,
+            "reference_mae_s": 0.7286000000000007,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.6587200000000013,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST",
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.7428399999999971,
+            "matched": 2,
+            "observed": 6,
+            "passed": false,
+            "precision": 0.6666666666666666,
+            "predicted": 3,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.3333333333333333,
+            "reference_mae_s": 0.7428399999999971,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 13,
+        "event": "9850",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.49415384615384883,
+            "failure_codes": [],
+            "mae_s": 0.34930769230769204,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.34930769230769204,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.48607692307692435,
+            "failure_codes": [],
+            "mae_s": 0.3873846153846155,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.3873846153846155,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 0,
+        "event": "9858",
+        "failure_codes": [
+          "NO_ELIGIBLE_COMPARISONS"
+        ],
+        "informative": false,
+        "labels": [],
+        "passed": false
+      },
+      {
+        "cases": 33,
+        "event": "9877",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF",
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5656060606060596,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST",
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.7235151515151512,
+            "matched": 3,
+            "observed": 7,
+            "passed": false,
+            "precision": 0.75,
+            "predicted": 4,
+            "prefix": "prefix_s",
+            "recall": 0.42857142857142855,
+            "reference_mae_s": 0.7235151515151512,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.4951515151515157,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST",
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.7424848484848492,
+            "matched": 4,
+            "observed": 10,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 4,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.4,
+            "reference_mae_s": 0.7424848484848492,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 19,
+        "event": "9888",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5209999999999986,
+            "failure_codes": [],
+            "mae_s": 0.4833157894736868,
+            "matched": 3,
+            "observed": 4,
+            "passed": true,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "prefix_s",
+            "recall": 0.75,
+            "reference_mae_s": 0.4833157894736868,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.5635263157894771,
+            "failure_codes": [],
+            "mae_s": 0.47842105263158063,
+            "matched": 3,
+            "observed": 4,
+            "passed": true,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.75,
+            "reference_mae_s": 0.47842105263158063,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 24,
+        "event": "9896",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 1.5753333333333355,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.9237916666666663,
+            "matched": 1,
+            "observed": 9,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 1,
+            "prefix": "prefix_s",
+            "recall": 0.1111111111111111,
+            "reference_mae_s": 0.9237916666666663,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 1.5809583333333368,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.9235416666666652,
+            "matched": 1,
+            "observed": 8,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 1,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.125,
+            "reference_mae_s": 0.9235416666666652,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 12,
+        "event": "9912",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.582833333333331,
+            "failure_codes": [],
+            "mae_s": 0.298833333333332,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.298833333333332,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.5789166666666669,
+            "failure_codes": [],
+            "mae_s": 0.29183333333333533,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.29183333333333533,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 10,
+        "event": "9920",
+        "failure_codes": [
+          "CROSSOVER_PRECISION_BELOW_HALF",
+          "CROSSOVER_RECALL_BELOW_HALF"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5882999999999953,
+            "failure_codes": [
+              "CROSSOVER_PRECISION_BELOW_HALF"
+            ],
+            "mae_s": 0.4214000000000013,
+            "matched": 1,
+            "observed": 2,
+            "passed": false,
+            "precision": 0.3333333333333333,
+            "predicted": 3,
+            "prefix": "prefix_s",
+            "recall": 0.5,
+            "reference_mae_s": 0.4214000000000013,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.5857000000000028,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF",
+              "CROSSOVER_PRECISION_BELOW_HALF"
+            ],
+            "mae_s": 0.4212999999999994,
+            "matched": 1,
+            "observed": 3,
+            "passed": false,
+            "precision": 0.3333333333333333,
+            "predicted": 3,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.3333333333333333,
+            "reference_mae_s": 0.4212999999999994,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 36,
+        "event": "9928",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 1.0452777777777809,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.9749444444444468,
+            "matched": 2,
+            "observed": 14,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 2,
+            "prefix": "prefix_s",
+            "recall": 0.14285714285714285,
+            "reference_mae_s": 0.9749444444444468,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 1.0543611111111113,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.9651111111111147,
+            "matched": 2,
+            "observed": 13,
+            "passed": false,
+            "precision": 1.0,
+            "predicted": 2,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.15384615384615385,
+            "reference_mae_s": 0.9651111111111147,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 0,
+        "event": "9947",
+        "failure_codes": [
+          "NO_ELIGIBLE_COMPARISONS"
+        ],
+        "informative": false,
+        "labels": [],
+        "passed": false
+      },
+      {
+        "cases": 28,
+        "event": "9955",
+        "failure_codes": [
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.592178571428572,
+            "failure_codes": [],
+            "mae_s": 0.4557499999999988,
+            "matched": 6,
+            "observed": 9,
+            "passed": true,
+            "precision": 0.75,
+            "predicted": 8,
+            "prefix": "prefix_s",
+            "recall": 0.6666666666666666,
+            "reference_mae_s": 0.4557499999999988,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.46300000000000047,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.5145714285714276,
+            "matched": 5,
+            "observed": 8,
+            "passed": false,
+            "precision": 0.625,
+            "predicted": 8,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.625,
+            "reference_mae_s": 0.5145714285714276,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 11,
+        "event": "9963",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.593545454545458,
+            "failure_codes": [],
+            "mae_s": 0.4159999999999994,
+            "matched": 1,
+            "observed": 1,
+            "passed": true,
+            "precision": 0.5,
+            "predicted": 2,
+            "prefix": "prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.4159999999999994,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.5475454545454568,
+            "failure_codes": [],
+            "mae_s": 0.3730909090909116,
+            "matched": 1,
+            "observed": 2,
+            "passed": true,
+            "precision": 0.5,
+            "predicted": 2,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.5,
+            "reference_mae_s": 0.3730909090909116,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 18,
+        "event": "9971",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF",
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.7251666666666688,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST",
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.7842777777777772,
+            "matched": 3,
+            "observed": 7,
+            "passed": false,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "prefix_s",
+            "recall": 0.42857142857142855,
+            "reference_mae_s": 0.7842777777777772,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.6238333333333365,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.7936666666666691,
+            "matched": 3,
+            "observed": 6,
+            "passed": false,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.5,
+            "reference_mae_s": 0.7936666666666691,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 9,
+        "event": "9987",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.6815555555555604,
+            "failure_codes": [],
+            "mae_s": 0.4220000000000002,
+            "matched": 4,
+            "observed": 4,
+            "passed": true,
+            "precision": 0.8,
+            "predicted": 5,
+            "prefix": "prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.4220000000000002,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.7476666666666745,
+            "failure_codes": [],
+            "mae_s": 0.45566666666666816,
+            "matched": 4,
+            "observed": 4,
+            "passed": true,
+            "precision": 0.8,
+            "predicted": 5,
+            "prefix": "pairwise_prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.45566666666666816,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 10,
+        "event": "9998",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.6860000000000042,
+            "failure_codes": [],
+            "mae_s": 0.34779999999999944,
+            "matched": 2,
+            "observed": 2,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 2,
+            "prefix": "prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.34779999999999944,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.8004999999999981,
+            "failure_codes": [],
+            "mae_s": 0.34509999999999935,
+            "matched": 2,
+            "observed": 2,
+            "passed": true,
+            "precision": 1.0,
+            "predicted": 2,
+            "prefix": "pairwise_prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.34509999999999935,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 4,
+        "event": "F1_2023_R01",
+        "failure_codes": [
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5145000000000088,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.9077500000000036,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.9077500000000036,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.3567499999999981,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.9725000000000037,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.9725000000000037,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 0,
+        "event": "F1_2023_R03",
+        "failure_codes": [
+          "NO_ELIGIBLE_COMPARISONS"
+        ],
+        "informative": false,
+        "labels": [],
+        "passed": false
+      },
+      {
+        "cases": 15,
+        "event": "F1_2023_R14",
+        "failure_codes": [
+          "CROSSOVER_PRECISION_BELOW_HALF"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5257333333333339,
+            "failure_codes": [
+              "CROSSOVER_PRECISION_BELOW_HALF"
+            ],
+            "mae_s": 0.46133333333333154,
+            "matched": 3,
+            "observed": 5,
+            "passed": false,
+            "precision": 0.42857142857142855,
+            "predicted": 7,
+            "prefix": "prefix_s",
+            "recall": 0.6,
+            "reference_mae_s": 0.46133333333333154,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.578000000000003,
+            "failure_codes": [],
+            "mae_s": 0.4660666666666657,
+            "matched": 4,
+            "observed": 6,
+            "passed": true,
+            "precision": 0.5714285714285714,
+            "predicted": 7,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.6666666666666666,
+            "reference_mae_s": 0.4660666666666657,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 14,
+        "event": "F1_2023_R15",
+        "failure_codes": [
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.951428571428571,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 1.0513571428571413,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 1.0513571428571413,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.9857142857142865,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 1.023142857142854,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 1.023142857142854,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 4,
+        "event": "F1_2024_R01",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 1.2422499999999914,
+            "failure_codes": [],
+            "mae_s": 0.8590000000000018,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.8590000000000018,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 1.186249999999994,
+            "failure_codes": [],
+            "mae_s": 0.8457499999999989,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.8457499999999989,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 9,
+        "event": "F1_2024_R03",
+        "failure_codes": [],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.7397777777777732,
+            "failure_codes": [],
+            "mae_s": 0.41122222222221677,
+            "matched": 2,
+            "observed": 2,
+            "passed": true,
+            "precision": 0.6666666666666666,
+            "predicted": 3,
+            "prefix": "prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.41122222222221677,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.7157777777777786,
+            "failure_codes": [],
+            "mae_s": 0.3352222222222139,
+            "matched": 2,
+            "observed": 2,
+            "passed": true,
+            "precision": 0.6666666666666666,
+            "predicted": 3,
+            "prefix": "pairwise_prefix_s",
+            "recall": 1.0,
+            "reference_mae_s": 0.3352222222222139,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": true
+      },
+      {
+        "cases": 6,
+        "event": "F1_2024_R06",
+        "failure_codes": [
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.31883333333332803,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.410999999999999,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.410999999999999,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.395499999999996,
+            "failure_codes": [],
+            "mae_s": 0.3915000000000006,
+            "matched": 0,
+            "observed": 0,
+            "passed": true,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.3915000000000006,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 13,
+        "event": "F1_2024_R16",
+        "failure_codes": [
+          "CROSSOVER_PRECISION_BELOW_HALF",
+          "CROSSOVER_RECALL_BELOW_HALF",
+          "PACE_WORSE_THAN_CONTRAST"
+        ],
+        "fallback_cases": 0,
+        "informative": false,
+        "labels": [
+          {
+            "contrast_mae_s": 0.41984615384615154,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST",
+              "CROSSOVER_RECALL_BELOW_HALF",
+              "CROSSOVER_PRECISION_BELOW_HALF"
+            ],
+            "mae_s": 0.45638461538461483,
+            "matched": 0,
+            "observed": 1,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "prefix_s",
+            "recall": 0.0,
+            "reference_mae_s": 0.45638461538461483,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.3619230769230768,
+            "failure_codes": [
+              "PACE_WORSE_THAN_CONTRAST"
+            ],
+            "mae_s": 0.4492307692307684,
+            "matched": 0,
+            "observed": 0,
+            "passed": false,
+            "precision": null,
+            "predicted": 0,
+            "prefix": "pairwise_prefix_s",
+            "recall": null,
+            "reference_mae_s": 0.4492307692307684,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      },
+      {
+        "cases": 26,
+        "event": "F1_2024_R18",
+        "failure_codes": [
+          "CROSSOVER_RECALL_BELOW_HALF"
+        ],
+        "fallback_cases": 0,
+        "informative": true,
+        "labels": [
+          {
+            "contrast_mae_s": 0.5978461538461548,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.5144230769230742,
+            "matched": 3,
+            "observed": 7,
+            "passed": false,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "prefix_s",
+            "recall": 0.42857142857142855,
+            "reference_mae_s": 0.5144230769230742,
+            "target": "actual_s"
+          },
+          {
+            "contrast_mae_s": 0.6034615384615367,
+            "failure_codes": [
+              "CROSSOVER_RECALL_BELOW_HALF"
+            ],
+            "mae_s": 0.5177692307692282,
+            "matched": 3,
+            "observed": 7,
+            "passed": false,
+            "precision": 0.6,
+            "predicted": 5,
+            "prefix": "pairwise_prefix_s",
+            "recall": 0.42857142857142855,
+            "reference_mae_s": 0.5177692307692282,
+            "target": "pairwise_actual_s"
+          }
+        ],
+        "passed": false
+      }
+    ],
+    "failed_supported_events": [
+      "9839",
+      "9877",
+      "9896",
+      "9920",
+      "9928",
+      "9955",
+      "9971",
+      "F1_2023_R01",
+      "F1_2023_R14",
+      "F1_2023_R15",
+      "F1_2024_R06",
+      "F1_2024_R16",
+      "F1_2024_R18"
+    ],
+    "informative_events": [
+      "10014",
+      "10022",
+      "9839",
+      "9877",
+      "9888",
+      "9896",
+      "9920",
+      "9928",
+      "9955",
+      "9963",
+      "9971",
+      "9987",
+      "9998",
+      "F1_2023_R14",
+      "F1_2024_R03",
+      "F1_2024_R18"
+    ],
+    "new_holdout_acquisition_allowed": false,
+    "production_promotion": false,
+    "required_informative_events": 2,
+    "supported_events": 24,
+    "unsupported_events": [
+      "10033",
+      "9858",
+      "9947",
+      "F1_2023_R03"
+    ]
+  },
+  "result_sha256": "7e0ceeb3b769017cf057d322a665da845b820a22131ccef64c8a2f8b76155a8a",
+  "schema_version": "apex-compound-repair-summary-v10",
+  "selected_setting": {
+    "bound_s": 0.5,
+    "decision_margin_s": 0.15,
+    "minimum_drivers": 5,
+    "shrinkage": 0.0
+  },
+  "source_events": 28
+}
