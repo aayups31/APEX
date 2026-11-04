@@ -538,11 +538,19 @@
       "report": "docs/verification/compound-v9-ci-review.json"
     },
     "source_ci": {
-      "status": "QUEUED",
+      "status": "PARTIAL_SUCCESS_MATRIX_PENDING",
       "commit": "15ddac509d9a8c69f0b081ffce49f0cbd62fbc4f",
       "run_id": 41864379731,
-      "url": "https://github.com/aayups31/APEX/actions/runs/41864379731"
-    }
+      "url": "https://github.com/aayups31/APEX/actions/runs/41864379731",
+      "python311": "SUCCESS_817_TESTS",
+      "python312": "QUEUED"
+    },
+    "local_full_regression": {
+      "passed": 817,
+      "seconds": 1040.95,
+      "report": "docs/verification/compound-v10-regression-review.json"
+    },
+    "source_ci_report": "docs/verification/compound-v10-regression-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
