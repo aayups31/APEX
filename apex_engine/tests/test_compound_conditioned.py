@@ -36,7 +36,7 @@ def test_conditioned_ridge_matches_independent_augmented_least_squares():
     assert fit_conditioned(rows+repeated)["coefficients"] == pytest.approx(expected)
 
 
-@pytest.mark.parametrize("version", ["conditioned", "event", "multiseason"])
+@pytest.mark.parametrize("version", ["conditioned", "event", "multiseason", "v8"])
 def test_conditioned_archive_and_independent_audit_detect_false_prediction(tmp_path, monkeypatch, version):
     from datetime import UTC, datetime
     from pathlib import Path

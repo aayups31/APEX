@@ -1,0 +1,111 @@
+{
+  "content_sha256": "c47ecacf673d8e0b1c5b03d90c22ca387376931a1c6d0e49360b7ff8c6d44916",
+  "event_head": {
+    "c": 0.1,
+    "coefficients": [
+      0.029930621114758846,
+      0.01871857233666305,
+      -0.04001368139676257,
+      -0.04350694470810192,
+      0.23889202187650105,
+      0.010208755785632271,
+      0.3478468568147676,
+      -0.5029318763794145,
+      0.8070958181106952,
+      0.10496674179414424
+    ],
+    "intercept": -0.21102247245353462,
+    "mean": [
+      0.17857142857142858,
+      0.2916666666666667,
+      0.5297619047619048,
+      0.33835119047619017,
+      0.016687500000003023,
+      0.28788392857142775,
+      0.7120744047619056,
+      0.6642600357142849,
+      0.1875,
+      0.7026934523809516
+    ],
+    "scale": [
+      0.38299304624155817,
+      0.45452967144315487,
+      0.4991134430417016,
+      0.7284415616973726,
+      3.7408936725477786,
+      0.9047654695996109,
+      0.6280348345374669,
+      1.393126251079176,
+      0.3903123748998999,
+      0.6304807203766443
+    ],
+    "threshold": 0.49
+  },
+  "hashes": {
+    "COMPOUND_CONDITIONED_V5.md": "6524dbee18eb204c0f90d5f073d8675b9085de7bac5177326c55985f3bf02f48",
+    "COMPOUND_EVENT_V6.md": "6746e5b534e361b1e78bbedb85857d34a84c40f7e60d7ab56b08c733ef44aac8",
+    "COMPOUND_EXTENDED_V8.md": "7d86790ca622bdad666e4855a7e855578eeb0ca65ba37d5ec6d94238dee8adf5",
+    "COMPOUND_MULTISEASON_V7.md": "1752f256da043888c837848b1d63799a1c00114157871c777967cb24b32a5fa6",
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "adr-0010-crossover-event-head.md": "5fed9e49b8a4ee27351cae1437924c8f8f602e8cfc95f83f61b5c58fc246bf3a",
+    "compound-multiseason-development.json": "7b01d3376eb9f86d1c28600ec455561901bb4171c5c96cf18991c84b46640337",
+    "compound-multiseason-training.json": "572eca2adc611684ca6562924dd0c54644b112951e60ee5c09a5a003e1c25679",
+    "compound-v8-development.json": "0d866aa690ad7376bba2eabb10a057de546bae8c436dc57e40225cadc6a44831",
+    "compound-v8-training-additions.json": "5f8eca24649dc56a6fcf1b6ecfa8437d48093a8b5ff49f2cb0e45a20ab2a5ffc",
+    "compound_conditioned.py": "0fa671c8e635c3b26602ebbb39d18efcf2ed164f8786d04afb1557ce173de248",
+    "compound_crossover_head.py": "e825c2b5126879bd0aafef6019c10c3a8837216332f85a333350f8570cfdb494",
+    "compound_multiseason.py": "b82c7940a0dd1f52c2a6a7aa426b217a4a2733c0bb2c5b9366ce02c231ae236c",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_conditioned.py": "e5786d10fdaf58fd6c328a84c97b154db6fb11e796f69e3b251ccc8cfd5a5ce9",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_event.py": "f4a152e82f45fed3e3065d91eda89875f9df4da5ffc2e8e70a25a254bf4c45b9",
+    "confirm_compound_multiseason.py": "15ba9287a6a2e744583080d959e9148070d6f7821c87331a85663dd2ddcf8840",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa",
+    "confirm_compound_v8.py": "d8e9b29a72e58643132a5487739895acee9a4d38457d1bfb1b14b38f3f1edbdc",
+    "diagnose_compound_multiseason.py": "3b621fa76fd9e63ba07b238f9fa796e5215048857f84f8574e7d055587747b98",
+    "extend_compound_development.py": "354379979202d4a24ee608138bf79c2524134bd01801ba7b7881d8ec99bd6f6f"
+  },
+  "heldout_events": [
+    10033,
+    9987
+  ],
+  "pace_head": {
+    "alpha": 10.0,
+    "coefficients": [
+      0.06418929419067021,
+      0.12803471493110724,
+      0.03433742079934367,
+      0.43544572281123567,
+      0.028033210277899425,
+      0.5916780381729532
+    ],
+    "feature_level": 3,
+    "support": {
+      "HARD": {
+        "radius_s": 0.893809079030442,
+        "windows": 175
+      },
+      "MEDIUM": {
+        "radius_s": 0.7705325165994348,
+        "windows": 96
+      },
+      "SOFT": {
+        "radius_s": 0.6409214147673465,
+        "windows": 58
+      }
+    }
+  },
+  "prior_sha256": "af97397d5d608df8d24822dcfb8184b0a26693f1a2b32cbf0b4a724a74a43141",
+  "prior_slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "schema_version": "apex-compound-extended-v8-calibration",
+  "selection_sha256": "0c0748a5df966f2d154518ace553100a63d7e2a793df6eeb2a4ce501ff3b0914",
+  "source_count": 21,
+  "source_hash_normalization": "UTF8_TEXT_LF_NEWLINES_ONLY; NATIVE_ARCHIVES_BYTE_EXACT",
+  "training_cases": 336,
+  "training_sha256": "66e863e49c9f120fe7b52de9e03492822f0ff6bf56c324bdf9d04c608987b45e"
+}
