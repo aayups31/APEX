@@ -73,8 +73,10 @@ full excluded-cohort enumeration.
 The existing full local baseline passed **787 tests** in 1,144.36 seconds.
 The complete old/new R041 targeted set passed **32 tests**. Repository and new
 script lint pass. Research and six-car/six-lap baseline demos run with zero race
-quality violations. Final source CI is tracked separately; a green code matrix
-does not change the failed empirical model result.
+quality violations. The frozen implementation passed **801 tests on each Python
+3.11/3.12 CI job**, with every artifact step green. [Completed source CI](https://github.com/aayups31/APEX/actions/runs/41858104444),
+[sealed CI review](compound-v9-ci-review.json). This green code matrix does not
+change the failed empirical model result.
 
 ## Reproduce
 

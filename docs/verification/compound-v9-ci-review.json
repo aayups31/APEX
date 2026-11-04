@@ -1,0 +1,37 @@
+{
+  "artifact_verification_passed": true,
+  "baseline_local_seconds": 1144.36,
+  "baseline_local_tests": 787,
+  "candidate_accepted": false,
+  "conclusion": "SUCCESS",
+  "content_sha256": "804d5a4b3e485320c17149fee3ecda8c9f9af06adfcc25d6aaf54b08448d27d8",
+  "jobs": [
+    {
+      "all_steps_succeeded": true,
+      "conclusion": "success",
+      "job_id": 126672124717,
+      "name": "Python 3.11",
+      "step_count": 40,
+      "test_seconds": 303.25,
+      "tests_passed": 801
+    },
+    {
+      "all_steps_succeeded": true,
+      "conclusion": "success",
+      "job_id": 126672124883,
+      "name": "Python 3.12",
+      "step_count": 40,
+      "test_seconds": 448.66,
+      "tests_passed": 801
+    }
+  ],
+  "limitation": "CI verifies implementation and artifacts; Japan predictive acceptance fails and R041 remains IN_PROGRESS.",
+  "production_promotion": false,
+  "review_date": "2026-11-04",
+  "run_id": 41858104444,
+  "run_url": "https://github.com/aayups31/APEX/actions/runs/41858104444",
+  "schema_version": "apex-compound-bounded-ci-review-v9",
+  "source_commit": "b275e0e0e177fccb59469be4cdc353dd91089d16",
+  "status": "COMPLETED",
+  "targeted_local_tests": 32
+}

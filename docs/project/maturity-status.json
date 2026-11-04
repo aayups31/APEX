@@ -500,16 +500,22 @@
     "actual_informative_events": 1,
     "candidate_passed": false,
     "verification_report": "docs/verification/compound-v9-verification.json",
-    "source_ci_passed": null,
+    "source_ci_passed": true,
     "source_ci": {
-      "status": "IN_PROGRESS",
+      "status": "COMPLETED",
       "commit": "b275e0e0e177fccb59469be4cdc353dd91089d16",
       "run_id": 41858104444,
-      "url": "https://github.com/aayups31/APEX/actions/runs/41858104444"
+      "url": "https://github.com/aayups31/APEX/actions/runs/41858104444",
+      "conclusion": "SUCCESS"
     },
     "targeted_tests": 32,
     "next_required_work": "Event-dependent pace reliability and negative-control-aware development selection before another frozen confirmation",
-    "production_promotion": false
+    "production_promotion": false,
+    "tests_per_python": 801,
+    "source_ci_report": "docs/verification/compound-v9-ci-review.json",
+    "predicted_crossovers": 4,
+    "pairwise_predicted_crossovers": 4,
+    "negative_control_false_alarms": 2
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
