@@ -1,0 +1,12 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256": "9e8ff22e1511e62e49a79d75e78c2c37ab9823137825d7c697629de10299ae41",
+  "calibration_sha256": "23b41c9977b706035c538aa14c786011157fe49f04f6db584618811b0281a3bd",
+  "candidate_passed": false,
+  "cases_audited": 34,
+  "content_sha256": "3f93f6d5e9721bb38e3659dc800615028fa58af579334a7c9201c59f49cdb1dd",
+  "field_contributions_audited": 203,
+  "results_sha256": "21f6dedeb386ce4ca457ab83c4817fa627b5f2bdb7549d394b31355c224e2b41",
+  "schema_version": "apex-compound-bounded-confirmation-native-scalar-audit-v9",
+  "scope": "ALL_PUBLISHED_NATIVE_CASES_CONTEXT_AND_SCALAR_GATES_NOT_FULL_COHORT_ENUMERATION"
+}

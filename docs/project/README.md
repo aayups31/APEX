@@ -69,6 +69,8 @@ versus R035, with all eight final cases passing and44 exactly regenerated runs.
 Worst nominal peak error increases from.326m to.383m; the analytic expert remains
 equally accurate. All713 tests pass locally and on Python3.11/3.12 CI.
 R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling passed its replay gate. R041 compound crossover remains open.
+The [R041 bounded-model report](../verification/compound-v9-final-report.md)
+preserves the fresh Japan failure and Saudi Arabia pass; R041 is still open.
 These scoped component completions do not promote formal maturity.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.

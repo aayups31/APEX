@@ -12,7 +12,7 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-11-03",
+  "last_progress_date": "2026-11-04",
   "research_inventory": {
     "done": 40,
     "total": 73
@@ -471,27 +471,45 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "decision": "REJECT_V8_COVERAGE_CONFIRMATION",
-    "held_out_blocks": 22,
-    "observed_crossovers": 4,
-    "matched_crossovers": 4,
-    "report": "docs/verification/compound-v8-final-report.md",
-    "prior_report": "docs/verification/compound-multiseason-confirmation.md",
-    "candidate": "v8",
-    "training_windows": 336,
-    "training_supported_events": 20,
-    "training_source_events": 21,
+    "decision": "REJECT_V9_PROSPECTIVE_CONFIRMATION",
+    "candidate": "v9",
+    "report": "docs/verification/compound-v9-final-report.md",
+    "prior_report": "docs/verification/compound-v8-final-report.md",
+    "training_windows": 358,
+    "training_supported_events": 22,
+    "training_source_events": 24,
+    "development_qualified": true,
+    "development_report": "docs/verification/compound-v9-development-report.md",
+    "development_summary": "docs/verification/compound-v9-development-summary.json",
+    "held_out_blocks": 34,
+    "observed_crossovers": 2,
+    "matched_crossovers": 2,
+    "pairwise_observed_crossovers": 1,
+    "pairwise_matched_crossovers": 1,
     "unsupported_confirmation_events": [
-      10033
+      9947,
+      9858
     ],
     "failed_confirmation_events": [
-      9850
+      10006
     ],
-    "next_required_work": "Bounded pace residuals and validation-selected fallback before a new frozen independent confirmation",
+    "passing_confirmation_events": [
+      10022
+    ],
+    "required_informative_events": 2,
+    "actual_informative_events": 1,
     "candidate_passed": false,
-    "source_ci_passed": true,
-    "tests_per_python": 787,
-    "source_ci_report": "docs/verification/compound-v8-ci-review.json"
+    "verification_report": "docs/verification/compound-v9-verification.json",
+    "source_ci_passed": null,
+    "source_ci": {
+      "status": "IN_PROGRESS",
+      "commit": "b275e0e0e177fccb59469be4cdc353dd91089d16",
+      "run_id": 41858104444,
+      "url": "https://github.com/aayups31/APEX/actions/runs/41858104444"
+    },
+    "targeted_tests": 32,
+    "next_required_work": "Event-dependent pace reliability and negative-control-aware development selection before another frozen confirmation",
+    "production_promotion": false
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

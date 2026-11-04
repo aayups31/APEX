@@ -1,0 +1,4064 @@
+{
+  "calibration_sha256": "23b41c9977b706035c538aa14c786011157fe49f04f6db584618811b0281a3bd",
+  "cases": [
+    {
+      "actual_s": 0.9369999999999976,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.21785552289798488,
+      "baseline_s": 0.590999999999994,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.6,
+        "weather_at_s": 1743918126.613
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.2701654740917912,
+      "current_prefix_s": [
+        90.456,
+        90.107,
+        90.364
+      ],
+      "current_target_s": [
+        90.185,
+        90.008,
+        90.018
+      ],
+      "driver": 1,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918186.106,
+      "lower_s": -0.7867259246434337,
+      "pairwise_actual_s": 0.9470000000000027,
+      "pairwise_prefix_s": 0.3789999999999907,
+      "predicted_crossover": false,
+      "predicted_s": 0.3731444771020091,
+      "prefix_s": 0.35599999999999454,
+      "raw_correction_s": -0.21785552289798488,
+      "reference_end_s": 1743917045.8660002,
+      "reference_persistence_s": 0.590999999999994,
+      "reference_target_s": [
+        90.768,
+        90.955,
+        90.994
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.2984530189280312,
+      "upper_s": 1.533014878847452
+    },
+    {
+      "actual_s": 0.7199999999999847,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.06202504569478823,
+      "baseline_s": 0.3269999999999982,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.6,
+        "weather_at_s": 1743918186.601
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.25837358206494193,
+      "current_prefix_s": [
+        90.493,
+        90.533,
+        90.096
+      ],
+      "current_target_s": [
+        90.063,
+        90.10000000000001,
+        90.137
+      ],
+      "driver": 4,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918188.3539999,
+      "lower_s": -0.8948954474402329,
+      "pairwise_actual_s": 0.6829999999999927,
+      "pairwise_prefix_s": 0.34600000000000364,
+      "predicted_crossover": false,
+      "predicted_s": 0.26497495430520995,
+      "prefix_s": 0.32099999999999795,
+      "raw_correction_s": -0.06202504569478823,
+      "reference_end_s": 1743917047.8790002,
+      "reference_persistence_s": 0.3269999999999982,
+      "reference_target_s": [
+        90.844,
+        90.777,
+        90.82
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.1920413226283913,
+      "upper_s": 1.4248453560506529
+    },
+    {
+      "actual_s": 1.141999999999996,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 0.7609999999999957,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917059.284,
+            "change_s": 0.14399999999999125,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917045.8660002,
+            "change_s": 0.23499999999999943,
+            "driver": 1,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917051.311,
+            "change_s": -0.07899999999999352,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917062.8669999,
+            "change_s": 0.14700000000000557,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917073.4420002,
+            "change_s": -0.1769999999999925,
+            "driver": 27,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917067.661,
+            "change_s": -0.25199999999999534,
+            "driver": 22,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917054.869,
+            "change_s": 0.2539999999999907,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917052.5410001,
+            "change_s": 0.08599999999999852,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917060.48,
+            "change_s": -0.12199999999999989,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917047.8790002,
+            "change_s": 0.006000000000000227,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917071.89,
+            "change_s": -0.2049999999999983,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917066.998,
+            "change_s": -0.03699999999999193,
+            "driver": 10,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917071.069,
+            "change_s": -0.060000000000002274,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917048.932,
+            "change_s": -0.3299999999999983,
+            "driver": 81,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3000000000000007,
+        "track_temperature_c": 19.4,
+        "weather_at_s": 1743919146.693
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.5699120458325282,
+      "current_prefix_s": [
+        90.664,
+        91.42,
+        91.22500000000001
+      ],
+      "current_target_s": [
+        90.788,
+        90.84400000000001,
+        91.009
+      ],
+      "driver": 5,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919173.667,
+      "lower_s": -0.8988704017454472,
+      "pairwise_actual_s": 1.1809999999999974,
+      "pairwise_prefix_s": 1.191999999999993,
+      "predicted_crossover": true,
+      "predicted_s": 0.2609999999999957,
+      "prefix_s": 1.3869999999999862,
+      "raw_correction_s": -0.560332918630689,
+      "reference_end_s": 1743917077.17,
+      "reference_persistence_s": 0.7609999999999957,
+      "reference_target_s": [
+        91.969,
+        92.211,
+        91.986
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.07082076278764371,
+      "upper_s": 1.4208704017454385
+    },
+    {
+      "actual_s": 0.9959999999999951,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.1455248201860435,
+      "baseline_s": 0.21099999999999852,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743918506.838,
+            "change_s": 0.07499999999997442,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.29999999999999716,
+        "track_temperature_c": 19.6,
+        "weather_at_s": 1743918546.657
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.30986809255175196,
+      "current_prefix_s": [
+        91.13999999999999,
+        91.18599999999999,
+        92.13499999999999
+      ],
+      "current_target_s": [
+        90.401,
+        90.48599999999999,
+        90.39
+      ],
+      "driver": 6,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918583.953,
+      "lower_s": -1.0943952219314879,
+      "pairwise_actual_s": 0.9909999999999997,
+      "pairwise_prefix_s": -0.08599999999999852,
+      "predicted_crossover": false,
+      "predicted_s": 0.06547517981395501,
+      "prefix_s": 0.06700000000000728,
+      "raw_correction_s": -0.1455248201860435,
+      "reference_end_s": 1743917059.284,
+      "reference_persistence_s": 0.21099999999999852,
+      "reference_target_s": [
+        91.509,
+        91.39699999999999,
+        91.381
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": -0.00799301631510127,
+      "upper_s": 1.2253455815593979
+    },
+    {
+      "actual_s": 0.9540000000000077,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.0289999999999822,
+      "compounds": [
+        "SOFT",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.29999999999999716,
+        "track_temperature_c": 20.1,
+        "weather_at_s": 1743917646.573
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.3792546786944572,
+      "current_prefix_s": [
+        91.32100000000001,
+        91.166,
+        91.58699999999999
+      ],
+      "current_target_s": [
+        91.635,
+        91.39599999999999,
+        91.26599999999999
+      ],
+      "driver": 7,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743917664.866,
+      "lower_s": -0.6308704017454607,
+      "pairwise_actual_s": 1.0840000000000032,
+      "pairwise_prefix_s": 1.4210000000000065,
+      "predicted_crossover": false,
+      "predicted_s": 0.5289999999999822,
+      "prefix_s": 1.2659999999999911,
+      "raw_correction_s": -0.5160146700590948,
+      "reference_end_s": 1743917076.706,
+      "reference_persistence_s": 1.0289999999999822,
+      "reference_target_s": [
+        92.276,
+        92.498,
+        92.35
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.3909431060438612,
+      "upper_s": 1.688870401745425
+    },
+    {
+      "actual_s": 1.274000000000001,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.40842823062582406,
+      "baseline_s": 0.9570000000000078,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743918506.838,
+            "change_s": 0.07499999999997442,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.5,
+        "weather_at_s": 1743918486.641
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.3190600265425524,
+      "current_prefix_s": [
+        91.14800000000001,
+        90.886,
+        90.895
+      ],
+      "current_target_s": [
+        90.578,
+        90.499,
+        90.716
+      ],
+      "driver": 10,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918509.561,
+      "lower_s": -0.611298632371259,
+      "pairwise_actual_s": 1.3530000000000086,
+      "pairwise_prefix_s": 1.0030000000000001,
+      "predicted_crossover": false,
+      "predicted_s": 0.5485717693741838,
+      "prefix_s": 0.9939999999999998,
+      "raw_correction_s": -0.40842823062582406,
+      "reference_end_s": 1743917066.998,
+      "reference_persistence_s": 0.9570000000000078,
+      "reference_target_s": [
+        91.94,
+        91.852,
+        91.657
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.44515766330406825,
+      "upper_s": 1.7084421711196267
+    },
+    {
+      "actual_s": 1.431999999999988,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.7679999999999865,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743919015.609,
+            "change_s": -0.34600000000000364,
+            "driver": 1,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743919025.2740002,
+            "change_s": -0.762999999999991,
+            "driver": 16,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743918844.7429998,
+            "change_s": -0.7990000000000066,
+            "driver": 63,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743918506.838,
+            "change_s": 0.07499999999997442,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743919017.1660001,
+            "change_s": -0.39299999999998647,
+            "driver": 4,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743918926.879,
+            "change_s": -0.8109999999999928,
+            "driver": 81,
+            "stint": 2
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 19.5,
+        "weather_at_s": 1743919086.689
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.23945884372637163,
+      "current_prefix_s": [
+        89.59400000000001,
+        89.72200000000001,
+        89.81800000000001
+      ],
+      "current_target_s": [
+        90.058,
+        90.10900000000001,
+        89.99600000000001
+      ],
+      "driver": 12,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919128.2289999,
+      "lower_s": 0.1081295982545436,
+      "pairwise_actual_s": 1.384999999999991,
+      "pairwise_prefix_s": 1.4179999999999922,
+      "predicted_crossover": false,
+      "predicted_s": 1.2679999999999865,
+      "prefix_s": 1.5139999999999958,
+      "raw_correction_s": -0.8636683863162681,
+      "reference_end_s": 1743917054.869,
+      "reference_persistence_s": 1.7679999999999865,
+      "reference_target_s": [
+        91.49,
+        91.494,
+        91.122
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.7776006697566722,
+      "upper_s": 2.4278704017454293
+    },
+    {
+      "actual_s": 0.8290000000000077,
+      "ages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "applied_correction_s": -0.3491603464577444,
+      "baseline_s": 0.75,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917172.244,
+            "change_s": 0.14999999999999147,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917074.686,
+            "change_s": -0.3500000000000085,
+            "driver": 31,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917948.963,
+            "change_s": -1.1920000000000073,
+            "driver": 18,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743917150.5389998,
+            "change_s": 0.2219999999999942,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.5,
+        "weather_at_s": 1743918486.641
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.34428381779790634,
+      "current_prefix_s": [
+        90.75800000000001,
+        91.023,
+        91.002
+      ],
+      "current_target_s": [
+        90.94300000000001,
+        90.92299999999999,
+        90.836
+      ],
+      "driver": 14,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918502.652,
+      "lower_s": -0.7590307482031873,
+      "pairwise_actual_s": 0.8449999999999989,
+      "pairwise_prefix_s": 0.671999999999997,
+      "predicted_crossover": false,
+      "predicted_s": 0.4008396535422556,
+      "prefix_s": 0.6929999999999978,
+      "raw_correction_s": -0.3491603464577444,
+      "reference_end_s": 1743917065.1,
+      "reference_persistence_s": 0.75,
+      "reference_target_s": [
+        91.752,
+        91.826,
+        91.681
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.30669252213064135,
+      "upper_s": 1.5607100552876985
+    },
+    {
+      "actual_s": 0.7569999999999908,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": 0.19242314548064543,
+      "baseline_s": -0.006000000000000227,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.6,
+        "weather_at_s": 1743918186.601
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.17135960211885373,
+      "current_prefix_s": [
+        91.724,
+        90.94,
+        90.537
+      ],
+      "current_target_s": [
+        90.177,
+        89.96600000000001,
+        90.37
+      ],
+      "driver": 16,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918195.56,
+      "lower_s": -0.9734472562647977,
+      "pairwise_actual_s": 0.7569999999999908,
+      "pairwise_prefix_s": 0.12300000000000466,
+      "predicted_crossover": false,
+      "predicted_s": 0.1864231454806452,
+      "prefix_s": 0.07299999999999329,
+      "raw_correction_s": 0.19242314548064543,
+      "reference_end_s": 1743917051.311,
+      "reference_persistence_s": -0.006000000000000227,
+      "reference_target_s": [
+        90.934,
+        91.089,
+        90.767
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.1304217622846347,
+      "upper_s": 1.3462935472260882
+    },
+    {
+      "actual_s": 0.262999999999991,
+      "ages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "applied_correction_s": 0.0,
+      "baseline_s": 0.664999999999992,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917153.152,
+            "change_s": 0.1280000000000001,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917139.325,
+            "change_s": 0.23499999999999943,
+            "driver": 1,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917144.972,
+            "change_s": 0.15900000000000603,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917157.225,
+            "change_s": 0.21999999999999886,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917168.297,
+            "change_s": -0.09900000000000375,
+            "driver": 27,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917162.342,
+            "change_s": -0.007999999999995566,
+            "driver": 22,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917148.8400002,
+            "change_s": 0.3119999999999976,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917146.275,
+            "change_s": 0.13599999999999568,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917065.1,
+            "change_s": 0.05700000000000216,
+            "driver": 14,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917154.694,
+            "change_s": 0.020000000000010232,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917141.27,
+            "change_s": 0.006000000000000227,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917167.077,
+            "change_s": 0.12399999999999523,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917161.325,
+            "change_s": 0.014000000000010004,
+            "driver": 10,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917165.979,
+            "change_s": -0.05100000000000193,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917142.677,
+            "change_s": -0.3299999999999983,
+            "driver": 81,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 19.5,
+        "weather_at_s": 1743919086.689
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.6924442847695544,
+      "current_prefix_s": [
+        90.515,
+        90.65,
+        91.105
+      ],
+      "current_target_s": [
+        91.097,
+        91.006,
+        91.052
+      ],
+      "driver": 18,
+      "fallback": true,
+      "fallback_reasons": [
+        "OUTSIDE_TRAINING_FEATURE_RANGE"
+      ],
+      "forecast_at_s": 1743919095.4329998,
+      "lower_s": -0.4948704017454508,
+      "pairwise_actual_s": 0.3089999999999975,
+      "pairwise_prefix_s": 1.6089999999999947,
+      "predicted_crossover": true,
+      "predicted_s": 0.664999999999992,
+      "prefix_s": 1.8569999999999993,
+      "raw_correction_s": -0.5506993721104803,
+      "reference_end_s": 1743917948.963,
+      "reference_persistence_s": 0.664999999999992,
+      "reference_target_s": [
+        91.29899999999999,
+        91.315,
+        91.504
+      ],
+      "session": 10006,
+      "stints": [
+        2,
+        3
+      ],
+      "unbounded_prediction_s": -0.04215727912363354,
+      "upper_s": 1.824870401745435
+    },
+    {
+      "actual_s": 1.036999999999992,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.01884968461328207,
+      "baseline_s": 0.26300000000000523,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.6000000000000014,
+        "track_temperature_c": 19.4,
+        "weather_at_s": 1743918366.649
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.2711117256179172,
+      "current_prefix_s": [
+        91.476,
+        91.64500000000001,
+        90.83500000000001
+      ],
+      "current_target_s": [
+        90.845,
+        90.70200000000001,
+        90.66999999999999
+      ],
+      "driver": 22,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918410.886,
+      "lower_s": -0.9157200863587197,
+      "pairwise_actual_s": 1.041000000000011,
+      "pairwise_prefix_s": 0.9119999999999919,
+      "predicted_crossover": false,
+      "predicted_s": 0.24415031538672316,
+      "prefix_s": 0.5150000000000006,
+      "raw_correction_s": -0.01884968461328207,
+      "reference_end_s": 1743917067.661,
+      "reference_persistence_s": 0.26300000000000523,
+      "reference_target_s": [
+        91.938,
+        91.739,
+        91.711
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.1623312863894178,
+      "upper_s": 1.4040207171321661
+    },
+    {
+      "actual_s": 0.6540000000000106,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.06179629803846459,
+      "baseline_s": 0.3100000000000023,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 19.5,
+        "weather_at_s": 1743918486.641
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.2732691649284055,
+      "current_prefix_s": [
+        91.003,
+        91.763,
+        90.60799999999999
+      ],
+      "current_target_s": [
+        90.757,
+        90.54799999999999,
+        90.65899999999999
+      ],
+      "driver": 23,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918493.289,
+      "lower_s": -0.9116666997839051,
+      "pairwise_actual_s": 0.7379999999999853,
+      "pairwise_prefix_s": 0.6850000000000023,
+      "predicted_crossover": false,
+      "predicted_s": 0.24820370196153768,
+      "prefix_s": 0.43200000000000216,
+      "raw_correction_s": -0.06179629803846459,
+      "reference_end_s": 1743917060.48,
+      "reference_persistence_s": 0.3100000000000023,
+      "reference_target_s": [
+        91.49499999999999,
+        91.313,
+        91.29599999999999
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.16909349912531524,
+      "upper_s": 1.4080741037069806
+    },
+    {
+      "actual_s": 0.6859999999999928,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.42369199383233946,
+      "baseline_s": 0.7469999999999999,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3999999999999986,
+        "track_temperature_c": 19.6,
+        "weather_at_s": 1743918306.617
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.44234800721580164,
+      "current_prefix_s": [
+        90.632,
+        94.72,
+        91.429
+      ],
+      "current_target_s": [
+        91.437,
+        91.676,
+        91.49000000000001
+      ],
+      "driver": 27,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918324.411,
+      "lower_s": -0.8365623955777824,
+      "pairwise_actual_s": 0.6899999999999977,
+      "pairwise_prefix_s": 0.8130000000000024,
+      "predicted_crossover": false,
+      "predicted_s": 0.3233080061676604,
+      "prefix_s": 0.9239999999999924,
+      "raw_correction_s": -0.42369199383233946,
+      "reference_end_s": 1743917073.4420002,
+      "reference_persistence_s": 0.7469999999999999,
+      "reference_target_s": [
+        92.176,
+        92.366,
+        91.836
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.2115842973649149,
+      "upper_s": 1.4831784079131034
+    },
+    {
+      "actual_s": 0.7280000000000086,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 0.9489999999999981,
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917076.706,
+            "change_s": -0.23700000000000898,
+            "driver": 7,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.1999999999999993,
+        "track_temperature_c": 19.3,
+        "weather_at_s": 1743919326.709
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.47530963780943464,
+      "current_prefix_s": [
+        90.47800000000001,
+        91.71499999999999,
+        91.158
+      ],
+      "current_target_s": [
+        91.17,
+        91.37899999999999,
+        91.515
+      ],
+      "driver": 30,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919355.708,
+      "lower_s": -0.7108704017454448,
+      "pairwise_actual_s": 0.737000000000009,
+      "pairwise_prefix_s": 0.9159999999999968,
+      "predicted_crossover": false,
+      "predicted_s": 0.44899999999999807,
+      "prefix_s": 1.0090000000000003,
+      "raw_correction_s": -0.6498823109357474,
+      "reference_end_s": 1743917071.069,
+      "reference_persistence_s": 0.9489999999999981,
+      "reference_target_s": [
+        92.107,
+        92.116,
+        91.947
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.2663741093892765,
+      "upper_s": 1.608870401745441
+    },
+    {
+      "actual_s": 1.108000000000004,
+      "ages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.0130000000000052,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917153.152,
+            "change_s": 0.1280000000000001,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917139.325,
+            "change_s": 0.23499999999999943,
+            "driver": 1,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917144.972,
+            "change_s": 0.15900000000000603,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917157.225,
+            "change_s": 0.21999999999999886,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917168.297,
+            "change_s": -0.09900000000000375,
+            "driver": 27,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917162.342,
+            "change_s": -0.007999999999995566,
+            "driver": 22,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917148.8400002,
+            "change_s": 0.3119999999999976,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917146.275,
+            "change_s": 0.13599999999999568,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917065.1,
+            "change_s": 0.05700000000000216,
+            "driver": 14,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917154.694,
+            "change_s": 0.020000000000010232,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917141.27,
+            "change_s": 0.006000000000000227,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917167.077,
+            "change_s": 0.12399999999999523,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917161.325,
+            "change_s": 0.014000000000010004,
+            "driver": 10,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917165.979,
+            "change_s": -0.05100000000000193,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917142.677,
+            "change_s": -0.3299999999999983,
+            "driver": 81,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.1999999999999993,
+        "track_temperature_c": 19.3,
+        "weather_at_s": 1743919326.709
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.42967807312442335,
+      "current_prefix_s": [
+        91.11800000000001,
+        91.10199999999999,
+        91.04299999999999
+      ],
+      "current_target_s": [
+        90.84200000000001,
+        91.00699999999999,
+        91.282
+      ],
+      "driver": 31,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919357.812,
+      "lower_s": -0.6468704017454376,
+      "pairwise_actual_s": 1.1740000000000066,
+      "pairwise_prefix_s": 1.3630000000000138,
+      "predicted_crossover": false,
+      "predicted_s": 0.5130000000000052,
+      "prefix_s": 1.3630000000000138,
+      "raw_correction_s": -0.6034746021855819,
+      "reference_end_s": 1743917074.686,
+      "reference_persistence_s": 1.0130000000000052,
+      "reference_target_s": [
+        92.115,
+        92.181,
+        91.923
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.28967674729108916,
+      "upper_s": 1.672870401745448
+    },
+    {
+      "actual_s": 1.1809999999999974,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.3250000000000028,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917059.284,
+            "change_s": 0.14399999999999125,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917045.8660002,
+            "change_s": 0.23499999999999943,
+            "driver": 1,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917051.311,
+            "change_s": -0.07899999999999352,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917062.8669999,
+            "change_s": 0.14700000000000557,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917073.4420002,
+            "change_s": -0.1769999999999925,
+            "driver": 27,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917067.661,
+            "change_s": -0.25199999999999534,
+            "driver": 22,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917054.869,
+            "change_s": 0.2539999999999907,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917052.5410001,
+            "change_s": 0.08599999999999852,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917060.48,
+            "change_s": -0.12199999999999989,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917047.8790002,
+            "change_s": 0.006000000000000227,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917071.89,
+            "change_s": -0.2049999999999983,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917066.998,
+            "change_s": -0.03699999999999193,
+            "driver": 10,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917071.069,
+            "change_s": -0.060000000000002274,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917048.932,
+            "change_s": -0.3299999999999983,
+            "driver": 81,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 19.4,
+        "weather_at_s": 1743919026.673
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.3510916116207669,
+      "current_prefix_s": [
+        89.955,
+        89.783,
+        90.12
+      ],
+      "current_target_s": [
+        90.099,
+        90.089,
+        91.248
+      ],
+      "driver": 44,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919038.1490002,
+      "lower_s": -0.33487040174544,
+      "pairwise_actual_s": 1.1269999999999953,
+      "pairwise_prefix_s": 1.4050000000000011,
+      "predicted_crossover": false,
+      "predicted_s": 0.8250000000000028,
+      "prefix_s": 1.233000000000004,
+      "raw_correction_s": -0.7631663308213279,
+      "reference_end_s": 1743917056.5110002,
+      "reference_persistence_s": 1.3250000000000028,
+      "reference_target_s": [
+        91.226,
+        91.345,
+        91.28
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.45023713767806384,
+      "upper_s": 1.9848704017454457
+    },
+    {
+      "actual_s": 0.5420000000000016,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 2.1049999999999898,
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917076.706,
+            "change_s": -0.23700000000000898,
+            "driver": 7,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.1999999999999993,
+        "track_temperature_c": 19.3,
+        "weather_at_s": 1743919326.709
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.19206686143142793,
+      "current_prefix_s": [
+        89.95400000000001,
+        89.42599999999999,
+        90.449
+      ],
+      "current_target_s": [
+        91.23100000000001,
+        91.517,
+        91.789
+      ],
+      "driver": 55,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743919352.9829998,
+      "lower_s": 0.4451295982545469,
+      "pairwise_actual_s": 0.8279999999999887,
+      "pairwise_prefix_s": 2.838000000000008,
+      "predicted_crossover": false,
+      "predicted_s": 1.6049999999999898,
+      "prefix_s": 2.309999999999988,
+      "raw_correction_s": -1.2404954791872926,
+      "reference_end_s": 1743917071.89,
+      "reference_persistence_s": 2.1049999999999898,
+      "reference_target_s": [
+        92.059,
+        92.38799999999999,
+        91.909
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.7764393951449786,
+      "upper_s": 2.7648704017454326
+    },
+    {
+      "actual_s": 0.9159999999999968,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": -0.004860777401630267,
+      "baseline_s": 0.11699999999999022,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 19.9,
+        "weather_at_s": 1743918006.63
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.24108714696652325,
+      "current_prefix_s": [
+        90.92699999999999,
+        91.855,
+        91.052
+      ],
+      "current_target_s": [
+        90.42699999999999,
+        90.253,
+        90.183
+      ],
+      "driver": 63,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918010.923,
+      "lower_s": -1.047731179147083,
+      "pairwise_actual_s": 0.9230000000000018,
+      "pairwise_prefix_s": -0.019000000000005457,
+      "predicted_crossover": false,
+      "predicted_s": 0.11213922259835996,
+      "prefix_s": 0.0309999999999917,
+      "raw_correction_s": -0.004860777401630267,
+      "reference_end_s": 1743917052.5410001,
+      "reference_persistence_s": 0.11699999999999022,
+      "reference_target_s": [
+        91.15299999999999,
+        91.176,
+        91.169
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.047616016584903664,
+      "upper_s": 1.2720096243438028
+    },
+    {
+      "actual_s": 0.6659999999999968,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "applied_correction_s": 0.2688162491416487,
+      "baseline_s": -0.14499999999999602,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917077.17,
+            "change_s": -0.6259999999999906,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917056.5110002,
+            "change_s": 0.09199999999999875,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.40000000000000213,
+        "track_temperature_c": 19.7,
+        "weather_at_s": 1743918066.615
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.18951574386128053,
+      "current_prefix_s": [
+        91.576,
+        90.791,
+        90.202
+      ],
+      "current_target_s": [
+        90.111,
+        89.98,
+        89.626
+      ],
+      "driver": 81,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918097.922,
+      "lower_s": -1.03605415260379,
+      "pairwise_actual_s": 0.6659999999999968,
+      "pairwise_prefix_s": 0.18500000000000227,
+      "predicted_crossover": false,
+      "predicted_s": 0.12381624914165268,
+      "prefix_s": 0.18500000000000227,
+      "raw_correction_s": 0.2688162491416487,
+      "reference_end_s": 1743917048.932,
+      "reference_persistence_s": -0.14499999999999602,
+      "reference_target_s": [
+        90.749,
+        90.646,
+        90.607
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.06197237789899032,
+      "upper_s": 1.2836866508870957
+    },
+    {
+      "actual_s": 1.058000000000007,
+      "ages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "applied_correction_s": -0.14446958187890674,
+      "baseline_s": 0.35599999999999454,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1743917172.244,
+            "change_s": 0.14999999999999147,
+            "driver": 5,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917074.686,
+            "change_s": -0.3500000000000085,
+            "driver": 31,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1743917948.963,
+            "change_s": -1.1920000000000073,
+            "driver": 18,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1743917150.5389998,
+            "change_s": 0.2219999999999942,
+            "driver": 44,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.6000000000000014,
+        "track_temperature_c": 19.4,
+        "weather_at_s": 1743918366.649
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.26889713333116494,
+      "current_prefix_s": [
+        90.988,
+        91.233,
+        91.332
+      ],
+      "current_target_s": [
+        90.41000000000001,
+        90.626,
+        90.53099999999999
+      ],
+      "driver": 87,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1743918404.101,
+      "lower_s": -0.9483399836243551,
+      "pairwise_actual_s": 1.1459999999999866,
+      "pairwise_prefix_s": 0.20899999999998897,
+      "predicted_crossover": false,
+      "predicted_s": 0.2115304181210878,
+      "prefix_s": 0.13599999999999568,
+      "raw_correction_s": -0.14446958187890674,
+      "reference_end_s": 1743917157.225,
+      "reference_persistence_s": 0.35599999999999454,
+      "reference_target_s": [
+        91.556,
+        91.589,
+        91.723
+      ],
+      "session": 10006,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.14200309653926974,
+      "upper_s": 1.3714008198665306
+    },
+    {
+      "actual_s": 0.28600000000000136,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.0899475628360619,
+      "baseline_s": 0.37699999999999534,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.09999999999999432,
+        "track_temperature_c": 37.7,
+        "weather_at_s": 1745171340.937
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.7968918068678986,
+      "current_prefix_s": [
+        90.925,
+        90.92,
+        90.87800000000001
+      ],
+      "current_target_s": [
+        90.932,
+        91.021,
+        91.011
+      ],
+      "driver": 1,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171373.506,
+      "lower_s": -0.8728179645815094,
+      "pairwise_actual_s": 0.2779999999999916,
+      "pairwise_prefix_s": -0.18600000000000705,
+      "predicted_crossover": true,
+      "predicted_s": 0.28705243716393347,
+      "prefix_s": -0.18600000000000705,
+      "raw_correction_s": -0.0899475628360619,
+      "reference_end_s": 1745170225.407,
+      "reference_persistence_s": 0.37699999999999534,
+      "reference_target_s": [
+        91.21,
+        91.297,
+        91.33800000000001
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.23869482245376683,
+      "upper_s": 1.4469228389093765
+    },
+    {
+      "actual_s": 1.463000000000008,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.8480000000000132,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170231.104,
+            "change_s": 0.6260000000000048,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170245.964,
+            "change_s": 0.05500000000000682,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170237.209,
+            "change_s": 0.6470000000000056,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170241.652,
+            "change_s": 0.9159999999999968,
+            "driver": 44,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170244.122,
+            "change_s": -0.33499999999999375,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170226.8379998,
+            "change_s": 0.6099999999999994,
+            "driver": 81,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170251.8279998,
+            "change_s": -0.3399999999999892,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170233.946,
+            "change_s": 0.13400000000000034,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170254.258,
+            "change_s": 0.3079999999999927,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170225.407,
+            "change_s": 0.5630000000000024,
+            "driver": 1,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3999999999999986,
+        "track_temperature_c": 36.5,
+        "weather_at_s": 1745172540.944
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.27292182457176345,
+      "current_prefix_s": [
+        90.547,
+        90.63799999999999,
+        90.92
+      ],
+      "current_target_s": [
+        91.023,
+        90.955,
+        91.044
+      ],
+      "driver": 4,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745172590.84,
+      "lower_s": 0.18812959825457032,
+      "pairwise_actual_s": 1.531000000000006,
+      "pairwise_prefix_s": 1.9050000000000153,
+      "predicted_crossover": false,
+      "predicted_s": 1.3480000000000132,
+      "prefix_s": 1.9050000000000153,
+      "raw_correction_s": -1.0678844011999464,
+      "reference_end_s": 1745170240.211,
+      "reference_persistence_s": 1.8480000000000132,
+      "reference_target_s": [
+        93.108,
+        92.486,
+        91.626
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.6363040301122034,
+      "upper_s": 2.507870401745456
+    },
+    {
+      "actual_s": 0.006000000000000227,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.2924685569059289,
+      "baseline_s": 0.4539999999999935,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170231.104,
+            "change_s": 0.6260000000000048,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170245.964,
+            "change_s": 0.05500000000000682,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170237.209,
+            "change_s": 0.6470000000000056,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170241.652,
+            "change_s": 0.9159999999999968,
+            "driver": 44,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170244.122,
+            "change_s": -0.33499999999999375,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170226.8379998,
+            "change_s": 0.6099999999999994,
+            "driver": 81,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170251.8279998,
+            "change_s": -0.3399999999999892,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170233.946,
+            "change_s": 0.13400000000000034,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170254.258,
+            "change_s": 0.3079999999999927,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170225.407,
+            "change_s": 0.5630000000000024,
+            "driver": 1,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3999999999999986,
+        "track_temperature_c": 36.6,
+        "weather_at_s": 1745172600.949
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.36963253945086205,
+      "current_prefix_s": [
+        92.166,
+        91.703,
+        92.01
+      ],
+      "current_target_s": [
+        92.37899999999999,
+        92.458,
+        92.617
+      ],
+      "driver": 6,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745172632.154,
+      "lower_s": -0.9983389586513782,
+      "pairwise_actual_s": 0.047000000000011255,
+      "pairwise_prefix_s": 0.938999999999993,
+      "predicted_crossover": false,
+      "predicted_s": 0.16153144309406464,
+      "prefix_s": 0.6319999999999908,
+      "raw_correction_s": -0.2924685569059289,
+      "reference_end_s": 1745170247.686,
+      "reference_persistence_s": 0.4539999999999935,
+      "reference_target_s": [
+        92.426,
+        92.571,
+        92.464
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.07549135177438543,
+      "upper_s": 1.3214018448395075
+    },
+    {
+      "actual_s": 0.11400000000000432,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.21761470569749028,
+      "baseline_s": 0.6030000000000086,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.20000000000000284,
+        "track_temperature_c": 37.5,
+        "weather_at_s": 1745171160.927
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.23500048278250718,
+      "current_prefix_s": [
+        91.543,
+        91.544,
+        91.638
+      ],
+      "current_target_s": [
+        92.036,
+        91.903,
+        92.033
+      ],
+      "driver": 12,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171201.374,
+      "lower_s": -0.7744851074429245,
+      "pairwise_actual_s": 0.24399999999999977,
+      "pairwise_prefix_s": -0.04399999999999693,
+      "predicted_crossover": false,
+      "predicted_s": 0.38538529430251833,
+      "prefix_s": -0.04399999999999693,
+      "raw_correction_s": -0.21761470569749028,
+      "reference_end_s": 1745170237.209,
+      "reference_persistence_s": 0.6030000000000086,
+      "reference_target_s": [
+        92.111,
+        92.147,
+        92.296
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.3306022720580739,
+      "upper_s": 1.545255696047961
+    },
+    {
+      "actual_s": 0.9309999999999974,
+      "ages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 0.9449999999999932,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170256.411,
+            "change_s": 0.03499999999999659,
+            "driver": 18,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170334.3990002,
+            "change_s": -0.4519999999999982,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170453.898,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170451.389,
+            "change_s": 0.8589999999999947,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170342.852,
+            "change_s": 0.11599999999999966,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170450.836,
+            "change_s": 0.9139999999999873,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170353.7570002,
+            "change_s": 0.4040000000000106,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 37.6,
+        "weather_at_s": 1745171220.976
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.45853803134745963,
+      "current_prefix_s": [
+        92.683,
+        92.647,
+        94.88900000000001
+      ],
+      "current_target_s": [
+        92.766,
+        92.45,
+        92.697
+      ],
+      "driver": 14,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171226.1669998,
+      "lower_s": -0.7148704017454497,
+      "pairwise_actual_s": 1.0130000000000052,
+      "pairwise_prefix_s": 0.546999999999997,
+      "predicted_crossover": false,
+      "predicted_s": 0.4449999999999932,
+      "prefix_s": 0.5109999999999957,
+      "raw_correction_s": -0.6413955092896302,
+      "reference_end_s": 1745170252.6820002,
+      "reference_persistence_s": 0.9449999999999932,
+      "reference_target_s": [
+        93.25,
+        93.628,
+        93.71000000000001
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.20324576589243426,
+      "upper_s": 1.604870401745436
+    },
+    {
+      "actual_s": 0.8419999999999987,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.4637441413707992,
+      "baseline_s": 1.0339999999999918,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745172122.4880002,
+            "change_s": -0.3640000000000043,
+            "driver": 63,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745172046.6859999,
+            "change_s": 0.4890000000000043,
+            "driver": 12,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745171983.463,
+            "change_s": 0.11899999999999977,
+            "driver": 14,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745172018.977,
+            "change_s": 0.04600000000000648,
+            "driver": 81,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745172075.296,
+            "change_s": -0.8509999999999991,
+            "driver": 30,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745171987.2250001,
+            "change_s": 0.4309999999999974,
+            "driver": 87,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3999999999999986,
+        "track_temperature_c": 37.0,
+        "weather_at_s": 1745172120.947
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.3127594767760941,
+      "current_prefix_s": [
+        90.68,
+        90.929,
+        90.668
+      ],
+      "current_target_s": [
+        90.83,
+        90.872,
+        91.129
+      ],
+      "driver": 16,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745172123.834,
+      "lower_s": -0.5896145431162503,
+      "pairwise_actual_s": 0.7409999999999997,
+      "pairwise_prefix_s": 0.9119999999999919,
+      "predicted_crossover": false,
+      "predicted_s": 0.5702558586291926,
+      "prefix_s": 0.8999999999999915,
+      "raw_correction_s": -0.4637441413707992,
+      "reference_end_s": 1745170233.946,
+      "reference_persistence_s": 1.0339999999999918,
+      "reference_target_s": [
+        91.571,
+        92.037,
+        91.714
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.4705235030946817,
+      "upper_s": 1.7301262603746355
+    },
+    {
+      "actual_s": 0.5819999999999936,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.11539230078870116,
+      "baseline_s": 0.3190000000000026,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.8999999999999986,
+        "track_temperature_c": 37.2,
+        "weather_at_s": 1745171460.946
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.27167979564637884,
+      "current_prefix_s": [
+        92.36,
+        92.00899999999999,
+        92.51599999999999
+      ],
+      "current_target_s": [
+        92.09700000000001,
+        92.05799999999999,
+        92.53999999999999
+      ],
+      "driver": 23,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171504.131,
+      "lower_s": -0.9562627025341415,
+      "pairwise_actual_s": 0.17399999999999238,
+      "pairwise_prefix_s": 0.6150000000000091,
+      "predicted_crossover": false,
+      "predicted_s": 0.20360769921130145,
+      "prefix_s": 0.2639999999999958,
+      "raw_correction_s": -0.11539230078870116,
+      "reference_end_s": 1745170245.964,
+      "reference_persistence_s": 0.3190000000000026,
+      "reference_target_s": [
+        92.271,
+        92.803,
+        92.679
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.1285264636582239,
+      "upper_s": 1.3634781009567443
+    },
+    {
+      "actual_s": 0.3500000000000085,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.4150000000000063,
+      "compounds": [
+        "HARD",
+        "MEDIUM"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170231.104,
+            "change_s": 0.6260000000000048,
+            "driver": 63,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170245.964,
+            "change_s": 0.05500000000000682,
+            "driver": 23,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170237.209,
+            "change_s": 0.6470000000000056,
+            "driver": 12,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170241.652,
+            "change_s": 0.9159999999999968,
+            "driver": 44,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170244.122,
+            "change_s": -0.33499999999999375,
+            "driver": 55,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170226.8379998,
+            "change_s": 0.6099999999999994,
+            "driver": 81,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170251.8279998,
+            "change_s": -0.3399999999999892,
+            "driver": 30,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170233.946,
+            "change_s": 0.13400000000000034,
+            "driver": 16,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170254.258,
+            "change_s": 0.3079999999999927,
+            "driver": 87,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170225.407,
+            "change_s": 0.5630000000000024,
+            "driver": 1,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.3999999999999986,
+        "track_temperature_c": 36.5,
+        "weather_at_s": 1745172540.944
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.3073111242711815,
+      "current_prefix_s": [
+        92.51899999999999,
+        91.919,
+        91.892
+      ],
+      "current_target_s": [
+        92.984,
+        92.91499999999999,
+        93.054
+      ],
+      "driver": 27,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745172562.871,
+      "lower_s": -0.24487040174543662,
+      "pairwise_actual_s": 0.4040000000000106,
+      "pairwise_prefix_s": 1.6550000000000011,
+      "predicted_crossover": false,
+      "predicted_s": 0.9150000000000063,
+      "prefix_s": 1.6550000000000011,
+      "raw_correction_s": -0.7447710606309598,
+      "reference_end_s": 1745170257.924,
+      "reference_persistence_s": 1.4150000000000063,
+      "reference_target_s": [
+        93.334,
+        93.319,
+        93.774
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.5442853358750056,
+      "upper_s": 2.074870401745449
+    },
+    {
+      "actual_s": 0.6480000000000103,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": 0.2070555692780185,
+      "baseline_s": -0.20299999999998875,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 37.6,
+        "weather_at_s": 1745171220.976
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.232606980399698,
+      "current_prefix_s": [
+        93.243,
+        94.197,
+        92.7
+      ],
+      "current_target_s": [
+        92.907,
+        92.392,
+        91.96000000000001
+      ],
+      "driver": 30,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171223.721,
+      "lower_s": -1.1558148324674131,
+      "pairwise_actual_s": 0.7760000000000105,
+      "pairwise_prefix_s": -0.09499999999999886,
+      "predicted_crossover": false,
+      "predicted_s": 0.004055569278029747,
+      "prefix_s": 0.13700000000000045,
+      "raw_correction_s": 0.2070555692780185,
+      "reference_end_s": 1745170251.8279998,
+      "reference_persistence_s": -0.20299999999998875,
+      "reference_target_s": [
+        93.04,
+        93.168,
+        92.778
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": -0.06355378589997912,
+      "upper_s": 1.1639259710234726
+    },
+    {
+      "actual_s": 1.6270000000000095,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.3709999999999951,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.7000000000000028,
+        "track_temperature_c": 37.4,
+        "weather_at_s": 1745171580.941
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.2322450357848275,
+      "current_prefix_s": [
+        91.662,
+        91.34899999999999,
+        91.836
+      ],
+      "current_target_s": [
+        91.61099999999999,
+        91.40599999999999,
+        91.329
+      ],
+      "driver": 44,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171584.365,
+      "lower_s": -0.28887040174544776,
+      "pairwise_actual_s": 1.4220000000000113,
+      "pairwise_prefix_s": 0.7680000000000149,
+      "predicted_crossover": false,
+      "predicted_s": 0.8709999999999951,
+      "prefix_s": 0.4549999999999983,
+      "raw_correction_s": -0.6082089407540545,
+      "reference_end_s": 1745170241.652,
+      "reference_persistence_s": 1.3709999999999951,
+      "reference_target_s": [
+        93.033,
+        92.214,
+        93.27
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.6890269199408645,
+      "upper_s": 2.030870401745438
+    },
+    {
+      "actual_s": 0.1950000000000074,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.011565755049426807,
+      "baseline_s": -0.132000000000005,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.6000000000000014,
+        "track_temperature_c": 37.3,
+        "weather_at_s": 1745171400.927
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.3750679573089441,
+      "current_prefix_s": [
+        91.781,
+        92.53200000000001,
+        92.89500000000001
+      ],
+      "current_target_s": [
+        92.205,
+        92.186,
+        92.27999999999999
+      ],
+      "driver": 55,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171407.1330001,
+      "lower_s": -1.3034361567948747,
+      "pairwise_actual_s": 0.21399999999999864,
+      "pairwise_prefix_s": 0.20299999999998875,
+      "predicted_crossover": false,
+      "predicted_s": -0.1435657550494318,
+      "prefix_s": 0.20299999999998875,
+      "raw_correction_s": -0.011565755049426807,
+      "reference_end_s": 1745170244.122,
+      "reference_persistence_s": -0.132000000000005,
+      "reference_target_s": [
+        92.344,
+        92.4,
+        92.764
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": -0.22928075063847075,
+      "upper_s": 1.016304646696011
+    },
+    {
+      "actual_s": 0.6149999999999949,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": 0.036966354084486897,
+      "baseline_s": 0.25099999999999056,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.5,
+        "track_temperature_c": 37.7,
+        "weather_at_s": 1745171280.945
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.8148618755562562,
+      "current_prefix_s": [
+        91.669,
+        91.50800000000001,
+        91.101
+      ],
+      "current_target_s": [
+        91.138,
+        91.144,
+        91.244
+      ],
+      "driver": 63,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171284.5249999,
+      "lower_s": -0.8719040476609654,
+      "pairwise_actual_s": 0.5689999999999884,
+      "pairwise_prefix_s": 0.031999999999996476,
+      "predicted_crossover": true,
+      "predicted_s": 0.28796635408447746,
+      "prefix_s": -0.3750000000000142,
+      "raw_correction_s": 0.036966354084486897,
+      "reference_end_s": 1745170231.104,
+      "reference_persistence_s": 0.25099999999999056,
+      "reference_target_s": [
+        91.707,
+        91.759,
+        91.79
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.25318943507351416,
+      "upper_s": 1.4478367558299203
+    },
+    {
+      "actual_s": 0.6479999999999961,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.2632114876719884,
+      "baseline_s": 0.6940000000000026,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.20000000000000284,
+        "track_temperature_c": 37.5,
+        "weather_at_s": 1745171160.927
+      },
+      "correction_bounded": false,
+      "crossover_score": 0.23431612774173552,
+      "current_prefix_s": [
+        90.893,
+        90.57600000000001,
+        90.95
+      ],
+      "current_target_s": [
+        90.93900000000001,
+        90.851,
+        91.437
+      ],
+      "driver": 81,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171183.237,
+      "lower_s": -0.7290818894174287,
+      "pairwise_actual_s": 0.6170000000000044,
+      "pairwise_prefix_s": 0.027000000000001023,
+      "predicted_crossover": false,
+      "predicted_s": 0.43078851232801424,
+      "prefix_s": 0.08400000000000318,
+      "raw_correction_s": -0.2632114876719884,
+      "reference_end_s": 1745170226.8379998,
+      "reference_persistence_s": 0.6940000000000026,
+      "reference_target_s": [
+        91.634,
+        91.468,
+        91.587
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.37049205203486657,
+      "upper_s": 1.590658914073457
+    },
+    {
+      "actual_s": 0.8539999999999992,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "applied_correction_s": -0.5,
+      "baseline_s": 1.2849999999999966,
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "context": {
+        "field_windows": [
+          {
+            "available_at_s": 1745170240.211,
+            "change_s": -0.05700000000000216,
+            "driver": 4,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170357.9039998,
+            "change_s": 0.04800000000000182,
+            "driver": 5,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170355.475,
+            "change_s": 0.5460000000000065,
+            "driver": 31,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170247.686,
+            "change_s": -0.17799999999999727,
+            "driver": 6,
+            "stint": 1
+          },
+          {
+            "available_at_s": 1745170355.002,
+            "change_s": 0.5859999999999985,
+            "driver": 7,
+            "stint": 2
+          },
+          {
+            "available_at_s": 1745170257.924,
+            "change_s": -0.23999999999999488,
+            "driver": 27,
+            "stint": 1
+          }
+        ],
+        "track_change_c": -0.10000000000000142,
+        "track_temperature_c": 37.6,
+        "weather_at_s": 1745171100.925
+      },
+      "correction_bounded": true,
+      "crossover_score": 0.2877241658828962,
+      "current_prefix_s": [
+        92.425,
+        92.502,
+        92.464
+      ],
+      "current_target_s": [
+        93.23,
+        92.895,
+        92.83500000000001
+      ],
+      "driver": 87,
+      "fallback": false,
+      "fallback_reasons": [],
+      "forecast_at_s": 1745171131.606,
+      "lower_s": -0.3748704017454463,
+      "pairwise_actual_s": 0.8539999999999992,
+      "pairwise_prefix_s": 0.9390000000000072,
+      "predicted_crossover": false,
+      "predicted_s": 0.7849999999999966,
+      "prefix_s": 0.9770000000000039,
+      "raw_correction_s": -0.5885186272323921,
+      "reference_end_s": 1745170254.258,
+      "reference_persistence_s": 1.2849999999999966,
+      "reference_target_s": [
+        93.22,
+        93.749,
+        93.801
+      ],
+      "session": 10022,
+      "stints": [
+        1,
+        2
+      ],
+      "unbounded_prediction_s": 0.5949407736583588,
+      "upper_s": 1.9448704017454395
+    }
+  ],
+  "content_sha256": "21f6dedeb386ce4ca457ab83c4817fa627b5f2bdb7549d394b31355c224e2b41",
+  "failed_supported_events": [
+    10006
+  ],
+  "hashes": {
+    "COMPOUND_BOUNDED_CONFIRMATION_V9.md": "5d80cbd62e798cb7a10f80671e491c06d8bcaf189f1ec617c1774683a75c0169",
+    "COMPOUND_CONDITIONED_V5.md": "6524dbee18eb204c0f90d5f073d8675b9085de7bac5177326c55985f3bf02f48",
+    "COMPOUND_EVENT_V6.md": "6746e5b534e361b1e78bbedb85857d34a84c40f7e60d7ab56b08c733ef44aac8",
+    "COMPOUND_EXTENDED_V8.md": "7d86790ca622bdad666e4855a7e855578eeb0ca65ba37d5ec6d94238dee8adf5",
+    "COMPOUND_MULTISEASON_V7.md": "1752f256da043888c837848b1d63799a1c00114157871c777967cb24b32a5fa6",
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "adr-0010-crossover-event-head.md": "5fed9e49b8a4ee27351cae1437924c8f8f602e8cfc95f83f61b5c58fc246bf3a",
+    "adr-0011-compound-negative-controls.md": "7f0f47324cc20b36c73032cdf53f2c1136bec4969155867f6b9462ab268baa2e",
+    "apex_engine/src/apexsim/data/benchmark_guard.py": "36ae546d33c77cf35c3b676f0a52777270529401e3ea42d21043c14dd6c5eea2",
+    "apex_engine/src/apexsim/data/fastf1_archive.py": "981b2333957303a40f16daa7acdb58f5d6ec8edccc7a39b01bc91959dc2d4d09",
+    "apex_engine/src/apexsim/data/jolpica.py": "d9b3961aff96ddf8c3ca68676896317986fa415ef895a1c0fcf6a9e09a8b6858",
+    "apex_engine/src/apexsim/data/tyre_dataset.py": "de342f5f9f17e1b7e99c7fd88ff644cf7ac8404b5045c2cfe4c7c9443f836abf",
+    "apex_engine/src/apexsim/provenance.py": "91507449766da4f532d75161985a1ca308b804a1228dba250ac30510fe4ea63b",
+    "apex_engine/src/apexsim/research/compound_bounded.py": "8819ec342e0575117fb44b413a6a5c3d4ea1ac2c6e08a775dc0b6bb2dc5df8fa",
+    "apex_engine/src/apexsim/research/evidence.py": "5a55e56b943880c3d8adc72f3a5cdef2edfb6891c463401eb922dd66cc706b74",
+    "audit_compound_bounded.py": "69cefcb262cd4d08f373d29260ed9b7e4ca0750d2fc5fbf5cc75d33b5c18f8da",
+    "audit_compound_bounded_confirmation.py": "9e8ff22e1511e62e49a79d75e78c2c37ab9823137825d7c697629de10299ae41",
+    "audit_compound_context.py": "50c3cacd24ca2879bb307d4107f976ad843dd407d94e4b33f060b1fc61fd7bfc",
+    "compound-multiseason-development.json": "7b01d3376eb9f86d1c28600ec455561901bb4171c5c96cf18991c84b46640337",
+    "compound-multiseason-training.json": "572eca2adc611684ca6562924dd0c54644b112951e60ee5c09a5a003e1c25679",
+    "compound-v8-development.json": "0d866aa690ad7376bba2eabb10a057de546bae8c436dc57e40225cadc6a44831",
+    "compound-v8-training-additions.json": "5f8eca24649dc56a6fcf1b6ecfa8437d48093a8b5ff49f2cb0e45a20ab2a5ffc",
+    "compound-v9-development-data.json": "f4d4f5f8efd779d6213aed723d672ba76e422dbe93817ca460e02eb442398676",
+    "compound-v9-development-summary.json": "85dc81d2fa51e90ac431db95414c39509e37be83c433022f6f8e195bd6aeeb4c",
+    "compound-v9-development.json.gz": "e310cb5cc7743742c4d214f4bc958b8f8cf23dde153baa142951defbbb8bd834",
+    "compound_conditioned.py": "0fa671c8e635c3b26602ebbb39d18efcf2ed164f8786d04afb1557ce173de248",
+    "compound_crossover_head.py": "e825c2b5126879bd0aafef6019c10c3a8837216332f85a333350f8570cfdb494",
+    "compound_multiseason.py": "b82c7940a0dd1f52c2a6a7aa426b217a4a2733c0bb2c5b9366ce02c231ae236c",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_bounded.py": "1e8c05e58a9a5e77ff52f262185446f99d29338a4b0c32a214c5bc1dd0b89a87",
+    "confirm_compound_conditioned.py": "e5786d10fdaf58fd6c328a84c97b154db6fb11e796f69e3b251ccc8cfd5a5ce9",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_event.py": "f4a152e82f45fed3e3065d91eda89875f9df4da5ffc2e8e70a25a254bf4c45b9",
+    "confirm_compound_multiseason.py": "15ba9287a6a2e744583080d959e9148070d6f7821c87331a85663dd2ddcf8840",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa",
+    "confirm_compound_v8.py": "d8e9b29a72e58643132a5487739895acee9a4d38457d1bfb1b14b38f3f1edbdc",
+    "diagnose_compound_multiseason.py": "3b621fa76fd9e63ba07b238f9fa796e5215048857f84f8574e7d055587747b98",
+    "extend_compound_development.py": "354379979202d4a24ee608138bf79c2524134bd01801ba7b7881d8ec99bd6f6f",
+    "research/protocols/COMPOUND_BOUNDED_V9.md": "3aa8d34f0ce10a69fe8a9ed56592ac8c7f488bccfb1579e3ca6d0dfc0af326e7",
+    "research/scripts/compound_bounded_common.py": "afab5c62d1c5d293bb4be1b627aa9738937b4bb918a649d4b80335d60d602956",
+    "research/scripts/diagnose_compound_adaptation.py": "b64b3b05595ac34d623df7ba766591461274e0ac3a04de8b5b386b85937ba9e0",
+    "research/scripts/diagnose_compound_bounded.py": "d90952083d16f304fabdd8ef1ce3c78374d6eb7af20a355407b225e083af580c",
+    "research/scripts/prepare_compound_bounded.py": "77d8d6bcdf0c3fccd87ca94a36b02b6f13a3da982ecb667e9c74eb2a36de1951"
+  },
+  "informative_events": [
+    10022
+  ],
+  "metrics": [
+    {
+      "bounded_cases": 7,
+      "by_current_compound": {
+        "HARD": {
+          "bounded_cases": 2,
+          "cases": 14,
+          "disposition": "FAIL",
+          "events": [
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            },
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            }
+          ],
+          "fallback_cases": 0,
+          "informative": false,
+          "pace": [
+            {
+              "contrast_mae_s": 0.47664285714285626,
+              "coverage": 1.0,
+              "mae_s": 0.5726016362146228,
+              "mean_width_s": 2.3197408034908866,
+              "reference_mae_s": 0.47035714285714036,
+              "rmse_s": 0.6103275755892029
+            },
+            {
+              "contrast_mae_s": 0.44100000000000045,
+              "coverage": 1.0,
+              "mae_s": 0.596387350500337,
+              "mean_width_s": 2.3197408034908866,
+              "reference_mae_s": 0.4895714285714285,
+              "rmse_s": 0.6373119387898385
+            }
+          ],
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ],
+          "unbounded_ridge_mae_s": [
+            0.6848630269525684,
+            0.7086487412382826
+          ]
+        },
+        "MEDIUM": {
+          "bounded_cases": 3,
+          "cases": 4,
+          "disposition": "FAIL",
+          "events": [
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": null
+            },
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": null
+            }
+          ],
+          "fallback_cases": 1,
+          "informative": false,
+          "pace": [
+            {
+              "contrast_mae_s": 0.5365000000000038,
+              "coverage": 1.0,
+              "mae_s": 0.5584999999999987,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.2555000000000014,
+              "rmse_s": 0.595509445768914
+            },
+            {
+              "contrast_mae_s": 0.44450000000000145,
+              "coverage": 1.0,
+              "mae_s": 0.5597499999999975,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.2837500000000013,
+              "rmse_s": 0.6126297821686431
+            }
+          ],
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ],
+          "unbounded_ridge_mae_s": [
+            0.7313556578417063,
+            0.7556056578417084
+          ]
+        },
+        "SOFT": {
+          "bounded_cases": 2,
+          "cases": 2,
+          "disposition": "PASS",
+          "events": [
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            },
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            }
+          ],
+          "fallback_cases": 0,
+          "informative": false,
+          "pace": [
+            {
+              "contrast_mae_s": 1.024499999999989,
+              "coverage": 1.0,
+              "mae_s": 0.6709999999999994,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.8919999999999888,
+              "rmse_s": 0.777113247860304
+            },
+            {
+              "contrast_mae_s": 1.0945000000000036,
+              "coverage": 1.0,
+              "mae_s": 0.532500000000006,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.744499999999995,
+              "rmse_s": 0.5859492298825931
+            }
+          ],
+          "passed": true,
+          "passed_labels": [
+            true,
+            true
+          ],
+          "unbounded_ridge_mae_s": [
+            0.34803264287785457,
+            0.2610932477328713
+          ]
+        }
+      },
+      "cases": 20,
+      "disposition": "FAIL",
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 2,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 2,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 1,
+      "informative": false,
+      "pace": [
+        {
+          "contrast_mae_s": 0.543399999999999,
+          "coverage": 1.0,
+          "mae_s": 0.5796211453502356,
+          "mean_width_s": 2.319740803490886,
+          "reference_mae_s": 0.4695499999999974,
+          "rmse_s": 0.6261522376125591
+        },
+        {
+          "contrast_mae_s": 0.507050000000001,
+          "coverage": 1.0,
+          "mae_s": 0.582671145350236,
+          "mean_width_s": 2.319740803490886,
+          "reference_mae_s": 0.4738999999999997,
+          "rmse_s": 0.6274657402016816
+        }
+      ],
+      "passed": false,
+      "passed_labels": [
+        false,
+        false
+      ],
+      "session": 10006,
+      "unavailable_reference_blocks": 0,
+      "unbounded_ridge_mae_s": [
+        0.6604785147229246,
+        0.6732845752084267
+      ],
+      "unsupported_pairs": 2
+    },
+    {
+      "bounded_cases": 5,
+      "by_current_compound": {
+        "HARD": {
+          "bounded_cases": 3,
+          "cases": 11,
+          "disposition": "FAIL",
+          "events": [
+            {
+              "matched": 2,
+              "min_precision_recall": 1.0,
+              "observed": 2,
+              "precision": 1.0,
+              "predicted": 2,
+              "recall": 1.0
+            },
+            {
+              "matched": 1,
+              "min_precision_recall": 0.5,
+              "observed": 1,
+              "precision": 0.5,
+              "predicted": 2,
+              "recall": 1.0
+            }
+          ],
+          "fallback_cases": 0,
+          "informative": true,
+          "pace": [
+            {
+              "contrast_mae_s": 0.4358181818181828,
+              "coverage": 1.0,
+              "mae_s": 0.3418481357258986,
+              "mean_width_s": 2.319740803490886,
+              "reference_mae_s": 0.3021818181818193,
+              "rmse_s": 0.40301057210819413
+            },
+            {
+              "contrast_mae_s": 0.41618181818182104,
+              "coverage": 1.0,
+              "mae_s": 0.2850495355825018,
+              "mean_width_s": 2.319740803490886,
+              "reference_mae_s": 0.2878181818181854,
+              "rmse_s": 0.37154395644918137
+            }
+          ],
+          "passed": false,
+          "passed_labels": [
+            false,
+            true
+          ],
+          "unbounded_ridge_mae_s": [
+            0.43534518843543796,
+            0.3717088247990741
+          ]
+        },
+        "MEDIUM": {
+          "bounded_cases": 2,
+          "cases": 3,
+          "disposition": "PASS",
+          "events": [
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            },
+            {
+              "matched": 0,
+              "min_precision_recall": 0.0,
+              "observed": 0,
+              "precision": null,
+              "predicted": 0,
+              "recall": null
+            }
+          ],
+          "fallback_cases": 0,
+          "informative": false,
+          "pace": [
+            {
+              "contrast_mae_s": 0.7909999999999968,
+              "coverage": 1.0,
+              "mae_s": 0.27851048103135234,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.6326666666666654,
+              "rmse_s": 0.34478980543268123
+            },
+            {
+              "contrast_mae_s": 0.8389999999999939,
+              "coverage": 1.0,
+              "mae_s": 0.2695104810313473,
+              "mean_width_s": 2.3197408034908857,
+              "reference_mae_s": 0.5783333333333284,
+              "rmse_s": 0.3202745964830801
+            }
+          ],
+          "passed": true,
+          "passed_labels": [
+            true,
+            true
+          ],
+          "unbounded_ridge_mae_s": [
+            0.36349088584572903,
+            0.3544908858457239
+          ]
+        },
+        "SOFT": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        }
+      },
+      "cases": 14,
+      "disposition": "PASS",
+      "events": [
+        {
+          "matched": 2,
+          "min_precision_recall": 1.0,
+          "observed": 2,
+          "precision": 1.0,
+          "predicted": 2,
+          "recall": 1.0
+        },
+        {
+          "matched": 1,
+          "min_precision_recall": 0.5,
+          "observed": 1,
+          "precision": 0.5,
+          "predicted": 2,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 0,
+      "informative": true,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5119285714285715,
+          "coverage": 1.0,
+          "mae_s": 0.32827578114849587,
+          "mean_width_s": 2.3197408034908866,
+          "reference_mae_s": 0.3730000000000006,
+          "rmse_s": 0.39126468601662473
+        },
+        {
+          "contrast_mae_s": 0.5067857142857152,
+          "coverage": 1.0,
+          "mae_s": 0.28171973817868295,
+          "mean_width_s": 2.3197408034908866,
+          "reference_mae_s": 0.3500714285714303,
+          "rmse_s": 0.3611708616994596
+        }
+      ],
+      "passed": true,
+      "passed_labels": [
+        true,
+        true
+      ],
+      "session": 10022,
+      "unavailable_reference_blocks": 0,
+      "unbounded_ridge_mae_s": [
+        0.4199478378805003,
+        0.36801926645192756
+      ],
+      "unsupported_pairs": 5
+    },
+    {
+      "by_current_compound": {
+        "HARD": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        },
+        "MEDIUM": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        },
+        "SOFT": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        }
+      },
+      "cases": 0,
+      "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+      "events": null,
+      "informative": false,
+      "pace": null,
+      "passed": false,
+      "passed_labels": [
+        false,
+        false
+      ],
+      "session": 9947,
+      "unavailable_reference_blocks": 0,
+      "unsupported_pairs": 2
+    },
+    {
+      "by_current_compound": {
+        "HARD": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        },
+        "MEDIUM": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        },
+        "SOFT": {
+          "cases": 0,
+          "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+          "events": null,
+          "informative": false,
+          "pace": null,
+          "passed": false,
+          "passed_labels": [
+            false,
+            false
+          ]
+        }
+      },
+      "cases": 0,
+      "disposition": "INCONCLUSIVE_FOR_SUPPORT",
+      "events": null,
+      "informative": false,
+      "pace": null,
+      "passed": false,
+      "passed_labels": [
+        false,
+        false
+      ],
+      "session": 9858,
+      "unavailable_reference_blocks": 0,
+      "unsupported_pairs": 25
+    }
+  ],
+  "passed": false,
+  "production_promotion": false,
+  "required_informative_events": 2,
+  "schema_version": "apex-compound-bounded-confirmation-v9-results",
+  "sources": {
+    "10006": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "10022": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "9858": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "9947": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3"
+  },
+  "unsupported_events": [
+    9947,
+    9858
+  ]
+}
