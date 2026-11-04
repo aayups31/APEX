@@ -471,51 +471,78 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "decision": "REJECT_V9_PROSPECTIVE_CONFIRMATION",
-    "candidate": "v9",
-    "report": "docs/verification/compound-v9-final-report.md",
-    "prior_report": "docs/verification/compound-v8-final-report.md",
-    "training_windows": 358,
-    "training_supported_events": 22,
-    "training_source_events": 24,
-    "development_qualified": true,
-    "development_report": "docs/verification/compound-v9-development-report.md",
-    "development_summary": "docs/verification/compound-v9-development-summary.json",
-    "held_out_blocks": 34,
-    "observed_crossovers": 2,
-    "matched_crossovers": 2,
-    "pairwise_observed_crossovers": 1,
-    "pairwise_matched_crossovers": 1,
-    "unsupported_confirmation_events": [
-      9947,
-      9858
-    ],
-    "failed_confirmation_events": [
-      10006
-    ],
-    "passing_confirmation_events": [
-      10022
-    ],
-    "required_informative_events": 2,
-    "actual_informative_events": 1,
+    "decision": "REJECT_EVENT_ADAPTIVE_REPAIR_DEVELOPMENT",
+    "candidate": "v10_development",
+    "report": "docs/verification/compound-v10-repair-report.md",
+    "prior_report": "docs/verification/compound-v9-final-report.md",
+    "training_windows": 392,
+    "training_supported_events": 24,
+    "training_source_events": 28,
+    "development_qualified": false,
+    "development_report": "docs/verification/compound-v10-repair-report.md",
+    "development_summary": "docs/verification/compound-v10-development-summary.json",
     "candidate_passed": false,
-    "verification_report": "docs/verification/compound-v9-verification.json",
-    "source_ci_passed": true,
-    "source_ci": {
+    "verification_report": "docs/verification/compound-v10-verification.json",
+    "source_ci_passed": null,
+    "targeted_tests": 48,
+    "next_required_work": "Establish event-dependent pace reliability and crossover signal; current field-adaptation hypothesis is rejected and stronger qualification blocks new holdouts",
+    "production_promotion": false,
+    "failure_inventory": "docs/verification/compound-v10-failure-inventory.json",
+    "full_native_cohort_audit": "docs/verification/compound-v10-cohort-audit.json",
+    "new_holdout_acquisition_allowed": false,
+    "failed_development_events": [
+      "9839",
+      "9877",
+      "9896",
+      "9920",
+      "9928",
+      "9955",
+      "9971",
+      "F1_2023_R01",
+      "F1_2023_R14",
+      "F1_2023_R15",
+      "F1_2024_R06",
+      "F1_2024_R16",
+      "F1_2024_R18"
+    ],
+    "new_tests": 16,
+    "prior_prospective_confirmation": {
+      "held_out_blocks": 34,
+      "observed_crossovers": 2,
+      "matched_crossovers": 2,
+      "pairwise_observed_crossovers": 1,
+      "pairwise_matched_crossovers": 1,
+      "unsupported_confirmation_events": [
+        9947,
+        9858
+      ],
+      "failed_confirmation_events": [
+        10006
+      ],
+      "passing_confirmation_events": [
+        10022
+      ],
+      "required_informative_events": 2,
+      "actual_informative_events": 1,
+      "predicted_crossovers": 4,
+      "pairwise_predicted_crossovers": 4,
+      "negative_control_false_alarms": 2
+    },
+    "prior_source_ci": {
       "status": "COMPLETED",
       "commit": "b275e0e0e177fccb59469be4cdc353dd91089d16",
       "run_id": 41858104444,
       "url": "https://github.com/aayups31/APEX/actions/runs/41858104444",
-      "conclusion": "SUCCESS"
+      "conclusion": "SUCCESS",
+      "tests_per_python": 801,
+      "report": "docs/verification/compound-v9-ci-review.json"
     },
-    "targeted_tests": 32,
-    "next_required_work": "Event-dependent pace reliability and negative-control-aware development selection before another frozen confirmation",
-    "production_promotion": false,
-    "tests_per_python": 801,
-    "source_ci_report": "docs/verification/compound-v9-ci-review.json",
-    "predicted_crossovers": 4,
-    "pairwise_predicted_crossovers": 4,
-    "negative_control_false_alarms": 2
+    "source_ci": {
+      "status": "QUEUED",
+      "commit": "15ddac509d9a8c69f0b081ffce49f0cbd62fbc4f",
+      "run_id": 41864379731,
+      "url": "https://github.com/aayups31/APEX/actions/runs/41864379731"
+    }
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

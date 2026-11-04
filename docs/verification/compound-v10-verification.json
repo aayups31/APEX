@@ -1,0 +1,20 @@
+{
+  "baseline_local_seconds": 1046.22,
+  "baseline_local_tests": 801,
+  "candidate_accepted": false,
+  "cases": 392,
+  "content_sha256": "3fbf32fc1105ab9fd76989ea3d62f72e40ab6f562f33ab5d2fd74a59514f81d6",
+  "development_qualified": false,
+  "full_nested_replay_exact": true,
+  "future_target_mutation_checks": 7056,
+  "independent_full_native_cohort_cases": 392,
+  "independent_native_source_events": 28,
+  "independent_scalar_audit_passed": true,
+  "nested_result_sha256": "7e0ceeb3b769017cf057d322a665da845b820a22131ccef64c8a2f8b76155a8a",
+  "new_holdout_payloads_acquired": 0,
+  "new_targeted_tests": 16,
+  "production_promotion": false,
+  "schema_version": "apex-compound-repair-verification-v10",
+  "settings": 18,
+  "source_commit": "15ddac509d9a8c69f0b081ffce49f0cbd62fbc4f"
+}
