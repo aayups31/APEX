@@ -1,0 +1,88 @@
+{
+  "content_sha256": "389b9f306875ea51895df952f1e0835ae15bf1ad26d416827d5cf29bdf044b58",
+  "files": {
+    "9928-laps.json": "e57bf36ad15769dd657a2c30c21372f5d2733c0d03b9c124523aa2aa42b7f37e",
+    "9928-race_control.json": "6c8516168ff77bd8e84778de7f86522e7322a63c564b64cd2c4bccb4f770ba32",
+    "9928-sessions.json": "77d63c03f85d0a8330e332b4887f42c60e19bad45ce9d40640a4e46b230f72fe",
+    "9928-stints.json": "392d0fa1482ff882acc90f3c4f4c51813b524d5f943fda4e94c66289f00b2972",
+    "9928-weather.json": "c7703f3a69e555fb5064c1f92524d2c60b3201fe4d99fe2b8e27cb8785f3968f",
+    "9998-laps.json": "57aa88b0de1d9cc58afca9e0af908106a2e624cf99dbc806c604c2a332632fc8",
+    "9998-race_control.json": "f1c3b923469efce8e20d3c711d5ff28d04aa34bb4478d2558edd79bcbc943d5c",
+    "9998-sessions.json": "dd39f389c3aac27e1b44fd25d48dea1669f7e6a7c359c7146963a7c8e2bb00f8",
+    "9998-stints.json": "afe90fa6ea4cf2fd9b7f9dd1c10ac48c8bed51e288367521411baceef86b3a25",
+    "9998-weather.json": "40f25337f8bc801f711cd5d4d35c42e226cc3e74cc7ce4fdfbd95c68624e5f87"
+  },
+  "queries": [
+    {
+      "params": {
+        "session_key": 9998
+      },
+      "retrieved_utc": "2026-11-04T02:49:08.600911+00:00",
+      "url": "https://api.openf1.org/v1/sessions"
+    },
+    {
+      "params": {
+        "session_key": 9998
+      },
+      "retrieved_utc": "2026-11-04T02:49:09.887583+00:00",
+      "url": "https://api.openf1.org/v1/laps"
+    },
+    {
+      "params": {
+        "session_key": 9998
+      },
+      "retrieved_utc": "2026-11-04T02:49:11.100566+00:00",
+      "url": "https://api.openf1.org/v1/stints"
+    },
+    {
+      "params": {
+        "session_key": 9998
+      },
+      "retrieved_utc": "2026-11-04T02:49:12.174804+00:00",
+      "url": "https://api.openf1.org/v1/race_control"
+    },
+    {
+      "params": {
+        "session_key": 9998
+      },
+      "retrieved_utc": "2026-11-04T02:49:12.718661+00:00",
+      "url": "https://api.openf1.org/v1/weather"
+    },
+    {
+      "params": {
+        "session_key": 9928
+      },
+      "retrieved_utc": "2026-11-04T02:49:13.243072+00:00",
+      "url": "https://api.openf1.org/v1/sessions"
+    },
+    {
+      "params": {
+        "session_key": 9928
+      },
+      "retrieved_utc": "2026-11-04T02:49:14.280003+00:00",
+      "url": "https://api.openf1.org/v1/laps"
+    },
+    {
+      "params": {
+        "session_key": 9928
+      },
+      "retrieved_utc": "2026-11-04T02:49:15.930789+00:00",
+      "url": "https://api.openf1.org/v1/stints"
+    },
+    {
+      "params": {
+        "session_key": 9928
+      },
+      "retrieved_utc": "2026-11-04T02:49:16.816420+00:00",
+      "url": "https://api.openf1.org/v1/race_control"
+    },
+    {
+      "params": {
+        "session_key": 9928
+      },
+      "retrieved_utc": "2026-11-04T02:49:17.291962+00:00",
+      "url": "https://api.openf1.org/v1/weather"
+    }
+  ],
+  "source_and_terms": "https://openf1.org/"
+}

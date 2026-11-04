@@ -34,3 +34,49 @@ def test_conditioned_ridge_matches_independent_augmented_least_squares():
     assert model["coefficients"] == pytest.approx(expected)
     repeated = [{**r, "stints": [0, 2]} for r in rows]
     assert fit_conditioned(rows+repeated)["coefficients"] == pytest.approx(expected)
+
+
+def test_conditioned_archive_and_independent_audit_detect_false_prediction(tmp_path, monkeypatch):
+    from datetime import UTC, datetime
+    from pathlib import Path
+    from runpy import run_path
+
+    from apexsim.provenance import file_sha256, write_manifest
+    from apexsim.research.evidence import seal
+
+    scripts = Path(__file__).resolve().parents[2]/"research/scripts"
+    monkeypatch.syspath_prepend(str(scripts))
+    study = run_path(str(scripts/"confirm_compound_conditioned.py"))
+    auditor = run_path(str(scripts/"audit_compound_conditioned.py"))
+    base = datetime(2025, 3, 23, tzinfo=UTC).timestamp()
+    for session, (_, meeting) in study["HELDOUT"].items():
+        start = datetime.fromtimestamp(base, UTC).isoformat()
+        laps = []
+        for lap in range(1, 31):
+            age = (lap-1) % 15+1
+            effect = (-.3 if age < 10 else .4) if lap <= 15 else (.2 if age >= 10 else 0.)
+            laps.append(dict(session_key=session, driver_number=4, lap_number=lap, is_pit_out_lap=False,
+                             lap_duration=95.+effect-.042*(lap-1),
+                             date_start=datetime.fromtimestamp(base+100*lap, UTC).isoformat()))
+        stints = [dict(session_key=session, driver_number=4, compound=c, tyre_age_at_start=0,
+                       lap_start=first, lap_end=first+14, stint_number=i)
+                  for i, (c, first) in enumerate((("SOFT", 1), ("HARD", 16)), 1)]
+        tables = dict(sessions=[dict(year=2025, session_name="Race", meeting_key=meeting, session_key=session)],
+                      laps=laps, stints=stints,
+                      race_control=[dict(session_key=session, date=start, scope="Track", flag="CLEAR")],
+                      weather=[dict(session_key=session, date=start, rainfall=0)])
+        for endpoint, table in tables.items():
+            write_manifest(tmp_path/f"{session}-{endpoint}.json", table)
+    write_manifest(tmp_path/"manifest.json", seal({"files": {p.name: file_sha256(p) for p in tmp_path.iterdir()}}))
+    frozen = seal({"hashes": study["hashes"](), "heldout_events": list(study["HELDOUT"]),
+                   "model": {"feature_level": 3, "coefficients": [0., 0., .2, 0., 0., 0.],
+                             "support": {c: {"radius_s": .3} for c in COMPOUNDS}},
+                   "prior_slopes": dict.fromkeys(COMPOUNDS, .03)})
+    result = study["evaluate"](frozen, tmp_path)
+    assert result["passed"]
+    audit = auditor["audit"](frozen, result, tmp_path)
+    assert audit["audit_passed"] and audit["candidate_passed"] and audit["cases_audited"] == 2
+    result["cases"][0]["predicted_s"] += .1
+    altered = seal({k: v for k, v in result.items() if k != "content_sha256"})
+    with pytest.raises(ValueError, match="predicted_s"):
+        auditor["audit"](frozen, altered, tmp_path)

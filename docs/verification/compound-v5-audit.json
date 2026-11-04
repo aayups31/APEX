@@ -1,0 +1,23 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256": "7dc0c5b589dc462a628cffe0e00490a8fecc1e38b21adc6659c9fa7b892b36dd",
+  "calibration_sha256": "50a26829adebd4b7a2cebd49536ed9455fb823f8b8edc9f7a6f0e41e019ad5d1",
+  "candidate_passed": false,
+  "cases_audited": 46,
+  "content_sha256": "2f9a7a0d814e0c4d9e5d4cd3c791700dcd822d801b8f9396a258b51b68c243ae",
+  "metrics": [
+    {
+      "blocks": 10,
+      "gate_passed": false,
+      "session": 9998
+    },
+    {
+      "blocks": 36,
+      "gate_passed": false,
+      "session": 9928
+    }
+  ],
+  "results_sha256": "14846fbabaa1745499a2d2665f75148c2981be40c22fcecfa9b12f89ac55bb96",
+  "schema_version": "apex-compound-conditioned-v5-audit",
+  "scope": "ALL_PUBLISHED_CASES_NOT_FULL_COHORT_ENUMERATION"
+}
