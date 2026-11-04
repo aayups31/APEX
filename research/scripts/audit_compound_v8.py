@@ -128,6 +128,17 @@ def audit(frozen: dict, results: dict, root: Path) -> dict:
     audited = []
     for metric in results["metrics"]:
         rows = [r for r in reconstructed if r["session"] == metric["session"]]
+        if not rows:
+            for label in ("primary", "pairwise_sensitivity"):
+                item = metric[label]
+                if (any(item[k] != 0 for k in ("blocks", "observed", "predicted", "matched"))
+                        or any(item[k] is not None for k in ("mae_s", "rmse_s", "contrast_persistence_mae_s",
+                                                             "reference_persistence_mae_s")) or item["passed"]):
+                    raise ValueError("Independent audit invalid empty-cohort disposition")
+            if metric["passed"]:
+                raise ValueError("Independent audit cannot pass an empty event")
+            audited.append({"session": metric["session"], "blocks": 0, "gate_passed": False})
+            continue
         gates = []
         for label, prefix, target in (("primary", "prefix_s", "actual_s"),
                                       ("pairwise_sensitivity", "pairwise_prefix_s", "pairwise_actual_s")):
