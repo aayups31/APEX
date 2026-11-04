@@ -1,0 +1,53 @@
+{
+  "baseline_full": {
+    "seconds": 1046.22,
+    "tests_passed": 801
+  },
+  "candidate_accepted": false,
+  "content_sha256": "5a58f334316e6104c54d3bc327233d6c039a788172b9982b43c069059c487239",
+  "development_qualified": false,
+  "full_native_cohort_audited_cases": 392,
+  "full_native_source_events": 28,
+  "local_full": {
+    "seconds": 1040.95,
+    "tests_passed": 817,
+    "warnings": 2
+  },
+  "local_r041_targeted": 48,
+  "native_stint_interior_conflicts": 0,
+  "new_holdout_payloads_acquired": 0,
+  "new_tests": 16,
+  "previous_review": "docs/verification/compound-v10-regression-review.json",
+  "production_promotion": false,
+  "race_invalid_states": 0,
+  "research_smoke_passed": true,
+  "review_date": "2026-11-04",
+  "schema_version": "apex-compound-repair-final-ci-review-v10",
+  "six_car_six_lap_smoke_quality_passed": true,
+  "source_ci": {
+    "jobs": [
+      {
+        "all_steps_succeeded": true,
+        "conclusion": "success",
+        "job_id": 126694665947,
+        "name": "Python 3.12",
+        "status": "completed",
+        "test_seconds": 658.61,
+        "tests_passed": 817
+      },
+      {
+        "all_steps_succeeded": true,
+        "conclusion": "success",
+        "job_id": 126694666924,
+        "name": "Python 3.11",
+        "status": "completed",
+        "test_seconds": 529.19,
+        "tests_passed": 817
+      }
+    ],
+    "matrix_complete": true,
+    "run_id": 41864379731,
+    "url": "https://github.com/aayups31/APEX/actions/runs/41864379731"
+  },
+  "source_commit": "15ddac509d9a8c69f0b081ffce49f0cbd62fbc4f"
+}

@@ -97,10 +97,11 @@ cover the stronger gate, causal contributors, future-target isolation, invalid
 inputs, numerical overflow, both native cohort paths, benchmark exclusion,
 manifest round trips and independent scalar tamper detection. The full old/new
 R041 targeted set passes **48 tests**. The updated full local suite passed **817
-tests** in 1,040.95 seconds; lint passes. Python 3.11 CI passed all 817 tests and
-artifact steps; Python 3.12 is queued, so the complete matrix remains pending.
+tests** in 1,040.95 seconds; lint passes. Python 3.11 and 3.12 CI both passed all
+817 tests and artifact steps. The complete matrix is now green.
 [Source CI](https://github.com/aayups31/APEX/actions/runs/41864379731),
-[sealed regression review](compound-v10-regression-review.json).
+[sealed final CI review](compound-v10-final-ci-review.json); the earlier partial
+review is preserved unchanged.
 The research and six-car/six-lap race commands run, with zero race quality
 violations. No conflicting stint interiors were found in the opened OpenF1
 sources. These checks do not change the failed scientific acceptance result.

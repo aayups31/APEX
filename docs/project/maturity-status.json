@@ -483,7 +483,7 @@
     "development_summary": "docs/verification/compound-v10-development-summary.json",
     "candidate_passed": false,
     "verification_report": "docs/verification/compound-v10-verification.json",
-    "source_ci_passed": null,
+    "source_ci_passed": true,
     "targeted_tests": 48,
     "next_required_work": "Establish event-dependent pace reliability and crossover signal; current field-adaptation hypothesis is rejected and stronger qualification blocks new holdouts",
     "production_promotion": false,
@@ -538,19 +538,19 @@
       "report": "docs/verification/compound-v9-ci-review.json"
     },
     "source_ci": {
-      "status": "PARTIAL_SUCCESS_MATRIX_PENDING",
+      "status": "SUCCESS",
       "commit": "15ddac509d9a8c69f0b081ffce49f0cbd62fbc4f",
       "run_id": 41864379731,
       "url": "https://github.com/aayups31/APEX/actions/runs/41864379731",
       "python311": "SUCCESS_817_TESTS",
-      "python312": "QUEUED"
+      "python312": "SUCCESS_817_TESTS"
     },
     "local_full_regression": {
       "passed": 817,
       "seconds": 1040.95,
       "report": "docs/verification/compound-v10-regression-review.json"
     },
-    "source_ci_report": "docs/verification/compound-v10-regression-review.json"
+    "source_ci_report": "docs/verification/compound-v10-final-ci-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
