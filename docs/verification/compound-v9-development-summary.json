@@ -1,0 +1,1856 @@
+{
+  "candidate_accepted": false,
+  "cases": 358,
+  "comparator_macro_mae_s": {
+    "tree": [
+      0.4470905012536774,
+      0.44392188278242967
+    ],
+    "unbounded_ridge": [
+      0.40397490720172935,
+      0.4066292374655824
+    ]
+  },
+  "compressed_file_sha256": "e310cb5cc7743742c4d214f4bc958b8f8cf23dde153baa142951defbbb8bd834",
+  "content_sha256": "46462e913cdd919a43fa96dca29d9077a9a4a85bedeec108c6ffe60ca1178859",
+  "context_coverage": {
+    "field": 325,
+    "weather": 358
+  },
+  "dataset_sha256": "ac918ec5a45fb1a0470eb8a7fb82de06863208c5f90349d1cef1b3fa826311e0",
+  "decision": "REQUIRES_SEPARATE_PROSPECTIVE_CONFIRMATION",
+  "development_qualified": true,
+  "nested_macro_pace": [
+    {
+      "contrast_mae_s": 0.7037724223357714,
+      "coverage": 0.9246585843715031,
+      "mae_s": 0.478930397691448,
+      "mean_width_s": 2.2862100557217406,
+      "reference_mae_s": 0.5876510016233101
+    },
+    {
+      "contrast_mae_s": 0.6854385812738569,
+      "coverage": 0.9092092968169524,
+      "mae_s": 0.48977373035949073,
+      "mean_width_s": 2.2862100557217406,
+      "reference_mae_s": 0.5918030785840952
+    }
+  ],
+  "nested_pooled_events": [
+    {
+      "matched": 51,
+      "min_precision_recall": 0.5730337078651685,
+      "observed": 89,
+      "precision": 0.6,
+      "predicted": 85,
+      "recall": 0.5730337078651685
+    },
+    {
+      "matched": 46,
+      "min_precision_recall": 0.5227272727272727,
+      "observed": 88,
+      "precision": 0.5411764705882353,
+      "predicted": 85,
+      "recall": 0.5227272727272727
+    }
+  ],
+  "outer_folds": [
+    {
+      "bounded_cases": 4,
+      "cases": 12,
+      "event": 9912,
+      "event_head": {
+        "c": 10.0,
+        "threshold": 0.51
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 4,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 4,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.582833333333331,
+          "coverage": 1.0,
+          "mae_s": 0.3443596261572935,
+          "mean_width_s": 2.3700000000000045,
+          "reference_mae_s": 0.298833333333332,
+          "rmse_s": 0.41800008564164814
+        },
+        {
+          "contrast_mae_s": 0.5789166666666669,
+          "coverage": 1.0,
+          "mae_s": 0.3298273416302577,
+          "mean_width_s": 2.3700000000000045,
+          "reference_mae_s": 0.29183333333333533,
+          "rmse_s": 0.4117400131308066
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1850000000000023,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 12,
+      "cases": 25,
+      "event": 9839,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 3,
+          "min_precision_recall": 0.5,
+          "observed": 6,
+          "precision": 1.0,
+          "predicted": 3,
+          "recall": 0.5
+        },
+        {
+          "matched": 2,
+          "min_precision_recall": 0.3333333333333333,
+          "observed": 6,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 0.3333333333333333
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.6658799999999968,
+          "coverage": 0.96,
+          "mae_s": 0.4816206519545369,
+          "mean_width_s": 2.316232467327591,
+          "reference_mae_s": 0.7286000000000007,
+          "rmse_s": 0.6332314304638665
+        },
+        {
+          "contrast_mae_s": 0.6587200000000013,
+          "coverage": 0.92,
+          "mae_s": 0.5272206519545364,
+          "mean_width_s": 2.316232467327591,
+          "reference_mae_s": 0.7428399999999971,
+          "rmse_s": 0.666259435056138
+        }
+      ],
+      "passed_labels": [
+        true,
+        false
+      ],
+      "radius_s": 1.1581162336637956,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 7,
+      "cases": 19,
+      "event": 10014,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.48
+      },
+      "events": [
+        {
+          "matched": 9,
+          "min_precision_recall": 0.9,
+          "observed": 9,
+          "precision": 0.9,
+          "predicted": 10,
+          "recall": 1.0
+        },
+        {
+          "matched": 7,
+          "min_precision_recall": 0.7,
+          "observed": 7,
+          "precision": 0.7,
+          "predicted": 10,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 3,
+      "pace": [
+        {
+          "contrast_mae_s": 0.8559473684210507,
+          "coverage": 1.0,
+          "mae_s": 0.43911507737589817,
+          "mean_width_s": 2.3300362438899134,
+          "reference_mae_s": 0.526315789473685,
+          "rmse_s": 0.5498122432917847
+        },
+        {
+          "contrast_mae_s": 0.7103157894736817,
+          "coverage": 0.9473684210526315,
+          "mae_s": 0.4468949684958884,
+          "mean_width_s": 2.3300362438899134,
+          "reference_mae_s": 0.5834736842105277,
+          "rmse_s": 0.5629759309963117
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.1650181219449567,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 7,
+      "cases": 18,
+      "event": 9971,
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5714285714285714,
+          "observed": 7,
+          "precision": 0.6666666666666666,
+          "predicted": 6,
+          "recall": 0.5714285714285714
+        },
+        {
+          "matched": 3,
+          "min_precision_recall": 0.5,
+          "observed": 6,
+          "precision": 0.5,
+          "predicted": 6,
+          "recall": 0.5
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 0.7251666666666688,
+          "coverage": 0.8888888888888888,
+          "mae_s": 0.4624557978553275,
+          "mean_width_s": 2.3068017747189327,
+          "reference_mae_s": 0.7842777777777772,
+          "rmse_s": 0.6742355203904088
+        },
+        {
+          "contrast_mae_s": 0.6238333333333365,
+          "coverage": 0.8888888888888888,
+          "mae_s": 0.47184468674421937,
+          "mean_width_s": 2.3068017747189327,
+          "reference_mae_s": 0.7936666666666691,
+          "rmse_s": 0.6757542021183376
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.153400887359466,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 2,
+      "cases": 11,
+      "event": 9963,
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 1,
+          "min_precision_recall": 0.3333333333333333,
+          "observed": 1,
+          "precision": 0.3333333333333333,
+          "predicted": 3,
+          "recall": 1.0
+        },
+        {
+          "matched": 1,
+          "min_precision_recall": 0.3333333333333333,
+          "observed": 2,
+          "precision": 0.3333333333333333,
+          "predicted": 3,
+          "recall": 0.5
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.593545454545458,
+          "coverage": 1.0,
+          "mae_s": 0.2997520456284729,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.4159999999999994,
+          "rmse_s": 0.38158357744108407
+        },
+        {
+          "contrast_mae_s": 0.5475454545454568,
+          "coverage": 1.0,
+          "mae_s": 0.25520659108301885,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.3730909090909116,
+          "rmse_s": 0.30503080454075404
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 2,
+      "cases": 28,
+      "event": 9955,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.48
+      },
+      "events": [
+        {
+          "matched": 6,
+          "min_precision_recall": 0.6666666666666666,
+          "observed": 9,
+          "precision": 0.6666666666666666,
+          "predicted": 9,
+          "recall": 0.6666666666666666
+        },
+        {
+          "matched": 5,
+          "min_precision_recall": 0.5555555555555556,
+          "observed": 8,
+          "precision": 0.5555555555555556,
+          "predicted": 9,
+          "recall": 0.625
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 0.592178571428572,
+          "coverage": 1.0,
+          "mae_s": 0.34583613968407695,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.4557499999999988,
+          "rmse_s": 0.4149072557092388
+        },
+        {
+          "contrast_mae_s": 0.46300000000000047,
+          "coverage": 0.9642857142857143,
+          "mae_s": 0.4010367710344384,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.5145714285714276,
+          "rmse_s": 0.4911834235037976
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 3,
+      "cases": 10,
+      "event": 9998,
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 2,
+          "min_precision_recall": 1.0,
+          "observed": 2,
+          "precision": 1.0,
+          "predicted": 2,
+          "recall": 1.0
+        },
+        {
+          "matched": 2,
+          "min_precision_recall": 1.0,
+          "observed": 2,
+          "precision": 1.0,
+          "predicted": 2,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.6860000000000042,
+          "coverage": 1.0,
+          "mae_s": 0.23052335454884104,
+          "mean_width_s": 2.3652817804320927,
+          "reference_mae_s": 0.34779999999999944,
+          "rmse_s": 0.28244840973522783
+        },
+        {
+          "contrast_mae_s": 0.8004999999999981,
+          "coverage": 1.0,
+          "mae_s": 0.2900233545488423,
+          "mean_width_s": 2.3652817804320927,
+          "reference_mae_s": 0.34509999999999935,
+          "rmse_s": 0.3400837337726372
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.1826408902160463,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 16,
+      "cases": 36,
+      "event": 9928,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 2,
+          "min_precision_recall": 0.14285714285714285,
+          "observed": 14,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 0.14285714285714285
+        },
+        {
+          "matched": 2,
+          "min_precision_recall": 0.15384615384615385,
+          "observed": 13,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 0.15384615384615385
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 1.0452777777777809,
+          "coverage": 0.7222222222222222,
+          "mae_s": 0.7408704873986184,
+          "mean_width_s": 2.009999999999991,
+          "reference_mae_s": 0.9749444444444468,
+          "rmse_s": 0.9311487944407087
+        },
+        {
+          "contrast_mae_s": 1.0543611111111113,
+          "coverage": 0.7222222222222222,
+          "mae_s": 0.7470502960165992,
+          "mean_width_s": 2.009999999999991,
+          "reference_mae_s": 0.9651111111111147,
+          "rmse_s": 0.934400620841521
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.0049999999999955,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 1,
+      "cases": 10,
+      "event": 9920,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.45999999999999996
+      },
+      "events": [
+        {
+          "matched": 1,
+          "min_precision_recall": 0.25,
+          "observed": 2,
+          "precision": 0.25,
+          "predicted": 4,
+          "recall": 0.5
+        },
+        {
+          "matched": 1,
+          "min_precision_recall": 0.25,
+          "observed": 3,
+          "precision": 0.25,
+          "predicted": 4,
+          "recall": 0.3333333333333333
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5882999999999953,
+          "coverage": 1.0,
+          "mae_s": 0.29194945868718936,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.4214000000000013,
+          "rmse_s": 0.37155692381308025
+        },
+        {
+          "contrast_mae_s": 0.5857000000000028,
+          "coverage": 1.0,
+          "mae_s": 0.27704945868718783,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.4212999999999994,
+          "rmse_s": 0.3494010111536914
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 5,
+      "cases": 24,
+      "event": 9896,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.47
+      },
+      "events": [
+        {
+          "matched": 2,
+          "min_precision_recall": 0.2222222222222222,
+          "observed": 9,
+          "precision": 0.5,
+          "predicted": 4,
+          "recall": 0.2222222222222222
+        },
+        {
+          "matched": 2,
+          "min_precision_recall": 0.25,
+          "observed": 8,
+          "precision": 0.5,
+          "predicted": 4,
+          "recall": 0.25
+        }
+      ],
+      "fallback_cases": 7,
+      "pace": [
+        {
+          "contrast_mae_s": 1.5753333333333355,
+          "coverage": 0.75,
+          "mae_s": 0.7476873135485063,
+          "mean_width_s": 2.2539999999999907,
+          "reference_mae_s": 0.9237916666666663,
+          "rmse_s": 1.070447702146717
+        },
+        {
+          "contrast_mae_s": 1.5809583333333368,
+          "coverage": 0.75,
+          "mae_s": 0.7410682635248248,
+          "mean_width_s": 2.2539999999999907,
+          "reference_mae_s": 0.9235416666666652,
+          "rmse_s": 1.0751177029598342
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1269999999999953,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 6,
+      "cases": 19,
+      "event": 9888,
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.48
+      },
+      "events": [
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5714285714285714,
+          "observed": 4,
+          "precision": 0.5714285714285714,
+          "predicted": 7,
+          "recall": 1.0
+        },
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5714285714285714,
+          "observed": 4,
+          "precision": 0.5714285714285714,
+          "predicted": 7,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 4,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5209999999999986,
+          "coverage": 0.9473684210526315,
+          "mae_s": 0.3254730444819331,
+          "mean_width_s": 2.31873598712161,
+          "reference_mae_s": 0.4833157894736868,
+          "rmse_s": 0.4841361601143392
+        },
+        {
+          "contrast_mae_s": 0.5635263157894771,
+          "coverage": 0.9473684210526315,
+          "mae_s": 0.3462452832802196,
+          "mean_width_s": 2.31873598712161,
+          "reference_mae_s": 0.47842105263158063,
+          "rmse_s": 0.5007349452333621
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.159367993560805,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 12,
+      "cases": 33,
+      "event": 9877,
+      "event_head": {
+        "c": 10.0,
+        "threshold": 0.53
+      },
+      "events": [
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5,
+          "observed": 7,
+          "precision": 0.5,
+          "predicted": 8,
+          "recall": 0.5714285714285714
+        },
+        {
+          "matched": 4,
+          "min_precision_recall": 0.4,
+          "observed": 10,
+          "precision": 0.5,
+          "predicted": 8,
+          "recall": 0.4
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5656060606060596,
+          "coverage": 0.9393939393939394,
+          "mae_s": 0.4043729161090624,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.7235151515151512,
+          "rmse_s": 0.5283042821151746
+        },
+        {
+          "contrast_mae_s": 0.4951515151515157,
+          "coverage": 0.9393939393939394,
+          "mae_s": 0.42237291610906136,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.7424848484848492,
+          "rmse_s": 0.5551680298624941
+        }
+      ],
+      "passed_labels": [
+        true,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 1,
+      "cases": 9,
+      "event": 9987,
+      "event_head": {
+        "c": 10.0,
+        "threshold": 0.53
+      },
+      "events": [
+        {
+          "matched": 4,
+          "min_precision_recall": 0.8,
+          "observed": 4,
+          "precision": 0.8,
+          "predicted": 5,
+          "recall": 1.0
+        },
+        {
+          "matched": 4,
+          "min_precision_recall": 0.8,
+          "observed": 4,
+          "precision": 0.8,
+          "predicted": 5,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.6815555555555604,
+          "coverage": 1.0,
+          "mae_s": 0.2945188867300926,
+          "mean_width_s": 2.3277208082454868,
+          "reference_mae_s": 0.4220000000000002,
+          "rmse_s": 0.36785466088213914
+        },
+        {
+          "contrast_mae_s": 0.7476666666666745,
+          "coverage": 1.0,
+          "mae_s": 0.41116312078268935,
+          "mean_width_s": 2.3277208082454868,
+          "reference_mae_s": 0.45566666666666816,
+          "rmse_s": 0.4849189104404245
+        }
+      ],
+      "passed_labels": [
+        true,
+        true
+      ],
+      "radius_s": 1.1638604041227434,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 8,
+      "cases": 13,
+      "event": 9850,
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.48
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 0.49415384615384883,
+          "coverage": 1.0,
+          "mae_s": 0.5918358027858761,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.34930769230769204,
+          "rmse_s": 0.6579753922228647
+        },
+        {
+          "contrast_mae_s": 0.48607692307692435,
+          "coverage": 1.0,
+          "mae_s": 0.6551434950935668,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.3873846153846155,
+          "rmse_s": 0.7041402492151365
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 0,
+      "cases": 4,
+      "event": "F1_2024_R01",
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 1.2422499999999914,
+          "coverage": 0.75,
+          "mae_s": 0.8819236442520335,
+          "mean_width_s": 2.054816727482919,
+          "reference_mae_s": 0.8590000000000018,
+          "rmse_s": 1.4190291500668488
+        },
+        {
+          "contrast_mae_s": 1.186249999999994,
+          "coverage": 0.75,
+          "mae_s": 0.8686736442520306,
+          "mean_width_s": 2.054816727482919,
+          "reference_mae_s": 0.8457499999999989,
+          "rmse_s": 1.4176439161510475
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.0274083637414595,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 100.0,
+        "baseline": "midpoint",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 2,
+      "cases": 9,
+      "event": "F1_2024_R03",
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 2,
+          "min_precision_recall": 0.6666666666666666,
+          "observed": 2,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 1.0
+        },
+        {
+          "matched": 2,
+          "min_precision_recall": 0.6666666666666666,
+          "observed": 2,
+          "precision": 0.6666666666666666,
+          "predicted": 3,
+          "recall": 1.0
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.7397777777777732,
+          "coverage": 1.0,
+          "mae_s": 0.48173842334369293,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.41122222222221677,
+          "rmse_s": 0.5696071536043973
+        },
+        {
+          "contrast_mae_s": 0.7157777777777786,
+          "coverage": 1.0,
+          "mae_s": 0.4104050900103632,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.3352222222222139,
+          "rmse_s": 0.48095098949696913
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 2,
+      "cases": 6,
+      "event": "F1_2024_R06",
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 1,
+      "pace": [
+        {
+          "contrast_mae_s": 0.31883333333332803,
+          "coverage": 1.0,
+          "mae_s": 0.31169934354877554,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.410999999999999,
+          "rmse_s": 0.34731242862209877
+        },
+        {
+          "contrast_mae_s": 0.395499999999996,
+          "coverage": 1.0,
+          "mae_s": 0.2921993435487772,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.3915000000000006,
+          "rmse_s": 0.31702041859878
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 3,
+      "cases": 13,
+      "event": "F1_2024_R16",
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.45999999999999996
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 1,
+          "precision": null,
+          "predicted": 0,
+          "recall": 0.0
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.41984615384615154,
+          "coverage": 1.0,
+          "mae_s": 0.4609839066594048,
+          "mean_width_s": 2.3700000000000045,
+          "reference_mae_s": 0.45638461538461483,
+          "rmse_s": 0.5080246451135241
+        },
+        {
+          "contrast_mae_s": 0.3619230769230768,
+          "coverage": 1.0,
+          "mae_s": 0.40461326971604766,
+          "mean_width_s": 2.3700000000000045,
+          "reference_mae_s": 0.4492307692307684,
+          "rmse_s": 0.47936920971197383
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1850000000000023,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 5,
+      "cases": 26,
+      "event": "F1_2024_R18",
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.44
+      },
+      "events": [
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5714285714285714,
+          "observed": 7,
+          "precision": 0.6666666666666666,
+          "predicted": 6,
+          "recall": 0.5714285714285714
+        },
+        {
+          "matched": 3,
+          "min_precision_recall": 0.42857142857142855,
+          "observed": 7,
+          "precision": 0.5,
+          "predicted": 6,
+          "recall": 0.42857142857142855
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5978461538461548,
+          "coverage": 0.8846153846153846,
+          "mae_s": 0.5160261685613217,
+          "mean_width_s": 2.2769091661318797,
+          "reference_mae_s": 0.5144230769230742,
+          "rmse_s": 0.6583564338902046
+        },
+        {
+          "contrast_mae_s": 0.6034615384615367,
+          "coverage": 0.9230769230769231,
+          "mae_s": 0.5215261685613223,
+          "mean_width_s": 2.2769091661318797,
+          "reference_mae_s": 0.5177692307692282,
+          "rmse_s": 0.6654107407532656
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1384545830659398,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2023_R01",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 3,
+      "cases": 4,
+      "event": "F1_2023_R01",
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.45999999999999996
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": null,
+          "predicted": 0,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5145000000000088,
+          "coverage": 1.0,
+          "mae_s": 0.5374958222777556,
+          "mean_width_s": 2.2960862705277405,
+          "reference_mae_s": 0.9077500000000036,
+          "rmse_s": 0.5996098236774177
+        },
+        {
+          "contrast_mae_s": 0.3567499999999981,
+          "coverage": 0.75,
+          "mae_s": 0.6022458222777557,
+          "mean_width_s": 2.2960862705277405,
+          "reference_mae_s": 0.9725000000000037,
+          "rmse_s": 0.7237801397181747
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.1480431352638703,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R14",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 1,
+      "cases": 15,
+      "event": "F1_2023_R14",
+      "event_head": {
+        "c": 1.0,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 3,
+          "min_precision_recall": 0.42857142857142855,
+          "observed": 5,
+          "precision": 0.42857142857142855,
+          "predicted": 7,
+          "recall": 0.6
+        },
+        {
+          "matched": 4,
+          "min_precision_recall": 0.5714285714285714,
+          "observed": 6,
+          "precision": 0.5714285714285714,
+          "predicted": 7,
+          "recall": 0.6666666666666666
+        }
+      ],
+      "fallback_cases": 0,
+      "pace": [
+        {
+          "contrast_mae_s": 0.5257333333333339,
+          "coverage": 1.0,
+          "mae_s": 0.3165260898872626,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.46133333333333154,
+          "rmse_s": 0.38804487785387176
+        },
+        {
+          "contrast_mae_s": 0.578000000000003,
+          "coverage": 1.0,
+          "mae_s": 0.3304594232205952,
+          "mean_width_s": 2.3360000000000127,
+          "reference_mae_s": 0.4660666666666657,
+          "rmse_s": 0.40445274300023576
+        }
+      ],
+      "passed_labels": [
+        false,
+        true
+      ],
+      "radius_s": 1.1680000000000064,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R15"
+      ]
+    },
+    {
+      "bounded_cases": 0,
+      "cases": 14,
+      "event": "F1_2023_R15",
+      "event_head": {
+        "c": 0.1,
+        "threshold": 0.5
+      },
+      "events": [
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 1,
+          "recall": null
+        },
+        {
+          "matched": 0,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "precision": 0.0,
+          "predicted": 1,
+          "recall": null
+        }
+      ],
+      "fallback_cases": 7,
+      "pace": [
+        {
+          "contrast_mae_s": 0.951428571428571,
+          "coverage": 0.5,
+          "mae_s": 1.0297047477358838,
+          "mean_width_s": 2.012000000000029,
+          "reference_mae_s": 1.0513571428571413,
+          "rmse_s": 1.3390364650847708
+        },
+        {
+          "contrast_mae_s": 0.9857142857142865,
+          "coverage": 0.5,
+          "mae_s": 1.022752107336553,
+          "mean_width_s": 2.012000000000029,
+          "reference_mae_s": 1.023142857142854,
+          "rmse_s": 1.335756111333217
+        }
+      ],
+      "passed_labels": [
+        false,
+        false
+      ],
+      "radius_s": 1.0060000000000144,
+      "radius_source": "INNER_EVENT_ERRORS_OUTER_EVENT_EXCLUDED",
+      "setting": {
+        "alpha": 10.0,
+        "baseline": "reference",
+        "bound_s": 0.5,
+        "group": "pace"
+      },
+      "training_events": [
+        9912,
+        9839,
+        10014,
+        9971,
+        9963,
+        9955,
+        9998,
+        9928,
+        9920,
+        9896,
+        9888,
+        9877,
+        9987,
+        9850,
+        "F1_2024_R01",
+        "F1_2024_R03",
+        "F1_2024_R06",
+        "F1_2024_R16",
+        "F1_2024_R18",
+        "F1_2023_R01",
+        "F1_2023_R14"
+      ]
+    }
+  ],
+  "production_promotion": false,
+  "results_sha256": "2b2616a657a09ff46a520282104aa64e61cae0adb1e2197a5e0cffa36091d821",
+  "schema_version": "apex-compound-bounded-development-summary-v9",
+  "selected_event_head": {
+    "c": 1.0,
+    "threshold": 0.5
+  },
+  "selected_setting": {
+    "alpha": 10.0,
+    "baseline": "reference",
+    "bound_s": 0.5,
+    "group": "pace"
+  },
+  "source_events": 24,
+  "supported_events": 22
+}

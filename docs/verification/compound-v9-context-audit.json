@@ -1,0 +1,12 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256": "50c3cacd24ca2879bb307d4107f976ad843dd407d94e4b33f060b1fc61fd7bfc",
+  "cases_audited": 358,
+  "content_sha256": "9e312b88d8872614003a11c324b7c1fad4740ba3ffea12b6068e6640d7ce9bb2",
+  "dataset_sha256": "ac918ec5a45fb1a0470eb8a7fb82de06863208c5f90349d1cef1b3fa826311e0",
+  "field_contributions_audited": 2070,
+  "future_associations": 0,
+  "schema_version": "apex-compound-native-context-audit-v9",
+  "scope": "ALL_PUBLISHED_CONTEXT_ASSOCIATIONS_NOT_EXCLUDED_OR_ELIGIBLE_WINDOW_DENOMINATOR",
+  "sources_verified": 24
+}

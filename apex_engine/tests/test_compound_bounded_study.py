@@ -1,4 +1,6 @@
+import gzip
 import importlib
+import json
 from copy import deepcopy
 from pathlib import Path
 
@@ -13,6 +15,24 @@ from apexsim.research.evidence import seal
 def load_script(monkeypatch, name):
     monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[2]/"research/scripts"))
     return importlib.import_module(name)
+
+
+def test_saved_nested_artifact_has_all_cases_and_independent_scalar_agreement(monkeypatch):
+    from apexsim.provenance import file_sha256
+    from apexsim.research.evidence import check_seal, read_json
+
+    root = Path(__file__).resolve().parents[2]/"docs/verification"
+    data = read_json(root/"compound-v9-development-data.json")
+    summary = read_json(root/"compound-v9-development-summary.json")
+    check_seal(summary)
+    compressed = root/"compound-v9-development.json.gz"
+    assert file_sha256(compressed) == summary["compressed_file_sha256"]
+    results = json.loads(gzip.decompress(compressed.read_bytes()))
+    auditor = load_script(monkeypatch, "audit_compound_bounded")
+    audit = auditor.audit(data, results)
+    assert audit["audit_passed"] and audit["cases_audited"] == summary["cases"] == 358
+    assert audit["events_audited"] == summary["supported_events"] == 22
+    assert audit["development_qualified"] and not audit["candidate_accepted"]
 
 
 def test_nested_selection_cannot_see_outer_targets(monkeypatch):
@@ -99,6 +119,13 @@ def test_fastf1_context_utc_alignment_future_weather_and_benchmark_guard(tmp_pat
     weather.loc[2, "TrackTemp"] = -9999.
     weather.to_parquet(root/"tables/weather_data.parquet", index=False)
     assert study.fastf1_context(root, rows) == result
+    context_auditor = load_script(monkeypatch, "audit_compound_context")
+    tables = {"laps": frame.to_dict("records"), "weather": weather.to_dict("records")}
+    assert context_auditor.audit_case(result[0], tables, "FASTF1") == 0
+    corrupted = deepcopy(result[0])
+    corrupted["context"]["track_temperature_c"] += 1.
+    with pytest.raises(ValueError, match="track_temperature_c"):
+        context_auditor.audit_case(corrupted, tables, "FASTF1")
     # The guard precedes native payload verification/access even in enrichment.
     metadata = root/"manifest.json"
     metadata.unlink()

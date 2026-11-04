@@ -1,0 +1,227 @@
+{
+  "content_sha256": "23b41c9977b706035c538aa14c786011157fe49f04f6db584618811b0281a3bd",
+  "dataset_sha256": "ac918ec5a45fb1a0470eb8a7fb82de06863208c5f90349d1cef1b3fa826311e0",
+  "development_sha256": "2b2616a657a09ff46a520282104aa64e61cae0adb1e2197a5e0cffa36091d821",
+  "environment": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.12",
+    "sklearn": "1.9.0"
+  },
+  "event_head": {
+    "c": 1.0,
+    "coefficients": [
+      0.049562612450179025,
+      0.03695498171141792,
+      -0.07097702245576602,
+      -0.06871229327466116,
+      0.3029450822339801,
+      0.03870884147899069,
+      0.8932236292857919,
+      -0.9650770225269604,
+      0.9407211694356232,
+      -0.14648491671830255
+    ],
+    "intercept": -0.2805912604966295,
+    "mean": [
+      0.17039106145251395,
+      0.2877094972067039,
+      0.5418994413407822,
+      0.32896927374301665,
+      0.014455307262573118,
+      0.3092346368715077,
+      0.7278324022346381,
+      0.6783632960893854,
+      0.18994413407821228,
+      0.7154692737430165
+    ],
+    "scale": [
+      0.37597599342192267,
+      0.4526949772460187,
+      0.49824134394420844,
+      0.7254045503205299,
+      3.6867871767366793,
+      0.9100647258743376,
+      0.6277769191194801,
+      1.3741388121828866,
+      0.3922567526601534,
+      0.6298162167910518
+    ],
+    "threshold": 0.5
+  },
+  "hashes": {
+    "COMPOUND_BOUNDED_CONFIRMATION_V9.md": "5d80cbd62e798cb7a10f80671e491c06d8bcaf189f1ec617c1774683a75c0169",
+    "COMPOUND_CONDITIONED_V5.md": "6524dbee18eb204c0f90d5f073d8675b9085de7bac5177326c55985f3bf02f48",
+    "COMPOUND_EVENT_V6.md": "6746e5b534e361b1e78bbedb85857d34a84c40f7e60d7ab56b08c733ef44aac8",
+    "COMPOUND_EXTENDED_V8.md": "7d86790ca622bdad666e4855a7e855578eeb0ca65ba37d5ec6d94238dee8adf5",
+    "COMPOUND_MULTISEASON_V7.md": "1752f256da043888c837848b1d63799a1c00114157871c777967cb24b32a5fa6",
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "adr-0010-crossover-event-head.md": "5fed9e49b8a4ee27351cae1437924c8f8f602e8cfc95f83f61b5c58fc246bf3a",
+    "adr-0011-compound-negative-controls.md": "7f0f47324cc20b36c73032cdf53f2c1136bec4969155867f6b9462ab268baa2e",
+    "apex_engine/src/apexsim/data/benchmark_guard.py": "36ae546d33c77cf35c3b676f0a52777270529401e3ea42d21043c14dd6c5eea2",
+    "apex_engine/src/apexsim/data/fastf1_archive.py": "981b2333957303a40f16daa7acdb58f5d6ec8edccc7a39b01bc91959dc2d4d09",
+    "apex_engine/src/apexsim/data/jolpica.py": "d9b3961aff96ddf8c3ca68676896317986fa415ef895a1c0fcf6a9e09a8b6858",
+    "apex_engine/src/apexsim/data/tyre_dataset.py": "de342f5f9f17e1b7e99c7fd88ff644cf7ac8404b5045c2cfe4c7c9443f836abf",
+    "apex_engine/src/apexsim/provenance.py": "91507449766da4f532d75161985a1ca308b804a1228dba250ac30510fe4ea63b",
+    "apex_engine/src/apexsim/research/compound_bounded.py": "8819ec342e0575117fb44b413a6a5c3d4ea1ac2c6e08a775dc0b6bb2dc5df8fa",
+    "apex_engine/src/apexsim/research/evidence.py": "5a55e56b943880c3d8adc72f3a5cdef2edfb6891c463401eb922dd66cc706b74",
+    "audit_compound_bounded.py": "69cefcb262cd4d08f373d29260ed9b7e4ca0750d2fc5fbf5cc75d33b5c18f8da",
+    "audit_compound_bounded_confirmation.py": "9e8ff22e1511e62e49a79d75e78c2c37ab9823137825d7c697629de10299ae41",
+    "audit_compound_context.py": "50c3cacd24ca2879bb307d4107f976ad843dd407d94e4b33f060b1fc61fd7bfc",
+    "compound-multiseason-development.json": "7b01d3376eb9f86d1c28600ec455561901bb4171c5c96cf18991c84b46640337",
+    "compound-multiseason-training.json": "572eca2adc611684ca6562924dd0c54644b112951e60ee5c09a5a003e1c25679",
+    "compound-v8-development.json": "0d866aa690ad7376bba2eabb10a057de546bae8c436dc57e40225cadc6a44831",
+    "compound-v8-training-additions.json": "5f8eca24649dc56a6fcf1b6ecfa8437d48093a8b5ff49f2cb0e45a20ab2a5ffc",
+    "compound-v9-development-data.json": "f4d4f5f8efd779d6213aed723d672ba76e422dbe93817ca460e02eb442398676",
+    "compound-v9-development-summary.json": "85dc81d2fa51e90ac431db95414c39509e37be83c433022f6f8e195bd6aeeb4c",
+    "compound-v9-development.json.gz": "e310cb5cc7743742c4d214f4bc958b8f8cf23dde153baa142951defbbb8bd834",
+    "compound_conditioned.py": "0fa671c8e635c3b26602ebbb39d18efcf2ed164f8786d04afb1557ce173de248",
+    "compound_crossover_head.py": "e825c2b5126879bd0aafef6019c10c3a8837216332f85a333350f8570cfdb494",
+    "compound_multiseason.py": "b82c7940a0dd1f52c2a6a7aa426b217a4a2733c0bb2c5b9366ce02c231ae236c",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_bounded.py": "1e8c05e58a9a5e77ff52f262185446f99d29338a4b0c32a214c5bc1dd0b89a87",
+    "confirm_compound_conditioned.py": "e5786d10fdaf58fd6c328a84c97b154db6fb11e796f69e3b251ccc8cfd5a5ce9",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_event.py": "f4a152e82f45fed3e3065d91eda89875f9df4da5ffc2e8e70a25a254bf4c45b9",
+    "confirm_compound_multiseason.py": "15ba9287a6a2e744583080d959e9148070d6f7821c87331a85663dd2ddcf8840",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa",
+    "confirm_compound_v8.py": "d8e9b29a72e58643132a5487739895acee9a4d38457d1bfb1b14b38f3f1edbdc",
+    "diagnose_compound_multiseason.py": "3b621fa76fd9e63ba07b238f9fa796e5215048857f84f8574e7d055587747b98",
+    "extend_compound_development.py": "354379979202d4a24ee608138bf79c2524134bd01801ba7b7881d8ec99bd6f6f",
+    "research/protocols/COMPOUND_BOUNDED_V9.md": "3aa8d34f0ce10a69fe8a9ed56592ac8c7f488bccfb1579e3ca6d0dfc0af326e7",
+    "research/scripts/compound_bounded_common.py": "afab5c62d1c5d293bb4be1b627aa9738937b4bb918a649d4b80335d60d602956",
+    "research/scripts/diagnose_compound_adaptation.py": "b64b3b05595ac34d623df7ba766591461274e0ac3a04de8b5b386b85937ba9e0",
+    "research/scripts/diagnose_compound_bounded.py": "d90952083d16f304fabdd8ef1ce3c78374d6eb7af20a355407b225e083af580c",
+    "research/scripts/prepare_compound_bounded.py": "77d8d6bcdf0c3fccd87ca94a36b02b6f13a3da982ecb667e9c74eb2a36de1951"
+  },
+  "heldout_events": [
+    10006,
+    10022,
+    9947,
+    9858
+  ],
+  "negative_control_policy": "ZERO_FALSE_ALARMS_AND_BOTH_PACE_BASELINES",
+  "pace_head": {
+    "alpha": 10.0,
+    "baseline": "reference",
+    "bound_s": 0.5,
+    "coefficients": [
+      -0.31210778520046134,
+      -0.024716277889412806,
+      -0.021578657930589468,
+      0.03814033264364539,
+      -0.34904672125973374,
+      -0.08926279612820111,
+      -0.517543283946413
+    ],
+    "feature_group": "pace",
+    "mean": [
+      0.1767845337575143,
+      0.26331118157884253,
+      0.5599042846636431,
+      0.3295590876450057,
+      -0.03569218798721522,
+      0.32496937394703285
+    ],
+    "radius_s": 1.1598704017454429,
+    "scale": [
+      0.3814862545120764,
+      0.44042979376331526,
+      0.496398505919323,
+      0.7676953650622336,
+      3.656862585994364,
+      0.9947739619851004
+    ],
+    "support": {
+      "HARD": {
+        "events": 18,
+        "maximum": [
+          0.0,
+          0.0,
+          1.0,
+          2.3190000000000026,
+          15.758999999999979,
+          2.2990000000000066
+        ],
+        "minimum": [
+          0.0,
+          0.0,
+          1.0,
+          -1.5220000000000056,
+          -12.334499999999935,
+          -2.5600000000000023
+        ]
+      },
+      "MEDIUM": {
+        "events": 20,
+        "maximum": [
+          0.0,
+          1.0,
+          0.0,
+          2.2390000000000043,
+          7.019999999999946,
+          2.112000000000009
+        ],
+        "minimum": [
+          0.0,
+          1.0,
+          0.0,
+          -0.8740000000000094,
+          -11.780999999999977,
+          -2.9919999999999902
+        ]
+      },
+      "SOFT": {
+        "events": 12,
+        "maximum": [
+          1.0,
+          0.0,
+          0.0,
+          2.5819999999999936,
+          11.41200000000007,
+          4.727999999999994
+        ],
+        "minimum": [
+          1.0,
+          0.0,
+          0.0,
+          -2.8830000000000098,
+          -11.537999999999968,
+          -0.9210000000000065
+        ]
+      }
+    },
+    "truth": "FUEL_CORRECTED_PACE_PROXY"
+  },
+  "production_promotion": false,
+  "required_informative_events": 2,
+  "schema_version": "apex-compound-bounded-confirmation-v9-calibration",
+  "unbounded_head": {
+    "alpha": 10.0,
+    "coefficients": [
+      0.060320268890624286,
+      0.1203062784708676,
+      -0.0010936459616085609,
+      0.4434959258101339,
+      0.026468309094008536,
+      0.5628566416660464
+    ],
+    "feature_level": 3,
+    "support": {
+      "HARD": {
+        "radius_s": 0.9131698485978672,
+        "windows": 191
+      },
+      "MEDIUM": {
+        "radius_s": 0.7047399354752719,
+        "windows": 101
+      },
+      "SOFT": {
+        "radius_s": 0.7573814419013718,
+        "windows": 59
+      }
+    }
+  }
+}
