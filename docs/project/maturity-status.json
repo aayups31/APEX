@@ -300,12 +300,15 @@
     "abstention_challenges": 1,
     "force_grid_points": 420,
     "scientific_reload_maximum_difference_si": 0.0,
-    "maximum_independent_lateral_speed_difference_mps": 0.000026744552973134716,
+    "maximum_independent_lateral_speed_difference_mps": 2.6744552973134716e-05,
     "independent_yaw_support_exit_s": 0.5922461624125949,
     "promotion": false,
     "implementation_commit": "f71b3689b32a8999af8ee990c08eafaa63cea743",
     "implementation_ci_run": 41220708362,
-    "implementation_ci_python_versions": ["3.11", "3.12"],
+    "implementation_ci_python_versions": [
+      "3.11",
+      "3.12"
+    ],
     "tests": 634,
     "local_full_regression": {
       "date": "2026-10-31",
@@ -346,11 +349,18 @@
     "oracle_parameters": 5,
     "real_parameters_identified": false,
     "scientific_reload_maximum_difference": 0.0,
-    "maximum_independent_lateral_speed_difference_mps": 0.000019262977165313,
+    "maximum_independent_lateral_speed_difference_mps": 1.9262977165313e-05,
     "promotion": false,
     "implementation_commit": "d9f021ad36aea261e394810c3620f66cad9c5541",
     "implementation_ci_run": 41238903597,
-    "full_regression": {"passed": 664, "python_versions": ["3.11", "3.12"], "ci_run": 41238903597},
+    "full_regression": {
+      "passed": 664,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "ci_run": 41238903597
+    },
     "targeted_tests": 13,
     "limitations": [
       "Synthetic force/load oracle; generic priors do not identify actual vehicle parameters",
@@ -374,7 +384,10 @@
     "calibration_summary_sha256": "2dc610c27b9219caf53759c0d8f1211a8b5d492b82758c04743997e099059b1e",
     "calibration_laps": 68,
     "calibration_rows": 22531,
-    "selected_pace": {"lateral_fraction": 0.65, "maximum_speed_mps": 60.0},
+    "selected_pace": {
+      "lateral_fraction": 0.65,
+      "maximum_speed_mps": 60.0
+    },
     "held_out_nominal_laps": 4,
     "completed_held_out_nominal_laps": 4,
     "total_saved_cases": 16,
@@ -383,18 +396,35 @@
     "independent_full_laps": 1,
     "independent_representative_intervals": 32,
     "maximum_independent_full_lap_position_difference_m": 0.0020841945122198613,
-    "maximum_refinement_position_difference_m": 0.00007043283758622388,
-    "observed_source_time_shortfall_s": [47.541081062119446, 48.47338721679222],
+    "maximum_refinement_position_difference_m": 7.043283758622388e-05,
+    "observed_source_time_shortfall_s": [
+      47.541081062119446,
+      48.47338721679222
+    ],
     "complete_measured_car_replay": false,
     "production_promotion": false,
     "component_targeted_tests": 16,
     "combined_completion_evidence": "docs/verification/r034-r035-completion.json",
     "combined_completion_evidence_sha256": "00a92caca463d17c332216b291c931e8f9627357f9e522e3e924c52285fcdc1a",
-    "full_regression": {"passed": 690, "python_versions": ["3.11", "3.12"], "ci_run": 41243887574},
+    "full_regression": {
+      "passed": 690,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "ci_run": 41243887574
+    },
     "implementation_commit": "318ab389099e78a5daa5b6fc4335080eb6584998",
     "artifact_test_commit": "c41f89f06938789e911ad3e3f9caa839a0589239",
-    "follow_up_order": ["R040"],
-    "limitations": ["Known supplied reconstructed map and generic vehicle priors", "Source lap time/speed agreement is poor; no real-car pace validation", "Multi-lap drift, broad recovery and OOD/fallback remain later gates", "No formal R4 or production promotion"]
+    "follow_up_order": [
+      "R040"
+    ],
+    "limitations": [
+      "Known supplied reconstructed map and generic vehicle priors",
+      "Source lap time/speed agreement is poor; no real-car pace validation",
+      "Multi-lap drift, broad recovery and OOD/fallback remain later gates",
+      "No formal R4 or production promotion"
+    ]
   },
   "matched_open_loop_error_report": {
     "backlog_id": "R034",
@@ -411,14 +441,25 @@
     "supported_horizon_cases": 505,
     "abstained_horizon_cases": 95,
     "independently_audited_paths": 2525,
-    "maximum_independent_speed_difference_mps": 0.000000005555740756335581,
+    "maximum_independent_speed_difference_mps": 5.555740756335581e-09,
     "scientific_replay_maximum_difference": 0.0,
     "complete_measured_car_replay": false,
     "production_promotion": false,
     "targeted_tests": 10,
     "implementation_commit": "7ef09f1ba5a4be5dff9fbe1cec47a415e7350bce",
-    "full_regression": {"passed": 674, "python_versions": ["3.11", "3.12"], "ci_run": 41242991828},
-    "limitations": ["Section aggregates are not continuous physical lap/stint replay", "Missing measured steering/body state and all-regime calibration", "Reused development events; protected benchmark untouched"]
+    "full_regression": {
+      "passed": 674,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "ci_run": 41242991828
+    },
+    "limitations": [
+      "Section aggregates are not continuous physical lap/stint replay",
+      "Missing measured steering/body state and all-regime calibration",
+      "Reused development events; protected benchmark untouched"
+    ]
   },
   "tyre_wear_replay": {
     "backlog_id": "R040",
@@ -430,12 +471,12 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "decision": "REJECT_TRAFFIC_CROSSOVER_CANDIDATE",
-    "held_out_blocks": 33,
-    "observed_crossovers": 12,
-    "matched_crossovers": 4,
-    "report": "docs/verification/compound-traffic-confirmation.md",
-    "prior_report": "docs/verification/compound-confirmation-report.md"
+    "decision": "REJECT_DIRECT_CROSSOVER_EVENT_HEAD",
+    "held_out_blocks": 34,
+    "observed_crossovers": 11,
+    "matched_crossovers": 3,
+    "report": "docs/verification/compound-event-confirmation.md",
+    "prior_report": "docs/verification/compound-conditioned-confirmation.md"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
@@ -506,8 +547,17 @@
     "measured_human_steering_validated": false,
     "production_promotion": false,
     "targeted_tests": 23,
-    "full_regression": {"passed": 713, "python_versions": ["3.11", "3.12"], "ci_run": 41350406803},
-    "follow_up_order": ["R040"],
+    "full_regression": {
+      "passed": 713,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "ci_run": 41350406803
+    },
+    "follow_up_order": [
+      "R040"
+    ],
     "limitations": [
       "Tracking gains inherit an analytic preview expert; no new driving knowledge or superiority over that expert",
       "Nominal peak error increases despite RMSE/P95 gains; separate smoke policy fails improvement gate",
@@ -542,7 +592,14 @@
     "promotion": false,
     "implementation_commit": "d9f021ad36aea261e394810c3620f66cad9c5541",
     "implementation_ci_run": 41238903597,
-    "full_regression": {"passed": 664, "python_versions": ["3.11", "3.12"], "ci_run": 41238903597},
+    "full_regression": {
+      "passed": 664,
+      "python_versions": [
+        "3.11",
+        "3.12"
+      ],
+      "ci_run": 41238903597
+    },
     "targeted_tests": 17,
     "limitations": [
       "Steering, body vx/vy, yaw rate, fuel and battery remain UNKNOWN; complete measured bicycle adapter abstains",

@@ -1,0 +1,2046 @@
+{
+  "calibration_sha256": "88cef1c4cc57824ce5738f17af65ba98aaae4ff7f1135e1543b29bc983d8ef6a",
+  "cases": [
+    {
+      "actual_s": 0.7899999999999778,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "SOFT",
+        "MEDIUM"
+      ],
+      "crossover_score": 0.3375857507281719,
+      "current_prefix_s": [
+        73.223,
+        73.152,
+        73.19900000000001
+      ],
+      "current_target_s": [
+        73.616,
+        73.558,
+        73.56800000000001
+      ],
+      "driver": 1,
+      "forecast_at_s": 1756648216.932,
+      "lower_s": -0.34676783104592346,
+      "pairwise_actual_s": 0.799999999999983,
+      "pairwise_prefix_s": 0.045000000000001705,
+      "predicted_crossover": false,
+      "predicted_s": 0.4857231091579448,
+      "prefix_s": -0.0020000000000095497,
+      "prior_prediction_s": 1.0383571428571172,
+      "reference_end_s": 1756647003.7680001,
+      "reference_persistence_s": 1.1589999999999776,
+      "reference_target_s": [
+        74.041,
+        74.35799999999999,
+        74.396
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.318214049361813
+    },
+    {
+      "actual_s": 0.5619999999999976,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.8597078816154934,
+      "current_prefix_s": [
+        73.116,
+        72.908,
+        72.932
+      ],
+      "current_target_s": [
+        72.73,
+        72.784,
+        72.667
+      ],
+      "driver": 4,
+      "forecast_at_s": 1756648214.743,
+      "lower_s": -0.5605505062356448,
+      "pairwise_actual_s": 0.5079999999999956,
+      "pairwise_prefix_s": -0.9300000000000068,
+      "predicted_crossover": true,
+      "predicted_s": 0.32190290596936877,
+      "prefix_s": -0.9270000000000067,
+      "prior_prediction_s": -0.13905098684210193,
+      "reference_end_s": 1756646990.514,
+      "reference_persistence_s": 0.35999999999999943,
+      "reference_target_s": [
+        73.15299999999999,
+        73.292,
+        73.494
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.2043563181743824
+    },
+    {
+      "actual_s": 0.5449999999999875,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3141355801105938,
+      "current_prefix_s": [
+        73.415,
+        73.105,
+        73.09400000000001
+      ],
+      "current_target_s": [
+        73.663,
+        73.677,
+        73.796
+      ],
+      "driver": 6,
+      "forecast_at_s": 1756648217.998,
+      "lower_s": -0.2155785546974449,
+      "pairwise_actual_s": 0.4259999999999877,
+      "pairwise_prefix_s": 0.04199999999998738,
+      "predicted_crossover": false,
+      "predicted_s": 0.6668748575075687,
+      "prefix_s": 0.1979999999999933,
+      "prior_prediction_s": 0.6179490131578889,
+      "reference_end_s": 1756647005.98,
+      "reference_persistence_s": 1.1169999999999902,
+      "reference_target_s": [
+        73.964,
+        74.232,
+        74.222
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.5493282697125823
+    },
+    {
+      "actual_s": 0.016999999999995907,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3165541516654618,
+      "current_prefix_s": [
+        74.447,
+        74.162,
+        74.18900000000001
+      ],
+      "current_target_s": [
+        74.99600000000001,
+        75.15,
+        75.072
+      ],
+      "driver": 10,
+      "forecast_at_s": 1756648234.394,
+      "lower_s": -0.34337557066186486,
+      "pairwise_actual_s": 0.07099999999998374,
+      "pairwise_prefix_s": 0.053999999999987836,
+      "predicted_crossover": false,
+      "predicted_s": 0.5390778415431488,
+      "prefix_s": 0.06499999999998352,
+      "prior_prediction_s": 0.4009490131578901,
+      "reference_end_s": 1756647029.8200002,
+      "reference_persistence_s": 0.8999999999999915,
+      "reference_target_s": [
+        75.089,
+        75.22099999999999,
+        74.952
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.4215312537481624
+    },
+    {
+      "actual_s": 0.9680000000000035,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.34402863956951757,
+      "current_prefix_s": [
+        73.196,
+        73.384,
+        73.44900000000001
+      ],
+      "current_target_s": [
+        73.264,
+        73.405,
+        73.724
+      ],
+      "driver": 12,
+      "forecast_at_s": 1756648222.26,
+      "lower_s": -0.4713566777610606,
+      "pairwise_actual_s": 0.8840000000000003,
+      "pairwise_prefix_s": 0.7499999999999858,
+      "predicted_crossover": false,
+      "predicted_s": 0.411096734443953,
+      "prefix_s": 0.8149999999999977,
+      "prior_prediction_s": 0.48994901315790296,
+      "reference_end_s": 1756647025.4710002,
+      "reference_persistence_s": 0.9890000000000043,
+      "reference_target_s": [
+        75.095,
+        74.289,
+        74.373
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.2935501466489665
+    },
+    {
+      "actual_s": 0.0829999999999842,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.7543305537029092,
+      "current_prefix_s": [
+        73.61800000000001,
+        74.95100000000001,
+        74.15
+      ],
+      "current_target_s": [
+        74.269,
+        74.21600000000001,
+        74.46100000000001
+      ],
+      "driver": 23,
+      "forecast_at_s": 1756648224.351,
+      "lower_s": -0.863715515384242,
+      "pairwise_actual_s": 0.001999999999995339,
+      "pairwise_prefix_s": -0.22400000000000375,
+      "predicted_crossover": true,
+      "predicted_s": 0.018737896820771704,
+      "prefix_s": -0.27000000000001023,
+      "prior_prediction_s": -0.2970509868421174,
+      "reference_end_s": 1756647020.19,
+      "reference_persistence_s": 0.20199999999998397,
+      "reference_target_s": [
+        74.271,
+        74.35199999999999,
+        74.39
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.9011913090257853
+    },
+    {
+      "actual_s": -0.2190000000000083,
+      "ages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "crossover_score": 0.6430723116247926,
+      "current_prefix_s": [
+        73.522,
+        74.065,
+        74.218
+      ],
+      "current_target_s": [
+        74.258,
+        74.63300000000001,
+        74.41600000000001
+      ],
+      "driver": 30,
+      "forecast_at_s": 1756648226.4150002,
+      "lower_s": -1.4805119130595152,
+      "pairwise_actual_s": -0.06099999999999284,
+      "pairwise_prefix_s": -0.6370000000000147,
+      "predicted_crossover": true,
+      "predicted_s": 0.08865354454112356,
+      "prefix_s": -0.7179999999999893,
+      "prior_prediction_s": -0.9201000000000157,
+      "reference_end_s": 1756646862.32,
+      "reference_persistence_s": 0.132000000000005,
+      "reference_target_s": [
+        74.197,
+        74.06800000000001,
+        74.627
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        3
+      ],
+      "upper_s": 1.6578190021417625
+    },
+    {
+      "actual_s": -0.0730000000000075,
+      "ages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "crossover_score": 0.9033140776104202,
+      "current_prefix_s": [
+        73.247,
+        74.361,
+        74.045
+      ],
+      "current_target_s": [
+        74.418,
+        74.277,
+        74.309
+      ],
+      "driver": 55,
+      "forecast_at_s": 1756648224.804,
+      "lower_s": -1.4720176284125712,
+      "pairwise_actual_s": -0.09900000000000375,
+      "pairwise_prefix_s": -0.632000000000005,
+      "predicted_crossover": true,
+      "predicted_s": 0.09714782918806769,
+      "prefix_s": -0.632000000000005,
+      "prior_prediction_s": -0.8611000000000324,
+      "reference_end_s": 1756646864.177,
+      "reference_persistence_s": 0.1909999999999883,
+      "reference_target_s": [
+        74.256,
+        74.178,
+        74.23599999999999
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        3
+      ],
+      "upper_s": 1.6663132867887065
+    },
+    {
+      "actual_s": -0.21100000000001273,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.31944709019880657,
+      "current_prefix_s": [
+        74.057,
+        73.292,
+        73.357
+      ],
+      "current_target_s": [
+        73.892,
+        74.397,
+        74.37400000000001
+      ],
+      "driver": 63,
+      "forecast_at_s": 1756648220.715,
+      "lower_s": -0.33487154181754897,
+      "pairwise_actual_s": -0.17600000000001614,
+      "pairwise_prefix_s": 0.17599999999998772,
+      "predicted_crossover": false,
+      "predicted_s": 0.5475818703874646,
+      "prefix_s": 0.11099999999999,
+      "prior_prediction_s": 0.306949013157896,
+      "reference_end_s": 1756647009.322,
+      "reference_persistence_s": 0.8059999999999974,
+      "reference_target_s": [
+        73.829,
+        74.22099999999999,
+        74.163
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.4300352825924783
+    },
+    {
+      "actual_s": 0.5169999999999959,
+      "ages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.4953638811335458,
+      "current_prefix_s": [
+        73.33500000000001,
+        73.096,
+        73.149
+      ],
+      "current_target_s": [
+        72.537,
+        72.733,
+        72.918
+      ],
+      "driver": 81,
+      "forecast_at_s": 1756648213.257,
+      "lower_s": -0.737483675559229,
+      "pairwise_actual_s": 0.5169999999999959,
+      "pairwise_prefix_s": -0.9250000000000114,
+      "predicted_crossover": false,
+      "predicted_s": 0.1449697366457846,
+      "prefix_s": -0.804000000000002,
+      "prior_prediction_s": -0.3980509868421023,
+      "reference_end_s": 1756646986.964,
+      "reference_persistence_s": 0.10099999999999909,
+      "reference_target_s": [
+        73.09299999999999,
+        73.25,
+        73.26299999999999
+      ],
+      "session": 9920,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.027423148850798
+    },
+    {
+      "actual_s": 0.4479999999999933,
+      "ages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "compounds": [
+        "SOFT",
+        "HARD"
+      ],
+      "crossover_score": 0.39088725944016,
+      "current_prefix_s": [
+        94.175,
+        93.72800000000001,
+        93.83800000000001
+      ],
+      "current_target_s": [
+        93.87,
+        94.051,
+        94.176
+      ],
+      "driver": 1,
+      "forecast_at_s": 1759668369.448,
+      "lower_s": -0.6783214486184408,
+      "pairwise_actual_s": 0.5099999999999909,
+      "pairwise_prefix_s": 1.6869999999999834,
+      "predicted_crossover": false,
+      "predicted_s": 0.20413196358657282,
+      "prefix_s": 1.576999999999984,
+      "prior_prediction_s": 0.1619490131578858,
+      "reference_end_s": 1759667089.052,
+      "reference_persistence_s": 0.6609999999999872,
+      "reference_target_s": [
+        94.493,
+        94.499,
+        94.68599999999999
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.0865853757915864
+    },
+    {
+      "actual_s": 0.027999999999991587,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.4041383674009458,
+      "current_prefix_s": [
+        93.607,
+        93.723,
+        93.833
+      ],
+      "current_target_s": [
+        94.35799999999999,
+        94.404,
+        94.372
+      ],
+      "driver": 4,
+      "forecast_at_s": 1759668757.411,
+      "lower_s": -0.812414374587988,
+      "pairwise_actual_s": 0.04200000000000159,
+      "pairwise_prefix_s": 1.9639999999999986,
+      "predicted_crossover": false,
+      "predicted_s": 0.07003903761702557,
+      "prefix_s": 1.9639999999999986,
+      "prior_prediction_s": 0.17794901315789113,
+      "reference_end_s": 1759667090.276,
+      "reference_persistence_s": 0.6769999999999925,
+      "reference_target_s": [
+        94.39999999999999,
+        94.469,
+        94.394
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.9524924498220392
+    },
+    {
+      "actual_s": -0.340999999999994,
+      "ages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3822314280704905,
+      "current_prefix_s": [
+        94.749,
+        95.59,
+        95.203
+      ],
+      "current_target_s": [
+        95.116,
+        94.866,
+        95.22500000000001
+      ],
+      "driver": 4,
+      "forecast_at_s": 1759669909.649,
+      "lower_s": -1.2156555062272774,
+      "pairwise_actual_s": -0.21399999999999864,
+      "pairwise_prefix_s": -0.39400000000000546,
+      "predicted_crossover": false,
+      "predicted_s": -0.33320209402226375,
+      "prefix_s": -0.47400000000000375,
+      "prior_prediction_s": -0.9270509868420986,
+      "reference_end_s": 1759668255.727,
+      "reference_persistence_s": -0.42799999999999727,
+      "reference_target_s": [
+        94.584,
+        94.775,
+        95.01100000000001
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.5492513181827499
+    },
+    {
+      "actual_s": -0.3990000000000009,
+      "ages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "compounds": [
+        "SOFT",
+        "HARD"
+      ],
+      "crossover_score": 0.7832841765029749,
+      "current_prefix_s": [
+        96.168,
+        95.77300000000001,
+        96.272
+      ],
+      "current_target_s": [
+        95.971,
+        96.096,
+        96.20500000000001
+      ],
+      "driver": 6,
+      "forecast_at_s": 1759668412.217,
+      "lower_s": -1.3819834805934377,
+      "pairwise_actual_s": -0.4490000000000123,
+      "pairwise_prefix_s": 1.4179999999999922,
+      "predicted_crossover": true,
+      "predicted_s": -0.4995300683884241,
+      "prefix_s": 1.0229999999999961,
+      "prior_prediction_s": -0.970050986842105,
+      "reference_end_s": 1759667109.0149999,
+      "reference_persistence_s": -0.47100000000000364,
+      "reference_target_s": [
+        95.697,
+        95.64699999999999,
+        95.733
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.3829233438165895
+    },
+    {
+      "actual_s": -0.722999999999999,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.38637145396932276,
+      "current_prefix_s": [
+        94.111,
+        94.86000000000001,
+        94.862
+      ],
+      "current_target_s": [
+        97.132,
+        96.583,
+        96.883
+      ],
+      "driver": 10,
+      "forecast_at_s": 1759668621.833,
+      "lower_s": -0.5286490002505265,
+      "pairwise_actual_s": -0.4230000000000018,
+      "pairwise_prefix_s": 2.0919999999999845,
+      "predicted_crossover": false,
+      "predicted_s": 0.3538044119544871,
+      "prefix_s": 2.0919999999999845,
+      "prior_prediction_s": 0.8009490131578816,
+      "reference_end_s": 1759667125.141,
+      "reference_persistence_s": 1.299999999999983,
+      "reference_target_s": [
+        95.997,
+        96.16,
+        96.692
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.2362578241595008
+    },
+    {
+      "actual_s": 0.13400000000000034,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.4103643447378343,
+      "current_prefix_s": [
+        93.245,
+        94.323,
+        94.702
+      ],
+      "current_target_s": [
+        94.746,
+        94.79299999999999,
+        95.134
+      ],
+      "driver": 12,
+      "forecast_at_s": 1759668676.664,
+      "lower_s": -1.049033756653813,
+      "pairwise_actual_s": 0.13400000000000034,
+      "pairwise_prefix_s": 1.8719999999999999,
+      "predicted_crossover": false,
+      "predicted_s": -0.16658034444879932,
+      "prefix_s": 1.8719999999999999,
+      "prior_prediction_s": 0.10494901315789784,
+      "reference_end_s": 1759667099.109,
+      "reference_persistence_s": 0.6039999999999992,
+      "reference_target_s": [
+        94.88499999999999,
+        94.92699999999999,
+        94.975
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.7158730677562143
+    },
+    {
+      "actual_s": -0.3760000000000048,
+      "ages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "compounds": [
+        "SOFT",
+        "MEDIUM"
+      ],
+      "crossover_score": 0.34072221060744873,
+      "current_prefix_s": [
+        95.584,
+        95.528,
+        95.765
+      ],
+      "current_target_s": [
+        96.108,
+        95.946,
+        96.60600000000001
+      ],
+      "driver": 14,
+      "forecast_at_s": 1759669099.7210002,
+      "lower_s": -1.098275723943107,
+      "pairwise_actual_s": -0.5130000000000052,
+      "pairwise_prefix_s": 0.49200000000000443,
+      "predicted_crossover": false,
+      "predicted_s": -0.26578478373923864,
+      "prefix_s": 0.6730000000000018,
+      "prior_prediction_s": 0.02735714285713582,
+      "reference_end_s": 1759667108.151,
+      "reference_persistence_s": 0.14799999999999613,
+      "reference_target_s": [
+        95.595,
+        95.732,
+        95.785
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.5667061564646296
+    },
+    {
+      "actual_s": 0.8730000000000047,
+      "ages": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "compounds": [
+        "SOFT",
+        "MEDIUM"
+      ],
+      "crossover_score": 0.526616784737041,
+      "current_prefix_s": [
+        95.415,
+        96.32100000000001,
+        96.975
+      ],
+      "current_target_s": [
+        94.854,
+        95.048,
+        95.112
+      ],
+      "driver": 14,
+      "forecast_at_s": 1759670276.138,
+      "lower_s": -1.448184540899589,
+      "pairwise_actual_s": 0.9770000000000039,
+      "pairwise_prefix_s": -0.9850000000000136,
+      "predicted_crossover": true,
+      "predicted_s": -0.6156936006957209,
+      "prefix_s": -0.9850000000000136,
+      "prior_prediction_s": -0.520642857142866,
+      "reference_end_s": 1759668284.4759998,
+      "reference_persistence_s": -0.4000000000000057,
+      "reference_target_s": [
+        95.921,
+        95.781,
+        96.089
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.2167973395081474
+    },
+    {
+      "actual_s": 0.25499999999999545,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3868727228905879,
+      "current_prefix_s": [
+        94.152,
+        94.223,
+        94.15400000000001
+      ],
+      "current_target_s": [
+        94.691,
+        94.675,
+        94.522
+      ],
+      "driver": 16,
+      "forecast_at_s": 1759668288.146,
+      "lower_s": -0.6951268001591486,
+      "pairwise_actual_s": 0.262999999999991,
+      "pairwise_prefix_s": 1.7530000000000001,
+      "predicted_crossover": false,
+      "predicted_s": 0.18732661204586498,
+      "prefix_s": 1.8219999999999885,
+      "prior_prediction_s": 0.2769490131578807,
+      "reference_end_s": 1759667097.471,
+      "reference_persistence_s": 0.775999999999982,
+      "reference_target_s": [
+        95.14099999999999,
+        94.92999999999999,
+        94.785
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.0697800242508786
+    },
+    {
+      "actual_s": -0.8599999999999994,
+      "ages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "compounds": [
+        "SOFT",
+        "MEDIUM"
+      ],
+      "crossover_score": 0.3191422660682171,
+      "current_prefix_s": [
+        95.698,
+        98.219,
+        96.364
+      ],
+      "current_target_s": [
+        96.105,
+        99.001,
+        97.233
+      ],
+      "driver": 18,
+      "forecast_at_s": 1759670001.926,
+      "lower_s": -1.2025831875739272,
+      "pairwise_actual_s": -0.8599999999999994,
+      "pairwise_prefix_s": -0.10600000000000875,
+      "predicted_crossover": false,
+      "predicted_s": -0.3700922473700591,
+      "prefix_s": 0.2009999999999934,
+      "prior_prediction_s": -0.11164285714285997,
+      "reference_end_s": 1759667216.412,
+      "reference_persistence_s": 0.009000000000000341,
+      "reference_target_s": [
+        96.377,
+        96.30799999999999,
+        96.373
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.4623986928338092
+    },
+    {
+      "actual_s": 0.9909999999999997,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "crossover_score": 0.5857478094504422,
+      "current_prefix_s": [
+        95.212,
+        94.65899999999999,
+        95.34599999999999
+      ],
+      "current_target_s": [
+        94.91600000000001,
+        95.92399999999999,
+        97.301
+      ],
+      "driver": 23,
+      "forecast_at_s": 1759670399.023,
+      "lower_s": -0.7551539357912754,
+      "pairwise_actual_s": 0.9909999999999997,
+      "pairwise_prefix_s": 2.446000000000012,
+      "predicted_crossover": true,
+      "predicted_s": 0.8140115218093634,
+      "prefix_s": 1.8930000000000007,
+      "prior_prediction_s": 0.6508999999999681,
+      "reference_end_s": 1759667127.491,
+      "reference_persistence_s": 1.7029999999999887,
+      "reference_target_s": [
+        96.02799999999999,
+        96.91499999999999,
+        97.569
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 2.383176979410002
+    },
+    {
+      "actual_s": -1.0849999999999937,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.28890250045736715,
+      "current_prefix_s": [
+        95.80099999999999,
+        97.473,
+        96.548
+      ],
+      "current_target_s": [
+        96.34299999999999,
+        97.173,
+        96.80499999999999
+      ],
+      "driver": 27,
+      "forecast_at_s": 1759668712.183,
+      "lower_s": -1.5920292532910851,
+      "pairwise_actual_s": -0.9979999999999905,
+      "pairwise_prefix_s": -0.030000000000001137,
+      "predicted_crossover": false,
+      "predicted_s": -0.7095758410860716,
+      "prefix_s": 0.12699999999999534,
+      "prior_prediction_s": -1.3270509868421043,
+      "reference_end_s": 1759667111.979,
+      "reference_persistence_s": -0.828000000000003,
+      "reference_target_s": [
+        95.50999999999999,
+        95.72,
+        95.807
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.17287757111894198
+    },
+    {
+      "actual_s": 0.8329999999999984,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "crossover_score": 0.5349141487069102,
+      "current_prefix_s": [
+        96.93199999999999,
+        94.18599999999999,
+        94.368
+      ],
+      "current_target_s": [
+        94.579,
+        94.887,
+        95.746
+      ],
+      "driver": 27,
+      "forecast_at_s": 1759670627.6,
+      "lower_s": -0.5822876550324032,
+      "pairwise_actual_s": 0.8329999999999984,
+      "pairwise_prefix_s": 2.1500000000000057,
+      "predicted_crossover": true,
+      "predicted_s": 0.9868778025682357,
+      "prefix_s": 2.307000000000002,
+      "prior_prediction_s": 0.2998999999999832,
+      "reference_end_s": 1759667111.979,
+      "reference_persistence_s": 1.3520000000000039,
+      "reference_target_s": [
+        95.50999999999999,
+        95.72,
+        95.807
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        3
+      ],
+      "upper_s": 2.5560432601688747
+    },
+    {
+      "actual_s": 1.9179999999999922,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "HARD",
+        "SOFT"
+      ],
+      "crossover_score": 0.49138576394448885,
+      "current_prefix_s": [
+        96.93199999999999,
+        94.18599999999999,
+        94.368
+      ],
+      "current_target_s": [
+        94.579,
+        94.887,
+        95.746
+      ],
+      "driver": 27,
+      "forecast_at_s": 1759670627.6,
+      "lower_s": 0.10910136643850299,
+      "pairwise_actual_s": 1.7639999999999958,
+      "pairwise_prefix_s": 2.180000000000007,
+      "predicted_crossover": false,
+      "predicted_s": 1.6782668240391418,
+      "prefix_s": 2.180000000000007,
+      "prior_prediction_s": 1.384899999999977,
+      "reference_end_s": 1759669598.185,
+      "reference_persistence_s": 2.4369999999999976,
+      "reference_target_s": [
+        96.34299999999999,
+        97.173,
+        96.80499999999999
+      ],
+      "session": 9896,
+      "stints": [
+        2,
+        3
+      ],
+      "upper_s": 3.2474322816397807
+    },
+    {
+      "actual_s": -2.9320000000000164,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3995817267234336,
+      "current_prefix_s": [
+        94.798,
+        95.211,
+        95.652
+      ],
+      "current_target_s": [
+        96.941,
+        100.393,
+        99.13300000000001
+      ],
+      "driver": 31,
+      "forecast_at_s": 1759669206.9229999,
+      "lower_s": -0.734858742408655,
+      "pairwise_actual_s": -3.007000000000005,
+      "pairwise_prefix_s": 2.0649999999999977,
+      "predicted_crossover": false,
+      "predicted_s": 0.1475946697963586,
+      "prefix_s": 2.0649999999999977,
+      "prior_prediction_s": 0.4909490131578935,
+      "reference_end_s": 1759667120.3300002,
+      "reference_persistence_s": 0.9899999999999949,
+      "reference_target_s": [
+        96.21499999999999,
+        96.201,
+        96.126
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.0300480820013722
+    },
+    {
+      "actual_s": -0.7240000000000038,
+      "ages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.5744444369078695,
+      "current_prefix_s": [
+        96.613,
+        97.46499999999999,
+        100.115
+      ],
+      "current_target_s": [
+        96.677,
+        101.11,
+        96.991
+      ],
+      "driver": 31,
+      "forecast_at_s": 1759670396.631,
+      "lower_s": -2.090882841265003,
+      "pairwise_actual_s": -0.6209999999999951,
+      "pairwise_prefix_s": -1.6949999999999932,
+      "predicted_crossover": true,
+      "predicted_s": -1.2084294290599895,
+      "prefix_s": -1.2859999999999872,
+      "prior_prediction_s": -1.6970509868420947,
+      "reference_end_s": 1759668302.1230001,
+      "reference_persistence_s": -1.1979999999999933,
+      "reference_target_s": [
+        96.267,
+        96.16,
+        96.37
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": -0.3259760168549759
+    },
+    {
+      "actual_s": -0.05700000000000216,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "SOFT",
+        "MEDIUM"
+      ],
+      "crossover_score": 0.41422776171639897,
+      "current_prefix_s": [
+        95.037,
+        94.70400000000001,
+        95.21000000000001
+      ],
+      "current_target_s": [
+        96.071,
+        96.31800000000001,
+        96.28
+      ],
+      "driver": 43,
+      "forecast_at_s": 1759667626.961,
+      "lower_s": -0.5851221886333571,
+      "pairwise_actual_s": -0.05700000000000216,
+      "pairwise_prefix_s": 2.0189999999999912,
+      "predicted_crossover": false,
+      "predicted_s": 0.2473687515705112,
+      "prefix_s": 1.6859999999999928,
+      "prior_prediction_s": 1.0653571428571325,
+      "reference_end_s": 1759667115.832,
+      "reference_persistence_s": 1.1859999999999928,
+      "reference_target_s": [
+        95.94,
+        96.3,
+        96.223
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.0798596917743795
+    },
+    {
+      "actual_s": 0.2939999999999827,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.40599203248123,
+      "current_prefix_s": [
+        94.70700000000001,
+        94.40199999999999,
+        94.116
+      ],
+      "current_target_s": [
+        94.43700000000001,
+        94.40599999999999,
+        94.80999999999999
+      ],
+      "driver": 44,
+      "forecast_at_s": 1759668586.326,
+      "lower_s": -0.8789274263722646,
+      "pairwise_actual_s": 0.2939999999999827,
+      "pairwise_prefix_s": 1.8510000000000133,
+      "predicted_crossover": false,
+      "predicted_s": 0.00352598583274899,
+      "prefix_s": 1.8510000000000133,
+      "prior_prediction_s": -0.17005098684209363,
+      "reference_end_s": 1759667100.552,
+      "reference_persistence_s": 0.32900000000000773,
+      "reference_target_s": [
+        94.731,
+        94.621,
+        95.702
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.8859793980377626
+    },
+    {
+      "actual_s": 0.38800000000000523,
+      "ages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "compounds": [
+        "MEDIUM",
+        "SOFT"
+      ],
+      "crossover_score": 0.5319764964718934,
+      "current_prefix_s": [
+        92.632,
+        93.178,
+        93.269
+      ],
+      "current_target_s": [
+        94.443,
+        94.863,
+        98.453
+      ],
+      "driver": 44,
+      "forecast_at_s": 1759670716.379,
+      "lower_s": -0.5802307078545581,
+      "pairwise_actual_s": 0.38800000000000523,
+      "pairwise_prefix_s": 1.7180000000000035,
+      "predicted_crossover": true,
+      "predicted_s": 0.9889347497460808,
+      "prefix_s": 1.6810000000000116,
+      "prior_prediction_s": 1.0208999999999868,
+      "reference_end_s": 1759667393.9459999,
+      "reference_persistence_s": 2.0730000000000075,
+      "reference_target_s": [
+        95.045,
+        95.251,
+        95.521
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        3
+      ],
+      "upper_s": 2.55810020734672
+    },
+    {
+      "actual_s": 0.04599999999999227,
+      "ages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "compounds": [
+        "HARD",
+        "SOFT"
+      ],
+      "crossover_score": 0.5311134832424252,
+      "current_prefix_s": [
+        92.632,
+        93.178,
+        93.269
+      ],
+      "current_target_s": [
+        94.443,
+        94.863,
+        98.453
+      ],
+      "driver": 44,
+      "forecast_at_s": 1759670716.379,
+      "lower_s": -0.7163974474473188,
+      "pairwise_actual_s": 0.04599999999999227,
+      "pairwise_prefix_s": 1.100999999999999,
+      "predicted_crossover": true,
+      "predicted_s": 0.85276801015332,
+      "prefix_s": 1.100999999999999,
+      "prior_prediction_s": 0.6788999999999739,
+      "reference_end_s": 1759669741.478,
+      "reference_persistence_s": 1.7309999999999945,
+      "reference_target_s": [
+        94.786,
+        94.90899999999999,
+        94.917
+      ],
+      "session": 9896,
+      "stints": [
+        2,
+        3
+      ],
+      "upper_s": 2.421933467753959
+    },
+    {
+      "actual_s": -0.4989999999999952,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.37120349125092283,
+      "current_prefix_s": [
+        93.618,
+        93.827,
+        93.821
+      ],
+      "current_target_s": [
+        94.22999999999999,
+        94.481,
+        94.59299999999999
+      ],
+      "driver": 63,
+      "forecast_at_s": 1759668653.311,
+      "lower_s": -1.0218512937505475,
+      "pairwise_actual_s": -0.6089999999999947,
+      "pairwise_prefix_s": 1.141999999999996,
+      "predicted_crossover": false,
+      "predicted_s": -0.13939788154553384,
+      "prefix_s": 1.1479999999999961,
+      "prior_prediction_s": -0.3380509868421,
+      "reference_end_s": 1759667081.9520001,
+      "reference_persistence_s": 0.16100000000000136,
+      "reference_target_s": [
+        93.982,
+        93.797,
+        93.984
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.7430555306594797
+    },
+    {
+      "actual_s": 0.563999999999993,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.3967202769182276,
+      "current_prefix_s": [
+        93.675,
+        93.603,
+        93.518
+      ],
+      "current_target_s": [
+        93.98899999999999,
+        94.134,
+        94.66
+      ],
+      "driver": 81,
+      "forecast_at_s": 1759668862.425,
+      "lower_s": -0.5334117363934747,
+      "pairwise_actual_s": 0.7090000000000032,
+      "pairwise_prefix_s": 2.2990000000000066,
+      "predicted_crossover": false,
+      "predicted_s": 0.3490416758115389,
+      "prefix_s": 2.2990000000000066,
+      "prior_prediction_s": 0.5959490131578975,
+      "reference_end_s": 1759667094.973,
+      "reference_persistence_s": 1.0949999999999989,
+      "reference_target_s": [
+        94.698,
+        94.997,
+        94.688
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.2314950880165525
+    },
+    {
+      "actual_s": -0.5040000000000049,
+      "ages": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.32537085146500716,
+      "current_prefix_s": [
+        94.274,
+        94.50200000000001,
+        95.063
+      ],
+      "current_target_s": [
+        96.276,
+        95.12400000000001,
+        94.87400000000001
+      ],
+      "driver": 81,
+      "forecast_at_s": 1759670011.945,
+      "lower_s": -1.0398984576134152,
+      "pairwise_actual_s": -0.31500000000001194,
+      "pairwise_prefix_s": 0.347999999999999,
+      "predicted_crossover": false,
+      "predicted_s": -0.15744504540840143,
+      "prefix_s": 0.347999999999999,
+      "prior_prediction_s": -0.38105098684210637,
+      "reference_end_s": 1759668260.191,
+      "reference_persistence_s": 0.117999999999995,
+      "reference_target_s": [
+        94.62,
+        95.36200000000001,
+        94.559
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 0.7250083667966122
+    },
+    {
+      "actual_s": -1.6920000000000073,
+      "ages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compounds": [
+        "MEDIUM",
+        "HARD"
+      ],
+      "crossover_score": 0.33391275138472987,
+      "current_prefix_s": [
+        94.85000000000001,
+        95.81700000000001,
+        94.66
+      ],
+      "current_target_s": [
+        97.495,
+        97.456,
+        97.086
+      ],
+      "driver": 87,
+      "forecast_at_s": 1759668505.484,
+      "lower_s": -0.6165034797834202,
+      "pairwise_actual_s": -1.7310000000000088,
+      "pairwise_prefix_s": 1.2780000000000058,
+      "predicted_crossover": false,
+      "predicted_s": 0.26594993242159337,
+      "prefix_s": 2.1169999999999902,
+      "prior_prediction_s": 0.4149490131578859,
+      "reference_end_s": 1759667110.412,
+      "reference_persistence_s": 0.9139999999999873,
+      "reference_target_s": [
+        95.764,
+        95.494,
+        95.773
+      ],
+      "session": 9896,
+      "stints": [
+        1,
+        2
+      ],
+      "upper_s": 1.1484033446266069
+    }
+  ],
+  "content_sha256": "d22be525a901d80de225a5dc27e95ad237a627c120500475108dfdf9952215b0",
+  "metrics": [
+    {
+      "by_current_compound": {
+        "HARD": {
+          "blocks": 7,
+          "contrast_persistence_mae_s": 0.5761428571428553,
+          "coverage": 1.0,
+          "event_point_disagreements": 1,
+          "mae_s": 0.37654675650833075,
+          "matched": 1,
+          "mean_width_s": 1.7649068244100268,
+          "min_precision_recall": 0.5,
+          "observed": 2,
+          "passed": true,
+          "point_matched": 1,
+          "point_predicted": 1,
+          "predicted": 2,
+          "prior_mae_s": 0.49272156954887203,
+          "reference_persistence_mae_s": 0.461428571428572,
+          "rmse_s": 0.44291069788531207
+        },
+        "MEDIUM": {
+          "blocks": 1,
+          "contrast_persistence_mae_s": 0.7919999999999874,
+          "coverage": 1.0,
+          "event_point_disagreements": 0,
+          "mae_s": 0.304276890842033,
+          "matched": 0,
+          "mean_width_s": 1.6649818804077365,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "passed": false,
+          "point_matched": 0,
+          "point_predicted": 0,
+          "predicted": 0,
+          "prior_mae_s": 0.2483571428571394,
+          "reference_persistence_mae_s": 0.3689999999999998,
+          "rmse_s": 0.304276890842033
+        },
+        "SOFT": {
+          "blocks": 2,
+          "contrast_persistence_mae_s": 0.5289999999999893,
+          "coverage": 1.0,
+          "event_point_disagreements": 2,
+          "mae_s": 0.23890068686460353,
+          "matched": 0,
+          "mean_width_s": 3.1383309152012777,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "passed": false,
+          "point_matched": 0,
+          "point_predicted": 0,
+          "predicted": 2,
+          "prior_mae_s": 0.7446000000000161,
+          "reference_persistence_mae_s": 0.30750000000000455,
+          "rmse_s": 0.24859705071273133
+        }
+      },
+      "pairwise_sensitivity": {
+        "blocks": 10,
+        "contrast_persistence_mae_s": 0.5857000000000028,
+        "coverage": 1.0,
+        "event_point_disagreements": 3,
+        "mae_s": 0.31403813537711145,
+        "matched": 1,
+        "mean_width_s": 2.029599148168048,
+        "min_precision_recall": 0.25,
+        "observed": 3,
+        "passed": false,
+        "point_matched": 1,
+        "point_predicted": 1,
+        "predicted": 4,
+        "prior_mae_s": 0.5119608129699312,
+        "reference_persistence_mae_s": 0.4212999999999994,
+        "rmse_s": 0.3684134505286562
+      },
+      "passed": false,
+      "primary": {
+        "blocks": 10,
+        "contrast_persistence_mae_s": 0.5882999999999953,
+        "coverage": 1.0,
+        "event_point_disagreements": 3,
+        "mae_s": 0.3417905560129555,
+        "matched": 1,
+        "mean_width_s": 2.029599148168048,
+        "min_precision_recall": 0.25,
+        "observed": 2,
+        "passed": false,
+        "point_matched": 1,
+        "point_predicted": 1,
+        "predicted": 4,
+        "prior_mae_s": 0.5186608129699277,
+        "reference_persistence_mae_s": 0.4214000000000013,
+        "rmse_s": 0.398669614800954
+      },
+      "session": 9920,
+      "unavailable_reference_blocks": 0,
+      "unsupported_pairs": 45
+    },
+    {
+      "by_current_compound": {
+        "HARD": {
+          "blocks": 15,
+          "contrast_persistence_mae_s": 1.8074000000000003,
+          "coverage": 0.8,
+          "event_point_disagreements": 3,
+          "mae_s": 0.5965520529565107,
+          "matched": 1,
+          "mean_width_s": 1.7649068244100268,
+          "min_precision_recall": 0.16666666666666666,
+          "observed": 6,
+          "passed": false,
+          "point_matched": 2,
+          "point_predicted": 3,
+          "predicted": 2,
+          "prior_mae_s": 0.7128632675438575,
+          "reference_persistence_mae_s": 0.8761333333333321,
+          "rmse_s": 1.0132102337785376
+        },
+        "MEDIUM": {
+          "blocks": 4,
+          "contrast_persistence_mae_s": 1.4277500000000032,
+          "coverage": 0.75,
+          "event_point_disagreements": 3,
+          "mae_s": 0.5982963302892363,
+          "matched": 1,
+          "mean_width_s": 1.6649818804077365,
+          "min_precision_recall": 0.3333333333333333,
+          "observed": 3,
+          "passed": false,
+          "point_matched": 2,
+          "point_predicted": 2,
+          "predicted": 1,
+          "prior_mae_s": 0.9169285714285713,
+          "reference_persistence_mae_s": 0.9772500000000015,
+          "rmse_s": 0.8001571679469172
+        },
+        "SOFT": {
+          "blocks": 5,
+          "contrast_persistence_mae_s": 0.9972000000000065,
+          "coverage": 1.0,
+          "event_point_disagreements": 4,
+          "mae_s": 0.39566044332382544,
+          "matched": 0,
+          "mean_width_s": 3.138330915201278,
+          "min_precision_recall": 0.0,
+          "observed": 0,
+          "passed": false,
+          "point_matched": 0,
+          "point_predicted": 0,
+          "predicted": 4,
+          "prior_mae_s": 0.534420000000005,
+          "reference_persistence_mae_s": 1.024000000000001,
+          "rmse_s": 0.4742304272926572
+        }
+      },
+      "pairwise_sensitivity": {
+        "blocks": 24,
+        "contrast_persistence_mae_s": 1.5809583333333368,
+        "coverage": 0.875,
+        "event_point_disagreements": 9,
+        "mae_s": 0.5591738550070108,
+        "matched": 2,
+        "mean_width_s": 2.0343826859911562,
+        "min_precision_recall": 0.25,
+        "observed": 8,
+        "passed": false,
+        "point_matched": 3,
+        "point_predicted": 4,
+        "predicted": 7,
+        "prior_mae_s": 0.7239569685933565,
+        "reference_persistence_mae_s": 0.9235416666666652,
+        "rmse_s": 0.9046690488040781
+      },
+      "passed": false,
+      "primary": {
+        "blocks": 24,
+        "contrast_persistence_mae_s": 1.5753333333333355,
+        "coverage": 0.8333333333333334,
+        "event_point_disagreements": 10,
+        "mae_s": 0.5549903471718222,
+        "matched": 2,
+        "mean_width_s": 2.0343826859911562,
+        "min_precision_recall": 0.2222222222222222,
+        "observed": 9,
+        "passed": false,
+        "point_matched": 4,
+        "point_predicted": 5,
+        "predicted": 7,
+        "prior_mae_s": 0.7096984707863405,
+        "reference_persistence_mae_s": 0.9237916666666663,
+        "rmse_s": 0.8917306004810157
+      },
+      "session": 9896,
+      "unavailable_reference_blocks": 0,
+      "unsupported_pairs": 6
+    }
+  ],
+  "passed": false,
+  "schema_version": "apex-compound-event-v6-results",
+  "sources": {
+    "9896": "56f0ea108d6aeb6d3b1ecbe131cccf96fe8280d7072a48d43b7cb493262340d5",
+    "9920": "56f0ea108d6aeb6d3b1ecbe131cccf96fe8280d7072a48d43b7cb493262340d5"
+  }
+}
