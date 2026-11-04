@@ -471,12 +471,23 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "decision": "REJECT_DIRECT_CROSSOVER_EVENT_HEAD",
-    "held_out_blocks": 34,
-    "observed_crossovers": 11,
-    "matched_crossovers": 3,
-    "report": "docs/verification/compound-event-confirmation.md",
-    "prior_report": "docs/verification/compound-conditioned-confirmation.md"
+    "decision": "REJECT_V8_COVERAGE_CONFIRMATION",
+    "held_out_blocks": 22,
+    "observed_crossovers": 4,
+    "matched_crossovers": 4,
+    "report": "docs/verification/compound-v8-final-report.md",
+    "prior_report": "docs/verification/compound-multiseason-confirmation.md",
+    "candidate": "v8",
+    "training_windows": 336,
+    "training_supported_events": 20,
+    "training_source_events": 21,
+    "unsupported_confirmation_events": [
+      10033
+    ],
+    "failed_confirmation_events": [
+      9850
+    ],
+    "next_required_work": "Bounded pace residuals and validation-selected fallback before a new frozen independent confirmation"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

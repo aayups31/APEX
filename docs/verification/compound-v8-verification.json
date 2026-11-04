@@ -1,0 +1,29 @@
+{
+  "baseline_local_tests": {
+    "passed": 772,
+    "seconds": 1358.32,
+    "working_directory": "apex_engine"
+  },
+  "candidate_passed": false,
+  "content_sha256": "6c05a5934e230e9e6fb63f5c3d07ac27f6672623dcae50ac058125e304ce3dcf",
+  "coverage_ci": "https://github.com/aayups31/APEX/actions/runs/41770984455",
+  "coverage_ci_status_at_record": "PENDING",
+  "coverage_integration_tests_passed": 7,
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.12.12",
+    "scikit-learn": "1.9.0"
+  },
+  "exact_offline_refit": true,
+  "exact_result_replays": {
+    "v4": true,
+    "v5": true,
+    "v6": true,
+    "v7": true,
+    "v8_coverage": true
+  },
+  "last_completed_full_ci": "https://github.com/aayups31/APEX/actions/runs/41769812780",
+  "native_cases_with_future_label_invariance": 22,
+  "source_freeze_commit": "5cb809515faf5d44cd96d3e6b41f78c4c21e3f77",
+  "targeted_latest_tests_passed": 14
+}
