@@ -1,0 +1,53 @@
+{
+  "content_sha256": "3f4f410cd5c8c55864e149c4390e05dc84c3ba7e43519ad043d15678708ca062",
+  "development_events": [
+    9912,
+    9839,
+    10014,
+    9971
+  ],
+  "development_pairs": 74,
+  "development_sources": {
+    "10014": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "9839": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9912": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9971": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05"
+  },
+  "drift": {
+    "HARD": {
+      "delta_s": 0.1565000000000083,
+      "radius_s": 1.1714999999999947,
+      "windows": 32
+    },
+    "MEDIUM": {
+      "delta_s": 0.5205000000000055,
+      "radius_s": 1.0954999999999941,
+      "windows": 34
+    },
+    "SOFT": {
+      "delta_s": -0.19350000000000023,
+      "radius_s": 1.4334999999999951,
+      "windows": 6
+    }
+  },
+  "hashes": {
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa"
+  },
+  "heldout_events": [
+    9963,
+    9955
+  ],
+  "numpy": "2.5.3",
+  "prior_sha256": "af97397d5d608df8d24822dcfb8184b0a26693f1a2b32cbf0b4a724a74a43141",
+  "prior_slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "python": "3.12.12",
+  "schema_version": "apex-compound-reference-v4-calibration"
+}
