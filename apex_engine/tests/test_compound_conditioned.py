@@ -36,7 +36,7 @@ def test_conditioned_ridge_matches_independent_augmented_least_squares():
     assert fit_conditioned(rows+repeated)["coefficients"] == pytest.approx(expected)
 
 
-@pytest.mark.parametrize("version", ["conditioned", "event"])
+@pytest.mark.parametrize("version", ["conditioned", "event", "multiseason"])
 def test_conditioned_archive_and_independent_audit_detect_false_prediction(tmp_path, monkeypatch, version):
     from datetime import UTC, datetime
     from pathlib import Path
@@ -70,11 +70,11 @@ def test_conditioned_archive_and_independent_audit_detect_false_prediction(tmp_p
             write_manifest(tmp_path/f"{session}-{endpoint}.json", table)
     write_manifest(tmp_path/"manifest.json", seal({"files": {p.name: file_sha256(p) for p in tmp_path.iterdir()}}))
     payload = {"hashes": study["hashes"](), "heldout_events": list(study["HELDOUT"]),
-               "pace_head" if version == "event" else "model":
+               "model" if version == "conditioned" else "pace_head":
                    {"feature_level": 3, "coefficients": [0., 0., .2, 0., 0., 0.],
                     "support": {c: {"radius_s": .3} for c in COMPOUNDS}},
                "prior_slopes": dict.fromkeys(COMPOUNDS, .03)}
-    if version == "event":
+    if version != "conditioned":
         payload["event_head"] = {"mean": [0.]*10, "scale": [1.]*10, "coefficients": [0.]*10,
                                  "intercept": 1., "threshold": .5}
     frozen = seal(payload)
@@ -86,7 +86,7 @@ def test_conditioned_archive_and_independent_audit_detect_false_prediction(tmp_p
     altered = seal({k: v for k, v in result.items() if k != "content_sha256"})
     with pytest.raises(ValueError, match="predicted_s"):
         auditor["audit"](frozen, altered, tmp_path)
-    if version == "event":
+    if version != "conditioned":
         result["cases"][0]["predicted_s"] -= .1
         result["cases"][0]["crossover_score"] += .01
         altered = seal({k: v for k, v in result.items() if k != "content_sha256"})

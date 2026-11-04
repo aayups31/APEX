@@ -1,0 +1,106 @@
+{
+  "content_sha256": "432665e2fdba884727b30340d5dca053f9aa947a6a06c46f933849c5f48c43b4",
+  "event_head": {
+    "c": 10.0,
+    "coefficients": [
+      0.009311972794556212,
+      0.0865587425001982,
+      -0.08645696570662383,
+      -0.028194942720007443,
+      0.2706208834307333,
+      -0.014935486743210366,
+      1.2846478867987385,
+      -1.2623016890593186,
+      0.8157688696667436,
+      -0.27335782629731403
+    ],
+    "intercept": -0.2734520240542458,
+    "mean": [
+      0.08450704225352113,
+      0.2887323943661972,
+      0.6267605633802817,
+      0.28603873239436606,
+      -0.13728169014084396,
+      0.31983098591549225,
+      0.7411971830985924,
+      0.7070670774647878,
+      0.18661971830985916,
+      0.7407042253521121
+    ],
+    "scale": [
+      0.2781467275793162,
+      0.4531732547379208,
+      0.4836649248927562,
+      0.7480889515864533,
+      3.901600396381594,
+      0.9320565363362868,
+      0.6493442709730998,
+      1.4511428906763713,
+      0.3896059535579594,
+      0.6613925267866194
+    ],
+    "threshold": 0.54
+  },
+  "hashes": {
+    "COMPOUND_CONDITIONED_V5.md": "6524dbee18eb204c0f90d5f073d8675b9085de7bac5177326c55985f3bf02f48",
+    "COMPOUND_EVENT_V6.md": "6746e5b534e361b1e78bbedb85857d34a84c40f7e60d7ab56b08c733ef44aac8",
+    "COMPOUND_MULTISEASON_V7.md": "1752f256da043888c837848b1d63799a1c00114157871c777967cb24b32a5fa6",
+    "COMPOUND_REFERENCE_V4.md": "32bebb7774ff138ebdc0ac6b2ab57155c082e4842ff8fa04f978594cf8911d61",
+    "adr-0010-crossover-event-head.md": "5fed9e49b8a4ee27351cae1437924c8f8f602e8cfc95f83f61b5c58fc246bf3a",
+    "compound-multiseason-development.json": "7b01d3376eb9f86d1c28600ec455561901bb4171c5c96cf18991c84b46640337",
+    "compound-multiseason-training.json": "572eca2adc611684ca6562924dd0c54644b112951e60ee5c09a5a003e1c25679",
+    "compound_conditioned.py": "0fa671c8e635c3b26602ebbb39d18efcf2ed164f8786d04afb1557ce173de248",
+    "compound_crossover_head.py": "e825c2b5126879bd0aafef6019c10c3a8837216332f85a333350f8570cfdb494",
+    "compound_multiseason.py": "b82c7940a0dd1f52c2a6a7aa426b217a4a2733c0bb2c5b9366ce02c231ae236c",
+    "compound_reference.py": "453120883bdd8ebe7edfbfaf59a495655b166558c897aa787b531fedf0b4dfb7",
+    "confirm_compound_conditioned.py": "e5786d10fdaf58fd6c328a84c97b154db6fb11e796f69e3b251ccc8cfd5a5ce9",
+    "confirm_compound_crossover.py": "9bf38c4cc94f784b84c2009bf71bc35f594597a931462b9ba5a8d25f48f2c135",
+    "confirm_compound_event.py": "f4a152e82f45fed3e3065d91eda89875f9df4da5ffc2e8e70a25a254bf4c45b9",
+    "confirm_compound_multiseason.py": "15ba9287a6a2e744583080d959e9148070d6f7821c87331a85663dd2ddcf8840",
+    "confirm_compound_reference.py": "d72086ebb5f0c84c8904af8ac715460bbe3e99cc536c9f6797ebb68973abefdc",
+    "confirm_compound_traffic.py": "b17e3ff28d56330d84b044030111fe452648386b42e3b3dafe399de6ce8e81fa",
+    "diagnose_compound_multiseason.py": "3b621fa76fd9e63ba07b238f9fa796e5215048857f84f8574e7d055587747b98"
+  },
+  "heldout_events": [
+    9888,
+    9877
+  ],
+  "pace_head": {
+    "alpha": 10.0,
+    "coefficients": [
+      -0.04418451566276285,
+      0.11429835455001637,
+      0.03881104645278191,
+      0.42096519179389974,
+      0.0298126624488567,
+      0.5860388928638035
+    ],
+    "feature_level": 3,
+    "support": {
+      "HARD": {
+        "radius_s": 0.8939876379004472,
+        "windows": 175
+      },
+      "MEDIUM": {
+        "radius_s": 0.7757018305539638,
+        "windows": 80
+      },
+      "SOFT": {
+        "radius_s": 0.7526622678713917,
+        "windows": 22
+      }
+    }
+  },
+  "prior_sha256": "af97397d5d608df8d24822dcfb8184b0a26693f1a2b32cbf0b4a724a74a43141",
+  "prior_slopes": {
+    "HARD": 0.05545010964912237,
+    "MEDIUM": 0.013404761904762258,
+    "SOFT": 0.11690000000000231
+  },
+  "schema_version": "apex-compound-multiseason-v7-calibration",
+  "selection_sha256": "bfa414858b6577dbe202f67fc5ba55b03eefa6e448c22e49915250ad4be9023f",
+  "source_count": 19,
+  "source_hash_normalization": "UTF8_TEXT_LF_NEWLINES_ONLY; NATIVE_ARCHIVES_BYTE_EXACT",
+  "training_cases": 284,
+  "training_sha256": "6b82d6f1147f9cb99c68b62a650d0d0c1707226ed98bb979b5e86dce49d8e14a"
+}
