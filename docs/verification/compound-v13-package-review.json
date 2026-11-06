@@ -1,0 +1,12 @@
+{
+  "both_archives_match_final_model_source": true,
+  "built_from_source_distribution": true,
+  "content_sha256": "dfa339a98412cb73032d67de606af9fc5b0f3fab9f6bbccacccd8ed38b2e51f8",
+  "engine_source_commit": "419979e",
+  "packages": {
+    "apexsim-0.4.0-py3-none-any.whl": "90a2351c075c22e9047b725899e8ece4a76b8f71f0b7207c6f38a272bd4b38b6",
+    "apexsim-0.4.0.tar.gz": "9e2ce942eb96489299cd80c79fb31f022773a43928060c5e4803f43257771eef"
+  },
+  "schema": "compound-v13-package-review",
+  "wheel_import_inference_passed": true
+}
