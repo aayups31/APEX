@@ -1,0 +1,9 @@
+{
+  "audit_passed": true,
+  "content_sha256": "5ca2eb40ad7e8cab3b66f6033526bdee7ffa44a723414502730d69977e854741",
+  "forecasts_verified": 784,
+  "independent_ridge_solves": 48,
+  "result_sha256": "53259335eb519b2d2fb0580bd93c10eba013102ab00c50436f46f6fc60622479",
+  "schema": "compound-unpaired-independent-audit-v14",
+  "scope": "INDEPENDENT_RIDGE_EQUATIONS_CHECKPOINTS_AND_EVENT_GATES"
+}
