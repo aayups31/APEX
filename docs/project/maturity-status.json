@@ -471,10 +471,10 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v12_compound_median_drift",
-    "decision": "REJECT_PAIRED_OUTPUT_DRIFT_DEVELOPMENT",
-    "report": "docs/verification/compound-v12-decision-review.md",
-    "development_summary": "docs/verification/compound-v12-decision-results.json",
+    "candidate": "v14_expanded_stint_blend",
+    "decision": "REJECT_EXPANDED_STINT_TRAINING",
+    "report": "docs/verification/compound-v14-final-report.md",
+    "development_summary": "docs/verification/compound-v14-development.json",
     "candidate_passed": false,
     "development_qualified": false,
     "production_promotion": false,
@@ -483,12 +483,11 @@
     "training_source_events": 28,
     "training_supported_events": 24,
     "failed_development_events": [
-      "10006",
       "10014",
       "10022",
-      "9839",
       "9850",
       "9877",
+      "9888",
       "9896",
       "9912",
       "9920",
@@ -496,7 +495,8 @@
       "9963",
       "9971",
       "9987",
-      "F1_2023_R01",
+      "9998",
+      "F1_2023_R14",
       "F1_2023_R15",
       "F1_2024_R03",
       "F1_2024_R06",
@@ -514,7 +514,7 @@
       }
     ],
     "source_ci_passed": null,
-    "next_required_work": "Evaluate verified weekend compound specifications and pre-forecast race context before fresh confirmation.",
+    "next_required_work": "Establish causal race-context signal for prediction errors before another frozen confirmation; nominated compound and expanded pace-only training hypotheses failed.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -599,7 +599,16 @@
         "report": "docs/verification/compound-v10-regression-review.json"
       },
       "source_ci_report": "docs/verification/compound-v10-final-ci-review.json"
-    }
+    },
+    "prior_v12_report": "docs/verification/compound-v12-decision-review.md",
+    "source_ci": {
+      "commit": "ae557d9",
+      "run_id": 42315107551,
+      "status": "PENDING"
+    },
+    "additional_training_windows": 985,
+    "unique_current_training_windows": 1370,
+    "verification_report": "docs/verification/compound-v14-audit.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
