@@ -1,0 +1,9 @@
+{
+  "audit_passed": true,
+  "content_sha256": "e54732991aa57d89f49ed4cb94e90477c99bdee7e8ecebf4b30083446ffd8352",
+  "forecasts_verified": 784,
+  "race_folds_per_recipe": 28,
+  "result_sha256": "1c2ce8430e81c72fd741093976b2d5325d6cdc3b00720256ad6f0640ad8b25db",
+  "schema": "allocation-scalar-replay-v13",
+  "scope": "SAVED_CHECKPOINT_INFERENCE_AND_GATES"
+}

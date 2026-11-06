@@ -31,6 +31,12 @@ jobs:
         run: python -m pip install -e './apex_engine[dev,data-contracts,optimization,forecasting]'
       - name: Lint
         run: ruff check apex_engine/src apex_engine/tests
+      - name: Build APEX source distribution and wheel
+        run: |
+          python -m pip install build
+          python -m build --outdir .cache/ci-distributions apex_engine
+      - name: Replay compound allocation forecasts and acceptance decisions
+        run: python research/scripts/audit_compound_allocation.py --output .cache/ci-compound-v13-audit.json
       - name: Test
         working-directory: apex_engine
         run: pytest -q
