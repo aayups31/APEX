@@ -1,0 +1,73 @@
+{
+  "scope": "PRE_RACE_NOMINATIONS_FOR_OPENED_RACES_ONLY",
+  "usage": "Development metadata inventory. Check for revised nominations before using as fitted model inputs. Unlisted events are unknown.",
+  "sources": [
+    {
+      "issued": "2025-08-01",
+      "url": "https://press.pirelli.com/changes-and-status-quo-when-it-comes-to-compound-choices-for-the-rest-of-the-season0/",
+      "events": {
+        "9839": [
+          3,
+          4,
+          5
+        ],
+        "9850": [
+          1,
+          2,
+          3
+        ],
+        "9858": [
+          3,
+          4,
+          5
+        ],
+        "9877": [
+          2,
+          4,
+          5
+        ],
+        "9888": [
+          1,
+          3,
+          4
+        ],
+        "9896": [
+          3,
+          4,
+          5
+        ],
+        "9912": [
+          3,
+          4,
+          5
+        ],
+        "9920": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "issued": "2024-07-30",
+      "url": "https://press.pirelli.com/a-soft-september-for-pirelli-in-f1-compounds-confirmed-for-monza-baku-and-singapore/",
+      "events": {
+        "F1_2024_R16": [
+          3,
+          4,
+          5
+        ],
+        "F1_2024_R18": [
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  ],
+  "columns": [
+    "hard_C_number",
+    "medium_C_number",
+    "soft_C_number"
+  ]
+}
