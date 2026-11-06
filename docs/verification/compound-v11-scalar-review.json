@@ -1,0 +1,11 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256_lf": "ca6334c6ede855770c2dcff56b270327e59549be8cd2e2d655f112c79b7339c7",
+  "content_sha256": "d91be2495cbb6dc358df4976a20207d47151207ead632b091bb688876f308f0c",
+  "dataset_sha256": "02f6f0ec4216c9f3dac33e189203800de0e6883914a75a023c72c2229e326268",
+  "development_qualified": false,
+  "forecasts_audited": 1568,
+  "result_sha256": "6224313e585c94c7c18d64ca47e56b30e350e0a7e0c69192a57b1fa93ef25c22",
+  "schema_version": "apex-compound-trajectory-scalar-audit-v11",
+  "scope": "INDEPENDENT_FEATURES_CHECKPOINT_INFERENCE_AND_EVENT_GATES_NOT_FIT"
+}

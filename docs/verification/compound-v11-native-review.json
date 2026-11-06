@@ -1,0 +1,11 @@
+{
+  "audit_passed": true,
+  "audit_source_sha256_lf": "ca6334c6ede855770c2dcff56b270327e59549be8cd2e2d655f112c79b7339c7",
+  "cases_audited": 392,
+  "content_sha256": "74096ba320c1dc4a2175a8aa317fb0409607049d6b62b33d62c7e59c425d6c23",
+  "dataset_sha256": "02f6f0ec4216c9f3dac33e189203800de0e6883914a75a023c72c2229e326268",
+  "native_lap_associations": 6495,
+  "schema_version": "apex-compound-trajectory-native-audit-v11",
+  "scope": "ALL_APPENDED_AGE_PACE_COMPOUND_AND_UTC_ASSOCIATIONS; NOT_INDEPENDENT_HISTORY_ELIGIBILITY_DENOMINATOR",
+  "sources_audited": 28
+}
