@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import argparse
+import gzip
+import json
 from math import isfinite
 from pathlib import Path
 from statistics import median
@@ -107,6 +109,7 @@ def audit(data: dict, results: dict) -> dict:
     compare(results["development_qualified"], qualified, "development_qualified")
     return seal({"schema_version": "apex-compound-trajectory-scalar-audit-v11", "dataset_sha256": data["content_sha256"],
                  "result_sha256": results["content_sha256"], "forecasts_audited": count, "audit_passed": True,
+                 "audit_source_sha256_lf": canonical_file_sha(Path(__file__)),
                  "development_qualified": qualified, "scope": "INDEPENDENT_FEATURES_CHECKPOINT_INFERENCE_AND_EVENT_GATES_NOT_FIT"})
 
 
@@ -185,6 +188,7 @@ def audit_native(data: dict, native_root: Path) -> dict:
                     contributions += 1
     return seal({"schema_version": "apex-compound-trajectory-native-audit-v11", "dataset_sha256": data["content_sha256"],
                  "cases_audited": len(data["cases"]), "sources_audited": len(data["sources"]),
+                 "audit_source_sha256_lf": canonical_file_sha(Path(__file__)),
                  "native_lap_associations": contributions, "audit_passed": True,
                  "scope": "ALL_APPENDED_AGE_PACE_COMPOUND_AND_UTC_ASSOCIATIONS; NOT_INDEPENDENT_HISTORY_ELIGIBILITY_DENOMINATOR"})
 
@@ -199,4 +203,10 @@ if __name__ == "__main__":
     if (args.results is None) == (args.native_root is None):
         parser.error("Choose either --results or --native-root")
     data = read_json(args.dataset)
-    write_manifest(args.output, audit(data, read_json(args.results)) if args.results else audit_native(data, args.native_root))
+    if args.results:
+        results = (json.loads(gzip.decompress(args.results.read_bytes())) if args.results.suffix == ".gz"
+                   else read_json(args.results))
+        report = audit(data, results)
+    else:
+        report = audit_native(data, args.native_root)
+    write_manifest(args.output, report)

@@ -1,11 +1,13 @@
+import gzip
 import importlib
+import json
 from copy import deepcopy
 from pathlib import Path
 
 import pytest
 from test_compound_trajectory import example
 
-from apexsim.research.evidence import seal
+from apexsim.research.evidence import check_seal, read_json, seal
 
 
 def test_backward_history_stops_at_gaps_and_cannot_consume_future(monkeypatch):
@@ -46,3 +48,27 @@ def test_whole_event_fit_isolation_scalar_reload_and_tamper(monkeypatch):
     corrupt = seal({k: v for k, v in corrupt.items() if k != "content_sha256"})
     with pytest.raises(ValueError, match="prediction"):
         auditor.audit(data, corrupt)
+
+
+def test_saved_trajectory_forecasts_replay_and_preserve_failed_acceptance(monkeypatch):
+    from apexsim.provenance import file_sha256
+
+    root = Path(__file__).resolve().parents[2]
+    monkeypatch.syspath_prepend(str(root/"research/scripts"))
+    auditor = importlib.import_module("audit_compound_trajectory")
+    folder = root/"docs/verification"
+    data = read_json(folder/"compound-v11-development-data.json")
+    summary = read_json(folder/"compound-v11-development-summary.json")
+    check_seal(summary)
+    path = folder/"compound-v11-development.json.gz"
+    assert file_sha256(path) == summary["compressed_file_sha256"]
+    results = json.loads(gzip.decompress(path.read_bytes()))
+    assert results["content_sha256"] == summary["full_result_sha256"]
+    audit = auditor.audit(data, results)
+    assert audit["audit_passed"] and audit["forecasts_audited"] == 1568
+    assert not results["development_qualified"] and not results["candidate_accepted"]
+    assert results["decision"] == "REJECT_TRAJECTORY_HYPOTHESIS"
+    original = read_json(folder/"compound-v10-development-data.json")
+    assert data["parent_sha256"] == original["content_sha256"]
+    for before, after in zip(original["cases"], data["cases"], strict=True):
+        assert {k: v for k, v in after.items() if k not in ("current_history", "reference_history")} == before
