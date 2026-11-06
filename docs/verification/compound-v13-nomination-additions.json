@@ -1,0 +1,150 @@
+{
+  "parent": "compound-nomination-inventory.json",
+  "scope": "ANNOUNCED_PRE_RACE_NOMINATIONS_ONLY",
+  "sources": [
+    {
+      "issued": "2025-03-05",
+      "url": "https://press.pirelli.com/2025-compounds-something-new-for-jeddah/",
+      "events": {
+        "9998": [
+          2,
+          3,
+          4
+        ],
+        "10006": [
+          1,
+          2,
+          3
+        ],
+        "10014": [
+          1,
+          2,
+          3
+        ],
+        "10022": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "issued": "2025-04-09",
+      "url": "https://press.pirelli.com/pirelli-on-the-soft-side-for-miami-and-imola/",
+      "events": {
+        "9987": [
+          4,
+          5,
+          6
+        ],
+        "10033": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "issued": "2025-05-12",
+      "url": "https://press.pirelli.com/from-monaco-to-montreal-all-the-compounds-in-play/",
+      "events": {
+        "9963": [
+          4,
+          5,
+          6
+        ],
+        "9971": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "issued": "2025-05-30",
+      "url": "https://press.pirelli.com/both-new-and-familiar-for-spielberg-to-budapest/",
+      "events": {
+        "9928": [
+          3,
+          4,
+          5
+        ],
+        "9947": [
+          2,
+          3,
+          4
+        ],
+        "9955": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "issued": "2023-12-01",
+      "url": "https://press.pirelli.com/pirelli-nominates-the-compounds-for-the-start-of-2024/",
+      "events": {
+        "F1_2024_R01": [
+          1,
+          2,
+          3
+        ],
+        "F1_2024_R03": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "issued": "2024-03-14",
+      "url": "https://press.pirelli.com/these-are-the-p-zero-compounds-for-suzuka-shanghai-and-miami/",
+      "events": {
+        "F1_2024_R06": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "issued": "2023-02-27",
+      "url": "https://press.pirelli.com/2023-bahrain-grand-prix---preview/",
+      "events": {
+        "F1_2023_R01": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "issued": "2023-03-27",
+      "url": "https://press.pirelli.com/2023-australian-grand-prix---preview/",
+      "events": {
+        "F1_2023_R03": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "issued": "2023-07-31",
+      "url": "https://press.pirelli.com/news-and-tyre-choices-for-zandvoort-and-monza/",
+      "events": {
+        "F1_2023_R14": [
+          1,
+          2,
+          3
+        ],
+        "F1_2023_R15": [
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  ]
+}
