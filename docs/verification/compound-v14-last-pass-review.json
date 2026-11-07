@@ -1,0 +1,56 @@
+{
+  "best_supported_events_passed": 9,
+  "candidate_accepted": false,
+  "ci_run_id": 42315107551,
+  "content_sha256": "538057144e979458ac0f3a67da4a7c4d65b46d20973a0509f03af69c948cf57d",
+  "development_qualified": false,
+  "hashes_sha256_lf": {
+    "apex_engine/src/apexsim/research/compound_allocation.py": "c3fa4a5e263b68a50460e39a278036e7a61c8f8ab547f1fbd8c617c81f8e7515",
+    "docs/verification/compound-v14-development.json": "377c99c31d5e6415e607f157bc3b48bef522e6c2bd9058869a03f331ee031819",
+    "docs/verification/compound-v14-training-windows.json": "269d27119aa79c16ab714c66533ece2f380da307adb3fb1d2a3809f0204cec46",
+    "research/protocols/COMPOUND_UNPAIRED_V14.md": "42e511e508c5893c594301df71a4080baff119482bd93d2b3df68273e2356643",
+    "research/scripts/audit_compound_unpaired.py": "47a772cb5b42ad2cad80856aeeba909c551ea85f0c06717dfbbc9a66b527ccb0",
+    "research/scripts/compound_unpaired_windows.py": "617b922b91c6357381e48bcb3f012c678154adfe6bf07a22e7fffdc6ca8ac64a",
+    "research/scripts/diagnose_compound_unpaired.py": "03a8933beaff51c4ee8602dec648662326a4cb1f087420775aca71ce0579c2bc"
+  },
+  "independent_ridge_fits": 48,
+  "independent_scalar_forecasts": 784,
+  "jobs": [
+    {
+      "all_steps_passed": true,
+      "conclusion": "success",
+      "job_id": 128225675057,
+      "name": "Python 3.12",
+      "status": "completed",
+      "test_seconds": 415.86,
+      "tests_passed": 840
+    },
+    {
+      "all_steps_passed": true,
+      "conclusion": "success",
+      "job_id": 128225675248,
+      "name": "Python 3.11",
+      "status": "completed",
+      "test_seconds": 617.72,
+      "tests_passed": 840
+    }
+  ],
+  "local_full_baseline": {
+    "seconds": 1220.69,
+    "tests": 835,
+    "warnings": 2
+  },
+  "model_refit_replay_exact": true,
+  "native_training_replay_exact": true,
+  "new_allocation_tests": 2,
+  "new_unpaired_tests": 3,
+  "package_review": "docs/verification/compound-v13-package-review.json",
+  "production_promotion": false,
+  "race_smoke_cars_finished": 6,
+  "race_smoke_quality_passed": true,
+  "research_smoke_passed": true,
+  "research_smoke_warning": "Pre-existing synthetic ridge ill-conditioning warning",
+  "schema": "compound-v14-final-last-pass-review",
+  "source_commit": "ae557d9c18c0b940553e8a3a2a08b370dce41c1b",
+  "supported_events": 24
+}

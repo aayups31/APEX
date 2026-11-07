@@ -50,6 +50,12 @@ All failures and predictions are retained in the result files. None of these
 development scores is a new prospective confirmation. No fresh race outcomes
 were acquired.
 
+The expanded auxiliary model reaches its declared two-second correction bound
+on 91 of 1,176 forecast laps, compared with 12 for its paired-only control.
+It also produces six failed negative-control event/label gates. Bound hits
+remain in the metrics. These results motivate checking training-regime
+compatibility before drawing conclusions from the larger sample count.
+
 ## Verification
 
 The full local baseline passed 835 tests in 1,220.69 seconds. The two new
@@ -67,9 +73,15 @@ so its scope is reproducibility rather than an independent eligibility audit.
 V13 CI at source 9dd384d passed all 837 tests on both Python versions, both
 distribution builds, saved forecast replay and every existing workflow step.
 Final source ae557d9 adds the three window tests and independent v14 audit.
-Its complete matrix is being checked at
+Its complete matrix passed all 840 tests on both Python versions, both
+package builds, both independent audits and every simulator verification step.
+Python 3.11 tests took 617.72 seconds and Python 3.12 took 415.86 seconds.
+See
 [final source CI](https://github.com/aayups31/APEX/actions/runs/42315107551).
-Final status is recorded in the project maturity file and last-pass receipt.
+The [sealed last-pass receipt](compound-v14-last-pass-review.json) records
+the final status, exact replays and source bindings. The six-car race smoke
+completed all six laps with zero quality violations. The research smoke also
+passed, retaining its existing synthetic ridge ill-conditioning warning.
 
 ## Reproduction and evidence
 

@@ -513,7 +513,7 @@
         ]
       }
     ],
-    "source_ci_passed": null,
+    "source_ci_passed": true,
     "next_required_work": "Establish causal race-context signal for prediction errors before another frozen confirmation; nominated compound and expanded pace-only training hypotheses failed.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
@@ -602,13 +602,41 @@
     },
     "prior_v12_report": "docs/verification/compound-v12-decision-review.md",
     "source_ci": {
-      "commit": "ae557d9",
+      "commit": "ae557d9c18c0b940553e8a3a2a08b370dce41c1b",
       "run_id": 42315107551,
-      "status": "PENDING"
+      "status": "SUCCESS",
+      "jobs": [
+        {
+          "job_id": 128225675057,
+          "name": "Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "all_steps_passed": true,
+          "tests_passed": 840,
+          "test_seconds": 415.86
+        },
+        {
+          "job_id": 128225675248,
+          "name": "Python 3.11",
+          "status": "completed",
+          "conclusion": "success",
+          "all_steps_passed": true,
+          "tests_passed": 840,
+          "test_seconds": 617.72
+        }
+      ]
     },
     "additional_training_windows": 985,
     "unique_current_training_windows": 1370,
-    "verification_report": "docs/verification/compound-v14-audit.json"
+    "verification_report": "docs/verification/compound-v14-audit.json",
+    "best_tested_development_candidate": {
+      "candidate": "v13_nominated",
+      "supported_events_passed": 9,
+      "supported_events": 24,
+      "development_qualified": false,
+      "report": "docs/verification/compound-v13-development.json"
+    },
+    "last_pass_review": "docs/verification/compound-v14-last-pass-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
