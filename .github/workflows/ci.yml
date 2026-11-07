@@ -39,6 +39,8 @@ jobs:
         run: python research/scripts/audit_compound_allocation.py --output .cache/ci-compound-v13-audit.json
       - name: Independently solve expanded stint calibration and replay decisions
         run: python research/scripts/audit_compound_unpaired.py --output .cache/ci-compound-v14-audit.json
+      - name: Independently check traffic, in-race feedback and pre-race practice decisions
+        run: python research/scripts/audit_compound_race_context.py --output .cache/ci-compound-context-audit.json
       - name: Test
         working-directory: apex_engine
         run: pytest -q

@@ -1,0 +1,763 @@
+{
+  "content_sha256": "65eee7cd74e58e1cb0670bc42c29e1e76776de790e70c0b1c8f2510fc33c2b67",
+  "dataset_sha256": "02f6f0ec4216c9f3dac33e189203800de0e6883914a75a023c72c2229e326268",
+  "events": {
+    "10006": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-04-06",
+      "session": {
+        "circuit_key": 46,
+        "circuit_short_name": "Suzuka",
+        "country_code": "JPN",
+        "country_key": 4,
+        "country_name": "Japan",
+        "date_end": "2025-04-04T07:00:00+00:00",
+        "date_start": "2025-04-04T06:00:00+00:00",
+        "gmt_offset": "09:00:00",
+        "is_cancelled": false,
+        "location": "Suzuka",
+        "meeting_key": 1256,
+        "session_key": 10000,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "4c16da55c8862cf9af94ba361c9e56f20eb89b96718b44d8623d1fc5641f0223",
+        "race_control": "57b2a1284c31ad9778f61d48e39ebfeed8ee6aee1aa74f9f6ed55337ae9e5d30",
+        "stints": "d56ed3ee1ec2220ae5e694fa10dd5dcd87e4e98d4cf71343669ed12720ba8bfb",
+        "weather": "aad48ea540dbb4b2dbc897a188f1dfce36018cdc81408055ee6646b8d6982f9b"
+      }
+    },
+    "10014": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-04-13",
+      "session": {
+        "circuit_key": 63,
+        "circuit_short_name": "Sakhir",
+        "country_code": "BRN",
+        "country_key": 36,
+        "country_name": "Bahrain",
+        "date_end": "2025-04-11T16:00:00+00:00",
+        "date_start": "2025-04-11T15:00:00+00:00",
+        "gmt_offset": "03:00:00",
+        "is_cancelled": false,
+        "location": "Sakhir",
+        "meeting_key": 1257,
+        "session_key": 10008,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "0769062a986130c67abf6e5a1a87c6da28c421ecde5b9c4e6d0fe53470c6473e",
+        "race_control": "5eefeeac78ea833161b2e9f3769e6202ae29827afdefb91d2b6eb5b36c12d882",
+        "stints": "39be2934f514e38818aa29071528e37c255addf65f8f4446bfe9eef0331ac184",
+        "weather": "32d87a302b2a1a628ed572a2f69852b0f7e7751d4d4ca1067aa0bd72b2542aee"
+      }
+    },
+    "10022": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-04-20",
+      "session": {
+        "circuit_key": 149,
+        "circuit_short_name": "Jeddah",
+        "country_code": "KSA",
+        "country_key": 153,
+        "country_name": "Saudi Arabia",
+        "date_end": "2025-04-18T18:00:00+00:00",
+        "date_start": "2025-04-18T17:00:00+00:00",
+        "gmt_offset": "03:00:00",
+        "is_cancelled": false,
+        "location": "Jeddah",
+        "meeting_key": 1258,
+        "session_key": 10016,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "429663f31fbf599b5b1e404a04535ffdcc6982db16951b924aabbc7074805680",
+        "race_control": "96e05da6b99a57c7e1946dcafbd7df42538ae30aa548bb817ca62a2a3d9b399a",
+        "stints": "ad7e18afbc427426b916d92a35cb6ec9a604809e8228528cbf14f7cd58646655",
+        "weather": "9bb63d7d12e8ccc079903cd807531b2532b0d4dc8ce54e40192a3ac1f377a0ac"
+      }
+    },
+    "10033": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-05-04",
+      "session": {
+        "circuit_key": 151,
+        "circuit_short_name": "Miami",
+        "country_code": "USA",
+        "country_key": 19,
+        "country_name": "United States",
+        "date_end": "2025-05-02T17:30:00+00:00",
+        "date_start": "2025-05-02T16:30:00+00:00",
+        "gmt_offset": "-04:00:00",
+        "is_cancelled": false,
+        "location": "Miami Gardens",
+        "meeting_key": 1259,
+        "session_key": 10023,
+        "session_name": "Practice 1",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "ab103d109893c4d6637352b16350722c5dc2dc4e711294a9a495844f32ab6c4f",
+        "race_control": "d63d564269c8007d3b46dbf517bf976573ec849e99f450e6d56a3c2636265ff5",
+        "stints": "2a60ad5da4b3a8cda8af5fb1cef45ce615816ab995ffe824b2c04083524c6c26",
+        "weather": "3cc33b5b87096dc32816881e8911278a4713eba4ce61460f38f9a5debed117b4"
+      }
+    },
+    "9839": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-12-07",
+      "session": {
+        "circuit_key": 70,
+        "circuit_short_name": "Yas Marina Circuit",
+        "country_code": "UAE",
+        "country_key": 21,
+        "country_name": "United Arab Emirates",
+        "date_end": "2025-12-05T14:00:00+00:00",
+        "date_start": "2025-12-05T13:00:00+00:00",
+        "gmt_offset": "04:00:00",
+        "is_cancelled": false,
+        "location": "Yas Island",
+        "meeting_key": 1276,
+        "session_key": 9833,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "35c208381c078beda5fa8094b4f76f4c1fba55897144a24b40ccd2a2b2f5978b",
+        "race_control": "ea80c4a4c339a923262df0021d642f69d73d261c412c9c08ea77b98ffc3b223b",
+        "stints": "9de9a467f666b6cc594cd2a048d2fb3f5492c4a909aca9686141380542379a48",
+        "weather": "3b608d2e2f3e0d04dd309fdc34d2e65869bf750ebd3da336ddb7f1e08c5e3f05"
+      }
+    },
+    "9850": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-11-30",
+      "session": {
+        "circuit_key": 150,
+        "circuit_short_name": "Lusail",
+        "country_code": "QAT",
+        "country_key": 149,
+        "country_name": "Qatar",
+        "date_end": "2025-11-28T14:30:00+00:00",
+        "date_start": "2025-11-28T13:30:00+00:00",
+        "gmt_offset": "03:00:00",
+        "is_cancelled": false,
+        "location": "Lusail",
+        "meeting_key": 1275,
+        "session_key": 9840,
+        "session_name": "Practice 1",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "ba7ea3f5095365161824d0a66bd2d19542aa00f91930cebb02156840fe6d8591",
+        "race_control": "faff498af71c7b648e90a669b09f0d67a45ed2fc98cb1cc1acb57db23f3ff119",
+        "stints": "08865e4c7e4ad4ed48ee67a6695fee4439cedacd3c87c8e8835aa40aa657b182",
+        "weather": "f7514a895dc53cab7cfb27f5d8a7c00c3e99db64e9911bc8dbe639c0fe6b43e9"
+      }
+    },
+    "9858": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-11-23",
+      "session": {
+        "circuit_key": 152,
+        "circuit_short_name": "Las Vegas",
+        "country_code": "USA",
+        "country_key": 19,
+        "country_name": "United States",
+        "date_end": "2025-11-21T05:00:00+00:00",
+        "date_start": "2025-11-21T04:00:00+00:00",
+        "gmt_offset": "-08:00:00",
+        "is_cancelled": false,
+        "location": "Las Vegas",
+        "meeting_key": 1274,
+        "session_key": 9852,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "b03ef8960aeacf3e74bd9da0e473cbc020e5561d24f0e67c3c71011e1ad3545e",
+        "race_control": "b38cfdcd1eea2102f8501f49ea1d8790a604aa369aaa5882293ba83e2129d312",
+        "stints": "2494d9f8b6281e99cdb91ec1aca4465408d1f6711e5c8eb092eab9495cf52fd2",
+        "weather": "fab451bf22eff0bb6ba7063481fab626b37938294bd7541f34e85687722ea15b"
+      }
+    },
+    "9877": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-10-26",
+      "session": {
+        "circuit_key": 65,
+        "circuit_short_name": "Mexico City",
+        "country_code": "MEX",
+        "country_key": 8,
+        "country_name": "Mexico",
+        "date_end": "2025-10-24T23:00:00+00:00",
+        "date_start": "2025-10-24T22:00:00+00:00",
+        "gmt_offset": "-06:00:00",
+        "is_cancelled": false,
+        "location": "Mexico City",
+        "meeting_key": 1272,
+        "session_key": 9871,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "d1e59107b951f6c6bc33d8b9e718538fdf439c533767f663dc4362f6ec81fa01",
+        "race_control": "b4a6caeea029353f0db8f04505259ef061d8fae25471c76ab26df4243436d099",
+        "stints": "782f1bf9e3dd3a0c88e2fdb967258854e65d1150a97901571b6e25f13e29f505",
+        "weather": "9b9de33492d0883fe44efcb1625f8cd069509b0eb96cee85c71d24aea7600556"
+      }
+    },
+    "9888": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-10-19",
+      "session": {
+        "circuit_key": 9,
+        "circuit_short_name": "Austin",
+        "country_code": "USA",
+        "country_key": 19,
+        "country_name": "United States",
+        "date_end": "2025-10-17T18:30:00+00:00",
+        "date_start": "2025-10-17T17:30:00+00:00",
+        "gmt_offset": "-05:00:00",
+        "is_cancelled": false,
+        "location": "Austin",
+        "meeting_key": 1271,
+        "session_key": 9878,
+        "session_name": "Practice 1",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "8f374fc6b12355dd84452321014ce53fb38476013d8987c25d0a8f24d2e653fb",
+        "race_control": "65cd2be3fe29d0566663556f2f2d723259b49b8bea1b9d9c49cfb7d964fae322",
+        "stints": "23aac2c42d3111bbd05c43a4d4481dc0548e3f18d044a14c07a19e9f96102905",
+        "weather": "4a5b1ae8d4fefab6d32114531a928dc2e6f747b6b06d8fe3eba8352d22c9b948"
+      }
+    },
+    "9896": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-10-05",
+      "session": {
+        "circuit_key": 61,
+        "circuit_short_name": "Singapore",
+        "country_code": "SGP",
+        "country_key": 157,
+        "country_name": "Singapore",
+        "date_end": "2025-10-03T14:00:00+00:00",
+        "date_start": "2025-10-03T13:00:00+00:00",
+        "gmt_offset": "08:00:00",
+        "is_cancelled": false,
+        "location": "Marina Bay",
+        "meeting_key": 1270,
+        "session_key": 9890,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "2e7ef7c87ea5225baa318fdaac48d62006537f46d0a7aa373583a45b49822123",
+        "race_control": "04641959885388aff3e055a56a73f8a58d6461ad7a782b7ed47d746d871430ad",
+        "stints": "309c62eebaba7078484f5c0979b13ac0459479f381ce77076caf981aff594787",
+        "weather": "d11ac3861758ebbbb81188562691eb2edb88fc7ca64a287761dd0473f8a6589d"
+      }
+    },
+    "9912": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-09-07",
+      "session": {
+        "circuit_key": 39,
+        "circuit_short_name": "Monza",
+        "country_code": "ITA",
+        "country_key": 13,
+        "country_name": "Italy",
+        "date_end": "2025-09-05T16:00:00+00:00",
+        "date_start": "2025-09-05T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Monza",
+        "meeting_key": 1268,
+        "session_key": 9906,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "e97a925a6165745979d437e2496b8cea6710f71f899515d36887c1330f29cb59",
+        "race_control": "c0754e250c04dab76ed41a6db8f0914c8111978daba143bf69d06918cb1b4ad8",
+        "stints": "6bc4440c51c6dc0ef650724eba1fcda7f783b01497954327eb3df2413bc413d6",
+        "weather": "b4513886bff3ce1eec2fea0860433b85439db75ea82ba8bef14061ad3ec55b8d"
+      }
+    },
+    "9920": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-08-31",
+      "session": {
+        "circuit_key": 55,
+        "circuit_short_name": "Zandvoort",
+        "country_code": "NED",
+        "country_key": 133,
+        "country_name": "Netherlands",
+        "date_end": "2025-08-29T15:00:00+00:00",
+        "date_start": "2025-08-29T14:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Zandvoort",
+        "meeting_key": 1267,
+        "session_key": 9914,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "1375af2c0e4b99c7ae271c86d199ca2cac417183ce80ff82a38348dfc9cfb89d",
+        "race_control": "4ebd6abdd36b002af1bb38ce79c4356022973555b7081a4476c9eef4aed44496",
+        "stints": "701fac56bed634930bda0f66f73afb14dcf617700d3caaede3698806bfc57f0f",
+        "weather": "e4574acf0a4d02deacdc56f8b23f6b48e5fcb213f61a14b9e5ea2fe7ed28a679"
+      }
+    },
+    "9928": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-08-03",
+      "session": {
+        "circuit_key": 4,
+        "circuit_short_name": "Hungaroring",
+        "country_code": "HUN",
+        "country_key": 14,
+        "country_name": "Hungary",
+        "date_end": "2025-08-01T16:00:00+00:00",
+        "date_start": "2025-08-01T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Budapest",
+        "meeting_key": 1266,
+        "session_key": 9922,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "b643915650e270c3d9196861ef71f833812095cd727bf9ef562c55b120c918b7",
+        "race_control": "f57a3d8ffdb50bfb0b79055fc6895b06475e91a83bb575babac5e3442a46af28",
+        "stints": "74ecc6013ec623885a3d4461ed3511b838c275aaa61e3efe8b45dc22c2f3519e",
+        "weather": "84dd6f406ae1f61a4a5e488c1fee1fd5fafdd5efa196af33155582c2889212a2"
+      }
+    },
+    "9947": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-07-06",
+      "session": {
+        "circuit_key": 2,
+        "circuit_short_name": "Silverstone",
+        "country_code": "GBR",
+        "country_key": 2,
+        "country_name": "United Kingdom",
+        "date_end": "2025-07-04T16:00:00+00:00",
+        "date_start": "2025-07-04T15:00:00+00:00",
+        "gmt_offset": "01:00:00",
+        "is_cancelled": false,
+        "location": "Silverstone",
+        "meeting_key": 1277,
+        "session_key": 9941,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "81df36817e82b009d8df18bac5e327b507573e7a6faa795b5cce3bd9fbfcde43",
+        "race_control": "573ed2618f6304d20dc251d89853b0636d7e338cafc9e673736bfff9e44a5915",
+        "stints": "50bdf4e8a73be25751e77ae14a6979c52194d28c84ddd763b4872b4860d1225e",
+        "weather": "5192385473567bec2c3df0fdeafb96b88a8c4c1f8d65249ff282dd502713bd45"
+      }
+    },
+    "9955": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-06-29",
+      "session": {
+        "circuit_key": 19,
+        "circuit_short_name": "Spielberg",
+        "country_code": "AUT",
+        "country_key": 17,
+        "country_name": "Austria",
+        "date_end": "2025-06-27T16:00:00+00:00",
+        "date_start": "2025-06-27T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Spielberg",
+        "meeting_key": 1264,
+        "session_key": 9949,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "08d21512401ea833e2fa28507edb8c49543a57d991d31399d884adabd3a08eb1",
+        "race_control": "eced72d20a7656e9e70b6ffd25c32aed73e205daa5f64bcce6c556c2b54c1c1f",
+        "stints": "69f4d523dc90ddb622eeb8387d3410bddad0324b98e175513f45d78619a92f17",
+        "weather": "cb0d0459519f81ba48901b5920211272df6f3cb52b9f301a6d4d61b211957426"
+      }
+    },
+    "9963": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-06-15",
+      "session": {
+        "circuit_key": 23,
+        "circuit_short_name": "Montreal",
+        "country_code": "CAN",
+        "country_key": 46,
+        "country_name": "Canada",
+        "date_end": "2025-06-13T22:00:00+00:00",
+        "date_start": "2025-06-13T21:00:00+00:00",
+        "gmt_offset": "-04:00:00",
+        "is_cancelled": false,
+        "location": "Montr\u00e9al",
+        "meeting_key": 1263,
+        "session_key": 9957,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "0060bb191a38500c55fbe44a205cc82cc16ea6a6b5354f3da9d6ea36dd9b3b49",
+        "race_control": "6883039e8d3fb5563ee20aef28f4d11b2df46fff067eb415847dec397be51225",
+        "stints": "f00e983b401b021fb75b12fa43eac9d257680d7f36a38f65aa012b07b1a86897",
+        "weather": "242f8ffe7d03446893c14d391d4e40a0ab7d8f577e49aba7e97ad09b027abbda"
+      }
+    },
+    "9971": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-06-01",
+      "session": {
+        "circuit_key": 15,
+        "circuit_short_name": "Catalunya",
+        "country_code": "ESP",
+        "country_key": 1,
+        "country_name": "Spain",
+        "date_end": "2025-05-30T16:00:00+00:00",
+        "date_start": "2025-05-30T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Barcelona",
+        "meeting_key": 1262,
+        "session_key": 9965,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "2eaef46db7c7e1e1c8f0eba8c089e0cfb05aa6a5c2d4c362588e76dd2ab26dba",
+        "race_control": "fa9784a223de7279e68d9314d02665d58ff98723e6d5d0d9f09f05059c29d5cf",
+        "stints": "4b051a84237f1540c604d62d3c53bc53eec6c6fb63d1b231caf5c93d6953018b",
+        "weather": "7f7698c5da409cad2a4dcabec599d85842b04ef700a6dda814d94a8ee85cd616"
+      }
+    },
+    "9987": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-05-18",
+      "session": {
+        "circuit_key": 6,
+        "circuit_short_name": "Imola",
+        "country_code": "ITA",
+        "country_key": 13,
+        "country_name": "Italy",
+        "date_end": "2025-05-16T16:00:00+00:00",
+        "date_start": "2025-05-16T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Imola",
+        "meeting_key": 1260,
+        "session_key": 9981,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "418d6f85857c4fa1e0b45075f4cad52ad87322f7661a59042102360324190482",
+        "race_control": "ad132aca79c15c7509163e53d54423513f87641422139b0e07f00bac42464ae0",
+        "stints": "03d9645fe601420f8e123716b6b960cfddad42dd23b7855df706af7a1e57f732",
+        "weather": "d718d592c5641fb1c7031c5f1282badf96938c464dc105a6c7fa376406d50e72"
+      }
+    },
+    "9998": {
+      "calendar_sha256": "28e2e69a6c74e58f8bf972753d3e44c6033041879a6ec6364cfa8645eb3a53d1",
+      "race_date": "2025-03-23",
+      "session": {
+        "circuit_key": 49,
+        "circuit_short_name": "Shanghai",
+        "country_code": "CHN",
+        "country_key": 53,
+        "country_name": "China",
+        "date_end": "2025-03-21T04:30:00+00:00",
+        "date_start": "2025-03-21T03:30:00+00:00",
+        "gmt_offset": "08:00:00",
+        "is_cancelled": false,
+        "location": "Shanghai",
+        "meeting_key": 1255,
+        "session_key": 9988,
+        "session_name": "Practice 1",
+        "session_type": "Practice",
+        "year": 2025
+      },
+      "tables": {
+        "laps": "e3537bd1f3b738bdc718ec6b49f4adc1c7320ae7adcf8a25a6b14e5378ceb48a",
+        "race_control": "c6375e895767180b6ddc773d35f8fc0e4c32c89c098b46e51344ba64ac68c693",
+        "stints": "74ce46700e0b8b1f8a0182725b9cc8abf86eed42fa2b86a81830ce126954175c",
+        "weather": "90c9477431a7f962caf5859a45f6db429b0aef85b0fc51c932eacc0da5118f0d"
+      }
+    },
+    "F1_2023_R01": {
+      "calendar_sha256": "bb5a6aa67a0509a90157f36f40e1693a18bb98de02c897c31d7fc09f58143a7e",
+      "race_date": "2023-03-05",
+      "session": {
+        "circuit_key": 63,
+        "circuit_short_name": "Sakhir",
+        "country_code": "BRN",
+        "country_key": 36,
+        "country_name": "Bahrain",
+        "date_end": "2023-03-03T16:00:00+00:00",
+        "date_start": "2023-03-03T15:00:00+00:00",
+        "gmt_offset": "03:00:00",
+        "is_cancelled": false,
+        "location": "Sakhir",
+        "meeting_key": 1141,
+        "session_key": 7766,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2023
+      },
+      "tables": {
+        "laps": "3f4f3b2dc3ee98901eb277512defa7dcd361297764a4b9b0230eeb07fe2293b8",
+        "race_control": "150a84eef0ea6a9edb264b1ea93c402f3923870a5658aa907cdc6a6ae79ca59c",
+        "stints": "d0baf76a94b977c2ba2b57e4ebd5655a63d1d4ddadbbd6ea30d6a4b73f699cf1",
+        "weather": "2731aa265a5893eaea406af88a76a5e69a5ce67d0355a491874d9cd01a92d7ab"
+      }
+    },
+    "F1_2023_R03": {
+      "calendar_sha256": "bb5a6aa67a0509a90157f36f40e1693a18bb98de02c897c31d7fc09f58143a7e",
+      "race_date": "2023-04-02",
+      "session": {
+        "circuit_key": 10,
+        "circuit_short_name": "Melbourne",
+        "country_code": "AUS",
+        "country_key": 5,
+        "country_name": "Australia",
+        "date_end": "2023-03-31T07:00:00+00:00",
+        "date_start": "2023-03-31T06:00:00+00:00",
+        "gmt_offset": "10:00:00",
+        "is_cancelled": false,
+        "location": "Melbourne",
+        "meeting_key": 1143,
+        "session_key": 7781,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2023
+      },
+      "tables": {
+        "laps": "9d23999a18eec896adef54241ae9a5dda752704239053b29866bee1fd48ec447",
+        "race_control": "ed82a03e350e9a870ece03cbc468d1170f9d0fb3980e79d4e26b5f562cf0364a",
+        "stints": "14005a2958cb8041140af51bf3e069ccac485828ee65ebd88e2f585e36786306",
+        "weather": "a388d18dc94c0c604a2fbe2ad55106e2407cf4d5117b86da552807b3afa99948"
+      }
+    },
+    "F1_2023_R14": {
+      "calendar_sha256": "bb5a6aa67a0509a90157f36f40e1693a18bb98de02c897c31d7fc09f58143a7e",
+      "race_date": "2023-09-03",
+      "session": {
+        "circuit_key": 39,
+        "circuit_short_name": "Monza",
+        "country_code": "ITA",
+        "country_key": 13,
+        "country_name": "Italy",
+        "date_end": "2023-09-01T16:00:00+00:00",
+        "date_start": "2023-09-01T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Monza",
+        "meeting_key": 1218,
+        "session_key": 9151,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2023
+      },
+      "tables": {
+        "laps": "b49434093ffc21064c38a358a987770202f86ffeb8fc23977b44573f3a10eb21",
+        "race_control": "964853c3a0df9e6e608fdcf31970684c52891402198d5311e82dd17f1131476d",
+        "stints": "0e9077af65f8e9823a740d3d7712ed594d16cacb49d8871507030458c0e3f74d",
+        "weather": "1b2d65a5d30bfcdbf6d62cd92bce916d699d5fdbdbaf44440be27ab6b28c228b"
+      }
+    },
+    "F1_2023_R15": {
+      "calendar_sha256": "bb5a6aa67a0509a90157f36f40e1693a18bb98de02c897c31d7fc09f58143a7e",
+      "race_date": "2023-09-17",
+      "session": {
+        "circuit_key": 61,
+        "circuit_short_name": "Singapore",
+        "country_code": "SGP",
+        "country_key": 157,
+        "country_name": "Singapore",
+        "date_end": "2023-09-15T14:00:00+00:00",
+        "date_start": "2023-09-15T13:00:00+00:00",
+        "gmt_offset": "08:00:00",
+        "is_cancelled": false,
+        "location": "Marina Bay",
+        "meeting_key": 1219,
+        "session_key": 9159,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2023
+      },
+      "tables": {
+        "laps": "c01a5bcadaea873adc8834d1a8aaea1188255f408640354416fadba644ce90e7",
+        "race_control": "6261fa0e3de3a247b48ed4f731f8b4ac51f95939cb22ea49ff79f631f0d6bcc0",
+        "stints": "de7fe3ed374ae8a17010e920ea03ae238d8dd1c44d88c8fd095c957c80a0b702",
+        "weather": "63193edb3d82419f60bd06b74051c7db13644fdf512450ee042335129e95c70a"
+      }
+    },
+    "F1_2024_R01": {
+      "calendar_sha256": "5b92ebb0581a1c65daded73e22044692f88c6d260b60fd8812b829d8fdfe0236",
+      "race_date": "2024-03-02",
+      "session": {
+        "circuit_key": 63,
+        "circuit_short_name": "Sakhir",
+        "country_code": "BRN",
+        "country_key": 36,
+        "country_name": "Bahrain",
+        "date_end": "2024-02-29T16:00:00+00:00",
+        "date_start": "2024-02-29T15:00:00+00:00",
+        "gmt_offset": "03:00:00",
+        "is_cancelled": false,
+        "location": "Sakhir",
+        "meeting_key": 1229,
+        "session_key": 9466,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2024
+      },
+      "tables": {
+        "laps": "fbd04ecf88fe48d6d3442c0596f396859c4c04c8f7e66a0f04188a35692e55f0",
+        "race_control": "3330eea25ea33f876862fc1c112c891ac23ccf380d37466f7e9567e505c9a074",
+        "stints": "3d7beff91ee2b441f84d844feee28acddf7647e7291c52d8a20861db3e4b2543",
+        "weather": "08184ed5847fd02957eb6fee867be95b2a1bce2fafb81ae6da241366c3c0b391"
+      }
+    },
+    "F1_2024_R03": {
+      "calendar_sha256": "5b92ebb0581a1c65daded73e22044692f88c6d260b60fd8812b829d8fdfe0236",
+      "race_date": "2024-03-24",
+      "session": {
+        "circuit_key": 10,
+        "circuit_short_name": "Melbourne",
+        "country_code": "AUS",
+        "country_key": 5,
+        "country_name": "Australia",
+        "date_end": "2024-03-22T06:00:00+00:00",
+        "date_start": "2024-03-22T05:00:00+00:00",
+        "gmt_offset": "11:00:00",
+        "is_cancelled": false,
+        "location": "Melbourne",
+        "meeting_key": 1231,
+        "session_key": 9482,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2024
+      },
+      "tables": {
+        "laps": "a3dd8650438a6fcac42c5bd63f001494573ae1198bc0b3f3cdffea66fc456a0c",
+        "race_control": "85605ff63f64d00eed475151ce965622d9ca5d43932a7d7e4a202cd5e124a571",
+        "stints": "0f11ef8924f6e77e7716ee7b391566dec2ea5bd292b35e8f65984c31a70e3fd1",
+        "weather": "43315494d5880df0ae0b0111987bdd12bc48bfbdfa22dfbb7addff51b4760acf"
+      }
+    },
+    "F1_2024_R06": {
+      "calendar_sha256": "5b92ebb0581a1c65daded73e22044692f88c6d260b60fd8812b829d8fdfe0236",
+      "race_date": "2024-05-05",
+      "session": {
+        "circuit_key": 151,
+        "circuit_short_name": "Miami",
+        "country_code": "USA",
+        "country_key": 19,
+        "country_name": "United States",
+        "date_end": "2024-05-03T17:30:00+00:00",
+        "date_start": "2024-05-03T16:30:00+00:00",
+        "gmt_offset": "-04:00:00",
+        "is_cancelled": false,
+        "location": "Miami",
+        "meeting_key": 1234,
+        "session_key": 9497,
+        "session_name": "Practice 1",
+        "session_type": "Practice",
+        "year": 2024
+      },
+      "tables": {
+        "laps": "10f66b39b8650046d984f8ec128369b4198201402eebd500c429b7abfd499bb4",
+        "race_control": "37db98a7fef252299b2eb790e37f15954f98c1bdaf8b67e19566fe66aa0c95d1",
+        "stints": "38426c51d7a2e98802afb3411d021e1cf8477ee3141ea1b411df20df649a5291",
+        "weather": "cc972ad1d7700526fc271bddd79515dd39f37388d5d69464d1d6e4b3e147a945"
+      }
+    },
+    "F1_2024_R16": {
+      "calendar_sha256": "5b92ebb0581a1c65daded73e22044692f88c6d260b60fd8812b829d8fdfe0236",
+      "race_date": "2024-09-01",
+      "session": {
+        "circuit_key": 39,
+        "circuit_short_name": "Monza",
+        "country_code": "ITA",
+        "country_key": 13,
+        "country_name": "Italy",
+        "date_end": "2024-08-30T16:00:00+00:00",
+        "date_start": "2024-08-30T15:00:00+00:00",
+        "gmt_offset": "02:00:00",
+        "is_cancelled": false,
+        "location": "Monza",
+        "meeting_key": 1244,
+        "session_key": 9584,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2024
+      },
+      "tables": {
+        "laps": "ddbf863f2a8b17f9a3c6cc4a2e61a30f24f59091500b2695081abce17881033b",
+        "race_control": "7e7a51381c968e6b0cd710c448c560f9f87c4a13584f28326720a3fb919ee74a",
+        "stints": "7ca011bb1b981ae438c3469286d7ebd8508184dd446fa66e2aa7a40c5a087fda",
+        "weather": "f3ff8e544caec937eba9364dc44627871a10d394c380b4265af35946a6bd9577"
+      }
+    },
+    "F1_2024_R18": {
+      "calendar_sha256": "5b92ebb0581a1c65daded73e22044692f88c6d260b60fd8812b829d8fdfe0236",
+      "race_date": "2024-09-22",
+      "session": {
+        "circuit_key": 61,
+        "circuit_short_name": "Singapore",
+        "country_code": "SGP",
+        "country_key": 157,
+        "country_name": "Singapore",
+        "date_end": "2024-09-20T14:00:00+00:00",
+        "date_start": "2024-09-20T13:00:00+00:00",
+        "gmt_offset": "08:00:00",
+        "is_cancelled": false,
+        "location": "Marina Bay",
+        "meeting_key": 1246,
+        "session_key": 9600,
+        "session_name": "Practice 2",
+        "session_type": "Practice",
+        "year": 2024
+      },
+      "tables": {
+        "laps": "1850dcd421be73949526a5774d6f3ad88e856e49bbb63bd2f275a13227b6b7e0",
+        "race_control": "ffb0ff61d53736e65772020e716349977bf9e2b7e092553f97dc8298c04d9376",
+        "stints": "e9de03c5623c4d89a172085000cb8a83b1622b64b2ef613ef17a16ac0dc7bb15",
+        "weather": "00432fc2bc5c117069791a0147432ee12150d5c7df910b9800765e72a7d85bdd"
+      }
+    }
+  },
+  "schema": "practice-weekends-v17"
+}

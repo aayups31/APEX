@@ -1,0 +1,31 @@
+{
+  "content_sha256": "f9bccc10626e0c7ea2fbd3fe1b646952d5279472a4e0c09fb2bfa88e1fc4cdd2",
+  "dataset_sha256": "02f6f0ec4216c9f3dac33e189203800de0e6883914a75a023c72c2229e326268",
+  "schema": "compound-race-context-scalar-audit",
+  "studies": {
+    "v15": {
+      "event_labels": 48,
+      "failed_races": 17,
+      "forecasts": 392,
+      "macro_mae_s": 0.42359165198134735,
+      "qualified": false,
+      "result_sha256": "689a6b9d6f96ca6c87a07a181653b7aac2a0dc543f4531aaac357bc6aec8f983"
+    },
+    "v16": {
+      "event_labels": 48,
+      "failed_races": 15,
+      "forecasts": 392,
+      "macro_mae_s": 0.3977276728686659,
+      "qualified": false,
+      "result_sha256": "479383d1d14a1c9495dc3708de978a3801ad194b4988b65b0a4620f8e26b567e"
+    },
+    "v17": {
+      "event_labels": 48,
+      "failed_races": 13,
+      "forecasts": 392,
+      "macro_mae_s": 0.4236702335185833,
+      "qualified": false,
+      "result_sha256": "027139cb3ac472671ca7ca14ed258aa0329d1ef062cbb79055e9ed994f09c9bd"
+    }
+  }
+}
