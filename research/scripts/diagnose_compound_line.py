@@ -16,20 +16,34 @@ FOLDER = ROOT / "docs/verification"
 
 
 def evaluate(rows, sources, matrix):
-    folds, predictions, models = [], [], {}
-    for event, source in sorted(sources.items()):
+    forecasts, models = {}, {}
+    for event in sorted(sources):
         train = [i for i, row in enumerate(rows) if str(row["session"]) != event]
         test = [i for i, row in enumerate(rows) if str(row["session"]) == event]
-        if len(test) != source["blocks"]:
-            raise ValueError("Changed race denominator")
         if test:
             model = fit([rows[i] for i in train], matrix[train])
             models[event] = model
+            for i in test:
+                forecasts[i] = forecast_laps(
+                    model, matrix[i], rows[i]["current_prefix_s"]
+                )
+    return {**score_forecasts(rows, sources, forecasts), "models": models}
+
+
+def score_forecasts(rows, sources, forecasts):
+    """Apply the original paired-label race gates to a complete indexed forecast set."""
+    if set(forecasts) != set(range(len(rows))):
+        raise ValueError("Missing or unexpected forecast")
+    folds, predictions = [], []
+    for event, source in sorted(sources.items()):
+        test = [i for i, row in enumerate(rows) if str(row["session"]) == event]
+        if len(test) != source["blocks"]:
+            raise ValueError("Changed race denominator")
         scores = [[], []]
         for i in test:
             row = rows[i]
             ref, prefix = row["reference_target_s"], row["current_prefix_s"]
-            laps, hits = forecast_laps(model, matrix[i], prefix)
+            laps, hits = forecasts[i]
             values, baseline = contrasts(ref, laps), contrasts(ref, prefix)
             decisions = []
             for j, (start, target) in enumerate(LABELS):
@@ -77,7 +91,6 @@ def evaluate(rows, sources, matrix):
         "macro_mae_s": mean(m["mae_s"] for f in folds for m in f["labels"]),
         "folds": folds,
         "predictions": predictions,
-        "models": models,
     }
 
 
