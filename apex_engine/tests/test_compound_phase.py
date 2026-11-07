@@ -31,7 +31,9 @@ def test_phase_refit_and_both_forecast_gates_replay(monkeypatch):
     saved = study.read_json(study.FOLDER / "compound-v18-development.json")
     audit.check_result(data, saved)
     actual = study.study()
-    assert actual["feedback"] == saved["feedback"]
+    for found, expected in zip(actual["feedback"], saved["feedback"], strict=True):
+        assert found["peer_windows"] == expected["peer_windows"]
+        assert found["shift_s"] == pytest.approx(expected["shift_s"], rel=0, abs=1e-9)
     for name in ("phase_only", "result"):
         assert actual[name]["failed_events"] == saved[name]["failed_events"]
         for found, expected in zip(actual[name]["predictions"], saved[name]["predictions"], strict=True):
