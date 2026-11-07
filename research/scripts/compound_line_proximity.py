@@ -16,7 +16,7 @@ from diagnose_compound_decision import ROOT
 from prepare_compound_trajectory import OPENED, V9, tables_from_archive
 
 
-def archive_crossings(root, event, source):
+def archive_laps(root, event, source):
     if source["provider"] == "OPENF1":
         sessions = {
             **OPENED,
@@ -27,7 +27,12 @@ def archive_crossings(root, event, source):
             root / folder, int(event), (number, meeting)
         )
         laps = [
-            (r["driver_number"], utc(r["date_start"]), r["lap_duration"])
+            (
+                r["driver_number"],
+                utc(r["date_start"]),
+                r["lap_duration"],
+                r["lap_number"],
+            )
             for r in tables["laps"]
             if r["date_start"] and r["lap_duration"] is not None
         ]
@@ -48,22 +53,28 @@ def archive_crossings(root, event, source):
         digest = manifest["content_sha256"]
         frame = pd.read_parquet(
             archive / "tables/laps.parquet",
-            columns=["DriverNumber", "LapStartDate", "LapTime"],
+            columns=["DriverNumber", "LapStartDate", "LapTime", "LapNumber"],
         )
         laps = [
-            (int(driver), utc(start), elapsed.total_seconds())
-            for driver, start, elapsed in frame.dropna().itertuples(
-                index=False, name=None
-            )
+            (int(driver), utc(start), elapsed.total_seconds(), lap)
+            for driver, start, elapsed, lap in frame.dropna(
+                subset=["DriverNumber", "LapStartDate", "LapTime"]
+            ).itertuples(index=False, name=None)
         ]
     else:
         raise ValueError("Unknown timing-line provider")
     if digest != source["archive_sha256"]:
         raise ValueError("Timing-line archive differs from frozen cohort")
-    return sorted(
-        (start + duration, driver)
-        for driver, start, duration in laps
+    return [
+        (start + duration, driver, lap, duration)
+        for driver, start, duration, lap in laps
         if isfinite(start + duration) and duration > 0
+    ]
+
+
+def archive_crossings(root, event, source):
+    return sorted(
+        (end, driver) for end, driver, _, _ in archive_laps(root, event, source)
     )
 
 
