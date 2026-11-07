@@ -471,10 +471,10 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v14_expanded_stint_blend",
-    "decision": "REJECT_EXPANDED_STINT_TRAINING",
-    "report": "docs/verification/compound-v14-final-report.md",
-    "development_summary": "docs/verification/compound-v14-development.json",
+    "candidate": "v18_race_phase_feedback",
+    "decision": "REJECT_RACE_PHASE_FEEDBACK",
+    "report": "docs/verification/compound-v18-final-report.md",
+    "development_summary": "docs/verification/compound-v18-development.json",
     "candidate_passed": false,
     "development_qualified": false,
     "production_promotion": false,
@@ -483,23 +483,20 @@
     "training_source_events": 28,
     "training_supported_events": 24,
     "failed_development_events": [
-      "10014",
-      "10022",
+      "9839",
       "9850",
       "9877",
       "9888",
       "9896",
       "9912",
-      "9920",
       "9928",
-      "9963",
       "9971",
       "9987",
       "9998",
+      "F1_2023_R01",
       "F1_2023_R14",
       "F1_2023_R15",
       "F1_2024_R03",
-      "F1_2024_R06",
       "F1_2024_R16",
       "F1_2024_R18"
     ],
@@ -513,8 +510,8 @@
         ]
       }
     ],
-    "source_ci_passed": true,
-    "next_required_work": "Establish causal race-context signal for prediction errors before another frozen confirmation; nominated compound and expanded pace-only training hypotheses failed.",
+    "source_ci_passed": false,
+    "next_required_work": "Establish forecast-time driving-state telemetry coverage and cross-race predictive value; all registered timing-context candidates failed.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -604,7 +601,7 @@
     "source_ci": {
       "commit": "ae557d9c18c0b940553e8a3a2a08b370dce41c1b",
       "run_id": 42315107551,
-      "status": "SUCCESS",
+      "status": "PRIOR_SOURCE_SUCCESS_LATEST_PENDING",
       "jobs": [
         {
           "job_id": 128225675057,
@@ -630,13 +627,13 @@
     "unique_current_training_windows": 1370,
     "verification_report": "docs/verification/compound-v14-audit.json",
     "best_tested_development_candidate": {
-      "candidate": "v13_nominated",
-      "supported_events_passed": 9,
+      "candidate": "v17_practice",
+      "supported_events_passed": 11,
       "supported_events": 24,
       "development_qualified": false,
-      "report": "docs/verification/compound-v13-development.json"
+      "report": "docs/verification/compound-v17-development.json"
     },
-    "last_pass_review": "docs/verification/compound-v14-last-pass-review.json"
+    "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

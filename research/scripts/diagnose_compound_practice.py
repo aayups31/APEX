@@ -12,7 +12,7 @@ from apexsim.research.evidence import check_seal, read_json, seal
 from diagnose_compound_line import FOLDER, evaluate
 
 
-def study():
+def practice_inputs():
     data, parent, archive, trends = [
         read_json(FOLDER / name)
         for name in (
@@ -60,7 +60,12 @@ def study():
             x.extend([item["drift_s"] or 0.0, log1p(item["drivers"])])
         support.append(counts)
         matrix.append(x)
-    result = evaluate(rows, data["sources"], np.asarray(matrix))
+    return data, parent, trends, support, matrix
+
+
+def study():
+    data, parent, trends, support, matrix = practice_inputs()
+    result = evaluate(data["cases"], data["sources"], np.asarray(matrix))
     previous = set(parent["recipes"]["nominated"]["failed_events"])
     failed = set(result["failed_events"])
     return seal(
