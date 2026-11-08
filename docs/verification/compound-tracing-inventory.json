@@ -1,0 +1,183 @@
+{
+  "commit": "dfb3ea3f50b69857fe8e40cabe5e899743c59f6a",
+  "content_sha256": "f66f11e49c06115451aa2d486ebf3346690a6f527d7434f1c310018eff89425e",
+  "dataset_sha256": "02f6f0ec4216c9f3dac33e189203800de0e6883914a75a023c72c2229e326268",
+  "events": {
+    "10006": {
+      "cases": 20,
+      "drivers_sha256": "0360fde4df7fff3240704121cfc24a15aa65c34ed515c8cc58c85a77ed9dbf17",
+      "folder": "Japanese Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "fc3a75d0b2e0e7ef3a49636514998000a87d2826645ad3948a87279345f776db",
+      "required_unique_lap_files": 180,
+      "round": 3
+    },
+    "10014": {
+      "cases": 19,
+      "drivers_sha256": "56541a8cae2e4bbc070222ba7549df8ad3d2a54dc24c1765ad6f1f6092df477d",
+      "folder": "Bahrain Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "8351dfb042f8287a6eedd77d1edb48c4d5b5336c6d52cc3fa8de8d418aac7e5c",
+      "required_unique_lap_files": 154,
+      "round": 4
+    },
+    "10022": {
+      "cases": 14,
+      "drivers_sha256": "058de4824a945ba44bdd7c2aba4e3d2cc5fb334724df71433027863b25e369d2",
+      "folder": "Saudi Arabian Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "0e746e60c68898a30acf85c476e53023566b24b4182a712d8449efe3ed62f9d1",
+      "required_unique_lap_files": 126,
+      "round": 5
+    },
+    "10033": {
+      "cases": 0,
+      "drivers_sha256": null,
+      "folder": "Miami Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "1d1d9bd9ba40f2218e19a42d20e64e1001f80d7a807a45cbe7154cdfbdf8e42a",
+      "required_unique_lap_files": 0,
+      "round": 6
+    },
+    "9839": {
+      "cases": 25,
+      "drivers_sha256": "5002ba0af4de8cb0385758a57f618cc42414e398ddc4cc808382b9cad8f1e9d8",
+      "folder": "Abu Dhabi Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "66c5f556ce9a05f322c317cdede8d2df51a13c15e44b619ecd8e86c687dd7a45",
+      "required_unique_lap_files": 216,
+      "round": 24
+    },
+    "9850": {
+      "cases": 13,
+      "drivers_sha256": "565a4a288dec052a5479a8b9fda288a22e6a89d8ed6882c2f77f411d5d09ad1e",
+      "folder": "Qatar Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "05f857ca3478aad024e8b14140472bf1d656e52bcbd57978872d7231e893ac2e",
+      "required_unique_lap_files": 117,
+      "round": 23
+    },
+    "9858": {
+      "cases": 0,
+      "drivers_sha256": null,
+      "folder": "Las Vegas Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "e4e83957390db28f601158643d053e1742da42afe8d5c2cb0ad8255fd659d9aa",
+      "required_unique_lap_files": 0,
+      "round": 22
+    },
+    "9877": {
+      "cases": 33,
+      "drivers_sha256": "565a4a288dec052a5479a8b9fda288a22e6a89d8ed6882c2f77f411d5d09ad1e",
+      "folder": "Mexico City Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "4f31108b26f011c97848b22995d7fb8c4ee5a21c105b55c62789de874cc015b7",
+      "required_unique_lap_files": 279,
+      "round": 20
+    },
+    "9888": {
+      "cases": 19,
+      "drivers_sha256": "565a4a288dec052a5479a8b9fda288a22e6a89d8ed6882c2f77f411d5d09ad1e",
+      "folder": "United States Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "ab001b65e1eaad5fb1640143763925b076bbccc7930c6452f646bfb7ac1a4f12",
+      "required_unique_lap_files": 171,
+      "round": 19
+    },
+    "9896": {
+      "cases": 24,
+      "drivers_sha256": "acc29783b791ea82ca876f2d542b23366025e7b043d8b349c7dce36f2d896545",
+      "folder": "Singapore Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "83c1651a61962bf82c63894e2765b7cb9ad3d6c630d059f932399cd6ed355ba6",
+      "required_unique_lap_files": 201,
+      "round": 18
+    },
+    "9912": {
+      "cases": 12,
+      "drivers_sha256": "1d30a95f0bd8abadd324a23ae6b276d66c2950653e500d282109ee886babbae0",
+      "folder": "Italian Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "e6d105a47ee83f409426b1c51bd54ca68bd283e5d8bff9b504c50ff230b48256",
+      "required_unique_lap_files": 108,
+      "round": 16
+    },
+    "9920": {
+      "cases": 10,
+      "drivers_sha256": "565a4a288dec052a5479a8b9fda288a22e6a89d8ed6882c2f77f411d5d09ad1e",
+      "folder": "Dutch Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "738b298ca66fb04cd3979c9266f4ce6d13b6831edf49956ec2305207b0d2f235",
+      "required_unique_lap_files": 90,
+      "round": 15
+    },
+    "9928": {
+      "cases": 36,
+      "drivers_sha256": "67a1bb433af22655869e6c874e729e7b1a0a10ab7c64395205a4f5daa9ebbf43",
+      "folder": "Hungarian Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "a97c73fbca149933b7b44314da9e054741b735e4de729f21aa673212153d0fa0",
+      "required_unique_lap_files": 266,
+      "round": 14
+    },
+    "9947": {
+      "cases": 0,
+      "drivers_sha256": null,
+      "folder": "British Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "0925628ff574f40dfe8ccdfb095a0a460d67321286e17440a687ed723674c5aa",
+      "required_unique_lap_files": 0,
+      "round": 12
+    },
+    "9955": {
+      "cases": 28,
+      "drivers_sha256": "6c9e3e1dcc98d0c356972f13218b34d065dad4edd70861ccfbe4f1e26830907d",
+      "folder": "Austrian Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "e642e807246547f4e7a617f2a43f6c8d6772bf3efcc2f0425e0f9fc896b8e78a",
+      "required_unique_lap_files": 239,
+      "round": 11
+    },
+    "9963": {
+      "cases": 11,
+      "drivers_sha256": "565a4a288dec052a5479a8b9fda288a22e6a89d8ed6882c2f77f411d5d09ad1e",
+      "folder": "Canadian Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "316dc07bc567378a254df6f6964385ab6ac34a233cffb27e8c9b6704fd94c717",
+      "required_unique_lap_files": 90,
+      "round": 10
+    },
+    "9971": {
+      "cases": 18,
+      "drivers_sha256": "4772589d1303240f42e619f78043e39a809ccd2f94d9d1ced5e7895bb6f1e76d",
+      "folder": "Spanish Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "5250f000dffd8bbbad2a9ee668a315e2fb4843b00bd08093ba26c9c232240f4d",
+      "required_unique_lap_files": 153,
+      "round": 9
+    },
+    "9987": {
+      "cases": 9,
+      "drivers_sha256": "18d6e22519bec57f5c6d8042d8f63431cc15149dd8677033e6a3fdfad5ec9013",
+      "folder": "Emilia Romagna Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "34c8751ef1a3a163d0fc87891dcbe66cc6daab914d2b81586bad38d4242d3c05",
+      "required_unique_lap_files": 81,
+      "round": 7
+    },
+    "9998": {
+      "cases": 10,
+      "drivers_sha256": "c7888df3052d02722fef77e842e3066276d8e673dcc176d78eb461b128a1c8ac",
+      "folder": "Chinese Grand Prix",
+      "missing": [],
+      "race_tree_sha256": "cc8ca55c9db113340b7536109b05f1b5e95d0c7eb58ce377e11989d891069c8f",
+      "required_unique_lap_files": 90,
+      "round": 2
+    }
+  },
+  "missing": [],
+  "repository": "TracingInsights/2025",
+  "required_unique_lap_files": 2561,
+  "schema": "tracing-archive-r041-inventory",
+  "scope": "FILE_EXISTENCE_ONLY_NOT_NATIVE_OR_PREDICTION_VALIDATION"
+}

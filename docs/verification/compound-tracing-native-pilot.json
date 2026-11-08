@@ -1,0 +1,186 @@
+{
+  "commit": "d1543a71370d9b617b627319f8ad80b2f85dfd5e",
+  "content_sha256": "1538f5a3cfab144c3950fb28abfb10c5d4f044cedbc83ec5dbbbdcf661c96aae",
+  "driver": 11,
+  "event": "F1_2024_R01",
+  "laps": [
+    {
+      "export_coverage": 0.9991109344601804,
+      "export_drs_codes": [
+        0,
+        1
+      ],
+      "export_fields": [
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "dataKey"
+      ],
+      "export_means": [
+        56.00889296409523,
+        0.6543944725646739,
+        0.22530124265868257,
+        0.035269731263282436,
+        0.11741920624784076
+      ],
+      "export_minus_native": [
+        0.06659335882826412,
+        0.0029784877225492723,
+        -0.0006623696459671091,
+        -0.0012481566876054173,
+        -0.00018770655869151942
+      ],
+      "has_native_date": false,
+      "has_source_mask": false,
+      "lap": 14,
+      "native_lap_duration_s": 95.606,
+      "native_means": [
+        55.94229960526697,
+        0.6514159848421246,
+        0.22596361230464967,
+        0.03651788795088785,
+        0.11760691280653228
+      ],
+      "relative_time_range_s": [
+        0.0,
+        95.606
+      ],
+      "rows_exported": 733,
+      "rows_native": 359,
+      "sha256": "2450a9d708bd6922a7c5e65126df25b2d88fd9a1791c806b428dd25f2c102f79"
+    },
+    {
+      "export_coverage": 0.9996202691869541,
+      "export_drs_codes": [
+        0
+      ],
+      "export_fields": [
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "dataKey"
+      ],
+      "export_means": [
+        56.58650481069328,
+        0.6554330170943257,
+        0.22540308965051484,
+        0.025282795880466027,
+        0.0
+      ],
+      "export_minus_native": [
+        -0.2996935737517177,
+        -0.006410739175186864,
+        0.00820324936310965,
+        -0.005072380144353909,
+        0.0
+      ],
+      "has_native_date": false,
+      "has_source_mask": false,
+      "lap": 38,
+      "native_lap_duration_s": 94.804,
+      "native_means": [
+        56.886198384444995,
+        0.6618437562695125,
+        0.2171998402874052,
+        0.030355176024819935,
+        0.0
+      ],
+      "relative_time_range_s": [
+        0.0,
+        94.804
+      ],
+      "rows_exported": 719,
+      "rows_native": 351,
+      "sha256": "341c8f2b3ca49930c1d42bdb590daace2c2c4d5c2a1f413610641021028ad177"
+    },
+    {
+      "export_coverage": 0.9890596265935231,
+      "export_drs_codes": [
+        0
+      ],
+      "export_fields": [
+        "time",
+        "rpm",
+        "speed",
+        "gear",
+        "throttle",
+        "brake",
+        "drs",
+        "distance",
+        "rel_distance",
+        "DriverAhead",
+        "DistanceToDriverAhead",
+        "acc_x",
+        "acc_y",
+        "acc_z",
+        "x",
+        "y",
+        "z",
+        "dataKey"
+      ],
+      "export_means": [
+        55.711000743255276,
+        0.6596401559056666,
+        0.21641665616202369,
+        0.02256397327618813,
+        0.0
+      ],
+      "export_minus_native": [
+        -0.3939897482721193,
+        -0.00032328216931432063,
+        -0.002567179930068747,
+        -0.0025104362298201295,
+        0.0
+      ],
+      "has_native_date": false,
+      "has_source_mask": false,
+      "lap": 23,
+      "native_lap_duration_s": 96.249,
+      "native_means": [
+        56.104990491527396,
+        0.6599634380749809,
+        0.21898383609209243,
+        0.02507440950600826,
+        0.0
+      ],
+      "relative_time_range_s": [
+        0.0,
+        96.249
+      ],
+      "rows_exported": 732,
+      "rows_native": 350,
+      "sha256": "b36856ad7b9e1f040e8dd7f37234524fd54e2b90a7a23107e4a2692d5521ea65"
+    }
+  ],
+  "repository": "TracingInsights/2024",
+  "schema": "tracing-native-pilot",
+  "scope": "THREE_KNOWN_LAPS_ONLY_RECONSTRUCTED_EXPORT_CLOCK_NOT_NATIVE_EQUIVALENCE"
+}
