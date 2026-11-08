@@ -509,7 +509,7 @@
       }
     ],
     "source_ci_passed": true,
-    "next_required_work": "Complete historical car acquisition after HTTP 401 access restriction clears, audit coverage, then evaluate the registered full driving-state candidate before fresh confirmation.",
+    "next_required_work": "Register and validate a processed-telemetry adapter for the pinned TracingInsights archive, including lap clocks, binary DRS and interpolation boundaries, before the full-cohort model experiment.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -631,7 +631,16 @@
     "last_pass_review": "docs/verification/compound-v18-final-ci.json",
     "acquisition_ready": false,
     "driving_supported_cases": 91,
-    "driving_missing_cases": 301
+    "driving_missing_cases": 301,
+    "alternative_archive_investigation": {
+      "report": "docs/verification/compound-tracing-review.md",
+      "repository": "TracingInsights/2025",
+      "commit": "dfb3ea3f50b69857fe8e40cabe5e899743c59f6a",
+      "required_lap_files_present": 2561,
+      "missing_required_lap_files": 0,
+      "covered_comparisons": 301,
+      "native_equivalence_validated": false
+    }
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

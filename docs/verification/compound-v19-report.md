@@ -79,6 +79,12 @@ the existing simulator verification.
 
 ## Next required action
 
+The subsequent [TracingInsights investigation](compound-tracing-review.md)
+found all 2,561 required known-lap files for the 301 missing comparisons in a
+free pinned archive. Its merged/interpolated representation needs a separate
+adapter and boundary-timing validation before model evaluation. This provides
+an alternative acquisition route to investigate now.
+
 Retry the registered historical acquisition after access becomes available,
 using a fresh snapshot directory because the saved rejection is immutable.
 The adapter preserves original HTTP bytes and verifies them on reload.
