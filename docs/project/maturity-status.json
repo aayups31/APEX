@@ -597,25 +597,40 @@
     },
     "prior_v12_report": "docs/verification/compound-v12-decision-review.md",
     "source_ci": {
-      "schema": "compound-v18-final-ci",
-      "source_commit": "8f9e26b46a1be4e588806c59e82f2c4f309e133a",
-      "run_id": 42410317962,
+      "schema": "compound-v21-final-review",
+      "source_commit": "018ea9f7b6fabf0ebdf1d530ea082703db10032d",
+      "run_id": 42507947695,
+      "url": "https://github.com/aayups31/APEX/actions/runs/42507947695",
       "status": "SUCCESS",
       "jobs": [
         {
-          "name": "Python 3.11",
-          "job_id": 128516832658,
-          "tests_passed": 849,
-          "all_steps_passed": true
+          "name": "Python 3.12",
+          "job_id": 128814562756,
+          "all_steps_passed": true,
+          "tests_passed": 890
         },
         {
-          "name": "Python 3.12",
-          "job_id": 128516832871,
-          "tests_passed": 849,
-          "all_steps_passed": true
+          "name": "Python 3.11",
+          "job_id": 128814562761,
+          "all_steps_passed": true,
+          "tests_passed": 890
         }
       ],
-      "content_sha256": "2a2307a703da7e9264099eee8394d7d84482f039e8972015092e96731d4e747e"
+      "exact_extraction_replay": true,
+      "exact_model_replay": true,
+      "artifact_sha256_lf": {
+        "compound-v21-processed-data.json": "6fd2800cd7a547310a5e30dae1ff971b94d9d44f8c6323d853dcc33568194c86",
+        "compound-v21-development.json": "afb9e57385915773691b688ea1e56a5a23cace9c1d1c6419224a805f0d815b52",
+        "compound-v21-audit.json": "e6c2dfab0d1504911d9dbb097ee7e4b19ce89b89a28fdd9a38bd965a537ebe2d",
+        "compound-v21-native-comparison.json": "891a48d055fb32183cab53a3445c41eb4f244a5ea57a369da81f25821a637430",
+        "compound-v21-nominations.json": "b33c23ece0b7432c05558f01f52a42cf43e370185e2c7c8953d875a6b4f339e7",
+        "compound-v21-source-recovery.json": "dc65ef6fcf04b5679a5acb1d40aa78aff28a1a81b92b10a2af1b12cddc6d5428"
+      },
+      "prediction_qualified": false,
+      "candidate_accepted": false,
+      "production_promotion": false,
+      "new_holdout_acquisition_allowed": false,
+      "content_sha256": "4dd53f5c760881f6db7e86bc8bbd2b4d970bf6f148c473e4a378b246ba3f39af"
     },
     "additional_training_windows": 985,
     "unique_current_training_windows": 1370,
@@ -628,10 +643,7 @@
       "report": "docs/verification/compound-v21-development.json"
     },
     "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json",
-    "last_pass_review": "docs/verification/compound-v18-final-ci.json",
-    "acquisition_ready": false,
-    "driving_supported_cases": 91,
-    "driving_missing_cases": 301,
+    "last_pass_review": "docs/verification/compound-v21-final-review.json",
     "alternative_archive_investigation": {
       "report": "docs/verification/compound-tracing-review.md",
       "repository": "TracingInsights/2025",
@@ -647,7 +659,12 @@
       "2023 calendar folder joins",
       "2023 Monza nomination",
       "2023 Singapore nomination source"
-    ]
+    ],
+    "native_acquisition_ready": false,
+    "processed_acquisition_ready": true,
+    "prior_native_driving_supported_cases": 91,
+    "prior_native_driving_missing_cases": 301,
+    "source_recovery_review": "docs/verification/compound-v21-source-recovery.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

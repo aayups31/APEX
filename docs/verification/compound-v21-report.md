@@ -25,10 +25,12 @@ The first adapter iteration used the wrong 2023 folders for R14 and R15.
 Verified Jolpica calendars and FastF1 manifests identify Italy and Singapore.
 The new adapter now resolves names from verified calendars and checks export
 dates. OpenF1-derived event joins also require exact session keys. The wrong
-folders' inputs failed identity checks. Their downloaded snapshots and initial
-diagnostic results remain locally quarantined under
-.cache/r041-v20-rejected-first. Their initial 12/24 result is invalid for
-scientific comparison.
+folders' inputs failed identity checks. Initial diagnostic artifacts are
+quarantined under .cache/r041-v20-rejected-first. The download cache retains
+the original responses, while corrected input manifests exclude their URLs.
+The mistakenly accessed 2023 Dutch race is recorded as opened in error and
+cannot serve as a fresh confirmation event. The initial 12/24 result is invalid
+for scientific comparison.
 
 Earlier nomination metadata assigned the Dutch C1/C2/C3 allocation to
 2023 R14. The corrected Monza allocation is C3/C4/C5. R15's C3/C4/C5 codes
@@ -79,6 +81,11 @@ clock tolerances, timing buffers, missingness, calendar renumbering and the
 saved full-cohort independent audit. Earlier driving and authentication
 regressions also pass locally. Full source CI runs the old audits, the new
 audit, all regressions, package builds and simulator verification.
+
+Final source 018ea9f passes 890 tests on both Python 3.11 and 3.12, both package
+builds and every workflow step. Extraction and model refit replay exactly.
+See the [sealed final review](compound-v21-final-review.json) and
+[completed CI](https://github.com/aayups31/APEX/actions/runs/42507947695).
 
 ## Reproduction
 
