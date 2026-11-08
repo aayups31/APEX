@@ -471,10 +471,10 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v18_race_phase_feedback",
-    "decision": "REJECT_RACE_PHASE_FEEDBACK",
-    "report": "docs/verification/compound-v18-final-report.md",
-    "development_summary": "docs/verification/compound-v18-development.json",
+    "candidate": "v19_partial_driving_state",
+    "decision": "FAIL_PARTIAL_DRIVING_STATE_AND_PENDING_SOURCE_ACCESS",
+    "report": "docs/verification/compound-v19-report.md",
+    "development_summary": "docs/verification/compound-v19-development.json",
     "candidate_passed": false,
     "development_qualified": false,
     "production_promotion": false,
@@ -483,19 +483,17 @@
     "training_source_events": 28,
     "training_supported_events": 24,
     "failed_development_events": [
-      "9839",
       "9850",
       "9877",
       "9888",
       "9896",
       "9912",
       "9928",
-      "9971",
       "9987",
       "9998",
-      "F1_2023_R01",
       "F1_2023_R14",
       "F1_2023_R15",
+      "F1_2024_R01",
       "F1_2024_R03",
       "F1_2024_R16",
       "F1_2024_R18"
@@ -511,7 +509,7 @@
       }
     ],
     "source_ci_passed": true,
-    "next_required_work": "Establish forecast-time driving-state telemetry coverage and cross-race predictive value; all registered timing-context candidates failed.",
+    "next_required_work": "Complete historical car acquisition after HTTP 401 access restriction clears, audit coverage, then evaluate the registered full driving-state candidate before fresh confirmation.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -630,7 +628,10 @@
       "report": "docs/verification/compound-v17-development.json"
     },
     "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json",
-    "last_pass_review": "docs/verification/compound-v18-final-ci.json"
+    "last_pass_review": "docs/verification/compound-v18-final-ci.json",
+    "acquisition_ready": false,
+    "driving_supported_cases": 91,
+    "driving_missing_cases": 301
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

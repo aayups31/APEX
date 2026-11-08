@@ -1,0 +1,35 @@
+{
+  "acquisition_ready": false,
+  "content_sha256": "4e4166891d566effdc813c76facefd6a6cbd4b49bde78fabdbbb65a094f07668",
+  "driving_cases_available": 91,
+  "driving_cases_unavailable": 301,
+  "fastf1_archive_completed": false,
+  "fastf1_attempt": ".cache/r041-v19-fastf1-2025-r3",
+  "fastf1_worker_log_sha256": "bb35af08bf4d61b9a7708d69168e27bcfa172682e29a04746d482bd70e43bb1f",
+  "raw_response": "{\"detail\":\"Live F1 session in progress. Global API access (including past sessions) is restricted to authenticated users until the session ends. Get an API key here: https://buy.stripe.com/eVqcN41BPekP0iIalBcEw02\"}",
+  "request_receipt": {
+    "content_sha256": "14add8b999e3e4ec7390455f602ec23e4e549ed463ac66afc8a95da22dd04c65",
+    "query": {
+      "date<": "2025-04-06T05:43:06.106000+00:00",
+      "date>=": "2025-04-06T05:05:22.165000+00:00",
+      "driver_number": 1,
+      "session_key": 10006
+    },
+    "raw_file": "b3a9c0376cd2415e548b4e41c376a4107605bdcd8cd10ca28cc0200c805ca1ab.json",
+    "raw_sha256": "b3a9c0376cd2415e548b4e41c376a4107605bdcd8cd10ca28cc0200c805ca1ab",
+    "response": {
+      "attempts": [
+        {
+          "started_at_utc": "2026-11-08T17:03:06.280269+00:00",
+          "status_code": 401
+        }
+      ],
+      "headers": {
+        "content-type": "application/octet-stream, application/json"
+      },
+      "retrieved_at_utc": "2026-11-08T17:03:06.743603+00:00",
+      "status_code": 401
+    }
+  },
+  "schema": "compound-driving-access-review"
+}
