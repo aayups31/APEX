@@ -13,6 +13,7 @@ from tempfile import NamedTemporaryFile
 
 import requests
 from apexsim.data.benchmark_guard import assert_development_event
+from apexsim.data.jolpica import verify_jolpica_archive
 from apexsim.provenance import file_sha256, write_manifest
 from apexsim.research.evidence import check_seal, read_json, seal
 from apexsim.research.tracing_telemetry import associate_lap, export_samples
@@ -26,15 +27,21 @@ PINS = {
     2024: "d1543a71370d9b617b627319f8ad80b2f85dfd5e",
     2025: "dfb3ea3f50b69857fe8e40cabe5e899743c59f6a",
 }
-OLD_EVENTS = {
-    1: "Bahrain",
-    3: "Australian",
-    6: "Miami",
-    14: "Dutch",
-    15: "Italian",
-    16: "Italian",
-    18: "Singapore",
-}
+
+
+def calendar_event(event: str, root: Path) -> dict:
+    """Resolve exact archived event identity, including cancelled-round renumbering."""
+    _, text, race = event.split("_")
+    year, number = int(text), int(race[1:])
+    assert_development_event(year, number, event_id=event)
+    calendar = root / f"jolpica-{year}-20260916"
+    verify_jolpica_archive(calendar)
+    (result,) = [
+        r
+        for r in read_json(calendar / "events.json")["events"]
+        if r["event_id"] == event
+    ]
+    return result
 
 
 def fetch(url: str, cache: Path) -> tuple[dict | None, str]:
@@ -95,7 +102,8 @@ def prepare(cache: Path) -> dict:
         else:
             _, text, race = event.split("_")
             year, number = int(text), int(race[1:])
-            name = OLD_EVENTS[number]
+            calendar = calendar_event(event, ROOT / ".cache")
+            name = calendar["race_name"].removesuffix(" Grand Prix")
         assert_development_event(year, number)
         indices = [i for i, r in enumerate(data["cases"]) if str(r["session"]) == event]
         base = f"https://raw.githubusercontent.com/TracingInsights/{year}/{PINS[year]}/{name} Grand Prix/Race/"
@@ -117,6 +125,11 @@ def prepare(cache: Path) -> dict:
             or session["session_info"]["Meeting"]["Name"] != f"{name} Grand Prix"
         ):
             raise ValueError("Wrong exported race identity")
+        if source["provider"] == "OPENF1":
+            if int(session["session_info"]["Key"]) != int(event):
+                raise ValueError("Wrong exported native session key")
+        elif session["session_info"]["StartDate"][:10] != calendar["race_date"]:
+            raise ValueError("Exported race date differs from verified calendar")
         drivers, driver_hash = fetch(base + "drivers.json", cache)
         if drivers is None:
             raise ValueError("Missing exported driver inventory")

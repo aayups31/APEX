@@ -1,0 +1,24 @@
+{
+  "audit_passed": true,
+  "content_sha256": "7c5de25323dfdb527aa670ce86e1d09a27e4532eae67ec3713ac2aeebf8400ab",
+  "control_gates": {
+    "event_labels": 48,
+    "failed_races": 13,
+    "forecasts": 392,
+    "macro_mae_s": 0.4401748459479208,
+    "qualified": false,
+    "result_sha256": "60b4cabc3fafd7e4cf9d492ae39565c084273c3b9c6bbb32772aefca0a014b5a"
+  },
+  "forecasts_verified": 784,
+  "new_holdout_acquisition_allowed": false,
+  "prediction_gates": {
+    "event_labels": 48,
+    "failed_races": 14,
+    "forecasts": 392,
+    "macro_mae_s": 0.4581046953672255,
+    "qualified": false,
+    "result_sha256": "fc302108af513e4547c84c951549eca3c6478c80207b400f686095645398e9ef"
+  },
+  "result_sha256": "fc302108af513e4547c84c951549eca3c6478c80207b400f686095645398e9ef",
+  "schema": "compound-processed-audit-v21"
+}

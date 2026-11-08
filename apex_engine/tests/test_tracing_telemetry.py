@@ -1,4 +1,6 @@
+import importlib
 from copy import deepcopy
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -110,3 +112,40 @@ def test_processed_features_keep_missing_groups_explicit_and_use_two_laps():
     assert processed_features(changed)[10:15] == [0.0] * 5
     with pytest.raises(ValueError):
         processed_features([*groups, groups[0]])
+
+
+def test_calendar_identity_uses_verified_rounds_after_cancelled_events(monkeypatch):
+    root = Path(__file__).resolve().parents[2]
+    monkeypatch.syspath_prepend(str(root / "research/scripts"))
+    adapter = importlib.import_module("prepare_compound_processed")
+    verified = []
+    monkeypatch.setattr(adapter, "verify_jolpica_archive", lambda p: verified.append(p))
+    monkeypatch.setattr(
+        adapter,
+        "read_json",
+        lambda p: {
+            "events": [
+                {"event_id": "F1_2023_R14", "race_name": "Italian Grand Prix"},
+                {"event_id": "F1_2023_R15", "race_name": "Singapore Grand Prix"},
+            ]
+        },
+    )
+    assert adapter.calendar_event("F1_2023_R14", root)["race_name"] == "Italian Grand Prix"
+    assert adapter.calendar_event("F1_2023_R15", root)["race_name"] == "Singapore Grand Prix"
+    assert len(verified) == 2
+
+
+def test_saved_nomination_repair_and_processed_audit(monkeypatch):
+    root = Path(__file__).resolve().parents[2]
+    monkeypatch.syspath_prepend(str(root / "research/scripts"))
+    auditor = importlib.import_module("audit_compound_processed")
+    folder = root / "docs/verification"
+    corrected = auditor.read_json(folder / "compound-v21-nominations.json")
+    sources = {event: values for source in corrected["sources"] for event, values in source["events"].items()}
+    assert sources["F1_2023_R14"] == sources["F1_2023_R15"] == [3, 4, 5]
+    receipt = auditor.audit(
+        auditor.read_json(folder / "compound-v21-processed-data.json"),
+        auditor.read_json(folder / "compound-v21-development.json"),
+    )
+    assert receipt["audit_passed"]
+    assert receipt["forecasts_verified"] == 784

@@ -2,10 +2,12 @@
 
 import argparse
 from hashlib import sha256
+from math import log1p
 from pathlib import Path
 
 import numpy as np
 from apexsim.provenance import write_manifest
+from apexsim.research.compound_allocation import features, inventory
 from apexsim.research.evidence import check_seal, read_json, seal
 from apexsim.research.tracing_telemetry import processed_features
 from diagnose_compound_decision import ROOT
@@ -14,7 +16,17 @@ from diagnose_compound_practice import practice_inputs
 
 
 def study(path: Path) -> dict:
-    data, parent, _, _, matrix = practice_inputs()
+    data, parent, practice, _, _ = practice_inputs()
+    nominations = read_json(ROOT / "docs/verification/compound-v21-nominations.json")
+    check_seal(nominations)
+    allocation = inventory(nominations["sources"], set(data["sources"]))
+    matrix = []
+    for row in data["cases"]:
+        x = features(row, allocation, True)
+        for compound in row["compounds"]:
+            value = practice["events"][str(row["session"])][compound]
+            x.extend([value["drift_s"] or 0.0, log1p(value["drivers"])])
+        matrix.append(x)
     inputs = read_json(path)
     check_seal(inputs)
     if inputs["dataset_sha256"] != data["content_sha256"]:
@@ -26,11 +38,13 @@ def study(path: Path) -> dict:
         ]
     )
     result = evaluate(data["cases"], data["sources"], x)
+    control = evaluate(data["cases"], data["sources"], np.asarray(matrix))
     paths = [
         Path(__file__),
         ROOT / "research/scripts/prepare_compound_processed.py",
         ROOT / "apex_engine/src/apexsim/research/tracing_telemetry.py",
         ROOT / "research/protocols/COMPOUND_PROCESSED_V20.md",
+        ROOT / "research/protocols/COMPOUND_SOURCE_RECOVERY_V21.md",
     ]
     hashes = {
         p.relative_to(ROOT).as_posix(): sha256(
@@ -40,12 +54,14 @@ def study(path: Path) -> dict:
     }
     return seal(
         {
-            "schema": "compound-processed-model-v20",
+            "schema": "compound-processed-model-v21",
             "dataset_sha256": data["content_sha256"],
             "processed_sha256": inputs["content_sha256"],
             "v13_parent_sha256": parent["content_sha256"],
             "hashes": hashes,
             "result": result,
+            "control": control,
+            "correction_sha256": nominations["content_sha256"],
             "prediction_qualified": result["qualified"],
             "development_qualified": False,
             "native_provenance_known": False,
