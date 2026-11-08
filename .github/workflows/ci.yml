@@ -41,6 +41,8 @@ jobs:
         run: python research/scripts/audit_compound_unpaired.py --output .cache/ci-compound-v14-audit.json
       - name: Independently check traffic, in-race feedback and pre-race practice decisions
         run: python research/scripts/audit_compound_race_context.py --output .cache/ci-compound-context-audit.json
+      - name: Independently replay driving-state observations and acquisition gates
+        run: python research/scripts/audit_compound_driving.py --output .cache/ci-compound-driving-audit.json
       - name: Test
         working-directory: apex_engine
         run: pytest -q

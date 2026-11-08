@@ -1,0 +1,20 @@
+{
+  "acquisition_ready": false,
+  "audit_passed": true,
+  "content_sha256": "bbf931d5d83320ff968877f3bddab791219fefd0060fca8ea382293c6da9224e",
+  "development_qualified": false,
+  "driving_feature_values_verified": 9016,
+  "driving_sha256": "76c5dd6d07c5f451495f998466bf4cca4874b91fbe5b3df9a7279c42971583ce",
+  "forecasts_verified": 392,
+  "race_gates": {
+    "event_labels": 48,
+    "failed_races": 14,
+    "forecasts": 392,
+    "macro_mae_s": 0.4335152150853101,
+    "qualified": false,
+    "result_sha256": "2dd89b47a9464dbb9c4c8366ea38e00a6e4a28055a0fd455fcd94ade2bc59c05"
+  },
+  "result_sha256": "2dd89b47a9464dbb9c4c8366ea38e00a6e4a28055a0fd455fcd94ade2bc59c05",
+  "schema": "compound-driving-scalar-audit-v19",
+  "scope": "STORED_LAP_SUMMARIES_FEATURE_ARITHMETIC_CHECKPOINT_INFERENCE_AND_GATES"
+}
