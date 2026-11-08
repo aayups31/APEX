@@ -1,0 +1,21 @@
+{
+  "content_sha256": "2a2307a703da7e9264099eee8394d7d84482f039e8972015092e96731d4e747e",
+  "jobs": [
+    {
+      "all_steps_passed": true,
+      "job_id": 128516832658,
+      "name": "Python 3.11",
+      "tests_passed": 849
+    },
+    {
+      "all_steps_passed": true,
+      "job_id": 128516832871,
+      "name": "Python 3.12",
+      "tests_passed": 849
+    }
+  ],
+  "run_id": 42410317962,
+  "schema": "compound-v18-final-ci",
+  "source_commit": "8f9e26b46a1be4e588806c59e82f2c4f309e133a",
+  "status": "SUCCESS"
+}

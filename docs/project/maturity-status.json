@@ -510,7 +510,7 @@
         ]
       }
     ],
-    "source_ci_passed": false,
+    "source_ci_passed": true,
     "next_required_work": "Establish forecast-time driving-state telemetry coverage and cross-race predictive value; all registered timing-context candidates failed.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
@@ -599,29 +599,25 @@
     },
     "prior_v12_report": "docs/verification/compound-v12-decision-review.md",
     "source_ci": {
-      "commit": "ae557d9c18c0b940553e8a3a2a08b370dce41c1b",
-      "run_id": 42315107551,
-      "status": "PRIOR_SOURCE_SUCCESS_LATEST_PENDING",
+      "schema": "compound-v18-final-ci",
+      "source_commit": "8f9e26b46a1be4e588806c59e82f2c4f309e133a",
+      "run_id": 42410317962,
+      "status": "SUCCESS",
       "jobs": [
         {
-          "job_id": 128225675057,
-          "name": "Python 3.12",
-          "status": "completed",
-          "conclusion": "success",
-          "all_steps_passed": true,
-          "tests_passed": 840,
-          "test_seconds": 415.86
+          "name": "Python 3.11",
+          "job_id": 128516832658,
+          "tests_passed": 849,
+          "all_steps_passed": true
         },
         {
-          "job_id": 128225675248,
-          "name": "Python 3.11",
-          "status": "completed",
-          "conclusion": "success",
-          "all_steps_passed": true,
-          "tests_passed": 840,
-          "test_seconds": 617.72
+          "name": "Python 3.12",
+          "job_id": 128516832871,
+          "tests_passed": 849,
+          "all_steps_passed": true
         }
-      ]
+      ],
+      "content_sha256": "2a2307a703da7e9264099eee8394d7d84482f039e8972015092e96731d4e747e"
     },
     "additional_training_windows": 985,
     "unique_current_training_windows": 1370,
@@ -633,7 +629,8 @@
       "development_qualified": false,
       "report": "docs/verification/compound-v17-development.json"
     },
-    "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json"
+    "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json",
+    "last_pass_review": "docs/verification/compound-v18-final-ci.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
