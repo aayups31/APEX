@@ -135,9 +135,9 @@ nominal tracking RMSE23.6% versus R035. All eight final cases pass and44 saved
 comparator/refinement runs reproduce exactly. Worst nominal peak error rises
 from.326m to.383m; source pace remains unvalidated. All713 tests pass locally and
 on Python3.11/3.12 CI. R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling passed its replay gate. R041 compound crossover remains open.
-The [R041 driving-state review](docs/verification/compound-v19-report.md)
-records verified driving observations for 91/392 cases and the source access
-restriction affecting the remainder. Prediction acceptance still fails.
+The [R041 adapter review](docs/verification/compound-v21-report.md)
+records the free processed-data adapter, calendar and nomination repairs,
+and full-cohort evaluation. Prediction acceptance still fails.
 
 
 ---
