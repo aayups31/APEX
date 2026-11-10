@@ -67,7 +67,9 @@ The profile extraction, v24 fuel sensitivity and same-phase support audit
 replay byte-for-byte from local native archives. The v24 and v25 model
 refits also reproduce exactly locally. On GitHub, Python 3.11 and 3.12
 each pass 900 tests, both forecast replays, the package builds, and every
-simulator verification step. [Verification receipt](compound-v25-final-review.json).
+simulator verification step. The local Windows run on Python 3.12.12
+also passes all 900 tests, with two dependency deprecation warnings.
+[Verification receipt](compound-v25-final-review.json).
 
 ```text
 python research/scripts/compound_speed_profile.py --output <fresh-profiles.json>

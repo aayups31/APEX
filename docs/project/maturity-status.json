@@ -697,7 +697,14 @@
     "native_supported_cases": 390,
     "native_driver_histories": 228,
     "pit_exit_age_audit": "docs/verification/compound-v23-pit-exit-panel.json",
-    "last_pass_review": "docs/verification/compound-v25-final-review.json"
+    "last_pass_review": "docs/verification/compound-v25-final-review.json",
+    "local_full_regression": {
+      "platform": "Windows",
+      "python_version": "3.12.12",
+      "passed": 900,
+      "warnings": 2,
+      "seconds": 1471.05
+    }
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",
