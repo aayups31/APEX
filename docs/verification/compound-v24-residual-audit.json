@@ -1,0 +1,4933 @@
+{
+  "cases": [
+    {
+      "event": "10006",
+      "index": 0,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 1,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 2,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 3,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 4,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 5,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 6,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 7,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 8,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 9,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 10,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 11,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 12,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 13,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 14,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 15,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 16,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 17,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 18,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10006",
+      "index": 19,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 20,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 21,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 22,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 23,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 24,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 25,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 26,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 27,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 28,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 29,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 30,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 31,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 32,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 33,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 34,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 35,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 36,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 37,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10014",
+      "index": 38,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 39,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 40,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 41,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 42,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 43,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 44,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 45,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 46,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 47,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 48,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 49,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 50,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 51,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "10022",
+      "index": 52,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 53,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 54,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 55,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 56,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 57,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 58,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 59,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 60,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 61,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 62,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 63,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 64,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 65,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 66,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 67,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 68,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 69,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 70,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 71,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 72,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 73,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 74,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 75,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 76,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9839",
+      "index": 77,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 78,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 79,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 80,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 81,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 82,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 83,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 84,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 85,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 86,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 87,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 88,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 89,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9850",
+      "index": 90,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 91,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 92,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 93,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 94,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 95,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 96,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 97,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 98,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 99,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 100,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 101,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 102,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 103,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 104,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 105,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 106,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 107,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 108,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 109,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 110,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 111,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 112,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 113,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 114,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 115,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 116,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 117,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 118,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 119,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 120,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 121,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 122,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9877",
+      "index": 123,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 124,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 125,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 126,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 127,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 128,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 129,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 130,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 131,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 132,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 133,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 134,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 135,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 136,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 137,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 138,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 139,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 140,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 141,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9888",
+      "index": 142,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 143,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 144,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 145,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 146,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 147,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 148,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 149,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 150,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 151,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 152,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 153,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 154,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 155,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 156,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 157,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 158,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 159,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 160,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 161,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 162,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 163,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 164,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 165,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9896",
+      "index": 166,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 167,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 168,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 169,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 170,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 171,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 172,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 173,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 174,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 175,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 176,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 177,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9912",
+      "index": 178,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 179,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 180,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 181,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 182,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 183,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 184,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 185,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 186,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 187,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9920",
+      "index": 188,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 189,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 190,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 191,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 192,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 193,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 194,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 195,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 196,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 197,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 198,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 199,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 200,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 201,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 202,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 203,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 204,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 205,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 206,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 207,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 208,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 209,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 210,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 211,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 212,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 213,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 214,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 215,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 216,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 217,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 218,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 219,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 220,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 221,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 222,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 223,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9928",
+      "index": 224,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 225,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 226,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 227,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 228,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 229,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 230,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 231,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 232,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 233,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 234,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 235,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 236,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 237,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 238,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 239,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 240,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 241,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 242,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 243,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 244,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 245,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 246,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 247,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 248,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 249,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 250,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 251,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9955",
+      "index": 252,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 253,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 254,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 255,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 256,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 257,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 258,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 259,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 260,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 261,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 262,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 263,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9963",
+      "index": 264,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 265,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 266,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 267,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 268,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 269,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 270,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 271,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 272,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 273,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 274,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 275,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 276,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 277,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 278,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 279,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 280,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 281,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9971",
+      "index": 282,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 283,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 284,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 285,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 286,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 287,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 288,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 289,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 290,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9987",
+      "index": 291,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 292,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 293,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 294,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 295,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 296,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 297,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 298,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 299,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 300,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "9998",
+      "index": 301,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R01",
+      "index": 302,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R01",
+      "index": 303,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R01",
+      "index": 304,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R01",
+      "index": 305,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 306,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 307,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 308,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 309,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 310,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 311,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 312,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 313,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 314,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 315,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 316,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 317,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 318,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 319,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R14",
+      "index": 320,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 321,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 322,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 323,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 324,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 325,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 326,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 327,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 328,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 329,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 330,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 331,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 332,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 333,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2023_R15",
+      "index": 334,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R01",
+      "index": 335,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R01",
+      "index": 336,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R01",
+      "index": 337,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R01",
+      "index": 338,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 339,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 340,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 341,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 342,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 343,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 344,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 345,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 346,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R03",
+      "index": 347,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 348,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 349,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 350,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 351,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 352,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R06",
+      "index": 353,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 354,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 355,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 356,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 357,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 358,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 359,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 360,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 361,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 362,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 363,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 364,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 365,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R16",
+      "index": 366,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 367,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 368,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 369,
+      "observed": [
+        true,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 370,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 371,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 372,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 373,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 374,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 375,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 376,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 377,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 378,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 379,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 380,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 381,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 382,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 383,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 384,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 385,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 386,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 387,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 388,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 389,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        true,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 390,
+      "observed": [
+        false,
+        false
+      ],
+      "stable": [
+        false,
+        true
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 391,
+      "observed": [
+        false,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    },
+    {
+      "event": "F1_2024_R18",
+      "index": 392,
+      "observed": [
+        true,
+        true
+      ],
+      "stable": [
+        false,
+        false
+      ]
+    }
+  ],
+  "content_sha256": "3cbdafd474898393f251387f01b70c06d91d0f339c5c5f8bfc94d0e86115a34a",
+  "dataset_sha256": "436391f52e88c48e4f835d09a5aa2edbaf83f0a8644ba081ad42bf5f12cc2483",
+  "decisions": {
+    "native_ridge": {
+      "fuel_sensitive": {
+        "label_confusion": [
+          {
+            "0->0": 76,
+            "0->1": 11,
+            "1->0": 25,
+            "1->1": 40
+          },
+          {
+            "0->0": 74,
+            "0->1": 10,
+            "1->0": 23,
+            "1->1": 35
+          }
+        ],
+        "races_with_errors": [
+          "10014",
+          "9839",
+          "9877",
+          "9888",
+          "9896",
+          "9920",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "9998",
+          "F1_2023_R14",
+          "F1_2024_R16",
+          "F1_2024_R18"
+        ]
+      },
+      "fuel_stable": {
+        "label_confusion": [
+          {
+            "0->0": 195,
+            "0->1": 17,
+            "1->0": 18,
+            "1->1": 11
+          },
+          {
+            "0->0": 199,
+            "0->1": 21,
+            "1->0": 21,
+            "1->1": 10
+          }
+        ],
+        "races_with_errors": [
+          "10014",
+          "9839",
+          "9877",
+          "9896",
+          "9920",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "9998",
+          "F1_2023_R14",
+          "F1_2023_R15",
+          "F1_2024_R18"
+        ]
+      }
+    },
+    "nomination_practice_ridge": {
+      "fuel_sensitive": {
+        "label_confusion": [
+          {
+            "0->0": 74,
+            "0->1": 13,
+            "1->0": 29,
+            "1->1": 36
+          },
+          {
+            "0->0": 76,
+            "0->1": 8,
+            "1->0": 28,
+            "1->1": 30
+          }
+        ],
+        "races_with_errors": [
+          "10014",
+          "9839",
+          "9877",
+          "9888",
+          "9896",
+          "9920",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "F1_2023_R14",
+          "F1_2024_R16",
+          "F1_2024_R18"
+        ]
+      },
+      "fuel_stable": {
+        "label_confusion": [
+          {
+            "0->0": 190,
+            "0->1": 22,
+            "1->0": 17,
+            "1->1": 12
+          },
+          {
+            "0->0": 198,
+            "0->1": 22,
+            "1->0": 20,
+            "1->1": 11
+          }
+        ],
+        "races_with_errors": [
+          "10014",
+          "9839",
+          "9877",
+          "9888",
+          "9896",
+          "9912",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "9998",
+          "F1_2023_R14",
+          "F1_2023_R15",
+          "F1_2024_R18"
+        ]
+      }
+    },
+    "robust_native": {
+      "fuel_sensitive": {
+        "label_confusion": [
+          {
+            "0->0": 76,
+            "0->1": 11,
+            "1->0": 29,
+            "1->1": 36
+          },
+          {
+            "0->0": 77,
+            "0->1": 7,
+            "1->0": 26,
+            "1->1": 32
+          }
+        ],
+        "races_with_errors": [
+          "9839",
+          "9877",
+          "9888",
+          "9896",
+          "9920",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "F1_2023_R14",
+          "F1_2024_R16",
+          "F1_2024_R18"
+        ]
+      },
+      "fuel_stable": {
+        "label_confusion": [
+          {
+            "0->0": 195,
+            "0->1": 17,
+            "1->0": 17,
+            "1->1": 12
+          },
+          {
+            "0->0": 201,
+            "0->1": 19,
+            "1->0": 20,
+            "1->1": 11
+          }
+        ],
+        "races_with_errors": [
+          "10014",
+          "9839",
+          "9877",
+          "9888",
+          "9896",
+          "9920",
+          "9928",
+          "9955",
+          "9963",
+          "9971",
+          "9987",
+          "9998",
+          "F1_2023_R14",
+          "F1_2023_R15",
+          "F1_2024_R18"
+        ]
+      }
+    }
+  },
+  "fuel_range_s_per_kg": [
+    0.02,
+    0.04
+  ],
+  "result_sha256": "e3e3af5273151a218ff6f4219101c8501096bd6ecc68af19fa8fcec37505d022",
+  "schema": "compound-pit-exit-residual-audit-v24",
+  "scope": "DIAGNOSTIC_ONLY_REGISTERED_FORECAST_AND_GATE_PRESERVED",
+  "sensitive_cases": 174,
+  "source_sha256_lf": "6986080a31178876ca4f4bcb6ddc7d3a106b6c601c4384655ed831a60d8eae6a"
+}
