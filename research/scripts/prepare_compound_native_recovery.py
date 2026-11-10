@@ -94,7 +94,9 @@ def prepare(root: Path, cache: Path, client: OpenF1Client | None) -> dict:
             if (
                 query != broad
                 and len(samples)
-                and (samples[0, 0] < start - 2e-6 or samples[-1, 0] >= end)
+                and (
+                    samples[0, 0] < start - 0.001002 or samples[-1, 0] > end + 0.001002
+                )
             ):
                 raise ValueError("Native telemetry response ignored query bounds")
             sources[event]["drivers"][str(driver)] = binding

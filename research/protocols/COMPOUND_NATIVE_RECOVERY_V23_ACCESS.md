@@ -15,3 +15,8 @@ delimiter. Using date>= as the key encodes an extra equals. The corrected query
 returns HTTP 200. Keep already sealed session/driver responses. Use corrected
 time bounds for remaining drivers, and preserve identical local lap slicing for
 both response types. This acquisition fix precedes any v23 model score.
+
+The service truncates sub-millisecond filter bounds to its millisecond clock.
+Permit one millisecond plus the two-microsecond encoding allowance when
+checking response envelopes. Exact local half-open lap masks still determine
+which observations contribute to every summary.
