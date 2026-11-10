@@ -1,0 +1,38 @@
+{
+  "artifact_sha256_lf": {
+    "compound-v22-canada-boundaries.json": "9f2b1ccbaafcc7f0fc233b18d3192bc3ec612a4e29caad3be4100c54e9d33754",
+    "compound-v22-development.json": "eb27b45043f9de2fde8d11531012508031ee5d40be3993c174f633769f75654e",
+    "compound-v22-residuals.json": "859f3c44a588afab098434e1c030eb6f4a57740425b0b19669e01244df29432a",
+    "compound-v22-sector-data.json": "999cd032fbd91187bf37245e615a8a0a0838303b7b0e2a5d8f97f08f3002aa83",
+    "compound-v23-development.json": "7babdd18c20be64d96fe863945f8177a1a508428206fc5e07961c509cc037b31",
+    "compound-v23-native-data.json": "78e81e96ab5508d94e0bc1955a9b0b996a8171d4de20b414b68ecaa7a4602c88",
+    "compound-v23-pit-exit-panel.json": "dc4ce56119e31894222cb14912df16816cdca83598ac4abfca0b908e533775fb"
+  },
+  "candidate_accepted": false,
+  "content_sha256": "aefde89be656572d14f3a9964640499233500915af0c785c2623b2fd8e0bf27c",
+  "exact_native_extraction_replay": true,
+  "exact_native_model_replay": true,
+  "exact_sector_model_replay": true,
+  "jobs": [
+    {
+      "all_steps_passed": true,
+      "job_id": 130174090636,
+      "name": "Python 3.12",
+      "tests_passed": 893
+    },
+    {
+      "all_steps_passed": true,
+      "job_id": 130174091332,
+      "name": "Python 3.11",
+      "tests_passed": 893
+    }
+  ],
+  "new_holdout_acquisition_allowed": false,
+  "prediction_qualified": false,
+  "production_promotion": false,
+  "run_id": 42914722779,
+  "schema": "compound-v23-final-review",
+  "source_commit": "57f8de9d5e87184296ea57a1b285b59a20b7d293",
+  "status": "SUCCESS",
+  "url": "https://github.com/aayups31/APEX/actions/runs/42914722779"
+}

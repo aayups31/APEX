@@ -82,8 +82,11 @@ python research/scripts/diagnose_compound_native_recovery.py --data <fresh-nativ
 ```
 
 The native cache preserves exact HTTP bodies and sealed request receipts.
-The native extraction and sector refit replay exactly. Full CI covers prior
-audits, both new refits, package builds, regressions and simulator checks.
+The native extraction and both model refits replay exactly. Final source
+57f8de9 passes 893 tests on each of Python 3.11 and 3.12, both package builds,
+the prior and current audits, and every simulator verification step.
+[Final review](compound-v23-final-review.json),
+[completed CI](https://github.com/aayups31/APEX/actions/runs/42914722779).
 
 [Residual ledger](compound-v22-residuals.json),
 [sector results](compound-v22-development.json),
