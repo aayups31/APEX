@@ -44,8 +44,8 @@ comparisons. The remaining three keep explicit missing support.
 Each fit excludes the entire test race. All models emit three lap times
 from which both crossover decisions are derived. The independent audit
 replays each checkpoint and all 48 race-label gate sets per model. The
-maximum scaled gradient of the robust fit is (4.982 \times 10^{-8}), within
-the registered (10^{-7}) tolerance. The robust fit improves mean error
+maximum scaled gradient of the robust fit is 4.982 × 10⁻⁸, within
+the registered 10⁻⁷ tolerance. The robust fit improves mean error
 slightly relative to the corrected native ridge and passes one fewer race.
 
 ## Fuel assumption diagnostic

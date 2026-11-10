@@ -51,6 +51,8 @@ jobs:
         run: python research/scripts/diagnose_compound_native_recovery.py --data docs/verification/compound-v23-native-data.json --output .cache/ci-compound-native-recovery.json
       - name: Refit pit-exit forecasts and verify model checkpoints and race gates
         run: python research/scripts/diagnose_compound_pit_exit.py --data docs/verification/compound-v24-cohort.json --telemetry docs/verification/compound-v24-telemetry.json --expected docs/verification/compound-v24-development.json --output .cache/ci-compound-pit-exit.json
+      - name: Refit distance-aligned speed profiles and verify race gates
+        run: python research/scripts/compound_speed_profile.py --profiles docs/verification/compound-v25-speed-profiles.json --expected docs/verification/compound-v25-development.json --output .cache/ci-compound-speed-profile.json
       - name: Test
         working-directory: apex_engine
         run: pytest -q
