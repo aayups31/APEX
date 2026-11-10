@@ -1,5 +1,6 @@
 import importlib
 import json
+from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -7,6 +8,18 @@ import pytest
 import requests
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def test_bounded_native_query_uses_request_delimiters(monkeypatch):
+    monkeypatch.syspath_prepend(str(ROOT / "research/scripts"))
+    recovery = importlib.import_module("prepare_compound_native_recovery")
+    query = recovery.bounded_query(10006, 4, 100.0, 200.0)
+    assert datetime.fromisoformat(query["date>"]).timestamp() < 100
+    assert datetime.fromisoformat(query["date<"]).timestamp() == 200
+    request = requests.Request("GET", "https://api.openf1.org/v1/car_data", params=query).prepare()
+    assert "date%3E=" in request.url
+    assert "date%3C=" in request.url
+    assert "date%3E%3D=" not in request.url
 
 
 @pytest.fixture

@@ -8,3 +8,10 @@ driver history locally at the original completed lap clocks. Future observations
 cannot enter per-case summaries. Retain all other v19 extraction and v23 model
 rules. Existing verified native FastF1 summaries can be reused with their
 sealed parent binding and exact original cohort.
+
+The follow-up request isolates the HTTP 500 to a malformed lower-bound key.
+With requests' query encoder, the key is date> and the encoder adds the equals
+delimiter. Using date>= as the key encodes an extra equals. The corrected query
+returns HTTP 200. Keep already sealed session/driver responses. Use corrected
+time bounds for remaining drivers, and preserve identical local lap slicing for
+both response types. This acquisition fix precedes any v23 model score.

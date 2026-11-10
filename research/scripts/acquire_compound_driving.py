@@ -10,8 +10,8 @@ from pathlib import Path
 import requests
 from apexsim.data.openf1_http import DownloadPolicy, OpenF1Client
 from apexsim.provenance import write_manifest
-from compound_driving_data import prepare
 from diagnose_compound_decision import ROOT
+from prepare_compound_native_recovery import prepare
 
 
 def obtain_token(username: str, password: str) -> str:
