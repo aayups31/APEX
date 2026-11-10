@@ -1,0 +1,46 @@
+{
+  "artifact_sha256_lf": {
+    "compound-same-phase-connected-support.json": "bb18db2ed6556a1d347ce7c8eb3e30bdd008015c16e2e817b0c836f6be222df8",
+    "compound-v24-cohort.json": "0adae82d5381a3177b6f3035f24abc61cc87f4f02510a5b833d7134d7655aeff",
+    "compound-v24-development.json": "8e7f05032514c688ddf1b295cd014f12400ab75efabfb2d39971c4502d91903c",
+    "compound-v24-residual-audit.json": "2683fb3ab407d4616c2890741eb4e0e9e7ab3613fd5041fa01723649e57f0512",
+    "compound-v24-telemetry.json": "5f9403e6770db6dba19d665e2d39f07e6f8f045069c555c923e626a01849a486",
+    "compound-v25-development.json": "0debd8b247bddd6013455602fdd6d33a6e4cba46c04c9a9cbda24f5b88ea5107",
+    "compound-v25-speed-profiles.json": "4ab3b38876116d2554afc0e522156ea6e22364b18c85fd249a0bd68907da2a94"
+  },
+  "candidate_accepted": false,
+  "content_sha256": "139bbd26de9898d61f2c2e32fd2afeb778bb3e4e14bfe580e3d27800cc7374b5",
+  "exact_local_replay_artifacts": [
+    "compound-v24-cohort.json",
+    "compound-v24-telemetry.json",
+    "compound-v24-development.json",
+    "compound-v24-residual-audit.json",
+    "compound-v25-speed-profiles.json",
+    "compound-v25-development.json",
+    "compound-same-phase-connected-support.json"
+  ],
+  "jobs": [
+    {
+      "all_steps_passed": true,
+      "job_id": 130195632158,
+      "name": "Python 3.11",
+      "test_seconds": 417.89,
+      "tests_passed": 900
+    },
+    {
+      "all_steps_passed": true,
+      "job_id": 130195631768,
+      "name": "Python 3.12",
+      "test_seconds": 463.37,
+      "tests_passed": 900
+    }
+  ],
+  "new_holdout_acquisition_allowed": false,
+  "prediction_qualified": false,
+  "production_promotion": false,
+  "run_id": 42921036905,
+  "schema": "compound-v25-final-review",
+  "source_commit": "e5ebe70bc9ffe233348097b40ae7132b4fb93007",
+  "status": "SUCCESS",
+  "url": "https://github.com/aayups31/APEX/actions/runs/42921036905"
+}

@@ -471,15 +471,15 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v23_full_native_driving",
-    "decision": "REJECT_FULL_NATIVE_DRIVING",
-    "report": "docs/verification/compound-v23-report.md",
-    "development_summary": "docs/verification/compound-v23-development.json",
+    "candidate": "v25_distance_aligned_native_speed",
+    "decision": "REJECT_DISTANCE_ALIGNED_NATIVE_SPEED",
+    "report": "docs/verification/compound-v25-report.md",
+    "development_summary": "docs/verification/compound-v25-development.json",
     "candidate_passed": false,
     "development_qualified": false,
     "production_promotion": false,
     "new_holdout_acquisition_allowed": false,
-    "training_windows": 392,
+    "training_windows": 393,
     "training_source_events": 28,
     "training_supported_events": 24,
     "failed_development_events": [
@@ -490,10 +490,10 @@
       "9912",
       "9920",
       "9928",
+      "9963",
       "9971",
       "9987",
       "9998",
-      "F1_2023_R01",
       "F1_2023_R14",
       "F1_2023_R15",
       "F1_2024_R16",
@@ -510,7 +510,7 @@
       }
     ],
     "source_ci_passed": true,
-    "next_required_work": "Freeze and independently audit a pit-out-anchored cohort rebuild before refitting the matched control and any new candidate.",
+    "next_required_work": "Test causal driver controls in the small same-phase development cohort, seek independent measured vehicle state or stronger controls for broader coverage, and require a complete development pass before fresh confirmation.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -598,47 +598,55 @@
     },
     "prior_v12_report": "docs/verification/compound-v12-decision-review.md",
     "source_ci": {
-      "schema": "compound-v23-final-review",
-      "source_commit": "57f8de9d5e87184296ea57a1b285b59a20b7d293",
-      "run_id": 42914722779,
-      "url": "https://github.com/aayups31/APEX/actions/runs/42914722779",
-      "status": "SUCCESS",
+      "artifact_sha256_lf": {
+        "compound-same-phase-connected-support.json": "bb18db2ed6556a1d347ce7c8eb3e30bdd008015c16e2e817b0c836f6be222df8",
+        "compound-v24-cohort.json": "0adae82d5381a3177b6f3035f24abc61cc87f4f02510a5b833d7134d7655aeff",
+        "compound-v24-development.json": "8e7f05032514c688ddf1b295cd014f12400ab75efabfb2d39971c4502d91903c",
+        "compound-v24-residual-audit.json": "2683fb3ab407d4616c2890741eb4e0e9e7ab3613fd5041fa01723649e57f0512",
+        "compound-v24-telemetry.json": "5f9403e6770db6dba19d665e2d39f07e6f8f045069c555c923e626a01849a486",
+        "compound-v25-development.json": "0debd8b247bddd6013455602fdd6d33a6e4cba46c04c9a9cbda24f5b88ea5107",
+        "compound-v25-speed-profiles.json": "4ab3b38876116d2554afc0e522156ea6e22364b18c85fd249a0bd68907da2a94"
+      },
+      "candidate_accepted": false,
+      "content_sha256": "139bbd26de9898d61f2c2e32fd2afeb778bb3e4e14bfe580e3d27800cc7374b5",
+      "exact_local_replay_artifacts": [
+        "compound-v24-cohort.json",
+        "compound-v24-telemetry.json",
+        "compound-v24-development.json",
+        "compound-v24-residual-audit.json",
+        "compound-v25-speed-profiles.json",
+        "compound-v25-development.json",
+        "compound-same-phase-connected-support.json"
+      ],
       "jobs": [
         {
-          "name": "Python 3.12",
-          "job_id": 130174090636,
           "all_steps_passed": true,
-          "tests_passed": 893
+          "job_id": 130195632158,
+          "name": "Python 3.11",
+          "test_seconds": 417.89,
+          "tests_passed": 900
         },
         {
-          "name": "Python 3.11",
-          "job_id": 130174091332,
           "all_steps_passed": true,
-          "tests_passed": 893
+          "job_id": 130195631768,
+          "name": "Python 3.12",
+          "test_seconds": 463.37,
+          "tests_passed": 900
         }
       ],
-      "exact_native_extraction_replay": true,
-      "exact_native_model_replay": true,
-      "exact_sector_model_replay": true,
-      "artifact_sha256_lf": {
-        "compound-v22-residuals.json": "859f3c44a588afab098434e1c030eb6f4a57740425b0b19669e01244df29432a",
-        "compound-v22-sector-data.json": "999cd032fbd91187bf37245e615a8a0a0838303b7b0e2a5d8f97f08f3002aa83",
-        "compound-v22-development.json": "eb27b45043f9de2fde8d11531012508031ee5d40be3993c174f633769f75654e",
-        "compound-v22-canada-boundaries.json": "9f2b1ccbaafcc7f0fc233b18d3192bc3ec612a4e29caad3be4100c54e9d33754",
-        "compound-v23-native-data.json": "78e81e96ab5508d94e0bc1955a9b0b996a8171d4de20b414b68ecaa7a4602c88",
-        "compound-v23-development.json": "7babdd18c20be64d96fe863945f8177a1a508428206fc5e07961c509cc037b31",
-        "compound-v23-pit-exit-panel.json": "dc4ce56119e31894222cb14912df16816cdca83598ac4abfca0b908e533775fb"
-      },
-      "prediction_qualified": false,
-      "candidate_accepted": false,
-      "production_promotion": false,
       "new_holdout_acquisition_allowed": false,
-      "content_sha256": "aefde89be656572d14f3a9964640499233500915af0c785c2623b2fd8e0bf27c"
+      "prediction_qualified": false,
+      "production_promotion": false,
+      "run_id": 42921036905,
+      "schema": "compound-v25-final-review",
+      "source_commit": "e5ebe70bc9ffe233348097b40ae7132b4fb93007",
+      "status": "SUCCESS",
+      "url": "https://github.com/aayups31/APEX/actions/runs/42921036905"
     },
     "additional_training_windows": 985,
     "unique_current_training_windows": 1370,
     "verification_report": "docs/verification/compound-v14-audit.json",
-    "best_tested_development_candidate": {
+    "best_tested_original_cohort_candidate": {
       "candidate": "v21_corrected_nomination_practice_control",
       "supported_events_passed": 11,
       "supported_events": 24,
@@ -646,7 +654,25 @@
       "report": "docs/verification/compound-v21-development.json"
     },
     "prior_v14_last_pass_review": "docs/verification/compound-v14-last-pass-review.json",
-    "last_pass_review": "docs/verification/compound-v23-final-review.json",
+    "prior_v23_last_pass_review": "docs/verification/compound-v23-final-review.json",
+    "pit_exit_cohort": {
+      "report": "docs/verification/compound-v24-report.md",
+      "cohort": "docs/verification/compound-v24-cohort.json",
+      "development_summary": "docs/verification/compound-v24-development.json",
+      "reanchored_stints": 29,
+      "changed_event": "9963",
+      "fuel_sensitive_cases": 174,
+      "fuel_sensitivity_audit": "docs/verification/compound-v24-residual-audit.json"
+    },
+    "distance_aligned_speed_supported_cases": 377,
+    "same_phase_support": {
+      "report": "docs/verification/compound-same-phase-connected-support.json",
+      "candidate_windows": 882,
+      "direct_control_windows": 49,
+      "connected_control_windows": 72,
+      "connected_control_races": 8,
+      "outcomes_scored": false
+    },
     "alternative_archive_investigation": {
       "report": "docs/verification/compound-tracing-review.md",
       "repository": "TracingInsights/2025",
@@ -668,9 +694,10 @@
     "prior_native_driving_supported_cases": 91,
     "prior_native_driving_missing_cases": 301,
     "source_recovery_review": "docs/verification/compound-v21-source-recovery.json",
-    "native_supported_cases": 389,
+    "native_supported_cases": 390,
     "native_driver_histories": 228,
-    "pit_exit_age_audit": "docs/verification/compound-v23-pit-exit-panel.json"
+    "pit_exit_age_audit": "docs/verification/compound-v23-pit-exit-panel.json",
+    "last_pass_review": "docs/verification/compound-v25-final-review.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

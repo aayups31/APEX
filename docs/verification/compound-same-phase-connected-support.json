@@ -1,0 +1,285 @@
+{
+  "content_sha256": "730f586e84a51666f08c4423c2ec047950dfd727394ee4c5c9a12c293b4f5548",
+  "dataset_sha256": "436391f52e88c48e4f835d09a5aa2edbaf83f0a8644ba081ad42bf5f12cc2483",
+  "events": {
+    "10006": {
+      "candidate_windows": 48,
+      "driver_pairs": 43,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "10014": {
+      "candidate_windows": 40,
+      "driver_pairs": 32,
+      "driver_pairs_with_connected_prior_controls": 28,
+      "driver_pairs_with_prior_controls": 11,
+      "shortest_prior_control_paths": {
+        "1": 11,
+        "2": 6,
+        "3": 6,
+        "4": 1,
+        "5": 4
+      },
+      "windows_with_connected_prior_controls": 28,
+      "windows_with_six_prior_controls": 11
+    },
+    "10022": {
+      "candidate_windows": 31,
+      "driver_pairs": 29,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "10033": {
+      "candidate_windows": 19,
+      "driver_pairs": 19,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9839": {
+      "candidate_windows": 34,
+      "driver_pairs": 34,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9850": {
+      "candidate_windows": 48,
+      "driver_pairs": 41,
+      "driver_pairs_with_connected_prior_controls": 27,
+      "driver_pairs_with_prior_controls": 27,
+      "shortest_prior_control_paths": {
+        "1": 27
+      },
+      "windows_with_connected_prior_controls": 27,
+      "windows_with_six_prior_controls": 27
+    },
+    "9858": {
+      "candidate_windows": 0,
+      "driver_pairs": 0,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9877": {
+      "candidate_windows": 84,
+      "driver_pairs": 56,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9888": {
+      "candidate_windows": 31,
+      "driver_pairs": 28,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9896": {
+      "candidate_windows": 32,
+      "driver_pairs": 25,
+      "driver_pairs_with_connected_prior_controls": 3,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {
+        "3": 3
+      },
+      "windows_with_connected_prior_controls": 3,
+      "windows_with_six_prior_controls": 0
+    },
+    "9912": {
+      "candidate_windows": 60,
+      "driver_pairs": 38,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9920": {
+      "candidate_windows": 90,
+      "driver_pairs": 83,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9928": {
+      "candidate_windows": 64,
+      "driver_pairs": 51,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9947": {
+      "candidate_windows": 0,
+      "driver_pairs": 0,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9955": {
+      "candidate_windows": 4,
+      "driver_pairs": 2,
+      "driver_pairs_with_connected_prior_controls": 1,
+      "driver_pairs_with_prior_controls": 1,
+      "shortest_prior_control_paths": {
+        "1": 2
+      },
+      "windows_with_connected_prior_controls": 2,
+      "windows_with_six_prior_controls": 2
+    },
+    "9963": {
+      "candidate_windows": 28,
+      "driver_pairs": 28,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9971": {
+      "candidate_windows": 3,
+      "driver_pairs": 3,
+      "driver_pairs_with_connected_prior_controls": 1,
+      "driver_pairs_with_prior_controls": 1,
+      "shortest_prior_control_paths": {
+        "1": 1
+      },
+      "windows_with_connected_prior_controls": 1,
+      "windows_with_six_prior_controls": 1
+    },
+    "9987": {
+      "candidate_windows": 64,
+      "driver_pairs": 45,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "9998": {
+      "candidate_windows": 21,
+      "driver_pairs": 21,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2023_R01": {
+      "candidate_windows": 3,
+      "driver_pairs": 3,
+      "driver_pairs_with_connected_prior_controls": 1,
+      "driver_pairs_with_prior_controls": 1,
+      "shortest_prior_control_paths": {
+        "1": 1
+      },
+      "windows_with_connected_prior_controls": 1,
+      "windows_with_six_prior_controls": 1
+    },
+    "F1_2023_R03": {
+      "candidate_windows": 7,
+      "driver_pairs": 6,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2023_R14": {
+      "candidate_windows": 7,
+      "driver_pairs": 7,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2023_R15": {
+      "candidate_windows": 52,
+      "driver_pairs": 52,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2024_R01": {
+      "candidate_windows": 0,
+      "driver_pairs": 0,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2024_R03": {
+      "candidate_windows": 6,
+      "driver_pairs": 5,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2024_R06": {
+      "candidate_windows": 37,
+      "driver_pairs": 30,
+      "driver_pairs_with_connected_prior_controls": 7,
+      "driver_pairs_with_prior_controls": 4,
+      "shortest_prior_control_paths": {
+        "1": 6,
+        "2": 3
+      },
+      "windows_with_connected_prior_controls": 9,
+      "windows_with_six_prior_controls": 6
+    },
+    "F1_2024_R16": {
+      "candidate_windows": 25,
+      "driver_pairs": 24,
+      "driver_pairs_with_connected_prior_controls": 0,
+      "driver_pairs_with_prior_controls": 0,
+      "shortest_prior_control_paths": {},
+      "windows_with_connected_prior_controls": 0,
+      "windows_with_six_prior_controls": 0
+    },
+    "F1_2024_R18": {
+      "candidate_windows": 44,
+      "driver_pairs": 29,
+      "driver_pairs_with_connected_prior_controls": 1,
+      "driver_pairs_with_prior_controls": 1,
+      "shortest_prior_control_paths": {
+        "1": 1
+      },
+      "windows_with_connected_prior_controls": 1,
+      "windows_with_six_prior_controls": 1
+    }
+  },
+  "maximum_clock_gap_s": 30,
+  "maximum_race_lap_gap": 1,
+  "minimum_prior_same_compound_laps": 6,
+  "schema": "compound-same-phase-support-v1",
+  "scope": "OPENED_RACES_ONLY_MATCHABILITY_WITHOUT_CROSSOVER_OUTCOMES",
+  "source_sha256_lf": "ff4bc768f2b88e56f734afc521036349842d3414d404b6e5edeb57185d2c05ac"
+}
