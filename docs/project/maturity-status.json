@@ -471,10 +471,10 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v21_calendar_corrected_processed_driving",
-    "decision": "REJECT_PROCESSED_DRIVING_AFTER_SOURCE_RECOVERY",
-    "report": "docs/verification/compound-v21-report.md",
-    "development_summary": "docs/verification/compound-v21-development.json",
+    "candidate": "v23_full_native_driving",
+    "decision": "REJECT_FULL_NATIVE_DRIVING",
+    "report": "docs/verification/compound-v23-report.md",
+    "development_summary": "docs/verification/compound-v23-development.json",
     "candidate_passed": false,
     "development_qualified": false,
     "production_promotion": false,
@@ -488,13 +488,14 @@
       "9877",
       "9896",
       "9912",
+      "9920",
       "9928",
-      "9963",
+      "9971",
       "9987",
       "9998",
+      "F1_2023_R01",
       "F1_2023_R14",
       "F1_2023_R15",
-      "F1_2024_R03",
       "F1_2024_R16",
       "F1_2024_R18"
     ],
@@ -509,7 +510,7 @@
       }
     ],
     "source_ci_passed": true,
-    "next_required_work": "Analyze corrected-control and processed-model residuals and source conflicts, establish a new transferable causal signal, then register a new development study before confirmation.",
+    "next_required_work": "Freeze and independently audit a pit-out-anchored cohort rebuild before refitting the matched control and any new candidate.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",
@@ -660,11 +661,14 @@
       "2023 Monza nomination",
       "2023 Singapore nomination source"
     ],
-    "native_acquisition_ready": false,
+    "native_acquisition_ready": true,
     "processed_acquisition_ready": true,
     "prior_native_driving_supported_cases": 91,
     "prior_native_driving_missing_cases": 301,
-    "source_recovery_review": "docs/verification/compound-v21-source-recovery.json"
+    "source_recovery_review": "docs/verification/compound-v21-source-recovery.json",
+    "native_supported_cases": 389,
+    "native_driver_histories": 228,
+    "pit_exit_age_audit": "docs/verification/compound-v23-pit-exit-panel.json"
   },
   "tyre_thermal_replay": {
     "backlog_id": "R039",

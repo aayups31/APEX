@@ -1,0 +1,354 @@
+{
+  "content_sha256": "db3274fc0c2dfcdeef2190c7e6f00fa1a799043944e83c520308586045ba3103",
+  "counts": {
+    "10006": {
+      "exit_available": 44,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 120,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "10014": {
+      "exit_available": 70,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 106,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "10022": {
+      "exit_available": 28,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 84,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9839": {
+      "exit_available": 72,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 144,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9850": {
+      "exit_available": 78,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 78,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9877": {
+      "exit_available": 78,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 186,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9888": {
+      "exit_available": 46,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 114,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9896": {
+      "exit_available": 50,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 134,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9912": {
+      "exit_available": 24,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 72,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9920": {
+      "exit_available": 20,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 60,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9928": {
+      "exit_available": 72,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 178,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9955": {
+      "exit_available": 116,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 164,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9963": {
+      "exit_available": 24,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 60,
+      "new_conflicts": 0,
+      "original_disagrees": 24,
+      "repairs": 24
+    },
+    "9971": {
+      "exit_available": 54,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 102,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9987": {
+      "exit_available": 18,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 54,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    },
+    "9998": {
+      "exit_available": 20,
+      "exit_rule_disagrees": 0,
+      "matched_identity": 60,
+      "new_conflicts": 0,
+      "original_disagrees": 0,
+      "repairs": 0
+    }
+  },
+  "disagreements": [
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 31,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 32,
+      "original_age": 4,
+      "stint": 2
+    },
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 11,
+      "export_age": 11,
+      "lap": 40,
+      "original_age": 12,
+      "stint": 2
+    },
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 12,
+      "export_age": 12,
+      "lap": 41,
+      "original_age": 13,
+      "stint": 2
+    },
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 49,
+      "original_age": 3,
+      "stint": 3
+    },
+    {
+      "driver": 4,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 50,
+      "original_age": 4,
+      "stint": 3
+    },
+    {
+      "driver": 5,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 51,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 5,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 52,
+      "original_age": 4,
+      "stint": 2
+    },
+    {
+      "driver": 14,
+      "event": "9963",
+      "exit_age": 5,
+      "export_age": 5,
+      "lap": 19,
+      "original_age": 6,
+      "stint": 2
+    },
+    {
+      "driver": 14,
+      "event": "9963",
+      "exit_age": 6,
+      "export_age": 6,
+      "lap": 20,
+      "original_age": 7,
+      "stint": 2
+    },
+    {
+      "driver": 18,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 53,
+      "original_age": 3,
+      "stint": 3
+    },
+    {
+      "driver": 18,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 54,
+      "original_age": 4,
+      "stint": 3
+    },
+    {
+      "driver": 23,
+      "event": "9963",
+      "exit_age": 5,
+      "export_age": 5,
+      "lap": 28,
+      "original_age": 6,
+      "stint": 2
+    },
+    {
+      "driver": 23,
+      "event": "9963",
+      "exit_age": 6,
+      "export_age": 6,
+      "lap": 29,
+      "original_age": 7,
+      "stint": 2
+    },
+    {
+      "driver": 27,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 21,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 27,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 22,
+      "original_age": 4,
+      "stint": 2
+    },
+    {
+      "driver": 30,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 40,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 30,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 41,
+      "original_age": 4,
+      "stint": 2
+    },
+    {
+      "driver": 81,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 18,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 81,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 19,
+      "original_age": 4,
+      "stint": 2
+    },
+    {
+      "driver": 81,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 47,
+      "original_age": 3,
+      "stint": 3
+    },
+    {
+      "driver": 81,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 48,
+      "original_age": 4,
+      "stint": 3
+    },
+    {
+      "driver": 87,
+      "event": "9963",
+      "exit_age": 2,
+      "export_age": 2,
+      "lap": 20,
+      "original_age": 3,
+      "stint": 2
+    },
+    {
+      "driver": 87,
+      "event": "9963",
+      "exit_age": 3,
+      "export_age": 3,
+      "lap": 21,
+      "original_age": 4,
+      "stint": 2
+    }
+  ],
+  "input_sha256": "096fb591c0b1f885d1d61a2e0c6d0c9742f4f4a4bd854f8d648024589e2ac64e",
+  "schema": "compound-pit-exit-panel-v23",
+  "scope": "KNOWN_LAP_AGE_DIAGNOSTIC_ONLY"
+}
