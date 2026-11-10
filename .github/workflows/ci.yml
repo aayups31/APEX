@@ -47,6 +47,8 @@ jobs:
         run: python research/scripts/audit_compound_processed.py --data docs/verification/compound-v21-processed-data.json --result docs/verification/compound-v21-development.json --output .cache/ci-compound-processed-audit.json
       - name: Refit native sector forecasts and independently check race gates
         run: python research/scripts/compound_sectors.py --sectors docs/verification/compound-v22-sector-data.json --output .cache/ci-compound-sector-study.json
+      - name: Refit full native driving-state forecasts and independently check race gates
+        run: python research/scripts/diagnose_compound_native_recovery.py --data docs/verification/compound-v23-native-data.json --output .cache/ci-compound-native-recovery.json
       - name: Test
         working-directory: apex_engine
         run: pytest -q
