@@ -1,0 +1,296 @@
+{
+  "content_sha256": "b3a6431ddc65f70f88df7df818b4f811647ac90fe9f7ccaeca084bdc97cac717",
+  "control_sha256": "e3e3af5273151a218ff6f4219101c8501096bd6ecc68af19fa8fcec37505d022",
+  "dataset_sha256": "436391f52e88c48e4f835d09a5aa2edbaf83f0a8644ba081ad42bf5f12cc2483",
+  "events": {
+    "10006": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "10014": [
+      {
+        "observed": 9,
+        "reachable": 9
+      },
+      {
+        "observed": 7,
+        "reachable": 7
+      }
+    ],
+    "10022": [
+      {
+        "observed": 2,
+        "reachable": 2
+      },
+      {
+        "observed": 1,
+        "reachable": 1
+      }
+    ],
+    "10033": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "9839": [
+      {
+        "observed": 6,
+        "reachable": 4
+      },
+      {
+        "observed": 6,
+        "reachable": 3
+      }
+    ],
+    "9850": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "9858": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "9877": [
+      {
+        "observed": 7,
+        "reachable": 5
+      },
+      {
+        "observed": 10,
+        "reachable": 4
+      }
+    ],
+    "9888": [
+      {
+        "observed": 4,
+        "reachable": 3
+      },
+      {
+        "observed": 4,
+        "reachable": 3
+      }
+    ],
+    "9896": [
+      {
+        "observed": 9,
+        "reachable": 3
+      },
+      {
+        "observed": 8,
+        "reachable": 2
+      }
+    ],
+    "9912": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "9920": [
+      {
+        "observed": 2,
+        "reachable": 2
+      },
+      {
+        "observed": 3,
+        "reachable": 2
+      }
+    ],
+    "9928": [
+      {
+        "observed": 14,
+        "reachable": 2
+      },
+      {
+        "observed": 13,
+        "reachable": 2
+      }
+    ],
+    "9947": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "9955": [
+      {
+        "observed": 9,
+        "reachable": 7
+      },
+      {
+        "observed": 8,
+        "reachable": 5
+      }
+    ],
+    "9963": [
+      {
+        "observed": 4,
+        "reachable": 1
+      },
+      {
+        "observed": 2,
+        "reachable": 1
+      }
+    ],
+    "9971": [
+      {
+        "observed": 7,
+        "reachable": 4
+      },
+      {
+        "observed": 6,
+        "reachable": 3
+      }
+    ],
+    "9987": [
+      {
+        "observed": 4,
+        "reachable": 4
+      },
+      {
+        "observed": 4,
+        "reachable": 4
+      }
+    ],
+    "9998": [
+      {
+        "observed": 2,
+        "reachable": 2
+      },
+      {
+        "observed": 2,
+        "reachable": 2
+      }
+    ],
+    "F1_2023_R01": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2023_R03": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2023_R14": [
+      {
+        "observed": 5,
+        "reachable": 4
+      },
+      {
+        "observed": 6,
+        "reachable": 5
+      }
+    ],
+    "F1_2023_R15": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2024_R01": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2024_R03": [
+      {
+        "observed": 2,
+        "reachable": 2
+      },
+      {
+        "observed": 2,
+        "reachable": 2
+      }
+    ],
+    "F1_2024_R06": [
+      {
+        "observed": 0,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2024_R16": [
+      {
+        "observed": 1,
+        "reachable": 0
+      },
+      {
+        "observed": 0,
+        "reachable": 0
+      }
+    ],
+    "F1_2024_R18": [
+      {
+        "observed": 7,
+        "reachable": 4
+      },
+      {
+        "observed": 7,
+        "reachable": 4
+      }
+    ]
+  },
+  "impossible_recall_events": [
+    "9877",
+    "9896",
+    "9928",
+    "9963",
+    "F1_2024_R16"
+  ],
+  "scope": "OPTIMISTIC_PER_LABEL_RECALL_BOUND_ONLY",
+  "source_sha256_lf": "b28c0cfdec6b1c7dd6eb610d7745e80bd5da192c99a4fcd6e3940a8af5c4bc98"
+}

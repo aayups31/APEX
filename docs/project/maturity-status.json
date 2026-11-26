@@ -512,7 +512,7 @@
       }
     ],
     "source_ci_passed": false,
-    "next_required_work": "Test a field-wide fallback that shrinks forecast changes toward persistence under uncertainty, scoring both pace error and false alarms.",
+    "next_required_work": "Test a field-wide trajectory correction using causal track evolution or independent vehicle state. Shrinking the current ridge toward prefix persistence cannot reach the required recall in five races.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",

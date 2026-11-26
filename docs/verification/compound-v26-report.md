@@ -67,11 +67,22 @@ count obtained by substituting bounded observations on supported cases
 is a diagnostic counterfactual. Only the two zero-support failures
 establish a strict impossibility for this design.
 
-The next experiment should address the fallback across the entire field.
-One candidate is to learn how much to shrink a forecast toward persistence
-using uncertainty estimated on training races, then derive both decisions
-from the resulting three laps. Test the pace penalty and false alarms
-together on the original whole-race splits. Keep fresh confirmation sealed
-until an actual candidate clears the development gates.
+An additional feasibility audit considered every mixture of the current
+three-lap prefix and the three ridge projections, allowing a different
+weight per case and even per label. It tested the endpoints and every
+interior point at which two lap values exchange order. These points contain
+the extrema of each piecewise-linear median. Even that favorable bound
+cannot reach half the observed crossings for at least one label in five
+races. In Hungary 2025, only two of fourteen primary crossings are reachable.
+Adjusting a shared shrinkage weight per forecast cannot close R041.
+[Per-race recall bound](compound-shrinkage-reach.json).
+
+The next candidate needs to produce a different trajectory when the
+current prefix and ridge both miss the direction change. Prioritize
+additional independently observed fuel or tyre state, or test a model of
+track evolution estimated from contemporaneous field laps across the
+entire cohort. Use the five reachability failures as diagnostics alongside
+the full 24-race evaluation. Keep fresh confirmation sealed until a
+candidate clears the development gates.
 [Peer protocol](../../research/protocols/COMPOUND_CAUSAL_PEER_V27.md),
 [contributors, forecasts and gate audit](compound-v27-development.json).
