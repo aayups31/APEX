@@ -29,3 +29,14 @@ def test_controls_exclude_future_duplicate_and_either_current_stint(scripts):
     pool = [(1, 2, 1, 1, 0.2), (1, 3, 1, 1, 99), (4, 5, 2, 3, 1), (6, 7, 4, 2, 2), (8, 9, 1, 1, 99)]
     assert controls.prior_differences(pool, 9, (2, 2)) == [0.2]
     assert controls.prior_differences(pool, 9, None) == [0.2, 1, 2]
+
+
+def test_compound_transfer_reverses_driver_order_and_excludes_test_race(scripts):
+    study = importlib.import_module("diagnose_compound_driver_transfer")
+    row = {"compounds": ["HARD", "MEDIUM"], "prior": 0.3, "prefix": 0.5, "target": 0.8}
+    reversed_row = {**row, "compounds": ["MEDIUM", "HARD"], "target": -100}
+    folds = study.score({"train": [row], "test": [reversed_row]})
+    scored = folds["test"]["predictions"][0]
+    assert scored["training_race_medians"] == {"train": 0.5}
+    assert scored["prediction"] == pytest.approx(-0.2)
+    assert study.score({"only": [row]})["only"]["fallback_cases"] == 1

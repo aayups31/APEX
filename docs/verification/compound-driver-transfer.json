@@ -1,0 +1,1607 @@
+{
+  "content_sha256": "435cbdcb99f2554bf9227ab8aeb19eae262472e03ecb75d232bea658d446227d",
+  "dataset_sha256": "436391f52e88c48e4f835d09a5aa2edbaf83f0a8644ba081ad42bf5f12cc2483",
+  "fallback_cases": 0,
+  "folds": {
+    "10006": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "10014": {
+      "cases": 11,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.38700000000000173,
+        "prefix": 0.5711818181818196,
+        "prior": 0.3126818181818171
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.3645000000000067,
+          "cross_stint_count": 8,
+          "cutoff": 1744557742.745,
+          "drivers": [
+            1,
+            4
+          ],
+          "first_age": 2,
+          "prediction": 0.3855000000000146,
+          "prefix": -0.6630000000000109,
+          "prior": 0.3645000000000067,
+          "prior_count": 8,
+          "stints": [
+            2,
+            2
+          ],
+          "target": 0.9649999999999892,
+          "training_race_medians": {
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.00549999999999784,
+          "cross_stint_count": 8,
+          "cutoff": 1744557744.652,
+          "drivers": [
+            1,
+            10
+          ],
+          "first_age": 2,
+          "prediction": 0.02650000000000574,
+          "prefix": -0.1840000000000117,
+          "prior": 0.00549999999999784,
+          "prior_count": 8,
+          "stints": [
+            2,
+            2
+          ],
+          "target": 0.7549999999999955,
+          "training_race_medians": {
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 0.09100000000000819,
+          "cross_stint_count": 11,
+          "cutoff": 1744560260.861,
+          "drivers": [
+            5,
+            14
+          ],
+          "first_age": 4,
+          "prediction": 0.07000000000000028,
+          "prefix": 0.05499999999999261,
+          "prior": 0.09100000000000819,
+          "prior_count": 11,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.13299999999999557,
+          "training_race_medians": {
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "SOFT"
+          ],
+          "cross_stint": 0.2469999999999999,
+          "cross_stint_count": 11,
+          "cutoff": 1744560261.291,
+          "drivers": [
+            5,
+            30
+          ],
+          "first_age": 4,
+          "prediction": 0.26200000000000045,
+          "prefix": 0.3429999999999893,
+          "prior": 0.2469999999999999,
+          "prior_count": 11,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.5360000000000014,
+          "training_race_medians": {
+            "9850": 0.015000000000000568,
+            "9971": 0.6290000000000049,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 1.1020000000000039,
+          "cross_stint_count": 11,
+          "cutoff": 1744560255.706,
+          "drivers": [
+            5,
+            44
+          ],
+          "first_age": 4,
+          "prediction": 1.080999999999996,
+          "prefix": 2.465999999999994,
+          "prior": 1.1020000000000039,
+          "prior_count": 11,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 1.519999999999996,
+          "training_race_medians": {
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "SOFT"
+          ],
+          "cross_stint": 0.117999999999995,
+          "cross_stint_count": 12,
+          "cutoff": 1744560260.861,
+          "drivers": [
+            14,
+            30
+          ],
+          "first_age": 4,
+          "prediction": -0.09162500000001472,
+          "prefix": 0.2879999999999967,
+          "prior": 0.117999999999995,
+          "prior_count": 12,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.29299999999999216,
+          "training_race_medians": {
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "SOFT"
+          ],
+          "cross_stint": -1.2004999999999981,
+          "cross_stint_count": 12,
+          "cutoff": 1744560255.263,
+          "drivers": [
+            16,
+            30
+          ],
+          "first_age": 4,
+          "prediction": -1.4101250000000078,
+          "prefix": -2.034000000000006,
+          "prior": -1.2004999999999981,
+          "prior_count": 12,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.8359999999999985,
+          "training_race_medians": {
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.5114999999999981,
+          "cross_stint_count": 10,
+          "cutoff": 1744560258.979,
+          "drivers": [
+            18,
+            23
+          ],
+          "first_age": 4,
+          "prediction": 0.532500000000006,
+          "prefix": 0.9500000000000028,
+          "prior": 0.5114999999999981,
+          "prior_count": 10,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.5840000000000032,
+          "training_race_medians": {
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "SOFT"
+          ],
+          "cross_stint": 0.5420000000000016,
+          "cross_stint_count": 10,
+          "cutoff": 1744560258.758,
+          "drivers": [
+            18,
+            87
+          ],
+          "first_age": 4,
+          "prediction": 0.33237499999999187,
+          "prefix": 0.8669999999999902,
+          "prior": 0.5420000000000016,
+          "prior_count": 10,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.7800000000000011,
+          "training_race_medians": {
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "SOFT"
+          ],
+          "cross_stint": 0.02700000000000813,
+          "cross_stint_count": 12,
+          "cutoff": 1744560258.758,
+          "drivers": [
+            23,
+            87
+          ],
+          "first_age": 4,
+          "prediction": 0.0420000000000087,
+          "prefix": -0.12400000000000944,
+          "prior": 0.02700000000000813,
+          "prior_count": 12,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.17100000000000648,
+          "training_race_medians": {
+            "9850": 0.015000000000000568,
+            "9971": 0.6290000000000049,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.9945000000000093,
+          "cross_stint_count": 12,
+          "cutoff": 1744560255.706,
+          "drivers": [
+            30,
+            44
+          ],
+          "first_age": 4,
+          "prediction": 1.204125000000019,
+          "prefix": 1.4980000000000047,
+          "prior": 0.9945000000000093,
+          "prior_count": 12,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.7019999999999982,
+          "training_race_medians": {
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        }
+      ]
+    },
+    "10022": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "10033": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9839": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9850": {
+      "cases": 27,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.2490370370370331,
+        "prefix": 0.37885185185185394,
+        "prior": 0.21794444444444164
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.5435000000000016,
+          "cross_stint_count": 26,
+          "cutoff": 1764521693.881,
+          "drivers": [
+            5,
+            6
+          ],
+          "first_age": 2,
+          "prediction": 0.5113750000000064,
+          "prefix": -0.05000000000001137,
+          "prior": 0.5435000000000016,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.8430000000000035,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.6764999999999972,
+          "cross_stint_count": 26,
+          "cutoff": 1764521691.86,
+          "drivers": [
+            5,
+            14
+          ],
+          "first_age": 2,
+          "prediction": 0.6443750000000019,
+          "prefix": -0.3120000000000118,
+          "prior": 0.6764999999999972,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.561000000000007,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.34949999999999903,
+          "cross_stint_count": 26,
+          "cutoff": 1764521699.833,
+          "drivers": [
+            5,
+            16
+          ],
+          "first_age": 2,
+          "prediction": 0.31737500000000374,
+          "prefix": 0.48599999999999,
+          "prior": 0.34949999999999903,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.4860000000000042,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.19500000000000028,
+          "cross_stint_count": 26,
+          "cutoff": 1764521704.124,
+          "drivers": [
+            5,
+            22
+          ],
+          "first_age": 2,
+          "prediction": 0.162875000000005,
+          "prefix": 0.07299999999999329,
+          "prior": 0.19500000000000028,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.37700000000000955,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.1110000000000042,
+          "cross_stint_count": 21,
+          "cutoff": 1764521705.34,
+          "drivers": [
+            5,
+            23
+          ],
+          "first_age": 2,
+          "prediction": 0.06550000000001077,
+          "prefix": 0.07299999999999329,
+          "prior": 0.1110000000000042,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.3289999999999935,
+          "training_race_medians": {
+            "10014": 0.045499999999993435,
+            "9971": 0.6290000000000049,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.22349999999999426,
+          "cross_stint_count": 26,
+          "cutoff": 1764521702.997,
+          "drivers": [
+            5,
+            30
+          ],
+          "first_age": 2,
+          "prediction": 0.19137499999999896,
+          "prefix": -0.0020000000000095497,
+          "prior": 0.22349999999999426,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.47799999999999443,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.05200000000000671,
+          "cross_stint_count": 21,
+          "cutoff": 1764521709.48,
+          "drivers": [
+            5,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.09750000000000014,
+          "prefix": -0.23400000000000887,
+          "prior": -0.05200000000000671,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.12899999999999068,
+          "training_race_medians": {
+            "10014": 0.045499999999993435,
+            "9971": 0.6290000000000049,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.08100000000000307,
+          "cross_stint_count": 21,
+          "cutoff": 1764521706.28,
+          "drivers": [
+            5,
+            44
+          ],
+          "first_age": 2,
+          "prediction": 0.035500000000009635,
+          "prefix": -0.09600000000000364,
+          "prior": 0.08100000000000307,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.0660000000000025,
+          "training_race_medians": {
+            "10014": 0.045499999999993435,
+            "9971": 0.6290000000000049,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 0.4825000000000017,
+          "cross_stint_count": 26,
+          "cutoff": 1764521696.98,
+          "drivers": [
+            5,
+            63
+          ],
+          "first_age": 2,
+          "prediction": 0.4503750000000064,
+          "prefix": 0.4579999999999984,
+          "prior": 0.4825000000000017,
+          "prior_count": 26,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.8329999999999984,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.402000000000001,
+          "cross_stint_count": 21,
+          "cutoff": 1764521693.881,
+          "drivers": [
+            6,
+            23
+          ],
+          "first_age": 2,
+          "prediction": -0.34875000000000256,
+          "prefix": 0.031999999999996476,
+          "prior": -0.402000000000001,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.5139999999999958,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.6440000000000055,
+          "cross_stint_count": 21,
+          "cutoff": 1764521693.881,
+          "drivers": [
+            6,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.590750000000007,
+          "prefix": -0.0589999999999975,
+          "prior": -0.6440000000000055,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -1.056999999999988,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.40800000000001546,
+          "cross_stint_count": 21,
+          "cutoff": 1764521693.881,
+          "drivers": [
+            6,
+            44
+          ],
+          "first_age": 2,
+          "prediction": -0.354750000000017,
+          "prefix": -0.13700000000000045,
+          "prior": -0.40800000000001546,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.777000000000001,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.3789999999999907,
+          "cross_stint_count": 21,
+          "cutoff": 1764521691.86,
+          "drivers": [
+            14,
+            23
+          ],
+          "first_age": 2,
+          "prediction": -0.3257499999999922,
+          "prefix": 0.3850000000000051,
+          "prior": -0.3789999999999907,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.2459999999999951,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.5859999999999985,
+          "cross_stint_count": 21,
+          "cutoff": 1764521691.86,
+          "drivers": [
+            14,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.5327500000000001,
+          "prefix": -0.16800000000000637,
+          "prior": -0.5859999999999985,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.6899999999999977,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.48499999999999943,
+          "cross_stint_count": 21,
+          "cutoff": 1764521691.86,
+          "drivers": [
+            14,
+            44
+          ],
+          "first_age": 2,
+          "prediction": -0.43175000000000097,
+          "prefix": 0.21600000000000819,
+          "prior": -0.48499999999999943,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.41100000000000136,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.18199999999998795,
+          "cross_stint_count": 21,
+          "cutoff": 1764521699.833,
+          "drivers": [
+            16,
+            23
+          ],
+          "first_age": 2,
+          "prediction": -0.12874999999998948,
+          "prefix": -0.4129999999999967,
+          "prior": -0.18199999999998795,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.15699999999999648,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.3230000000000075,
+          "cross_stint_count": 21,
+          "cutoff": 1764521699.833,
+          "drivers": [
+            16,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.26975000000000904,
+          "prefix": -0.6030000000000086,
+          "prior": -0.3230000000000075,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.7620000000000005,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.23000000000000398,
+          "cross_stint_count": 21,
+          "cutoff": 1764521699.833,
+          "drivers": [
+            16,
+            44
+          ],
+          "first_age": 2,
+          "prediction": -0.1767500000000055,
+          "prefix": -0.5819999999999936,
+          "prior": -0.23000000000000398,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.4200000000000017,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.022999999999996135,
+          "cross_stint_count": 21,
+          "cutoff": 1764521704.124,
+          "drivers": [
+            22,
+            23
+          ],
+          "first_age": 2,
+          "prediction": 0.03025000000000233,
+          "prefix": 0.0,
+          "prior": -0.022999999999996135,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.06800000000001205,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.16199999999999193,
+          "cross_stint_count": 21,
+          "cutoff": 1764521704.124,
+          "drivers": [
+            22,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.10874999999999346,
+          "prefix": -0.32099999999999795,
+          "prior": -0.16199999999999193,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.5060000000000002,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.0759999999999934,
+          "cross_stint_count": 21,
+          "cutoff": 1764521704.124,
+          "drivers": [
+            22,
+            44
+          ],
+          "first_age": 2,
+          "prediction": -0.02274999999999494,
+          "prefix": -0.16899999999999693,
+          "prior": -0.0759999999999934,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.25199999999999534,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 0.08299999999999841,
+          "cross_stint_count": 21,
+          "cutoff": 1764521702.997,
+          "drivers": [
+            23,
+            30
+          ],
+          "first_age": 2,
+          "prediction": 0.029749999999999943,
+          "prefix": -0.17199999999999704,
+          "prior": 0.08299999999999841,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.1490000000000009,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 0.31699999999999307,
+          "cross_stint_count": 21,
+          "cutoff": 1764521696.98,
+          "drivers": [
+            23,
+            63
+          ],
+          "first_age": 2,
+          "prediction": 0.2637499999999946,
+          "prefix": 0.3850000000000051,
+          "prior": 0.31699999999999307,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.5040000000000049,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.25,
+          "cross_stint_count": 21,
+          "cutoff": 1764521702.997,
+          "drivers": [
+            30,
+            43
+          ],
+          "first_age": 2,
+          "prediction": -0.19675000000000153,
+          "prefix": -0.23199999999999932,
+          "prior": -0.25,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.3289999999999935,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.1670000000000016,
+          "cross_stint_count": 21,
+          "cutoff": 1764521702.997,
+          "drivers": [
+            30,
+            44
+          ],
+          "first_age": 2,
+          "prediction": -0.11375000000000313,
+          "prefix": 0.16100000000000136,
+          "prior": -0.1670000000000016,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.4680000000000035,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 0.43200000000000216,
+          "cross_stint_count": 21,
+          "cutoff": 1764521696.98,
+          "drivers": [
+            43,
+            63
+          ],
+          "first_age": 2,
+          "prediction": 0.3787500000000037,
+          "prefix": 0.7109999999999985,
+          "prior": 0.43200000000000216,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 1.1739999999999924,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "MEDIUM",
+            "HARD"
+          ],
+          "cross_stint": 0.3920000000000101,
+          "cross_stint_count": 21,
+          "cutoff": 1764521696.98,
+          "drivers": [
+            44,
+            63
+          ],
+          "first_age": 2,
+          "prediction": 0.33875000000001165,
+          "prefix": 0.554000000000002,
+          "prior": 0.3920000000000101,
+          "prior_count": 21,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.8289999999999935,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9955": 0.0210000000000079,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        }
+      ]
+    },
+    "9858": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9877": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9888": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9896": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9912": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9920": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9928": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9947": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9955": {
+      "cases": 2,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.07499999999999574,
+        "prefix": 0.41449999999999676,
+        "prior": 0.07499999999999574
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.03499999999999659,
+          "cross_stint_count": 7,
+          "cutoff": 1751206085.885,
+          "drivers": [
+            43,
+            87
+          ],
+          "first_age": 2,
+          "prediction": 0.08824999999999505,
+          "prefix": -0.21299999999999386,
+          "prior": 0.03499999999999659,
+          "prior_count": 7,
+          "stints": [
+            3,
+            3
+          ],
+          "target": 0.13100000000000023,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.03499999999999659,
+          "cross_stint_count": 7,
+          "cutoff": 1751206930.61,
+          "drivers": [
+            43,
+            87
+          ],
+          "first_age": 14,
+          "prediction": 0.08824999999999505,
+          "prefix": 0.4660000000000082,
+          "prior": 0.03499999999999659,
+          "prior_count": 7,
+          "stints": [
+            3,
+            3
+          ],
+          "target": -0.018999999999991246,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "F1_2024_R06": 0.053249999999998465
+          }
+        }
+      ]
+    },
+    "9963": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9971": {
+      "cases": 1,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.6140000000000043,
+        "prefix": 0.9029999999999916,
+        "prior": 0.6290000000000049
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "MEDIUM",
+            "SOFT"
+          ],
+          "cross_stint": -0.7669999999999959,
+          "cross_stint_count": 7,
+          "cutoff": 1748783846.458,
+          "drivers": [
+            27,
+            55
+          ],
+          "first_age": 2,
+          "prediction": -0.7519999999999953,
+          "prefix": 0.7650000000000006,
+          "prior": -0.7669999999999959,
+          "prior_count": 7,
+          "stints": [
+            2,
+            2
+          ],
+          "target": -0.13799999999999102,
+          "training_race_medians": {
+            "10014": 0.045499999999993435,
+            "9850": 0.015000000000000568,
+            "F1_2024_R06": -0.3269999999999982
+          }
+        }
+      ]
+    },
+    "9987": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "9998": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2023_R01": {
+      "cases": 1,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.7171249999999976,
+        "prefix": 0.5649999999999977,
+        "prior": 0.6850000000000023
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": -0.3160000000000025,
+          "cross_stint_count": 9,
+          "cutoff": 1678029958.208,
+          "drivers": [
+            2,
+            24
+          ],
+          "first_age": 2.0,
+          "prediction": -0.3481249999999978,
+          "prefix": -0.19599999999999795,
+          "prior": -0.3160000000000025,
+          "prior_count": 9,
+          "stints": [
+            2,
+            2
+          ],
+          "target": 0.3689999999999998,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "9850": -0.21825000000000472,
+            "F1_2024_R06": -0.20100000000001472,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        }
+      ]
+    },
+    "F1_2023_R03": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2023_R14": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2023_R15": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2024_R01": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2024_R03": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2024_R06": {
+      "cases": 6,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.34616666666666607,
+        "prefix": 0.323833333333333,
+        "prior": 0.3346666666666671
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.3119999999999976,
+          "cross_stint_count": 15,
+          "cutoff": 1714942574.088,
+          "drivers": [
+            1,
+            11
+          ],
+          "first_age": 10.0,
+          "prediction": -0.2909999999999897,
+          "prefix": -0.5769999999999982,
+          "prior": -0.3119999999999976,
+          "prior_count": 15,
+          "stints": [
+            2,
+            3
+          ],
+          "target": -0.05700000000000216,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.3119999999999976,
+          "cross_stint_count": 15,
+          "cutoff": 1714943672.234,
+          "drivers": [
+            1,
+            11
+          ],
+          "first_age": 22.0,
+          "prediction": -0.2909999999999897,
+          "prefix": 0.10699999999999932,
+          "prior": -0.3119999999999976,
+          "prior_count": 15,
+          "stints": [
+            2,
+            3
+          ],
+          "target": 0.3680000000000092,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "SOFT"
+          ],
+          "cross_stint": -0.36899999999999267,
+          "cross_stint_count": 16,
+          "cutoff": 1714943223.757,
+          "drivers": [
+            22,
+            24
+          ],
+          "first_age": 12.0,
+          "prediction": -0.34549999999999237,
+          "prefix": -0.8340000000000032,
+          "prior": -0.36899999999999267,
+          "prior_count": 16,
+          "stints": [
+            2,
+            2
+          ],
+          "target": -0.5700000000000074,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R18": 0.41100000000000136
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.1454999999999984,
+          "cross_stint_count": 6,
+          "cutoff": 1714942575.858,
+          "drivers": [
+            22,
+            27
+          ],
+          "first_age": 5.0,
+          "prediction": -0.12449999999999051,
+          "prefix": 0.15399999999999636,
+          "prior": -0.1454999999999984,
+          "prior_count": 6,
+          "stints": [
+            2,
+            3
+          ],
+          "target": -0.5419999999999874,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079
+          }
+        },
+        {
+          "compounds": [
+            "HARD",
+            "MEDIUM"
+          ],
+          "cross_stint": -0.1454999999999984,
+          "cross_stint_count": 6,
+          "cutoff": 1714943684.499,
+          "drivers": [
+            22,
+            27
+          ],
+          "first_age": 17.0,
+          "prediction": -0.12449999999999051,
+          "prefix": -0.39700000000000557,
+          "prior": -0.1454999999999984,
+          "prior_count": 6,
+          "stints": [
+            2,
+            3
+          ],
+          "target": -0.29399999999999693,
+          "training_race_medians": {
+            "10014": 0.07250000000000512,
+            "9850": -0.18150000000000688,
+            "9955": 0.0210000000000079
+          }
+        },
+        {
+          "compounds": [
+            "SOFT",
+            "MEDIUM"
+          ],
+          "cross_stint": 0.13700000000000045,
+          "cross_stint_count": 9,
+          "cutoff": 1714943232.619,
+          "drivers": [
+            24,
+            27
+          ],
+          "first_age": 12.0,
+          "prediction": 0.09150000000000702,
+          "prefix": 0.5630000000000024,
+          "prior": 0.13700000000000045,
+          "prior_count": 9,
+          "stints": [
+            2,
+            3
+          ],
+          "target": 0.46399999999999864,
+          "training_race_medians": {
+            "10014": 0.045499999999993435,
+            "9850": 0.015000000000000568,
+            "9971": 0.6290000000000049
+          }
+        }
+      ]
+    },
+    "F1_2024_R16": {
+      "cases": 0,
+      "fallback_cases": 0,
+      "mae": {},
+      "predictions": []
+    },
+    "F1_2024_R18": {
+      "cases": 1,
+      "fallback_cases": 0,
+      "mae": {
+        "prediction": 0.6206250000000111,
+        "prefix": 0.8559999999999945,
+        "prior": 0.41100000000000136
+      },
+      "predictions": [
+        {
+          "compounds": [
+            "SOFT",
+            "HARD"
+          ],
+          "cross_stint": 1.070999999999998,
+          "cross_stint_count": 18,
+          "cutoff": 1727010494.42,
+          "drivers": [
+            10,
+            81
+          ],
+          "first_age": 2.0,
+          "prediction": 1.2806250000000077,
+          "prefix": 1.5159999999999911,
+          "prior": 1.070999999999998,
+          "prior_count": 18,
+          "stints": [
+            2,
+            2
+          ],
+          "target": 0.6599999999999966,
+          "training_race_medians": {
+            "10014": 0.2652500000000053,
+            "9850": -0.21825000000000472,
+            "F1_2023_R01": -0.6850000000000023,
+            "F1_2024_R06": -0.20100000000001472
+          }
+        }
+      ]
+    }
+  },
+  "macro_mae": {
+    "prediction": 0.42985052910052995,
+    "prefix": 0.5731952861952838,
+    "prior": 0.38075613275613285
+  },
+  "scope": "DIRECT_DRIVER_CONTROL_DIFFERENT_COMPOUND_TRANSFER_DIAGNOSTIC",
+  "source_sha256_lf": {
+    "COMPOUND_DRIVER_TRANSFER.md": "73a57c5aceb8e4546682971400303ed810abd7aa8f31dc6235e5e8eba0defe47",
+    "audit_compound_driver_control.py": "9cc15b5a1673db17f3fbc00c73cb7b5765b5c807dafbb7545f31ae9d00a18065",
+    "diagnose_compound_driver_transfer.py": "c82ed642e02f0fe9df9d28bf26b3daefca5974004d72609efe0d0c9668055581"
+  },
+  "support_sha256": "730f586e84a51666f08c4423c2ec047950dfd727394ee4c5c9a12c293b4f5548"
+}
