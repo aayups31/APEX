@@ -54,6 +54,9 @@ jobs:
       - name: Refit distance-aligned speed profiles and verify race gates
         run: python research/scripts/compound_speed_profile.py --profiles docs/verification/compound-v25-speed-profiles.json --expected docs/verification/compound-v25-development.json --output .cache/ci-compound-speed-profile.json
       - name: Test
+        # Replay the new forecast on every supported development race.
+        run: python research/scripts/compound_stint_state.py --expected docs/verification/compound-v26-development.json --output .cache/ci-stint-state.json
+      - name: Test suite
         working-directory: apex_engine
         run: pytest -q
       - name: Compile Airflow wrapper
