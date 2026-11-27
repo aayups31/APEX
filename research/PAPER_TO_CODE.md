@@ -51,7 +51,10 @@ real-car intervention feasibility remain UNKNOWN.
 
 **What enters APEX:** resource-constrained minimum-race-time energy allocation, lap maps, terminal energy targets and shrinking-horizon response to disturbances.
 
-**Code now:** battery/fuel feasibility and action projection in `fienia_strategy`; a sector-level ERS optimizer remains to be built.
+**Code now:** battery/fuel feasibility and action projection in
+`fienia_strategy`, plus sector energy accounting, constrained allocation
+and shrinking-horizon feedback in `sector_ers`.
+[Synthetic verification](../docs/verification/sector-ers-report.md).
 
 ### PERANTONI_2014 — minimum-lap-time vehicle optimal control
 

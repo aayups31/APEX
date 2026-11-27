@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-27",
   "research_inventory": {
-    "done": 41,
+    "done": 43,
     "total": 73
   },
   "build_inventory": {
@@ -480,6 +480,20 @@
     "replay": "docs/verification/tyre-optimal-control-r042-replay.json",
     "real_race_validation": false,
     "real_race_validation_dependencies": ["R041", "R045"],
+    "production_promotion": false
+  },
+  "sector_ers": {
+    "backlog_id": "R043",
+    "status": "DONE",
+    "scope": "SYNTHETIC_SECTOR_WORK_AND_BATTERY_CONSTRAINTS",
+    "report": "docs/verification/sector-ers-report.md",
+    "production_promotion": false
+  },
+  "sector_ers_feedback": {
+    "backlog_id": "R044",
+    "status": "DONE",
+    "scope": "SYNTHETIC_SHRINKING_HORIZON_DISTURBANCE",
+    "summary": "docs/verification/sector-ers-summary.json",
     "production_promotion": false
   },
   "compound_crossover": {

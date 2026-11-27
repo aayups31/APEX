@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "r043": {
+      "grid_objective_agreement": true,
+      "infeasible_target_rejected": true,
+      "strict_gain_over_zero": true,
+      "terminal_bound": true
+    },
+    "r044": {
+      "disturbance_hidden_at_first_action": true,
+      "disturbed_terminal_bound": true,
+      "fixed_policy_misses_terminal": true,
+      "nominal_matches_plan": true,
+      "nominal_terminal_bound": true,
+      "solve_runtime": true
+    }
+  },
+  "content_sha256": "eda5fdf8962a6ff01a25bb80a7d90ba6ccdfd335424a7ba4b4c5bd3be4665808",
+  "disturbed_feedback_terminal_mj": 1.0,
+  "disturbed_feedback_time_delta_s": -1.675,
+  "disturbed_full_information_time_delta_s": -1.7999999999999998,
+  "disturbed_open_loop_terminal_mj": 0.875,
+  "evidence_domain": "SIMULATED",
+  "grid_optimum_time_delta_s": -2.4,
+  "grid_terminal_feasible_paths": 96,
+  "maximum_feedback_solve_seconds": 0.005394700012402609,
+  "nominal_time_delta_s": -2.4,
+  "passed": true,
+  "production_promotion": false,
+  "schema_version": "apex-sector-ers-v1"
+}

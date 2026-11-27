@@ -1060,6 +1060,17 @@ def verify_tyre_optimal_control_command(
         raise typer.Exit(1)
 
 
+@app.command("run-sector-ers-study")
+def run_sector_ers_command(output: Annotated[Path, typer.Option()]) -> None:
+    """Evaluate sector energy accounting and shrinking-horizon feedback."""
+    from apexsim.examples.sector_ers_study import run_study
+
+    summary = run_study(output)
+    typer.echo(json.dumps(summary, indent=2))
+    if not summary["passed"]:
+        raise typer.Exit(1)
+
+
 @app.command("calibrate-support-confirmation")
 def calibrate_support_confirmation_command(
     detector: Annotated[Path, typer.Option()],
