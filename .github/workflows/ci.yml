@@ -43,6 +43,10 @@ jobs:
         run: python research/scripts/audit_compound_race_context.py --output .cache/ci-compound-context-audit.json
       - name: Independently replay driving-state observations and acquisition gates
         run: python research/scripts/audit_compound_driving.py --output .cache/ci-compound-driving-audit.json
+      - name: Verify paired field-forecast errors and fuel-stable decisions
+        run: |
+          python research/scripts/audit_compound_field_errors.py --output .cache/ci-compound-field-errors.json
+          python -c "from apexsim.research.evidence import read_json; from pathlib import Path; assert read_json(Path('.cache/ci-compound-field-errors.json')) == read_json(Path('docs/verification/compound-v29-field-errors.json'))"
       - name: Independently replay calendar-corrected processed telemetry and both baselines
         run: python research/scripts/audit_compound_processed.py --data docs/verification/compound-v21-processed-data.json --result docs/verification/compound-v21-development.json --output .cache/ci-compound-processed-audit.json
       - name: Refit native sector forecasts and independently check race gates

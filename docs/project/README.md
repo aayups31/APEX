@@ -69,9 +69,9 @@ versus R035, with all eight final cases passing and44 exactly regenerated runs.
 Worst nominal peak error increases from.326m to.383m; the analytic expert remains
 equally accurate. All713 tests pass locally and on Python3.11/3.12 CI.
 R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling passed its replay gate. R041 compound crossover remains open.
-The [R041 compound review](../verification/compound-v25-report.md) records
-the audited pit-exit correction, fuel sensitivity, and distance-aligned
-telemetry results. Crossover forecasts remain below the acceptance gates.
+The field-pace forecast beats a zero-change baseline across 20 races on
+average. The resulting compound crossover forecast passes 9 of 24 races.
+[R041 development review](../verification/compound-v29-report.md).
 These scoped component completions do not promote formal maturity.
 Benchmark reservation alone is not acquired benchmark telemetry;
 the production kernel remains R0 and a separate R2 review is still required.
