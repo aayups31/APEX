@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-27",
   "research_inventory": {
-    "done": 40,
+    "done": 41,
     "total": 73
   },
   "build_inventory": {
@@ -470,13 +470,16 @@
   },
   "tyre_optimal_control": {
     "backlog_id": "R042",
-    "status": "IN_PROGRESS",
+    "status": "DONE",
+    "scope": "SYNTHETIC_FINITE_TYRE_CONTROL",
     "synthetic_gate": "PASSED",
     "strategy_count": 112,
     "fine_mesh_maximum_time_error_s": 0.000562680858990916,
     "report": "docs/verification/tyre-optimal-control-r042-report.md",
     "summary": "docs/verification/tyre-optimal-control-r042-summary.json",
-    "remaining_validation": "Real-race pit crossover with qualified R041 compound pace evidence and observed pit loss",
+    "replay": "docs/verification/tyre-optimal-control-r042-replay.json",
+    "real_race_validation": false,
+    "real_race_validation_dependencies": ["R041", "R045"],
     "production_promotion": false
   },
   "compound_crossover": {

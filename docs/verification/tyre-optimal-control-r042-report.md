@@ -1,6 +1,7 @@
 # R042 synthetic multi-lap tyre control
 
-The synthetic benchmark passed its mesh convergence and pit decision checks.
+R042 is complete for the synthetic optimal-control test in the backlog.
+The benchmark passed its mesh convergence and pit decision checks.
 APEX enumerated all 112 legal four-lap plans. Each plan can conserve or push
 on each lap, and can replace the initial worn set once with a fresh soft or
 hard set. An independent continuous integrator evaluated the same catalog.
@@ -23,8 +24,9 @@ and 0.352 s in the fixture, respectively. Maximum heat balance error was
 
 The fixture uses one effective axle, two fixed effort levels, assumed
 compound parameters and a fixed operating clock. The break-even result
-applies to that fixture. R042 remains in progress pending validation with
-supported compound pace and observed pit loss. R041 remains open. A new
+applies to that fixture. Real-race strategy validation depends on
+qualified R041 compound pace forecasts and R045 observed pit-loss
+calibration. R041 remains open. A new
 forecast-time signal for individual car pace triggers an R041 follow-up
 on the seven persistent failures, the full development cohort and,
 following a complete development pass, fresh confirmation.
@@ -36,11 +38,16 @@ Run from the repository root with the installed APEX environment.
 
 ```powershell
 python -m apexsim.cli run-tyre-optimal-control-study --output .cache/r042-control-replay
+python -m apexsim.cli verify-tyre-optimal-control-study .cache/r042-control-replay --receipt .cache/r042-control-receipt.json
 python -m pytest -q apex_engine/tests/test_tyre_optimal_control.py apex_engine/tests/test_tyre_thermal.py apex_engine/tests/test_tyre_wear.py
 ```
 
 The command writes the fixture, full trajectories, sealed summary and
 hash inventory. Two local runs produced byte-identical trajectory files.
+The verifier checks the saved inventory and regenerates all 560
+trajectories across the four meshes and continuous solver.
+[Replay receipt](tyre-optimal-control-r042-replay.json)
+
 The parent R039 reference run reproduced the published
 summary seal from the accepted R037 replay. The 13 parent tests passed
 before implementation. All 15 focused tests passed after implementation

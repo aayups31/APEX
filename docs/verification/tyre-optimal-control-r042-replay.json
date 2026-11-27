@@ -1,0 +1,10 @@
+{
+  "content_sha256": "a3a2868c36098b88d7a873a321aed2bb2b23d4bfeee498a58274738938fdcba5",
+  "integration_count": 5,
+  "manifest_sha256": "45ce8c3ec1b9605264ac4f3c3184ca4240910bf0e1ada2f0a492df5c21179879",
+  "passed": true,
+  "schema_version": "apex-tyre-optimal-control-r042-v1-replay",
+  "strategy_count": 112,
+  "summary_sha256": "2b0a21e5469a068fbad234f36b50daf3a398c590e521e5513960384ea6ffc18e",
+  "verified": true
+}

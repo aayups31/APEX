@@ -66,7 +66,7 @@
       "reference_time_s": 336.2889984062999
     }
   ],
-  "content_sha256": "b8dc352462fa0784c58b2be0163644c593b38ab8b0752525d122ce73efd7f9dd",
+  "content_sha256": "2b0a21e5469a068fbad234f36b50daf3a398c590e521e5513960384ea6ffc18e",
   "meshes": [
     {
       "best_no_stop_index": 21,
@@ -115,7 +115,7 @@
   "schema_version": "apex-tyre-optimal-control-r042-v1",
   "scope": "SYNTHETIC_FINITE_TYRE_CONTROL",
   "source_sha256": {
-    "tyre_optimal_control.py": "119cc6b25f50e804662ff7078e8ee0d6c130125fca7de8153a6b19936990890a",
+    "tyre_optimal_control.py": "f98da7697c5e13e1c0b1ab4a3afa30bdc0d4da20f5f120bcc610ebc0272e0d07",
     "tyre_thermal.py": "f72ea29e81a4a9fdb7fa582380c875a6b9aa633d47c7b4e047a33e50fbee8203",
     "tyre_wear.py": "d67996bb4bf51350453778d649f77979dbdf162d33def45fae70c408ce1590ce"
   },
