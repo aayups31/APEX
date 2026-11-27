@@ -104,11 +104,11 @@ def observe(row, outlap_ids, exits, clocks, peers):
     }
 
 
-def run(root):
+def run(root, events=EVENTS):
     cohort = read_json(FOLDER / "compound-v24-cohort.json")
     check_seal(cohort)
     results = {}
-    for event in EVENTS:
+    for event in events:
         source = cohort["sources"][event]
         field = clean_field(root, event, source)
         native = archive_laps(root, event, source)

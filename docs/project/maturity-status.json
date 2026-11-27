@@ -520,14 +520,20 @@
     "sector_traffic_study": "docs/verification/compound-v30-development.json",
     "shared_shift_reachability": "docs/verification/compound-common-shift-audit.json",
     "revisit_trigger": "A new car-specific input available at forecast time with plausible coverage of the persistent failures. Screen those seven races, then run the full development gate and fresh confirmation if qualified.",
-    "next_signal_to_audit": "Absolute pit-exit clock and completed outlap pace relative to peers already observable by the existing forecast clock",
+    "latest_outlap_experiment": {
+      "report": "docs/verification/compound-v32-report.md",
+      "passed_races": 9,
+      "supported_races": 24,
+      "persistent_failures_repaired": 0,
+      "decision": "STOP_OUTLAP_PACE_DIRECTION"
+    },
     "outlap_signal_coverage": {
       "report": "docs/verification/compound-outlap-support.md",
       "cases": 131,
       "relative_pace_supported": 117,
       "exact_exit_supported": 27,
       "joint_supported": 13,
-      "predictive_value_tested": false
+      "predictive_value_tested": true
     },
     "prior_field_report": "docs/verification/compound-v29-report.md",
     "field_error_audit": "docs/verification/compound-v29-field-errors.json",
