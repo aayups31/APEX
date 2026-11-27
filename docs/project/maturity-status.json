@@ -471,10 +471,13 @@
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
-    "candidate": "v29_predicted_field",
-    "decision": "REJECT_PREDICTED_FIELD_CROSSOVER",
-    "report": "docs/verification/compound-v29-report.md",
-    "development_summary": "docs/verification/compound-v29-development.json",
+    "candidate": "v31_crossover_aware_shift",
+    "decision": "REJECT_CROSSOVER_AWARE_SHIFT",
+    "report": "docs/verification/compound-v31-report.md",
+    "development_summary": "docs/verification/compound-v31-development.json",
+    "sector_traffic_study": "docs/verification/compound-v30-development.json",
+    "shared_shift_reachability": "docs/verification/compound-common-shift-audit.json",
+    "prior_field_report": "docs/verification/compound-v29-report.md",
     "field_error_audit": "docs/verification/compound-v29-field-errors.json",
     "individual_residual_screen": "docs/verification/compound-individual-residual-screen.json",
     "prior_peer_report": "docs/verification/compound-v26-report.md",
@@ -486,16 +489,18 @@
     "training_source_events": 28,
     "training_supported_events": 24,
     "failed_development_events": [
-      "9839",
+      "10022",
       "9850",
       "9877",
       "9888",
       "9896",
       "9912",
       "9928",
-      "9963",
+      "9955",
       "9971",
+      "9987",
       "9998",
+      "F1_2023_R01",
       "F1_2023_R14",
       "F1_2023_R15",
       "F1_2024_R03",
@@ -712,6 +717,13 @@
     },
     "source_ci": {
       "status": "PENDING"
+    },
+    "prior_v29_source_ci": {
+      "status": "SUCCESS",
+      "source_commit": "58314f2b8c52e0b3ae269d11a2a2fee9e96e1ebe",
+      "run_id": 45934741805,
+      "python_versions": ["3.11", "3.12"],
+      "tests_per_python": 908
     }
   },
   "tyre_thermal_replay": {

@@ -135,9 +135,9 @@ nominal tracking RMSE23.6% versus R035. All eight final cases pass and44 saved
 comparator/refinement runs reproduce exactly. Worst nominal peak error rises
 from.326m to.383m; source pace remains unvalidated. All713 tests pass locally and
 on Python3.11/3.12 CI. R037 recovery, R038 fallback confirmation, and R039 tyre heat balance are complete for their research scopes. R040 wear coupling passed its replay gate. R041 compound crossover remains open.
-The field-pace forecast beats a zero-change baseline across 20 races on
-average. The resulting compound crossover forecast passes 9 of 24 races.
-[R041 development review](docs/verification/compound-v29-report.md).
+The latest R041 experiments compare intermediate traffic timing and a
+crossover-aware training objective on the 24 supported races.
+[R041 development review](docs/verification/compound-v31-report.md).
 
 
 ---

@@ -32,3 +32,29 @@ def test_saved_traffic_forecasts_replay_and_check_all_clocks(traffic):
     groups[0][0][0][1] = [stamp - 1, row["driver"], stamp - 1]
     with pytest.raises(ValueError, match="Ineligible"):
         traffic.feature_vectors(row, groups)
+
+
+def test_common_shift_boundary_and_decision_loss_replay(traffic):
+    reach = importlib.import_module("audit_compound_common_shift")
+    model = importlib.import_module("compound_decision_loss")
+    prefix = [90.0, 90.0, 90.0]
+    row = {
+        "current_prefix_s": prefix,
+        "reference_target_s": prefix,
+        "prefix_s": 0.2,
+        "pairwise_prefix_s": -0.2,
+    }
+    assert reach.reachable(row, prefix) == [(False, False), (False, True), (True, False)]
+    saved = traffic.read_json(traffic.FOLDER / "compound-v31-development.json")
+    traffic.check_seal(saved)
+    refit = model.run()
+    for key in ("dataset_sha256", "control_sha256", "source_sha256_lf", "protocol_sha256_lf"):
+        assert refit[key] == saved[key]
+    for arm in ("timing_only", "result"):
+        actual, expected = refit[arm], saved[arm]
+        assert actual["failed_events"] == expected["failed_events"]
+        assert actual["qualified"] == expected["qualified"]
+        for a, b in zip(actual["predictions"], expected["predictions"], strict=True):
+            for key in ("index", "event", "crossings", "bounded_laps"):
+                assert a[key] == b[key]
+            assert a["laps_s"] == pytest.approx(b["laps_s"], abs=1e-6)
