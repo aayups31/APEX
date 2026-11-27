@@ -476,6 +476,7 @@
     "report": "docs/verification/compound-v29-report.md",
     "development_summary": "docs/verification/compound-v29-development.json",
     "field_error_audit": "docs/verification/compound-v29-field-errors.json",
+    "individual_residual_screen": "docs/verification/compound-individual-residual-screen.json",
     "prior_peer_report": "docs/verification/compound-v26-report.md",
     "candidate_passed": false,
     "development_qualified": false,
@@ -512,7 +513,7 @@
       }
     ],
     "source_ci_passed": false,
-    "next_required_work": "Test whether earlier individual telemetry predicts car pace changes relative to contemporaneous peers, with nonoverlapping training windows from other races and the original two-label gates.",
+    "next_required_work": "Audit the availability of independent time-stamped tyre-state observations. If usable in the existing cohort, test their incremental value for individual pace deviations before the complete crossover evaluation.",
     "v11_development_summary": "docs/verification/compound-v11-development-summary.json",
     "prior_v10_review": {
       "backlog_id": "R041",

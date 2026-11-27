@@ -54,13 +54,39 @@ the same physical comparison twice. These paired results limit what
 improving the field estimate alone can accomplish with this checkpoint.
 [Paired error audit](compound-v29-field-errors.json).
 
-The next test is to forecast the individual car's pace change relative
-to contemporaneous peers. Use earlier driver/stint telemetry and train
-on clean, nonoverlapping twelve-lap windows from other races. Compare
-against a zero individual deviation on matched windows, then score all
-393 crossover forecasts with the existing fallback and gates. This tests
-whether the remaining car-specific variation is predictable before
-acquiring further race outcomes. Fresh confirmation remains sealed.
+## Does earlier individual telemetry explain the remaining pace change?
+
+A follow-up screen measured the subject's pace change relative to the
+observed field change. It used 327 nonoverlapping physical windows across
+20 races, with an entire race held out for each fit. Predicting zero
+individual deviation gave 0.498 s of error. Prefix timing and field
+information gave 0.506 s. Adding mean speed, throttle, brake, coasting
+and DRS use and their changes across the prefix gave 0.511 s. Telemetry
+improved on timing in 10 of 20 races and on zero in nine. The screen
+missed its preregistered criteria for expanding aggregate telemetry.
+[Screen protocol](../../research/protocols/COMPOUND_INDIVIDUAL_RESIDUAL_SCREEN.md),
+[window predictions and race errors](compound-individual-residual-screen.json).
+
+The next evidence to seek is an independent observation of individual tyre
+state, such as a time-stamped tyre temperature or pressure series with
+driver, wheel and stint identities. First verify its coverage of the
+development cohort and availability before the forecast clock. Reuse the
+individual-deviation screen to measure incremental predictive value before
+returning to the 393-case gate. Availability of such a source remains open.
+Fresh confirmation remains sealed.
+
+The Spa dataset shared for this investigation contains simulated tyre
+channels for five Corvette C7.R laps in Assetto Corsa. The source has no
+event/driver join to the R041 field. The state-space paper repository
+provides Hamilton lap-time data and modeling code. OpenF1's public car
+schema lists driving channels. The Hungarian GP Pirelli preview gives
+prescribed starting pressures, and the race scrutineering report confirms
+the checks. These sources supplied no measured per-wheel series for the
+cohort. [Spa dataset card](https://huggingface.co/datasets/Nasim435/spa-francorchamps-lap-data/raw/main/README.md),
+[paper repository](https://github.com/colecappello12/F1_SSM_Paper),
+[OpenF1 car schema](https://openf1.org/docs/#car-data),
+[Pirelli event notes](https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_event_notes_-_pirelli_preview.pdf),
+[FIA scrutineering report](https://www.fia.com/system/files/decision-document/2025_hungarian_grand_prix_-_race_scrutineering.pdf).
 
 ## Reproduction
 
@@ -68,10 +94,11 @@ acquiring further race outcomes. Fresh confirmation remains sealed.
 python research/scripts/compound_field_evolution.py --output .cache/v28-replay.json
 python research/scripts/compound_field_forecast.py --output .cache/v29-replay.json
 python research/scripts/audit_compound_field_errors.py --output .cache/v29-errors-replay.json
+python research/scripts/screen_compound_individual_residual.py --output .cache/r041-individual-screen.json
 ```
 
 The v28 extraction requires the previously verified native archives in
 `.cache`. The v29 forecast and paired audit use tracked inputs. The tests
 refit the causal forecast, check native clock boundaries and perturb a
 held-out race's future peer values to verify its forecasts stay fixed.
-The local compound regression suite passed all 142 tests.
+The native extraction also replayed byte-for-byte in a fresh local output.

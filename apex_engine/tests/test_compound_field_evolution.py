@@ -116,3 +116,20 @@ def test_predicted_field_replays_and_excludes_entire_test_race(field_model, monk
     for a, b in zip(replay["result"]["predictions"], poisoned["result"]["predictions"], strict=True):
         if a["event"] == event:
             assert a == b
+
+
+def test_individual_residual_screen_replays_on_disjoint_physical_windows(field_model):
+    screen = importlib.import_module("screen_compound_individual_residual")
+    saved = screen.read_json(screen.FOLDER / "compound-individual-residual-screen.json")
+    screen.check_seal(saved)
+    refit = screen.run()
+    for key in ("source_sha256_lf", "protocol_sha256_lf", "predictions", "fold_mae_s", "expand_training"):
+        field_model.compare(refit[key], saved[key])
+    rows = screen.read_json(screen.FOLDER / "compound-v24-cohort.json")["cases"]
+    used = set()
+    for pred in saved["predictions"]:
+        row = rows[pred["index"]]
+        laps = {(pred["event"], row["driver"], row["stints"][1], a) for a in row["ages"]}
+        assert len(laps) == 12
+        assert used.isdisjoint(laps)
+        used.update(laps)
