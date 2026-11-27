@@ -8,6 +8,7 @@ from apexsim.research.tyre_optimal_control import (
     reference_lap,
     rollout,
     run_study,
+    verify_study,
 )
 
 
@@ -48,5 +49,14 @@ def test_benchmark_replays_every_strategy_and_seals_run(tmp_path):
     assert summary["passed"]
     assert summary["choices"][0]["mesh_strategy"]["pit_before_lap"] is not None
     assert summary["choices"][1]["mesh_strategy"]["pit_before_lap"] is None
+    replay = verify_study(path)
+    check_seal(replay)
+    assert replay["verified"] and replay["passed"]
+    assert replay["summary_sha256"] == summary["content_sha256"]
+    assert replay["integration_count"] == 5
     with pytest.raises(FileExistsError):
         run_study(path)
+    with (path / "trajectories.json").open("a", encoding="utf-8") as artifact:
+        artifact.write(" ")
+    with pytest.raises(ValueError, match="inventory/hash mismatch"):
+        verify_study(path)

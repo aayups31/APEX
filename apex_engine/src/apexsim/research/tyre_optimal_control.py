@@ -13,7 +13,14 @@ from scipy.integrate import solve_ivp
 
 from apexsim.provenance import file_sha256, write_manifest
 from apexsim.research import tyre_thermal, tyre_wear
-from apexsim.research.evidence import finish_run
+from apexsim.research.evidence import (
+    check_seal,
+    compare_numeric,
+    finish_run,
+    read_json,
+    seal,
+    verify_inventory,
+)
 from apexsim.research.tyre_thermal import DEFAULT_PARAMETERS, ThermalState, heat_step
 from apexsim.research.tyre_wear import wear_step
 
@@ -304,4 +311,31 @@ def run_study(output: Path) -> dict:
             "python_version": python_version(),
             "source_sha256": {source.name: file_sha256(source) for source in sources},
         },
+    )
+
+
+def verify_study(output: Path) -> dict:
+    """Check artifact integrity and independently regenerate all scored plans."""
+    manifest = verify_inventory(output, VERSION)
+    saved = read_json(output / "summary.json")
+    check_seal(saved)
+    if saved["content_sha256"] != manifest["summary_sha256"]:
+        raise ValueError("R042 summary does not match the run manifest")
+    compare_numeric(fixture(), read_json(output / "fixture.json"), "fixture")
+    summary, trajectories = evaluate()
+    recorded_metrics = {
+        k: v for k, v in saved.items() if k not in {"content_sha256", "python_version", "source_sha256"}
+    }
+    compare_numeric(summary, recorded_metrics, "summary")
+    compare_numeric(trajectories, read_json(output / "trajectories.json"), "trajectories")
+    return seal(
+        {
+            "schema_version": VERSION + "-replay",
+            "summary_sha256": saved["content_sha256"],
+            "manifest_sha256": manifest["content_sha256"],
+            "strategy_count": summary["strategy_count"],
+            "integration_count": len(MESHES) + 1,
+            "verified": True,
+            "passed": summary["passed"],
+        }
     )

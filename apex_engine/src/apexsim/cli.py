@@ -1042,6 +1042,24 @@ def run_tyre_optimal_control_command(output: Annotated[Path, typer.Option()]) ->
         raise typer.Exit(1)
 
 
+@app.command("verify-tyre-optimal-control-study")
+def verify_tyre_optimal_control_command(
+    output: Path, receipt: Annotated[Path | None, typer.Option()] = None
+) -> None:
+    """Verify the R042 evidence inventory and regenerate all scored trajectories."""
+    from apexsim.provenance import write_manifest
+    from apexsim.research.tyre_optimal_control import verify_study
+
+    if receipt is not None and receipt.resolve().is_relative_to(output.resolve()):
+        raise typer.BadParameter("Write the receipt outside the sealed run directory")
+    result = verify_study(output)
+    if receipt is not None:
+        write_manifest(receipt, result)
+    typer.echo(json.dumps(result, indent=2))
+    if not result["passed"]:
+        raise typer.Exit(1)
+
+
 @app.command("calibrate-support-confirmation")
 def calibrate_support_confirmation_command(
     detector: Annotated[Path, typer.Option()],
