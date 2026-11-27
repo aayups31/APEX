@@ -48,6 +48,24 @@ inputs and loss have inadequate accuracy at forecasting that shift.
 
 ## Remaining evidence gap
 
+Seven races fail every one of the 13 forecast arms in the v24 through
+v31 reports that use the corrected cohort and forecast-time inputs.
+Three of those races have no observed crossover under either definition.
+Selecting among these arms by race would leave at least seven failures
+even with the results known in advance. The recurring failures warrant
+checking both pace error on no-crossover races and missed calls on races
+with observed reversals.
+
+| Development event | Cases | Observed crossings by definition |
+|---|---:|---:|
+| 9850 | 13 | 0 / 0 |
+| 9877 | 33 | 7 / 10 |
+| 9912 | 12 | 0 / 0 |
+| 9928 | 36 | 14 / 13 |
+| 9998 | 10 | 2 / 2 |
+| F1_2023_R15 | 14 | 0 / 0 |
+| F1_2024_R16 | 13 | 1 / 0 |
+
 The public archives reviewed so far give tyre allocation, tyre age, timing,
 driving channels and weather. An individual, time-stamped tyre pressure
 or temperature series with usable coverage remains unverified. The FIA
