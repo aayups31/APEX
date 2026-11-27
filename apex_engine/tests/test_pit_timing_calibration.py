@@ -4,6 +4,10 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
+from apexsim.research.fienia_strategy import PaperStrategyAction, PaperStrategyModel, PaperStrategyParameters
+from apexsim.research.pit_timing import load_pit_timing
+from apexsim.sim_core.types import TyreCompound
+
 
 @pytest.fixture
 def study(monkeypatch):
@@ -56,3 +60,44 @@ def test_clock_calibration_and_holdout_replay(study):
     model = clocks.fit(parent["calibration"]["pooled"], saved["training_clocks"])
     assert model == saved["calibration"]
     assert study.score(model, parent["evaluation"]) == saved["result"]
+
+
+def test_expanded_calibration_replays_and_refuses_holdout_overlap(study):
+    expanded = importlib.import_module("calibrate_pit_expanded")
+    parent = expanded.read_json(expanded.PARENT)
+    location = expanded.PARENT.with_name("pit-timing-r045-v3.json")
+    saved = expanded.read_json(location)
+    expanded.check_seal(saved)
+    assert saved["parent_sha256"] == parent["content_sha256"]
+    added = saved["training_additions"]
+    replay = expanded.evaluate(parent, added)
+    assert replay == {key: saved[key] for key in replay}
+    overlapped = {**parent, "evaluation": {**parent["evaluation"], **added}}
+    with pytest.raises(ValueError, match="overlap"):
+        expanded.evaluate(overlapped, added)
+
+
+def test_research_strategy_uses_qualified_pit_components(study):
+    evidence = study.BASE / "docs/verification/pit-timing-r045-v3.json"
+    timing = load_pit_timing(evidence, "albert_park")
+    assert not timing.pooled
+    assert timing.inlap_s + timing.outlap_s == timing.total_s
+    with pytest.raises(ValueError, match="No circuit-specific"):
+        load_pit_timing(evidence, "marina_bay")
+    assert load_pit_timing(evidence, "marina_bay", allow_pooled=True).pooled
+
+    params = PaperStrategyParameters(total_laps=4)
+    baseline = PaperStrategyModel(params)
+    applied = PaperStrategyModel(timing.apply(params))
+    initial = baseline.initial_state(TyreCompound.SOFT)
+    pit = PaperStrategyAction(params.nominal_fuel_energy_mj(), 0, TyreCompound.HARD)
+    drive = PaperStrategyAction(params.nominal_fuel_energy_mj(), 0)
+    a, _ = baseline.transition(initial, pit)
+    b, _ = applied.transition(initial, pit)
+    assert b.last_lap_time_s - a.last_lap_time_s == pytest.approx(timing.inlap_s - params.pit_inlap_penalty_s)
+    a, _ = baseline.transition(a, drive)
+    b, _ = applied.transition(b, drive)
+    assert b.last_lap_time_s - a.last_lap_time_s == pytest.approx(
+        timing.outlap_s - params.pit_outlap_penalty_s
+    )
+    assert b.race_time_s - a.race_time_s == pytest.approx(timing.total_s - params.consecutive_pit_penalty_s)
