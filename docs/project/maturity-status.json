@@ -496,6 +496,13 @@
     "summary": "docs/verification/sector-ers-summary.json",
     "production_promotion": false
   },
+  "pit_timing_calibration": {
+    "backlog_id": "R045",
+    "status": "IN_PROGRESS",
+    "report": "docs/verification/pit-timing-r045-report.md",
+    "first_candidate_passed": false,
+    "production_promotion": false
+  },
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
