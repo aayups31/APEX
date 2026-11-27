@@ -1,7 +1,10 @@
 # R045 expanded same-circuit training
 
-Add the 2022 Australia, Miami and Singapore races and the 2023 Miami
-race as training-only sources. Apply the original green-clock and
+Add the 2022 Australia, Miami and Singapore races as training-only
+sources. A requested 2023 Miami archive contained no lap timing after
+retry, so the frozen expansion uses the 2022 source for Miami. This
+source decision was made before extracting or scoring the added stops.
+Apply the original green-clock and
 peer-control filters. These circuits were selected for missing
 training support in the first study. Keep all 110 held-out stops and
 the original pooled 2023 comparator frozen. Also score an expanded
