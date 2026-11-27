@@ -138,6 +138,9 @@ on Python3.11/3.12 CI. R037 recovery, R038 fallback confirmation, and R039 tyre 
 The latest R041 experiments compare intermediate traffic timing and a
 crossover-aware training objective on the 24 supported races.
 [R041 development review](docs/verification/compound-v31-report.md).
+R042 passed its synthetic four-lap tyre-control benchmark across 112
+strategies. Real-race validation is pending.
+[R042 verification](docs/verification/tyre-optimal-control-r042-report.md).
 
 
 ---

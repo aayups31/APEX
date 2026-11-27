@@ -12,7 +12,7 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-11-04",
+  "last_progress_date": "2026-11-27",
   "research_inventory": {
     "done": 40,
     "total": 73
@@ -468,6 +468,17 @@
     "report": "docs/verification/tyre-wear-compounds-report.md",
     "production_promotion": false
   },
+  "tyre_optimal_control": {
+    "backlog_id": "R042",
+    "status": "IN_PROGRESS",
+    "synthetic_gate": "PASSED",
+    "strategy_count": 112,
+    "fine_mesh_maximum_time_error_s": 0.000562680858990916,
+    "report": "docs/verification/tyre-optimal-control-r042-report.md",
+    "summary": "docs/verification/tyre-optimal-control-r042-summary.json",
+    "remaining_validation": "Real-race pit crossover with qualified R041 compound pace evidence and observed pit loss",
+    "production_promotion": false
+  },
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
@@ -477,6 +488,7 @@
     "development_summary": "docs/verification/compound-v31-development.json",
     "sector_traffic_study": "docs/verification/compound-v30-development.json",
     "shared_shift_reachability": "docs/verification/compound-common-shift-audit.json",
+    "revisit_trigger": "A new car-specific input available at forecast time with plausible coverage of the persistent failures. Screen those seven races, then run the full development gate and fresh confirmation if qualified.",
     "prior_field_report": "docs/verification/compound-v29-report.md",
     "field_error_audit": "docs/verification/compound-v29-field-errors.json",
     "individual_residual_screen": "docs/verification/compound-individual-residual-screen.json",

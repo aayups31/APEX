@@ -1,0 +1,123 @@
+{
+  "checks": {
+    "catalog_complete": true,
+    "fine_crossover_accuracy": true,
+    "fine_policy_regret": true,
+    "fine_time_accuracy": true,
+    "mesh_refinement": true,
+    "pit_decisions": true,
+    "thermal_balance": true
+  },
+  "choices": [
+    {
+      "fixed_policy_reference_regret_s": 10.73404826602848,
+      "mesh_index": 64,
+      "mesh_strategy": {
+        "efforts": [
+          "push",
+          "conserve",
+          "conserve",
+          "push"
+        ],
+        "pit_before_lap": 2,
+        "replacement": "soft"
+      },
+      "mesh_winner_reference_regret_s": 0.0,
+      "pit_loss_s": 2.0,
+      "reference_index": 64,
+      "reference_strategy": {
+        "efforts": [
+          "push",
+          "conserve",
+          "conserve",
+          "push"
+        ],
+        "pit_before_lap": 2,
+        "replacement": "soft"
+      },
+      "reference_time_s": 325.9074232984078
+    },
+    {
+      "fixed_policy_reference_regret_s": 0.3524731581363767,
+      "mesh_index": 21,
+      "mesh_strategy": {
+        "efforts": [
+          "conserve",
+          "conserve",
+          "push",
+          "push"
+        ],
+        "pit_before_lap": null,
+        "replacement": null
+      },
+      "mesh_winner_reference_regret_s": 0.0,
+      "pit_loss_s": 20.0,
+      "reference_index": 21,
+      "reference_strategy": {
+        "efforts": [
+          "conserve",
+          "conserve",
+          "push",
+          "push"
+        ],
+        "pit_before_lap": null,
+        "replacement": null
+      },
+      "reference_time_s": 336.2889984062999
+    }
+  ],
+  "content_sha256": "b8dc352462fa0784c58b2be0163644c593b38ab8b0752525d122ce73efd7f9dd",
+  "meshes": [
+    {
+      "best_no_stop_index": 21,
+      "best_stop_index": 78,
+      "crossover_error_s": 0.012662279429093815,
+      "maximum_balance_error_j": 3.2741809263825417e-11,
+      "maximum_time_error_s": 0.037541167928964114,
+      "pit_crossover_s": 12.394237387321198,
+      "steps_per_lap": 4
+    },
+    {
+      "best_no_stop_index": 21,
+      "best_stop_index": 78,
+      "crossover_error_s": 0.0013522507777565806,
+      "maximum_balance_error_j": 3.456079866737127e-11,
+      "maximum_time_error_s": 0.009102988110441856,
+      "pit_crossover_s": 12.38292735866986,
+      "steps_per_lap": 16
+    },
+    {
+      "best_no_stop_index": 21,
+      "best_stop_index": 64,
+      "crossover_error_s": 0.00019487476640733803,
+      "maximum_balance_error_j": 3.956301952712238e-11,
+      "maximum_time_error_s": 0.0022558333575943834,
+      "pit_crossover_s": 12.381769982658511,
+      "steps_per_lap": 64
+    },
+    {
+      "best_no_stop_index": 21,
+      "best_stop_index": 64,
+      "crossover_error_s": 4.8957962235363084e-05,
+      "maximum_balance_error_j": 4.013145371573046e-11,
+      "maximum_time_error_s": 0.000562680858990916,
+      "pit_crossover_s": 12.38162406585434,
+      "steps_per_lap": 256
+    }
+  ],
+  "passed": true,
+  "production_promotion": false,
+  "python_version": "3.12.12",
+  "real_race_validation": false,
+  "reference_best_no_stop_index": 21,
+  "reference_best_stop_index": 64,
+  "reference_pit_crossover_s": 12.381575107892104,
+  "schema_version": "apex-tyre-optimal-control-r042-v1",
+  "scope": "SYNTHETIC_FINITE_TYRE_CONTROL",
+  "source_sha256": {
+    "tyre_optimal_control.py": "119cc6b25f50e804662ff7078e8ee0d6c130125fca7de8153a6b19936990890a",
+    "tyre_thermal.py": "f72ea29e81a4a9fdb7fa582380c875a6b9aa633d47c7b4e047a33e50fbee8203",
+    "tyre_wear.py": "d67996bb4bf51350453778d649f77979dbdf162d33def45fae70c408ce1590ce"
+  },
+  "strategy_count": 112
+}
