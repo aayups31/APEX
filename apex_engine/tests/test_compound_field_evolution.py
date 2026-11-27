@@ -85,3 +85,34 @@ def test_field_replay_from_saved_causal_inputs(field_model):
     field_model.compare(replay["predictions"], result["result"]["predictions"])
     field_model.compare(replay["folds"], result["result"]["folds"])
     assert replay["qualified"] == result["development_qualified"] == result["new_holdout_acquisition_allowed"]
+
+
+def test_predicted_field_replays_and_excludes_entire_test_race(field_model, monkeypatch):
+    model = importlib.import_module("compound_field_forecast")
+    original = model.read_json
+    saved = original(model.FOLDER / "compound-v29-development.json")
+    model.check_seal(saved)
+    replay = model.run()
+    assert saved["source_sha256_lf"] == replay["source_sha256_lf"]
+    assert saved["parent_sha256"] == replay["parent_sha256"]
+    assert saved["protocol_sha256_lf"] == replay["protocol_sha256_lf"]
+    field_model.compare(replay["field_estimates"], saved["field_estimates"])
+    field_model.compare(replay["field_errors"], saved["field_errors"])
+    field_model.compare(replay["result"], saved["result"])
+    data = original(model.FOLDER / "compound-v24-cohort.json")
+    prev = original(model.FOLDER / "compound-v28-development.json")
+    event = str(data["cases"][0]["session"])
+    for row, context in zip(data["cases"], prev["contexts"], strict=True):
+        if str(row["session"]) == event:
+            context["future_diagnostic"] = [100.0] * 6
+    del prev["content_sha256"]
+    changed = model.seal(prev)
+    monkeypatch.setattr(
+        model,
+        "read_json",
+        lambda path: changed if path.name == "compound-v28-development.json" else original(path),
+    )
+    poisoned = model.run()
+    for a, b in zip(replay["result"]["predictions"], poisoned["result"]["predictions"], strict=True):
+        if a["event"] == event:
+            assert a == b
