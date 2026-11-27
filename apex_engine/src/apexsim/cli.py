@@ -1031,6 +1031,17 @@ def run_tyre_thermal_study_command(
     typer.echo(json.dumps(run_thermal_study(recovery, verification, output), indent=2))
 
 
+@app.command("run-tyre-optimal-control-study")
+def run_tyre_optimal_control_command(output: Annotated[Path, typer.Option()]) -> None:
+    """Evaluate the R042 synthetic tyre-control benchmark and save its evidence."""
+    from apexsim.research.tyre_optimal_control import run_study
+
+    summary = run_study(output)
+    typer.echo(json.dumps(summary, indent=2))
+    if not summary["passed"]:
+        raise typer.Exit(1)
+
+
 @app.command("calibrate-support-confirmation")
 def calibrate_support_confirmation_command(
     detector: Annotated[Path, typer.Option()],
