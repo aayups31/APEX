@@ -1,0 +1,653 @@
+{
+  "calibration": {
+    "circuits": {
+      "bahrain": {
+        "inlap_proxy_s": 3.240750000000066,
+        "lane_s": 25.350500000000466,
+        "outlap_proxy_s": 20.231999999999946,
+        "total_proxy_s": 23.80850000000001
+      },
+      "monza": {
+        "inlap_proxy_s": 5.321750000000197,
+        "lane_s": 24.40599999999995,
+        "outlap_proxy_s": 17.386500000000044,
+        "total_proxy_s": 23.04400000000024
+      }
+    },
+    "pooled": {
+      "inlap_proxy_s": 3.2627500000000005,
+      "lane_s": 24.929499999999734,
+      "outlap_proxy_s": 19.575999999999997,
+      "total_proxy_s": 23.174499999999995
+    }
+  },
+  "content_sha256": "0a48bf0629ec44e6675a7ba453a98b32915376103ae408d51d1388efeb8d851e",
+  "parent_sha256": "52c5b1eab32aa4c0d9f9d7bc76cb48c4e03a17fc745753f2310ab8c716ef8614",
+  "production_promotion": false,
+  "protocol_sha256_lf": "2488356d9ff6429128a79cbe35f2335bf32e2bab5dc357b38f483f720915b89a",
+  "result": {
+    "checks": {
+      "better_macro_total_mae": false,
+      "five_events_with_five_stops": true,
+      "improves_at_least_three_events": false
+    },
+    "folds": {
+      "F1_2024_R01": {
+        "candidate_mae_s": {
+          "inlap_proxy_s": 0.8321923076923692,
+          "lane_s": 0.6974615384619938,
+          "outlap_proxy_s": 1.132711538461515,
+          "total_proxy_s": 1.8414038461538538
+        },
+        "fallback": false,
+        "pooled_mae_s": {
+          "inlap_proxy_s": 0.8532884615384634,
+          "lane_s": 0.40107692307677867,
+          "outlap_proxy_s": 1.0642115384615367,
+          "total_proxy_s": 1.4026346153846094
+        },
+        "supported": 26
+      },
+      "F1_2024_R03": {
+        "candidate_mae_s": {
+          "inlap_proxy_s": 12.939620967741936,
+          "lane_s": 7.704080645161001,
+          "outlap_proxy_s": 14.218903225806448,
+          "total_proxy_s": 4.308483870967735
+        },
+        "fallback": true,
+        "pooled_mae_s": {
+          "inlap_proxy_s": 12.939620967741936,
+          "lane_s": 7.704080645161001,
+          "outlap_proxy_s": 14.218903225806448,
+          "total_proxy_s": 4.308483870967735
+        },
+        "supported": 31
+      },
+      "F1_2024_R06": {
+        "candidate_mae_s": {
+          "inlap_proxy_s": 2.437125,
+          "lane_s": 2.6809999999999263,
+          "outlap_proxy_s": 4.983374999999997,
+          "total_proxy_s": 4.144874999999996
+        },
+        "fallback": true,
+        "pooled_mae_s": {
+          "inlap_proxy_s": 2.437125,
+          "lane_s": 2.6809999999999263,
+          "outlap_proxy_s": 4.983374999999997,
+          "total_proxy_s": 4.144874999999996
+        },
+        "supported": 8
+      },
+      "F1_2024_R16": {
+        "candidate_mae_s": {
+          "inlap_proxy_s": 0.7350192307693806,
+          "lane_s": 1.9002307692308547,
+          "outlap_proxy_s": 3.7880961538461113,
+          "total_proxy_s": 2.792538461538263
+        },
+        "fallback": false,
+        "pooled_mae_s": {
+          "inlap_proxy_s": 1.3790384615384625,
+          "lane_s": 1.9026153846153262,
+          "outlap_proxy_s": 2.1964423076923074,
+          "total_proxy_s": 2.6821153846153925
+        },
+        "supported": 26
+      },
+      "F1_2024_R18": {
+        "candidate_mae_s": {
+          "inlap_proxy_s": 5.4064605263157866,
+          "lane_s": 4.691447368421258,
+          "outlap_proxy_s": 1.0375263157894714,
+          "total_proxy_s": 5.159973684210529
+        },
+        "fallback": true,
+        "pooled_mae_s": {
+          "inlap_proxy_s": 5.4064605263157866,
+          "lane_s": 4.691447368421258,
+          "outlap_proxy_s": 1.0375263157894714,
+          "total_proxy_s": 5.159973684210529
+        },
+        "supported": 19
+      }
+    },
+    "improved_events": 0,
+    "macro_total_mae_s": {
+      "candidate": 3.6494549725740755,
+      "pooled": 3.5396165110356526
+    },
+    "passed": false
+  },
+  "schema": "apex-pit-timing-clock-r045-v2",
+  "source_sha256_lf": "a42ff9c21735281f3a78ba7f8c69511774aa495e5e088b81cad2dedb5a8e3e34",
+  "training_clocks": {
+    "albert_park": [
+      {
+        "after_line_s": 2.055000000000291,
+        "before_line_s": 16.975999999999658,
+        "driver": "2",
+        "inlap": 36,
+        "lane_s": 19.03099999999995
+      },
+      {
+        "after_line_s": 2.0720000000001164,
+        "before_line_s": 16.037000000000262,
+        "driver": "21",
+        "inlap": 45,
+        "lane_s": 18.10900000000038
+      }
+    ],
+    "bahrain": [
+      {
+        "after_line_s": 22.575000000000728,
+        "before_line_s": 1.7219999999997526,
+        "driver": "1",
+        "inlap": 14,
+        "lane_s": 24.29700000000048
+      },
+      {
+        "after_line_s": 23.225999999999658,
+        "before_line_s": 1.71100000000024,
+        "driver": "1",
+        "inlap": 36,
+        "lane_s": 24.936999999999898
+      },
+      {
+        "after_line_s": 24.161000000000058,
+        "before_line_s": 1.7449999999998909,
+        "driver": "10",
+        "inlap": 9,
+        "lane_s": 25.90599999999995
+      },
+      {
+        "after_line_s": 23.201000000000022,
+        "before_line_s": 1.720999999999549,
+        "driver": "10",
+        "inlap": 25,
+        "lane_s": 24.92199999999957
+      },
+      {
+        "after_line_s": 22.571999999999207,
+        "before_line_s": 1.7090000000007421,
+        "driver": "11",
+        "inlap": 17,
+        "lane_s": 24.28099999999995
+      },
+      {
+        "after_line_s": 23.33599999999933,
+        "before_line_s": 1.7260000000005675,
+        "driver": "11",
+        "inlap": 34,
+        "lane_s": 25.061999999999898
+      },
+      {
+        "after_line_s": 24.074999999999818,
+        "before_line_s": 1.706000000000131,
+        "driver": "14",
+        "inlap": 14,
+        "lane_s": 25.78099999999995
+      },
+      {
+        "after_line_s": 23.126000000000204,
+        "before_line_s": 1.7179999999998472,
+        "driver": "14",
+        "inlap": 34,
+        "lane_s": 24.84400000000005
+      },
+      {
+        "after_line_s": 22.695999999999913,
+        "before_line_s": 1.7249999999994543,
+        "driver": "16",
+        "inlap": 13,
+        "lane_s": 24.420999999999367
+      },
+      {
+        "after_line_s": 22.956999999999425,
+        "before_line_s": 1.5430000000005748,
+        "driver": "16",
+        "inlap": 33,
+        "lane_s": 24.5
+      },
+      {
+        "after_line_s": 23.701000000000022,
+        "before_line_s": 1.7359999999998763,
+        "driver": "18",
+        "inlap": 15,
+        "lane_s": 25.436999999999898
+      },
+      {
+        "after_line_s": 22.92199999999957,
+        "before_line_s": 1.7020000000002256,
+        "driver": "18",
+        "inlap": 30,
+        "lane_s": 24.623999999999796
+      },
+      {
+        "after_line_s": 23.85399999999936,
+        "before_line_s": 1.7400000000006912,
+        "driver": "2",
+        "inlap": 12,
+        "lane_s": 25.59400000000005
+      },
+      {
+        "after_line_s": 23.95600000000013,
+        "before_line_s": 1.7309999999997672,
+        "driver": "2",
+        "inlap": 30,
+        "lane_s": 25.686999999999898
+      },
+      {
+        "after_line_s": 23.743999999999687,
+        "before_line_s": 1.707999999999629,
+        "driver": "20",
+        "inlap": 15,
+        "lane_s": 25.451999999999316
+      },
+      {
+        "after_line_s": 23.603000000000065,
+        "before_line_s": 1.7550000000001091,
+        "driver": "20",
+        "inlap": 29,
+        "lane_s": 25.358000000000175
+      },
+      {
+        "after_line_s": 23.301000000000386,
+        "before_line_s": 1.6829999999999927,
+        "driver": "21",
+        "inlap": 11,
+        "lane_s": 24.98400000000038
+      },
+      {
+        "after_line_s": 23.32300000000032,
+        "before_line_s": 1.9110000000000582,
+        "driver": "21",
+        "inlap": 27,
+        "lane_s": 25.23400000000038
+      },
+      {
+        "after_line_s": 23.557999999999993,
+        "before_line_s": 1.6909999999998035,
+        "driver": "22",
+        "inlap": 10,
+        "lane_s": 25.248999999999796
+      },
+      {
+        "after_line_s": 22.650000000000546,
+        "before_line_s": 1.7399999999997817,
+        "driver": "22",
+        "inlap": 26,
+        "lane_s": 24.390000000000327
+      },
+      {
+        "after_line_s": 23.307999999999993,
+        "before_line_s": 1.7070000000003347,
+        "driver": "23",
+        "inlap": 11,
+        "lane_s": 25.015000000000327
+      },
+      {
+        "after_line_s": 23.213999999999942,
+        "before_line_s": 1.6759999999994761,
+        "driver": "23",
+        "inlap": 26,
+        "lane_s": 24.889999999999418
+      },
+      {
+        "after_line_s": 24.047999999999774,
+        "before_line_s": 1.7490000000007058,
+        "driver": "24",
+        "inlap": 12,
+        "lane_s": 25.79700000000048
+      },
+      {
+        "after_line_s": 23.608000000000175,
+        "before_line_s": 1.7510000000002037,
+        "driver": "24",
+        "inlap": 32,
+        "lane_s": 25.35900000000038
+      },
+      {
+        "after_line_s": 28.406999999999243,
+        "before_line_s": 1.717000000000553,
+        "driver": "24",
+        "inlap": 54,
+        "lane_s": 30.123999999999796
+      },
+      {
+        "after_line_s": 24.34599999999955,
+        "before_line_s": 1.7310000000006767,
+        "driver": "27",
+        "inlap": 11,
+        "lane_s": 26.077000000000226
+      },
+      {
+        "after_line_s": 36.04099999999926,
+        "before_line_s": 1.72400000000016,
+        "driver": "27",
+        "inlap": 26,
+        "lane_s": 37.76499999999942
+      },
+      {
+        "after_line_s": 23.250999999999294,
+        "before_line_s": 1.7330000000001746,
+        "driver": "31",
+        "inlap": 12,
+        "lane_s": 24.98399999999947
+      },
+      {
+        "after_line_s": 39.75799999999981,
+        "before_line_s": 1.7260000000005675,
+        "driver": "31",
+        "inlap": 15,
+        "lane_s": 41.48400000000038
+      },
+      {
+        "after_line_s": 42.793000000000575,
+        "before_line_s": 1.7059999999992215,
+        "driver": "31",
+        "inlap": 32,
+        "lane_s": 44.498999999999796
+      },
+      {
+        "after_line_s": 31.028000000000247,
+        "before_line_s": 1.720999999999549,
+        "driver": "4",
+        "inlap": 10,
+        "lane_s": 32.748999999999796
+      },
+      {
+        "after_line_s": 32.1909999999998,
+        "before_line_s": 1.7309999999997672,
+        "driver": "4",
+        "inlap": 17,
+        "lane_s": 33.92199999999957
+      },
+      {
+        "after_line_s": 31.732999999999265,
+        "before_line_s": 1.75,
+        "driver": "4",
+        "inlap": 27,
+        "lane_s": 33.482999999999265
+      },
+      {
+        "after_line_s": 31.489000000000487,
+        "before_line_s": 1.7449999999998909,
+        "driver": "4",
+        "inlap": 37,
+        "lane_s": 33.23400000000038
+      },
+      {
+        "after_line_s": 28.98999999999978,
+        "before_line_s": 1.7440000000005966,
+        "driver": "4",
+        "inlap": 47,
+        "lane_s": 30.73400000000038
+      },
+      {
+        "after_line_s": 29.78399999999965,
+        "before_line_s": 1.7309999999997672,
+        "driver": "4",
+        "inlap": 54,
+        "lane_s": 31.514999999999418
+      },
+      {
+        "after_line_s": 22.950000000000728,
+        "before_line_s": 1.7049999999999272,
+        "driver": "44",
+        "inlap": 12,
+        "lane_s": 24.655000000000655
+      },
+      {
+        "after_line_s": 22.948999999999614,
+        "before_line_s": 1.7219999999997526,
+        "driver": "44",
+        "inlap": 30,
+        "lane_s": 24.670999999999367
+      },
+      {
+        "after_line_s": 22.77899999999954,
+        "before_line_s": 1.7520000000004075,
+        "driver": "55",
+        "inlap": 13,
+        "lane_s": 24.53099999999995
+      },
+      {
+        "after_line_s": 22.521999999999935,
+        "before_line_s": 1.7280000000000655,
+        "driver": "55",
+        "inlap": 31,
+        "lane_s": 24.25
+      },
+      {
+        "after_line_s": 25.313000000000102,
+        "before_line_s": 1.6710000000002765,
+        "driver": "63",
+        "inlap": 13,
+        "lane_s": 26.98400000000038
+      },
+      {
+        "after_line_s": 22.672999999999774,
+        "before_line_s": 1.7169999999996435,
+        "driver": "63",
+        "inlap": 31,
+        "lane_s": 24.389999999999418
+      },
+      {
+        "after_line_s": 23.637000000000626,
+        "before_line_s": 1.706000000000131,
+        "driver": "77",
+        "inlap": 11,
+        "lane_s": 25.343000000000757
+      },
+      {
+        "after_line_s": 23.911000000000058,
+        "before_line_s": 1.6980000000003201,
+        "driver": "77",
+        "inlap": 29,
+        "lane_s": 25.60900000000038
+      }
+    ],
+    "marina_bay": [
+      {
+        "after_line_s": 21.988000000000284,
+        "before_line_s": 7.682999999999993,
+        "driver": "1",
+        "inlap": 40,
+        "lane_s": 29.671000000000276
+      },
+      {
+        "after_line_s": 21.323999999999614,
+        "before_line_s": 7.6599999999998545,
+        "driver": "11",
+        "inlap": 39,
+        "lane_s": 28.98399999999947
+      },
+      {
+        "after_line_s": 22.686000000000604,
+        "before_line_s": 7.813999999999396,
+        "driver": "77",
+        "inlap": 40,
+        "lane_s": 30.5
+      }
+    ],
+    "monza": [
+      {
+        "after_line_s": 20.438000000000102,
+        "before_line_s": 3.842999999999847,
+        "driver": "1",
+        "inlap": 20,
+        "lane_s": 24.28099999999995
+      },
+      {
+        "after_line_s": 23.570999999999913,
+        "before_line_s": 3.8040000000000873,
+        "driver": "10",
+        "inlap": 10,
+        "lane_s": 27.375
+      },
+      {
+        "after_line_s": 20.88500000000022,
+        "before_line_s": 3.787000000000262,
+        "driver": "10",
+        "inlap": 31,
+        "lane_s": 24.67200000000048
+      },
+      {
+        "after_line_s": 20.006000000000313,
+        "before_line_s": 3.8369999999995343,
+        "driver": "11",
+        "inlap": 21,
+        "lane_s": 23.842999999999847
+      },
+      {
+        "after_line_s": 21.024000000000342,
+        "before_line_s": 3.8040000000000873,
+        "driver": "14",
+        "inlap": 21,
+        "lane_s": 24.82800000000043
+      },
+      {
+        "after_line_s": 20.087999999999738,
+        "before_line_s": 3.8020000000005894,
+        "driver": "16",
+        "inlap": 20,
+        "lane_s": 23.890000000000327
+      },
+      {
+        "after_line_s": 21.870999999999185,
+        "before_line_s": 3.816000000000713,
+        "driver": "18",
+        "inlap": 20,
+        "lane_s": 25.686999999999898
+      },
+      {
+        "after_line_s": 20.97899999999936,
+        "before_line_s": 3.72400000000016,
+        "driver": "2",
+        "inlap": 14,
+        "lane_s": 24.70299999999952
+      },
+      {
+        "after_line_s": 20.890000000000327,
+        "before_line_s": 3.7979999999997744,
+        "driver": "20",
+        "inlap": 12,
+        "lane_s": 24.688000000000102
+      },
+      {
+        "after_line_s": 20.963999999999942,
+        "before_line_s": 3.8170000000000073,
+        "driver": "20",
+        "inlap": 33,
+        "lane_s": 24.78099999999995
+      },
+      {
+        "after_line_s": 20.76000000000022,
+        "before_line_s": 3.582999999999629,
+        "driver": "23",
+        "inlap": 15,
+        "lane_s": 24.342999999999847
+      },
+      {
+        "after_line_s": 20.587999999999738,
+        "before_line_s": 3.8020000000005894,
+        "driver": "24",
+        "inlap": 11,
+        "lane_s": 24.390000000000327
+      },
+      {
+        "after_line_s": 22.125,
+        "before_line_s": 3.79700000000048,
+        "driver": "24",
+        "inlap": 33,
+        "lane_s": 25.92200000000048
+      },
+      {
+        "after_line_s": 22.286000000000058,
+        "before_line_s": 3.7919999999994616,
+        "driver": "27",
+        "inlap": 14,
+        "lane_s": 26.07799999999952
+      },
+      {
+        "after_line_s": 20.520000000000437,
+        "before_line_s": 3.808000000000902,
+        "driver": "27",
+        "inlap": 39,
+        "lane_s": 24.32800000000134
+      },
+      {
+        "after_line_s": 20.438999999999396,
+        "before_line_s": 3.7960000000002765,
+        "driver": "31",
+        "inlap": 24,
+        "lane_s": 24.234999999999673
+      },
+      {
+        "after_line_s": 19.88500000000022,
+        "before_line_s": 3.818000000000211,
+        "driver": "4",
+        "inlap": 22,
+        "lane_s": 23.70300000000043
+      },
+      {
+        "after_line_s": 20.612999999999374,
+        "before_line_s": 3.793000000000575,
+        "driver": "40",
+        "inlap": 13,
+        "lane_s": 24.40599999999995
+      },
+      {
+        "after_line_s": 20.436000000000604,
+        "before_line_s": 3.844999999999345,
+        "driver": "40",
+        "inlap": 33,
+        "lane_s": 24.28099999999995
+      },
+      {
+        "after_line_s": 20.400000000000546,
+        "before_line_s": 3.8339999999998327,
+        "driver": "44",
+        "inlap": 27,
+        "lane_s": 24.23400000000038
+      },
+      {
+        "after_line_s": 21.38300000000072,
+        "before_line_s": 3.78899999999976,
+        "driver": "55",
+        "inlap": 19,
+        "lane_s": 25.17200000000048
+      },
+      {
+        "after_line_s": 20.41899999999987,
+        "before_line_s": 3.7219999999997526,
+        "driver": "63",
+        "inlap": 19,
+        "lane_s": 24.14099999999962
+      },
+      {
+        "after_line_s": 20.85199999999986,
+        "before_line_s": 3.8040000000000873,
+        "driver": "77",
+        "inlap": 25,
+        "lane_s": 24.65599999999995
+      },
+      {
+        "after_line_s": 20.309000000000196,
+        "before_line_s": 3.831000000000131,
+        "driver": "81",
+        "inlap": 23,
+        "lane_s": 24.140000000000327
+      },
+      {
+        "after_line_s": 27.98399999999856,
+        "before_line_s": 3.813000000000102,
+        "driver": "81",
+        "inlap": 41,
+        "lane_s": 31.79699999999866
+      }
+    ]
+  }
+}

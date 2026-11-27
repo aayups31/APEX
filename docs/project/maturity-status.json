@@ -501,6 +501,8 @@
     "status": "IN_PROGRESS",
     "report": "docs/verification/pit-timing-r045-report.md",
     "first_candidate_passed": false,
+    "clock_anchored_candidate_passed": false,
+    "remaining_validation": "Earlier green pit timing at underrepresented circuits or a transferable geometry model",
     "production_promotion": false
   },
   "compound_crossover": {
@@ -513,6 +515,7 @@
     "sector_traffic_study": "docs/verification/compound-v30-development.json",
     "shared_shift_reachability": "docs/verification/compound-common-shift-audit.json",
     "revisit_trigger": "A new car-specific input available at forecast time with plausible coverage of the persistent failures. Screen those seven races, then run the full development gate and fresh confirmation if qualified.",
+    "next_signal_to_audit": "Absolute pit-exit clock and completed outlap pace relative to peers already observable by the existing forecast clock",
     "prior_field_report": "docs/verification/compound-v29-report.md",
     "field_error_audit": "docs/verification/compound-v29-field-errors.json",
     "individual_residual_screen": "docs/verification/compound-individual-residual-screen.json",

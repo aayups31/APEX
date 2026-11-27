@@ -40,3 +40,19 @@ def test_pit_components_use_paired_clocks_and_clean_peers(study):
     assert len(stops[0]["peers"]) == 3
     frame.loc[(frame.DriverNumber == "4") & (frame.LapNumber == 5), "TrackStatus"] = "2"
     assert study.extract(frame) == ([], {"insufficient_clean_peers": 1})
+    clocks = importlib.import_module("calibrate_pit_clocks")
+    assert clocks.extract_clocks(frame) == [
+        {"driver": "1", "inlap": 4, "before_line_s": 5, "after_line_s": 10, "lane_s": 15}
+    ]
+
+
+def test_clock_calibration_and_holdout_replay(study):
+    clocks = importlib.import_module("calibrate_pit_clocks")
+    parent = clocks.read_json(clocks.EVIDENCE)
+    saved = clocks.read_json(clocks.EVIDENCE.with_name("pit-timing-r045-v2.json"))
+    for doc in (parent, saved):
+        clocks.check_seal(doc)
+    assert saved["parent_sha256"] == parent["content_sha256"]
+    model = clocks.fit(parent["calibration"]["pooled"], saved["training_clocks"])
+    assert model == saved["calibration"]
+    assert study.score(model, parent["evaluation"]) == saved["result"]
