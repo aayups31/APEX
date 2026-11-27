@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-27",
   "research_inventory": {
-    "done": 43,
+    "done": 44,
     "total": 73
   },
   "build_inventory": {
@@ -498,11 +498,16 @@
   },
   "pit_timing_calibration": {
     "backlog_id": "R045",
-    "status": "IN_PROGRESS",
+    "status": "DONE",
+    "scope": "HELD_OUT_GREEN_PIT_TIMING_PROXY",
     "report": "docs/verification/pit-timing-r045-report.md",
+    "qualified_calibration": "docs/verification/pit-timing-r045-v3.json",
+    "held_out_stops": 110,
+    "improved_events": 4,
     "first_candidate_passed": false,
     "clock_anchored_candidate_passed": false,
-    "remaining_validation": "Earlier green pit timing at underrepresented circuits or a transferable geometry model",
+    "research_strategy_opt_in": true,
+    "remaining_validation": "Fresh race confirmation and unsupported circuit coverage for production use",
     "production_promotion": false
   },
   "compound_crossover": {
