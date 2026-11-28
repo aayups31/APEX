@@ -1,0 +1,467 @@
+{
+  "content_sha256": "c4347ebe02e6bfed8b230312a9cac716c8ee5fefc9c6481a1bf52717bf254272",
+  "production_promotion": false,
+  "r048_all_cause_baseline": {
+    "constant_hazard": 0.004018509498295178,
+    "folds": {
+      "F1_2024_R01": {
+        "constant": {
+          "expected_conditional_on_exposure": 4.536897223575256,
+          "negative_log_likelihood": 4.546037500946752
+        },
+        "first_lap": {
+          "expected_conditional_on_exposure": 4.625091134212412,
+          "negative_log_likelihood": 4.642524792595524
+        },
+        "observed": 0
+      },
+      "F1_2024_R03": {
+        "constant": {
+          "expected_conditional_on_exposure": 4.0104724792985875,
+          "negative_log_likelihood": 20.55700502684787
+        },
+        "first_lap": {
+          "expected_conditional_on_exposure": 4.1254713838573025,
+          "negative_log_likelihood": 21.011360090709523
+        },
+        "observed": 3
+      },
+      "F1_2024_R06": {
+        "constant": {
+          "expected_conditional_on_exposure": 4.464564052605943,
+          "negative_log_likelihood": 9.986376214945944
+        },
+        "first_lap": {
+          "expected_conditional_on_exposure": 4.560294709187586,
+          "negative_log_likelihood": 10.200881767937842
+        },
+        "observed": 1
+      },
+      "F1_2024_R16": {
+        "constant": {
+          "expected_conditional_on_exposure": 4.054676083779834,
+          "negative_log_likelihood": 9.575662463753234
+        },
+        "first_lap": {
+          "expected_conditional_on_exposure": 4.193114967380237,
+          "negative_log_likelihood": 9.833039548722063
+        },
+        "observed": 1
+      },
+      "F1_2024_R18": {
+        "constant": {
+          "expected_conditional_on_exposure": 4.737822698490015,
+          "negative_log_likelihood": 15.773002993676243
+        },
+        "first_lap": {
+          "expected_conditional_on_exposure": 4.805081203725818,
+          "negative_log_likelihood": 16.069380222226798
+        },
+        "observed": 2
+      }
+    },
+    "split_hazard": [
+      0.03164556962025317,
+      0.003599801390268123
+    ],
+    "total_negative_log_likelihood": {
+      "constant": 60.438084200170046,
+      "first_lap": 61.75718642219175
+    }
+  },
+  "races": {
+    "F1_2023_R01": {
+      "race_control": {
+        "bounded_neutralization_segments": {
+          "6": 1,
+          "7": 1
+        },
+        "lap_ends_in_neutralization": {
+          "6": 14,
+          "7": 0
+        },
+        "matched_field_windows": [
+          {
+            "mode": "6",
+            "supported": false
+          }
+        ],
+        "track_status_codes": {
+          "1": 5,
+          "2": 4,
+          "6": 1,
+          "7": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          3
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          1038
+        ]
+      },
+      "source_sha256": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 889,
+        "close_clean_intervals": 269,
+        "drivers_with_clean_green_lap_ends": 20,
+        "timing_line_reversals": 17
+      }
+    },
+    "F1_2023_R03": {
+      "race_control": {
+        "bounded_neutralization_segments": {
+          "4": 3,
+          "6": 1,
+          "7": 1
+        },
+        "lap_ends_in_neutralization": {
+          "4": 78,
+          "6": 17,
+          "7": 0
+        },
+        "matched_field_windows": [
+          {
+            "mode": "4",
+            "supported": false
+          },
+          {
+            "mode": "6",
+            "supported": false
+          }
+        ],
+        "track_status_codes": {
+          "1": 8,
+          "2": 6,
+          "4": 3,
+          "5": 4,
+          "6": 1,
+          "7": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          1,
+          7
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          983
+        ]
+      },
+      "source_sha256": "4c380fa522fc2e0892c4bf752a725a65a99dd0f3b65501c9cce703d0f75f480e",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 756,
+        "close_clean_intervals": 374,
+        "drivers_with_clean_green_lap_ends": 19,
+        "timing_line_reversals": 26
+      }
+    },
+    "F1_2023_R14": {
+      "race_control": {
+        "bounded_neutralization_segments": {},
+        "lap_ends_in_neutralization": {},
+        "matched_field_windows": [],
+        "track_status_codes": {
+          "1": 2,
+          "2": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          1
+        ],
+        "excluded": {
+          "Did not start": 1
+        },
+        "trials": [
+          19,
+          937
+        ]
+      },
+      "source_sha256": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 878,
+        "close_clean_intervals": 393,
+        "drivers_with_clean_green_lap_ends": 19,
+        "timing_line_reversals": 19
+      }
+    },
+    "F1_2023_R15": {
+      "race_control": {
+        "bounded_neutralization_segments": {
+          "4": 1,
+          "6": 1,
+          "7": 1
+        },
+        "lap_ends_in_neutralization": {
+          "4": 37,
+          "6": 27,
+          "7": 2
+        },
+        "matched_field_windows": [
+          {
+            "mode": "4",
+            "supported": false
+          },
+          {
+            "drivers": 7,
+            "field_span_s": [
+              37.599,
+              53.035,
+              36.423
+            ],
+            "lap_numbers": [
+              42,
+              44,
+              46
+            ],
+            "mode": "6",
+            "supported": true
+          }
+        ],
+        "track_status_codes": {
+          "1": 9,
+          "2": 8,
+          "4": 1,
+          "6": 1,
+          "7": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          1,
+          3
+        ],
+        "excluded": {
+          "Withdrew": 1
+        },
+        "trials": [
+          19,
+          1069
+        ]
+      },
+      "source_sha256": "588bb6bb7e5a854e664ae919530c1c917127ec69d0f479338f18c3839c2fcb27",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 838,
+        "close_clean_intervals": 468,
+        "drivers_with_clean_green_lap_ends": 18,
+        "timing_line_reversals": 14
+      }
+    },
+    "F1_2024_R01": {
+      "race_control": {
+        "bounded_neutralization_segments": {},
+        "lap_ends_in_neutralization": {},
+        "matched_field_windows": [],
+        "track_status_codes": {
+          "1": 4,
+          "2": 3
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          0
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          1109
+        ]
+      },
+      "source_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 1006,
+        "close_clean_intervals": 289,
+        "drivers_with_clean_green_lap_ends": 20,
+        "timing_line_reversals": 20
+      }
+    },
+    "F1_2024_R03": {
+      "race_control": {
+        "bounded_neutralization_segments": {
+          "6": 1,
+          "7": 1
+        },
+        "lap_ends_in_neutralization": {
+          "6": 8,
+          "7": 4
+        },
+        "matched_field_windows": [
+          {
+            "mode": "6",
+            "supported": false
+          }
+        ],
+        "track_status_codes": {
+          "1": 3,
+          "2": 3,
+          "6": 2,
+          "7": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          3
+        ],
+        "excluded": {},
+        "trials": [
+          19,
+          979
+        ]
+      },
+      "source_sha256": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+      "traffic": {
+        "archived_car_tables": 19,
+        "archived_position_tables": 19,
+        "clean_green_lap_ends": 852,
+        "close_clean_intervals": 235,
+        "drivers_with_clean_green_lap_ends": 19,
+        "timing_line_reversals": 9
+      }
+    },
+    "F1_2024_R06": {
+      "race_control": {
+        "bounded_neutralization_segments": {
+          "4": 1,
+          "6": 1,
+          "7": 1
+        },
+        "lap_ends_in_neutralization": {
+          "4": 77,
+          "6": 13,
+          "7": 1
+        },
+        "matched_field_windows": [
+          {
+            "mode": "6",
+            "supported": false
+          },
+          {
+            "drivers": 15,
+            "field_span_s": [
+              55.554,
+              45.02,
+              12.131
+            ],
+            "lap_numbers": [
+              27,
+              31,
+              33
+            ],
+            "mode": "4",
+            "supported": true
+          }
+        ],
+        "track_status_codes": {
+          "1": 3,
+          "2": 1,
+          "4": 1,
+          "6": 1,
+          "7": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          1
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          1091
+        ]
+      },
+      "source_sha256": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 934,
+        "close_clean_intervals": 504,
+        "drivers_with_clean_green_lap_ends": 20,
+        "timing_line_reversals": 21
+      }
+    },
+    "F1_2024_R16": {
+      "race_control": {
+        "bounded_neutralization_segments": {},
+        "lap_ends_in_neutralization": {},
+        "matched_field_windows": [],
+        "track_status_codes": {
+          "1": 1
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          1
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          989
+        ]
+      },
+      "source_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 927,
+        "close_clean_intervals": 319,
+        "drivers_with_clean_green_lap_ends": 20,
+        "timing_line_reversals": 28
+      }
+    },
+    "F1_2024_R18": {
+      "race_control": {
+        "bounded_neutralization_segments": {},
+        "lap_ends_in_neutralization": {},
+        "matched_field_windows": [],
+        "track_status_codes": {
+          "1": 2,
+          "2": 2
+        }
+      },
+      "retirement": {
+        "events": [
+          0,
+          2
+        ],
+        "excluded": {},
+        "trials": [
+          20,
+          1159
+        ]
+      },
+      "source_sha256": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e",
+      "traffic": {
+        "archived_car_tables": 20,
+        "archived_position_tables": 20,
+        "clean_green_lap_ends": 1109,
+        "close_clean_intervals": 362,
+        "drivers_with_clean_green_lap_ends": 20,
+        "timing_line_reversals": 18
+      }
+    }
+  },
+  "schema": "apex-race-model-source-audit-v1",
+  "source_parent_sha256": "52c5b1eab32aa4c0d9f9d7bc76cb48c4e03a17fc745753f2310ab8c716ef8614"
+}
