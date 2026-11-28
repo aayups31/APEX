@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-27",
   "research_inventory": {
-    "done": 45,
+    "done": 46,
     "total": 73
   },
   "build_inventory": {
@@ -512,13 +512,16 @@
   },
   "pit_duration_distribution": {
     "backlog_id": "R047",
-    "status": "IN_PROGRESS",
+    "status": "DONE",
     "scope": "GREEN_PIT_LANE_ENTRY_TO_EXIT",
     "report": "docs/verification/pit-duration-r047-report.md",
     "first_candidate_passed": false,
     "race_shift_development_gate_passed": true,
-    "fresh_confirmation_passed": false,
-    "fresh_confirmation_blocker": "FastF1 acquisition lacked lap timing. OpenF1 supplied all five archives but Australia and Miami yielded no eligible green matched stops.",
+    "fresh_confirmation_passed": true,
+    "fresh_confirmation": "docs/verification/pit-duration-r047-direct-confirmation.json",
+    "confirmation_stops": 87,
+    "confirmation_coverage": 0.8850574712643678,
+    "original_clean_peer_confirmation": "INSUFFICIENT_SUPPORT",
     "production_promotion": false
   },
   "lap_residual_calibration": {

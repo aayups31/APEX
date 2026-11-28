@@ -156,7 +156,7 @@ def extract(tables):
     return stops, dict(excluded)
 
 
-def run(root):
+def run(root, extractor=extract):
     manifest = read_json(root / "manifest.json")
     fitted = read_json(FOLDER / "pit-duration-r047-v1.json")
     decision = read_json(FOLDER / "pit-duration-r047-v2.json")
@@ -186,7 +186,7 @@ def run(root):
         (identity,) = tables["sessions"]
         if identity["year"] != 2025 or identity["session_name"] != "Race":
             raise ValueError("Unexpected OpenF1 confirmation session")
-        stops, exclusions = extract(tables)
+        stops, exclusions = extractor(tables)
         events[f"F1_2025_R{number:02}"] = {
             "circuit": RACES[number][0],
             "stops": stops,

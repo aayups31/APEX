@@ -1,0 +1,716 @@
+{
+  "archive_sha256": "f4b4e342b90f4b6136cbc3b9faad1142702e167b566b46a82c71d3514bbb490f",
+  "content_sha256": "37c39bad8bfa338bd8a6040b3d2c866523ab0c80a64bbacee004f910edc63a3e",
+  "events": {
+    "F1_2025_R01": {
+      "circuit": "albert_park",
+      "exclusions": {
+        "outside_green_window": 54,
+        "session_opening": 17
+      },
+      "stops": [
+        {
+          "driver": 4,
+          "lane_s": 18.031,
+          "pit_timestamp_s": 1742103434.711,
+          "reported_lap": 44
+        },
+        {
+          "driver": 63,
+          "lane_s": 19.378,
+          "pit_timestamp_s": 1742103442.212,
+          "reported_lap": 44
+        },
+        {
+          "driver": 23,
+          "lane_s": 18.952,
+          "pit_timestamp_s": 1742103443.18,
+          "reported_lap": 44
+        },
+        {
+          "driver": 18,
+          "lane_s": 18.901,
+          "pit_timestamp_s": 1742103446.634,
+          "reported_lap": 44
+        },
+        {
+          "driver": 12,
+          "lane_s": 21.946,
+          "pit_timestamp_s": 1742103448.705,
+          "reported_lap": 44
+        },
+        {
+          "driver": 27,
+          "lane_s": 20.209,
+          "pit_timestamp_s": 1742103449.199,
+          "reported_lap": 44
+        },
+        {
+          "driver": 5,
+          "lane_s": 26.214,
+          "pit_timestamp_s": 1742103464.745,
+          "reported_lap": 44
+        },
+        {
+          "driver": 81,
+          "lane_s": 19.85,
+          "pit_timestamp_s": 1742103522.285,
+          "reported_lap": 44
+        },
+        {
+          "driver": 87,
+          "lane_s": 19.37,
+          "pit_timestamp_s": 1742103532.612,
+          "reported_lap": 44
+        },
+        {
+          "driver": 1,
+          "lane_s": 18.721,
+          "pit_timestamp_s": 1742103624.422,
+          "reported_lap": 46
+        },
+        {
+          "driver": 10,
+          "lane_s": 19.482,
+          "pit_timestamp_s": 1742103637.586,
+          "reported_lap": 46
+        }
+      ]
+    },
+    "F1_2025_R04": {
+      "circuit": "bahrain",
+      "exclusions": {
+        "outside_green_window": 14
+      },
+      "stops": [
+        {
+          "driver": 27,
+          "lane_s": 24.2,
+          "pit_timestamp_s": 1744557163.873,
+          "reported_lap": 5
+        },
+        {
+          "driver": 6,
+          "lane_s": 25.265,
+          "pit_timestamp_s": 1744557262.192,
+          "reported_lap": 6
+        },
+        {
+          "driver": 31,
+          "lane_s": 24.876,
+          "pit_timestamp_s": 1744557455.761,
+          "reported_lap": 8
+        },
+        {
+          "driver": 7,
+          "lane_s": 24.791,
+          "pit_timestamp_s": 1744557555.767,
+          "reported_lap": 9
+        },
+        {
+          "driver": 4,
+          "lane_s": 29.822,
+          "pit_timestamp_s": 1744557647.938,
+          "reported_lap": 10
+        },
+        {
+          "driver": 10,
+          "lane_s": 25.033,
+          "pit_timestamp_s": 1744557649.907,
+          "reported_lap": 10
+        },
+        {
+          "driver": 1,
+          "lane_s": 26.518,
+          "pit_timestamp_s": 1744557652.266,
+          "reported_lap": 10
+        },
+        {
+          "driver": 22,
+          "lane_s": 26.493,
+          "pit_timestamp_s": 1744557755.432,
+          "reported_lap": 11
+        },
+        {
+          "driver": 12,
+          "lane_s": 24.807,
+          "pit_timestamp_s": 1744557847.047,
+          "reported_lap": 12
+        },
+        {
+          "driver": 18,
+          "lane_s": 24.611,
+          "pit_timestamp_s": 1744557865.037,
+          "reported_lap": 12
+        },
+        {
+          "driver": 63,
+          "lane_s": 24.044,
+          "pit_timestamp_s": 1744557938.508,
+          "reported_lap": 13
+        },
+        {
+          "driver": 5,
+          "lane_s": 24.143,
+          "pit_timestamp_s": 1744557967.068,
+          "reported_lap": 13
+        },
+        {
+          "driver": 81,
+          "lane_s": 24.498,
+          "pit_timestamp_s": 1744558033.344,
+          "reported_lap": 14
+        },
+        {
+          "driver": 55,
+          "lane_s": 24.6,
+          "pit_timestamp_s": 1744558056.042,
+          "reported_lap": 14
+        },
+        {
+          "driver": 87,
+          "lane_s": 24.562,
+          "pit_timestamp_s": 1744558058.565,
+          "reported_lap": 14
+        },
+        {
+          "driver": 30,
+          "lane_s": 25.242,
+          "pit_timestamp_s": 1744558064.924,
+          "reported_lap": 14
+        },
+        {
+          "driver": 23,
+          "lane_s": 25.394,
+          "pit_timestamp_s": 1744558258.785,
+          "reported_lap": 16
+        },
+        {
+          "driver": 14,
+          "lane_s": 24.826,
+          "pit_timestamp_s": 1744558263.591,
+          "reported_lap": 16
+        },
+        {
+          "driver": 16,
+          "lane_s": 24.802,
+          "pit_timestamp_s": 1744558337.13,
+          "reported_lap": 17
+        },
+        {
+          "driver": 44,
+          "lane_s": 24.34,
+          "pit_timestamp_s": 1744558346.694,
+          "reported_lap": 17
+        },
+        {
+          "driver": 1,
+          "lane_s": 28.067,
+          "pit_timestamp_s": 1744559259.342,
+          "reported_lap": 26
+        },
+        {
+          "driver": 31,
+          "lane_s": 24.832,
+          "pit_timestamp_s": 1744559351.397,
+          "reported_lap": 27
+        },
+        {
+          "driver": 12,
+          "lane_s": 24.506,
+          "pit_timestamp_s": 1744559351.833,
+          "reported_lap": 27
+        },
+        {
+          "driver": 27,
+          "lane_s": 24.2,
+          "pit_timestamp_s": 1744559372.563,
+          "reported_lap": 27
+        },
+        {
+          "driver": 10,
+          "lane_s": 24.958,
+          "pit_timestamp_s": 1744559443.738,
+          "reported_lap": 28
+        },
+        {
+          "driver": 7,
+          "lane_s": 25.093,
+          "pit_timestamp_s": 1744559456.202,
+          "reported_lap": 28
+        },
+        {
+          "driver": 6,
+          "lane_s": 24.64,
+          "pit_timestamp_s": 1744559467.542,
+          "reported_lap": 28
+        },
+        {
+          "driver": 55,
+          "lane_s": 37.116,
+          "pit_timestamp_s": 1744561189.065,
+          "reported_lap": 44
+        }
+      ]
+    },
+    "F1_2025_R06": {
+      "circuit": "miami",
+      "exclusions": {
+        "ambiguous_or_unlinked_stop": 4,
+        "outside_green_window": 8
+      },
+      "stops": [
+        {
+          "driver": 12,
+          "lane_s": 24.383,
+          "pit_timestamp_s": 1746391423.128,
+          "reported_lap": 25
+        },
+        {
+          "driver": 55,
+          "lane_s": 22.415,
+          "pit_timestamp_s": 1746391427.326,
+          "reported_lap": 25
+        },
+        {
+          "driver": 1,
+          "lane_s": 22.501,
+          "pit_timestamp_s": 1746391511.303,
+          "reported_lap": 26
+        },
+        {
+          "driver": 23,
+          "lane_s": 21.906,
+          "pit_timestamp_s": 1746391515.024,
+          "reported_lap": 26
+        },
+        {
+          "driver": 22,
+          "lane_s": 22.56,
+          "pit_timestamp_s": 1746391616.575,
+          "reported_lap": 27
+        },
+        {
+          "driver": 27,
+          "lane_s": 22.108,
+          "pit_timestamp_s": 1746392531.272,
+          "reported_lap": 36
+        }
+      ]
+    },
+    "F1_2025_R16": {
+      "circuit": "monza",
+      "exclusions": {},
+      "stops": [
+        {
+          "driver": 30,
+          "lane_s": 24.156,
+          "pit_timestamp_s": 1757251013.53,
+          "reported_lap": 9
+        },
+        {
+          "driver": 87,
+          "lane_s": 25.372,
+          "pit_timestamp_s": 1757251772.907,
+          "reported_lap": 18
+        },
+        {
+          "driver": 22,
+          "lane_s": 24.372,
+          "pit_timestamp_s": 1757251855.654,
+          "reported_lap": 19
+        },
+        {
+          "driver": 14,
+          "lane_s": 25.16,
+          "pit_timestamp_s": 1757251937.708,
+          "reported_lap": 20
+        },
+        {
+          "driver": 5,
+          "lane_s": 26.143,
+          "pit_timestamp_s": 1757251938.15,
+          "reported_lap": 20
+        },
+        {
+          "driver": 63,
+          "lane_s": 25.021,
+          "pit_timestamp_s": 1757252513.352,
+          "reported_lap": 27
+        },
+        {
+          "driver": 12,
+          "lane_s": 24.916,
+          "pit_timestamp_s": 1757252607.992,
+          "reported_lap": 28
+        },
+        {
+          "driver": 55,
+          "lane_s": 24.605,
+          "pit_timestamp_s": 1757252780.012,
+          "reported_lap": 30
+        },
+        {
+          "driver": 6,
+          "lane_s": 24.326,
+          "pit_timestamp_s": 1757252949.846,
+          "reported_lap": 32
+        },
+        {
+          "driver": 16,
+          "lane_s": 24.235,
+          "pit_timestamp_s": 1757253004.888,
+          "reported_lap": 33
+        },
+        {
+          "driver": 43,
+          "lane_s": 24.971,
+          "pit_timestamp_s": 1757253045.89,
+          "reported_lap": 33
+        },
+        {
+          "driver": 1,
+          "lane_s": 24.545,
+          "pit_timestamp_s": 1757253317.647,
+          "reported_lap": 37
+        },
+        {
+          "driver": 44,
+          "lane_s": 23.971,
+          "pit_timestamp_s": 1757253428.32,
+          "reported_lap": 38
+        },
+        {
+          "driver": 23,
+          "lane_s": 24.717,
+          "pit_timestamp_s": 1757253687.096,
+          "reported_lap": 41
+        },
+        {
+          "driver": 81,
+          "lane_s": 23.602,
+          "pit_timestamp_s": 1757253986.957,
+          "reported_lap": 45
+        },
+        {
+          "driver": 4,
+          "lane_s": 27.498,
+          "pit_timestamp_s": 1757254070.629,
+          "reported_lap": 46
+        },
+        {
+          "driver": 10,
+          "lane_s": 25.012,
+          "pit_timestamp_s": 1757254378.481,
+          "reported_lap": 49
+        },
+        {
+          "driver": 18,
+          "lane_s": 38.418,
+          "pit_timestamp_s": 1757254381.946,
+          "reported_lap": 49
+        },
+        {
+          "driver": 31,
+          "lane_s": 30.754,
+          "pit_timestamp_s": 1757254537.886,
+          "reported_lap": 51
+        }
+      ]
+    },
+    "F1_2025_R18": {
+      "circuit": "marina_bay",
+      "exclusions": {},
+      "stops": [
+        {
+          "driver": 22,
+          "lane_s": 24.61,
+          "pit_timestamp_s": 1759667148.079,
+          "reported_lap": 13
+        },
+        {
+          "driver": 5,
+          "lane_s": 32.856,
+          "pit_timestamp_s": 1759667151.721,
+          "reported_lap": 13
+        },
+        {
+          "driver": 43,
+          "lane_s": 24.04,
+          "pit_timestamp_s": 1759667238.4,
+          "reported_lap": 14
+        },
+        {
+          "driver": 1,
+          "lane_s": 24.008,
+          "pit_timestamp_s": 1759667697.215,
+          "reported_lap": 19
+        },
+        {
+          "driver": 6,
+          "lane_s": 23.827,
+          "pit_timestamp_s": 1759667823.329,
+          "reported_lap": 20
+        },
+        {
+          "driver": 16,
+          "lane_s": 23.63,
+          "pit_timestamp_s": 1759667902.641,
+          "reported_lap": 21
+        },
+        {
+          "driver": 87,
+          "lane_s": 23.979,
+          "pit_timestamp_s": 1759668117.96,
+          "reported_lap": 23
+        },
+        {
+          "driver": 44,
+          "lane_s": 24.794,
+          "pit_timestamp_s": 1759668201.169,
+          "reported_lap": 24
+        },
+        {
+          "driver": 10,
+          "lane_s": 25.583,
+          "pit_timestamp_s": 1759668236.518,
+          "reported_lap": 24
+        },
+        {
+          "driver": 63,
+          "lane_s": 23.966,
+          "pit_timestamp_s": 1759668270.97,
+          "reported_lap": 25
+        },
+        {
+          "driver": 12,
+          "lane_s": 23.806,
+          "pit_timestamp_s": 1759668291.8,
+          "reported_lap": 25
+        },
+        {
+          "driver": 27,
+          "lane_s": 24.1,
+          "pit_timestamp_s": 1759668319.688,
+          "reported_lap": 25
+        },
+        {
+          "driver": 4,
+          "lane_s": 23.314,
+          "pit_timestamp_s": 1759668375.81,
+          "reported_lap": 26
+        },
+        {
+          "driver": 81,
+          "lane_s": 26.637,
+          "pit_timestamp_s": 1759668480.511,
+          "reported_lap": 27
+        },
+        {
+          "driver": 14,
+          "lane_s": 30.749,
+          "pit_timestamp_s": 1759668513.356,
+          "reported_lap": 27
+        },
+        {
+          "driver": 31,
+          "lane_s": 25.078,
+          "pit_timestamp_s": 1759668819.945,
+          "reported_lap": 30
+        },
+        {
+          "driver": 18,
+          "lane_s": 24.012,
+          "pit_timestamp_s": 1759669610.853,
+          "reported_lap": 38
+        },
+        {
+          "driver": 23,
+          "lane_s": 25.732,
+          "pit_timestamp_s": 1759670012.82,
+          "reported_lap": 42
+        },
+        {
+          "driver": 27,
+          "lane_s": 31.8,
+          "pit_timestamp_s": 1759670242.947,
+          "reported_lap": 44
+        },
+        {
+          "driver": 44,
+          "lane_s": 23.344,
+          "pit_timestamp_s": 1759670340.893,
+          "reported_lap": 46
+        },
+        {
+          "driver": 30,
+          "lane_s": 24.027,
+          "pit_timestamp_s": 1759670598.249,
+          "reported_lap": 48
+        },
+        {
+          "driver": 55,
+          "lane_s": 24.075,
+          "pit_timestamp_s": 1759670795.223,
+          "reported_lap": 50
+        },
+        {
+          "driver": 10,
+          "lane_s": 25.188,
+          "pit_timestamp_s": 1759670920.228,
+          "reported_lap": 51
+        }
+      ]
+    }
+  },
+  "frozen_sha256": "001613a596a15cfabd93f10d2850d7e037adc9980a5048e44660f78e9aee279f",
+  "minimum_support_passed": true,
+  "passed": true,
+  "production_promotion": false,
+  "result": {
+    "central_coverage": 0.8850574712643678,
+    "checks": {
+      "central_coverage": true,
+      "lower_macro_crps": true,
+      "per_race_coverage": true
+    },
+    "folds": {
+      "F1_2025_R01": {
+        "candidate": {
+          "coverage": 0.8181818181818182,
+          "crps_s": 1.250812695336247,
+          "interval_hits": 9,
+          "interval_s": [
+            16.405787286625376,
+            21.514807169800854
+          ],
+          "interval_width_s": 5.109019883175478,
+          "sample_count": 267
+        },
+        "fallback": false,
+        "pooled": {
+          "coverage": 0.9090909090909091,
+          "crps_s": 2.841815785324648,
+          "interval_hits": 10,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "stops": 11
+      },
+      "F1_2025_R04": {
+        "candidate": {
+          "coverage": 0.9285714285714286,
+          "crps_s": 1.232425598112481,
+          "interval_hits": 26,
+          "interval_s": [
+            22.485600000000012,
+            29.487969071235295
+          ],
+          "interval_width_s": 7.002369071235282,
+          "sample_count": 267
+        },
+        "fallback": false,
+        "pooled": {
+          "coverage": 0.9642857142857143,
+          "crps_s": 1.3184017020960304,
+          "interval_hits": 27,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "stops": 28
+      },
+      "F1_2025_R06": {
+        "candidate": {
+          "coverage": 0.8333333333333334,
+          "crps_s": 1.68504553334717,
+          "interval_hits": 5,
+          "interval_s": [
+            17.51051962453966,
+            22.96357051222488
+          ],
+          "interval_width_s": 5.453050887685219,
+          "sample_count": 267
+        },
+        "fallback": false,
+        "pooled": {
+          "coverage": 1.0,
+          "crps_s": 1.3816396693259512,
+          "interval_hits": 6,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "stops": 6
+      },
+      "F1_2025_R16": {
+        "candidate": {
+          "coverage": 0.8947368421052632,
+          "crps_s": 1.534593353516112,
+          "interval_hits": 17,
+          "interval_s": [
+            21.72773847677167,
+            28.49409756426031
+          ],
+          "interval_width_s": 6.766359087488642,
+          "sample_count": 267
+        },
+        "fallback": false,
+        "pooled": {
+          "coverage": 0.8947368421052632,
+          "crps_s": 1.6510096938496093,
+          "interval_hits": 17,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "stops": 19
+      },
+      "F1_2025_R18": {
+        "candidate": {
+          "coverage": 0.8695652173913043,
+          "crps_s": 1.5081413835226012,
+          "interval_hits": 20,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "fallback": true,
+        "pooled": {
+          "coverage": 0.8695652173913043,
+          "crps_s": 1.5081413835226012,
+          "interval_hits": 20,
+          "interval_s": [
+            18.615799999999762,
+            29.860600000001067
+          ],
+          "interval_width_s": 11.244800000001305,
+          "sample_count": 93
+        },
+        "stops": 23
+      }
+    },
+    "macro_crps_s": {
+      "candidate": 1.4422037127669223,
+      "pooled": 1.740201646823768
+    },
+    "passed": true
+  },
+  "schema": "apex-r047-direct-green-lane-confirmation"
+}
