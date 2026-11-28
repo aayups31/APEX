@@ -596,6 +596,23 @@
       "persistent_failures_repaired": 0,
       "decision": "STOP_OUTLAP_PACE_DIRECTION"
     },
+    "latest_sector_traffic_experiment": {
+      "report": "docs/verification/compound-v33-report.md",
+      "evidence": "docs/verification/compound-v33-development.json",
+      "passed_races": 8,
+      "supported_races": 24,
+      "persistent_failures_repaired": 0,
+      "persistent_case_sector_support": 123,
+      "persistent_cases": 131,
+      "decision": "STOP_SECTOR_TRAFFIC_ADJUSTMENT_DIRECTION"
+    },
+    "radio_signal_coverage": {
+      "evidence": "docs/verification/compound-radio-support.json",
+      "cases": 131,
+      "cases_with_timely_clip": 6,
+      "cases_with_tyre_symptom_keyword": 1,
+      "predictive_value_tested": false
+    },
     "outlap_signal_coverage": {
       "report": "docs/verification/compound-outlap-support.md",
       "cases": 131,
