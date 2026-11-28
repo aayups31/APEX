@@ -18,13 +18,17 @@ still leads. An overtake recorded in the interval by OpenF1 in the
 expected direction must agree with an observed negative gap to count
 as a corroborated pass that lasted to the next line. Report separately
 the reversals without corroboration, and events that did not last.
+Allow a two-second publication delay after the second next-line
+crossing. Score the corroborated endpoint over all eligible cases.
 
-Fit the signed gap change with a fixed regularized linear model using
-the starting gap and the previous lap's signed pace difference.
+Fit the signed gap change with a fixed ridge penalty of 10 on the
+starting gap and the previous lap's signed pace difference. Leave
+the intercept unpenalized.
 Compare against both gap persistence and unshrunk pace extrapolation.
 Fit Jeffreys-smoothed pass probabilities by starting gap (up to 1 s,
 1–2 s) and closing rate (positive or nonpositive), backed off to the
-pooled frequency for sparse cells. Score against the pooled training
+pooled frequency for cells with fewer than 25 examples. A sparse
+DRS cell uses the corresponding gap and pace cell first. Score against the pooled training
 frequency with Brier and log loss. Also score a prior-DRS extension
 using only the already completed lap and keep the simpler model unless
 the extension wins on training leave-one-race-out Brier. Publish
@@ -43,7 +47,9 @@ the prior R050 experiment. Compare three states: up to 1 s behind
 without DRS, up to 1 s behind with DRS, and 2–4 s behind without DRS.
 Use the gap at lap start, clean timed neighbors, and keep the current
 leader fixed through the lap. Match within driver, race and tyre stint
-using nearest laps within five laps of tyre age. Estimate a closed-DRS
+using nearest laps within five laps of tyre age without replacement
+within each contrast. Require the same timing-line neighbor at both
+ends and no recorded exchange between the two cars. Estimate a closed-DRS
 close-following pace term and a separate close-following DRS
 association. Compare the sign and size of race-level median contrasts
 between development and held-out races. Report support and uncertainty.
