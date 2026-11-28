@@ -510,6 +510,14 @@
     "remaining_validation": "Fresh race confirmation and unsupported circuit coverage for production use",
     "production_promotion": false
   },
+  "pit_duration_distribution": {
+    "backlog_id": "R047",
+    "status": "IN_PROGRESS",
+    "scope": "GREEN_PIT_LANE_ENTRY_TO_EXIT",
+    "report": "docs/verification/pit-duration-r047-report.md",
+    "first_candidate_passed": false,
+    "production_promotion": false
+  },
   "compound_crossover": {
     "backlog_id": "R041",
     "status": "IN_PROGRESS",
