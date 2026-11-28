@@ -1,0 +1,3135 @@
+{
+  "archive_sha256": "8c33f41f7e095e995634305a33b28bd8638366056f877109ffc290d06d341950",
+  "content_sha256": "1e8b54aead3147fc014f86e0396db5e954572955761aa2ae98504e27c2267475",
+  "events": {
+    "F1_2022_R01": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "max-verstappen": {
+          "cause": "mechanical",
+          "completed_laps": 54,
+          "reason": "Fuel system"
+        },
+        "pierre-gasly": {
+          "cause": "mechanical",
+          "completed_laps": 44,
+          "reason": "Power unit"
+        },
+        "sergio-perez": {
+          "cause": "mechanical",
+          "completed_laps": 56,
+          "reason": "Fuel system"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 3,
+        "stay": 1103
+      },
+      "unknown": {}
+    },
+    "F1_2022_R02": {
+      "excluded": 2,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 47,
+          "reason": "Collision damage"
+        },
+        "daniel-ricciardo": {
+          "cause": "mechanical",
+          "completed_laps": 35,
+          "reason": "Gearbox"
+        },
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 35,
+          "reason": "Water pressure"
+        },
+        "nicholas-latifi": {
+          "cause": "incident",
+          "completed_laps": 14,
+          "reason": "Accident"
+        },
+        "valtteri-bottas": {
+          "cause": "unknown",
+          "completed_laps": 36,
+          "reason": "Cooling system"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 2,
+        "stay": 798
+      },
+      "unknown": {
+        "Cooling system": 1
+      }
+    },
+    "F1_2022_R03": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Spun off"
+        },
+        "max-verstappen": {
+          "cause": "mechanical",
+          "completed_laps": 38,
+          "reason": "Fuel leak"
+        },
+        "sebastian-vettel": {
+          "cause": "incident",
+          "completed_laps": 22,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 1,
+        "stay": 1022
+      },
+      "unknown": {}
+    },
+    "F1_2022_R04": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "fernando-alonso": {
+          "cause": "incident",
+          "completed_laps": 6,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1112
+      },
+      "unknown": {}
+    },
+    "F1_2022_R05": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "guanyu-zhou": {
+          "cause": "mechanical",
+          "completed_laps": 6,
+          "reason": "Water leak"
+        },
+        "kevin-magnussen": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Front wing"
+        },
+        "lando-norris": {
+          "cause": "incident",
+          "completed_laps": 39,
+          "reason": "Collision"
+        },
+        "pierre-gasly": {
+          "cause": "mechanical",
+          "completed_laps": 45,
+          "reason": "Suspension"
+        },
+        "sebastian-vettel": {
+          "cause": "incident",
+          "completed_laps": 54,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 2,
+        "stay": 1035
+      },
+      "unknown": {
+        "Front wing": 1
+      }
+    },
+    "F1_2022_R06": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "mechanical",
+          "completed_laps": 27,
+          "reason": "Turbo"
+        },
+        "guanyu-zhou": {
+          "cause": "unknown",
+          "completed_laps": 28,
+          "reason": "Power loss"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1210
+      },
+      "unknown": {
+        "Power loss": 1
+      }
+    },
+    "F1_2022_R07": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 48,
+          "reason": "Mechanical"
+        },
+        "kevin-magnussen": {
+          "cause": "mechanical",
+          "completed_laps": 19,
+          "reason": "Water pressure"
+        },
+        "mick-schumacher": {
+          "cause": "incident",
+          "completed_laps": 24,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 1156
+      },
+      "unknown": {}
+    },
+    "F1_2022_R08": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "mechanical",
+          "completed_laps": 8,
+          "reason": "Hydraulics"
+        },
+        "charles-leclerc": {
+          "cause": "mechanical",
+          "completed_laps": 21,
+          "reason": "Power unit"
+        },
+        "guanyu-zhou": {
+          "cause": "mechanical",
+          "completed_laps": 23,
+          "reason": "Hydraulics"
+        },
+        "kevin-magnussen": {
+          "cause": "mechanical",
+          "completed_laps": 31,
+          "reason": "Power unit"
+        },
+        "lance-stroll": {
+          "cause": "unknown",
+          "completed_laps": 46,
+          "reason": "Vibrations"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 4,
+        "stay": 869
+      },
+      "unknown": {
+        "Vibrations": 1
+      }
+    },
+    "F1_2022_R09": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "mick-schumacher": {
+          "cause": "mechanical",
+          "completed_laps": 18,
+          "reason": "Hydraulics"
+        },
+        "sergio-perez": {
+          "cause": "mechanical",
+          "completed_laps": 7,
+          "reason": "Gearbox"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 47,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 1242
+      },
+      "unknown": {}
+    },
+    "F1_2022_R10": {
+      "excluded": 0,
+      "first": {
+        "incident": 3,
+        "mechanical": 0,
+        "stay": 17
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 37,
+          "reason": "Fuel pump"
+        },
+        "george-russell": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "guanyu-zhou": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 26,
+          "reason": "Collision damage"
+        },
+        "valtteri-bottas": {
+          "cause": "mechanical",
+          "completed_laps": 20,
+          "reason": "Gearbox"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 794
+      },
+      "unknown": {}
+    },
+    "F1_2022_R11": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "mechanical",
+          "completed_laps": 56,
+          "reason": "Power unit"
+        },
+        "nicholas-latifi": {
+          "cause": "unknown",
+          "completed_laps": 48,
+          "reason": "Undertray"
+        },
+        "sergio-perez": {
+          "cause": "incident",
+          "completed_laps": 24,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 1303
+      },
+      "unknown": {
+        "Undertray": 1
+      }
+    },
+    "F1_2022_R12": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "incident",
+          "completed_laps": 17,
+          "reason": "Accident"
+        },
+        "guanyu-zhou": {
+          "cause": "mechanical",
+          "completed_laps": 47,
+          "reason": "Power unit"
+        },
+        "kevin-magnussen": {
+          "cause": "incident",
+          "completed_laps": 37,
+          "reason": "Collision damage"
+        },
+        "nicholas-latifi": {
+          "cause": "incident",
+          "completed_laps": 40,
+          "reason": "Collision damage"
+        },
+        "yuki-tsunoda": {
+          "cause": "unknown",
+          "completed_laps": 17,
+          "reason": "Undertray"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 1,
+        "stay": 933
+      },
+      "unknown": {
+        "Undertray": 1
+      }
+    },
+    "F1_2022_R13": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "valtteri-bottas": {
+          "cause": "mechanical",
+          "completed_laps": 65,
+          "reason": "Fuel system"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1362
+      },
+      "unknown": {}
+    },
+    "F1_2022_R14": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "lewis-hamilton": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision damage"
+        },
+        "valtteri-bottas": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 771
+      },
+      "unknown": {}
+    },
+    "F1_2022_R15": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "valtteri-bottas": {
+          "cause": "mechanical",
+          "completed_laps": 53,
+          "reason": "Engine"
+        },
+        "yuki-tsunoda": {
+          "cause": "mechanical",
+          "completed_laps": 43,
+          "reason": "Differential"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 2,
+        "stay": 1371
+      },
+      "unknown": {}
+    },
+    "F1_2022_R16": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "daniel-ricciardo": {
+          "cause": "mechanical",
+          "completed_laps": 45,
+          "reason": "Oil leak"
+        },
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 31,
+          "reason": "Water pressure"
+        },
+        "lance-stroll": {
+          "cause": "mechanical",
+          "completed_laps": 39,
+          "reason": "Engine"
+        },
+        "sebastian-vettel": {
+          "cause": "mechanical",
+          "completed_laps": 10,
+          "reason": "Engine"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 4,
+        "stay": 949
+      },
+      "unknown": {}
+    },
+    "F1_2022_R17": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 25,
+          "reason": "Collision damage"
+        },
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 26,
+          "reason": "Engine"
+        },
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 20,
+          "reason": "Engine"
+        },
+        "guanyu-zhou": {
+          "cause": "incident",
+          "completed_laps": 6,
+          "reason": "Collision"
+        },
+        "nicholas-latifi": {
+          "cause": "incident",
+          "completed_laps": 7,
+          "reason": "Collision damage"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 34,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 4,
+        "mechanical": 2,
+        "stay": 921
+      },
+      "unknown": {}
+    },
+    "F1_2022_R18": {
+      "excluded": 0,
+      "first": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision damage"
+        },
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 486
+      },
+      "unknown": {}
+    },
+    "F1_2022_R19": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Collision damage"
+        },
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 21,
+          "reason": "Collision"
+        },
+        "valtteri-bottas": {
+          "cause": "incident",
+          "completed_laps": 16,
+          "reason": "Spun off"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 0,
+        "stay": 970
+      },
+      "unknown": {}
+    },
+    "F1_2022_R20": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 63,
+          "reason": "Engine"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 50,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 1358
+      },
+      "unknown": {}
+    },
+    "F1_2022_R21": {
+      "excluded": 0,
+      "first": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "daniel-ricciardo": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "kevin-magnussen": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "lando-norris": {
+          "cause": "mechanical",
+          "completed_laps": 50,
+          "reason": "Gearbox"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1238
+      },
+      "unknown": {}
+    },
+    "F1_2022_R22": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 27,
+          "reason": "Water leak"
+        },
+        "lewis-hamilton": {
+          "cause": "mechanical",
+          "completed_laps": 55,
+          "reason": "Gearbox"
+        },
+        "nicholas-latifi": {
+          "cause": "incident",
+          "completed_laps": 55,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 1097
+      },
+      "unknown": {}
+    },
+    "F1_2023_R01": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "mechanical",
+          "completed_laps": 39,
+          "reason": "Engine"
+        },
+        "esteban-ocon": {
+          "cause": "unknown",
+          "completed_laps": 41,
+          "reason": "Withdrew"
+        },
+        "oscar-piastri": {
+          "cause": "mechanical",
+          "completed_laps": 13,
+          "reason": "Electrical"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 2,
+        "stay": 1035
+      },
+      "unknown": {
+        "Withdrew": 1
+      }
+    },
+    "F1_2023_R02": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 27,
+          "reason": "Brakes"
+        },
+        "lance-stroll": {
+          "cause": "mechanical",
+          "completed_laps": 16,
+          "reason": "Engine"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 2,
+        "stay": 922
+      },
+      "unknown": {}
+    },
+    "F1_2023_R03": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 6,
+          "reason": "Accident"
+        },
+        "charles-leclerc": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "esteban-ocon": {
+          "cause": "incident",
+          "completed_laps": 56,
+          "reason": "Collision"
+        },
+        "george-russell": {
+          "cause": "mechanical",
+          "completed_laps": 17,
+          "reason": "Engine"
+        },
+        "kevin-magnussen": {
+          "cause": "incident",
+          "completed_laps": 52,
+          "reason": "Accident"
+        },
+        "logan-sargeant": {
+          "cause": "incident",
+          "completed_laps": 56,
+          "reason": "Collision"
+        },
+        "nyck-de-vries": {
+          "cause": "incident",
+          "completed_laps": 56,
+          "reason": "Collision"
+        },
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 56,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 6,
+        "mechanical": 1,
+        "stay": 976
+      },
+      "unknown": {}
+    },
+    "F1_2023_R05": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1118
+      },
+      "unknown": {}
+    },
+    "F1_2023_R06": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "kevin-magnussen": {
+          "cause": "unknown",
+          "completed_laps": 70,
+          "reason": "Accident damage"
+        },
+        "lance-stroll": {
+          "cause": "unknown",
+          "completed_laps": 53,
+          "reason": "Accident damage"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1493
+      },
+      "unknown": {
+        "Accident damage": 2
+      }
+    },
+    "F1_2023_R07": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1292
+      },
+      "unknown": {}
+    },
+    "F1_2023_R09": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "nico-hulkenberg": {
+          "cause": "mechanical",
+          "completed_laps": 12,
+          "reason": "Engine"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1333
+      },
+      "unknown": {}
+    },
+    "F1_2023_R10": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 9,
+          "reason": "Oil leak"
+        },
+        "kevin-magnussen": {
+          "cause": "mechanical",
+          "completed_laps": 31,
+          "reason": "Engine"
+        },
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 46,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 950
+      },
+      "unknown": {}
+    },
+    "F1_2023_R11": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "incident",
+          "completed_laps": 2,
+          "reason": "Collision"
+        },
+        "logan-sargeant": {
+          "cause": "unknown",
+          "completed_laps": 67,
+          "reason": "Withdrew"
+        },
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 1232
+      },
+      "unknown": {
+        "Withdrew": 1
+      }
+    },
+    "F1_2023_R13": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "unknown",
+          "completed_laps": 41,
+          "reason": "Undertray"
+        },
+        "guanyu-zhou": {
+          "cause": "incident",
+          "completed_laps": 62,
+          "reason": "Accident"
+        },
+        "logan-sargeant": {
+          "cause": "mechanical",
+          "completed_laps": 14,
+          "reason": "Hydraulics"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 1321
+      },
+      "unknown": {
+        "Undertray": 1
+      }
+    },
+    "F1_2023_R14": {
+      "excluded": 1,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 39,
+          "reason": "Steering"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 936
+      },
+      "unknown": {}
+    },
+    "F1_2023_R15": {
+      "excluded": 1,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 42,
+          "reason": "Gearbox"
+        },
+        "george-russell": {
+          "cause": "incident",
+          "completed_laps": 61,
+          "reason": "Accident"
+        },
+        "valtteri-bottas": {
+          "cause": "mechanical",
+          "completed_laps": 51,
+          "reason": "Hydraulics"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 1066
+      },
+      "unknown": {}
+    },
+    "F1_2023_R17": {
+      "excluded": 1,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "lewis-hamilton": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "logan-sargeant": {
+          "cause": "unknown",
+          "completed_laps": 40,
+          "reason": "Unwell"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 987
+      },
+      "unknown": {
+        "Unwell": 1
+      }
+    },
+    "F1_2023_R18": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Illegal skid block wear"
+        },
+        "esteban-ocon": {
+          "cause": "incident",
+          "completed_laps": 6,
+          "reason": "Collision damage"
+        },
+        "fernando-alonso": {
+          "cause": "unknown",
+          "completed_laps": 49,
+          "reason": "Undertray"
+        },
+        "lewis-hamilton": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Illegal skid block wear"
+        },
+        "oscar-piastri": {
+          "cause": "incident",
+          "completed_laps": 10,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 994
+      },
+      "unknown": {
+        "Illegal skid block wear": 2,
+        "Undertray": 1
+      }
+    },
+    "F1_2023_R19": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "fernando-alonso": {
+          "cause": "incident",
+          "completed_laps": 47,
+          "reason": "Collision damage"
+        },
+        "kevin-magnussen": {
+          "cause": "mechanical",
+          "completed_laps": 31,
+          "reason": "Suspension"
+        },
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 66,
+          "reason": "Collision damage"
+        },
+        "logan-sargeant": {
+          "cause": "mechanical",
+          "completed_laps": 70,
+          "reason": "Fuel pump"
+        },
+        "sergio-perez": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 2,
+        "stay": 1260
+      },
+      "unknown": {}
+    },
+    "F1_2023_R21": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "lando-norris": {
+          "cause": "incident",
+          "completed_laps": 2,
+          "reason": "Accident"
+        },
+        "nico-hulkenberg": {
+          "cause": "mechanical",
+          "completed_laps": 45,
+          "reason": "Engine"
+        },
+        "yuki-tsunoda": {
+          "cause": "mechanical",
+          "completed_laps": 46,
+          "reason": "Gearbox"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 923
+      },
+      "unknown": {}
+    },
+    "F1_2023_R22": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "mechanical",
+          "completed_laps": 57,
+          "reason": "Engine"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1137
+      },
+      "unknown": {}
+    },
+    "F1_2024_R01": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1109
+      },
+      "unknown": {}
+    },
+    "F1_2024_R02": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 5,
+          "reason": "Accident"
+        },
+        "pierre-gasly": {
+          "cause": "mechanical",
+          "completed_laps": 1,
+          "reason": "Gearbox"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 880
+      },
+      "unknown": {}
+    },
+    "F1_2024_R03": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "george-russell": {
+          "cause": "incident",
+          "completed_laps": 56,
+          "reason": "Accident"
+        },
+        "lewis-hamilton": {
+          "cause": "mechanical",
+          "completed_laps": 15,
+          "reason": "Power unit"
+        },
+        "max-verstappen": {
+          "cause": "mechanical",
+          "completed_laps": 3,
+          "reason": "Brakes"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 976
+      },
+      "unknown": {}
+    },
+    "F1_2024_R05": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "daniel-ricciardo": {
+          "cause": "incident",
+          "completed_laps": 33,
+          "reason": "Collision damage"
+        },
+        "valtteri-bottas": {
+          "cause": "mechanical",
+          "completed_laps": 19,
+          "reason": "Engine"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 26,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 1,
+        "stay": 1010
+      },
+      "unknown": {}
+    },
+    "F1_2024_R06": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "logan-sargeant": {
+          "cause": "incident",
+          "completed_laps": 27,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1090
+      },
+      "unknown": {}
+    },
+    "F1_2024_R07": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "unknown",
+          "completed_laps": 51,
+          "reason": "Withdrew"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1218
+      },
+      "unknown": {
+        "Withdrew": 1
+      }
+    },
+    "F1_2024_R09": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 52,
+          "reason": "Collision"
+        },
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 52,
+          "reason": "Collision damage"
+        },
+        "charles-leclerc": {
+          "cause": "mechanical",
+          "completed_laps": 40,
+          "reason": "Engine"
+        },
+        "logan-sargeant": {
+          "cause": "incident",
+          "completed_laps": 23,
+          "reason": "Accident"
+        },
+        "sergio-perez": {
+          "cause": "unknown",
+          "completed_laps": 51,
+          "reason": "Accident damage"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 1,
+        "stay": 1247
+      },
+      "unknown": {
+        "Accident damage": 1
+      }
+    },
+    "F1_2024_R10": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1290
+      },
+      "unknown": {}
+    },
+    "F1_2024_R11": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "lando-norris": {
+          "cause": "incident",
+          "completed_laps": 64,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1385
+      },
+      "unknown": {}
+    },
+    "F1_2024_R12": {
+      "excluded": 1,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "george-russell": {
+          "cause": "mechanical",
+          "completed_laps": 33,
+          "reason": "Water leak"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 941
+      },
+      "unknown": {}
+    },
+    "F1_2024_R13": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "pierre-gasly": {
+          "cause": "mechanical",
+          "completed_laps": 33,
+          "reason": "Hydraulics"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1335
+      },
+      "unknown": {}
+    },
+    "F1_2024_R14": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "george-russell": {
+          "cause": "unknown",
+          "completed_laps": 44,
+          "reason": "Car underweight"
+        },
+        "guanyu-zhou": {
+          "cause": "mechanical",
+          "completed_laps": 5,
+          "reason": "Hydraulics"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 821
+      },
+      "unknown": {
+        "Car underweight": 1
+      }
+    },
+    "F1_2024_R15": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1406
+      },
+      "unknown": {}
+    },
+    "F1_2024_R16": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "yuki-tsunoda": {
+          "cause": "mechanical",
+          "completed_laps": 7,
+          "reason": "Overheating"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 988
+      },
+      "unknown": {}
+    },
+    "F1_2024_R17": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 49,
+          "reason": "Collision"
+        },
+        "lance-stroll": {
+          "cause": "mechanical",
+          "completed_laps": 45,
+          "reason": "Brakes"
+        },
+        "sergio-perez": {
+          "cause": "incident",
+          "completed_laps": 49,
+          "reason": "Collision"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 14,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 1,
+        "stay": 951
+      },
+      "unknown": {}
+    },
+    "F1_2024_R18": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 15,
+          "reason": "Overheating"
+        },
+        "kevin-magnussen": {
+          "cause": "unknown",
+          "completed_laps": 57,
+          "reason": "Puncture"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1157
+      },
+      "unknown": {
+        "Puncture": 1
+      }
+    },
+    "F1_2024_R19": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "lewis-hamilton": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Spun off"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1038
+      },
+      "unknown": {}
+    },
+    "F1_2024_R21": {
+      "excluded": 3,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 17
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 38,
+          "reason": "Accident"
+        },
+        "franco-colapinto": {
+          "cause": "incident",
+          "completed_laps": 30,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 1086
+      },
+      "unknown": {}
+    },
+    "F1_2024_R22": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 25,
+          "reason": "Turbo"
+        },
+        "pierre-gasly": {
+          "cause": "mechanical",
+          "completed_laps": 15,
+          "reason": "Engine"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 2,
+        "stay": 918
+      },
+      "unknown": {}
+    },
+    "F1_2024_R23": {
+      "excluded": 0,
+      "first": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "franco-colapinto": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 8,
+          "reason": "Collision damage"
+        },
+        "nico-hulkenberg": {
+          "cause": "incident",
+          "completed_laps": 39,
+          "reason": "Spun off"
+        },
+        "sergio-perez": {
+          "cause": "mechanical",
+          "completed_laps": 38,
+          "reason": "Clutch"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 1,
+        "stay": 921
+      },
+      "unknown": {}
+    },
+    "F1_2025_R01": {
+      "excluded": 0,
+      "first": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 17
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Accident"
+        },
+        "fernando-alonso": {
+          "cause": "incident",
+          "completed_laps": 32,
+          "reason": "Accident"
+        },
+        "gabriel-bortoleto": {
+          "cause": "incident",
+          "completed_laps": 45,
+          "reason": "Accident"
+        },
+        "isack-hadjar": {
+          "cause": "unknown",
+          "completed_laps": 0,
+          "reason": "Accident on formation lap"
+        },
+        "jack-doohan": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Accident"
+        },
+        "liam-lawson": {
+          "cause": "incident",
+          "completed_laps": 46,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 0,
+        "stay": 904
+      },
+      "unknown": {
+        "Accident on formation lap": 1
+      }
+    },
+    "F1_2025_R02": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Car underweight"
+        },
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 4,
+          "reason": "Brakes"
+        },
+        "lewis-hamilton": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Illegal skid block wear"
+        },
+        "pierre-gasly": {
+          "cause": "unknown",
+          "completed_laps": 56,
+          "reason": "Car underweight"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1045
+      },
+      "unknown": {
+        "Car underweight": 2,
+        "Illegal skid block wear": 1
+      }
+    },
+    "F1_2025_R03": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1039
+      },
+      "unknown": {}
+    },
+    "F1_2025_R04": {
+      "excluded": 1,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 45,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1052
+      },
+      "unknown": {}
+    },
+    "F1_2025_R05": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "yuki-tsunoda": {
+          "cause": "incident",
+          "completed_laps": 1,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 878
+      },
+      "unknown": {}
+    },
+    "F1_2025_R06": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "gabriel-bortoleto": {
+          "cause": "mechanical",
+          "completed_laps": 30,
+          "reason": "Engine"
+        },
+        "jack-doohan": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "liam-lawson": {
+          "cause": "incident",
+          "completed_laps": 36,
+          "reason": "Collision damage"
+        },
+        "oliver-bearman": {
+          "cause": "mechanical",
+          "completed_laps": 27,
+          "reason": "Fuel system"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 983
+      },
+      "unknown": {}
+    },
+    "F1_2025_R07": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "esteban-ocon": {
+          "cause": "mechanical",
+          "completed_laps": 27,
+          "reason": "Engine"
+        },
+        "kimi-antonelli": {
+          "cause": "mechanical",
+          "completed_laps": 44,
+          "reason": "Throttle"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 2,
+        "stay": 1185
+      },
+      "unknown": {}
+    },
+    "F1_2025_R08": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 36,
+          "reason": "Engine"
+        },
+        "pierre-gasly": {
+          "cause": "incident",
+          "completed_laps": 7,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 1403
+      },
+      "unknown": {}
+    },
+    "F1_2025_R09": {
+      "excluded": 1,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 27,
+          "reason": "Collision damage"
+        },
+        "kimi-antonelli": {
+          "cause": "mechanical",
+          "completed_laps": 53,
+          "reason": "Oil pressure"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 1,
+        "stay": 1183
+      },
+      "unknown": {}
+    },
+    "F1_2025_R10": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 46,
+          "reason": "Engine"
+        },
+        "lando-norris": {
+          "cause": "incident",
+          "completed_laps": 66,
+          "reason": "Collision"
+        },
+        "liam-lawson": {
+          "cause": "mechanical",
+          "completed_laps": 53,
+          "reason": "Overheating"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 2,
+        "stay": 1326
+      },
+      "unknown": {}
+    },
+    "F1_2025_R11": {
+      "excluded": 1,
+      "first": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 17
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "mechanical",
+          "completed_laps": 15,
+          "reason": "Engine"
+        },
+        "kimi-antonelli": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        },
+        "max-verstappen": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 1107
+      },
+      "unknown": {}
+    },
+    "F1_2025_R12": {
+      "excluded": 1,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 18
+      },
+      "labels": {
+        "gabriel-bortoleto": {
+          "cause": "incident",
+          "completed_laps": 3,
+          "reason": "Accident"
+        },
+        "isack-hadjar": {
+          "cause": "incident",
+          "completed_laps": 17,
+          "reason": "Accident"
+        },
+        "kimi-antonelli": {
+          "cause": "incident",
+          "completed_laps": 23,
+          "reason": "Collision damage"
+        },
+        "liam-lawson": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 3,
+        "mechanical": 0,
+        "stay": 804
+      },
+      "unknown": {}
+    },
+    "F1_2025_R13": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 859
+      },
+      "unknown": {}
+    },
+    "F1_2025_R14": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "oliver-bearman": {
+          "cause": "unknown",
+          "completed_laps": 48,
+          "reason": "Undertray"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1348
+      },
+      "unknown": {
+        "Undertray": 1
+      }
+    },
+    "F1_2025_R15": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "incident",
+          "completed_laps": 52,
+          "reason": "Collision"
+        },
+        "lando-norris": {
+          "cause": "unknown",
+          "completed_laps": 64,
+          "reason": "Chassis"
+        },
+        "lewis-hamilton": {
+          "cause": "incident",
+          "completed_laps": 22,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 1342
+      },
+      "unknown": {
+        "Chassis": 1
+      }
+    },
+    "F1_2025_R16": {
+      "excluded": 1,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 24,
+          "reason": "Suspension"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 1,
+        "stay": 955
+      },
+      "unknown": {}
+    },
+    "F1_2025_R17": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "oscar-piastri": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Accident"
+        }
+      },
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 948
+      },
+      "unknown": {}
+    },
+    "F1_2025_R18": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1209
+      },
+      "unknown": {}
+    },
+    "F1_2025_R19": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 5,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 1046
+      },
+      "unknown": {}
+    },
+    "F1_2025_R20": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "carlos-sainz-jr": {
+          "cause": "incident",
+          "completed_laps": 67,
+          "reason": "Accident"
+        },
+        "fernando-alonso": {
+          "cause": "mechanical",
+          "completed_laps": 34,
+          "reason": "Brakes"
+        },
+        "liam-lawson": {
+          "cause": "incident",
+          "completed_laps": 5,
+          "reason": "Collision damage"
+        },
+        "nico-hulkenberg": {
+          "cause": "unknown",
+          "completed_laps": 25,
+          "reason": "Handling"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 1,
+        "stay": 1242
+      },
+      "unknown": {
+        "Handling": 1
+      }
+    },
+    "F1_2025_R21": {
+      "excluded": 0,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 19
+      },
+      "labels": {
+        "charles-leclerc": {
+          "cause": "incident",
+          "completed_laps": 5,
+          "reason": "Collision"
+        },
+        "gabriel-bortoleto": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Accident"
+        },
+        "lewis-hamilton": {
+          "cause": "incident",
+          "completed_laps": 37,
+          "reason": "Collision damage"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 1230
+      },
+      "unknown": {}
+    },
+    "F1_2025_R22": {
+      "excluded": 2,
+      "first": {
+        "incident": 1,
+        "mechanical": 0,
+        "stay": 17
+      },
+      "labels": {
+        "alexander-albon": {
+          "cause": "incident",
+          "completed_laps": 35,
+          "reason": "Collision damage"
+        },
+        "gabriel-bortoleto": {
+          "cause": "incident",
+          "completed_laps": 2,
+          "reason": "Collision"
+        },
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 0,
+          "reason": "Collision"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 768
+      },
+      "unknown": {}
+    },
+    "F1_2025_R23": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {
+        "isack-hadjar": {
+          "cause": "unknown",
+          "completed_laps": 55,
+          "reason": "Puncture"
+        },
+        "lance-stroll": {
+          "cause": "incident",
+          "completed_laps": 55,
+          "reason": "Collision damage"
+        },
+        "nico-hulkenberg": {
+          "cause": "incident",
+          "completed_laps": 6,
+          "reason": "Collision"
+        },
+        "oliver-bearman": {
+          "cause": "unknown",
+          "completed_laps": 41,
+          "reason": "Pit stop issue"
+        }
+      },
+      "later": {
+        "incident": 2,
+        "mechanical": 0,
+        "stay": 1046
+      },
+      "unknown": {
+        "Pit stop issue": 1,
+        "Puncture": 1
+      }
+    },
+    "F1_2025_R24": {
+      "excluded": 0,
+      "first": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 20
+      },
+      "labels": {},
+      "later": {
+        "incident": 0,
+        "mechanical": 0,
+        "stay": 1136
+      },
+      "unknown": {}
+    }
+  },
+  "production_promotion": false,
+  "protocol_sha256_lf": "3ce591c2cefbbf7083ee7f2d641fbf39d946d4f094886552bb7f2c9ea8fcf50e",
+  "result": {
+    "aggregate": {
+      "constant_nll": 641.7743444256627,
+      "expected_given_exposure": {
+        "incident": 61.06895558776128,
+        "mechanical": 59.02268494606402
+      },
+      "observed": {
+        "incident": 52,
+        "mechanical": 26
+      },
+      "split_nll": 620.8850404821814
+    },
+    "checks": {
+      "aggregate_cause_calibration": false,
+      "cause_support": true,
+      "label_coverage": false,
+      "lower_log_loss": true
+    },
+    "constant": {
+      "incident": 0.0012458229999883568,
+      "mechanical": 0.0011992501775588856,
+      "stay": 0.9975549268224527
+    },
+    "folds": {
+      "F1_2024_R01": {
+        "constant_nll": 2.7638679257576877,
+        "expected_given_exposure": {
+          "incident": 1.4133764517740097,
+          "mechanical": 1.3672897683404743
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 2.786201812398625
+      },
+      "F1_2024_R02": {
+        "constant_nll": 15.617278218220115,
+        "expected_given_exposure": {
+          "incident": 1.1899750976826855,
+          "mechanical": 1.0900567626608795
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 1
+        },
+        "split_nll": 15.912181150800507
+      },
+      "F1_2024_R03": {
+        "constant_nll": 22.575903376536672,
+        "expected_given_exposure": {
+          "incident": 1.2693394752315286,
+          "mechanical": 1.2078780527277952
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 2
+        },
+        "split_nll": 22.8151004346902
+      },
+      "F1_2024_R05": {
+        "constant_nll": 22.623485884070142,
+        "expected_given_exposure": {
+          "incident": 1.3188983460790005,
+          "mechanical": 1.250045854044258
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 1
+        },
+        "split_nll": 23.122940024152587
+      },
+      "F1_2024_R06": {
+        "constant_nll": 9.40531357129071,
+        "expected_given_exposure": {
+          "incident": 1.3956618069561955,
+          "mechanical": 1.3453065344099338
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 9.667987568874393
+      },
+      "F1_2024_R07": {
+        "constant_nll": 3.030707256056703,
+        "expected_given_exposure": {
+          "incident": 1.520648467615218,
+          "mechanical": 1.5004104626976367
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 3.026859998569889
+      },
+      "F1_2024_R09": {
+        "constant_nll": 29.89163674571828,
+        "expected_given_exposure": {
+          "incident": 1.5531253164478775,
+          "mechanical": 1.5407130582369613
+        },
+        "observed": {
+          "incident": 3,
+          "mechanical": 1
+        },
+        "split_nll": 30.56994133714068
+      },
+      "F1_2024_R10": {
+        "constant_nll": 3.20696809808908,
+        "expected_given_exposure": {
+          "incident": 1.5915070468864752,
+          "mechanical": 1.588343398419799
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 3.1858268738389803
+      },
+      "F1_2024_R11": {
+        "constant_nll": 10.127493410173367,
+        "expected_given_exposure": {
+          "incident": 1.6859851525814844,
+          "mechanical": 1.7055873127160155
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 10.319310182824143
+      },
+      "F1_2024_R12": {
+        "constant_nll": 9.07620332995553,
+        "expected_given_exposure": {
+          "incident": 1.232926038661577,
+          "mechanical": 1.162690294092795
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.106242553634987
+      },
+      "F1_2024_R13": {
+        "constant_nll": 10.043189893883152,
+        "expected_given_exposure": {
+          "incident": 1.6367778058653337,
+          "mechanical": 1.6445227740200694
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.993028139009791
+      },
+      "F1_2024_R14": {
+        "constant_nll": 8.784883327152018,
+        "expected_given_exposure": {
+          "incident": 1.1309262816233048,
+          "mechanical": 1.0167793162257441
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 8.858181279449889
+      },
+      "F1_2024_R15": {
+        "constant_nll": 3.4909438991412425,
+        "expected_given_exposure": {
+          "incident": 1.7056680912679447,
+          "mechanical": 1.7300131281943938
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 3.441940172883627
+      },
+      "F1_2024_R16": {
+        "constant_nll": 9.193710557977115,
+        "expected_given_exposure": {
+          "incident": 1.295278819655248,
+          "mechanical": 1.2207348754702039
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.226896115143475
+      },
+      "F1_2024_R17": {
+        "constant_nll": 29.167008839585176,
+        "expected_given_exposure": {
+          "incident": 1.2618178238882656,
+          "mechanical": 1.1792109891569607
+        },
+        "observed": {
+          "incident": 3,
+          "mechanical": 1
+        },
+        "split_nll": 29.916410849923306
+      },
+      "F1_2024_R18": {
+        "constant_nll": 9.607433923303109,
+        "expected_given_exposure": {
+          "incident": 1.4615996515558374,
+          "mechanical": 1.4271330162625016
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.600026697372316
+      },
+      "F1_2024_R19": {
+        "constant_nll": 9.278014074267327,
+        "expected_given_exposure": {
+          "incident": 1.3444861663713987,
+          "mechanical": 1.28179941416615
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 9.553178158957827
+      },
+      "F1_2024_R21": {
+        "constant_nll": 16.07613602382913,
+        "expected_given_exposure": {
+          "incident": 1.3444157409117583,
+          "mechanical": 1.3397109170785184
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 0
+        },
+        "split_nll": 16.53224087057439
+      },
+      "F1_2024_R22": {
+        "constant_nll": 15.748404619969474,
+        "expected_given_exposure": {
+          "incident": 1.22737268118696,
+          "mechanical": 1.1364658120697984
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 2
+        },
+        "split_nll": 15.780191954537267
+      },
+      "F1_2024_R23": {
+        "constant_nll": 35.77662961086235,
+        "expected_given_exposure": {
+          "incident": 1.2313092689242522,
+          "mechanical": 1.141350975165474
+        },
+        "observed": {
+          "incident": 4,
+          "mechanical": 1
+        },
+        "split_nll": 31.150808264034712
+      },
+      "F1_2025_R01": {
+        "constant_nll": 35.694464554121986,
+        "expected_given_exposure": {
+          "incident": 1.1984808959602715,
+          "mechanical": 1.119945117005633
+        },
+        "observed": {
+          "incident": 5,
+          "mechanical": 0
+        },
+        "split_nll": 31.312279280988047
+      },
+      "F1_2025_R02": {
+        "constant_nll": 9.333250391252745,
+        "expected_given_exposure": {
+          "incident": 1.35137519491166,
+          "mechanical": 1.2903484495835824
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.352744891398174
+      },
+      "F1_2025_R03": {
+        "constant_nll": 2.59250321822621,
+        "expected_given_exposure": {
+          "incident": 1.3444861663713987,
+          "mechanical": 1.28179941416615
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 2.6316506836647866
+      },
+      "F1_2025_R04": {
+        "constant_nll": 9.309838948523172,
+        "expected_given_exposure": {
+          "incident": 1.3421663483714315,
+          "mechanical": 1.2982535699977953
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 9.56720486677454
+      },
+      "F1_2025_R05": {
+        "constant_nll": 15.571834170236496,
+        "expected_given_exposure": {
+          "incident": 1.1870226568797166,
+          "mechanical": 1.0863928903391227
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 0
+        },
+        "split_nll": 13.312102916488055
+      },
+      "F1_2025_R06": {
+        "constant_nll": 29.28099877058139,
+        "expected_given_exposure": {
+          "incident": 1.292326378852279,
+          "mechanical": 1.2170710031484473
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 2
+        },
+        "split_nll": 26.959623545844074
+      },
+      "F1_2025_R07": {
+        "constant_nll": 16.40203857583954,
+        "expected_given_exposure": {
+          "incident": 1.4901399126512047,
+          "mechanical": 1.4625504487061503
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 2
+        },
+        "split_nll": 16.36969411699348
+      },
+      "F1_2025_R08": {
+        "constant_nll": 16.897617390205298,
+        "expected_given_exposure": {
+          "incident": 1.7046839443336217,
+          "mechanical": 1.728791837420475
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 1
+        },
+        "split_nll": 17.066898869769044
+      },
+      "F1_2025_R09": {
+        "constant_nll": 16.35659452785592,
+        "expected_given_exposure": {
+          "incident": 1.4720737437020692,
+          "mechanical": 1.4594639521550927
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 1
+        },
+        "split_nll": 16.56428323296121
+      },
+      "F1_2025_R10": {
+        "constant_nll": 23.43517498144451,
+        "expected_given_exposure": {
+          "incident": 1.6298887773250728,
+          "mechanical": 1.635973738602637
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 2
+        },
+        "split_nll": 23.604739596289452
+      },
+      "F1_2025_R11": {
+        "constant_nll": 22.853604205612413,
+        "expected_given_exposure": {
+          "incident": 1.3962944297591973,
+          "mechanical": 1.3654245625633359
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 1
+        },
+        "split_nll": 17.69711847676181
+      },
+      "F1_2025_R12": {
+        "constant_nll": 28.764146973035903,
+        "expected_given_exposure": {
+          "incident": 1.1000662025279702,
+          "mechanical": 0.9978160396137408
+        },
+        "observed": {
+          "incident": 4,
+          "mechanical": 0
+        },
+        "split_nll": 26.97930747387499
+      },
+      "F1_2025_R13": {
+        "constant_nll": 2.151851113145268,
+        "expected_given_exposure": {
+          "incident": 1.1673397181932563,
+          "mechanical": 1.0619670748607444
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 2.2342334954920577
+      },
+      "F1_2025_R14": {
+        "constant_nll": 3.3489559986151614,
+        "expected_given_exposure": {
+          "incident": 1.64858756907721,
+          "mechanical": 1.6591782633070964
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 3.313883523361304
+      },
+      "F1_2025_R15": {
+        "constant_nll": 16.710185441695597,
+        "expected_given_exposure": {
+          "incident": 1.644650981339918,
+          "mechanical": 1.6542931002114207
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 0
+        },
+        "split_nll": 17.148106980876882
+      },
+      "F1_2025_R16": {
+        "constant_nll": 9.110476271461824,
+        "expected_given_exposure": {
+          "incident": 1.2467040957420992,
+          "mechanical": 1.17978836492766
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 1
+        },
+        "split_nll": 9.137152779381754
+      },
+      "F1_2025_R17": {
+        "constant_nll": 9.055239954476408,
+        "expected_given_exposure": {
+          "incident": 1.2549287953480044,
+          "mechanical": 1.1706619537395282
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 6.542918696661228
+      },
+      "F1_2025_R18": {
+        "constant_nll": 3.008674650802656,
+        "expected_given_exposure": {
+          "incident": 1.511791145206311,
+          "mechanical": 1.4894188457323665
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 3.006989139161252
+      },
+      "F1_2025_R19": {
+        "constant_nll": 9.297598612270924,
+        "expected_given_exposure": {
+          "incident": 1.352359341845983,
+          "mechanical": 1.2915697403575013
+        },
+        "observed": {
+          "incident": 1,
+          "mechanical": 0
+        },
+        "split_nll": 9.570841145098838
+      },
+      "F1_2025_R20": {
+        "constant_nll": 23.19143748617447,
+        "expected_given_exposure": {
+          "incident": 1.5472204348419396,
+          "mechanical": 1.5333853135934477
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 1
+        },
+        "split_nll": 23.635166622241883
+      },
+      "F1_2025_R21": {
+        "constant_nll": 23.121512765686347,
+        "expected_given_exposure": {
+          "incident": 1.5344265246957405,
+          "mechanical": 1.5175085335325016
+        },
+        "observed": {
+          "incident": 3,
+          "mechanical": 0
+        },
+        "split_nll": 21.01300965525317
+      },
+      "F1_2025_R22": {
+        "constant_nll": 21.9856095614777,
+        "expected_given_exposure": {
+          "incident": 1.0475548908775294,
+          "mechanical": 0.9519843659755212
+        },
+        "observed": {
+          "incident": 3,
+          "mechanical": 0
+        },
+        "split_nll": 19.959205169749723
+      },
+      "F1_2025_R23": {
+        "constant_nll": 15.985557535562492,
+        "expected_given_exposure": {
+          "incident": 1.353343488780306,
+          "mechanical": 1.2927910311314204
+        },
+        "observed": {
+          "incident": 2,
+          "mechanical": 0
+        },
+        "split_nll": 16.494576493659505
+      },
+      "F1_2025_R24": {
+        "constant_nll": 2.829965741519829,
+        "expected_given_exposure": {
+          "incident": 1.439948419000731,
+          "mechanical": 1.4002646192362853
+        },
+        "observed": {
+          "incident": 0,
+          "mechanical": 0
+        },
+        "split_nll": 2.8458143906245343
+      }
+    },
+    "hazards": {
+      "first": {
+        "incident": 0.016097875080489377,
+        "mechanical": 0.000643915003219575,
+        "stay": 0.9832582099162911
+      },
+      "later": {
+        "incident": 0.0009841469343230137,
+        "mechanical": 0.0012212907739189206,
+        "stay": 0.9977945622917581
+      }
+    },
+    "held_out_races": [
+      "F1_2024_R01",
+      "F1_2024_R02",
+      "F1_2024_R03",
+      "F1_2024_R05",
+      "F1_2024_R06",
+      "F1_2024_R07",
+      "F1_2024_R09",
+      "F1_2024_R10",
+      "F1_2024_R11",
+      "F1_2024_R12",
+      "F1_2024_R13",
+      "F1_2024_R14",
+      "F1_2024_R15",
+      "F1_2024_R16",
+      "F1_2024_R17",
+      "F1_2024_R18",
+      "F1_2024_R19",
+      "F1_2024_R21",
+      "F1_2024_R22",
+      "F1_2024_R23",
+      "F1_2025_R01",
+      "F1_2025_R02",
+      "F1_2025_R03",
+      "F1_2025_R04",
+      "F1_2025_R05",
+      "F1_2025_R06",
+      "F1_2025_R07",
+      "F1_2025_R08",
+      "F1_2025_R09",
+      "F1_2025_R10",
+      "F1_2025_R11",
+      "F1_2025_R12",
+      "F1_2025_R13",
+      "F1_2025_R14",
+      "F1_2025_R15",
+      "F1_2025_R16",
+      "F1_2025_R17",
+      "F1_2025_R18",
+      "F1_2025_R19",
+      "F1_2025_R20",
+      "F1_2025_R21",
+      "F1_2025_R22",
+      "F1_2025_R23",
+      "F1_2025_R24"
+    ],
+    "label_coverage": {
+      "held_out": {
+        "fraction": 0.8571428571428571,
+        "known": 78,
+        "unknown": 13
+      },
+      "training": {
+        "fraction": 0.8739495798319328,
+        "known": 104,
+        "unknown": 15
+      }
+    },
+    "observed_expected_ratios": {
+      "incident": 0.8514964682058723,
+      "mechanical": 0.4405085946828624
+    },
+    "passed": false,
+    "seasons": {
+      "2024": {
+        "constant_nll": 275.4852125858384,
+        "expected_given_exposure": {
+          "incident": 27.811095531166355,
+          "mechanical": 26.876042716156363
+        },
+        "observed": {
+          "incident": 19,
+          "mechanical": 14
+        },
+        "split_nll": 274.5654944388116
+      },
+      "2025": {
+        "constant_nll": 366.2891318398243,
+        "expected_given_exposure": {
+          "incident": 33.25786005659492,
+          "mechanical": 32.146642229907656
+        },
+        "observed": {
+          "incident": 33,
+          "mechanical": 12
+        },
+        "split_nll": 346.31954604336977
+      }
+    },
+    "training_exposure": {
+      "first": {
+        "incident": 12,
+        "mechanical": 0,
+        "stay": 763
+      },
+      "later": {
+        "incident": 41,
+        "mechanical": 51,
+        "stay": 42075
+      }
+    },
+    "training_races": [
+      "F1_2022_R01",
+      "F1_2022_R02",
+      "F1_2022_R03",
+      "F1_2022_R04",
+      "F1_2022_R05",
+      "F1_2022_R06",
+      "F1_2022_R07",
+      "F1_2022_R08",
+      "F1_2022_R09",
+      "F1_2022_R10",
+      "F1_2022_R11",
+      "F1_2022_R12",
+      "F1_2022_R13",
+      "F1_2022_R14",
+      "F1_2022_R15",
+      "F1_2022_R16",
+      "F1_2022_R17",
+      "F1_2022_R18",
+      "F1_2022_R19",
+      "F1_2022_R20",
+      "F1_2022_R21",
+      "F1_2022_R22",
+      "F1_2023_R01",
+      "F1_2023_R02",
+      "F1_2023_R03",
+      "F1_2023_R05",
+      "F1_2023_R06",
+      "F1_2023_R07",
+      "F1_2023_R09",
+      "F1_2023_R10",
+      "F1_2023_R11",
+      "F1_2023_R13",
+      "F1_2023_R14",
+      "F1_2023_R15",
+      "F1_2023_R17",
+      "F1_2023_R18",
+      "F1_2023_R19",
+      "F1_2023_R21",
+      "F1_2023_R22"
+    ]
+  },
+  "schema": "apex-r048-cause-hazards-v1",
+  "source_sha256_lf": "cbd09c81ecd5aa9cf3fcee5e83266ff5ff30504d472b5c19f5c09a8aae12e41f"
+}
