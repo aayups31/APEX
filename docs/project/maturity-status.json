@@ -518,15 +518,15 @@
     "first_candidate_passed": false,
     "race_shift_development_gate_passed": true,
     "fresh_confirmation_passed": false,
-    "fresh_confirmation_blocker": "All five registered 2025 FastF1 acquisitions lacked lap timing",
+    "fresh_confirmation_blocker": "FastF1 acquisition lacked lap timing. OpenF1 supplied all five archives but Australia and Miami yielded no eligible green matched stops.",
     "production_promotion": false
   },
   "full_field_evidence_review": {
     "report": "docs/verification/r046-r050-evidence-review.md",
     "r046": "BLOCKED_MISSING_CALIBRATED_RACE_KERNEL",
     "r048": "ALL_CAUSE_RETIREMENT_BASELINE_UNCALIBRATED",
-    "r049": "MATCHED_NEUTRALIZATION_SOURCE_AUDIT",
-    "r050": "CLEAN_TIMING_LINE_SOURCE_AUDIT",
+    "r049": "SC_FIELD_SPAN_IMPROVED_VSC_AND_PER_CAR_UNQUALIFIED",
+    "r050": "HELD_OUT_DRS_ASSOCIATION_UNQUALIFIED",
     "production_promotion": false
   },
   "compound_crossover": {

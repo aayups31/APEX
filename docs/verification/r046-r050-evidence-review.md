@@ -3,10 +3,10 @@
 | Milestone | Status | Current evidence and remaining gate |
 |---|---|---|
 | R046 | Blocked | The project has no accepted calibrated race kernel. Driver lap-time residuals require matched predictions from such a kernel and held-out event evaluation. |
-| R047 | In progress | A declared race-level shift model passed the development gate. The frozen five-race confirmation awaits valid lap and pit clocks. |
+| R047 | In progress | A declared race-level shift model passed development. Cross-provider confirmation reached its minimum sample in three of five races. |
 | R048 | In progress | A retirement baseline ran on five held-out races. Cause-specific incident and mechanical-failure models require sourced labels. |
-| R049 | In progress | An archive audit found comparable pre, under, and post-neutralization snapshots for two of eight episodes. Gap compression and restart parameters still need calibrated replay and invariant checks. |
-| R050 | In progress | The archive audit supplies green timing-line order proxies. Dirty-air, DRS and pass effects still need matched trajectory exposure and held-out model tests. |
+| R049 | In progress | The extended SC field-span forecast beats persistence. VSC and per-car gap replay remain unqualified. |
+| R050 | In progress | A held-out timing-line experiment did not support adding prior-lap DRS to the gap model. Confirmed passes, dirty-air effects and gap replay remain open. |
 
 ## R047 distribution and confirmation
 
@@ -23,6 +23,13 @@ race-control timing in a new source-validation protocol.
 [Development results](pit-duration-r047-v2.json) ·
 [Confirmation protocol](../../research/protocols/PIT_DURATION_RACE_SHIFT_R047.md) ·
 [FIA Monza pit timing report](https://www.fia.com/sites/default/files/2025_16_ita_f1_r0_timing_racepitstopsummary_v01.pdf)
+
+OpenF1 supplied all five archives. Under the frozen substitution
+protocol, Bahrain had 28 supported stops, Monza 18 and Singapore 23.
+Australia and Miami had zero after clock, green-period and peer
+checks. The minimum-support gate failed before scoring the panel.
+[Source substitution protocol](../../research/protocols/PIT_DURATION_OPENF1_R047.md) ·
+[OpenF1 confirmation evidence](pit-duration-r047-openf1-confirmation.json)
 
 ## R048–R050 native evidence
 
@@ -49,8 +56,26 @@ inventory also records per-driver car and position tables.
 [Retirement protocol](../../research/protocols/RETIREMENT_HAZARD_R048.md) ·
 [Source audit](race-model-source-audit.json)
 
+The R049 extension added the already opened OpenF1 archives.
+On ten SC episodes, the per-mode model achieved 9.02 s MAE for field
+span during neutralization and 3.75 s for the first matched green lap.
+Preserving the original span gave 22.69 s and 32.83 s respectively.
+No VSC episode had enough independent same-mode training races to score.
+[R049 protocol](../../research/protocols/NEUTRALIZATION_SPAN_R049.md) ·
+[Field-span evaluation](r049-neutralization-span.json)
+
+The R050 archive join supplied 1,504 training and 1,709 held-out
+comparisons with usable DRS histories. Adding DRS worsened the Brier
+score in four of five held-out races and did not improve the
+equally race-weighted score. The outcome remains a timing-line proxy.
+[R050 protocol](../../research/protocols/TRAFFIC_DRS_REPLAY_R050.md) ·
+[Held-out DRS results](r050-drs-association.json)
+
 ```powershell
 python research/scripts/fit_pit_duration_race_shift.py --output .cache/r047-v2-replay.json
 python research/scripts/confirm_pit_duration_r047.py --output .cache/r047-confirmation.json
 python research/scripts/audit_race_model_sources.py --output .cache/r048-r050-source-replay.json
+python research/scripts/confirm_pit_duration_openf1.py --archive .cache/r047-openf1-confirmation --output .cache/r047-openf1-replay.json
+python research/scripts/fit_neutralization_span.py --output .cache/r049-span-replay.json
+python research/scripts/fit_traffic_drs_proxy.py --output .cache/r050-drs-replay.json
 ```

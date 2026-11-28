@@ -1,0 +1,466 @@
+{
+  "archive_sha256": "f4b4e342b90f4b6136cbc3b9faad1142702e167b566b46a82c71d3514bbb490f",
+  "content_sha256": "d69de9976e2fd6a9d114bdcf87513623657ef37c0bdf13bb8dec45bbd31204bd",
+  "events": {
+    "F1_2025_R01": {
+      "circuit": "albert_park",
+      "exclusions": {
+        "clock_green_or_duration": 39,
+        "missing_clean_subject_prefix": 9,
+        "no_unique_adjacent_timed_outlap": 34
+      },
+      "stops": []
+    },
+    "F1_2025_R04": {
+      "circuit": "bahrain",
+      "exclusions": {
+        "clock_green_or_duration": 14
+      },
+      "stops": [
+        {
+          "driver": 27,
+          "inlap": 5,
+          "lane_s": 24.2,
+          "peer_count": 18
+        },
+        {
+          "driver": 6,
+          "inlap": 6,
+          "lane_s": 25.265,
+          "peer_count": 18
+        },
+        {
+          "driver": 31,
+          "inlap": 8,
+          "lane_s": 24.876,
+          "peer_count": 16
+        },
+        {
+          "driver": 7,
+          "inlap": 9,
+          "lane_s": 24.791,
+          "peer_count": 13
+        },
+        {
+          "driver": 4,
+          "inlap": 10,
+          "lane_s": 29.822,
+          "peer_count": 13
+        },
+        {
+          "driver": 10,
+          "inlap": 10,
+          "lane_s": 25.033,
+          "peer_count": 13
+        },
+        {
+          "driver": 1,
+          "inlap": 10,
+          "lane_s": 26.518,
+          "peer_count": 13
+        },
+        {
+          "driver": 22,
+          "inlap": 11,
+          "lane_s": 26.493,
+          "peer_count": 12
+        },
+        {
+          "driver": 12,
+          "inlap": 12,
+          "lane_s": 24.807,
+          "peer_count": 10
+        },
+        {
+          "driver": 18,
+          "inlap": 12,
+          "lane_s": 24.611,
+          "peer_count": 10
+        },
+        {
+          "driver": 63,
+          "inlap": 13,
+          "lane_s": 24.044,
+          "peer_count": 7
+        },
+        {
+          "driver": 5,
+          "inlap": 13,
+          "lane_s": 24.143,
+          "peer_count": 7
+        },
+        {
+          "driver": 81,
+          "inlap": 14,
+          "lane_s": 24.498,
+          "peer_count": 8
+        },
+        {
+          "driver": 55,
+          "inlap": 14,
+          "lane_s": 24.6,
+          "peer_count": 8
+        },
+        {
+          "driver": 87,
+          "inlap": 14,
+          "lane_s": 24.562,
+          "peer_count": 8
+        },
+        {
+          "driver": 30,
+          "inlap": 14,
+          "lane_s": 25.242,
+          "peer_count": 8
+        },
+        {
+          "driver": 23,
+          "inlap": 16,
+          "lane_s": 25.394,
+          "peer_count": 8
+        },
+        {
+          "driver": 14,
+          "inlap": 16,
+          "lane_s": 24.826,
+          "peer_count": 8
+        },
+        {
+          "driver": 16,
+          "inlap": 17,
+          "lane_s": 24.802,
+          "peer_count": 10
+        },
+        {
+          "driver": 44,
+          "inlap": 17,
+          "lane_s": 24.34,
+          "peer_count": 10
+        },
+        {
+          "driver": 1,
+          "inlap": 26,
+          "lane_s": 28.067,
+          "peer_count": 16
+        },
+        {
+          "driver": 31,
+          "inlap": 27,
+          "lane_s": 24.832,
+          "peer_count": 13
+        },
+        {
+          "driver": 12,
+          "inlap": 27,
+          "lane_s": 24.506,
+          "peer_count": 13
+        },
+        {
+          "driver": 27,
+          "inlap": 27,
+          "lane_s": 24.2,
+          "peer_count": 13
+        },
+        {
+          "driver": 10,
+          "inlap": 28,
+          "lane_s": 24.958,
+          "peer_count": 13
+        },
+        {
+          "driver": 7,
+          "inlap": 28,
+          "lane_s": 25.093,
+          "peer_count": 13
+        },
+        {
+          "driver": 6,
+          "inlap": 28,
+          "lane_s": 24.64,
+          "peer_count": 13
+        },
+        {
+          "driver": 55,
+          "inlap": 44,
+          "lane_s": 37.116,
+          "peer_count": 17
+        }
+      ]
+    },
+    "F1_2025_R06": {
+      "circuit": "miami",
+      "exclusions": {
+        "clock_green_or_duration": 9,
+        "missing_clean_subject_prefix": 3,
+        "no_unique_adjacent_timed_outlap": 6
+      },
+      "stops": []
+    },
+    "F1_2025_R16": {
+      "circuit": "monza",
+      "exclusions": {
+        "clock_green_or_duration": 1
+      },
+      "stops": [
+        {
+          "driver": 30,
+          "inlap": 9,
+          "lane_s": 24.156,
+          "peer_count": 18
+        },
+        {
+          "driver": 87,
+          "inlap": 18,
+          "lane_s": 25.372,
+          "peer_count": 17
+        },
+        {
+          "driver": 22,
+          "inlap": 19,
+          "lane_s": 24.372,
+          "peer_count": 15
+        },
+        {
+          "driver": 14,
+          "inlap": 20,
+          "lane_s": 25.16,
+          "peer_count": 15
+        },
+        {
+          "driver": 5,
+          "inlap": 20,
+          "lane_s": 26.143,
+          "peer_count": 15
+        },
+        {
+          "driver": 63,
+          "inlap": 27,
+          "lane_s": 25.021,
+          "peer_count": 16
+        },
+        {
+          "driver": 12,
+          "inlap": 28,
+          "lane_s": 24.916,
+          "peer_count": 16
+        },
+        {
+          "driver": 55,
+          "inlap": 30,
+          "lane_s": 24.605,
+          "peer_count": 15
+        },
+        {
+          "driver": 6,
+          "inlap": 32,
+          "lane_s": 24.326,
+          "peer_count": 13
+        },
+        {
+          "driver": 16,
+          "inlap": 33,
+          "lane_s": 24.235,
+          "peer_count": 14
+        },
+        {
+          "driver": 43,
+          "inlap": 33,
+          "lane_s": 24.971,
+          "peer_count": 14
+        },
+        {
+          "driver": 1,
+          "inlap": 37,
+          "lane_s": 24.545,
+          "peer_count": 14
+        },
+        {
+          "driver": 44,
+          "inlap": 38,
+          "lane_s": 23.971,
+          "peer_count": 16
+        },
+        {
+          "driver": 23,
+          "inlap": 41,
+          "lane_s": 24.717,
+          "peer_count": 15
+        },
+        {
+          "driver": 81,
+          "inlap": 45,
+          "lane_s": 23.602,
+          "peer_count": 14
+        },
+        {
+          "driver": 4,
+          "inlap": 46,
+          "lane_s": 27.498,
+          "peer_count": 15
+        },
+        {
+          "driver": 10,
+          "inlap": 49,
+          "lane_s": 25.012,
+          "peer_count": 14
+        },
+        {
+          "driver": 18,
+          "inlap": 49,
+          "lane_s": 38.418,
+          "peer_count": 14
+        }
+      ]
+    },
+    "F1_2025_R18": {
+      "circuit": "marina_bay",
+      "exclusions": {},
+      "stops": [
+        {
+          "driver": 22,
+          "inlap": 13,
+          "lane_s": 24.61,
+          "peer_count": 17
+        },
+        {
+          "driver": 5,
+          "inlap": 13,
+          "lane_s": 32.856,
+          "peer_count": 17
+        },
+        {
+          "driver": 43,
+          "inlap": 14,
+          "lane_s": 24.04,
+          "peer_count": 17
+        },
+        {
+          "driver": 1,
+          "inlap": 19,
+          "lane_s": 24.008,
+          "peer_count": 17
+        },
+        {
+          "driver": 6,
+          "inlap": 20,
+          "lane_s": 23.827,
+          "peer_count": 17
+        },
+        {
+          "driver": 16,
+          "inlap": 21,
+          "lane_s": 23.63,
+          "peer_count": 17
+        },
+        {
+          "driver": 87,
+          "inlap": 23,
+          "lane_s": 23.979,
+          "peer_count": 13
+        },
+        {
+          "driver": 44,
+          "inlap": 24,
+          "lane_s": 24.794,
+          "peer_count": 11
+        },
+        {
+          "driver": 10,
+          "inlap": 24,
+          "lane_s": 25.583,
+          "peer_count": 11
+        },
+        {
+          "driver": 63,
+          "inlap": 25,
+          "lane_s": 23.966,
+          "peer_count": 10
+        },
+        {
+          "driver": 12,
+          "inlap": 25,
+          "lane_s": 23.806,
+          "peer_count": 10
+        },
+        {
+          "driver": 27,
+          "inlap": 25,
+          "lane_s": 24.1,
+          "peer_count": 10
+        },
+        {
+          "driver": 4,
+          "inlap": 26,
+          "lane_s": 23.314,
+          "peer_count": 10
+        },
+        {
+          "driver": 81,
+          "inlap": 27,
+          "lane_s": 26.637,
+          "peer_count": 10
+        },
+        {
+          "driver": 14,
+          "inlap": 27,
+          "lane_s": 30.749,
+          "peer_count": 10
+        },
+        {
+          "driver": 31,
+          "inlap": 30,
+          "lane_s": 25.078,
+          "peer_count": 16
+        },
+        {
+          "driver": 18,
+          "inlap": 38,
+          "lane_s": 24.012,
+          "peer_count": 19
+        },
+        {
+          "driver": 23,
+          "inlap": 42,
+          "lane_s": 25.732,
+          "peer_count": 18
+        },
+        {
+          "driver": 27,
+          "inlap": 44,
+          "lane_s": 31.8,
+          "peer_count": 17
+        },
+        {
+          "driver": 44,
+          "inlap": 46,
+          "lane_s": 23.344,
+          "peer_count": 16
+        },
+        {
+          "driver": 30,
+          "inlap": 48,
+          "lane_s": 24.027,
+          "peer_count": 16
+        },
+        {
+          "driver": 55,
+          "inlap": 50,
+          "lane_s": 24.075,
+          "peer_count": 15
+        },
+        {
+          "driver": 10,
+          "inlap": 51,
+          "lane_s": 25.188,
+          "peer_count": 16
+        }
+      ]
+    }
+  },
+  "frozen_sha256": "001613a596a15cfabd93f10d2850d7e037adc9980a5048e44660f78e9aee279f",
+  "minimum_support_passed": false,
+  "passed": false,
+  "production_promotion": false,
+  "result": null,
+  "schema": "apex-r047-openf1-confirmation"
+}

@@ -1,0 +1,580 @@
+{
+  "content_sha256": "bbe45309c3ef609cad1d3e6fc76d0ac4c445be5832b6bf354b838430821bd480",
+  "metrics": {
+    "4": {
+      "candidate_mae_s": [
+        9.02033916353062,
+        3.7531839773376023
+      ],
+      "persistence_mae_s": [
+        22.6919999,
+        32.8257002
+      ],
+      "scored_episodes": 10
+    },
+    "6": {
+      "candidate_mae_s": null,
+      "persistence_mae_s": null,
+      "scored_episodes": 0
+    }
+  },
+  "predictions": [
+    {
+      "actual_s": [
+        37.71,
+        13.756999
+      ],
+      "before_s": 69.611,
+      "event": "10014",
+      "mode": "4",
+      "predicted_s": [
+        33.86222172570755,
+        14.421956458183265
+      ],
+      "train_events": [
+        "9850",
+        "9920",
+        "9947",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        20.605,
+        12.468999
+      ],
+      "before_s": 21.790999,
+      "event": "9850",
+      "mode": "4",
+      "predicted_s": [
+        10.355509288776554,
+        4.2886999336863525
+      ],
+      "train_events": [
+        "10014",
+        "9920",
+        "9947",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        22.896999,
+        10.98
+      ],
+      "before_s": 56.021999,
+      "event": "9920",
+      "mode": "4",
+      "predicted_s": [
+        30.97761336722452,
+        11.652321219187872
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9947",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        18.576999,
+        10.545
+      ],
+      "before_s": 58.736999,
+      "event": "9920",
+      "mode": "4",
+      "predicted_s": [
+        32.4788846855153,
+        12.217028881799036
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9947",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        21.162999,
+        12.677999
+      ],
+      "before_s": 45.07,
+      "event": "9920",
+      "mode": "4",
+      "predicted_s": [
+        24.921656838071936,
+        9.374355194801195
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9947",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        13.928,
+        14.246999
+      ],
+      "before_s": 24.196,
+      "event": "9947",
+      "mode": "4",
+      "predicted_s": [
+        11.498412842441851,
+        4.7620296616724636
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9920",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        13.374,
+        11.901999
+      ],
+      "before_s": 24.196,
+      "event": "9947",
+      "mode": "4",
+      "predicted_s": [
+        11.498412842441851,
+        4.7620296616724636
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9920",
+        "9971",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        6.832999,
+        5.634999
+      ],
+      "before_s": 33.883999,
+      "event": "9971",
+      "mode": "4",
+      "predicted_s": [
+        18.736307862870483,
+        7.047717817756568
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9920",
+        "9947",
+        "9987",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        12.206,
+        6.631999
+      ],
+      "before_s": 50.171999,
+      "event": "9987",
+      "mode": "4",
+      "predicted_s": [
+        27.742829863725056,
+        10.435547802511879
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9920",
+        "9947",
+        "9971",
+        "F1_2024_R06"
+      ]
+    },
+    {
+      "actual_s": [
+        45.02,
+        12.131
+      ],
+      "before_s": 55.554,
+      "event": "F1_2024_R06",
+      "mode": "4",
+      "predicted_s": [
+        26.400348282733287,
+        10.933616954230123
+      ],
+      "train_events": [
+        "10014",
+        "9850",
+        "9920",
+        "9947",
+        "9971",
+        "9987"
+      ]
+    }
+  ],
+  "qualified_per_car_calibration": false,
+  "schema": "apex-r049-neutralization-span-v1",
+  "sources": {
+    "10006": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "10014": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "10022": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "10033": "e7c06bd06f9df20828f89bb17ec953158db8faabdb91d605bfb82c26a33feafc",
+    "9839": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9850": "e7c06bd06f9df20828f89bb17ec953158db8faabdb91d605bfb82c26a33feafc",
+    "9858": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "9877": "152b4034cbff478daa3a828c4cab0311880121906537e2345ea1c26ff8fcda63",
+    "9888": "152b4034cbff478daa3a828c4cab0311880121906537e2345ea1c26ff8fcda63",
+    "9896": "56f0ea108d6aeb6d3b1ecbe131cccf96fe8280d7072a48d43b7cb493262340d5",
+    "9912": "dea4399063526488dc4f5f36eeaec5cdef4c95277cc1eeff6bab791edea50ff8",
+    "9920": "56f0ea108d6aeb6d3b1ecbe131cccf96fe8280d7072a48d43b7cb493262340d5",
+    "9928": "389b9f306875ea51895df952f1e0835ae15bf1ad26d416827d5cf29bdf044b58",
+    "9947": "56dd44b57d7cdd64bb40bce63687e4d2d5605f04fcf93215820be040d3afd3b3",
+    "9955": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9963": "cda1b439fa67a48b86b1fd9dd2bf4a53b6ab75c7044649c4c31144df434dcc0d",
+    "9971": "789c850eae5ca8c2750aae55e9d7643e1f294bd2ae8af74c62fa6bc330f9cd05",
+    "9987": "e7c06bd06f9df20828f89bb17ec953158db8faabdb91d605bfb82c26a33feafc",
+    "9998": "389b9f306875ea51895df952f1e0835ae15bf1ad26d416827d5cf29bdf044b58",
+    "F1_2023_R01": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+    "F1_2023_R03": "4c380fa522fc2e0892c4bf752a725a65a99dd0f3b65501c9cce703d0f75f480e",
+    "F1_2023_R14": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+    "F1_2023_R15": "588bb6bb7e5a854e664ae919530c1c917127ec69d0f479338f18c3839c2fcb27",
+    "F1_2024_R01": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+    "F1_2024_R03": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+    "F1_2024_R06": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+    "F1_2024_R16": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+    "F1_2024_R18": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e"
+  },
+  "windows": {
+    "10006": [],
+    "10014": [
+      {
+        "drivers": 20,
+        "field_span_s": [
+          69.611,
+          37.71,
+          13.756999
+        ],
+        "lap_numbers": [
+          31,
+          34,
+          36
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "10022": [
+      {
+        "mode": "4",
+        "supported": false
+      }
+    ],
+    "10033": [
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "9839": [],
+    "9850": [
+      {
+        "drivers": 18,
+        "field_span_s": [
+          21.790999,
+          20.605,
+          12.468999
+        ],
+        "lap_numbers": [
+          6,
+          9,
+          11
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "9858": [
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "9877": [
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "9888": [
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "9896": [],
+    "9912": [],
+    "9920": [
+      {
+        "drivers": 13,
+        "field_span_s": [
+          56.021999,
+          22.896999,
+          10.98
+        ],
+        "lap_numbers": [
+          22,
+          25,
+          27
+        ],
+        "mode": "4",
+        "supported": true
+      },
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "drivers": 13,
+        "field_span_s": [
+          58.736999,
+          18.576999,
+          10.545
+        ],
+        "lap_numbers": [
+          52,
+          56,
+          58
+        ],
+        "mode": "4",
+        "supported": true
+      },
+      {
+        "drivers": 17,
+        "field_span_s": [
+          45.07,
+          21.162999,
+          12.677999
+        ],
+        "lap_numbers": [
+          64,
+          67,
+          69
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "9928": [],
+    "9947": [
+      {
+        "drivers": 12,
+        "field_span_s": [
+          8.837999,
+          12.402999,
+          19.154999
+        ],
+        "lap_numbers": [
+          1,
+          3,
+          8
+        ],
+        "mode": "6",
+        "supported": true
+      },
+      {
+        "drivers": 12,
+        "field_span_s": [
+          8.837999,
+          41.877,
+          35.728999
+        ],
+        "lap_numbers": [
+          1,
+          6,
+          8
+        ],
+        "mode": "6",
+        "supported": true
+      },
+      {
+        "drivers": 7,
+        "field_span_s": [
+          24.196,
+          13.928,
+          14.246999
+        ],
+        "lap_numbers": [
+          12,
+          16,
+          22
+        ],
+        "mode": "4",
+        "supported": true
+      },
+      {
+        "drivers": 6,
+        "field_span_s": [
+          24.196,
+          13.374,
+          11.901999
+        ],
+        "lap_numbers": [
+          12,
+          20,
+          22
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "9955": [
+      {
+        "mode": "4",
+        "supported": false
+      }
+    ],
+    "9963": [
+      {
+        "mode": "4",
+        "supported": false
+      }
+    ],
+    "9971": [
+      {
+        "drivers": 6,
+        "field_span_s": [
+          33.883999,
+          6.832999,
+          5.634999
+        ],
+        "lap_numbers": [
+          54,
+          59,
+          61
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "9987": [
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "drivers": 7,
+        "field_span_s": [
+          50.171999,
+          12.206,
+          6.631999
+        ],
+        "lap_numbers": [
+          45,
+          52,
+          54
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "9998": [],
+    "F1_2023_R01": [
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "F1_2023_R03": [
+      {
+        "mode": "4",
+        "supported": false
+      },
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "F1_2023_R14": [],
+    "F1_2023_R15": [
+      {
+        "mode": "4",
+        "supported": false
+      },
+      {
+        "drivers": 7,
+        "field_span_s": [
+          37.599,
+          53.035,
+          36.423
+        ],
+        "lap_numbers": [
+          42,
+          44,
+          46
+        ],
+        "mode": "6",
+        "supported": true
+      }
+    ],
+    "F1_2024_R01": [],
+    "F1_2024_R03": [
+      {
+        "mode": "6",
+        "supported": false
+      }
+    ],
+    "F1_2024_R06": [
+      {
+        "mode": "6",
+        "supported": false
+      },
+      {
+        "drivers": 15,
+        "field_span_s": [
+          55.554,
+          45.02,
+          12.131
+        ],
+        "lap_numbers": [
+          27,
+          31,
+          33
+        ],
+        "mode": "4",
+        "supported": true
+      }
+    ],
+    "F1_2024_R16": [],
+    "F1_2024_R18": []
+  }
+}
