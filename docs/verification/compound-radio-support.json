@@ -1,0 +1,67 @@
+{
+  "cases": {
+    "9850": {
+      "any_clip": 1,
+      "cases": 13,
+      "explicit_symptom": 1,
+      "race": "2025_Qatar_Grand_Prix",
+      "tyre_topic": 1
+    },
+    "9877": {
+      "any_clip": 2,
+      "cases": 33,
+      "explicit_symptom": 0,
+      "race": "2025_Mexico_City_Grand_Prix",
+      "tyre_topic": 0
+    },
+    "9912": {
+      "any_clip": 0,
+      "cases": 12,
+      "explicit_symptom": 0,
+      "race": "2025_Italian_Grand_Prix",
+      "tyre_topic": 0
+    },
+    "9928": {
+      "any_clip": 1,
+      "cases": 36,
+      "explicit_symptom": 0,
+      "race": "2025_Hungarian_Grand_Prix",
+      "tyre_topic": 0
+    },
+    "9998": {
+      "any_clip": 0,
+      "cases": 10,
+      "explicit_symptom": 0,
+      "race": "2025_Chinese_Grand_Prix",
+      "tyre_topic": 0
+    },
+    "F1_2023_R15": {
+      "any_clip": 1,
+      "cases": 14,
+      "explicit_symptom": 0,
+      "race": "2023_Singapore_Grand_Prix",
+      "tyre_topic": 0
+    },
+    "F1_2024_R16": {
+      "any_clip": 1,
+      "cases": 13,
+      "explicit_symptom": 0,
+      "race": "2024_Italian_Grand_Prix",
+      "tyre_topic": 0
+    }
+  },
+  "cohort_sha256": "436391f52e88c48e4f835d09a5aa2edbaf83f0a8644ba081ad42bf5f12cc2483",
+  "content_sha256": "d0534e7add9ff5c7b5dd9689e791488da3e2078367d529621243681fcba894d4",
+  "predictive_value_tested": false,
+  "revision": "a0b99e1a325d92d63b574541a24902a660a352ea",
+  "schema": "compound-radio-coverage-v1",
+  "source": "https://huggingface.co/datasets/MikCil/f1-team-radio",
+  "source_clips": 14681,
+  "totals": {
+    "any_clip": 6,
+    "cases": 131,
+    "explicit_symptom": 1,
+    "tyre_topic": 1
+  },
+  "transcript_columns_sha256": "6e406def5431fc94a52ce5a278dd2084aa060776ed7fd37cf96f7436b8c1a5f6"
+}
