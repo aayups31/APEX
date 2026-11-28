@@ -51,6 +51,12 @@ test segment's first eligible measured temperature and estimating subsequent
 temperature change with the masked controls. This is distinct
 from a privileged three-lap pace predictor.
 
+After viewing the first transfer results, add a diagnostic
+comparator on the same samples. Hold the measured starting
+temperature constant to separate the benefit of scale initialization
+from any ability to infer temperature change. This comparison
+does not enter the registered masked-temperature gate.
+
 This pilot probes recoverability of external tread temperature.
 Leave the registered 393-case Formula 1 cohort, both crossover
 labels, pace bounds, race gates and fresh confirmation intact.

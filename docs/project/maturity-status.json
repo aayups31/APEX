@@ -606,6 +606,15 @@
       "persistent_cases": 131,
       "decision": "STOP_SECTOR_TRAFFIC_ADJUSTMENT_DIRECTION"
     },
+    "external_thermal_pilot": {
+      "report": "docs/verification/compound-v34-external-thermal-report.md",
+      "evidence": "docs/verification/compound-v34-external-thermal.json",
+      "measured_runs": 20,
+      "masked_temperature_gate_passed": false,
+      "measured_initial_temperature_improved_over_persistence": true,
+      "three_lap_pace_oracle_scored": false,
+      "decision": "SEEK_CONTINUOUS_STINTS_AND_INITIAL_TYRE_STATE"
+    },
     "radio_signal_coverage": {
       "evidence": "docs/verification/compound-radio-support.json",
       "cases": 131,

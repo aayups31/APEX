@@ -115,7 +115,10 @@ def prepare_run(path):
 
 
 def transfer(train, test):
-    scores = {name: {} for name in (*ARMS, "hybrid_with_measured_initial_temperature")}
+    scores = {
+        name: {}
+        for name in (*ARMS, "hybrid_with_measured_initial_temperature", "measured_initial_persistence")
+    }
     for arm in ARMS:
         rows = [segment for segments in train.values() for segment in segments]
         x = np.concatenate([a[arm] for a, _ in rows])
@@ -123,16 +126,18 @@ def transfer(train, test):
         scaler = StandardScaler().fit(x)
         fit = Ridge(alpha=10).fit(scaler.transform(x), y)
         for run, segments in test.items():
-            errors, initialized = [], []
+            errors, initialized, initial_persistence = [], [], []
             for predictors, target in segments:
                 predicted = fit.predict(scaler.transform(predictors[arm]))
                 errors.append(np.abs(predicted - target))
                 if arm == "hybrid" and len(target) > 1:
                     corrected = predicted[1:] - predicted[0] + target[0]
                     initialized.append(np.abs(corrected - target[1:]))
+                    initial_persistence.append(np.abs(target[0] - target[1:]))
             scores[arm][run] = errors
             if initialized:
                 scores["hybrid_with_measured_initial_temperature"][run] = initialized
+                scores["measured_initial_persistence"][run] = initial_persistence
     result = {}
     for name, runs in scores.items():
         metrics = {}
