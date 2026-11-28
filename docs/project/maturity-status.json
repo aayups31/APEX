@@ -12,9 +12,9 @@
   "review_evidence_content_sha256": "e52ecd758555b2f06ae5946ad30d6f45d9914a9552f5c2992bb43e3430a9d8d6",
   "published_magnitude_replication": "INCONCLUSIVE",
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
-  "last_progress_date": "2026-11-27",
+  "last_progress_date": "2026-11-28",
   "research_inventory": {
-    "done": 48,
+    "done": 49,
     "total": 73
   },
   "build_inventory": {
@@ -22,7 +22,8 @@
     "total": 66
   },
   "next_research_tasks": [
-    "R041"
+    "R041",
+    "R051"
   ],
   "permanent_benchmark_reservation": {
     "event_count": 9,
@@ -555,12 +556,27 @@
     "held_out_vsc_episodes": 11,
     "production_promotion": false
   },
+  "green_traffic_replay": {
+    "backlog_id": "R050",
+    "status": "DONE",
+    "scope": "HISTORICAL_CLEAN_GREEN_GAP_PASS_AND_CONDITIONAL_SECTOR_PACE",
+    "report": "docs/verification/green-traffic-r050-report.md",
+    "gap_pass_evidence": "docs/verification/r050-green-traffic.json",
+    "sector_pace_evidence": "docs/verification/r050-sector-traffic.json",
+    "held_out_pass_gap_races": 5,
+    "held_out_transitions": 1390,
+    "corroborated_passes": 67,
+    "sector_confirmation_races": 3,
+    "sector_confirmation_matches": 264,
+    "full_lap_pace_support_passed": false,
+    "production_promotion": false
+  },
   "full_field_evidence_review": {
     "report": "docs/verification/r046-r050-evidence-review.md",
     "r046": "CLEAN_GREEN_ONE_STEP_ACCEPTED_FULL_FIELD_CALIBRATION_PENDING",
     "r048": "HISTORICAL_CAUSE_SPECIFIC_RESEARCH_ACCEPTED",
     "r049": "SC_AND_VSC_MATCHED_PER_CAR_REPLAY_ACCEPTED",
-    "r050": "HELD_OUT_DRS_ASSOCIATION_UNQUALIFIED",
+    "r050": "GREEN_GAP_PASS_AND_SECTOR_PACE_REPLAY_ACCEPTED",
     "production_promotion": false
   },
   "compound_crossover": {

@@ -48,7 +48,7 @@ R046,R6,P0,stochastic,Fit driver lap-time residual distributions,calibrated kern
 R047,R6,P0,stochastic,Fit pit-duration distributions,pit data,coverage and goodness-of-fit,DONE
 R048,R6,P1,stochastic,Fit incident/failure hazard models,historical race events,held-out event calibration,DONE
 R049,R6,P0,race-control,Calibrate VSC/SC gap compression and restart,event data,replay error and invariants,DONE
-R050,R6,P0,traffic,"Calibrate dirty air, DRS and overtaking",multi-car public data,held-out pass/gap statistics,IN_PROGRESS
+R050,R6,P0,traffic,"Calibrate dirty air, DRS and overtaking",multi-car public data,"Held-out corroborated passes and signed gaps, confirmed conditional sector pace",DONE
 R051,R6,P0,Monte Carlo,Add convergence and strategy-rank stability analysis,all stochastic models,stable ranking/CI at budget,TODO
 R052,R7,P0,oracle,Implement dynamic-programming pit oracle,race model,exact small-instance optimum,TODO
 R053,R7,P1,game-theory,Implement two-car Stackelberg benchmark,DP oracle,equilibrium and exploitability report,TODO

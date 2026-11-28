@@ -6,7 +6,7 @@
 | R047 | Research gate passed | The direct green pit-lane confirmation passed on 87 stops across five races. The earlier clean-peer confirmation had too few supported races. [R047 report](pit-duration-r047-report.md) |
 | R048 | Research gate passed | Published cause labels supported an accepted historical competing-risk model. Full-field incident calibration remains open. [R048 report](retirement-causes-r048-report.md) |
 | R049 | Research gate passed | Per-car SC and VSC timing-line replay passed on 19 held-out episodes. [R049 report](neutralized-gaps-r049-report.md) |
-| R050 | In progress | A held-out timing-line experiment did not support adding prior-lap DRS to the gap model. Confirmed passes, dirty-air effects and gap replay remain open. |
+| R050 | Research gate passed | Corroborated passes and signed gaps passed five held-out races. Conditional following and DRS sector adjustments passed a separate three-race confirmation. [R050 report](green-traffic-r050-report.md) |
 
 ## R047 distribution and confirmation
 
@@ -70,6 +70,12 @@ score in four of five held-out races and did not improve the
 equally race-weighted score. The outcome remains a timing-line proxy.
 [R050 protocol](../../research/protocols/TRAFFIC_DRS_REPLAY_R050.md) ·
 [Held-out DRS results](r050-drs-association.json)
+
+The subsequent R050 replay joined the pass log to signed timing-line
+gaps on 1,390 held-out transitions. The sector confirmation qualified the
+close-following and DRS pace terms on 264 matched contrasts. Both
+scoped calibrations are available in the offline research replay.
+[R050 closure report](green-traffic-r050-report.md)
 
 ```powershell
 python research/scripts/fit_pit_duration_race_shift.py --output .cache/r047-v2-replay.json
