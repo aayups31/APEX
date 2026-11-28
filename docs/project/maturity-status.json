@@ -14,7 +14,7 @@
   "public_data_calibration_maturity_R2": "NOT_ACHIEVED",
   "last_progress_date": "2026-11-27",
   "research_inventory": {
-    "done": 47,
+    "done": 48,
     "total": 73
   },
   "build_inventory": {
@@ -546,11 +546,20 @@
     "fresh_confirmation": false,
     "production_promotion": false
   },
+  "neutralization_gap_replay": {
+    "backlog_id": "R049",
+    "status": "DONE",
+    "scope": "MATCHED_NONPITTING_SC_VSC_TIMING_LINE_REPLAY",
+    "report": "docs/verification/neutralized-gaps-r049-report.md",
+    "held_out_sc_episodes": 8,
+    "held_out_vsc_episodes": 11,
+    "production_promotion": false
+  },
   "full_field_evidence_review": {
     "report": "docs/verification/r046-r050-evidence-review.md",
     "r046": "CLEAN_GREEN_ONE_STEP_ACCEPTED_FULL_FIELD_CALIBRATION_PENDING",
     "r048": "HISTORICAL_CAUSE_SPECIFIC_RESEARCH_ACCEPTED",
-    "r049": "SC_FIELD_SPAN_IMPROVED_VSC_AND_PER_CAR_UNQUALIFIED",
+    "r049": "SC_AND_VSC_MATCHED_PER_CAR_REPLAY_ACCEPTED",
     "r050": "HELD_OUT_DRS_ASSOCIATION_UNQUALIFIED",
     "production_promotion": false
   },

@@ -5,7 +5,7 @@
 | R046 | Research gate passed | The separately calibrated clean-green one-lap model passed five held-out races. Integrated race-kernel calibration remains pending. [R046 report](lap-residuals-r046-report.md) |
 | R047 | Research gate passed | The direct green pit-lane confirmation passed on 87 stops across five races. The earlier clean-peer confirmation had too few supported races. [R047 report](pit-duration-r047-report.md) |
 | R048 | Research gate passed | Published cause labels supported an accepted historical competing-risk model. Full-field incident calibration remains open. [R048 report](retirement-causes-r048-report.md) |
-| R049 | In progress | The extended SC field-span forecast beats persistence. VSC and per-car gap replay remain unqualified. |
+| R049 | Research gate passed | Per-car SC and VSC timing-line replay passed on 19 held-out episodes. [R049 report](neutralized-gaps-r049-report.md) |
 | R050 | In progress | A held-out timing-line experiment did not support adding prior-lap DRS to the gap model. Confirmed passes, dirty-air effects and gap replay remain open. |
 
 ## R047 distribution and confirmation

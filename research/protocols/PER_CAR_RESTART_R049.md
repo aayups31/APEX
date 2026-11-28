@@ -9,6 +9,7 @@ the latest crossing snapshot inside the episode, and the first
 green complete-lap snapshot after release. Require at least five of
 the same drivers at each snapshot with known nonpit timing. In the
 middle snapshot require the crossing itself inside neutralization.
+Use green crossings within four minutes of deployment or release.
 This permits short VSC episodes whose preceding timing line was
 crossed under green. Select the common drivers deterministically,
 prefer more common drivers, then closer snapshots. Treat any change
