@@ -73,7 +73,7 @@ equally race-weighted score. The outcome remains a timing-line proxy.
 
 The subsequent R050 replay joined the pass log to signed timing-line
 gaps on 1,390 held-out transitions. The sector confirmation qualified the
-close-following and DRS pace terms on 264 matched contrasts. Both
+close-following and DRS pace terms on 211 matched contrasts. Both
 scoped calibrations are available in the offline research replay.
 [R050 closure report](green-traffic-r050-report.md)
 

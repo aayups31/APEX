@@ -28,6 +28,8 @@ def sector_drs(telemetry, start, end):
     times, values = seconds[a:b], codes[a:b]
     spans = np.diff(times)
     known = np.isin(values, tuple(DRS_STATES))
+    if np.diff(np.r_[start, times[known], end]).max() > 1:
+        return None
     valid = (spans > 0) & (spans <= 1) & known[:-1] & known[1:]
     if spans[valid].sum() < 0.90 * (end - start):
         return None
@@ -66,18 +68,25 @@ def observed_sectors(laps, telemetry):
                     continue
                 row = field[driver]
                 t0, t1 = clocks[origin][driver], clocks[target][driver]
-                gap = t0 - clocks[origin][leader]
+                lead_start, lead_end = clocks[origin][leader], clocks[target][leader]
+                gap = t0 - lead_start
                 duration = getattr(row, duration_column)
+                lead_duration = getattr(field[leader], duration_column)
                 if (
                     not (0 < gap <= 1 or 2 <= gap <= 4)
                     or pd.isna(duration)
+                    or pd.isna(lead_duration)
                     or not isfinite(row.Stint)
                     or not isfinite(row.TyreLife)
                     or t1 <= t0
+                    or lead_end <= lead_start
                 ):
                     continue
                 duration_s = duration.total_seconds()
-                if abs(t1 - t0 - duration_s) > 0.15:
+                if (
+                    abs(t1 - t0 - duration_s) > 0.15
+                    or abs(lead_end - lead_start - lead_duration.total_seconds()) > 0.15
+                ):
                     continue
                 opened = sector_drs(telemetry[driver], t0, t1)
                 if opened is None or (gap >= 2 and opened):

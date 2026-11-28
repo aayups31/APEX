@@ -11,11 +11,13 @@ guard and verify archive bytes in all partitions.
 
 Use accurate green, undeleted nonpit laps with native start and
 intermediate sector crossing timestamps. Require the native sector
-span to agree with its recorded duration to within 0.15 seconds.
+span for each car to agree with its recorded duration to within
+0.15 seconds.
 Require the same adjacent same-lap leader at both ends of the sector,
 without screening candidates by observed time residual. Analyze
 the original DRS samples over the measured sector. Require 90%
-support from known DRS codes, holes no wider than one second, and
+support from known DRS codes, with at most one second between known
+samples or from a sector boundary to the nearest known sample, and
 at least one observed open second to classify an open sector. The
 closed stratum has zero measured open time.
 

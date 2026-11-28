@@ -46,8 +46,8 @@ replicated in all three added 2022 confirmation races.
 
 | Term | Fitted adjustment | Confirmation matches | Confirmation MAE, model / zero effect |
 |---|---:|---:|---:|
-| DRS-closed sector within 1 s versus closed at 2–4 s | +0.254 s | 130 | 0.405 / 0.474 s |
-| DRS-open versus closed sector, both within 1 s | −0.307 s | 134 | 0.475 / 0.606 s |
+| DRS-closed sector within 1 s versus closed at 2–4 s | +0.3455 s | 100 | 0.462 / 0.529 s |
+| DRS-open versus closed sector, both within 1 s | −0.2873 s | 111 | 0.546 / 0.661 s |
 
 These are observational timing adjustments. The measured effects
 vary by race, and tyre ages can differ within the allowed matching

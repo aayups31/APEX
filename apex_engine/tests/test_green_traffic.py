@@ -92,6 +92,9 @@ def test_sector_drs_unknown_or_brief_activity_cannot_be_treated_as_closed(monkey
     assert sector_drs((seconds, codes), 0, 10) is True
     codes[:18] = 99
     assert sector_drs((seconds, codes), 0, 10) is None
+    seconds = np.arange(0.0, 30.0, 0.25)
+    seconds = seconds[(seconds < 5.0) | (seconds >= 6.25)]
+    assert sector_drs((seconds, np.zeros(len(seconds))), 0, 30) is None
 
 
 def test_load_qualified_scoped_calibrations(tmp_path):
@@ -103,8 +106,8 @@ def test_load_qualified_scoped_calibrations(tmp_path):
     )
     sector_path = EVIDENCE / "r050-sector-traffic.json"
     sector = load_sector_traffic_calibration(sector_path)
-    assert sector.adjustment(0.7, drs_open=False) == pytest.approx(0.2535)
-    assert sector.adjustment(0.7, drs_open=True) == pytest.approx(0.2535 - 0.307)
+    assert sector.adjustment(0.7, drs_open=False) == pytest.approx(0.3455)
+    assert sector.adjustment(0.7, drs_open=True) == pytest.approx(0.3455 - 0.28725)
     assert sector.adjustment(2.0, drs_open=False) == 0
     for gap, drs in ((1.5, False), (2.0, True), (0.0, False)):
         with pytest.raises(ValueError, match="outside calibrated"):
