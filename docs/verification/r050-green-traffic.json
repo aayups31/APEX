@@ -1,0 +1,363 @@
+{
+  "alternate_pass_held_out": {
+    "cases": 1390,
+    "gap_model_mae_s": 0.3497743203077391,
+    "gap_pace_extrapolation_mae_s": 0.3970309352518206,
+    "gap_persistence_mae_s": 0.3807388489208979,
+    "logged_without_reversal": 4,
+    "pass_model_brier": 0.04245711123776281,
+    "pass_model_expected": 61.3151908490595,
+    "pass_model_log_loss": 0.1574773307601655,
+    "pass_pooled_brier": 0.04588409996081944,
+    "pass_pooled_expected": 63.58392999204455,
+    "pass_pooled_log_loss": 0.19325307883562173,
+    "passes": 67,
+    "timing_reversals": 67,
+    "unknown_prior_drs": 0
+  },
+  "calibration": {
+    "gap_coefficients": [
+      -0.10430297943293008,
+      0.09692373681018779,
+      0.46651557505117325
+    ],
+    "pass_cells": {
+      "00": 0.024115755627009645,
+      "01": 0.11994949494949494,
+      "10": 0.0015384615384615385,
+      "11": 0.015350877192982455
+    },
+    "pooled_pass_probability": 0.045743834526650755,
+    "use_prior_drs": false
+  },
+  "content_sha256": "9ee648f66d4e97eb86ef95cf17f62ea8b75e67068591c48bfe37bff89959dcd6",
+  "gates": {
+    "drs_pace": false,
+    "following_pace": false,
+    "gap_score": true,
+    "pass_score": true,
+    "pass_support": true
+  },
+  "held_out": {
+    "cases": 1390,
+    "gap_model_mae_s": 0.3497743203077391,
+    "gap_pace_extrapolation_mae_s": 0.3970309352518206,
+    "gap_persistence_mae_s": 0.3807388489208979,
+    "logged_without_reversal": 4,
+    "pass_model_brier": 0.042401961707795185,
+    "pass_model_expected": 60.44693563135685,
+    "pass_model_log_loss": 0.1561586829086402,
+    "pass_pooled_brier": 0.04588409996081944,
+    "pass_pooled_expected": 63.58392999204455,
+    "pass_pooled_log_loss": 0.19325307883562173,
+    "passes": 67,
+    "timing_reversals": 67,
+    "unknown_prior_drs": 0
+  },
+  "held_out_pace": {
+    "drs": {
+      "median_race_effect_s": -0.2184999999999988,
+      "observed_race_effect_range_s": [
+        -0.2184999999999988,
+        -0.2184999999999988
+      ],
+      "pairs": 2,
+      "races": {
+        "F1_2024_R01": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R03": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R06": {
+          "mean_age_difference_laps": 1.0,
+          "median_s": -0.2184999999999988,
+          "pairs": 2
+        },
+        "F1_2024_R16": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R18": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        }
+      }
+    },
+    "following": {
+      "median_race_effect_s": 0.710000000000008,
+      "observed_race_effect_range_s": [
+        0.710000000000008,
+        0.710000000000008
+      ],
+      "pairs": 1,
+      "races": {
+        "F1_2024_R01": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R03": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R06": {
+          "mean_age_difference_laps": 2.0,
+          "median_s": 0.710000000000008,
+          "pairs": 1
+        },
+        "F1_2024_R16": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2024_R18": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        }
+      }
+    }
+  },
+  "held_out_races": {
+    "F1_2024_R01": {
+      "cases": 225,
+      "gap_model_mae_s": 0.30834822261092587,
+      "gap_pace_extrapolation_mae_s": 0.37512888888891843,
+      "gap_persistence_mae_s": 0.3431288888888796,
+      "logged_without_reversal": 1,
+      "pass_model_brier": 0.04062410369045039,
+      "pass_model_expected": 9.65077212430487,
+      "pass_model_log_loss": 0.15856346699382032,
+      "pass_pooled_brier": 0.04247082421705487,
+      "pass_pooled_expected": 10.29236276849642,
+      "pass_pooled_log_loss": 0.18183979895389568,
+      "passes": 10,
+      "timing_reversals": 10,
+      "unknown_prior_drs": 0
+    },
+    "F1_2024_R03": {
+      "cases": 199,
+      "gap_model_mae_s": 0.339670726887376,
+      "gap_pace_extrapolation_mae_s": 0.4244472361809289,
+      "gap_persistence_mae_s": 0.3416180904523389,
+      "logged_without_reversal": 0,
+      "pass_model_brier": 0.035422599316992834,
+      "pass_model_expected": 7.982176462806857,
+      "pass_model_log_loss": 0.13319152150217545,
+      "pass_pooled_brier": 0.038615607178978426,
+      "pass_pooled_expected": 9.1030230708035,
+      "pass_pooled_log_loss": 0.16894875985728988,
+      "passes": 8,
+      "timing_reversals": 8,
+      "unknown_prior_drs": 0
+    },
+    "F1_2024_R06": {
+      "cases": 400,
+      "gap_model_mae_s": 0.26596734474630657,
+      "gap_pace_extrapolation_mae_s": 0.32607000000005204,
+      "gap_persistence_mae_s": 0.26655250000006164,
+      "logged_without_reversal": 2,
+      "pass_model_brier": 0.028420470600439923,
+      "pass_model_expected": 18.434552206128615,
+      "pass_model_log_loss": 0.11806666411925246,
+      "pass_pooled_brier": 0.02934786832560256,
+      "pass_pooled_expected": 18.2975338106603,
+      "pass_pooled_log_loss": 0.1379593803447915,
+      "passes": 12,
+      "timing_reversals": 12,
+      "unknown_prior_drs": 0
+    },
+    "F1_2024_R16": {
+      "cases": 252,
+      "gap_model_mae_s": 0.4005911304659275,
+      "gap_pace_extrapolation_mae_s": 0.3931269841269895,
+      "gap_persistence_mae_s": 0.5060793650793747,
+      "logged_without_reversal": 1,
+      "pass_model_brier": 0.06447404591927383,
+      "pass_model_expected": 10.42583110614588,
+      "pass_model_log_loss": 0.20179075467270502,
+      "pass_pooled_brier": 0.07419665164693957,
+      "pass_pooled_expected": 11.52744630071599,
+      "pass_pooled_log_loss": 0.2879243274594223,
+      "passes": 20,
+      "timing_reversals": 20,
+      "unknown_prior_drs": 0
+    },
+    "F1_2024_R18": {
+      "cases": 314,
+      "gap_model_mae_s": 0.4518394194706204,
+      "gap_pace_extrapolation_mae_s": 0.48887898089171006,
+      "gap_persistence_mae_s": 0.47735031847136195,
+      "logged_without_reversal": 0,
+      "pass_model_brier": 0.04819604575659049,
+      "pass_model_expected": 13.95360373197063,
+      "pass_model_log_loss": 0.18089407823326362,
+      "pass_pooled_brier": 0.05127947172871076,
+      "pass_pooled_expected": 14.363564041368337,
+      "pass_pooled_log_loss": 0.21129407308151585,
+      "passes": 17,
+      "timing_reversals": 17,
+      "unknown_prior_drs": 0
+    }
+  },
+  "openf1_archive_sha256": "0c9a0f3a2d503f5bcad94a6a4a0507e653dc5ab05d0cd2004b4dce4529d1c956",
+  "production_promotion": false,
+  "qualified": false,
+  "schema": "apex-r050-green-traffic-v1",
+  "sources": {
+    "F1_2023_R01": {
+      "fastf1_sha256": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+      "openf1_log_rows": 394,
+      "openf1_session_key": 7953,
+      "openf1_sha256": "8a80de5d156cda9654c79e55aa76213d04e9e537f1ddb6824da0f22ea5bc5470"
+    },
+    "F1_2023_R03": {
+      "fastf1_sha256": "4c380fa522fc2e0892c4bf752a725a65a99dd0f3b65501c9cce703d0f75f480e",
+      "openf1_log_rows": 264,
+      "openf1_session_key": 7787,
+      "openf1_sha256": "0f20601bc33a0c8e25b360ca59796d94b8f23001c60081c8fdca5f56f92bc4bb"
+    },
+    "F1_2023_R14": {
+      "fastf1_sha256": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+      "openf1_log_rows": 231,
+      "openf1_session_key": 9157,
+      "openf1_sha256": "ebe127d4389d5a428eaceca73394c90427edf54aac793bfc2037035eab16dfa3"
+    },
+    "F1_2023_R15": {
+      "fastf1_sha256": "588bb6bb7e5a854e664ae919530c1c917127ec69d0f479338f18c3839c2fcb27",
+      "openf1_log_rows": 212,
+      "openf1_session_key": 9165,
+      "openf1_sha256": "a75db2a1091bc31518195e3a0dcf345cc9ab1379cc849a379736ce67a02b669f"
+    },
+    "F1_2024_R01": {
+      "fastf1_sha256": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+      "openf1_log_rows": 414,
+      "openf1_session_key": 9472,
+      "openf1_sha256": "c2619d8f6df0939099c130cb832e0f8f7ba29f1c38538683dffc40f2ef464606"
+    },
+    "F1_2024_R03": {
+      "fastf1_sha256": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+      "openf1_log_rows": 211,
+      "openf1_session_key": 9488,
+      "openf1_sha256": "3feffad7ed12c437eee32aec7eaee20abacc5868c8c375a9c9cad40ff48d1e36"
+    },
+    "F1_2024_R06": {
+      "fastf1_sha256": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+      "openf1_log_rows": 201,
+      "openf1_session_key": 9507,
+      "openf1_sha256": "05ec819c433ca8821f378af93c4658bc53c3b06b3c5ef49996619919d317efbb"
+    },
+    "F1_2024_R16": {
+      "fastf1_sha256": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+      "openf1_log_rows": 225,
+      "openf1_session_key": 9590,
+      "openf1_sha256": "ff917f24186efbd9c267ae77e4a18a6d82013d7c4284ac1c3984d0c584a697fa"
+    },
+    "F1_2024_R18": {
+      "fastf1_sha256": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e",
+      "openf1_log_rows": 216,
+      "openf1_session_key": 9606,
+      "openf1_sha256": "5e152b6c9f500f36b5bd1b9ada1e786d9f48f840f06d683ab135f991a258e87c"
+    }
+  },
+  "training": {
+    "cases": 1256,
+    "gap_model_mae_s": 0.3294144737051885,
+    "gap_pace_extrapolation_mae_s": 0.3914076433120887,
+    "gap_persistence_mae_s": 0.34374203821653787,
+    "logged_without_reversal": 5,
+    "pass_model_brier": 0.04077450688197221,
+    "pass_model_expected": 58.83904541069205,
+    "pass_model_log_loss": 0.15454054330388492,
+    "pass_pooled_brier": 0.04332275545449604,
+    "pass_pooled_expected": 57.454256165473346,
+    "pass_pooled_log_loss": 0.18468847875091005,
+    "passes": 57,
+    "timing_reversals": 57,
+    "unknown_prior_drs": 0
+  },
+  "training_pace": {
+    "drs": {
+      "median_race_effect_s": -0.4959999999999951,
+      "observed_race_effect_range_s": [
+        -1.097999999999999,
+        -0.2919999999999874
+      ],
+      "pairs": 37,
+      "races": {
+        "F1_2023_R01": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2023_R03": {
+          "mean_age_difference_laps": 1.3043478260869565,
+          "median_s": -1.097999999999999,
+          "pairs": 23
+        },
+        "F1_2023_R14": {
+          "mean_age_difference_laps": -1.0,
+          "median_s": -0.2919999999999874,
+          "pairs": 1
+        },
+        "F1_2023_R15": {
+          "mean_age_difference_laps": 0.7692307692307693,
+          "median_s": -0.4959999999999951,
+          "pairs": 13
+        }
+      }
+    },
+    "following": {
+      "median_race_effect_s": 0.37400000000000944,
+      "observed_race_effect_range_s": [
+        0.37400000000000944,
+        0.37400000000000944
+      ],
+      "pairs": 1,
+      "races": {
+        "F1_2023_R01": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2023_R03": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2023_R14": {
+          "mean_age_difference_laps": null,
+          "median_s": null,
+          "pairs": 0
+        },
+        "F1_2023_R15": {
+          "mean_age_difference_laps": -5.0,
+          "median_s": 0.37400000000000944,
+          "pairs": 1
+        }
+      }
+    }
+  },
+  "training_pass_selection_brier": {
+    "gap_pace": {
+      "F1_2023_R01": 0.046173997266486015,
+      "F1_2023_R03": 0.06400265034440761,
+      "F1_2023_R14": 0.04478463466340362,
+      "F1_2023_R15": 0.018631771353783504
+    },
+    "gap_pace_drs": {
+      "F1_2023_R01": 0.04605391360334743,
+      "F1_2023_R03": 0.06429517838980983,
+      "F1_2023_R14": 0.044908063154235706,
+      "F1_2023_R15": 0.018470757073207215
+    }
+  }
+}

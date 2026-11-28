@@ -1,10 +1,12 @@
-"""Offline signed-gap and corroborated-pass forecasts for R050."""
+"""Offline gap, pass and sector-pace replay for R050."""
 
 from collections import Counter
 from dataclasses import dataclass
 from math import isfinite
 
 import numpy as np
+
+from apexsim.research.evidence import check_seal, read_json
 
 FEATURES = ("gap_s", "pace_delta_s")
 
@@ -69,6 +71,57 @@ class GreenTrafficReplay:
         ):
             raise ValueError("Invalid green traffic calibration")
         return cls(coefficients, pooled, {tuple(map(int, key)): p for key, p in cells.items()}, prior_drs)
+
+
+@dataclass(frozen=True)
+class SectorTrafficCalibration:
+    """Conditional sector-time adjustments relative to closed DRS at 2 to 4 seconds."""
+
+    close_following_s: float
+    drs_delta_s: float
+
+    def adjustment(self, gap_s, *, drs_open):
+        if not isinstance(drs_open, bool) or not isfinite(gap_s):
+            raise ValueError("Sector pace requires a measured gap and DRS state")
+        if 0 < gap_s <= 1:
+            return self.close_following_s + (self.drs_delta_s if drs_open else 0.0)
+        if 2 <= gap_s <= 4 and not drs_open:
+            return 0.0
+        raise ValueError("Gap and DRS state are outside calibrated sector support")
+
+
+def load_green_traffic_replay(path):
+    result = read_json(path)
+    check_seal(result)
+    gates = result.get("gates", {})
+    if result.get("schema") != "apex-r050-green-traffic-v1" or not all(
+        gates.get(gate) is True for gate in ("pass_support", "pass_score", "gap_score")
+    ):
+        raise ValueError("No qualified green traffic pass and gap calibration")
+    return GreenTrafficReplay.from_dict(result["calibration"])
+
+
+def load_sector_traffic_calibration(path):
+    result = read_json(path)
+    check_seal(result)
+    gates = result.get("gates", {})
+    if result.get("schema") != "apex-r050-sector-traffic-v1" or not all(
+        gates.get(term, {}).get(gate) is True
+        for term in ("following", "drs")
+        for gate in (
+            "support",
+            "development_sign",
+            "validation_sign",
+            "confirmation_sign",
+            "confirmation_score",
+        )
+    ):
+        raise ValueError("No qualified green traffic sector pace calibration")
+    following = result["calibration_s"]["following"]
+    drs = result["calibration_s"]["drs"]
+    if not (isfinite(following) and following > 0 and isfinite(drs) and drs < 0):
+        raise ValueError("Invalid sector pace adjustments")
+    return SectorTrafficCalibration(following, drs)
 
 
 def fit_green_traffic(rows, *, use_prior_drs=False):

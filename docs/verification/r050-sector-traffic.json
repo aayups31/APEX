@@ -1,0 +1,236 @@
+{
+  "calibration_s": {
+    "drs": -0.30700000000000216,
+    "following": 0.25349999999999717
+  },
+  "content_sha256": "24ef5bc30d1762f4c95f36e8bb73dcfbce2e89845f0143ac6bd12d1fe57e93d9",
+  "fastf1_archives": {
+    "F1_2022_R03": "24c3c58597151acb9f719acc07791f5948c698973a2d2089bf01c4075e7a4941",
+    "F1_2022_R05": "d89ff2018c3b8817fce62d58f95a0fc50aad15d4b68cf91f2632f2fe9702c67a",
+    "F1_2022_R17": "24873b0284ca466abe832f10ae18f3eb476d3592a6e17fc2531c52a175747f15",
+    "F1_2023_R01": "5fa8533257e7684df72616e776833a79b78160c0dc1188dbde41ef3158aa96dc",
+    "F1_2023_R03": "4c380fa522fc2e0892c4bf752a725a65a99dd0f3b65501c9cce703d0f75f480e",
+    "F1_2023_R14": "bdad18d4461d1d8d6b0e5dec0d9dcdbd0c214441ca3ca392f70ccd8c2ee19181",
+    "F1_2023_R15": "588bb6bb7e5a854e664ae919530c1c917127ec69d0f479338f18c3839c2fcb27",
+    "F1_2024_R01": "19dae940473544324bd0a2562041698fc37c6cf1c85b9f6a7e767210e60cfd50",
+    "F1_2024_R03": "946c5c81fc8f8c4b1475b328a91c4ebf8d890f0ec2d0c9d86d555ae71f1db99a",
+    "F1_2024_R06": "15229e06891b6bd66a08b4dd2d678afb588c304333cbd63a7e226b4038fe75ee",
+    "F1_2024_R16": "68310c905912847366d4e0aaca28d68985415c7b5a6bac754fc4c6b7c3657c7e",
+    "F1_2024_R18": "47d7b4747bd43fc41a00ca35f657d02bd2f88e3b40f76cc9cd44d1657acf392e"
+  },
+  "gates": {
+    "drs": {
+      "confirmation_score": true,
+      "confirmation_sign": true,
+      "development_sign": true,
+      "support": true,
+      "validation_sign": true
+    },
+    "following": {
+      "confirmation_score": true,
+      "confirmation_sign": true,
+      "development_sign": true,
+      "support": true,
+      "validation_sign": true
+    }
+  },
+  "panels": {
+    "2022": {
+      "drs": {
+        "median_race_effect_s": -0.5665000000000013,
+        "observed_race_effect_range_s": [
+          -0.5859999999999985,
+          -0.10500000000000043
+        ],
+        "pairs": 134,
+        "race_weighted_absolute_error": {
+          "calibrated_s": 0.47531326164874477,
+          "zero_s": 0.6059691756272402
+        },
+        "races": {
+          "F1_2022_R03": {
+            "mean_age_difference_laps": 2.3763440860215055,
+            "median_s": -0.5859999999999985,
+            "pairs": 93
+          },
+          "F1_2022_R05": {
+            "mean_age_difference_laps": 1.8387096774193548,
+            "median_s": -0.10500000000000043,
+            "pairs": 31
+          },
+          "F1_2022_R17": {
+            "mean_age_difference_laps": 2.3,
+            "median_s": -0.5665000000000013,
+            "pairs": 10
+          }
+        }
+      },
+      "following": {
+        "median_race_effect_s": 0.31799999999999784,
+        "observed_race_effect_range_s": [
+          0.06900000000000084,
+          0.4695000000000018
+        ],
+        "pairs": 130,
+        "race_weighted_absolute_error": {
+          "calibrated_s": 0.40537136752136793,
+          "zero_s": 0.47415363247863257
+        },
+        "races": {
+          "F1_2022_R03": {
+            "mean_age_difference_laps": -2.58974358974359,
+            "median_s": 0.06900000000000084,
+            "pairs": 78
+          },
+          "F1_2022_R05": {
+            "mean_age_difference_laps": -2.75,
+            "median_s": 0.31799999999999784,
+            "pairs": 12
+          },
+          "F1_2022_R17": {
+            "mean_age_difference_laps": -0.7,
+            "median_s": 0.4695000000000018,
+            "pairs": 40
+          }
+        }
+      }
+    },
+    "2023": {
+      "drs": {
+        "median_race_effect_s": -0.30700000000000216,
+        "observed_race_effect_range_s": [
+          -0.46000000000000085,
+          -0.023999999999999133
+        ],
+        "pairs": 195,
+        "races": {
+          "F1_2023_R01": {
+            "mean_age_difference_laps": -0.6666666666666666,
+            "median_s": -0.023999999999999133,
+            "pairs": 12
+          },
+          "F1_2023_R03": {
+            "mean_age_difference_laps": 1.8349514563106797,
+            "median_s": -0.46000000000000085,
+            "pairs": 103
+          },
+          "F1_2023_R14": {
+            "mean_age_difference_laps": -0.8461538461538461,
+            "median_s": -0.2469999999999999,
+            "pairs": 13
+          },
+          "F1_2023_R15": {
+            "mean_age_difference_laps": 1.0,
+            "median_s": -0.36700000000000443,
+            "pairs": 67
+          }
+        }
+      },
+      "following": {
+        "median_race_effect_s": 0.25349999999999717,
+        "observed_race_effect_range_s": [
+          0.125,
+          0.4350000000000023
+        ],
+        "pairs": 71,
+        "races": {
+          "F1_2023_R01": {
+            "mean_age_difference_laps": 0.26666666666666666,
+            "median_s": 0.125,
+            "pairs": 15
+          },
+          "F1_2023_R03": {
+            "mean_age_difference_laps": -1.4666666666666666,
+            "median_s": 0.1699999999999946,
+            "pairs": 15
+          },
+          "F1_2023_R14": {
+            "mean_age_difference_laps": -0.11764705882352941,
+            "median_s": 0.33699999999999974,
+            "pairs": 17
+          },
+          "F1_2023_R15": {
+            "mean_age_difference_laps": -1.625,
+            "median_s": 0.4350000000000023,
+            "pairs": 24
+          }
+        }
+      }
+    },
+    "2024": {
+      "drs": {
+        "median_race_effect_s": -0.15399999999999991,
+        "observed_race_effect_range_s": [
+          -0.26799999999999713,
+          0.003500000000002501
+        ],
+        "pairs": 89,
+        "races": {
+          "F1_2024_R01": {
+            "mean_age_difference_laps": -0.125,
+            "median_s": 0.003500000000002501,
+            "pairs": 8
+          },
+          "F1_2024_R03": {
+            "mean_age_difference_laps": -0.5,
+            "median_s": -0.20750000000000135,
+            "pairs": 6
+          },
+          "F1_2024_R06": {
+            "mean_age_difference_laps": 1.358974358974359,
+            "median_s": -0.26799999999999713,
+            "pairs": 39
+          },
+          "F1_2024_R16": {
+            "mean_age_difference_laps": -0.29411764705882354,
+            "median_s": -0.15399999999999991,
+            "pairs": 17
+          },
+          "F1_2024_R18": {
+            "mean_age_difference_laps": -0.7368421052631579,
+            "median_s": -0.006999999999997897,
+            "pairs": 19
+          }
+        }
+      },
+      "following": {
+        "median_race_effect_s": 0.19900000000000162,
+        "observed_race_effect_range_s": [
+          0.009499999999999176,
+          0.2704999999999984
+        ],
+        "pairs": 76,
+        "races": {
+          "F1_2024_R01": {
+            "mean_age_difference_laps": -0.13333333333333333,
+            "median_s": 0.1109999999999971,
+            "pairs": 15
+          },
+          "F1_2024_R03": {
+            "mean_age_difference_laps": 0.875,
+            "median_s": 0.009499999999999176,
+            "pairs": 8
+          },
+          "F1_2024_R06": {
+            "mean_age_difference_laps": -2.3333333333333335,
+            "median_s": 0.2704999999999984,
+            "pairs": 6
+          },
+          "F1_2024_R16": {
+            "mean_age_difference_laps": -0.02857142857142857,
+            "median_s": 0.19900000000000162,
+            "pairs": 35
+          },
+          "F1_2024_R18": {
+            "mean_age_difference_laps": -1.5,
+            "median_s": 0.2275000000000027,
+            "pairs": 12
+          }
+        }
+      }
+    }
+  },
+  "production_promotion": false,
+  "qualified": true,
+  "schema": "apex-r050-sector-traffic-v1"
+}

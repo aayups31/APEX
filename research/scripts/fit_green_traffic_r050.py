@@ -57,6 +57,18 @@ def lap_timing(table):
     return laps, clean
 
 
+def load_drs(tables):
+    telemetry = {}
+    for file in sorted((tables / "car_data").glob("*.parquet")):
+        samples = pd.read_parquet(file, columns=["SessionTime", "DRS"])
+        samples = samples.dropna(subset=["SessionTime"]).sort_values("SessionTime", kind="stable")
+        telemetry[file.stem] = (
+            samples.SessionTime.dt.total_seconds().to_numpy(),
+            samples.DRS.astype(float).to_numpy(),
+        )
+    return telemetry
+
+
 def extract(table, telemetry, overtakes, utc_origin):
     laps, clean = lap_timing(table.dropna(subset=["DriverNumber", "LapNumber", "Time"]))
     exchange = defaultdict(list)
@@ -301,15 +313,7 @@ def run(native_root, pass_root):
         validate_passes(overtakes, identity)
         tables = native / "tables"
         laps = pd.read_parquet(tables / "laps.parquet", columns=LAP_FIELDS)
-        telemetry = {}
-        for file in sorted((tables / "car_data").glob("*.parquet")):
-            samples = pd.read_parquet(file, columns=["SessionTime", "DRS"])
-            samples = samples.dropna(subset=["SessionTime"]).sort_values("SessionTime", kind="stable")
-            telemetry[file.stem] = (
-                samples.SessionTime.dt.total_seconds().to_numpy(),
-                samples.DRS.astype(float).to_numpy(),
-            )
-        rows, groups = extract(laps, telemetry, overtakes, timestamp(f"{origin}+00:00"))
+        rows, groups = extract(laps, load_drs(tables), overtakes, timestamp(f"{origin}+00:00"))
         transitions[event] = rows
         pace[event] = matched_pace(groups)
         sources[event] = {
