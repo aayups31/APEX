@@ -1,0 +1,156 @@
+{
+  "central_coverage": 0.8909090909090909,
+  "checks": {
+    "central_coverage": true,
+    "lower_macro_crps": true,
+    "per_race_coverage": true
+  },
+  "content_sha256": "001613a596a15cfabd93f10d2850d7e037adc9980a5048e44660f78e9aee279f",
+  "folds": {
+    "F1_2024_R01": {
+      "candidate": {
+        "coverage": 1.0,
+        "crps_s": 0.8501244517823646,
+        "interval_hits": 26,
+        "interval_s": [
+          22.485600000000012,
+          29.487969071235295
+        ],
+        "interval_width_s": 7.002369071235282,
+        "sample_count": 267
+      },
+      "fallback": false,
+      "pooled": {
+        "coverage": 1.0,
+        "crps_s": 0.743664758931633,
+        "interval_hits": 26,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "stops": 26
+    },
+    "F1_2024_R03": {
+      "candidate": {
+        "coverage": 0.9354838709677419,
+        "crps_s": 2.02690369929341,
+        "interval_hits": 29,
+        "interval_s": [
+          16.405787286625376,
+          21.514807169800854
+        ],
+        "interval_width_s": 5.109019883175478,
+        "sample_count": 267
+      },
+      "fallback": false,
+      "pooled": {
+        "coverage": 0.06451612903225806,
+        "crps_s": 4.940808879639239,
+        "interval_hits": 2,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "stops": 31
+    },
+    "F1_2024_R06": {
+      "candidate": {
+        "coverage": 0.5,
+        "crps_s": 2.5326470510295054,
+        "interval_hits": 4,
+        "interval_s": [
+          17.51051962453966,
+          22.96357051222488
+        ],
+        "interval_width_s": 5.453050887685219,
+        "sample_count": 267
+      },
+      "fallback": false,
+      "pooled": {
+        "coverage": 0.875,
+        "crps_s": 1.7539591137704469,
+        "interval_hits": 7,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "stops": 8
+    },
+    "F1_2024_R16": {
+      "candidate": {
+        "coverage": 0.8846153846153846,
+        "crps_s": 1.7803171544206406,
+        "interval_hits": 23,
+        "interval_s": [
+          21.72773847677167,
+          28.49409756426031
+        ],
+        "interval_width_s": 6.766359087488642,
+        "sample_count": 267
+      },
+      "fallback": false,
+      "pooled": {
+        "coverage": 0.8846153846153846,
+        "crps_s": 1.8951548333733736,
+        "interval_hits": 23,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "stops": 26
+    },
+    "F1_2024_R18": {
+      "candidate": {
+        "coverage": 0.8421052631578947,
+        "crps_s": 3.8767686072621013,
+        "interval_hits": 16,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "fallback": true,
+      "pooled": {
+        "coverage": 0.8421052631578947,
+        "crps_s": 3.8767686072621013,
+        "interval_hits": 16,
+        "interval_s": [
+          18.615799999999762,
+          29.860600000001067
+        ],
+        "interval_width_s": 11.244800000001305,
+        "sample_count": 93
+      },
+      "stops": 19
+    }
+  },
+  "fresh_confirmation": false,
+  "macro_crps_s": {
+    "candidate": 2.2133521927576045,
+    "pooled": 2.6420712385953586
+  },
+  "parent_sha256": "8c5c78af4132f8eed205f83c1b00e0e92c1e3a1cf7a2f020bd582aee57dcad83",
+  "passed": true,
+  "pit_cohort_sha256": "52c5b1eab32aa4c0d9f9d7bc76cb48c4e03a17fc745753f2310ab8c716ef8614",
+  "production_promotion": false,
+  "scale_multipliers": [
+    0.9,
+    1.0,
+    1.1
+  ],
+  "schema": "apex-pit-duration-race-shift-r047-v2"
+}

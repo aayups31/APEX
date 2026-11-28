@@ -10,3 +10,9 @@ Keep the pooled fallback. Compare with v1 and record interval widths.
 
 This follow-up uses the previously scored development panel. A pass
 requires fresh confirmation before qualification of this adaptation.
+
+Confirm with the same entry/exit and clean-peer extraction on 2025
+Australia, Bahrain, Miami, Monza and Singapore, rounds 1, 4, 6, 16 and
+18. Use the frozen 2022–2023 samples and multipliers with no recalibration.
+Require all five events and at least five eligible stops each before
+applying the unchanged scoring gates. Preserve the permanent benchmark.
