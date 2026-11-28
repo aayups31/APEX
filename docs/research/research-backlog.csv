@@ -44,7 +44,7 @@ R042,R5,P1,optimization,Implement multi-lap tyre optimal-control test,thermal/we
 R043,R5,P0,energy,Implement sector-level ERS deploy/harvest model,vehicle model,state and terminal bounds,DONE
 R044,R5,P0,energy,Implement shrinking-horizon energy MPC,ERS model,disturbance response and runtime,DONE
 R045,R5,P0,strategy,"Integrate pit loss, inlap and outlap calibration",public data,held-out pit delta error,DONE
-R046,R6,P0,stochastic,Fit driver lap-time residual distributions,calibrated kernel,held-out distribution tests,BLOCKED
+R046,R6,P0,stochastic,Fit driver lap-time residual distributions,calibrated kernel,held-out distribution tests,DONE
 R047,R6,P0,stochastic,Fit pit-duration distributions,pit data,coverage and goodness-of-fit,IN_PROGRESS
 R048,R6,P1,stochastic,Fit incident/failure hazard models,historical race events,held-out event calibration,IN_PROGRESS
 R049,R6,P0,race-control,Calibrate VSC/SC gap compression and restart,event data,replay error and invariants,IN_PROGRESS

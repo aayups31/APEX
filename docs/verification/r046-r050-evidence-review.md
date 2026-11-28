@@ -2,7 +2,7 @@
 
 | Milestone | Status | Current evidence and remaining gate |
 |---|---|---|
-| R046 | Blocked | The project has no accepted calibrated race kernel. Driver lap-time residuals require matched predictions from such a kernel and held-out event evaluation. |
+| R046 | Research gate passed | The separately calibrated clean-green one-lap model passed five held-out races. Integrated race-kernel calibration remains pending. [R046 report](lap-residuals-r046-report.md) |
 | R047 | In progress | A declared race-level shift model passed development. Cross-provider confirmation reached its minimum sample in three of five races. |
 | R048 | In progress | A retirement baseline ran on five held-out races. Cause-specific incident and mechanical-failure models require sourced labels. |
 | R049 | In progress | The extended SC field-span forecast beats persistence. VSC and per-car gap replay remain unqualified. |
